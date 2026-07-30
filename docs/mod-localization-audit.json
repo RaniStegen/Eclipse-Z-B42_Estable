@@ -1,6 +1,6 @@
 {
   "scope": "common plus highest compatible version layer for Build 42.20.0",
-  "english_files": 252,
+  "english_files": 251,
   "spanish_files": 222,
   "english_keys": 20287,
   "spanish_keys_local_or_central": 72031,
@@ -15985,10 +15985,6 @@
     {
       "file": "EclipseZ - 1/Contents/mods/ECZ_7.2/42/media/lua/shared/Translate/EN/language.txt",
       "lines": 2
-    },
-    {
-      "file": "EclipseZ - 1/Contents/mods/ECZ_8.5/common/media/lua/shared/Translate/EN/IG_UI_EN.txt",
-      "lines": 1
     },
     {
       "file": "EclipseZ - 1/Contents/mods/ECZ_T4/common/media/lua/shared/Translate/EN/IG_UI_EN.txt",

@@ -1,9 +1,9 @@
 {
   "target": "Project Zomboid 42.20.0",
-  "mod_roots": 78,
-  "active_manifests": 78,
-  "active_ids": 78,
-  "server_mods": 78,
+  "mod_roots": 75,
+  "active_manifests": 75,
+  "active_ids": 75,
+  "server_mods": 75,
   "repository_workshop_items": [
     "3749385199",
     "3749386608",
@@ -317,9 +317,17 @@
       "tiledefs": []
     },
     {
-      "id": "ECZ_8.2",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.2",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.2\\42\\mod.info",
+      "id": "ECZ_9",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_9",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_9\\common\\mod.info",
+      "requires": [],
+      "packs": [],
+      "tiledefs": []
+    },
+    {
+      "id": "ECZ_T1",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_T1",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_T1\\42\\mod.info",
       "requires": [],
       "packs": [
         "DTilesPack",
@@ -335,54 +343,6 @@
         "diederikv_tile_def",
         "tkTiles_01"
       ]
-    },
-    {
-      "id": "ECZ_8.3",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.3",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.3\\42\\mod.info",
-      "requires": [],
-      "packs": [
-        "melos_tiles_for_miles1",
-        "melos_tiles_for_miles2"
-      ],
-      "tiledefs": [
-        "melos_tiles_for_miles_def1",
-        "melos_tiles_for_miles_def2"
-      ]
-    },
-    {
-      "id": "ECZ_8.4",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.4",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.4\\42\\mod.info",
-      "requires": [],
-      "packs": [
-        "SimonMDsTiles"
-      ],
-      "tiledefs": [
-        "SimonMDsTiles"
-      ]
-    },
-    {
-      "id": "ECZ_8.5",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.5",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.5\\42\\mod.info",
-      "requires": [],
-      "packs": [
-        "perts_xmas_tiles",
-        "perts_tiles42"
-      ],
-      "tiledefs": [
-        "Pert_tiledefinitions42",
-        "ChristmasVillage"
-      ]
-    },
-    {
-      "id": "ECZ_9",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_9",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_9\\common\\mod.info",
-      "requires": [],
-      "packs": [],
-      "tiledefs": []
     },
     {
       "id": "ECZ_T2",
