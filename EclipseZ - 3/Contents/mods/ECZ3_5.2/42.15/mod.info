@@ -2,5 +2,5 @@ name=ECZ3_5.2
 id=ECZ3_5.2
 poster=poster.png
 icon=icon.png
-require=\ECZ3_1,ECZ3_5.1
+require=ECZ3_1,ECZ3_5.1
 description=

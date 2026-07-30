@@ -1,7 +1,9 @@
-name=ECZ_8.4
+name=ECZ_8.4 - SimonMDs Tiles
 id=ECZ_8.4
-description=
+description=Paquete canónico de SimonMDs Tiles para Build 42.20.
 poster=poster.png
 icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
 pack=SimonMDsTiles
 tiledef=SimonMDsTiles 3333

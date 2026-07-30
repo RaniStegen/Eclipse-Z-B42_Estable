@@ -1,8 +1,10 @@
-name=ECZ_8.2
+name=ECZ_8.2 - Paquete de tiles
 id=ECZ_8.2
-description=
+description=Paquete canónico de Dylan, Blackwood, Ekron, Diederik y TK Tiles para Build 42.20.
 poster=poster.png
 icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
 
 pack=DTilesPack
 tiledef=dylanstiles 6985

@@ -1,0 +1,110 @@
+{
+  "ui::UI_CTT_Cancel": {
+    "category": "ui",
+    "key": "UI_CTT_Cancel",
+    "file": "UI.json",
+    "value": "Cancelar"
+  },
+  "ui::UI_CTT_Combo": {
+    "category": "ui",
+    "key": "UI_CTT_Combo",
+    "file": "UI.json",
+    "value": "Combo: x%1"
+  },
+  "ui::UI_CTT_Damage": {
+    "category": "ui",
+    "key": "UI_CTT_Damage",
+    "file": "UI.json",
+    "value": "Daño al árbol: %1%%"
+  },
+  "ui::UI_CTT_Difficulty": {
+    "category": "ui",
+    "key": "UI_CTT_Difficulty",
+    "file": "UI.json",
+    "value": "Dificultad del árbol: %1%%"
+  },
+  "ui::UI_CTT_Endurance": {
+    "category": "ui",
+    "key": "UI_CTT_Endurance",
+    "file": "UI.json",
+    "value": "Resistencia: %1%%"
+  },
+  "ui::UI_CTT_HP": {
+    "category": "ui",
+    "key": "UI_CTT_HP",
+    "file": "UI.json",
+    "value": "PV del árbol: %1/%2"
+  },
+  "ui::UI_CTT_HPNoMax": {
+    "category": "ui",
+    "key": "UI_CTT_HPNoMax",
+    "file": "UI.json",
+    "value": "PV del árbol: %1"
+  },
+  "ui::UI_CTT_Hint": {
+    "category": "ui",
+    "key": "UI_CTT_Hint",
+    "file": "UI.json",
+    "value": "X"
+  },
+  "ui::UI_CTT_ImpactBank": {
+    "category": "ui",
+    "key": "UI_CTT_ImpactBank",
+    "file": "UI.json",
+    "value": "Ritmo: %1%%"
+  },
+  "ui::UI_CTT_NeedAxe": {
+    "category": "ui",
+    "key": "UI_CTT_NeedAxe",
+    "file": "UI.json",
+    "value": "Necesitas un hacha"
+  },
+  "ui::UI_CTT_NeedAxeSkill": {
+    "category": "ui",
+    "key": "UI_CTT_NeedAxeSkill",
+    "file": "UI.json",
+    "value": "Necesitas habilidad de Hacha %1"
+  },
+  "ui::UI_CTT_Result_Green": {
+    "category": "ui",
+    "key": "UI_CTT_Result_Green",
+    "file": "UI.json",
+    "value": "Golpe limpio"
+  },
+  "ui::UI_CTT_Result_Red": {
+    "category": "ui",
+    "key": "UI_CTT_Result_Red",
+    "file": "UI.json",
+    "value": "Golpe mal dado"
+  },
+  "ui::UI_CTT_Result_Yellow": {
+    "category": "ui",
+    "key": "UI_CTT_Result_Yellow",
+    "file": "UI.json",
+    "value": "Golpe rasante"
+  },
+  "ui::UI_CTT_Sharpness": {
+    "category": "ui",
+    "key": "UI_CTT_Sharpness",
+    "file": "UI.json",
+    "value": "Agudeza: %1%%"
+  },
+  "ui::UI_CTT_Strike": {
+    "category": "ui",
+    "key": "UI_CTT_Strike",
+    "file": "UI.json",
+    "value": "Golpe"
+  },
+  "ui::UI_CTT_Title": {
+    "category": "ui",
+    "key": "UI_CTT_Title",
+    "file": "UI.json",
+    "value": "Corta ese árbol"
+  },
+  "ui::UI_CTT_TooFar": {
+    "category": "ui",
+    "key": "UI_CTT_TooFar",
+    "file": "UI.json",
+    "value": "Demasiado lejos del árbol"
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "target": "Project Zomboid 42.20.0",
+  "policy": "Spanish (Spain), Qwen review over current 42.20 topology",
+  "base": {
+    "files": {
+      "Attributes.json": {
+        "keys": 12,
+        "origins": {
+          "qwen": 12
+        }
+      },
+      "BodyParts.json": {
+        "keys": 11,
+        "origins": {
+          "qwen": 11
+        }
+      },
+      "Brandenburg, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "Challenge.json": {
+        "keys": 59,
+        "origins": {
+          "manual-42.20": 2,
+          "official-42.20": 17,
+          "qwen": 40
+        }
+      },
+      "ContextMenu.json": {
+        "keys": 881,
+        "origins": {
+          "manual-42.20": 2,
+          "official-42.20": 37,
+          "qwen": 842
+        }
+      },
+      "Credits.json": {
+        "keys": 88,
+        "origins": {
+          "official-42.20": 21,
+          "qwen": 67
+        }
+      },
+      "Credits_Translator.json": {
+        "keys": 1,
+        "origins": {
+          "official-42.20": 1
+        }
+      },
+      "DynamicRadio.json": {
+        "keys": 78,
+        "origins": {
+          "qwen": 78
+        }
+      },
+      "Echo Creek, KY.json": {
+        "keys": 2,
+        "origins": {
+          "official-42.20": 1,
+          "qwen": 1
+        }
+      },
+      "Ekron, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "Entity.json": {
+        "keys": 37,
+        "origins": {
+          "qwen": 37
+        }
+      },
+      "EvolvedRecipeName.json": {
+        "keys": 11,
+        "origins": {
+          "qwen": 11
+        }
+      },
+      "Fallas Lake, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "Farming.json": {
+        "keys": 161,
+        "origins": {
+          "official-42.20": 1,
+          "qwen": 160
+        }
+      },
+      "Fluids.json": {
+        "keys": 197,
+        "origins": {
+          "qwen": 197
+        }
+      },
+      "GameSound.json": {
+        "keys": 361,
+        "origins": {
+          "official-42.20": 1,
+          "qwen": 360
+        }
+      },
+      "IG_UI.json": {
+        "keys": 6947,
+        "origins": {
+          "manual-42.20": 10,
+          "official-42.20": 160,
+          "qwen": 6777
+        }
+      },
+      "Irvington, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "ItemName.json": {
+        "keys": 4889,
+        "origins": {
+          "official-42.20": 3,
+          "qwen": 4886
+        }
+      },
+      "language.json": {
+        "keys": 2,
+        "origins": {
+          "official-42.20": 2
+        }
+      },
+      "MakeUp.json": {
+        "keys": 31,
+        "origins": {
+          "qwen": 31
+        }
+      },
+      "MapLabel.json": {
+        "keys": 14,
+        "origins": {
+          "qwen": 14
+        }
+      },
+      "March Ridge, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "Moodles.json": {
+        "keys": 190,
+        "origins": {
+          "qwen": 190
+        }
+      },
+      "Moveables.json": {
+        "keys": 1180,
+        "origins": {
+          "official-42.20": 224,
+          "qwen": 956
+        }
+      },
+      "Muldraugh, KY.json": {
+        "keys": 2,
+        "origins": {
+          "official-42.20": 1,
+          "qwen": 1
+        }
+      },
+      "MultiStageBuild.json": {
+        "keys": 20,
+        "origins": {
+          "qwen": 20
+        }
+      },
+      "Print_Media.json": {
+        "keys": 341,
+        "origins": {
+          "qwen": 341
+        }
+      },
+      "Print_Text.json": {
+        "keys": 310,
+        "origins": {
+          "qwen": 310
+        }
+      },
+      "RadioData.json": {
+        "keys": 13166,
+        "origins": {
+          "manual-42.20": 3,
+          "qwen": 13163
+        }
+      },
+      "RecipeGroups.json": {
+        "keys": 1,
+        "origins": {
+          "qwen": 1
+        }
+      },
+      "Recipes.json": {
+        "keys": 1909,
+        "origins": {
+          "official-42.20": 2,
+          "qwen": 1907
+        }
+      },
+      "Recorded_Media.json": {
+        "keys": 5846,
+        "origins": {
+          "manual-42.20": 2,
+          "qwen": 5844
+        }
+      },
+      "Riverside, KY.json": {
+        "keys": 2,
+        "origins": {
+          "manual-42.20": 1,
+          "qwen": 1
+        }
+      },
+      "Rosewood, KY.json": {
+        "keys": 2,
+        "origins": {
+          "manual-42.20": 1,
+          "qwen": 1
+        }
+      },
+      "Sandbox.json": {
+        "keys": 1085,
+        "origins": {
+          "official-42.20": 3,
+          "qwen": 1082
+        }
+      },
+      "Stash.json": {
+        "keys": 324,
+        "origins": {
+          "qwen": 324
+        }
+      },
+      "SurvivalGuide.json": {
+        "keys": 229,
+        "origins": {
+          "official-42.20": 1,
+          "qwen": 228
+        }
+      },
+      "SurvivorNames.json": {
+        "keys": 6008,
+        "origins": {
+          "qwen": 6008
+        }
+      },
+      "Tooltip.json": {
+        "keys": 602,
+        "origins": {
+          "manual-42.20": 2,
+          "official-42.20": 13,
+          "qwen": 587
+        }
+      },
+      "UI.json": {
+        "keys": 2240,
+        "origins": {
+          "manual-42.20": 14,
+          "official-42.20": 92,
+          "qwen": 2134
+        }
+      },
+      "Valley Station, KY.json": {
+        "keys": 2,
+        "origins": {
+          "qwen": 2
+        }
+      },
+      "West Point, KY.json": {
+        "keys": 2,
+        "origins": {
+          "manual-42.20": 1,
+          "qwen": 1
+        }
+      },
+      "Mod.json": {
+        "keys": 3,
+        "origins": {
+          "qwen-extra": 3
+        }
+      },
+      "ZZ_ECZ_BaseCorrections.json": {
+        "keys": 9,
+        "origins": {
+          "qwen-extra": 9
+        }
+      }
+    },
+    "origins": {
+      "manual-42.20": 38,
+      "official-42.20": 580,
+      "qwen": 46635,
+      "qwen-extra": 12
+    },
+    "token_mismatches": [],
+    "english_fallbacks": [],
+    "empty_values": []
+  },
+  "mods": {
+    "skipped": true
+  },
+  "validation": {
+    "base": {
+      "files": 45,
+      "keys": 47265,
+      "trailing_space_lines": []
+    },
+    "mods": {
+      "files": 24,
+      "keys": 42409,
+      "trailing_space_lines": []
+    }
+  }
+}

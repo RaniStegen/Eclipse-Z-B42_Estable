@@ -3,4 +3,4 @@ id=ECZ3_3.2
 poster=poster.png
 icon=icon.png
 description=
-require=\ECZ3_3.1
+require=ECZ3_3.1

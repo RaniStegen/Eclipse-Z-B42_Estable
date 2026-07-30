@@ -1,10 +1,11 @@
-name=ECZ_T4
+name=ECZ_T4 - Pert's Tiles (42.20)
 id=ECZ_T4
-description=
+description=Paquete canónico de Pert's Tiles y Christmas Village adaptado a Build 42.20.
 icon=icon.png
 poster=poster.png
+versionMin=42.20.0
+versionMax=43.0.0
 pack=perts_xmas_tiles
 pack=perts_tiles42
-
 tiledef=Pert_tiledefinitions42 4242
 tiledef=ChristmasVillage 4243

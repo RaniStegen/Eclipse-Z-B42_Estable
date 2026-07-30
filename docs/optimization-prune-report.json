@@ -1,0 +1,16 @@
+{
+  "target": "Project Zomboid 42.20.0",
+  "applied": true,
+  "directories": 83,
+  "standaloneFiles": 59,
+  "filesRemoved": 21898,
+  "bytesRemoved": 4754358314,
+  "gibRemoved": 4.428,
+  "strategy": [
+    "Se conserva únicamente la capa numérica más reciente compatible de cada mod.",
+    "Se retiran capas heredadas de media y Resources cuando existe una capa moderna.",
+    "Los IDs alternativos de paquetes de tiles se conservan como alias con require, sin duplicar el contenido.",
+    "Se eliminan artefactos de desarrollo que no forman parte del mod en ejecución."
+  ],
+  "recovery": "Todos los elementos retirados permanecen recuperables desde el historial de Git."
+}

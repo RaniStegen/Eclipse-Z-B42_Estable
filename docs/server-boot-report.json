@@ -1,0 +1,17 @@
+{
+  "target": "Project Zomboid 42.20.0",
+  "server_config": "RaniTest",
+  "physical_copy_test": true,
+  "configured_mods": 80,
+  "server_started": true,
+  "blocking_errors": 0,
+  "required_mods_missing": 0,
+  "unknown_script_objects": 0,
+  "invalid_tile_definition_magic": 0,
+  "starlit_version_errors": 0,
+  "notes": [
+    "La prueba se realizó con una copia física temporal para evitar falsos fallos del cálculo de checksums sobre junctions de Windows.",
+    "La Build 42.20 registra avisos no bloqueantes al sondear carpetas opcionales de animaciones que muchos mods no necesitan.",
+    "Persisten avisos de recursos heredados de algunos mods de tiles y modelos, pero no impiden completar el arranque."
+  ]
+}

@@ -1,4 +1,0 @@
-Tooltip_EN = {
-    Tooltip_PagerMod_Pager = "A pocket pager. <LINE> Right-click and Activate it to receive a unique number, then Open it to read and send short text pages anywhere on the map. <LINE> Pagers are the long-range tier: use voice chat up close and walkie-talkies at medium range.",
-    Tooltip_PagerMod_Recipe = "Build a working pager from electronics scrap, a radio receiver and wiring. Requires Electricity 4.",
-}

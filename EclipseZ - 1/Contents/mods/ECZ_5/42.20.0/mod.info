@@ -1,8 +1,8 @@
-name=Sapph's Cooking
-id=SapphCooking_B42
+name=ECZ_5 - Sapph's Cooking
+id=ECZ_5
 poster=poster.png
 icon=icon.png
-description=Adds more cooking related items and recipes.
+description=Añade objetos y recetas de cocina. Versión adaptada individualmente para EclipseZ y Build 42.20.
 pzversion=42
 author=sapph
 modversion=0.1

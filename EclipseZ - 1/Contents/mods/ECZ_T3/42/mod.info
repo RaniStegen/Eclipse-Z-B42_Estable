@@ -1,8 +1,10 @@
-name=ECZ_T3
+name=ECZ_T3 - Melos Tiles (42.20)
 id=ECZ_T3
-description=
+description=Paquete de Melos Tiles adaptado a Build 42.20 y dividido en dos paquetes para su carga correcta.
 poster=poster.png
 icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
 pack=melos_tiles_for_miles1
 pack=melos_tiles_for_miles2
 tiledef=melos_tiles_for_miles_def1 237

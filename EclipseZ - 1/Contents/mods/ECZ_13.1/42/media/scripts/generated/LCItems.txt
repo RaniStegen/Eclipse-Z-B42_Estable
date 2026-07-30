@@ -1,7 +1,5 @@
 module LC
 {
-    imports { Base }
-
     item Ground_Goo
     {
         Weight = 2,

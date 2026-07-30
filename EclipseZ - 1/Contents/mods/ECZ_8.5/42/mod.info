@@ -1,9 +1,8 @@
-name=ECZ_8.5
+name=ECZ_8.5 - Compatibilidad de Pert's Tiles
 id=ECZ_8.5
-description=
+description=ID de compatibilidad independiente. Reutiliza ECZ_T4 para Build 42.20 sin duplicar el paquete de tiles.
 poster=poster.png
 icon=icon.png
-pack=perts_xmas_tiles
-pack=perts_tiles
-tiledef=Pert_tiledefinitions 4242
-tiledef=ChristmasVillage 4243
+require=ECZ_T4
+versionMin=42.20.0
+versionMax=43.0.0
