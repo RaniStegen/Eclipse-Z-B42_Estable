@@ -1,8 +1,8 @@
 {
   "scope": "common plus highest compatible version layer for Build 42.20.0",
-  "english_files": 253,
+  "english_files": 252,
   "spanish_files": 222,
-  "english_keys": 20354,
+  "english_keys": 20287,
   "spanish_keys_local_or_central": 72031,
   "central_keys": 42455,
   "missing_keys": [],
@@ -15987,6 +15987,10 @@
       "lines": 2
     },
     {
+      "file": "EclipseZ - 1/Contents/mods/ECZ_8.5/common/media/lua/shared/Translate/EN/IG_UI_EN.txt",
+      "lines": 1
+    },
+    {
       "file": "EclipseZ - 1/Contents/mods/ECZ_T4/common/media/lua/shared/Translate/EN/IG_UI_EN.txt",
       "lines": 1
     },
@@ -16028,10 +16032,6 @@
     },
     {
       "file": "EclipseZ - 2/Contents/mods/ECZ2_14/common/media/lua/shared/Translate/EN/Sandbox_EN.txt",
-      "lines": 1
-    },
-    {
-      "file": "EclipseZ - 2/Contents/mods/ECZ2_17/42/media/lua/shared/Translate/EN/Sandbox_EN.txt",
       "lines": 1
     },
     {

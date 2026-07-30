@@ -1,8 +1,11 @@
-name=ECZ_8.3 - Compatibilidad de Melos Tiles
+name=ECZ_8.3 - Melos Tiles
 id=ECZ_8.3
-description=ID de compatibilidad independiente. Reutiliza la adaptación ECZ_T3 para Build 42.20 sin duplicar 797 MiB.
+description=Paquete independiente de Melos Tiles preparado para Build 42.20.
 poster=poster.png
 icon=icon.png
-require=ECZ_T3
 versionMin=42.20.0
 versionMax=43.0.0
+pack=melos_tiles_for_miles1
+pack=melos_tiles_for_miles2
+tiledef=melos_tiles_for_miles_def1 237
+tiledef=melos_tiles_for_miles_def2 238

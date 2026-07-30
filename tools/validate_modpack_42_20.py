@@ -173,6 +173,8 @@ def main() -> int:
                 )
 
     server_mods: list[str] = []
+    server_workshop_items: list[str] = []
+    server_map = ""
     if args.server_config:
         config = args.server_config.resolve()
         if not config.is_file():
@@ -182,8 +184,19 @@ def main() -> int:
                 encoding="utf-8-sig", errors="replace"
             ).splitlines():
                 if line.startswith("Mods="):
-                    server_mods = [entry for entry in line[5:].split(";") if entry]
-                    break
+                    server_mods = [
+                        entry.strip().lstrip("\\/")
+                        for entry in line[5:].split(";")
+                        if entry.strip()
+                    ]
+                elif line.startswith("WorkshopItems="):
+                    server_workshop_items = [
+                        entry.strip()
+                        for entry in line[len("WorkshopItems=") :].split(";")
+                        if entry.strip()
+                    ]
+                elif line.startswith("Map="):
+                    server_map = line[4:].strip()
             for mod_id in server_mods:
                 if mod_id not in active_ids:
                     errors.append(
@@ -193,14 +206,49 @@ def main() -> int:
                             "path": str(config),
                         }
                     )
+            if len(server_mods) != len(set(server_mods)):
+                errors.append(
+                    {
+                        "kind": "duplicate_server_mod",
+                        "path": str(config),
+                    }
+                )
             unused = sorted(active_ids - set(server_mods))
             if unused:
-                warnings.append(
+                errors.append(
                     {
                         "kind": "active_mod_not_in_server_config",
                         "values": "; ".join(unused),
                     }
                 )
+
+    repository_workshop_items: list[str] = []
+    for workshop_file in sorted(repo.glob("*/workshop.txt")):
+        parsed_workshop = parse_manifest(workshop_file)
+        workshop_id = (parsed_workshop.get("id") or [""])[-1].strip()
+        if workshop_id:
+            repository_workshop_items.append(workshop_id)
+    if args.server_config:
+        missing_workshop = sorted(
+            set(repository_workshop_items) - set(server_workshop_items)
+        )
+        extra_workshop = sorted(
+            set(server_workshop_items) - set(repository_workshop_items)
+        )
+        if missing_workshop:
+            errors.append(
+                {
+                    "kind": "server_workshop_items_missing",
+                    "values": "; ".join(missing_workshop),
+                }
+            )
+        if extra_workshop:
+            errors.append(
+                {
+                    "kind": "server_workshop_items_unknown",
+                    "values": "; ".join(extra_workshop),
+                }
+            )
 
     invalid_json: list[dict[str, str]] = []
     json_files = list(repo.rglob("*.json"))
@@ -252,6 +300,9 @@ def main() -> int:
         "active_manifests": len(selected),
         "active_ids": len(active_ids),
         "server_mods": len(server_mods),
+        "repository_workshop_items": repository_workshop_items,
+        "server_workshop_items": server_workshop_items,
+        "server_map": server_map,
         "json_files": len(json_files),
         "invalid_json": len(invalid_json),
         "obsolete_version_layers": len(obsolete_layers),

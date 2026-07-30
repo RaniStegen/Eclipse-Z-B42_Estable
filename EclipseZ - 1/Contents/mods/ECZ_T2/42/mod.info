@@ -1,8 +1,9 @@
-name=ECZ_T2 - Compatibilidad de tiles
+name=ECZ_T2 - Simon MD's Tiles
 id=ECZ_T2
-description=ID de compatibilidad independiente. Reutiliza ECZ_8.4 sin cargar una segunda copia de los mismos tiles.
+description=Paquete independiente de Simon MD's Tiles preparado para Build 42.20.
 poster=poster.png
 icon=icon.png
-require=ECZ_8.4
 versionMin=42.20.0
 versionMax=43.0.0
+pack=SimonMDsTiles
+tiledef=SimonMDsTiles 3333

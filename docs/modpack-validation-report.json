@@ -1,20 +1,28 @@
 {
   "target": "Project Zomboid 42.20.0",
-  "mod_roots": 81,
-  "active_manifests": 81,
-  "active_ids": 81,
-  "server_mods": 80,
-  "json_files": 1202,
+  "mod_roots": 78,
+  "active_manifests": 78,
+  "active_ids": 78,
+  "server_mods": 78,
+  "repository_workshop_items": [
+    "3749385199",
+    "3749386608",
+    "3774204188",
+    "3756312384"
+  ],
+  "server_workshop_items": [
+    "3749385199",
+    "3749386608",
+    "3774204188",
+    "3756312384"
+  ],
+  "server_map": "",
+  "json_files": 1200,
   "invalid_json": 0,
   "obsolete_version_layers": 0,
   "development_artifacts": 0,
   "errors": [],
-  "warnings": [
-    {
-      "kind": "active_mod_not_in_server_config",
-      "values": "ECZ_T1"
-    }
-  ],
+  "warnings": [],
   "mods": [
     {
       "id": "ECZ_1",
@@ -332,11 +340,15 @@
       "id": "ECZ_8.3",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.3",
       "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.3\\42\\mod.info",
-      "requires": [
-        "ECZ_T3"
+      "requires": [],
+      "packs": [
+        "melos_tiles_for_miles1",
+        "melos_tiles_for_miles2"
       ],
-      "packs": [],
-      "tiledefs": []
+      "tiledefs": [
+        "melos_tiles_for_miles_def1",
+        "melos_tiles_for_miles_def2"
+      ]
     },
     {
       "id": "ECZ_8.4",
@@ -354,11 +366,15 @@
       "id": "ECZ_8.5",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8.5",
       "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8.5\\42\\mod.info",
-      "requires": [
-        "ECZ_T4"
+      "requires": [],
+      "packs": [
+        "perts_xmas_tiles",
+        "perts_tiles42"
       ],
-      "packs": [],
-      "tiledefs": []
+      "tiledefs": [
+        "Pert_tiledefinitions42",
+        "ChristmasVillage"
+      ]
     },
     {
       "id": "ECZ_9",
@@ -369,24 +385,16 @@
       "tiledefs": []
     },
     {
-      "id": "ECZ_T1",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_T1",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_T1\\42\\mod.info",
-      "requires": [
-        "ECZ_8.2"
-      ],
-      "packs": [],
-      "tiledefs": []
-    },
-    {
       "id": "ECZ_T2",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_T2",
       "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_T2\\42\\mod.info",
-      "requires": [
-        "ECZ_8.4"
+      "requires": [],
+      "packs": [
+        "SimonMDsTiles"
       ],
-      "packs": [],
-      "tiledefs": []
+      "tiledefs": [
+        "SimonMDsTiles"
+      ]
     },
     {
       "id": "ECZ_T3",
@@ -501,14 +509,6 @@
       "id": "ECZ2_16",
       "root": "EclipseZ - 2\\Contents\\mods\\ECZ2_16",
       "manifest": "EclipseZ - 2\\Contents\\mods\\ECZ2_16\\42\\mod.info",
-      "requires": [],
-      "packs": [],
-      "tiledefs": []
-    },
-    {
-      "id": "ECZ2_17",
-      "root": "EclipseZ - 2\\Contents\\mods\\ECZ2_17",
-      "manifest": "EclipseZ - 2\\Contents\\mods\\ECZ2_17\\42\\mod.info",
       "requires": [],
       "packs": [],
       "tiledefs": []
@@ -712,16 +712,6 @@
       "id": "ECZ3_7",
       "root": "EclipseZ - 3\\Contents\\mods\\ECZ3_7",
       "manifest": "EclipseZ - 3\\Contents\\mods\\ECZ3_7\\42.19\\mod.info",
-      "requires": [
-        "ECZ3_1"
-      ],
-      "packs": [],
-      "tiledefs": []
-    },
-    {
-      "id": "ECZ3_8",
-      "root": "EclipseZ - 3\\Contents\\mods\\ECZ3_8",
-      "manifest": "EclipseZ - 3\\Contents\\mods\\ECZ3_8\\42\\mod.info",
       "requires": [
         "ECZ3_1"
       ],

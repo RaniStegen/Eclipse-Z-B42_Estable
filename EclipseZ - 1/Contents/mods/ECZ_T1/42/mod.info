@@ -1,8 +1,0 @@
-name=ECZ_T1 - Compatibilidad de tiles
-id=ECZ_T1
-description=ID de compatibilidad independiente. Reutiliza ECZ_8.2 sin cargar una segunda copia de los mismos tiles.
-poster=poster.png
-icon=icon.png
-require=ECZ_8.2
-versionMin=42.20.0
-versionMax=43.0.0

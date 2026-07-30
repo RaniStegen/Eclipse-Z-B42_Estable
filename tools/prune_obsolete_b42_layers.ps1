@@ -75,19 +75,8 @@ foreach ($modRoot in $modRoots) {
     }
 }
 
-# Tile packs retained as separate compatibility IDs but without duplicate payload.
-$aliasPayloads = @(
-    'EclipseZ - 1\Contents\mods\ECZ_T1\common',
-    'EclipseZ - 1\Contents\mods\ECZ_T2\common',
-    'EclipseZ - 1\Contents\mods\ECZ_8.5\common',
-    'EclipseZ - 1\Contents\mods\ECZ_8.3\common'
-)
-foreach ($relative in $aliasPayloads) {
-    $path = Join-Path $repoRoot $relative
-    if (Test-Path -LiteralPath $path -PathType Container) {
-        Add-SafeDirectoryTarget $path
-    }
-}
+# Los paquetes pertenecientes a IDs distintas se conservan físicamente, aunque
+# sus recursos sean equivalentes. La poda solo actúa dentro de cada mod.
 
 # Redundant common-layer metadata and development-only artifacts.
 foreach ($relative in @(
