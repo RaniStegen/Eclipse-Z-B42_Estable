@@ -1,0 +1,325 @@
+module MarzGuns
+{
+    model M14
+    {
+        mesh = weapons/firearms/M14|M14_BODY,
+        texture = weapons/firearms/battle_rifles/M14,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5672 0.0304,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1392 0.0167,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0571 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1311 0.0409,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2468 -0.0054,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1538 0.0435,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1029 0.0448,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2130 -0.0105,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2893 -0.0103,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.4334 0.0082,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M14_BOLT
+    {
+        mesh = weapons/firearms/M14|M14_BOLT,
+        texture = weapons/firearms/battle_rifles/M14,
+    }
+    model M1_GARAND
+    {
+        mesh = weapons/firearms/M1_GARAND|M1_GARAND_BODY,
+        texture = weapons/firearms/battle_rifles/M1_GARAND,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5537 0.0291,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0571 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.2104 0.0390,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.2318 0.0427,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1721 0.0423,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.4731 -0.0014,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M1_GARAND_BOLT
+    {
+        mesh = weapons/firearms/M1_GARAND|M1_GARAND_BOLT,
+        texture = weapons/firearms/battle_rifles/M1_GARAND,
+    }
+    model FAL
+    {
+        mesh = weapons/firearms/FAL|FAL_BODY,
+        texture = weapons/firearms/battle_rifles/FAL,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5023 0.0264,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1220 0.0218,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1243 0.0495,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2759 0.0148,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0174 0.2760 0.0281,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0174 0.2760 0.0281,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1453 0.0530,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0858 0.0531,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.3128 0.0099,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2430 0.0115,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0249 0.3110 0.0278,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0244 0.3074 0.0279,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0446 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model FAL_BOLT
+    {
+        mesh = weapons/firearms/FAL|FAL_BOLT,
+        texture = weapons/firearms/battle_rifles/FAL,
+    }
+    model G3
+    {
+        mesh = weapons/firearms/G3|G3_BODY,
+        texture = weapons/firearms/battle_rifles/G3,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4601 0.0358,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1208 0.0286,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0842 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0960 0.0580,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2630 0.0223,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0141 0.2579 0.0360,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0141 0.2579 0.0360,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1254 0.0596,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0670 0.0611,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2298 0.0177,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2966 0.0176,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3689 0.0154,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0203 0.2727 0.0354,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0208 0.2764 0.0354,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model G3_BOLT
+    {
+        mesh = weapons/firearms/G3|G3_BOLT,
+        texture = weapons/firearms/battle_rifles/G3,
+    }
+}

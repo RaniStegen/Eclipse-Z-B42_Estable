@@ -1,0 +1,371 @@
+module MarzGuns
+{
+    model MOSSBERG_590
+    {
+        mesh = weapons/firearms/MOSSBERG_590|MOSSBERG_590_BODY,
+        texture = weapons/firearms/shotguns/MOSSBERG_590,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4785 0.0401,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment pump_fired
+        {
+            offset = 0.0000 -0.0739 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1366 0.0532,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1594 0.0562,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3958 0.0003,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model MOSSBERG_590_PUMP
+    {
+        mesh = weapons/firearms/MOSSBERG_590|MOSSBERG_590_PUMP,
+        texture = weapons/firearms/shotguns/MOSSBERG_590,
+    }
+    model TRENCHGUN
+    {
+        mesh = weapons/firearms/TRENCHGUN|TRENCHGUN_BODY,
+        texture = weapons/firearms/shotguns/TRENCHGUN,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4228 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment pump_fired
+        {
+            offset = 0.0000 -0.0508 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3494 -0.0101,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model TRENCHGUN_PUMP
+    {
+        mesh = weapons/firearms/TRENCHGUN|TRENCHGUN_PUMP,
+        texture = weapons/firearms/shotguns/TRENCHGUN,
+    }
+    model BENELLI_M4
+    {
+        mesh = weapons/firearms/BENELLI_M4|BENELLI_M4_BODY,
+        texture = weapons/firearms/shotguns/BENELLI_M4,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4351 0.0323,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0296 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3545 -0.0064,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1286 0.0442,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1502 0.0477,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model BENELLI_M4_BOLT
+    {
+        mesh = weapons/firearms/BENELLI_M4|BENELLI_M4_BOLT,
+        texture = weapons/firearms/shotguns/BENELLI_M4,
+    }
+    model DOUBLEBARREL
+    {
+        mesh = weapons/firearms/DOUBLEBARREL|DOUBLEBARREL_BODY,
+        texture = weapons/firearms/shotguns/DOUBLEBARREL,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4830 0.0217,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = -0.0021 -0.0943 -0.0100,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 1.1703,
+        }
+    }
+    model DOUBLEBARREL_Barrel_Close
+    {
+        mesh = weapons/firearms/DOUBLEBARREL|DOUBLEBARREL_BARREL_CLOSE,
+        texture = weapons/firearms/shotguns/DOUBLEBARREL,
+    }
+    model DOUBLEBARREL_Barrel_Open
+    {
+        mesh = weapons/firearms/DOUBLEBARREL|DOUBLEBARREL_BARREL_OPEN,
+        texture = weapons/firearms/shotguns/DOUBLEBARREL,
+    }
+    model STEVENS_555
+    {
+        mesh = weapons/firearms/STEVENS_555|STEVENS_555_BODY,
+        texture = weapons/firearms/shotguns/STEVENS_555,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5418 0.0250,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = -0.0022 -0.0949 -0.0136,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model STEVENS_555_Barrel_Close
+    {
+        mesh = weapons/firearms/STEVENS_555|STEVENS_555_BARREL_CLOSE,
+        texture = weapons/firearms/shotguns/STEVENS_555,
+    }
+    model STEVENS_555_Barrel_Open
+    {
+        mesh = weapons/firearms/STEVENS_555|STEVENS_555_BARREL_OPEN,
+        texture = weapons/firearms/shotguns/STEVENS_555,
+    }
+    model SPAS12
+    {
+        mesh = weapons/firearms/SPAS12|SPAS12_BODY,
+        texture = weapons/firearms/shotguns/SPAS12,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4586 0.0375,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0632 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+    model SPAS12_BOLT
+    {
+        mesh = weapons/firearms/SPAS12|SPAS12_BOLT,
+        texture = weapons/firearms/shotguns/SPAS12,
+    }
+    model SPAS12_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/SPAS12|SPAS12_STOCK_DEPLOYED,
+        texture = weapons/firearms/shotguns/SPAS12,
+    }
+    model SPAS12_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/SPAS12|SPAS12_STOCK_FOLDED,
+        texture = weapons/firearms/shotguns/SPAS12,
+    }
+    model AA12
+    {
+        mesh = weapons/firearms/AA12|AA12_BODY,
+        texture = weapons/firearms/shotguns/AA12,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3256 0.0287,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.1041 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1056 0.0225,
+            rotate = 3.5356 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.1885 0.0108,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0121 0.1988 0.0374,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0121 0.1988 0.0374,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.1899 0.0072,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AA12_BOLT
+    {
+        mesh = weapons/firearms/AA12|AA12_BOLT,
+        texture = weapons/firearms/shotguns/AA12,
+    }
+    model REMINGTON_870
+    {
+        mesh = weapons/firearms/REMINGTON_870|REMINGTON_870_BODY,
+        texture = weapons/firearms/shotguns/REMINGTON_870,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4785 0.0401,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment pump_fired
+        {
+            offset = 0.0000 -0.0739 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1206 0.0472,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3319 -0.0048,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1417 0.0506,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model REMINGTON_870_PUMP
+    {
+        mesh = weapons/firearms/REMINGTON_870|REMINGTON_870_PUMP,
+        texture = weapons/firearms/shotguns/REMINGTON_870,
+    }
+    model TOZ34
+    {
+        mesh = weapons/firearms/TOZ34|TOZ34_BODY,
+        texture = weapons/firearms/shotguns/TOZ34,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5213 0.0180,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = -0.0022 -0.0949 -0.0136,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model TOZ34_Barrel_Close
+    {
+        mesh = weapons/firearms/TOZ34|TOZ34_BARREL_CLOSE,
+        texture = weapons/firearms/shotguns/TOZ34,
+    }
+    model TOZ34_Barrel_Open
+    {
+        mesh = weapons/firearms/TOZ34|TOZ34_BARREL_OPEN,
+        texture = weapons/firearms/shotguns/TOZ34,
+    }
+}

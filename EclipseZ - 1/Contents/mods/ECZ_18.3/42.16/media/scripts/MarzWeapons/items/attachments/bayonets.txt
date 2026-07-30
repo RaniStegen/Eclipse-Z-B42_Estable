@@ -1,0 +1,29 @@
+module MarzGuns
+{
+    item K98_Bayonet_Attachment
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BayonetKnife,
+        Icon            = K98_BAYONET,
+    }
+    
+    item M5_Bayonet_Attachment
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BayonetKnife,
+        Icon            = M5_BAYONET,
+    }
+    
+    item M9_Bayonet_Attachment
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BayonetKnife,
+        Icon            = M9_BAYONET,
+    }
+}

@@ -1,0 +1,35 @@
+module MarzGuns
+{
+    item 12GMagazine8_AA12
+    {
+        AmmoType         = marzguns:shell_12g_buckshot,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 12GMagazine8_AA12,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 8,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        StaticModel      = MarzGuns.12GMagazine8_AA12,
+        WorldStaticModel = MarzGuns.12GMagazine8_AA12,
+    }
+    item 12GMagazine20_AA12
+    {
+        AmmoType         = marzguns:shell_12g_buckshot,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 12GMagazine20_AA12,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.3,
+        WeightModifier   = 0.3,
+        StaticModel      = MarzGuns.12GMagazine20_AA12,
+        WorldStaticModel = MarzGuns.12GMagazine20_AA12,
+    }
+}

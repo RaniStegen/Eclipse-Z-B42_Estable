@@ -1,0 +1,145 @@
+module MarzGuns
+{
+    model M60
+    {
+        mesh = weapons/firearms/M60|M60_BODY,
+        texture = weapons/firearms/lmgs/M60,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5137 0.0394,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0431 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_1
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_3
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_4
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_5
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_6
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_7
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_8
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bullet_9
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M60_BOLT
+    {
+        mesh = weapons/firearms/M60|M60_BOLT,
+        texture = weapons/firearms/lmgs/M60,
+    }
+    model M60_BIPOD_FOLDED
+    {
+        mesh = weapons/firearms/M60|M60_BIPOD_FOLDED,
+        texture = weapons/firearms/lmgs/M60,
+    }
+    model M60_BIPOD_DEPLOYED
+    {
+        mesh = weapons/firearms/M60|M60_BIPOD_DEPLOYED,
+        texture = weapons/firearms/lmgs/M60,
+    }
+    model BAR
+    {
+        mesh = weapons/firearms/BAR|BAR_BODY,
+        texture = weapons/firearms/lmgs/BAR,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5337 0.0283,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1305 0.0050,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0402 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+    model BAR_BOLT
+    {
+        mesh = weapons/firearms/BAR|BAR_BOLT,
+        texture = weapons/firearms/lmgs/BAR,
+    }
+    model BAR_BIPOD_FOLDED
+    {
+        mesh = weapons/firearms/BAR|BAR_BIPOD_FOLDED,
+        texture = weapons/firearms/lmgs/BAR,
+    }
+    model BAR_BIPOD_DEPLOYED
+    {
+        mesh = weapons/firearms/BAR|BAR_BIPOD_DEPLOYED,
+        texture = weapons/firearms/lmgs/BAR,
+    }
+}

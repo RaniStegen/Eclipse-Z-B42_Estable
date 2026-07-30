@@ -1,0 +1,284 @@
+{
+  "Sandbox_MarzGunsWeapons": "Guns of Marz (Weapons)",
+  "Sandbox_MarzGunsAmmos": "Guns of Marz (Ammos)",
+  "Sandbox_MarzGunsTweaks": "Guns of Marz (Tweaks)",
+
+  "Sandbox_MarzGuns_Enable_M16A1": "Enable M16A1 (circa 1967 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M16A1_tooltip": "Enable M16A1 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M16A2": "Enable M16A2 (circa 1982 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M16A2_tooltip": "Enable M16A2 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M16A2_M203": "Enable M16A2 with M203 (circa 1982 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M16A2_M203_tooltip": "Enable M16A2 with M203 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M16A3": "Enable M16A3 (circa 1990 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M16A3_tooltip": "Enable M16A3 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_AR15": "Enable AR-15 (circa 1958 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_AR15_tooltip": "Enable AR-15 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_FNC": "Enable FN FNC (circa 1979 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_FNC_tooltip": "Enable FN FNC in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M4": "Enable M4 (circa 2012 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M4_tooltip": "Enable M4 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_G36C": "Enable G36C (circa 2001 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_G36C_tooltip": "Enable G36C in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_G36": "Enable G36 (circa 1990 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_G36_tooltip": "Enable G36 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_AK74": "Enable AK-74 (circa 1974 - 5.45x39mm)",
+  "Sandbox_MarzGuns_Enable_AK74_tooltip": "Enable AK-74 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_AKS74U": "Enable AKS-74U (circa 1979 - 5.45x39mm)",
+  "Sandbox_MarzGuns_Enable_AKS74U_tooltip": "Enable AKS-74U in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_ASVAL": "Enable AS VAL (circa 1985 - 9x39mm)",
+  "Sandbox_MarzGuns_Enable_ASVAL_tooltip": "Enable AS VAL in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_FAMAS": "Enable FAMAS (circa 1978 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_FAMAS_tooltip": "Enable FAMAS in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_CAR15": "Enable CAR-15 (circa 1964 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_CAR15_tooltip": "Enable CAR-15 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_XM177": "Enable XM177 (circa 1967 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_XM177_tooltip": "Enable XM177 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M4A1": "Enable M4A1 (circa 1994 - 5.56x45mm)",
+  "Sandbox_MarzGuns_Enable_M4A1_tooltip": "Enable M4A1 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_AK47": "Enable AK-47 (circa 1947 - 7.62x39mm)",
+  "Sandbox_MarzGuns_Enable_AK47_tooltip": "Enable AK-47 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M14": "Enable M14 (circa 1959 - 7.62x51mm)",
+  "Sandbox_MarzGuns_Enable_M14_tooltip": "Enable M14 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M1_GARAND": "Enable M1 Garand (circa 1936 - .30-06 Springfield)",
+  "Sandbox_MarzGuns_Enable_M1_GARAND_tooltip": "Enable M1 Garand in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_FAL": "Enable FN FAL (circa 1953 - 7.62x51mm)",
+  "Sandbox_MarzGuns_Enable_FAL_tooltip": "Enable FN FAL in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_G3": "Enable G3 (circa 1959 - 7.62x51mm)",
+  "Sandbox_MarzGuns_Enable_G3_tooltip": "Enable G3 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MOSIN": "Enable Mosin-Nagant (circa 1891 - 7.62x54mmR)",
+  "Sandbox_MarzGuns_Enable_MOSIN_tooltip": "Enable Mosin-Nagant in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M24": "Enable M24 (circa 1988 - 7.62x51mm)",
+  "Sandbox_MarzGuns_Enable_M24_tooltip": "Enable M24 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M1903": "Enable Springfield M1903 (circa 1903 - .30-06 Springfield)",
+  "Sandbox_MarzGuns_Enable_M1903_tooltip": "Enable Springfield M1903 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M79": "Enable M79 (circa 1961 - 40x46mm)",
+  "Sandbox_MarzGuns_Enable_M79_tooltip": "Enable M79 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_W1894": "Enable Winchester 1894 (circa 1894 - .30-30 Winchester)",
+  "Sandbox_MarzGuns_Enable_W1894_tooltip": "Enable Winchester 1894 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M1895": "Enable Marlin 1895 (circa 1895 - .45-70 Government)",
+  "Sandbox_MarzGuns_Enable_M1895_tooltip": "Enable Marlin 1895 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_W1887": "Enable Winchester 1887 (circa 1887 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_W1887_tooltip": "Enable Winchester 1887 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_W1873": "Enable Winchester 1873 (circa 1873 - .357)",
+  "Sandbox_MarzGuns_Enable_W1873_tooltip": "Enable Winchester 1873 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_W1873_CARBINE": "Enable Winchester 1873 Carbine (circa 1873 - .357)",
+  "Sandbox_MarzGuns_Enable_W1873_CARBINE_tooltip": "Enable Winchester 1873 Carbine in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M60": "Enable M60 (circa 1957 - 7.62x51mm NATO)",
+  "Sandbox_MarzGuns_Enable_M60_tooltip": "Enable M60 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_BAR": "Enable BAR (circa 1918 - .30-06 Springfield)",
+  "Sandbox_MarzGuns_Enable_BAR_tooltip": "Enable Browning Automatic Rifle in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M92FS": "Enable Beretta M92FS (circa 1976 - 9x19mm Parabellum)",
+  "Sandbox_MarzGuns_Enable_M92FS_tooltip": "Enable Beretta M92FS in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_P226": "Enable Beretta P226 (circa 1975 - 9x19mm Parabellum)",
+  "Sandbox_MarzGuns_Enable_P226_tooltip": "Enable Beretta P226 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M93R": "Enable Beretta M93R (circa 1979 - 9x19mm Parabellum)",
+  "Sandbox_MarzGuns_Enable_M93R_tooltip": "Enable Beretta M93R in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_HIPOWER": "Enable Browning Hi-Power (circa 1935 - 9x19mm Parabellum)",
+  "Sandbox_MarzGuns_Enable_HIPOWER_tooltip": "Enable Browning Hi-Power in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_M1911": "Enable Colt M1911 (circa 1911 - .45 ACP)",
+  "Sandbox_MarzGuns_Enable_M1911_tooltip": "Enable Colt M1911 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_USP": "Enable Heckler & Koch USP (circa 1980 - .45 ACP)",
+  "Sandbox_MarzGuns_Enable_USP_tooltip": "Enable Heckler & Koch USP in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_DEAGLE": "Enable Desert Eagle (circa 1982 - .50 AE)",
+  "Sandbox_MarzGuns_Enable_DEAGLE_tooltip": "Enable Desert Eagle in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_SW629": "Enable Smith & Wesson Model 629 (circa 1955 - .44 Magnum)",
+  "Sandbox_MarzGuns_Enable_SW629_tooltip": "Enable Smith & Wesson Model 629 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_PYTHON": "Enable Colt Python (circa 1955 - .357 Magnum)",
+  "Sandbox_MarzGuns_Enable_PYTHON_tooltip": "Enable Colt Python in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_RHINO": "Enable Rhino Revolver (circa 2002 - .357 Magnum)",
+  "Sandbox_MarzGuns_Enable_RHINO_tooltip": "Enable Rhino Revolver in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MP412": "Enable MP-412 (circa 1990 - .357 Magnum)",
+  "Sandbox_MarzGuns_Enable_MP412_tooltip": "Enable MP-412 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_COLT_SINGLE": "Enable Colt Single Action (19th Century - .45 Colt)",
+  "Sandbox_MarzGuns_Enable_COLT_SINGLE_tooltip": "Enable Colt Single Action in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_DETECTIVE_38": "Enable Detective 38 Revolver (circa 1990 - .38 Special)",
+  "Sandbox_MarzGuns_Enable_DETECTIVE_38_tooltip": "Enable Detective 38 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_SVD": "Enable SVD (circa 1963 - 7.62x54mmR)",
+  "Sandbox_MarzGuns_Enable_SVD_tooltip": "Enable SVD in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_SKS": "Enable SKS (circa 1945 - 7.62x39mm)",
+  "Sandbox_MarzGuns_Enable_SKS_tooltip": "Enable SKS in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_PSG1": "Enable PSG-1 (circa 1978 - 7.62x51mm NATO)",
+  "Sandbox_MarzGuns_Enable_PSG1_tooltip": "Enable PSG-1 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MOSSBERG_590": "Enable Mossberg 590 (circa 1983 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_MOSSBERG_590_tooltip": "Enable Mossberg 590 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_TRENCHGUN": "Enable Trench Shotgun (circa 1918 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_TRENCHGUN_tooltip": "Enable Trench Shotgun in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_BENELLI_M4": "Enable Benelli M4 (circa 1998 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_BENELLI_M4_tooltip": "Enable Benelli M4 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_SPAS12": "Enable SPAS-12 (circa 1979 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_SPAS12_tooltip": "Enable SPAS-12 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_STEVENS_555": "Enable Stevens 555 (circa 1970 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_STEVENS_555_tooltip": "Enable Stevens 555 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_DOUBLEBARREL": "Enable Double Barrel Shotgun (circa 19th Century - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_DOUBLEBARREL_tooltip": "Enable Double Barrel Shotgun in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_AA12": "Enable AA-12 (circa 1972 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_AA12_tooltip": "Enable AA-12 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_REMINGTON_870": "Enable Remington 870 (circa 1950 - 12 Gauge)",
+  "Sandbox_MarzGuns_Enable_REMINGTON_870_tooltip": "Enable Remington 870 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_THOMPSON": "Enable Thompson (circa 1928 - .45 ACP)",
+  "Sandbox_MarzGuns_Enable_THOMPSON_tooltip": "Enable Thompson in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MP5": "Enable MP5 (circa 1966 - 9x19mm)",
+  "Sandbox_MarzGuns_Enable_MP5_tooltip": "Enable MP5 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MP5A2": "Enable MP5A2 (circa 1966 - 9x19mm) ",
+  "Sandbox_MarzGuns_Enable_MP5A2_tooltip": "Enable MP5A2 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MP5SD": "Enable MP5SD (circa 1970 - 9x19mm)",
+  "Sandbox_MarzGuns_Enable_MP5SD_tooltip": "Enable MP5SD in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MP5K": "Enable MP5K (circa 1976 - 9x19mm)",
+  "Sandbox_MarzGuns_Enable_MP5K_tooltip": "Enable MP5K in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_TEC9": "Enable TEC-9 (circa 1980 - 9x19mm)",
+  "Sandbox_MarzGuns_Enable_TEC9_tooltip": "Enable TEC-9 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_MAC10": "Enable MAC-10 (circa 1970 - .45 ACP)",
+  "Sandbox_MarzGuns_Enable_MAC10_tooltip": "Enable MAC-10 in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_9x19": "Enable 9x19mm",
+  "Sandbox_MarzGuns_Enable_9x19_tooltip": "Enable 9x19mm ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_38": "Enable .38 Special",
+  "Sandbox_MarzGuns_Enable_38_tooltip": "Enable .38 Special ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_45": "Enable .45 ACP",
+  "Sandbox_MarzGuns_Enable_45_tooltip": "Enable .45 ACP ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_357": "Enable .357 Magnum",
+  "Sandbox_MarzGuns_Enable_357_tooltip": "Enable .357 Magnum ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_44": "Enable .44 Magnum",
+  "Sandbox_MarzGuns_Enable_44_tooltip": "Enable .44 Magnum ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_308": "Enable .308 Winchester",
+  "Sandbox_MarzGuns_Enable_308_tooltip": "Enable .308 Winchester ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_762x51": "Enable 7.62x51mm NATO",
+  "Sandbox_MarzGuns_Enable_762x51_tooltip": "Enable 7.62x51mm NATO ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_223": "Enable .223 Remington",
+  "Sandbox_MarzGuns_Enable_223_tooltip": "Enable .223 Remington ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_556x45": "Enable 5.56x45mm NATO",
+  "Sandbox_MarzGuns_Enable_556x45_tooltip": "Enable 5.56x45mm NATO ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_556x45_HollowPoint": "Enable 5.56x45mm Hollow Point",
+  "Sandbox_MarzGuns_Enable_556x45_HollowPoint_tooltip": "Enable 5.56x45mm Hollow Point ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_556x45_ArmorPiercing": "Enable 5.56x45mm Armor Piercing",
+  "Sandbox_MarzGuns_Enable_556x45_ArmorPiercing_tooltip": "Enable 5.56x45mm Armor Piercing ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_556x45_Subsonic": "Enable 5.56x45mm Subsonic",
+  "Sandbox_MarzGuns_Enable_556x45_Subsonic_tooltip": "Enable 5.56x45mm Subsonic ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_556x45_Overpressured": "Enable 5.56x45mm Overpressured",
+  "Sandbox_MarzGuns_Enable_556x45_Overpressured_tooltip": "Enable 5.56x45mm Overpressured ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_3030": "Enable .30-30 Winchester",
+  "Sandbox_MarzGuns_Enable_3030_tooltip": "Enable .30-30 Winchester ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_12Gauge_Buckshot": "Enable 12 Gauge Buckshot",
+  "Sandbox_MarzGuns_Enable_12Gauge_Buckshot_tooltip": "Enable 12 Gauge Buckshot ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_12Gauge_Slug": "Enable 12 Gauge Slug",
+  "Sandbox_MarzGuns_Enable_12Gauge_Slug_tooltip": "Enable 12 Gauge Slug ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_40mm_Buckshot": "Enable 40mm Buckshot",
+  "Sandbox_MarzGuns_Enable_40mm_Buckshot_tooltip": "Enable 40mm Buckshot ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_40mm_HE": "Enable 40mm HE",
+  "Sandbox_MarzGuns_Enable_40mm_HE_tooltip": "Enable 40mm HE ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_40mm_Incendiary": "Enable 40mm Incendiary",
+  "Sandbox_MarzGuns_Enable_40mm_Incendiary_tooltip": "Enable 40mm Incendiary ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_50": "Enable .50 AE",
+  "Sandbox_MarzGuns_Enable_50_tooltip": "Enable .50 AE ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_4570": "Enable .45-70 Government",
+  "Sandbox_MarzGuns_Enable_4570_tooltip": "Enable .45-70 Government ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_762x39": "Enable 7.62x39mm",
+  "Sandbox_MarzGuns_Enable_762x39_tooltip": "Enable 7.62x39mm ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_9x39": "Enable 9x39mm",
+  "Sandbox_MarzGuns_Enable_9x39_tooltip": "Enable 9x39mm ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_545x39": "Enable 5.45x39mm",
+  "Sandbox_MarzGuns_Enable_545x39_tooltip": "Enable 5.45x39mm ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_762x54": "Enable 7.62x54mmR",
+  "Sandbox_MarzGuns_Enable_762x54_tooltip": "Enable 7.62x54mmR ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_3006": "Enable .30-06 Springfield",
+  "Sandbox_MarzGuns_Enable_3006_tooltip": "Enable .30-06 Springfield ammo in spawn loot.",
+
+  "Sandbox_MarzGuns_Enable_Explosives": "Enable Explosives",
+  "Sandbox_MarzGuns_Enable_Explosives_tooltip": "Enable Explosives in spawn loot. This controls all type of explosives",
+
+  "Sandbox_MarzGuns_Enable_VanillaWeaponReplacement": "Enable Vanilla Weapon Replacement",
+  "Sandbox_MarzGuns_Enable_VanillaWeaponReplacement_tooltip": "Enable Vanilla Weapon Replacement with GoM counterpart.",
+
+  "Sandbox_MarzGuns_Enable_VanillaAmmoReplacement": "Enable Vanilla Ammo Replacement",
+  "Sandbox_MarzGuns_Enable_VanillaAmmoReplacement_tooltip": "Enable Vanilla Ammo Replacement with GoM counterpart.",
+
+  "Sandbox_MarzGuns_Enable_TacticalReload": "Enable Tactical Reload",
+  "Sandbox_MarzGuns_Enable_TacticalReload_tooltip": "Enable Tactical Reload feature. (Do not enable in MP, currently only supports SP)"
+}

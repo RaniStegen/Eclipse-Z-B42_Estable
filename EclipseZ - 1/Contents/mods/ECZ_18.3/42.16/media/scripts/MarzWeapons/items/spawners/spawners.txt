@@ -1,0 +1,9 @@
+// coming soon
+// module MarzGuns
+// {
+//     item AssaultRifle_AR15_Spawner
+//     {
+//         ItemType = base:weapon,
+//         OnCreate = MarzGuns_OnCreate.SelectWeapon,
+//     }
+// }

@@ -1,0 +1,386 @@
+module MarzGuns
+{
+    item FNC_Integrated_Bipod_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+    }
+    
+    item FNC_Integrated_Bipod_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+        Weight          = 0.5,
+        WeightModifier  = 0.5,
+    }
+    
+    item M60_Integrated_Bipod_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+    }
+    
+    item M60_Integrated_Bipod_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+        Weight          = 0.7,
+        WeightModifier  = 0.7,
+    }
+    
+    item BAR_Integrated_Bipod_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+    }
+    
+    item BAR_Integrated_Bipod_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+        Weight          = 0.7,
+        WeightModifier  = 0.7,
+    }
+    
+    item M24_Integrated_Bipod_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+    }
+    
+    item M24_Integrated_Bipod_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+        Weight          = 0.7,
+        WeightModifier  = 0.7,
+    }
+    
+    item AKS74U_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item AKS74U_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item ASVAL_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item ASVAL_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item G36C_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item G36C_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item G36_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item G36_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item G36C_Integrated_Rail_Up
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailUp,
+    }
+    
+    item G36C_Integrated_Rail_Down
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailDown,
+    }
+    
+    item M4_Integrated_Rail_Up
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailUp,
+    }
+    
+    item M4_Integrated_Rail_Down
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailDown,
+    }
+    
+    item M4_Integrated_Rail_Left
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailLeft,
+    }
+    
+    item M4_Integrated_Rail_Right
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = RailRight,
+    }
+    
+    item SPAS12_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item SPAS12_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item SKS_Bayonet_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BayonetIntegrated,
+    }
+    
+    item SKS_Bayonet_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BayonetIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item CAR15_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item CAR15_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item XM177_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item XM177_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item M4A1_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item M4A1_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item FNC_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item FNC_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item MP5_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item MP5_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item MP5SD_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item MP5SD_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item MAC10_Integrated_Stock_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+    }
+    
+    item MAC10_Integrated_Stock_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = StockIntegrated,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    item M16A2_M203_Integrated
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Underbarrel,
+        Weight          = 0.2,
+        WeightModifier  = 0.2,
+    }
+    
+    /*** LEAVING FOR COMPATIBILITY DELETING AT LATER DATA ***/
+    
+    item FNC_Integrated_Bipod_Folded
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+    }
+    
+    item FNC_Integrated_Bipod_Deployed
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = BipodIntegrated,
+        Weight          = 0.5,
+        WeightModifier  = 0.5,
+    }
+}

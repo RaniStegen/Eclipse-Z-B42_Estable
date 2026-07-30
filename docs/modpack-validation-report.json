@@ -1,9 +1,9 @@
 {
   "target": "Project Zomboid 42.20.0",
-  "mod_roots": 75,
-  "active_manifests": 75,
-  "active_ids": 75,
-  "server_mods": 75,
+  "mod_roots": 78,
+  "active_manifests": 78,
+  "active_ids": 78,
+  "server_mods": 78,
   "repository_workshop_items": [
     "3749385199",
     "3749386608",
@@ -16,8 +16,8 @@
     "3774204188",
     "3756312384"
   ],
-  "server_map": "",
-  "json_files": 1200,
+  "server_map": "Cathaya Valley2.0;Muldraugh, KY",
+  "json_files": 1217,
   "invalid_json": 0,
   "obsolete_version_layers": 0,
   "development_artifacts": 0,
@@ -107,7 +107,7 @@
     {
       "id": "ECZ_18.1",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_18.1",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.1\\42.16\\mod.info",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.1\\42.15\\mod.info",
       "requires": [],
       "packs": [],
       "tiledefs": []
@@ -115,8 +115,29 @@
     {
       "id": "ECZ_18.2",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_18.2",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.2\\42\\mod.info",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.2\\42.13\\mod.info",
       "requires": [],
+      "packs": [],
+      "tiledefs": []
+    },
+    {
+      "id": "ECZ_18.3",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_18.3",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.3\\42.16\\mod.info",
+      "requires": [
+        "ECZ_18.1",
+        "ECZ_18.2"
+      ],
+      "packs": [],
+      "tiledefs": []
+    },
+    {
+      "id": "ECZ_18.4",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_18.4",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_18.4\\42\\mod.info",
+      "requires": [
+        "ECZ_18.2"
+      ],
       "packs": [],
       "tiledefs": []
     },
@@ -240,6 +261,14 @@
       "tiledefs": []
     },
     {
+      "id": "ECZ_27",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_27",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_27\\42.0\\mod.info",
+      "requires": [],
+      "packs": [],
+      "tiledefs": []
+    },
+    {
       "id": "ECZ_3",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_3",
       "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_3\\42\\mod.info",
@@ -301,20 +330,18 @@
       "tiledefs": []
     },
     {
-      "id": "ECZ_7.2",
-      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_7.2",
-      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_7.2\\42\\mod.info",
-      "requires": [],
-      "packs": [],
-      "tiledefs": []
-    },
-    {
       "id": "ECZ_8",
       "root": "EclipseZ - 1\\Contents\\mods\\ECZ_8",
       "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_8\\42\\mod.info",
-      "requires": [],
-      "packs": [],
-      "tiledefs": []
+      "requires": [
+        "ECZ_T7"
+      ],
+      "packs": [
+        "cathaya"
+      ],
+      "tiledefs": [
+        "cathaya"
+      ]
     },
     {
       "id": "ECZ_9",
@@ -407,6 +434,28 @@
       ],
       "tiledefs": [
         "Roccos_TilesDef"
+      ]
+    },
+    {
+      "id": "ECZ_T7",
+      "root": "EclipseZ - 1\\Contents\\mods\\ECZ_T7",
+      "manifest": "EclipseZ - 1\\Contents\\mods\\ECZ_T7\\42\\mod.info",
+      "requires": [],
+      "packs": [
+        "DTilesPack",
+        "blackwood",
+        "ekron",
+        "tkTiles_01",
+        "diederiks_tile_palooza",
+        "fearstiles"
+      ],
+      "tiledefs": [
+        "dylanstiles",
+        "blackwood",
+        "ekron",
+        "tkTiles_01",
+        "diederikv_tile_def",
+        "fearstiledefinitions01"
       ]
     },
     {

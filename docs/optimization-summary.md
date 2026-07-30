@@ -6,10 +6,10 @@ fusionado scripts, configuraciones ni espacios de nombres.
 ## Resultado
 
 - Objetivo de ejecución: Project Zomboid 42.20.0.
-- 22.052 archivos no activos retirados de forma neta.
-- 4.757.240.387 bytes (4,431 GiB) eliminados del contenido de ejecución.
-- Se conservan exactamente las 75 IDs indicadas en la configuración canónica.
-- Los tiles se mantienen exclusivamente en `ECZ_T1` a `ECZ_T6`.
+- 21.392 archivos no activos retirados de forma neta.
+- 4.754.131.197 bytes (4,428 GiB) eliminados del contenido de ejecución.
+- Se conservan exactamente las 78 IDs indicadas en la configuración canónica.
+- Los tiles se mantienen exclusivamente en `ECZ_T1` a `ECZ_T7`.
 - `ECZ_8.2` se renombra como `ECZ_T1`; `ECZ_8.3`, `ECZ_8.4` y `ECZ_8.5`
   se retiran porque sus recursos ya están conservados en `ECZ_T3`, `ECZ_T2`
   y `ECZ_T4`, respectivamente.
@@ -25,6 +25,9 @@ fusionado scripts, configuraciones ni espacios de nombres.
 5. Se normalizan IDs y dependencias de manifiestos sin alterar el contenido
    funcional propio de cada mod.
 6. Las definiciones de tiles incompatibles se adaptan a los límites de 42.20.
+7. `ECZ_7.2` se retira porque era una versión anterior del mismo
+   Black Powder Gunsmithing que ahora se conserva actualizado como
+   `ECZ_18.4`; mantener ambos impedía el arranque por registros duplicados.
 
 Los detalles verificables quedan en
 `docs/optimization-prune-report.json` y

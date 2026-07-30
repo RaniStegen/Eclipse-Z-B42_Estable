@@ -1,0 +1,392 @@
+module MarzGuns
+{
+    fixing Fix M92FS
+    {
+        Require = MarzGuns.M92FS,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M93R
+    {
+        Require = MarzGuns.M93R,
+        Fixer = MarzGuns.RepairPack; Aiming=4,
+    }
+    
+    fixing Fix HIPOWER
+    {
+        Require = MarzGuns.HIPOWER,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M1911
+    {
+        Require = MarzGuns.M1911,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix USP
+    {
+        Require = MarzGuns.USP,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix DEAGLE
+    {
+        Require = MarzGuns.DEAGLE,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix P226
+    {
+        Require = MarzGuns.P226,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix VP70M
+    {
+        Require = MarzGuns.VP70M,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix SW629
+    {
+        Require = MarzGuns.SW629,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix PYTHON
+    {
+        Require = MarzGuns.PYTHON,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix RHINO
+    {
+        Require = MarzGuns.RHINO,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MP412
+    {
+        Require = MarzGuns.MP412,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix COLT_SINGLE
+    {
+        Require = MarzGuns.COLT_SINGLE,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix DETECTIVE_38
+    {
+        Require = MarzGuns.DETECTIVE_38,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix THOMPSON
+    {
+        Require = MarzGuns.THOMPSON,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MP5
+    {
+        Require = MarzGuns.MP5,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MP5K
+    {
+        Require = MarzGuns.MP5K,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MP5SD
+    {
+        Require = MarzGuns.MP5SD,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MP5A2
+    {
+        Require = MarzGuns.MP5A2,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix TEC9
+    {
+        Require = MarzGuns.TEC9,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MAC10
+    {
+        Require = MarzGuns.MAC10,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MOSSBERG_590
+    {
+        Require = MarzGuns.MOSSBERG_590,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix TRENCHGUN
+    {
+        Require = MarzGuns.TRENCHGUN,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix BENELLI_M4
+    {
+        Require = MarzGuns.BENELLI_M4,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix SPAS12
+    {
+        Require = MarzGuns.SPAS12,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix STEVENS_555
+    {
+        Require = MarzGuns.STEVENS_555,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix DOUBLEBARREL
+    {
+        Require = MarzGuns.DOUBLEBARREL,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix AA12
+    {
+        Require = MarzGuns.AA12,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix REMINGTON_870
+    {
+        Require = MarzGuns.REMINGTON_870,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix TOZ34
+    {
+        Require = MarzGuns.TOZ34,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M16A1
+    {
+        Require = MarzGuns.M16A1,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M16A2
+    {
+        Require = MarzGuns.M16A2,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M16A2_M203
+    {
+        Require = MarzGuns.M16A2_M203,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M16A3
+    {
+        Require = MarzGuns.M16A3,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix AR15
+    {
+        Require = MarzGuns.AR15,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix FNC
+    {
+        Require = MarzGuns.FNC,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M4
+    {
+        Require = MarzGuns.M4,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix G36
+    {
+        Require = MarzGuns.G36,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix AK74
+    {
+        Require = MarzGuns.AK74,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix AKS74U
+    {
+        Require = MarzGuns.AKS74U,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix ASVAL
+    {
+        Require = MarzGuns.ASVAL,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix CAR15
+    {
+        Require = MarzGuns.CAR15,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix XM177
+    {
+        Require = MarzGuns.XM177,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M4A1
+    {
+        Require = MarzGuns.M4A1,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix G36C
+    {
+        Require = MarzGuns.G36C,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix FAMAS
+    {
+        Require = MarzGuns.FAMAS,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix AK47
+    {
+        Require = MarzGuns.AK47,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M14
+    {
+        Require = MarzGuns.M14,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M1_GARAND
+    {
+        Require = MarzGuns.M1_GARAND,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix FAL
+    {
+        Require = MarzGuns.FAL,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix G3
+    {
+        Require = MarzGuns.G3,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix MOSIN
+    {
+        Require = MarzGuns.MOSIN,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M24
+    {
+        Require = MarzGuns.M24,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M1903
+    {
+        Require = MarzGuns.M1903,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix SVD
+    {
+        Require = MarzGuns.SVD,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix SKS
+    {
+        Require = MarzGuns.SKS,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix PSG1
+    {
+        Require = MarzGuns.PSG1,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M79
+    {
+        Require = MarzGuns.M79,
+        Fixer = MarzGuns.RepairPack; Aiming=9,
+    }
+    
+    fixing Fix W1894
+    {
+        Require = MarzGuns.W1894,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M1895
+    {
+        Require = MarzGuns.M1895,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix W1887
+    {
+        Require = MarzGuns.W1887,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix W1873
+    {
+        Require = MarzGuns.W1873,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix W1873_CARBINE
+    {
+        Require = MarzGuns.W1873_CARBINE,
+        Fixer = MarzGuns.RepairPack; Aiming=3,
+    }
+    
+    fixing Fix M60
+    {
+        Require = MarzGuns.M60,
+        Fixer = MarzGuns.RepairPack; Aiming=6,
+    }
+    
+    fixing Fix BAR
+    {
+        Require = MarzGuns.BAR,
+        Fixer = MarzGuns.RepairPack; Aiming=6,
+    }
+}

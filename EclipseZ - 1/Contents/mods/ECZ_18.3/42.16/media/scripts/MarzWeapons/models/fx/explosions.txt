@@ -1,0 +1,9 @@
+module MarzGuns
+{
+    model explosion_0
+    {
+        mesh = fx/explosions|explosion_0,
+        texture = fx/explosions/explosion_2,
+        scale = 4,
+    }
+}

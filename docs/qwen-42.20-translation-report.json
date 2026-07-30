@@ -1,7 +1,7 @@
 {
   "model": "qwen3.5:latest",
-  "translated": 47,
+  "translated": 87,
   "failed": 0,
   "failed_entries": [],
-  "seconds": 29.6
+  "seconds": 143.4
 }

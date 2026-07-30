@@ -1,0 +1,396 @@
+module Base
+{
+    craftRecipe OpenBoxOf50Bullets
+    {
+        timedAction = OpenAmmoBox,
+        time        = 15,
+        category    = Packing,
+        recipeGroup = OpenBox,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammobox50] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.9x19_Bullet                 = MarzGuns.9x19_Box,
+            MarzGuns.45_Bullet                   = MarzGuns.45_Box,
+            MarzGuns.38_Bullet                   = MarzGuns.38_Box,
+            MarzGuns.44_Bullet                   = MarzGuns.44_Box,
+            MarzGuns.357_Bullet                  = MarzGuns.357_Box,
+            MarzGuns.223_Bullet                  = MarzGuns.223_Box,
+            MarzGuns.556x45_Bullet               = MarzGuns.556x45_Box,
+            MarzGuns.556x45_Bullet_HollowPoint   = MarzGuns.556x45_Box_HollowPoint,
+            MarzGuns.556x45_Bullet_ArmorPiercing = MarzGuns.556x45_Box_ArmorPiercing,
+            MarzGuns.556x45_Bullet_Subsonic      = MarzGuns.556x45_Box_Subsonic,
+            MarzGuns.556x45_Bullet_Overpressured = MarzGuns.556x45_Box_Overpressured,
+            MarzGuns.762x39_Bullet               = MarzGuns.762x39_Box,
+            MarzGuns.545x39_Bullet               = MarzGuns.545x39_Box,
+        }
+    }
+    
+    craftRecipe OpenBoxOf20Bullets
+    {
+        timedAction = OpenAmmoBox,
+        time        = 15,
+        category    = Packing,
+        recipeGroup = OpenBox,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammobox20] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.44_Bullet     = MarzGuns.44_Box,
+            MarzGuns.50_Bullet     = MarzGuns.50_Box,
+            MarzGuns.762x51_Bullet = MarzGuns.762x51_Box,
+            MarzGuns.308_Bullet    = MarzGuns.308_Box,
+            MarzGuns.3030_Bullet   = MarzGuns.3030_Box,
+            MarzGuns.4570_Bullet   = MarzGuns.4570_Box,
+            MarzGuns.9x39_Bullet   = MarzGuns.9x39_Box,
+            MarzGuns.3006_Bullet   = MarzGuns.3006_Box,
+            MarzGuns.762x54_Bullet = MarzGuns.762x54_Box,
+        }
+    }
+    
+    craftRecipe OpenBoxOf25Bullets
+    {
+        timedAction = OpenShellsBox,
+        time        = 15,
+        category    = Packing,
+        recipeGroup = OpenBox,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammobox25] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Shell_Buckshot = MarzGuns.12Gauge_Box_Buckshot,
+            MarzGuns.12Gauge_Shell_Slug     = MarzGuns.12Gauge_Box_Slug,
+        }
+    }
+    
+    craftRecipe OpenBoxOf10Bullets
+    {
+        timedAction = OpenAmmoBox,
+        time        = 15,
+        category    = Packing,
+        recipeGroup = OpenBox,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammobox10] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.40mm_Round_Buckshot   = MarzGuns.40mm_Box_Buckshot,
+            MarzGuns.40mm_Round_HE         = MarzGuns.40mm_Box_HE,
+            MarzGuns.40mm_Round_Incendiary = MarzGuns.40mm_Box_Incendiary,
+        }
+    }
+    
+    craftRecipe place50BulletsInBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time        = 15,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 50 tags[marzguns:ammo50] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.9x19_Box                 = MarzGuns.9x19_Bullet,
+            MarzGuns.45_Box                   = MarzGuns.45_Bullet,
+            MarzGuns.38_Box                   = MarzGuns.38_Bullet,
+            MarzGuns.44_Box                   = MarzGuns.44_Bullet,
+            MarzGuns.357_Box                  = MarzGuns.357_Bullet,
+            MarzGuns.223_Box                  = MarzGuns.223_Bullet,
+            MarzGuns.556x45_Box               = MarzGuns.556x45_Bullet,
+            MarzGuns.556x45_Box_HollowPoint   = MarzGuns.556x45_Bullet_HollowPoint,
+            MarzGuns.556x45_Box_ArmorPiercing = MarzGuns.556x45_Bullet_ArmorPiercing,
+            MarzGuns.556x45_Box_Subsonic      = MarzGuns.556x45_Bullet_Subsonic,
+            MarzGuns.556x45_Box_Overpressured = MarzGuns.556x45_Bullet_Overpressured,
+            MarzGuns.762x39_Box               = MarzGuns.762x39_Bullet,
+            MarzGuns.545x39_Box               = MarzGuns.545x39_Bullet,
+        }
+    }
+    
+    craftRecipe place20BulletsInBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time        = 15,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 20 tags[marzguns:ammo20] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.44_Box     = MarzGuns.44_Bullet,
+            MarzGuns.50_Box     = MarzGuns.50_Bullet,
+            MarzGuns.762x51_Box = MarzGuns.762x51_Bullet,
+            MarzGuns.308_Box    = MarzGuns.308_Bullet,
+            MarzGuns.3030_Box   = MarzGuns.3030_Bullet,
+            MarzGuns.4570_Box   = MarzGuns.4570_Bullet,
+            MarzGuns.9x39_Box   = MarzGuns.9x39_Bullet,
+            MarzGuns.3006_Box   = MarzGuns.3006_Bullet,
+            MarzGuns.762x54_Box = MarzGuns.762x54_Bullet,
+        }
+    }
+    
+    craftRecipe place25BulletsInBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time        = 15,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 25 tags[marzguns:ammo25] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Box_Buckshot = MarzGuns.12Gauge_Shell_Buckshot,
+            MarzGuns.12Gauge_Box_Slug     = MarzGuns.12Gauge_Shell_Slug,
+        }
+    }
+    
+    craftRecipe place10BulletsInBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time        = 15,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 10 tags[marzguns:ammo10] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.40mm_Box_Buckshot   = MarzGuns.40mm_Round_Buckshot,
+            MarzGuns.40mm_Box_HE         = MarzGuns.40mm_Round_HE,
+            MarzGuns.40mm_Box_Incendiary = MarzGuns.40mm_Round_Incendiary,
+        }
+    }
+    
+    craftRecipe OpenCartonOfBoxesOfAmmo
+    {
+        timedAction = UnPackBox,
+        time        = 50,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammocarton] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 12 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Box_Buckshot     = MarzGuns.12Gauge_Carton_Buckshot,
+            MarzGuns.12Gauge_Box_Slug         = MarzGuns.12Gauge_Carton_Slug,
+            MarzGuns.9x19_Box                 = MarzGuns.9x19_Carton,
+            MarzGuns.45_Box                   = MarzGuns.45_Carton,
+            MarzGuns.38_Box                   = MarzGuns.38_Carton,
+            MarzGuns.44_Box                   = MarzGuns.44_Carton,
+            MarzGuns.50_Box                   = MarzGuns.50_Carton,
+            MarzGuns.762x51_Box               = MarzGuns.762x51_Carton,
+            MarzGuns.308_Box                  = MarzGuns.308_Carton,
+            MarzGuns.762x54_Box               = MarzGuns.762x54_Carton,
+            MarzGuns.556x45_Box               = MarzGuns.556x45_Carton,
+            MarzGuns.556x45_Box_HollowPoint   = MarzGuns.556x45_Carton_HollowPoint,
+            MarzGuns.556x45_Box_ArmorPiercing = MarzGuns.556x45_Carton_ArmorPiercing,
+            MarzGuns.556x45_Box_Subsonic      = MarzGuns.556x45_Carton_Subsonic,
+            MarzGuns.556x45_Box_Overpressured = MarzGuns.556x45_Carton_Overpressured,
+            MarzGuns.223_Box                  = MarzGuns.223_Carton,
+            MarzGuns.545x39_Box               = MarzGuns.545x39_Carton,
+            MarzGuns.762x39_Box               = MarzGuns.762x39_Carton,
+            MarzGuns.9x39_Box                 = MarzGuns.9x39_Carton,
+            MarzGuns.3006_Box                 = MarzGuns.3006_Carton,
+            MarzGuns.3030_Box                 = MarzGuns.3030_Carton,
+            MarzGuns.357_Box                  = MarzGuns.357_Carton,
+            MarzGuns.4570_Box                 = MarzGuns.4570_Carton,
+        }
+    }
+    
+    craftRecipe PlaceBoxesOfAmmoInCarton
+    {
+        timedAction = PackingBox,
+        time        = 50,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 12 tags[marzguns:ammobox] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Carton_Buckshot     = MarzGuns.12Gauge_Box_Buckshot,
+            MarzGuns.12Gauge_Carton_Slug         = MarzGuns.12Gauge_Box_Slug,
+            MarzGuns.9x19_Carton                 = MarzGuns.9x19_Box,
+            MarzGuns.45_Carton                   = MarzGuns.45_Box,
+            MarzGuns.38_Carton                   = MarzGuns.38_Box,
+            MarzGuns.44_Carton                   = MarzGuns.44_Box,
+            MarzGuns.50_Carton                   = MarzGuns.50_Box,
+            MarzGuns.762x51_Carton               = MarzGuns.762x51_Box,
+            MarzGuns.308_Carton                  = MarzGuns.308_Box,
+            MarzGuns.762x54_Carton               = MarzGuns.762x54_Box,
+            MarzGuns.556x45_Carton               = MarzGuns.556x45_Box,
+            MarzGuns.556x45_Carton_HollowPoint   = MarzGuns.556x45_Box_HollowPoint,
+            MarzGuns.556x45_Carton_ArmorPiercing = MarzGuns.556x45_Box_ArmorPiercing,
+            MarzGuns.556x45_Carton_Subsonic      = MarzGuns.556x45_Box_Subsonic,
+            MarzGuns.556x45_Carton_Overpressured = MarzGuns.556x45_Box_Overpressured,
+            MarzGuns.223_Carton                  = MarzGuns.223_Box,
+            MarzGuns.545x39_Carton               = MarzGuns.545x39_Box,
+            MarzGuns.762x39_Carton               = MarzGuns.762x39_Box,
+            MarzGuns.9x39_Carton                 = MarzGuns.9x39_Box,
+            MarzGuns.3006_Carton                 = MarzGuns.3006_Box,
+            MarzGuns.3030_Carton                 = MarzGuns.3030_Box,
+            MarzGuns.357_Carton                  = MarzGuns.357_Box,
+            MarzGuns.4570_Carton                 = MarzGuns.4570_Box,
+        }
+    }
+    
+    craftRecipe OpenCrateOfBoxesOfAmmo
+    {
+        timedAction = UnPackBox,
+        time        = 100,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[marzguns:ammocrate] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Carton_Buckshot     = MarzGuns.12Gauge_Crate_Buckshot,
+            MarzGuns.12Gauge_Carton_Slug         = MarzGuns.12Gauge_Crate_Slug,
+            MarzGuns.9x19_Carton                 = MarzGuns.9x19_Crate,
+            MarzGuns.45_Carton                   = MarzGuns.45_Crate,
+            MarzGuns.38_Carton                   = MarzGuns.38_Crate,
+            MarzGuns.44_Carton                   = MarzGuns.44_Crate,
+            MarzGuns.50_Carton                   = MarzGuns.50_Crate,
+            MarzGuns.762x51_Carton               = MarzGuns.762x51_Crate,
+            MarzGuns.308_Carton                  = MarzGuns.308_Crate,
+            MarzGuns.762x54_Carton               = MarzGuns.762x54_Crate,
+            MarzGuns.556x45_Carton               = MarzGuns.556x45_Crate,
+            MarzGuns.556x45_Carton_HollowPoint   = MarzGuns.556x45_Crate_HollowPoint,
+            MarzGuns.556x45_Carton_ArmorPiercing = MarzGuns.556x45_Crate_ArmorPiercing,
+            MarzGuns.556x45_Carton_Subsonic      = MarzGuns.556x45_Crate_Subsonic,
+            MarzGuns.556x45_Carton_Overpressured = MarzGuns.556x45_Crate_Overpressured,
+            MarzGuns.223_Carton                  = MarzGuns.223_Crate,
+            MarzGuns.545x39_Carton               = MarzGuns.545x39_Crate,
+            MarzGuns.762x39_Carton               = MarzGuns.762x39_Crate,
+            MarzGuns.9x39_Carton                 = MarzGuns.9x39_Crate,
+            MarzGuns.3006_Carton                 = MarzGuns.3006_Crate,
+            MarzGuns.3030_Carton                 = MarzGuns.3030_Crate,
+            MarzGuns.357_Carton                  = MarzGuns.357_Crate,
+            MarzGuns.4570_Carton                 = MarzGuns.4570_Crate,
+        }
+    }
+    
+    craftRecipe PlaceBoxesOfAmmoInCrates
+    {
+        timedAction = PackingBox,
+        time        = 100,
+        category    = Packing,
+        canWalk     = true,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 4 tags[marzguns:ammocarton] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            MarzGuns.12Gauge_Crate_Buckshot     = MarzGuns.12Gauge_Carton_Buckshot,
+            MarzGuns.12Gauge_Crate_Slug         = MarzGuns.12Gauge_Carton_Slug,
+            MarzGuns.9x19_Crate                 = MarzGuns.9x19_Carton,
+            MarzGuns.45_Crate                   = MarzGuns.45_Carton,
+            MarzGuns.38_Crate                   = MarzGuns.38_Carton,
+            MarzGuns.44_Crate                   = MarzGuns.44_Carton,
+            MarzGuns.50_Crate                   = MarzGuns.50_Carton,
+            MarzGuns.762x51_Crate               = MarzGuns.762x51_Carton,
+            MarzGuns.308_Crate                  = MarzGuns.308_Carton,
+            MarzGuns.762x54_Crate               = MarzGuns.762x54_Carton,
+            MarzGuns.556x45_Crate               = MarzGuns.556x45_Carton,
+            MarzGuns.556x45_Crate_HollowPoint   = MarzGuns.556x45_Carton_HollowPoint,
+            MarzGuns.556x45_Crate_ArmorPiercing = MarzGuns.556x45_Carton_ArmorPiercing,
+            MarzGuns.556x45_Crate_Subsonic      = MarzGuns.556x45_Carton_Subsonic,
+            MarzGuns.556x45_Crate_Overpressured = MarzGuns.556x45_Carton_Overpressured,
+            MarzGuns.223_Crate                  = MarzGuns.223_Carton,
+            MarzGuns.545x39_Crate               = MarzGuns.545x39_Carton,
+            MarzGuns.762x39_Crate               = MarzGuns.762x39_Carton,
+            MarzGuns.9x39_Crate                 = MarzGuns.9x39_Carton,
+            MarzGuns.3006_Crate                 = MarzGuns.3006_Carton,
+            MarzGuns.3030_Crate                 = MarzGuns.3030_Carton,
+            MarzGuns.357_Crate                  = MarzGuns.357_Carton,
+            MarzGuns.4570_Crate                 = MarzGuns.4570_Carton,
+        }
+    }
+}
+
+
+
+

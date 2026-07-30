@@ -1,0 +1,36 @@
+module MarzGuns
+{
+    item 762x51Magazine5_M24
+    {
+        AmmoType         = marzguns:bullet_762x51,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 762x51Magazine5_M24,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 5,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.762x51Magazine5_M24,
+        WorldStaticModel = MarzGuns.762x51Magazine5_M24,
+    }
+    
+    item 762x54StripperClip5_MOSIN
+    {
+        AmmoType         = marzguns:bullet_762x54,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = StripperClip,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 5,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.05,
+        WeightModifier   = 0.05,
+        StaticModel      = MarzGuns.StripperClip,
+        WorldStaticModel = MarzGuns.StripperClip,
+    }
+}

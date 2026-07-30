@@ -1,38 +1,18 @@
 {
   "scope": "common plus highest compatible version layer for Build 42.20.0",
-  "english_files": 251,
-  "spanish_files": 222,
-  "english_keys": 20287,
-  "spanish_keys_local_or_central": 72031,
-  "central_keys": 42455,
+  "english_files": 258,
+  "spanish_files": 221,
+  "english_keys": 20643,
+  "spanish_keys_local_or_central": 72683,
+  "central_keys": 43107,
   "missing_keys": [],
   "technical_token_mismatches": [],
   "identical_english_spanish": [
-    {
-      "key": "ContextMenu_00_01_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Last Post",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
     {
       "key": "ContextMenu_00_01_F",
       "category": "contextmenu",
       "scope": "",
       "value": "Hot Cross Buns",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_01_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Drink to Me Only with Thine Eyes",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -59,30 +39,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_00_01_H",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Farewell Waltz",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_00_01_K",
       "category": "contextmenu",
       "scope": "",
       "value": "Jump",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_01_S",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Break Loose",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -109,40 +69,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_00_02_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Mary Had A Little Lamb",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_02_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "The Banks of the Don",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_00_02_GE",
       "category": "contextmenu",
       "scope": "",
       "value": "Happy Birthday",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_02_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Mary Had a Little Lamb",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -169,126 +99,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_00_02_S",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Mary Did You Know",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_02_T",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Play The Dynamics",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Boil Them Cabbage Down",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Ode To Joy",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "The Bamboo Flute",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_GE",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Horse With No Name",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Ode To Joy",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_H",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Silent Night",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_K",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Walk of Life",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_S",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Run Away With Me",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_03_T",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Skip To My Lou",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_04_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Twinkle Twinkle Little Star",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_00_04_F",
       "category": "contextmenu",
       "scope": "",
@@ -309,60 +119,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_00_04_GE",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Twinkle Twinkle Little Star",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_04_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Twinkle Twinkle Little Star",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_04_K",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "The Final Countdown",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_00_04_S",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "We Three Kings Of Orient Are",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_00_04_T",
       "category": "contextmenu",
       "scope": "",
       "value": "William Tell",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_01_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Simple Rolls",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -379,30 +139,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_01_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Fire and Rain",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_01_01_GE",
       "category": "contextmenu",
       "scope": "",
       "value": "Amazing Grace",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_01_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Beautiful Love",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -439,30 +179,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_01_T",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Twinkle Twinkle Little Star",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_01_02_B",
       "category": "contextmenu",
       "scope": "",
       "value": "Happy Birthday",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_02_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Hedwigs Theme",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -479,26 +199,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_02_GE",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Autumn Leaves",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_02_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Funk Bass Groove",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_01_02_H",
       "category": "contextmenu",
       "scope": "",
@@ -509,50 +209,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_02_K",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Every Breath You Take",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_01_02_S",
       "category": "contextmenu",
       "scope": "",
       "value": "Greensleeves",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_02_T",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Silent Night",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_03_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Old MacDonald Had a Farm",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_03_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Let It Snow",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -573,16 +233,6 @@
       "category": "contextmenu",
       "scope": "",
       "value": "Hallelujah",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_03_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "My One And Only Love",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -619,76 +269,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_03_T",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "London Bridge is Falling Down",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Angeline the Baker",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Silent Night",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Tears In Heaven",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_GE",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Silent Night",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "The Traveler",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_01_04_K",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Terminator Tunnel Chase",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_01_04_S",
       "category": "contextmenu",
       "scope": "",
@@ -709,50 +289,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_01_05_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "The Blue Danube Waltz",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_01_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Dig A Hole In The Meadow",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_02_01_F",
       "category": "contextmenu",
       "scope": "",
       "value": "Imagine",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_01_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Little Marta",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_01_GE",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Blues In C",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -789,40 +329,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_02_01_P",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Ode To Joy",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_01_S",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Midnight City",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_02_01_T",
       "category": "contextmenu",
       "scope": "",
       "value": "Amazing Grace",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_02_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Silent Night",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -839,60 +349,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
     },
     {
-      "key": "ContextMenu_02_02_GA",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Loving Arms",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
       "key": "ContextMenu_02_02_GE",
       "category": "contextmenu",
       "scope": "",
       "value": "Danny Box",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_02_GEB",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "King Of My Heart",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_02_H",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Dirty Old Town",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_02_K",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "I Feel Love",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_02_P",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Passed Pie",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -913,26 +373,6 @@
       "category": "contextmenu",
       "scope": "",
       "value": "Aura Lee",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_03_B",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "8 More Miles to Louisville",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ContextMenu.json"
-    },
-    {
-      "key": "ContextMenu_02_03_F",
-      "category": "contextmenu",
-      "scope": "",
-      "value": "Swadian Hall",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/ContextMenu.json"
       ],
@@ -7365,16 +6805,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Fluids.json"
     },
     {
-      "key": "Fluid_Name_VFX_PinotGris",
-      "category": "fluids",
-      "scope": "",
-      "value": "Pinot Gris",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_20/42.18/media/lua/shared/Translate/EN/Fluids.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Fluids.json"
-    },
-    {
       "key": "Fluid_Name_VFX_PinotNoir",
       "category": "fluids",
       "scope": "",
@@ -11088,16 +10518,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
     },
     {
-      "key": "IGUI_LSAmbitions_LSElDorado",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "El Dorado",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
       "key": "IGUI_NB_ModOptions_Title",
       "category": "ig_ui",
       "scope": "",
@@ -12330,70 +11750,10 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
     },
     {
-      "key": "IGUI_VehicleNamefr_po_transam_77",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Roanoke Grand Slam",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
-      "key": "IGUI_VehicleNamefr_po_transam_77_bandit",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Roanoke Grand Slam",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
-      "key": "IGUI_VehicleNamefr_po_transam_77_ttop",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Roanoke Grand Slam",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
       "key": "IGUI_VehicleNamefr_to_celica_91",
       "category": "ig_ui",
       "scope": "",
       "value": "Yutani Paraisa",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
-      "key": "IGUI_VehicleNamefr_to_corolla_90",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Yutani Estrellas",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
-      "key": "IGUI_VehicleNamefr_to_corolla_90_coupe",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Yutani Estrellas",
-      "english_files": [
-        "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/IG_UI.json"
-    },
-    {
-      "key": "IGUI_VehicleNamefr_to_corolla_90_hatch",
-      "category": "ig_ui",
-      "scope": "",
-      "value": "Yutani Estrellas",
       "english_files": [
         "EclipseZ - 2/Contents/mods/ECZ2_10/common/media/lua/shared/Translate/EN/IG_UI.json"
       ],
@@ -12601,267 +11961,6 @@
       "spanish_file": "EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/shared/Translate/ES/ItemName.json"
     },
     {
-      "key": "Base.AKM",
-      "category": "itemname",
-      "scope": "",
-      "value": "AKM",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtAce",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Ace",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtAnaconda",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Anaconda",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtPeacemaker",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Single Action Army",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtPython",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Python",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtPythonHunter",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Python Hunter",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ColtSingleAction22",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Single Action Frontier Scout",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Glock17",
-      "category": "itemname",
-      "scope": "",
-      "value": "Glock 17",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.HuntingRifle",
-      "category": "itemname",
-      "scope": "",
-      "value": "Remington Model 788",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ICA19",
-      "category": "itemname",
-      "scope": "",
-      "value": "ICA19 Silverballer",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.ICA19_Gold",
-      "category": "itemname",
-      "scope": "",
-      "value": "ICA19 Goldballer",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.JS14_Rifle",
-      "category": "itemname",
-      "scope": "",
-      "value": "Ruger Mini-14",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.L92_Carbine",
-      "category": "itemname",
-      "scope": "",
-      "value": "Marlin Model 1894",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.L94_Rifle",
-      "category": "itemname",
-      "scope": "",
-      "value": "Ruger M77/22",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.LAW12",
-      "category": "itemname",
-      "scope": "",
-      "value": "Franchi LAW-12",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.M1Garand",
-      "category": "itemname",
-      "scope": "",
-      "value": "M1 Garand",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.M733",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt Commando",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Mossberg500",
-      "category": "itemname",
-      "scope": "",
-      "value": "Mossberg 590",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Pistol",
-      "category": "itemname",
-      "scope": "",
-      "value": "Beretta 92FS",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Pistol2",
-      "category": "itemname",
-      "scope": "",
-      "value": "Colt M1911A1",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Pistol3",
-      "category": "itemname",
-      "scope": "",
-      "value": "Desert Eagle",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.RIS",
-      "category": "itemname",
-      "scope": "",
-      "value": "RIS",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Remington870Wood",
-      "category": "itemname",
-      "scope": "",
-      "value": "Remington 870",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.SKS",
-      "category": "itemname",
-      "scope": "",
-      "value": "SKS",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.SPAS12",
-      "category": "itemname",
-      "scope": "",
-      "value": "Franchi SPAS-12",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "Base.Shotgun",
-      "category": "itemname",
-      "scope": "",
-      "value": "Mossberg 500",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
       "key": "Base.VFXEnchiladaEvolved",
       "category": "itemname",
       "scope": "",
@@ -12952,22 +12051,12 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
     },
     {
-      "key": "Base.VarmintRifle",
-      "category": "itemname",
-      "scope": "",
-      "value": "Remington Model 700",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
       "key": "Gunsmithing.1875Gun",
       "category": "itemname",
       "scope": "",
       "value": "Springfield Trapdoor (1875)",
       "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_7.2/42/media/lua/shared/Translate/EN/ItemName.json"
+        "EclipseZ - 1/Contents/mods/ECZ_18.4/42/media/lua/shared/Translate/EN/ItemName.json"
       ],
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
     },
@@ -13056,16 +12145,6 @@
       "category": "itemname",
       "scope": "",
       "value": "Coxinha",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_5/42.20.0/media/lua/shared/Translate/EN/ItemName_EN.txt"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "ItemName_SapphCooking.CrabRangoon",
-      "category": "itemname",
-      "scope": "",
-      "value": "Crab Rangoon",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_5/42.20.0/media/lua/shared/Translate/EN/ItemName_EN.txt"
       ],
@@ -13322,32 +12401,122 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
     },
     {
-      "key": "ItemName_SapphCooking.WokPan_CacioPepeEvolved",
-      "category": "itemname",
-      "scope": "",
-      "value": "Cacio e Pepe",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_5/42.20.0/media/lua/shared/Translate/EN/ItemName_EN.txt"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
-      "key": "ItemName_SapphCooking.WokPan_CacioPepePrep",
-      "category": "itemname",
-      "scope": "",
-      "value": "Cacio e Pepe",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_5/42.20.0/media/lua/shared/Translate/EN/ItemName_EN.txt"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
-    },
-    {
       "key": "ItemName_SapphCooking.WokPan_YakisobaEvolve",
       "category": "itemname",
       "scope": "",
       "value": "Yakisoba",
       "english_files": [
         "EclipseZ - 1/Contents/mods/ECZ_5/42.20.0/media/lua/shared/Translate/EN/ItemName_EN.txt"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.C96",
+      "category": "itemname",
+      "scope": "",
+      "value": "Mauser C96",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.DEAGLE",
+      "category": "itemname",
+      "scope": "",
+      "value": ".50 Desert Eagle",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.FIVESEVEN",
+      "category": "itemname",
+      "scope": "",
+      "value": "5.7x28mm Five-SeveN",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.GLOCK17",
+      "category": "itemname",
+      "scope": "",
+      "value": "Glock 17",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.HIPOWER",
+      "category": "itemname",
+      "scope": "",
+      "value": "Browning Hi-Power",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.LUGER",
+      "category": "itemname",
+      "scope": "",
+      "value": "Luger P08",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.M1911",
+      "category": "itemname",
+      "scope": "",
+      "value": "Colt M1911",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.M92FS",
+      "category": "itemname",
+      "scope": "",
+      "value": "Beretta M92FS",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.P226",
+      "category": "itemname",
+      "scope": "",
+      "value": "Sig Sauer P226",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.USP",
+      "category": "itemname",
+      "scope": "",
+      "value": "Heckler & Koch USP",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
+      ],
+      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
+    },
+    {
+      "key": "MarzGuns.VP70M",
+      "category": "itemname",
+      "scope": "",
+      "value": "Heckler & Koch VP70M",
+      "english_files": [
+        "EclipseZ - 1/Contents/mods/ECZ_18.3/42.16/media/lua/shared/Translate/EN/ItemName.json"
       ],
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ItemName.json"
     },
@@ -14372,16 +13541,6 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Recorded_Media.json"
     },
     {
-      "key": "Sandbox_AuroraChat",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Aurora Chat",
-      "english_files": [
-        "EclipseZ - 3/Contents/mods/ECZ3_Chat/42/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
       "key": "Sandbox_Dancing_StrengthMultiplier_option2",
       "category": "sandbox",
       "scope": "",
@@ -14414,172 +13573,12 @@
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
     },
     {
-      "key": "Sandbox_Firearms_SpawnAKM",
+      "key": "Sandbox_HB",
       "category": "sandbox",
       "scope": "",
-      "value": "AKM",
+      "value": "Hot Brass",
       "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnAnaconda",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Anaconda",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnColtAce",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Ace",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnColtDelta",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Delta",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnColtPeacemaker",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Single Action Army",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnColtScout",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Single Action Frontier Scout .22 LR",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnGlock17",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Glock 17",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnICA19",
-      "category": "sandbox",
-      "scope": "",
-      "value": "ICA19",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnM1Garand",
-      "category": "sandbox",
-      "scope": "",
-      "value": "M1 Garand",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnM733",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Commando",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnMAC10",
-      "category": "sandbox",
-      "scope": "",
-      "value": "MAC-10",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnMossberg500",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Mossberg 590",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnPython",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Colt Python",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnRemington870",
-      "category": "sandbox",
-      "scope": "",
-      "value": "Remington 870",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnSKS",
-      "category": "sandbox",
-      "scope": "",
-      "value": "SKS",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnSPAS12",
-      "category": "sandbox",
-      "scope": "",
-      "value": "SPAS12/LAW12",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
-      ],
-      "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
-    },
-    {
-      "key": "Sandbox_Firearms_SpawnUZI",
-      "category": "sandbox",
-      "scope": "",
-      "value": "UZI",
-      "english_files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/Sandbox.json"
+        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.15/media/lua/shared/Translate/EN/Sandbox.json"
       ],
       "spanish_file": "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/Sandbox.json"
     },
@@ -15577,136 +14576,6 @@
       ]
     },
     {
-      "key": "Base.Bullets357",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        ".357 Round",
-        ".357 Magnum Round"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.Bullets357Box",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "Box of .357 Rounds",
-        "Box of .357 Magnum Rounds"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.Bullets9mm",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "9x19mm Parabellum Round",
-        "9x19mm Round"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.ChokeTubeImproved",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "Choke Tube - Duckbill",
-        "Choke Tube - Improved"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.GunLight",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "Pistol Flashlight",
-        "Gun Light"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.Laser",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "Pistol laser",
-        "Laser Sight"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.ShotgunShells",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "12ga Shotgun Shell",
-        "12g Round"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.ShotgunShellsBox",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "Box of 12ga Shotgun Shells",
-        "Box of 12g Rounds"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.x2Scope",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "ACOG x2 Scope",
-        "x2 Scope"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
-      "key": "Base.x4Scope",
-      "category": "itemname",
-      "scope": "",
-      "values": [
-        "ACOG 4x32",
-        "x4 Scope"
-      ],
-      "files": [
-        "EclipseZ - 1/Contents/mods/ECZ_18.1/42.16/media/lua/shared/Translate/EN/ItemName.json",
-        "EclipseZ - 1/Contents/mods/ECZ_18.2/42/media/lua/shared/Translate/EN/ItemName.json"
-      ]
-    },
-    {
       "key": "Sandbox_EHR_RealisticTemperatureCompatibility_tooltip",
       "category": "sandbox",
       "scope": "",
@@ -15859,6 +14728,10 @@
       "lines": 2
     },
     {
+      "file": "EclipseZ - 1/Contents/mods/ECZ_18.4/42/media/lua/shared/Translate/EN/language.txt",
+      "lines": 2
+    },
+    {
       "file": "EclipseZ - 1/Contents/mods/ECZ_2/42.14/media/lua/shared/Translate/EN/ContextMenu_EN.txt",
       "lines": 1
     },
@@ -15908,6 +14781,10 @@
     },
     {
       "file": "EclipseZ - 1/Contents/mods/ECZ_26.4/common/media/lua/shared/Translate/EN/UI_EN.txt",
+      "lines": 1
+    },
+    {
+      "file": "EclipseZ - 1/Contents/mods/ECZ_27/42.0/media/lua/shared/Translate/EN/Sandbox_EN.txt",
       "lines": 1
     },
     {
@@ -15981,10 +14858,6 @@
     {
       "file": "EclipseZ - 1/Contents/mods/ECZ_6.2/common/media/lua/shared/Translate/EN/Tooltip_EN.txt",
       "lines": 1
-    },
-    {
-      "file": "EclipseZ - 1/Contents/mods/ECZ_7.2/42/media/lua/shared/Translate/EN/language.txt",
-      "lines": 2
     },
     {
       "file": "EclipseZ - 1/Contents/mods/ECZ_T4/common/media/lua/shared/Translate/EN/IG_UI_EN.txt",

@@ -1,0 +1,23 @@
+{
+  "ecz_id": "ECZ_8",
+  "name": "Cathaya Valley 2.0",
+  "target": "Project Zomboid 42.20.0",
+  "source_workshop_id": "3576150391",
+  "source_mod_id": "Cathaya Valley 2.0 B42 version",
+  "source_map_folder": "Cathaya Valley2.0",
+  "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3576150391",
+  "required_mod": {
+    "ecz_id": "ECZ_T7",
+    "name": "CommunityTilePack",
+    "source_workshop_id": "3628736763",
+    "source_mod_id": "UnofficialMappersCommunityTilePack",
+    "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3628736763"
+  },
+  "redistribution_permission": "Confirmado por el responsable del modpack el 30 de julio de 2026.",
+  "notes": [
+    "ECZ_8 conserva únicamente el mapa principal Cathaya Valley 2.0; la variante opcional de autopista es un mod separado y no se ha incluido.",
+    "ECZ_T7 conserva todos los paquetes y tiledefs de ejecución de CommunityTilePack para Build 42.",
+    "Se han omitido las copias .bak del editor y la carpeta Resources del tilepack, que no participan en la ejecución.",
+    "Los manifiestos usan icono y póster normalizados, no contienen descripción y fuerzan ECZ_T7 antes de ECZ_8."
+  ]
+}

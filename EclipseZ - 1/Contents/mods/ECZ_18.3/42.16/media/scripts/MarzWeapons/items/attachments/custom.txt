@@ -1,0 +1,72 @@
+module MarzGuns
+{
+    item Shellholder
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Shellholder,
+        Weight           = 0.7,
+        WeightModifier   = 0.7,
+        MountOn          = MarzGuns.STEVENS_555;MarzGuns.DOUBLEBARREL,
+        PartType         = Shellholder,
+        WorldStaticModel = MarzGuns.Shellholder,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Beretta_Stock_Deployed
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Beretta_Stock_Deployed,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.M92FS;MarzGuns.M93R,
+        PartType         = Stock,
+        WorldStaticModel = MarzGuns.Beretta_Stock_Deployed,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Beretta_Stock_Folded
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Beretta_Stock_Folded,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.M92FS;MarzGuns.M93R,
+        PartType         = Stock,
+        WorldStaticModel = MarzGuns.Beretta_Stock_Folded,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item M203
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = M203,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Underbarrel,
+        WorldStaticModel = MarzGuns.M203,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item VP70M_Stock
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Beretta_Stock_Folded,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.VP70M,
+        PartType         = Stock,
+        WorldStaticModel = MarzGuns.Beretta_Stock_Folded,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+}

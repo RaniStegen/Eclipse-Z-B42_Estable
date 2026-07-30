@@ -1,0 +1,8 @@
+name=ECZ_18.2
+id=ECZ_18.2
+description=
+poster=poster.png
+icon=icon.png
+loadModAfter=ECZ_18.1
+loadModBefore=ECZ_18.3,ECZ_18.4
+incompatible=RAF

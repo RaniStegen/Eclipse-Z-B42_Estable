@@ -1,0 +1,92 @@
+module MarzGuns
+{
+    item MKI_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = MKI_Suppressor,
+        Weight           = 1.0,
+        WeightModifier   = 1.0,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Canon,
+        Tooltip          = Tooltip_MKI_Suppressor,
+        WorldStaticModel = MarzGuns.MKI_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item NDR_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = NDR_Suppressor,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Canon,
+        Tooltip          = Tooltip_NDR_Suppressor,
+        WorldStaticModel = MarzGuns.NDR_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PBS-1_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PBS-1_Suppressor,
+        Weight           = 1.2,
+        WeightModifier   = 1.2,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Canon,
+        Tooltip          = Tooltip_PBS1_Suppressor,
+        WorldStaticModel = MarzGuns.PBS-1_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item M&P_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = M&P_Suppressor,
+        Weight           = 1.2,
+        WeightModifier   = 1.2,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Canon,
+        Tooltip          = Tooltip_MP_Suppressor,
+        WorldStaticModel = MarzGuns.M&P_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Shh9_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Shh9_Suppressor,
+        Weight           = 1.2,
+        WeightModifier   = 1.2,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Canon,
+        Tooltip          = Tooltip_Shh9_Suppressor,
+        WorldStaticModel = MarzGuns.Shh9_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item P45_Suppressor
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = P45_Suppressor,
+        Weight           = 0.8,
+        WeightModifier   = 0.8,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Canon,
+        Tooltip          = Tooltip_P45_Suppressor,
+        WorldStaticModel = MarzGuns.P45_Suppressor,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+}

@@ -1,0 +1,267 @@
+module Base
+{
+    item AssaultRifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item AssaultRifle2
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item DoubleBarrelShotgun
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item DoubleBarrelShotgunSawnoff
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item HuntingRifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Pistol
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Pistol2
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Pistol3
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Revolver
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Revolver_Long
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Revolver_Short
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Shotgun
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item ShotgunSawnoff
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item VarmintRifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item JS14_Rifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item JS3T_Shotgun
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item L92_Carbine
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item L94_Rifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item MSR7T_Rifle
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item TrapperCarbine
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 308Bullets
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 556Bullets
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 3030Bullets
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets357
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets38
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets44
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets45
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets9mm
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item ShotgunShells
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 308Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 308Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 556Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 556Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 3030Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 3030Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets357Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets357Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets38Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets38Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets44Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets44Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets45Box
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets45Carton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets9mmBox
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item Bullets9mmCarton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item ShotgunShellsBox
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item ShotgunShellsCarton
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 44Clip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 45Clip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 556Clip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item 9mmClip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item M14Clip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+    
+    item JS14_Clip
+    {
+        OnCreate = MarzGuns_OnCreate.SelectWeapon,
+    }
+}

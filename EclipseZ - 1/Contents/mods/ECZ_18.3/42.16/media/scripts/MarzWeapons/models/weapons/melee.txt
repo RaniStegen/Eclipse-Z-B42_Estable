@@ -1,0 +1,30 @@
+module MarzGuns
+{
+    model K98_BAYONET
+    {
+        mesh = weapons/melee/K98_BAYONET,
+        texture = weapons/melee/K98_BAYONET,
+    }
+    model M5_BAYONET
+    {
+        mesh = weapons/melee/M5_BAYONET,
+        texture = weapons/melee/M5_BAYONET,
+    }
+    model M9_BAYONET
+    {
+        mesh = weapons/melee/M9_BAYONET,
+        texture = weapons/melee/M9_BAYONET,
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.0000 -0.0014,
+            rotate = -89.5986 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0249 -0.0103,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+    }
+}

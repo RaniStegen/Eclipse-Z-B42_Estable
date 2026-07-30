@@ -1,0 +1,10 @@
+module MarzGuns
+{
+    item explosion_0
+    {
+        DisplayCategory  = Junk,
+        ItemType         = base:normal,
+        WorldStaticModel = MarzGuns.explosion_0,
+        Icon             = none,
+    }
+}

@@ -117,7 +117,12 @@ def validate_batch(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--prompt", type=Path, required=True)
+    parser.add_argument(
+        "--prompt",
+        type=Path,
+        help="Guía de traducción. Por defecto usa docs/es-es-translation-style-guide.md.",
+    )
+    parser.add_argument("--prompt-extra", type=Path)
     parser.add_argument("--endpoint", default="http://127.0.0.1:11434")
     parser.add_argument("--model", default="qwen3.5:latest")
     parser.add_argument("--max-entries", type=int, default=50)
@@ -128,7 +133,10 @@ def main() -> int:
     args = parser.parse_args()
 
     repo = args.repo.resolve()
-    system_prompt = args.prompt.read_text(encoding="utf-8-sig")
+    prompt_path = args.prompt or (repo / "docs/es-es-translation-style-guide.md")
+    system_prompt = prompt_path.resolve().read_text(encoding="utf-8-sig")
+    if args.prompt_extra:
+        system_prompt += "\n\n" + args.prompt_extra.read_text(encoding="utf-8-sig")
     if args.entries_json:
         missing = json.loads(args.entries_json.resolve().read_text(encoding="utf-8"))
     else:

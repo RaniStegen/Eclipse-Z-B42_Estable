@@ -1,0 +1,95 @@
+module Gunsmithing
+{
+    /************************ Cannon For Lols ************************/
+    model CinnabarOre
+    {
+        mesh = Gunsmithing/Crafting_CinnabarOre,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model ZincOre
+    {
+        mesh = Gunsmithing/Crafting_ZincOre,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model CinnabarOre_Crushed
+    {
+        mesh = Gunsmithing/Cinnabar_Crushed,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model ZincOre_Crushed
+    {
+        mesh = Gunsmithing/Zinc_Crushed,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model LeadOre
+    {
+        mesh = Gunsmithing/Crafting_ZincOre,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model LeadOre_Crushed
+    {
+        mesh = Gunsmithing/Zinc_Crushed,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model LeadIngot
+    {
+        mesh = WorldItems/Ingot_Iron,
+        texture = WorldItems/Ingot_IronDull,
+        scale = 0.09,
+    }
+    model CapsPackage
+    {
+        mesh = Gunsmithing/CapsPackage,
+        texture = Gunsmithing/Items_Misc,
+    }
+   
+    model Crafting_Barrel
+    {
+        mesh = Gunsmithing/Crafting_Barrel,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model Crafting_Stock
+    {
+        mesh = Gunsmithing/Crafting_Stock,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model HandmadeCartridge
+    {
+        mesh = Gunsmithing/HandmadeCartridge,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model MusketBall
+    {
+        mesh = Gunsmithing/MusketBall,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model MusketBullet
+    {
+        mesh = Gunsmithing/MusketBullet,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model PaperCartridge
+    {
+        mesh = Gunsmithing/PaperCartridge,
+        texture = Gunsmithing/Items_Misc,
+    }
+    model RoundBall_44
+    {
+        mesh = Gunsmithing/MusketBall,
+        texture = Gunsmithing/Items_Misc,
+        scale = 0.7,
+    }
+    model PistolCartridge
+    {
+        mesh = Gunsmithing/HandmadeCartridge,
+        texture = Gunsmithing/Items_Misc,
+        scale = 0.75,
+    }
+    model BrassCasing
+    {
+        mesh = Gunsmithing/HandmadeCartridge,
+        texture = Gunsmithing/Items_Misc,
+        scale = 0.85,
+    }
+
+}

@@ -1,0 +1,19 @@
+module MarzGuns
+{
+    item 357SpeedLoader6_PYTHON
+    {
+        AmmoType         = marzguns:bullet_357,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 357SpeedLoader6_PYTHON,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 6,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:pistolmagazine,
+        Weight           = 0.05,
+        WeightModifier   = 0.05,
+        StaticModel      = MarzGuns.357SpeedLoader6_PYTHON,
+        WorldStaticModel = MarzGuns.357SpeedLoader6_PYTHON,
+    }
+}

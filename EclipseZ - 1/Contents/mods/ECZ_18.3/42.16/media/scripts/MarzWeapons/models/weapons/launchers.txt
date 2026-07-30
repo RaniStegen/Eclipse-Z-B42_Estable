@@ -1,0 +1,30 @@
+module MarzGuns
+{
+	model M79
+    {
+        mesh = weapons/firearms/M79|M79_BODY,
+        texture = weapons/firearms/launchers/M79,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.3032 0.0129,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+	model M79_Barrel_Close
+    {
+        mesh = weapons/firearms/M79|M79_BARREL_CLOSE,
+        texture = weapons/firearms/launchers/M79,
+    }
+	model M79_Barrel_Open
+    {
+        mesh = weapons/firearms/M79|M79_BARREL_OPEN,
+        texture = weapons/firearms/launchers/M79,
+    }
+}

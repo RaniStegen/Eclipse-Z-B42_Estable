@@ -1,0 +1,652 @@
+VERSION = 1,
+
+option MarzGuns.Enable_9x19 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_9x19,
+}
+
+option MarzGuns.Enable_38 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_38,
+}
+
+option MarzGuns.Enable_45 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_45,
+}
+
+option MarzGuns.Enable_357 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_357,
+}
+
+option MarzGuns.Enable_44 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_44,
+}
+
+option MarzGuns.Enable_308 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_308,
+}
+
+option MarzGuns.Enable_762x51 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_762x51,
+}
+
+option MarzGuns.Enable_223 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_223,
+}
+
+option MarzGuns.Enable_556x45 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_556x45,
+}
+
+option MarzGuns.Enable_556x45_HollowPoint {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_556x45_HollowPoint,
+}
+
+option MarzGuns.Enable_556x45_ArmorPiercing {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_556x45_ArmorPiercing,
+}
+
+option MarzGuns.Enable_556x45_Subsonic {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_556x45_Subsonic,
+}
+
+option MarzGuns.Enable_556x45_Overpressured {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_556x45_Overpressured,
+}
+
+option MarzGuns.Enable_3030 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_3030,
+}
+
+option MarzGuns.Enable_12Gauge_Buckshot {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_12Gauge_Buckshot,
+}
+
+option MarzGuns.Enable_12Gauge_Slug {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_12Gauge_Slug,
+}
+
+option MarzGuns.Enable_40mm_Buckshot {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_40mm_Buckshot,
+}
+
+option MarzGuns.Enable_40mm_HE {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_40mm_HE,
+}
+
+option MarzGuns.Enable_40mm_Incendiary {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_40mm_Incendiary,
+}
+
+option MarzGuns.Enable_50 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_50,
+}
+
+option MarzGuns.Enable_4570 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_4570,
+}
+
+option MarzGuns.Enable_762x39 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_762x39,
+}
+
+option MarzGuns.Enable_9x39 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_9x39,
+}
+
+option MarzGuns.Enable_545x39 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_545x39,
+}
+
+option MarzGuns.Enable_762x54 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_762x54,
+}
+
+option MarzGuns.Enable_3006 {
+    type = boolean,
+    default = true,
+    page = MarzGunsAmmos,
+    translation = MarzGuns_Enable_3006,
+}
+
+option MarzGuns.Enable_M16A1 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M16A1,
+}
+
+option MarzGuns.Enable_M16A2 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M16A2,
+}
+
+option MarzGuns.Enable_M16A2_M203 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M16A2_M203,
+}
+
+option MarzGuns.Enable_M16A3 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M16A3,
+}
+
+option MarzGuns.Enable_AR15 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_AR15,
+}
+
+option MarzGuns.Enable_FNC {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_FNC,
+}
+
+option MarzGuns.Enable_M4 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M4,
+}
+
+option MarzGuns.Enable_G36 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_G36,
+}
+
+option MarzGuns.Enable_G36C {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_G36C,
+}
+
+option MarzGuns.Enable_AK74 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_AK74,
+}
+
+option MarzGuns.Enable_AKS74U {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_AKS74U,
+}
+
+option MarzGuns.Enable_ASVAL {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_ASVAL,
+}
+
+option MarzGuns.Enable_FAMAS {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_FAMAS,
+}
+
+option MarzGuns.Enable_CAR15 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_CAR15,
+}
+
+option MarzGuns.Enable_XM177 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_XM177,
+}
+
+option MarzGuns.Enable_M4A1 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M4A1,
+}
+
+option MarzGuns.Enable_AK47 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_AK47,
+}
+
+option MarzGuns.Enable_M14 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M14,
+}
+
+option MarzGuns.Enable_M1_GARAND {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M1_GARAND,
+}
+
+option MarzGuns.Enable_FAL {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_FAL,
+}
+
+option MarzGuns.Enable_G3 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_G3,
+}
+
+option MarzGuns.Enable_MOSIN {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MOSIN,
+}
+
+option MarzGuns.Enable_M24 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M24,
+}
+
+option MarzGuns.Enable_M1903 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M1903,
+}
+
+option MarzGuns.Enable_M79 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M79,
+}
+
+option MarzGuns.Enable_W1894 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_W1894,
+}
+
+option MarzGuns.Enable_M1895 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M1895,
+}
+
+option MarzGuns.Enable_W1887 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_W1887,
+}
+
+option MarzGuns.Enable_W1873 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_W1873,
+}
+
+option MarzGuns.Enable_W1873_CARBINE {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_W1873_CARBINE,
+}
+
+option MarzGuns.Enable_M60 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M60,
+}
+
+option MarzGuns.Enable_BAR {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_BAR,
+}
+
+option MarzGuns.Enable_M92FS {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M92FS,
+}
+
+option MarzGuns.Enable_M93R {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M93R,
+}
+
+option MarzGuns.Enable_P226 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_P226,
+}
+
+option MarzGuns.Enable_HIPOWER {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_HIPOWER,
+}
+
+option MarzGuns.Enable_M1911 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_M1911,
+}
+
+option MarzGuns.Enable_USP {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_USP,
+}
+
+option MarzGuns.Enable_DEAGLE {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_DEAGLE,
+}
+
+option MarzGuns.Enable_SW629 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_SW629,
+}
+
+option MarzGuns.Enable_PYTHON {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_PYTHON,
+}
+
+option MarzGuns.Enable_RHINO {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_RHINO,
+}
+
+option MarzGuns.Enable_MP412 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MP412,
+}
+
+option MarzGuns.Enable_COLT_SINGLE {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_COLT_SINGLE,
+}
+
+option MarzGuns.Enable_DETECTIVE_38 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_DETECTIVE_38,
+}
+
+option MarzGuns.Enable_SVD {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_SVD,
+}
+
+option MarzGuns.Enable_SKS {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_SKS,
+}
+
+option MarzGuns.Enable_PSG1 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_PSG1,
+}
+
+option MarzGuns.Enable_MOSSBERG_590 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MOSSBERG_590,
+}
+
+option MarzGuns.Enable_TRENCHGUN {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_TRENCHGUN,
+}
+
+option MarzGuns.Enable_BENELLI_M4 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_BENELLI_M4,
+}
+
+option MarzGuns.Enable_SPAS12 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_SPAS12,
+}
+
+option MarzGuns.Enable_STEVENS_555 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_STEVENS_555,
+}
+
+option MarzGuns.Enable_DOUBLEBARREL {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_DOUBLEBARREL,
+}
+
+option MarzGuns.Enable_AA12 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_AA12,
+}
+
+option MarzGuns.Enable_REMINGTON_870 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_REMINGTON_870,
+}
+
+option MarzGuns.Enable_THOMPSON {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_THOMPSON,
+}
+
+option MarzGuns.Enable_MP5 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MP5,
+}
+
+option MarzGuns.Enable_MP5A2 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MP5A2,
+}
+
+option MarzGuns.Enable_MP5SD {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MP5SD,
+}
+
+option MarzGuns.Enable_MP5K {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MP5K,
+}
+
+option MarzGuns.Enable_TEC9 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_TEC9,
+}
+
+option MarzGuns.Enable_MAC10 {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_MAC10,
+}
+
+option MarzGuns.Enable_Explosives {
+    type = boolean,
+    default = true,
+    page = MarzGunsWeapons,
+    translation = MarzGuns_Enable_Explosives,
+}
+
+option MarzGuns.Enable_VanillaWeaponReplacement {
+    type = boolean,
+    default = false,
+    page = MarzGunsTweaks,
+    translation = MarzGuns_Enable_VanillaWeaponReplacement,
+}
+
+option MarzGuns.Enable_VanillaAmmoReplacement {
+    type = boolean,
+    default = false,
+    page = MarzGunsTweaks,
+    translation = MarzGuns_Enable_VanillaAmmoReplacement,
+}
+
+option MarzGuns.Enable_TacticalReload {
+    type = boolean,
+    default = false,
+    page = MarzGunsTweaks,
+    translation = MarzGuns_Enable_TacticalReload,
+}
