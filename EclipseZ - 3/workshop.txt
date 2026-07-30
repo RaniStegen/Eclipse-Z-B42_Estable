@@ -1,0 +1,6 @@
+version=1
+id=3749386608
+title=EclipseZ - Funciones 2
+description=Apariencia, ropa, vehículos y ajustes de EclipseZ para Project Zomboid 42.18.
+tags=Build 42
+visibility=public

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\Bob_Miniskirt.X</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\Kate_Miniskirt.X</m_FemaleModel>
+	<m_GUID>8e9a4602-8ac7-4ef8-aabf-55a87be50187</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\TombWardrobe\Microskirt_Fabric</textureChoices>
+	<textureChoices>clothes\TombWardrobe\Microskirt_Leather</textureChoices>
+	<textureChoices>clothes\TombWardrobe\Microskirt_Latex</textureChoices>
+</clothingItem>

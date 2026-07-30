@@ -1,0 +1,107 @@
+VERSION = 1,
+
+option CutThatTree.RequireAxeSkill
+{
+    type = boolean,
+    default = false,
+    page = CutThatTree_Access,
+    translation = CutThatTree_RequireAxeSkill,
+}
+
+option CutThatTree.RequiredAxeSkillLevel
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 2,
+    page = CutThatTree_Access,
+    translation = CutThatTree_RequiredAxeSkillLevel,
+}
+
+option CutThatTree.MaxTreeDistance
+{
+    type = double,
+    min = 0.8,
+    max = 3.0,
+    default = 2.0,
+    page = CutThatTree_General,
+    translation = CutThatTree_MaxTreeDistance,
+}
+
+option CutThatTree.DisableVanillaTreeCut
+{
+    type = boolean,
+    default = false,
+    page = CutThatTree_General,
+    translation = CutThatTree_DisableVanillaTreeCut,
+}
+
+option CutThatTree.DifficultyMultiplier
+{
+    type = double,
+    min = 0.5,
+    max = 2.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_DifficultyMultiplier,
+}
+
+option CutThatTree.TreeDamageMultiplier
+{
+    type = double,
+    min = 0.25,
+    max = 3.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_TreeDamageMultiplier,
+}
+
+option CutThatTree.EnduranceUseMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_EnduranceUseMultiplier,
+}
+
+option CutThatTree.ToolConditionWearMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_ToolConditionWearMultiplier,
+}
+
+option CutThatTree.SharpnessLossMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_SharpnessLossMultiplier,
+}
+
+option CutThatTree.ComboSpeedMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_ComboSpeedMultiplier,
+}
+
+option CutThatTree.RedNoiseRadius
+{
+    type = integer,
+    min = 0,
+    max = 80,
+    default = 28,
+    page = CutThatTree_Balance,
+    translation = CutThatTree_RedNoiseRadius,
+}

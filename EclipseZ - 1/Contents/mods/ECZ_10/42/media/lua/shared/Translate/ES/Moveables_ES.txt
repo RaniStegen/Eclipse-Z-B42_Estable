@@ -1,0 +1,6 @@
+Moveables_ES = {
+    Distillery_Fermentation_Barrel = "Barril de fermentacion",
+    Distillery_Double_Barrel_Container = "Contenedor doble de barriles",
+    Distillery_Distillation_Still = "Alambique",
+    Distillery_Industrial_Tank = "Tanque industrial",
+}

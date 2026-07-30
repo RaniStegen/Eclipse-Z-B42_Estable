@@ -1,0 +1,23 @@
+PLAYER ANIMATIONS
+	The functions regarding the player's pose animations need to be looked at.
+	It no longer throws an error.
+	function: onEnterVehicle -- file: ISVehicleDashboard.lua line # 608 | Vanilla
+	Callframe at: se.krka.kahlua.integration.expose.MultiLuaJavaInvoker@c3f08e91
+	function: perform -- file: ISEnterVehicle.lua line # 51 | Vanilla
+
+	LOG  : General      f:4161, t:1734625958815> 
+	LOG  : Lua          f:4161, t:1734625958832> creating new sourcewindow: D:/Games/Steam/steamapps/common/ProjectZomboid/media/lua/client/Vehicles/ISUI/ISVehicleDashboard.lua
+	LOG  : General      f:4161, t:1734625960574> FR_DrivingAnimiation: The player, AlfonzoScanlon, entered Base.SportsCar_ez
+	LOG  : General      f:5609, t:1734625984681> -------------------------------------------------------------
+	attempted index: setVehicle of non-table: null
+SOLUTION
+	???
+	
+Vehicle parts aren't alligned
+SOLUTION
+	Go over every vehicle and alight the parts with the in game tool.
+	Or align one and math it out.
+
+Vehicle physics are changed
+SOLUTION
+	Go over every single vehicle and redo the speed, mass, etc.

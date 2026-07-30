@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>34d0304b-4c0e-44de-861b-ac2346732424</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\TombWardrobe\Tights_Ripped_opaque</m_BaseTextures>
+	<m_BaseTextures>clothes\TombWardrobe\Tights_Ripped_semitrans</m_BaseTextures>
+	<m_BaseTextures>clothes\TombWardrobe\Tights_Ripped_trans</m_BaseTextures>
+</clothingItem>

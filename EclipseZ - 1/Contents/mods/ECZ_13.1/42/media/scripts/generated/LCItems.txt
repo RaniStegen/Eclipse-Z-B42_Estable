@@ -1,0 +1,94 @@
+module LC
+{
+    imports { Base }
+
+    item Ground_Goo
+    {
+        Weight = 2,
+        ItemType = base:normal,
+        DisplayName = Ground Goo,
+        Icon = Ichor,
+        WorldStaticModel = LC.Ground_Goo_Model,
+    }
+
+    item Ground_Ichor
+    {
+        Weight = 2,
+        ItemType = base:normal,
+        DisplayName = Ichor,
+        Icon = Ichor,
+        WorldStaticModel = LC.Ground_Ichor_Model,
+    }
+
+    item Tool_01
+    {
+        Weight = 0.5,
+        ItemType = base:normal,
+        DisplayName = Lacerator,
+        Icon = Tool_01,
+        WorldStaticModel = LC.Ground_Tool_01_Model,
+    }
+
+    item Tool_02
+    {
+        Weight = 0.5,
+        ItemType = base:normal,
+        DisplayName = Phlebotomy Knife,
+        Icon = Tool_02,
+        WorldStaticModel = LC.Ground_Tool_02_Model,
+    }
+
+    item Tool_03
+    {
+        Weight = 0.5,
+        ItemType = base:normal,
+        DisplayName = Bloodwell Pump,
+        Icon = Tool_03,
+        WorldStaticModel = LC.Ground_Tool_03_Model,
+    }
+
+    item Ground_Ichor_Pot
+    {
+        Weight = 0.1,
+        ItemType = base:normal,
+        DisplayName = Ichor Pot,
+        Icon = Ichor_Pot,
+        WorldStaticModel = LC.Ground_Ichor_Pot_Model,
+    }
+
+    item Ground_Ichor_Pot_3
+    {
+        Weight = 0.1,
+        ItemType = base:normal,
+        DisplayName = 3 Ichor Pots,
+        Icon = Ichor_Pot,
+        WorldStaticModel = LC.Ground_Ichor_Pot_3_Model,
+    }
+
+    item Ground_Ichor_Pot_Large
+    {
+        Weight = 0.1,
+        ItemType = base:normal,
+        DisplayName = Ichor Jar,
+        Icon = Ichor_Jar,
+        WorldStaticModel = LC.Ground_Ichor_Pot_Large_Model,
+    }
+
+    item Ground_Relic_01
+    {
+        Weight = 0.1,
+        ItemType = base:normal,
+        DisplayName = Tainted Relic Pot,
+        Icon = Relic_01,
+        WorldStaticModel = LC.Ground_Relic_01_Model,
+    }
+
+    item Ground_Relic_02
+    {
+        Weight = 0.1,
+        ItemType = base:normal,
+        DisplayName = Tainted Relic Bust,
+        Icon = Relic_02,
+        WorldStaticModel = LC.Ground_Relic_02_Model,
+    }
+}

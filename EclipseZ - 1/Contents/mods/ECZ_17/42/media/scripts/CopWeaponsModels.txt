@@ -1,0 +1,63 @@
+module Base
+{
+	model Maglite
+    {
+        mesh = weapons//1handed/Maglite,
+        texture = weapons//1handed/Maglite,
+
+        attachment world
+        {
+            offset = -0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment gunlight
+        {
+            offset = 0.0173 -0.0032 -0.0113,
+            rotate = -89.9981 -0.0484 90.0342,
+            scale = 0.4945,
+        }
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment attachment1
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model TelescopingBaton
+    {
+        mesh = weapons//1handed/TelescopingBaton,
+        texture = weapons//1handed/TelescopingBaton,
+        attachment world
+        {
+            offset = -0.00 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+     }
+	model BreachingHammer
+	{
+        mesh = weapons//2handed/BreachingHammer,
+        texture = weapons//2handed/BreachingHammer,
+        attachment world
+        {
+            offset = -0.00 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+	}
+}

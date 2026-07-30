@@ -1,0 +1,40 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_IDBFS_ManualPress
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Distillery Press,
+            Icon = media/textures/Distillery Press.png,
+        }
+
+        entity ES_IDBFS_FermentationBarrel
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Fermentation Barrel,
+            Icon = media/textures/Fermentation Barrel.png,
+        }
+
+        entity ES_IDBFS_LiquidBarrelRack
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Double Barrel Container,
+            Icon = media/textures/Fermentation Barrel.png,
+        }
+
+        entity ES_IDBFS_DistillationStill
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Distillation Still,
+            Icon = media/textures/Distillation Still.png,
+        }
+
+        entity ES_IDBFS_IndustrialTank
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Industrial Tank,
+            Icon = media/textures/Industrial Tank.png,
+        }
+    }
+}

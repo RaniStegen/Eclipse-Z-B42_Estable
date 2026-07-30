@@ -1,0 +1,11 @@
+{
+    "IGUI_Close": "Cerrar",
+    "IGUI_RadioClose": "Cerrar",
+    "IGUI_TicketUI_RemoveTicket": "Eliminar ticket",
+    "IGUI_CheatPanel_CanHearAll_tooltip": "Escuchar a todos los jugadores en el chat de voz.",
+    "IGUI_HeadlightFocusingDown": "Disminuir enfoque",
+    "IGUI_ScavengeUI_PutItemInBag": "Guardar los objetos en %1 (%2)",
+    "IGUI_ScavengeUI_PutItemInPlayerInv": "Guardar los objetos en el inventario principal",
+    "IGUI_ClothingName_Bloody": "Ensangrentado",
+    "IGUI_VehicleApplyBrakes": "Frenar"
+}

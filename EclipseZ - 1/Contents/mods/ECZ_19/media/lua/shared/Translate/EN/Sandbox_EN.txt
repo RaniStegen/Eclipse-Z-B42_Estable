@@ -1,0 +1,54 @@
+Sandbox_EN = {
+    Sandbox_PagerMod = "Pager Network",
+
+    Sandbox_PagerMod_SignalMode = "Pager signal range",
+    Sandbox_PagerMod_SignalMode_tooltip = "How far pages travel.<br>Map-wide: pagers reach anywhere on the map (the default - pagers are your long-range tier, with walkie-talkies for medium range and voice chat up close).<br>Limited range: a page only arrives if the recipient is within the distance set below.",
+    Sandbox_PagerMod_SignalMode_option1 = "Map-wide (anywhere)",
+    Sandbox_PagerMod_SignalMode_option2 = "Limited range",
+
+    Sandbox_PagerMod_SignalRange = "Limited-range distance (tiles)",
+    Sandbox_PagerMod_SignalRange_tooltip = "Only used when signal range is set to Limited. The furthest a page can reach, measured in tiles between sender and recipient (1 tile is about 1 metre).",
+
+    Sandbox_PagerMod_AllowBroadcast = "Allow paging everyone at once",
+    Sandbox_PagerMod_AllowBroadcast_tooltip = "Lets a player send one page to every pager on the network with the Broadcast button. Turn this off on busy servers to cut down on spam.",
+
+    Sandbox_PagerMod_MaxMessages = "Saved pages per pager",
+    Sandbox_PagerMod_MaxMessages_tooltip = "How many pages a single pager keeps. Once it is full, the oldest page is dropped to make room for a new one.",
+
+    Sandbox_PagerMod_MessageMaxLength = "Maximum characters per page",
+    Sandbox_PagerMod_MessageMaxLength_tooltip = "The longest message a player can put in one page, counted in characters.",
+
+    Sandbox_PagerMod_NotifySound = "Beep when a page arrives",
+    Sandbox_PagerMod_NotifySound_tooltip = "Play a beep and show an on-screen alert (with a preview of the message) whenever a new page comes in.",
+
+    Sandbox_PagerMod_LocationSharing = "Share your location on a page",
+    Sandbox_PagerMod_LocationSharing_tooltip = "Whether a page can include where the sender is standing. The recipient then sees the coordinates plus distance and a compass bearing.<br>Off: location is never shared.<br>Ask each time: the sender ticks a box per page (the default).<br>Always on: every page carries the sender's location.<br>An SOS still shares location unless this is set to Off.",
+    Sandbox_PagerMod_LocationSharing_option1 = "Off",
+    Sandbox_PagerMod_LocationSharing_option2 = "Ask each time",
+    Sandbox_PagerMod_LocationSharing_option3 = "Always on",
+
+    Sandbox_PagerMod_SendCooldown = "Wait between pages (seconds)",
+    Sandbox_PagerMod_SendCooldown_tooltip = "Minimum number of seconds a player must wait between sending pages. Helps stop spam and griefing on PvP servers. Set to 0 for no limit (the default).",
+
+    Sandbox_PagerMod_ReadReceipts = "Show 'read' confirmations",
+    Sandbox_PagerMod_ReadReceipts_tooltip = "Notifies the sender once the person they paged has opened and read the message.",
+
+    Sandbox_PagerMod_FactionScope = "Faction privacy (PvPvE)",
+    Sandbox_PagerMod_FactionScope_tooltip = "Controls who can reach who.<br>Anyone: any pager can page any other (the default).<br>Same faction only: members of different factions cannot page each other, so rival groups can't eavesdrop or spam. Players who are not in a faction can always be reached.",
+    Sandbox_PagerMod_FactionScope_option1 = "Anyone can page anyone",
+    Sandbox_PagerMod_FactionScope_option2 = "Same faction only",
+
+    Sandbox_PagerMod_AllowSOS = "Allow the SOS beacon",
+    Sandbox_PagerMod_AllowSOS_tooltip = "Enables the emergency SOS button, which pages everyone on the network at once and attaches the sender's location (unless location sharing is Off).",
+
+    Sandbox_PagerMod_AllowBlocking = "Allow blocking numbers",
+    Sandbox_PagerMod_AllowBlocking_tooltip = "Lets players block a pager number so its pages never reach them. Useful against griefers in PvP.",
+
+    Sandbox_PagerMod_BatteryLife = "Battery life",
+    Sandbox_PagerMod_BatteryLife_tooltip = "How long a fresh battery powers a pager before it dies and must be replaced. Measured in in-game time. Replace batteries from the pager's right-click menu using a Battery item.",
+    Sandbox_PagerMod_BatteryLife_option1 = "1 month",
+    Sandbox_PagerMod_BatteryLife_option2 = "3 months",
+    Sandbox_PagerMod_BatteryLife_option3 = "6 months",
+    Sandbox_PagerMod_BatteryLife_option4 = "1 year",
+    Sandbox_PagerMod_BatteryLife_option5 = "Never dies",
+}

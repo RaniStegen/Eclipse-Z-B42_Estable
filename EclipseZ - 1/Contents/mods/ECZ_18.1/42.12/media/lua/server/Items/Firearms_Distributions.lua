@@ -1,0 +1,2 @@
+--for mod compat:
+--SuburbsDistributions = distributionTable;

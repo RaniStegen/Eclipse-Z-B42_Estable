@@ -1,0 +1,20 @@
+module Base
+{
+    /*
+     * B42 already ships Base.Pager and spawns it in loot. We re-declare it to
+     * (a) make it holsterable in the walkie-talkie belt slot and (b) point its
+     * tooltip at our usage text. All vanilla fields are repeated so the item is
+     * complete whether the engine merges or replaces the definition.
+     */
+    item Pager
+    {
+        DisplayCategory  = Electronics,
+        ItemType         = base:normal,
+        Weight           = 0.1,
+        Icon             = Pager,
+        WorldStaticModel = Pager,
+        Tags             = base:hasmetal;base:miscelectronic,
+        AttachmentType   = Walkie,
+        Tooltip          = Tooltip_PagerMod_Pager,
+    }
+}

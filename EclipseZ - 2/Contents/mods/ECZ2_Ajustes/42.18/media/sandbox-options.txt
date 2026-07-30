@@ -1,0 +1,127 @@
+VERSION = 1,
+
+option SkillLimiter.Enable
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiter,
+    translation = SkillLimiter_Enable,
+}
+
+option SkillLimiter.AgilityBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_AgilityBonus,
+}
+
+option SkillLimiter.CombatBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_CombatBonus,
+}
+
+option SkillLimiter.CraftingBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_CraftingBonus,
+}
+
+option SkillLimiter.FirearmBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_FirearmBonus,
+}
+
+option SkillLimiter.SurvivalistBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_SurvivalistBonus,
+}
+
+option SkillLimiter.PassivesBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_PassivesBonus,
+}
+
+option SkillLimiter.MusicBonus
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 0,
+    page = SkillLimiter,
+    translation = SkillLimiter_MusicBonus,
+}
+
+option SkillLimiter.PerkLvl0Cap
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 3,
+    page = SkillLimiter,
+    translation = SkillLimiter_PerkLvl0Cap,
+}
+
+option SkillLimiter.PerkLvl1Cap
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 7,
+    page = SkillLimiter,
+    translation = SkillLimiter_PerkLvl1Cap,
+}
+
+option SkillLimiter.PerkLvl2Cap
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 9,
+    page = SkillLimiter,
+    translation = SkillLimiter_PerkLvl2Cap,
+}
+
+option SkillLimiter.PerkLvl3Cap
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 10,
+    page = SkillLimiter,
+    translation = SkillLimiter_PerkLvl3Cap,
+}
+
+option SkillLimiter.PerkBonuses
+{
+    type = string,
+    default = metalwelding:0;mechanics:0;plantscavenging:0,
+    page = SkillLimiter,
+    translation = SkillLimiter_PerkBonuses,
+}

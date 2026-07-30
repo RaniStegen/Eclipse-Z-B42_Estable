@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>afc884d5-21b2-4a74-a0ad-85c9b18aadee</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_1</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_1_sheer</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_2</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_Assassin</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_Assassin_sheer</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\LongDress_Assassin_fishnet</m_BaseTextures>
+</clothingItem>

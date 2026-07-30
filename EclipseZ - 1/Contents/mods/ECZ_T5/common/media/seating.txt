@@ -1,0 +1,559 @@
+seating
+{
+    VERSION = 3,
+
+    tileset
+    {
+        name = LiuDing_Tiles_coffee_02,
+
+        /* LiuDing_Tiles_coffee_02_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = E,
+                translate = 898 1735 1055,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_02_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = S,
+                translate = 1012 1762 943,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_02_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = W,
+                translate = 509 1763 871,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_02_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = N,
+                translate = 1123 1675 460,
+            }
+        }
+    }
+
+    tileset
+    {
+        name = LiuDing_Tiles_veteran BBQ,
+
+        /* LiuDing_Tiles_veteran BBQ_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = N,
+                translate = 729 2060 981,
+            }
+
+            position
+            {
+                id = S,
+                translate = 778 2162 338,
+            }
+
+            position
+            {
+                id = W,
+                translate = 1385 2040 371,
+            }
+
+            position
+            {
+                id = E,
+                translate = 456 2025 271,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = N,
+                translate = 747 2054 1105,
+            }
+
+            position
+            {
+                id = S,
+                translate = 764 2151 124,
+            }
+
+            position
+            {
+                id = W,
+                translate = 1512 2000 461,
+            }
+
+            position
+            {
+                id = E,
+                translate = 373 2162 420,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = E,
+                translate = -2529 3117 523,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = S,
+                translate = 413 3129 -2365,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = W,
+                translate = 3394 3085 69,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 739 3011 3550,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = E,
+                translate = -2307 4077 502,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = S,
+                translate = 680 4027 -2421,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = W,
+                translate = 3490 4036 457,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = N,
+                translate = 1058 4072 3376,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = E,
+                translate = -2315 4512 439,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = S,
+                translate = 649 4642 -2464,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = W,
+                translate = 3677 4566 525,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = N,
+                translate = 591 4593 3369,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_24 */
+        tile
+        {
+            xy = 0 3,
+
+            position
+            {
+                id = E,
+                translate = -2350 2990 478,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_25 */
+        tile
+        {
+            xy = 1 3,
+
+            position
+            {
+                id = S,
+                translate = 359 3189 -2555,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_26 */
+        tile
+        {
+            xy = 2 3,
+
+            position
+            {
+                id = W,
+                translate = 3330 3056 63,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_27 */
+        tile
+        {
+            xy = 3 3,
+
+            position
+            {
+                id = N,
+                translate = 705 3020 3377,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_28 */
+        tile
+        {
+            xy = 4 3,
+
+            position
+            {
+                id = E,
+                translate = -2381 4092 490,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_29 */
+        tile
+        {
+            xy = 5 3,
+
+            position
+            {
+                id = S,
+                translate = 612 4093 -2493,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_30 */
+        tile
+        {
+            xy = 6 3,
+
+            position
+            {
+                id = W,
+                translate = 3351 4068 405,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_31 */
+        tile
+        {
+            xy = 7 3,
+
+            position
+            {
+                id = N,
+                translate = 1009 4055 3355,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_32 */
+        tile
+        {
+            xy = 0 4,
+
+            position
+            {
+                id = E,
+                translate = -2362 4572 426,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_33 */
+        tile
+        {
+            xy = 1 4,
+
+            position
+            {
+                id = S,
+                translate = 571 4681 -2627,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_34 */
+        tile
+        {
+            xy = 2 4,
+
+            position
+            {
+                id = W,
+                translate = 3378 4557 376,
+            }
+        }
+
+        /* LiuDing_Tiles_veteran BBQ_35 */
+        tile
+        {
+            xy = 3 4,
+
+            position
+            {
+                id = N,
+                translate = 634 4593 3543,
+            }
+        }
+    }
+
+    tileset
+    {
+        name = LiuDing_Tiles_coffee,
+
+        /* LiuDing_Tiles_coffee_104 */
+        tile
+        {
+            xy = 0 13,
+
+            position
+            {
+                id = E,
+                translate = -1494 1792 1456,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_105 */
+        tile
+        {
+            xy = 1 13,
+
+            position
+            {
+                id = E,
+                translate = -1313 1832 1934,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_106 */
+        tile
+        {
+            xy = 2 13,
+
+            position
+            {
+                id = E,
+                translate = -1352 1799 2120,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_107 */
+        tile
+        {
+            xy = 3 13,
+
+            position
+            {
+                id = S,
+                translate = 3251 1947 -1299,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_108 */
+        tile
+        {
+            xy = 4 13,
+
+            position
+            {
+                id = S,
+                translate = 1673 1937 -1299,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_109 */
+        tile
+        {
+            xy = 5 13,
+
+            position
+            {
+                id = S,
+                translate = 1249 1940 -1293,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_112 */
+        tile
+        {
+            xy = 0 14,
+
+            position
+            {
+                id = W,
+                translate = 3542 712 0,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_113 */
+        tile
+        {
+            xy = 1 14,
+
+            position
+            {
+                id = W,
+                translate = 3549 721 1643,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_114 */
+        tile
+        {
+            xy = 2 14,
+
+            position
+            {
+                id = W,
+                translate = 3573 724 1521,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_115 */
+        tile
+        {
+            xy = 3 14,
+
+            position
+            {
+                id = N,
+                translate = 2435 750 3556,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_116 */
+        tile
+        {
+            xy = 4 14,
+
+            position
+            {
+                id = N,
+                translate = 2095 763 3571,
+            }
+        }
+
+        /* LiuDing_Tiles_coffee_117 */
+        tile
+        {
+            xy = 5 14,
+
+            position
+            {
+                id = N,
+                translate = 1014 727 3541,
+            }
+        }
+    }
+}

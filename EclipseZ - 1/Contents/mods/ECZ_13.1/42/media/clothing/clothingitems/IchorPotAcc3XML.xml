@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Accessory_Ichor_Pot_3_M</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Accessory_Ichor_Pot_3_F</m_FemaleModel>
+	<m_GUID>244ea12e-41b5-47b6-93bf-b96a11730f2d</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<textureChoices>WorldItems\Ground_Ichor_Pot_Tex</textureChoices>
+</clothingItem>

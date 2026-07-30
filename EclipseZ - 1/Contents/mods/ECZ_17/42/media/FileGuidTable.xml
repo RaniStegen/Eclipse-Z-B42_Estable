@@ -1,0 +1,114 @@
+<fileGuidTable>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatPants.xml</path>
+ <guid>8c91af1a-ceff-4414-91d6-770ed2e5ea81</guid>
+ </files>
+  <files>
+ <path>media/clothing/clothingItems/RetroSwatBoots.xml</path>
+ <guid>4ff88a5a-c46c-4a56-be8d-a3f13a6772cc</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatTurtleNeck.xml</path>
+ <guid>6a03657d-1323-44bb-bb9d-58278f4a7190</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatJacket.xml</path>
+ <guid>17e96597-3b93-4aa6-843d-cd274ac8a5a3</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatWebbing.xml</path>
+ <guid>6c97867d-9920-481b-bdb9-13c4da6685e5</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatCap.xml</path>
+ <guid>60031ea65-7c09-42c1-bba7-07f8bc998a65</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatCap_R.xml</path>
+ <guid>e5322209-94fb-4677-bd07-c724af36fc78</guid>
+ </files>
+ <files>
+ <path>media/clothing/clothingItems/RetroSwatFlak.xml</path>
+ <guid>bba94eaa-5ceb-4297-b1b2-9d71b44508a6</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/RetroGasMask.xml</path>
+ <guid>f0e20e44-6196-44ab-935c-195aa9ef41f4</guid>
+ </files>
+<files>
+ <path>media/clothing/clothingItems/93SwatBoots.xml</path>
+ <guid>58dd0cb7-9cb7-489f-adda-b0f2bde75577</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatPants.xml</path>
+ <guid>b56661e9-e139-4d23-bb86-47bb737d2591</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatSweater.xml</path>
+ <guid>414aae10-5099-4aa5-b10e-2fa8cc8325a9</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatJacket.xml</path>
+ <guid>1cbfbfae-e862-4375-a240-dc22ed9fafcd</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatBalaclava.xml</path>
+ <guid>84d65cc4-600d-4deb-8eff-3c98941c03c4</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatVest.xml</path>
+ <guid>94538c78-0c3e-4335-a55d-cbaccb3b772c</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatHelmet.xml</path>
+ <guid>889ca30a-dbcd-49a3-ab21-960d1cd27300</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatGoggles.xml</path>
+ <guid>dcaf289f-9e6e-47d1-a231-eebe9c24fb17</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatGogglesHelmet.xml</path>
+ <guid>50485c10-6334-4c38-89d0-d0a599b12ad1</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93SwatGloves.xml</path>
+ <guid>3403a9b6-5278-4da4-abf8-2bfe280ed75a</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93VisorLowered.xml</path>
+ <guid>f8495660-a0bf-467c-8aed-a8643bc53eb2</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93VisorRaised.xml</path>
+ <guid>43f2c59e-ec02-41da-ad94-677a8e3935e6</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93KneepadLeft.xml</path>
+ <guid>dd8f7c79-5e37-41e6-9adc-c0e943431124</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93KneepadRight.xml</path>
+ <guid>fdd91571-bbe5-45df-8b37-809d1464530b</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93ElbowpadLeft.xml</path>
+ <guid>cd35268e-0eed-4a7d-81ba-e327d59f018b</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93ElbowpadRight.xml</path>
+ <guid>93a491c4-41d2-4b6e-a284-f4bf60b61f4f</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93thighbagL.xml</path>
+ <guid>69498706-4bc0-4ff1-a953-5fc672aad209</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/93thighbagR.xml</path>
+ <guid>957be7d0-dab5-4f46-b8a9-616607952780</guid>
+</files>
+<files>
+ <path>media/clothing/clothingItems/RiotShield.xml</path>
+ <guid>311d2563-6f1b-4f11-8391-0294b09f4a94</guid>
+</files>
+</fileGuidTable>

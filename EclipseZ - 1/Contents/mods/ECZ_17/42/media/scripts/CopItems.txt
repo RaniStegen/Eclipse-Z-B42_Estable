@@ -1,0 +1,37 @@
+module Base
+{
+item MagliteFlashlight
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:drainable,
+        Weight = 1.8,
+        Icon = MagliteFlashlight,
+        ActivatedItem = true,
+        DisappearOnUse = false,
+        KeepOnDeplete = true,
+        LightDistance = 29,
+        LightStrength = 1.1,
+        MetalValue = 10.0,
+        TorchCone = true,
+        TorchDot = 0.5,
+        UseDelta = 0.003,
+        cantBeConsolided = true,
+        primaryAnimMask = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        StaticModel = MagliteFlashlight,
+        WorldStaticModel = MagliteFlashlightGROUND,
+        Tags = base:flashlight;base:flashlightpillar,
+        SoundMap = Activate FlashlightOn,
+        SoundMap = Deactivate FlashlightOff,
+        Researchablerecipes = MakeImprovisedFlashlight;MakeImprovisedLantern,
+    }
+item SilverCoinMorgan
+{
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = SilverCoinMorgan,
+        WorldStaticModel = SilverCoinMorgan,
+        Tags = base:fits;walletbase:hasmetal;base:smallestsilverscrap,
+    }
+}

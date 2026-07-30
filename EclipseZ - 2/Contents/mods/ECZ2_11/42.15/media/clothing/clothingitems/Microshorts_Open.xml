@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\F_Microshorts.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\F_Microshorts.fbx</m_FemaleModel>
+	<m_GUID>ff925064-8e43-45b1-bd73-0b46434914bd</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes\TombWardrobe\Microshorts_Black</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Microshorts_Denim</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Microshorts_Light</textureChoices>
+</clothingItem>

@@ -1,0 +1,17 @@
+SKILL LIMITER - CREDITOS
+
+Mod original: Skill Limiter
+Autor: MaxWasUnavailable
+Workshop: 2833580252
+Repositorio oficial: MaxWasUnavailable/SkillLimiter
+Version original consultada: 1.1.1 para Build 41
+
+Adaptacion EclipseZ:
+- Integracion dentro de ECZ2_Ajustes.
+- Compatibilidad con Build 42.18 y 42.19.
+- Soporte adicional para la habilidad Music de Lifestyle.
+- Calculo de limites basado en puntos de profesion y rasgos.
+
+Creditos originales adicionales:
+- Konijima#9279: ayuda inicial.
+- ladyinkateing: correccion de profesion.

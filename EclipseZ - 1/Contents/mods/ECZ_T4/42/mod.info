@@ -1,0 +1,10 @@
+name=ECZ_T4
+id=ECZ_T4
+description=
+icon=icon.png
+poster=poster.png
+pack=perts_xmas_tiles
+pack=perts_tiles42
+
+tiledef=Pert_tiledefinitions42 4242
+tiledef=ChristmasVillage 4243

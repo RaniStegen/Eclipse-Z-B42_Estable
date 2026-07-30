@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option LootRequiresLight.EnableMod
+{
+    type = boolean,
+    default = true,
+    page = LootRequiresLight,
+    translation = LootRequiresLight_EnableMod,
+}
+
+option LootRequiresLight.RequireLightToLoot
+{
+    type = boolean,
+    default = true,
+    page = LootRequiresLight,
+    translation = LootRequiresLight_RequireLightToLoot,
+}
+
+option LootRequiresLight.AllowSearchingInDarkness
+{
+    type = boolean,
+    default = true,
+    page = LootRequiresLight,
+    translation = LootRequiresLight_AllowSearchingInDarkness,
+}

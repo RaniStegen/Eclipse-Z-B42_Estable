@@ -1,0 +1,17 @@
+module Base
+{
+    /*
+     * B41 only. Backports the Build 42 vanilla pager world model. B42 used
+     * scale 0.075, but on B41's walkie belt slot that renders far too large,
+     * so it's reduced here. <<< TUNE: change `scale` below until the pager
+     * sits right on the belt (lower = smaller). >>>
+     * (A slight left/right offset may remain — the B42 FBX pivot is baked
+     * off-centre and can't be moved without re-authoring the mesh.)
+     */
+    model Pager
+    {
+        mesh    = WorldItems/Pager,
+        texture = WorldItems/Pager,
+        scale   = 0.03,
+    }
+}

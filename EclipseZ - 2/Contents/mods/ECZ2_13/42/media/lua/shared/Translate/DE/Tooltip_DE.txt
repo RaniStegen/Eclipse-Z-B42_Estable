@@ -1,0 +1,6 @@
+Tooltip_DE = {
+    Tooltip_CTT_NeedAxe = "Benötigt eine Axt oder ein anderes Werkzeug mit dem Baumfällen-Tag.",
+    Tooltip_CTT_NeedAxeSkill = "Benötigt Axtfertigkeit Stufe %1.",
+    Tooltip_CTT_AlreadyOpen = "Ein Baumfäll-Minispiel ist bereits geöffnet.",
+    Tooltip_CTT_VanillaDisabled = "Das Vanilla-Baumfällen ist durch Cut That Tree deaktiviert.",
+}

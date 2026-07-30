@@ -1,0 +1,62 @@
+module Base
+{
+    /* Internal visual parts. They are attached only by the reload code and
+       contribute the real 0.4 magazine weight while inserted. */
+    item MP5Mag_Attachment
+    {
+        ItemType = base:weaponpart,
+        hidden = true,
+        DisplayName = MP5 Magazine (internal visual),
+        DisplayCategory = Hidden,
+        Icon = MP5_Mag,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        MountOn = __FirearmsB42Fix_InternalOnly,
+        PartType = Clip,
+        WorldStaticModel = MP5_Magazine,
+    }
+
+    item MP510Mag_Attachment
+    {
+        ItemType = base:weaponpart,
+        hidden = true,
+        DisplayName = MP5/10 Magazine (internal visual),
+        DisplayCategory = Hidden,
+        Icon = MP5_Mag,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        MountOn = __FirearmsB42Fix_InternalOnly,
+        PartType = Clip,
+        WorldStaticModel = MP510_Magazine,
+    }
+
+    item 9mmSilencer
+    {
+        ItemType = base:weaponpart,
+        DisplayName = Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = Base.Glock17; Base.Pistol; Base.MP5; Base.UZI,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer,
+        Tags = firearms:suppressor,
+    }
+
+    item 10mmSilencer
+    {
+        ItemType = base:weaponpart,
+        DisplayName = Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = Base.MP510,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer,
+        Tags = firearms:suppressor,
+    }
+}

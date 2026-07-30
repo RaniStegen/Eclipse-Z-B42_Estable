@@ -1,0 +1,15 @@
+ContextMenu_EN = {
+    ContextMenu_IDBFS_Distillery = "Distillery",
+    ContextMenu_IDBFS_OpenPressInterface = "Open Press Interface",
+    ContextMenu_IDBFS_Inspect = "Inspect Contents",
+    ContextMenu_IDBFS_Process = "Process",
+    ContextMenu_IDBFS_Fill = "Fill / Load Liquid",
+    ContextMenu_IDBFS_TakeLiquid = "Take Liquid",
+    ContextMenu_IDBFS_TakeProduct = "Take Product",
+    ContextMenu_IDBFS_StartFermentation = "Start Fermentation",
+    ContextMenu_IDBFS_StartVinegar = "Start Vinegar",
+    ContextMenu_IDBFS_StartDistillation = "Start Distillation",
+    ContextMenu_IDBFS_DistillTo = "Distill to",
+    ContextMenu_IDBFS_RefineBiofuel = "Refine Biofuel",
+    ContextMenu_IDBFS_Empty = "Empty Contents",
+}

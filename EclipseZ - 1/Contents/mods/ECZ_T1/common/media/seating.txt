@@ -1,0 +1,6029 @@
+seating
+{
+    VERSION = 3,
+
+    tileset
+    {
+        name = d_furniture_couches_01,
+
+        /* d_furniture_couches_01_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = S,
+                translate = 2693 1233 1944,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = S,
+                translate = -248 1243 1952,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = E,
+                translate = 1586 1227 -610,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = E,
+                translate = 1744 1201 1934,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = W,
+                translate = -1787 1188 -1463,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = W,
+                translate = -1996 1175 1685,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = N,
+                translate = 1197 1227 -1672,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_7 */
+        tile
+        {
+            xy = 7 0,
+
+            position
+            {
+                id = N,
+                translate = -1417 1197 -1602,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 844 1686,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 829 2020,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = E,
+                translate = 1922 760 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = W,
+                translate = -1365 1048 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 0 1108 -1451,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = S,
+                translate = 0 829 2020,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = E,
+                translate = 1922 760 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = W,
+                translate = -1365 1048 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = N,
+                translate = 0 1108 -1451,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = S,
+                translate = 2693 1233 1944,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = S,
+                translate = -248 1243 1952,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = E,
+                translate = 1586 1227 -610,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = E,
+                translate = 1744 1201 1934,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_20 */
+        tile
+        {
+            xy = 4 2,
+
+            position
+            {
+                id = W,
+                translate = -1787 1188 -1463,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = W,
+                translate = -1996 1175 1685,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = N,
+                translate = 1197 1227 -1672,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = N,
+                translate = -1417 1197 -1602,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_24 */
+        tile
+        {
+            xy = 0 3,
+
+            position
+            {
+                id = S,
+                translate = 2209 1669 1958,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_25 */
+        tile
+        {
+            xy = 1 3,
+
+            position
+            {
+                id = S,
+                translate = -784 1666 2022,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_26 */
+        tile
+        {
+            xy = 2 3,
+
+            position
+            {
+                id = E,
+                translate = 1923 1671 -1302,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_27 */
+        tile
+        {
+            xy = 3 3,
+
+            position
+            {
+                id = E,
+                translate = 2026 1689 1788,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_28 */
+        tile
+        {
+            xy = 4 3,
+
+            position
+            {
+                id = W,
+                translate = -1371 1571 -1481,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_29 */
+        tile
+        {
+            xy = 5 3,
+
+            position
+            {
+                id = W,
+                translate = -1149 1742 1852,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_30 */
+        tile
+        {
+            xy = 6 3,
+
+            position
+            {
+                id = N,
+                translate = 748 1658 -1113,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_31 */
+        tile
+        {
+            xy = 7 3,
+
+            position
+            {
+                id = N,
+                translate = -988 1625 -996,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_32 */
+        tile
+        {
+            xy = 0 4,
+
+            position
+            {
+                id = S,
+                translate = 0 1309 1749,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_33 */
+        tile
+        {
+            xy = 1 4,
+
+            position
+            {
+                id = E,
+                translate = 1708 1227 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_34 */
+        tile
+        {
+            xy = 2 4,
+
+            position
+            {
+                id = W,
+                translate = -1762 1301 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_35 */
+        tile
+        {
+            xy = 3 4,
+
+            position
+            {
+                id = N,
+                translate = 0 1390 -1304,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_36 */
+        tile
+        {
+            xy = 4 4,
+
+            position
+            {
+                id = S,
+                translate = 0 1315 1768,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_37 */
+        tile
+        {
+            xy = 5 4,
+
+            position
+            {
+                id = E,
+                translate = 1708 1227 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_38 */
+        tile
+        {
+            xy = 6 4,
+
+            position
+            {
+                id = W,
+                translate = -1762 1301 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_39 */
+        tile
+        {
+            xy = 7 4,
+
+            position
+            {
+                id = N,
+                translate = 0 1390 -1304,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_40 */
+        tile
+        {
+            xy = 0 5,
+
+            position
+            {
+                id = S,
+                translate = 2232 1699 1932,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_41 */
+        tile
+        {
+            xy = 1 5,
+
+            position
+            {
+                id = S,
+                translate = -799 1644 2002,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_42 */
+        tile
+        {
+            xy = 2 5,
+
+            position
+            {
+                id = E,
+                translate = 1755 1608 -1317,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_43 */
+        tile
+        {
+            xy = 3 5,
+
+            position
+            {
+                id = E,
+                translate = 2066 1700 1810,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_44 */
+        tile
+        {
+            xy = 4 5,
+
+            position
+            {
+                id = W,
+                translate = -1335 1554 -1499,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_45 */
+        tile
+        {
+            xy = 5 5,
+
+            position
+            {
+                id = W,
+                translate = -1242 1811 1796,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_46 */
+        tile
+        {
+            xy = 6 5,
+
+            position
+            {
+                id = N,
+                translate = 723 1663 -1115,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_47 */
+        tile
+        {
+            xy = 7 5,
+
+            position
+            {
+                id = N,
+                translate = -987 1627 -1005,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_48 */
+        tile
+        {
+            xy = 0 6,
+
+            position
+            {
+                id = S,
+                translate = 2693 1233 1944,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_48 */
+        tile
+        {
+            xy = 0 6,
+
+            position
+            {
+                id = S,
+                translate = 2209 1669 1958,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_49 */
+        tile
+        {
+            xy = 1 6,
+
+            position
+            {
+                id = S,
+                translate = -248 1243 1952,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_49 */
+        tile
+        {
+            xy = 1 6,
+
+            position
+            {
+                id = S,
+                translate = -784 1666 2022,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_50 */
+        tile
+        {
+            xy = 2 6,
+
+            position
+            {
+                id = E,
+                translate = 1586 1227 -610,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_50 */
+        tile
+        {
+            xy = 2 6,
+
+            position
+            {
+                id = E,
+                translate = 1923 1671 -1302,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_51 */
+        tile
+        {
+            xy = 3 6,
+
+            position
+            {
+                id = E,
+                translate = 1744 1201 1934,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_51 */
+        tile
+        {
+            xy = 3 6,
+
+            position
+            {
+                id = E,
+                translate = 2026 1689 1788,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_52 */
+        tile
+        {
+            xy = 4 6,
+
+            position
+            {
+                id = W,
+                translate = -1787 1188 -1463,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_52 */
+        tile
+        {
+            xy = 4 6,
+
+            position
+            {
+                id = W,
+                translate = -1371 1571 -1481,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_53 */
+        tile
+        {
+            xy = 5 6,
+
+            position
+            {
+                id = W,
+                translate = -1996 1175 1685,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_53 */
+        tile
+        {
+            xy = 5 6,
+
+            position
+            {
+                id = W,
+                translate = -1149 1742 1852,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_54 */
+        tile
+        {
+            xy = 6 6,
+
+            position
+            {
+                id = N,
+                translate = 1197 1227 -1672,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_54 */
+        tile
+        {
+            xy = 6 6,
+
+            position
+            {
+                id = N,
+                translate = 748 1658 -1113,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_55 */
+        tile
+        {
+            xy = 7 6,
+
+            position
+            {
+                id = N,
+                translate = -1417 1197 -1602,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_55 */
+        tile
+        {
+            xy = 7 6,
+
+            position
+            {
+                id = N,
+                translate = -988 1625 -996,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_56 */
+        tile
+        {
+            xy = 0 7,
+
+            position
+            {
+                id = S,
+                translate = 0 848 1987,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_57 */
+        tile
+        {
+            xy = 1 7,
+
+            position
+            {
+                id = E,
+                translate = 1901 713 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_58 */
+        tile
+        {
+            xy = 2 7,
+
+            position
+            {
+                id = W,
+                translate = -1353 1042 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_59 */
+        tile
+        {
+            xy = 3 7,
+
+            position
+            {
+                id = N,
+                translate = 0 1115 -1444,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_60 */
+        tile
+        {
+            xy = 4 7,
+
+            position
+            {
+                id = W,
+                translate = -945 2169 439,
+            }
+
+            position
+            {
+                id = N,
+                translate = 710 2020 -902,
+            }
+
+            position
+            {
+                id = S,
+                translate = 478 1960 926,
+            }
+
+            position
+            {
+                id = E,
+                translate = 1762 2010 383,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_61 */
+        tile
+        {
+            xy = 5 7,
+
+            position
+            {
+                id = N,
+                translate = 256 2114 -911,
+            }
+
+            position
+            {
+                id = S,
+                translate = 310 1956 1663,
+            }
+
+            position
+            {
+                id = W,
+                translate = -961 1974 438,
+            }
+
+            position
+            {
+                id = E,
+                translate = 910 2084 530,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_62 */
+        tile
+        {
+            xy = 6 7,
+
+            position
+            {
+                id = W,
+                translate = -944 2169 438,
+            }
+
+            position
+            {
+                id = N,
+                translate = 710 2021 -900,
+            }
+
+            position
+            {
+                id = S,
+                translate = 483 1961 926,
+            }
+
+            position
+            {
+                id = E,
+                translate = 1761 2011 382,
+            }
+        }
+
+        /* d_furniture_couches_01_63 */
+        tile
+        {
+            xy = 7 7,
+
+            position
+            {
+                id = N,
+                translate = 254 2111 -911,
+            }
+
+            position
+            {
+                id = S,
+                translate = 305 1953 1663,
+            }
+
+            position
+            {
+                id = W,
+                translate = -961 1972 440,
+            }
+
+            position
+            {
+                id = E,
+                translate = 910 2083 526,
+            }
+        }
+
+        /* d_furniture_couches_01_64 */
+        tile
+        {
+            xy = 0 8,
+
+            position
+            {
+                id = E,
+                translate = 1901 1225 -1993,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_64 */
+        tile
+        {
+            xy = 0 8,
+
+            position
+            {
+                id = E,
+                translate = 1901 1239 -2015,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_65 */
+        tile
+        {
+            xy = 1 8,
+
+            position
+            {
+                id = E,
+                translate = 1922 760 2322,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_65 */
+        tile
+        {
+            xy = 1 8,
+
+            position
+            {
+                id = E,
+                translate = 1967 1417 2275,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_66 */
+        tile
+        {
+            xy = 2 8,
+
+            position
+            {
+                id = S,
+                translate = 1602 1433 1920,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_66 */
+        tile
+        {
+            xy = 2 8,
+
+            position
+            {
+                id = S,
+                translate = 1606 1429 1926,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_67 */
+        tile
+        {
+            xy = 3 8,
+
+            position
+            {
+                id = S,
+                translate = -2095 1467 1811,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_67 */
+        tile
+        {
+            xy = 3 8,
+
+            position
+            {
+                id = S,
+                translate = -2089 1463 1843,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_68 */
+        tile
+        {
+            xy = 4 8,
+
+            position
+            {
+                id = W,
+                translate = -1654 1421 -1282,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_69 */
+        tile
+        {
+            xy = 5 8,
+
+            position
+            {
+                id = W,
+                translate = -1801 1458 1324,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_70 */
+        tile
+        {
+            xy = 6 8,
+
+            position
+            {
+                id = N,
+                translate = 783 1434 -1605,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_71 */
+        tile
+        {
+            xy = 7 8,
+
+            position
+            {
+                id = N,
+                translate = -679 1323 -1581,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_72 */
+        tile
+        {
+            xy = 0 9,
+
+            position
+            {
+                id = E,
+                translate = 1077 1190 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_73 */
+        tile
+        {
+            xy = 1 9,
+
+            position
+            {
+                id = S,
+                translate = 0 1298 1511,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_74 */
+        tile
+        {
+            xy = 2 9,
+
+            position
+            {
+                id = W,
+                translate = -1755 0 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_75 */
+        tile
+        {
+            xy = 3 9,
+
+            position
+            {
+                id = N,
+                translate = 0 1317 -1295,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_76 */
+        tile
+        {
+            xy = 4 9,
+
+            position
+            {
+                id = E,
+                translate = 1077 1190 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_77 */
+        tile
+        {
+            xy = 5 9,
+
+            position
+            {
+                id = S,
+                translate = 0 1298 1511,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_78 */
+        tile
+        {
+            xy = 6 9,
+
+            position
+            {
+                id = W,
+                translate = -1755 0 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_79 */
+        tile
+        {
+            xy = 7 9,
+
+            position
+            {
+                id = N,
+                translate = 0 1317 -1295,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_80 */
+        tile
+        {
+            xy = 0 10,
+
+            position
+            {
+                id = E,
+                translate = 1901 1239 -2015,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_81 */
+        tile
+        {
+            xy = 1 10,
+
+            position
+            {
+                id = E,
+                translate = 1912 759 2275,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_82 */
+        tile
+        {
+            xy = 2 10,
+
+            position
+            {
+                id = S,
+                translate = 1606 1429 1926,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_83 */
+        tile
+        {
+            xy = 3 10,
+
+            position
+            {
+                id = S,
+                translate = -2089 1463 1843,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_84 */
+        tile
+        {
+            xy = 4 10,
+
+            position
+            {
+                id = W,
+                translate = -1654 1421 -1282,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_85 */
+        tile
+        {
+            xy = 5 10,
+
+            position
+            {
+                id = W,
+                translate = -1801 1458 1324,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_86 */
+        tile
+        {
+            xy = 6 10,
+
+            position
+            {
+                id = N,
+                translate = 783 1434 -1605,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_87 */
+        tile
+        {
+            xy = 7 10,
+
+            position
+            {
+                id = N,
+                translate = -679 1323 -1581,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_88 */
+        tile
+        {
+            xy = 0 11,
+
+            position
+            {
+                id = E,
+                translate = 1901 1239 -2015,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_89 */
+        tile
+        {
+            xy = 1 11,
+
+            position
+            {
+                id = E,
+                translate = 1967 1417 2275,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_90 */
+        tile
+        {
+            xy = 2 11,
+
+            position
+            {
+                id = S,
+                translate = 1606 1429 1926,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_91 */
+        tile
+        {
+            xy = 3 11,
+
+            position
+            {
+                id = S,
+                translate = -2089 1463 1843,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_92 */
+        tile
+        {
+            xy = 4 11,
+
+            position
+            {
+                id = W,
+                translate = -1654 1421 -1282,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_93 */
+        tile
+        {
+            xy = 5 11,
+
+            position
+            {
+                id = W,
+                translate = -1801 1458 1324,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_94 */
+        tile
+        {
+            xy = 6 11,
+
+            position
+            {
+                id = N,
+                translate = 783 1434 -1605,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_95 */
+        tile
+        {
+            xy = 7 11,
+
+            position
+            {
+                id = N,
+                translate = -679 1323 -1581,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_96 */
+        tile
+        {
+            xy = 0 12,
+
+            position
+            {
+                id = E,
+                translate = 1077 1190 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_97 */
+        tile
+        {
+            xy = 1 12,
+
+            position
+            {
+                id = S,
+                translate = 0 1298 1511,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_98 */
+        tile
+        {
+            xy = 2 12,
+
+            position
+            {
+                id = W,
+                translate = -1755 0 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_99 */
+        tile
+        {
+            xy = 3 12,
+
+            position
+            {
+                id = N,
+                translate = 0 1317 -1295,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_100 */
+        tile
+        {
+            xy = 4 12,
+
+            position
+            {
+                id = E,
+                translate = 1077 1190 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_101 */
+        tile
+        {
+            xy = 5 12,
+
+            position
+            {
+                id = S,
+                translate = 0 1298 1511,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_102 */
+        tile
+        {
+            xy = 6 12,
+
+            position
+            {
+                id = W,
+                translate = -1755 0 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_103 */
+        tile
+        {
+            xy = 7 12,
+
+            position
+            {
+                id = N,
+                translate = 0 1317 -1295,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_104 */
+        tile
+        {
+            xy = 0 13,
+
+            position
+            {
+                id = E,
+                translate = 1901 1239 -2015,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_105 */
+        tile
+        {
+            xy = 1 13,
+
+            position
+            {
+                id = E,
+                translate = 1967 1417 2275,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_106 */
+        tile
+        {
+            xy = 2 13,
+
+            position
+            {
+                id = S,
+                translate = 1606 1429 1926,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_107 */
+        tile
+        {
+            xy = 3 13,
+
+            position
+            {
+                id = S,
+                translate = -2089 1463 1843,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_108 */
+        tile
+        {
+            xy = 4 13,
+
+            position
+            {
+                id = W,
+                translate = -1654 1421 -1282,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_109 */
+        tile
+        {
+            xy = 5 13,
+
+            position
+            {
+                id = W,
+                translate = -1801 1458 1324,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_110 */
+        tile
+        {
+            xy = 6 13,
+
+            position
+            {
+                id = N,
+                translate = 783 1434 -1605,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_couches_01_111 */
+        tile
+        {
+            xy = 7 13,
+
+            position
+            {
+                id = N,
+                translate = -679 1323 -1581,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = d_furniture_bedroom_01,
+
+        /* d_furniture_bedroom_01_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = W,
+                translate = -3069 3120 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2564 3017 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = W,
+                translate = -2476 2965 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2514 3042 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = N,
+                translate = 0 3017 -2337,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2991 2059,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = S,
+                translate = 0 2991 1920,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2759 -3688,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = E,
+                translate = 3019 2939 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2264 2971 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = E,
+                translate = 2958 3000 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2883 3039 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = N,
+                translate = 0 2808 -3335,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3116 2148,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_7 */
+        tile
+        {
+            xy = 7 0,
+
+            position
+            {
+                id = S,
+                translate = 0 3116 1903,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3065 -3131,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 2299,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3116 -1658,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3346 2129,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3381 -1566,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = W,
+                translate = -1518 3416 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = W,
+                translate = -1621 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = E,
+                translate = 2016 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = E,
+                translate = 1847 3451 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = W,
+                translate = -1888 2921 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = W,
+                translate = -1541 3399 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = E,
+                translate = 1592 3352 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = E,
+                translate = 2046 3326 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_20 */
+        tile
+        {
+            xy = 4 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3378 1655,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = N,
+                translate = 0 3300 -1756,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 1677,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_01_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = N,
+                translate = 0 2885 -2110,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = d_furniture_bedroom_02,
+
+        /* d_furniture_bedroom_02_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = W,
+                translate = -3069 3120 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2564 3017 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = W,
+                translate = -2476 2965 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2514 3042 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = N,
+                translate = 0 3017 -2337,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2991 2059,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = S,
+                translate = 0 2991 1920,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2759 -3688,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = E,
+                translate = 3019 2939 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2264 2971 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = E,
+                translate = 2958 3000 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2883 3039 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = N,
+                translate = 0 2808 -3335,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3116 2148,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_7 */
+        tile
+        {
+            xy = 7 0,
+
+            position
+            {
+                id = S,
+                translate = 0 3116 1903,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3065 -3131,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 2299,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3116 -1658,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3346 2129,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3381 -1566,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = W,
+                translate = -1518 3416 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = W,
+                translate = -1621 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = E,
+                translate = 2016 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = E,
+                translate = 1847 3451 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = W,
+                translate = -1888 2921 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = W,
+                translate = -1541 3399 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = E,
+                translate = 1592 3352 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = E,
+                translate = 2046 3326 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_20 */
+        tile
+        {
+            xy = 4 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3378 1655,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = N,
+                translate = 0 3300 -1756,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 1677,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_02_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = N,
+                translate = 0 2885 -2110,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = d_furniture_bedroom_03,
+
+        /* d_furniture_bedroom_03_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = W,
+                translate = -3069 3120 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2564 3017 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = W,
+                translate = -2476 2965 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2514 3042 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = N,
+                translate = 0 3017 -2337,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2991 2059,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = S,
+                translate = 0 2991 1920,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2759 -3688,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = E,
+                translate = 3019 2939 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2264 2971 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = E,
+                translate = 2958 3000 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = W,
+                translate = -2883 3039 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = N,
+                translate = 0 2808 -3335,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3116 2148,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_7 */
+        tile
+        {
+            xy = 7 0,
+
+            position
+            {
+                id = S,
+                translate = 0 3116 1903,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3065 -3131,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 2299,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3116 -1658,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3346 2129,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3381 -1566,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = W,
+                translate = -1518 3416 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = W,
+                translate = -1621 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = E,
+                translate = 2016 3269 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = E,
+                translate = 1847 3451 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = W,
+                translate = -1888 2921 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = W,
+                translate = -1541 3399 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = E,
+                translate = 1592 3352 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = E,
+                translate = 2046 3326 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_20 */
+        tile
+        {
+            xy = 4 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3378 1655,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = N,
+                translate = 0 3300 -1756,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 1677,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_03_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = N,
+                translate = 0 2885 -2110,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = d_furniture_bedroom_04,
+
+        /* d_furniture_bedroom_04_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = W,
+                translate = -3069 3120 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2564 3017 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_1 */
+        tile
+        {
+            xy = 1 0,
+
+            position
+            {
+                id = W,
+                translate = -2476 2965 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2514 3042 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_2 */
+        tile
+        {
+            xy = 2 0,
+
+            position
+            {
+                id = N,
+                translate = 0 3017 -2337,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2991 2059,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = S,
+                translate = 0 2991 2589,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2759 -3688,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_4 */
+        tile
+        {
+            xy = 4 0,
+
+            position
+            {
+                id = W,
+                translate = -2264 2971 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = W,
+                translate = -2883 3039 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = E,
+                translate = 1844 2733 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_7 */
+        tile
+        {
+            xy = 7 0,
+
+            position
+            {
+                id = E,
+                translate = 1756 2914 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = S,
+                translate = 0 3385 2299,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3116 -1658,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 1831 -354,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = N,
+                translate = 0 1831 -2463,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = N,
+                translate = 0 3381 -1566,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_12 */
+        tile
+        {
+            xy = 4 1,
+
+            position
+            {
+                id = W,
+                translate = -3081 2841 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2456 2925 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = W,
+                translate = -2804 2845 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = E,
+                translate = 2568 2702 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = N,
+                translate = 0 2724 -3193,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2769 2545,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = N,
+                translate = 0 2724 -2880,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2702 2635,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_16 */
+        tile
+        {
+            xy = 0 2,
+
+            position
+            {
+                id = W,
+                translate = -1888 2921 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_17 */
+        tile
+        {
+            xy = 1 2,
+
+            position
+            {
+                id = W,
+                translate = -1541 3399 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_18 */
+        tile
+        {
+            xy = 2 2,
+
+            position
+            {
+                id = E,
+                translate = 1592 3352 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_19 */
+        tile
+        {
+            xy = 3 2,
+
+            position
+            {
+                id = E,
+                translate = 2046 3326 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_20 */
+        tile
+        {
+            xy = 4 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3378 1655,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = S,
+                translate = 0 3237 1299,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = N,
+                translate = 0 3276 -1459,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* d_furniture_bedroom_04_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = N,
+                translate = 0 2885 -2110,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = location_community_medical_ddd_01,
+
+        /* location_community_medical_ddd_01_24 */
+        tile
+        {
+            xy = 0 3,
+
+            position
+            {
+                id = E,
+                translate = 0 988 313,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* location_community_medical_ddd_01_25 */
+        tile
+        {
+            xy = 1 3,
+
+            position
+            {
+                id = W,
+                translate = 0 786 554,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* location_community_medical_ddd_01_26 */
+        tile
+        {
+            xy = 2 3,
+
+            position
+            {
+                id = N,
+                translate = 1723 536 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* location_community_medical_ddd_01_27 */
+        tile
+        {
+            xy = 3 3,
+
+            position
+            {
+                id = S,
+                translate = 0 382 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = location_business_office_ddd_01,
+
+        /* location_business_office_ddd_01_32 */
+        tile
+        {
+            xy = 0 4,
+
+            position
+            {
+                id = W,
+                translate = 0 138 0,
+            }
+        }
+
+        /* location_business_office_ddd_01_33 */
+        tile
+        {
+            xy = 1 4,
+
+            position
+            {
+                id = E,
+                translate = 0 -75 -119,
+            }
+        }
+
+        /* location_business_office_ddd_01_34 */
+        tile
+        {
+            xy = 2 4,
+
+            position
+            {
+                id = S,
+                translate = 0 0 -237,
+            }
+        }
+
+        /* location_business_office_ddd_01_35 */
+        tile
+        {
+            xy = 3 4,
+
+            position
+            {
+                id = N,
+                translate = 0 0 -674,
+            }
+        }
+
+        /* location_business_office_ddd_01_36 */
+        tile
+        {
+            xy = 4 4,
+
+            position
+            {
+                id = E,
+                translate = 669 0 762,
+            }
+        }
+
+        /* location_business_office_ddd_01_37 */
+        tile
+        {
+            xy = 5 4,
+
+            position
+            {
+                id = S,
+                translate = 491 69 110,
+            }
+        }
+
+        /* location_business_office_ddd_01_38 */
+        tile
+        {
+            xy = 6 4,
+
+            position
+            {
+                id = W,
+                translate = -135 -346 0,
+            }
+        }
+
+        /* location_business_office_ddd_01_39 */
+        tile
+        {
+            xy = 7 4,
+
+            position
+            {
+                id = N,
+                translate = 457 -52 -76,
+            }
+        }
+    }
+
+    tileset
+    {
+        name = furniture_seating_outdoor_ddd_01,
+
+        /* furniture_seating_outdoor_ddd_01_0 */
+        tile
+        {
+            xy = 0 0,
+
+            position
+            {
+                id = S,
+                translate = 0 138 -1499,
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_3 */
+        tile
+        {
+            xy = 3 0,
+
+            position
+            {
+                id = E,
+                translate = -1812 0 85,
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_5 */
+        tile
+        {
+            xy = 5 0,
+
+            position
+            {
+                id = N,
+                translate = 0 -346 1211,
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_6 */
+        tile
+        {
+            xy = 6 0,
+
+            position
+            {
+                id = W,
+                translate = 2100 553 550,
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_8 */
+        tile
+        {
+            xy = 0 1,
+
+            position
+            {
+                id = E,
+                translate = 0 52 344,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_9 */
+        tile
+        {
+            xy = 1 1,
+
+            position
+            {
+                id = S,
+                translate = 110 -156 -8,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_10 */
+        tile
+        {
+            xy = 2 1,
+
+            position
+            {
+                id = N,
+                translate = 0 718 135,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+
+        /* furniture_seating_outdoor_ddd_01_11 */
+        tile
+        {
+            xy = 3 1,
+
+            position
+            {
+                id = W,
+                translate = -449 838 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+    }
+
+    tileset
+    {
+        name = furniture_more_ddd_01,
+
+        /* furniture_more_ddd_01_13 */
+        tile
+        {
+            xy = 5 1,
+
+            position
+            {
+                id = S,
+                translate = 910 2015 2468,
+            }
+        }
+
+        /* furniture_more_ddd_01_14 */
+        tile
+        {
+            xy = 6 1,
+
+            position
+            {
+                id = E,
+                translate = 1651 1291 401,
+            }
+        }
+
+        /* furniture_more_ddd_01_15 */
+        tile
+        {
+            xy = 7 1,
+
+            position
+            {
+                id = W,
+                translate = 0 1512 525,
+            }
+        }
+
+        /* furniture_more_ddd_01_21 */
+        tile
+        {
+            xy = 5 2,
+
+            position
+            {
+                id = N,
+                translate = 679 1638 154,
+            }
+        }
+
+        /* furniture_more_ddd_01_22 */
+        tile
+        {
+            xy = 6 2,
+
+            position
+            {
+                id = S,
+                translate = 941 1701 1836,
+            }
+        }
+
+        /* furniture_more_ddd_01_23 */
+        tile
+        {
+            xy = 7 2,
+
+            position
+            {
+                id = E,
+                translate = 1682 1417 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_29 */
+        tile
+        {
+            xy = 5 3,
+
+            position
+            {
+                id = W,
+                translate = -571 1291 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_30 */
+        tile
+        {
+            xy = 6 3,
+
+            position
+            {
+                id = N,
+                translate = 879 1480 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_37 */
+        tile
+        {
+            xy = 5 4,
+
+            position
+            {
+                id = W,
+                translate = 0 1228 370,
+            }
+        }
+
+        /* furniture_more_ddd_01_45 */
+        tile
+        {
+            xy = 5 5,
+
+            position
+            {
+                id = E,
+                translate = 278 1039 417,
+            }
+        }
+
+        /* furniture_more_ddd_01_46 */
+        tile
+        {
+            xy = 6 5,
+
+            position
+            {
+                id = S,
+                translate = 339 882 -293,
+            }
+        }
+
+        /* furniture_more_ddd_01_47 */
+        tile
+        {
+            xy = 7 5,
+
+            position
+            {
+                id = N,
+                translate = 478 1165 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_48 */
+        tile
+        {
+            xy = 0 6,
+
+            position
+            {
+                id = W,
+                translate = 401 1228 509,
+            }
+        }
+
+        /* furniture_more_ddd_01_49 */
+        tile
+        {
+            xy = 1 6,
+
+            position
+            {
+                id = E,
+                translate = 278 1134 756,
+            }
+        }
+
+        /* furniture_more_ddd_01_50 */
+        tile
+        {
+            xy = 2 6,
+
+            position
+            {
+                id = S,
+                translate = 432 882 -309,
+            }
+        }
+
+        /* furniture_more_ddd_01_51 */
+        tile
+        {
+            xy = 3 6,
+
+            position
+            {
+                id = N,
+                translate = 602 1134 293,
+            }
+        }
+
+        /* furniture_more_ddd_01_52 */
+        tile
+        {
+            xy = 4 6,
+
+            position
+            {
+                id = W,
+                translate = 123 1102 339,
+            }
+        }
+
+        /* furniture_more_ddd_01_53 */
+        tile
+        {
+            xy = 5 6,
+
+            position
+            {
+                id = E,
+                translate = -31 756 463,
+            }
+        }
+
+        /* furniture_more_ddd_01_54 */
+        tile
+        {
+            xy = 6 6,
+
+            position
+            {
+                id = S,
+                translate = 0 0 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_55 */
+        tile
+        {
+            xy = 7 6,
+
+            position
+            {
+                id = N,
+                translate = 309 976 77,
+            }
+        }
+
+        /* furniture_more_ddd_01_56 */
+        tile
+        {
+            xy = 0 7,
+
+            position
+            {
+                id = W,
+                translate = 231 850 571,
+            }
+        }
+
+        /* furniture_more_ddd_01_57 */
+        tile
+        {
+            xy = 1 7,
+
+            position
+            {
+                id = E,
+                translate = 0 819 324,
+            }
+        }
+
+        /* furniture_more_ddd_01_58 */
+        tile
+        {
+            xy = 2 7,
+
+            position
+            {
+                id = S,
+                translate = 93 724 -679,
+            }
+        }
+
+        /* furniture_more_ddd_01_59 */
+        tile
+        {
+            xy = 3 7,
+
+            position
+            {
+                id = N,
+                translate = 571 913 278,
+            }
+        }
+
+        /* furniture_more_ddd_01_60 */
+        tile
+        {
+            xy = 4 7,
+
+            position
+            {
+                id = W,
+                translate = 216 945 401,
+            }
+        }
+
+        /* furniture_more_ddd_01_61 */
+        tile
+        {
+            xy = 5 7,
+
+            position
+            {
+                id = E,
+                translate = 247 787 154,
+            }
+        }
+
+        /* furniture_more_ddd_01_62 */
+        tile
+        {
+            xy = 6 7,
+
+            position
+            {
+                id = S,
+                translate = 0 850 -741,
+            }
+        }
+
+        /* furniture_more_ddd_01_63 */
+        tile
+        {
+            xy = 7 7,
+
+            position
+            {
+                id = N,
+                translate = 309 913 231,
+            }
+        }
+
+        /* furniture_more_ddd_01_64 */
+        tile
+        {
+            xy = 0 8,
+
+            position
+            {
+                id = W,
+                translate = -3436 2400 0,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2407 2618 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_65 */
+        tile
+        {
+            xy = 1 8,
+
+            position
+            {
+                id = W,
+                translate = -3980 2362 0,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2453 2519 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_66 */
+        tile
+        {
+            xy = 2 8,
+
+            position
+            {
+                id = N,
+                translate = 0 3181 -2839,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3118 2468,
+            }
+        }
+
+        /* furniture_more_ddd_01_67 */
+        tile
+        {
+            xy = 3 8,
+
+            position
+            {
+                id = N,
+                translate = 0 3433 -2546,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3370 2854,
+            }
+        }
+
+        /* furniture_more_ddd_01_68 */
+        tile
+        {
+            xy = 4 8,
+
+            position
+            {
+                id = W,
+                translate = -2330 2393 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_69 */
+        tile
+        {
+            xy = 5 8,
+
+            position
+            {
+                id = W,
+                translate = -1820 2740 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_70 */
+        tile
+        {
+            xy = 6 8,
+
+            position
+            {
+                id = E,
+                translate = 1665 2765 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_71 */
+        tile
+        {
+            xy = 7 8,
+
+            position
+            {
+                id = E,
+                translate = 1642 2681 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_72 */
+        tile
+        {
+            xy = 0 9,
+
+            position
+            {
+                id = W,
+                translate = -2488 3274 0,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2450 3146 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_73 */
+        tile
+        {
+            xy = 1 9,
+
+            position
+            {
+                id = W,
+                translate = -2905 3120 0,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2640 3146 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_74 */
+        tile
+        {
+            xy = 2 9,
+
+            position
+            {
+                id = N,
+                translate = 0 2991 -3183,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3068 2008,
+            }
+        }
+
+        /* furniture_more_ddd_01_75 */
+        tile
+        {
+            xy = 3 9,
+
+            position
+            {
+                id = N,
+                translate = 0 3120 -2754,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 3326 2034,
+            }
+        }
+
+        /* furniture_more_ddd_01_76 */
+        tile
+        {
+            xy = 4 9,
+
+            position
+            {
+                id = S,
+                translate = 0 1676 -442,
+            }
+        }
+
+        /* furniture_more_ddd_01_77 */
+        tile
+        {
+            xy = 5 9,
+
+            position
+            {
+                id = S,
+                translate = 0 1831 -366,
+            }
+        }
+
+        /* furniture_more_ddd_01_78 */
+        tile
+        {
+            xy = 6 9,
+
+            position
+            {
+                id = N,
+                translate = 0 1650 -3095,
+            }
+        }
+
+        /* furniture_more_ddd_01_79 */
+        tile
+        {
+            xy = 7 9,
+
+            position
+            {
+                id = N,
+                translate = -1945 1650 -3335,
+            }
+        }
+
+        /* furniture_more_ddd_01_80 */
+        tile
+        {
+            xy = 0 10,
+
+            position
+            {
+                id = S,
+                translate = 0 3338 2036,
+            }
+
+            position
+            {
+                id = W,
+                translate = -1944 3181 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_81 */
+        tile
+        {
+            xy = 1 10,
+
+            position
+            {
+                id = S,
+                translate = 0 3307 2052,
+            }
+        }
+
+        /* furniture_more_ddd_01_82 */
+        tile
+        {
+            xy = 2 10,
+
+            position
+            {
+                id = W,
+                translate = -1743 3275 0,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3401 -1944,
+            }
+        }
+
+        /* furniture_more_ddd_01_83 */
+        tile
+        {
+            xy = 3 10,
+
+            position
+            {
+                id = N,
+                translate = 0 3299 -1855,
+            }
+        }
+
+        /* furniture_more_ddd_01_84 */
+        tile
+        {
+            xy = 4 10,
+
+            position
+            {
+                id = W,
+                translate = -1800 3245 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_85 */
+        tile
+        {
+            xy = 5 10,
+
+            position
+            {
+                id = W,
+                translate = -2422 3212 0,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3118 -2330,
+            }
+        }
+
+        /* furniture_more_ddd_01_86 */
+        tile
+        {
+            xy = 6 10,
+
+            position
+            {
+                id = E,
+                translate = 2222 3464 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_87 */
+        tile
+        {
+            xy = 7 10,
+
+            position
+            {
+                id = N,
+                translate = 0 3370 -2299,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2607 3275 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_88 */
+        tile
+        {
+            xy = 0 11,
+
+            position
+            {
+                id = S,
+                translate = 0 3244 1882,
+            }
+
+            position
+            {
+                id = W,
+                translate = -2515 3307 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_89 */
+        tile
+        {
+            xy = 1 11,
+
+            position
+            {
+                id = W,
+                translate = -2669 3212 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_90 */
+        tile
+        {
+            xy = 2 11,
+
+            position
+            {
+                id = S,
+                translate = 0 3149 1944,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2299 3118 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_91 */
+        tile
+        {
+            xy = 3 11,
+
+            position
+            {
+                id = E,
+                translate = 2314 3244 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_92 */
+        tile
+        {
+            xy = 4 11,
+
+            position
+            {
+                id = S,
+                translate = 0 3527 1898,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3559 -3363,
+            }
+        }
+
+        /* furniture_more_ddd_01_93 */
+        tile
+        {
+            xy = 5 11,
+
+            position
+            {
+                id = S,
+                translate = 0 3433 1898,
+            }
+        }
+
+        /* furniture_more_ddd_01_94 */
+        tile
+        {
+            xy = 6 11,
+
+            position
+            {
+                id = N,
+                translate = 0 3338 -2299,
+            }
+        }
+
+        /* furniture_more_ddd_01_95 */
+        tile
+        {
+            xy = 7 11,
+
+            position
+            {
+                id = N,
+                translate = 0 3464 -2283,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2222 3685 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_96 */
+        tile
+        {
+            xy = 0 12,
+
+            position
+            {
+                id = N,
+                translate = 0 2299 -2391,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2362 2067,
+            }
+
+            position
+            {
+                id = W,
+                translate = -2345 2330 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_97 */
+        tile
+        {
+            xy = 1 12,
+
+            position
+            {
+                id = N,
+                translate = 0 2393 -2638,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2330 1898,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2175 2425 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_98 */
+        tile
+        {
+            xy = 2 12,
+
+            position
+            {
+                id = W,
+                translate = -2607 2236 0,
+            }
+
+            position
+            {
+                id = S,
+                translate = 0 2425 1496,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2530 2267 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_99 */
+        tile
+        {
+            xy = 3 12,
+
+            position
+            {
+                id = W,
+                translate = -2684 2267 0,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2425 -1759,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2638 2645 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_104 */
+        tile
+        {
+            xy = 0 13,
+
+            position
+            {
+                id = S,
+                translate = 1265 3464 802,
+            }
+        }
+
+        /* furniture_more_ddd_01_105 */
+        tile
+        {
+            xy = 1 13,
+
+            position
+            {
+                id = S,
+                translate = 0 3370 926,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2515 3653 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_106 */
+        tile
+        {
+            xy = 2 13,
+
+            position
+            {
+                id = N,
+                translate = 1790 3275 -1435,
+            }
+        }
+
+        /* furniture_more_ddd_01_107 */
+        tile
+        {
+            xy = 3 13,
+
+            position
+            {
+                id = N,
+                translate = 0 3433 -1327,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2592 3433 417,
+            }
+        }
+
+        /* furniture_more_ddd_01_108 */
+        tile
+        {
+            xy = 4 13,
+
+            position
+            {
+                id = W,
+                translate = -791 3654 0,
+            }
+
+            position
+            {
+                id = S,
+                translate = 1225 3616 2525,
+            }
+        }
+
+        /* furniture_more_ddd_01_109 */
+        tile
+        {
+            xy = 5 13,
+
+            position
+            {
+                id = W,
+                translate = 0 4116 829,
+            }
+        }
+
+        /* furniture_more_ddd_01_110 */
+        tile
+        {
+            xy = 6 13,
+
+            position
+            {
+                id = S,
+                translate = 0 3846 2506,
+            }
+
+            position
+            {
+                id = E,
+                translate = 2242 3731 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_111 */
+        tile
+        {
+            xy = 7 13,
+
+            position
+            {
+                id = E,
+                translate = 2280 3731 1225,
+            }
+        }
+
+        /* furniture_more_ddd_01_112 */
+        tile
+        {
+            xy = 0 14,
+
+            position
+            {
+                id = S,
+                translate = 506 2960 1059,
+            }
+
+            position
+            {
+                id = W,
+                translate = -2647 3195 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_113 */
+        tile
+        {
+            xy = 1 14,
+
+            position
+            {
+                id = S,
+                translate = 0 2888 985,
+            }
+        }
+
+        /* furniture_more_ddd_01_114 */
+        tile
+        {
+            xy = 2 14,
+
+            position
+            {
+                id = W,
+                translate = -2348 3054 0,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 3086 -1281,
+            }
+        }
+
+        /* furniture_more_ddd_01_115 */
+        tile
+        {
+            xy = 3 14,
+
+            position
+            {
+                id = N,
+                translate = 0 3117 -900,
+            }
+        }
+
+        /* furniture_more_ddd_01_116 */
+        tile
+        {
+            xy = 4 14,
+
+            position
+            {
+                id = W,
+                translate = -1391 2902 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_117 */
+        tile
+        {
+            xy = 5 14,
+
+            position
+            {
+                id = W,
+                translate = -1543 2834 0,
+            }
+
+            position
+            {
+                id = N,
+                translate = 0 2929 -2607,
+            }
+        }
+
+        /* furniture_more_ddd_01_118 */
+        tile
+        {
+            xy = 6 14,
+
+            position
+            {
+                id = E,
+                translate = 1527 2834 0,
+            }
+        }
+
+        /* furniture_more_ddd_01_119 */
+        tile
+        {
+            xy = 7 14,
+
+            position
+            {
+                id = N,
+                translate = 0 2740 -2484,
+            }
+
+            position
+            {
+                id = E,
+                translate = 1582 2836 0,
+            }
+        }
+    }
+
+    tileset
+    {
+        name = edit_ddd_RUS_Machine_01,
+
+        /* edit_ddd_RUS_Machine_01_52 */
+        tile
+        {
+            xy = 4 6,
+
+            position
+            {
+                id = W,
+                translate = -1536 1115 -1499,
+            }
+        }
+
+        /* edit_ddd_RUS_Machine_01_53 */
+        tile
+        {
+            xy = 5 6,
+
+            position
+            {
+                id = E,
+                translate = -366 951 -1609,
+            }
+        }
+
+        /* edit_ddd_RUS_Machine_01_54 */
+        tile
+        {
+            xy = 6 6,
+
+            position
+            {
+                id = S,
+                translate = -2084 1115 -622,
+            }
+        }
+
+        /* edit_ddd_RUS_Machine_01_55 */
+        tile
+        {
+            xy = 7 6,
+
+            position
+            {
+                id = N,
+                translate = -1024 969 -2175,
+            }
+        }
+    }
+
+    tileset
+    {
+        name = edit_ddd_RUS_RoaStop_01,
+
+        /* edit_ddd_RUS_RoaStop_01_48 */
+        tile
+        {
+            xy = 0 6,
+
+            position
+            {
+                id = E,
+                translate = -1718 3327 0,
+            }
+        }
+
+        /* edit_ddd_RUS_RoaStop_01_49 */
+        tile
+        {
+            xy = 1 6,
+
+            position
+            {
+                id = S,
+                translate = 0 3191 -1991,
+            }
+        }
+
+        /* edit_ddd_RUS_RoaStop_01_50 */
+        tile
+        {
+            xy = 2 6,
+
+            position
+            {
+                id = W,
+                translate = 2360 3296 0,
+            }
+        }
+
+        /* edit_ddd_RUS_RoaStop_01_51 */
+        tile
+        {
+            xy = 3 6,
+
+            position
+            {
+                id = N,
+                translate = 0 3133 2238,
+            }
+        }
+    }
+}

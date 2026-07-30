@@ -1,0 +1,303 @@
+module IDBFS
+{
+    fluid IDBFSFruitMash
+    {
+        ColorReference = Peru,
+        DisplayName = Fluid_Name_IDBFSFruitMash,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            HungerChange = -5.0,
+            ThirstChange = 10.0,
+            Calories = 250.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSGrainMash
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_IDBFSGrainMash,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            HungerChange = -5.0,
+            ThirstChange = 10.0,
+            Calories = 350.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSCornMash
+    {
+        ColorReference = Gold,
+        DisplayName = Fluid_Name_IDBFSCornMash,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            HungerChange = -5.0,
+            ThirstChange = 10.0,
+            Calories = 350.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSPotatoMash
+    {
+        ColorReference = SandyBrown,
+        DisplayName = Fluid_Name_IDBFSPotatoMash,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            HungerChange = -5.0,
+            ThirstChange = 10.0,
+            Calories = 250.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSSugarWash
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_IDBFSSugarWash,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            ThirstChange = 10.0,
+            Calories = 300.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSFermentedWash
+    {
+        ColorReference = PaleGoldenrod,
+        DisplayName = Fluid_Name_IDBFSFermentedWash,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            ThirstChange = 5.0,
+            Calories = 300.0,
+            alcohol = 0.08,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSDistilledAlcohol
+    {
+        ColorReference = White,
+        DisplayName = Fluid_Name_IDBFSDistilledAlcohol,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            ThirstChange = 10.0,
+            Calories = 1200.0,
+            alcohol = 0.45,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSEthanol
+    {
+        ColorReference = PowderBlue,
+        DisplayName = Fluid_Name_IDBFSEthanol,
+        Categories
+        {
+            Alcoholic,
+            Fuel,
+            Hazardous,
+            Industrial,
+        }
+        Properties
+        {
+            alcohol = 0.95,
+        }
+        Poison
+        {
+            maxEffect = Deadly,
+            minAmount = 0.2,
+            diluteRatio = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Fuel,
+            }
+        }
+    }
+
+    fluid IDBFSBiofuel
+    {
+        ColorReference = PaleGreen,
+        DisplayName = Fluid_Name_IDBFSBiofuel,
+        Categories
+        {
+            Fuel,
+            Hazardous,
+            Industrial,
+        }
+        Poison
+        {
+            maxEffect = Deadly,
+            minAmount = 0.2,
+            diluteRatio = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Fuel,
+            }
+        }
+    }
+
+    fluid IDBFSSunflowerOil
+    {
+        ColorReference = Gold,
+        DisplayName = Fluid_Name_IDBFSSunflowerOil,
+        Categories
+        {
+            Industrial,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Industrial,
+            }
+        }
+    }
+
+    fluid IDBFSOliveOil
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_IDBFSOliveOil,
+        Categories
+        {
+            Industrial,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Industrial,
+            }
+        }
+    }
+
+    fluid IDBFSVinegar
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_IDBFSVinegar,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            ThirstChange = -5.0,
+            Calories = 5.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid IDBFSTaintedWash
+    {
+        ColorReference = DarkRed,
+        DisplayName = Fluid_Name_IDBFSTaintedWash,
+        Categories
+        {
+            Hazardous,
+        }
+        Poison
+        {
+            maxEffect = Medium,
+            minAmount = 1.0,
+            diluteRatio = 0.1,
+        }
+    }
+}

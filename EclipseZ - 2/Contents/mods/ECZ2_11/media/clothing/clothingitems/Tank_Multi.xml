@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>1494b6a5-2a68-4d6f-9e3b-b0932e954656</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>true</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\TombWardrobe\Tank_1_Multi</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Tank_2_Multi</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Tank_3_Multi</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Tank_4_Multi</m_BaseTextures>
+</clothingItem>

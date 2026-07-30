@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\M_Trenchcoat_Open.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\F_Trenchcoat_Open.fbx</m_FemaleModel>
+	<m_GUID>7f5ccfec-904e-4130-973f-e137ce0459f9</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>3</m_Masks>
+	<m_Masks>5</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Black</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Black_B</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Red</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Red_B</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Purp</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_1_F_Purp_B</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Black</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Black_B</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Red</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Red_B</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Purp</textureChoices>
+	<textureChoices>Clothes\TombWardrobe\Trenchcoat\Trenchcoat_2_F_Purp_B</textureChoices>
+</clothingItem>

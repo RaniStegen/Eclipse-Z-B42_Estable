@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Accessory_Pustules</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Accessory_Pustules</m_FemaleModel>
+	<m_GUID>bdaeba7c-8c0f-4c77-8471-e3377c999c69</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_HatCategory>Group01</m_HatCategory>
+
+	<textureChoices>Clothes\ZombieSkins\ZombieSkin_10</textureChoices>
+</clothingItem>

@@ -1,0 +1,6 @@
+{
+    "IGUI_LRL_NoLight": "I can't see anything.",
+    "IGUI_LRL_NeedMoreLight": "I need more light to search this.",
+    "IGUI_LRL_SearchInDarkness": "Search in the dark",
+    "IGUI_LRL_FailedDarkSearch": "I can feel things inside, but I can't tell what they are."
+}

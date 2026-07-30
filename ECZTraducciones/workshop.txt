@@ -1,0 +1,6 @@
+version=1
+id=3756312384
+title=EclipseZ - Traducción base ES
+description=Traducción revisada del juego base Project Zomboid Build 42.19 al español de España. No incluye traducciones de mods.
+tags=Build 42
+visibility=public

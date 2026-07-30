@@ -1,0 +1,231 @@
+module IDBFS
+{
+    imports
+    {
+        Base
+    }
+
+    entity IDBFS_ManualPress
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_ManualPress,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = IDBFSPress,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_0 crafted_05_1,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_3,
+                    row = crafted_05_2,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 350,
+            category = Distillery,
+            Tags = Carpentry;Distillery,
+            SkillRequired = Woodwork:3,
+            xpAward = Woodwork:15,
+            Tooltip = Tooltip_craft_IDBFS_ManualPress,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 12 [Base.Nails],
+                item 2 [Base.MetalPipe],
+                item 1 [Base.SheetMetal],
+            }
+        }
+    }
+
+    entity IDBFS_FermentationBarrel
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_FermentationBarrel,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.IDBFS.OnCreateEmptyStorage,
+            health = 400,
+            face SINGLE
+            {
+                layer
+                {
+                    row = location_business_distillery_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 300,
+            category = Distillery,
+            Tags = Carpentry;Distillery,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_IDBFS_FermentationBarrel,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 8 [Base.Plank],
+                item 16 [Base.Nails],
+                item 2 [Base.SheetMetal],
+                item 1 [Base.Woodglue],
+            }
+        }
+    }
+
+    entity IDBFS_LiquidBarrelRack
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_LiquidBarrelRack,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.IDBFS.OnCreateEmptyStorage,
+            health = 550,
+            face S
+            {
+                layer
+                {
+                    row = location_business_distillery_01_1,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = location_business_distillery_01_4,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 420,
+            category = Distillery,
+            Tags = Carpentry;Distillery,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_IDBFS_LiquidBarrelRack,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 12 [Base.Plank],
+                item 24 [Base.Nails],
+                item 4 [Base.SheetMetal],
+                item 2 [Base.MetalPipe],
+                item 2 [Base.Woodglue],
+            }
+        }
+    }
+
+    entity IDBFS_DistillationStill
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_DistillationStill,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.IDBFS.OnCreateCompositeStorage,
+            health = 700,
+            face SINGLE
+            {
+                layer
+                {
+                    row = location_business_distillery_01_29,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 600,
+            category = Distillery,
+            Tags = Welding;Distillery,
+            SkillRequired = MetalWelding:4;Mechanics:2,
+            xpAward = MetalWelding:25;Mechanics:10,
+            Tooltip = Tooltip_craft_IDBFS_DistillationStill,
+            inputs
+            {
+                item 1 tags[base:weldingmask] mode:keep,
+                item 6 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SheetMetal],
+                item 4 [Base.MetalPipe],
+                item 2 [Base.SmallSheetMetal],
+                item 1 [Base.Pot],
+                item 6 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+    entity IDBFS_IndustrialTank
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_IndustrialTank,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.IDBFS.OnCreateEmptyStorage,
+            health = 900,
+            face SINGLE
+            {
+                layer
+                {
+                    row = industry_02_74 industry_02_75,
+                    row = industry_02_72 industry_02_73,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 750,
+            category = Distillery,
+            Tags = Welding;Distillery,
+            SkillRequired = MetalWelding:6,
+            xpAward = MetalWelding:35,
+            Tooltip = Tooltip_craft_IDBFS_IndustrialTank,
+            inputs
+            {
+                item 1 tags[base:weldingmask] mode:keep,
+                item 8 [Base.BlowTorch] flags[DontRecordInput],
+                item 8 [Base.SheetMetal],
+                item 6 [Base.MetalPipe],
+                item 6 [Base.SmallSheetMetal],
+                item 12 [Base.Screws],
+                item 8 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

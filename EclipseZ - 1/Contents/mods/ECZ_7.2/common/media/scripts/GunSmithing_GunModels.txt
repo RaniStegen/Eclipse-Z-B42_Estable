@@ -1,0 +1,436 @@
+module Gunsmithing
+{
+    model Cannon
+    {
+        mesh = Gunsmithing/G_Cannon,
+        texture = Gunsmithing/G_Cannon,
+
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = -90.9081 -0.0000 -90.0000,
+        }
+    }
+    model SchofieldCartridge_Open
+    {
+        mesh = Gunsmithing/SchofieldCartridge_Open,
+        texture = Gunsmithing/SchofieldCartridge,
+    }
+    model SchofieldCartridge
+    {
+        mesh = Gunsmithing/SchofieldCartridge,
+        texture = Gunsmithing/SchofieldCartridge,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2151 -0.0289,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+    }
+    model RemingtonArmy_Percussion
+    {
+        mesh = Gunsmithing/RemingtonArmyPercussion,
+        texture = Gunsmithing/RemingtonArmyPercussion,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2151 -0.0289,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+    }
+    model ColtWalker_Cartridge
+    {
+        mesh = Gunsmithing/ColtWalkerCartridge,
+        texture = Gunsmithing/ColtWalkerCartridge,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2302 -0.0304,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+    }
+    model ColtWalker_Percussion
+    {
+        mesh = Gunsmithing/ColtWalkerPercussion,
+        texture = Gunsmithing/ColtWalkerPercussion,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2293 -0.0309,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+    }
+    model DoubleBarrelFlintlockShotgun
+    {
+        mesh = Gunsmithing/DoubleBarrelFlintlockShotgun,
+        texture = Gunsmithing/DoubleBarrelFlintlockShotgun,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.5190 0.0121,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.1043 0.0018,
+            rotate = -0.6606 0.0000 0.0000,
+            scale = 0.8152,
+        }
+
+        attachment RightFlintlock
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment LeftFlintlock
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model DoubleBarrelFlintlockShotgun_RightUncooked
+    {
+        mesh = Gunsmithing/DoubleBarrelFlintlockShotgun_RightUncooked,
+        texture = Gunsmithing/DoubleBarrelFlintlockShotgun,
+    }
+    model DoubleBarrelFlintlockShotgun_RightCooked
+    {
+        mesh = Gunsmithing/DoubleBarrelFlintlockShotgun_RightCooked,
+        texture = Gunsmithing/DoubleBarrelFlintlockShotgun,
+    }
+    model DoubleBarrelFlintlockShotgun_LeftUncooked
+    {
+        mesh = Gunsmithing/DoubleBarrelFlintlockShotgun_LeftUncooked,
+        texture = Gunsmithing/DoubleBarrelFlintlockShotgun,
+    }
+    model DoubleBarrelFlintlockShotgun_LeftCooked
+    {
+        mesh = Gunsmithing/DoubleBarrelFlintlockShotgun_LeftCooked,
+        texture = Gunsmithing/DoubleBarrelFlintlockShotgun,
+    }
+    model KentuckyRifle_Crafted
+    {
+        mesh = Gunsmithing/KentuckyRifle,
+        texture = Gunsmithing/KentuckyRifle_Crafted,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.7906 0.0188,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = -0.0034 0.0215 0.0139,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.2531 0.0014,
+            rotate = -0.5622 0.0000 0.0000,
+            scale = 0.9999,
+        }
+    }
+    model KentuckyRifle
+    {
+        mesh = Gunsmithing/KentuckyRifle,
+        texture = Gunsmithing/KentuckyRifle,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.7906 0.0188,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = -0.0034 0.0215 0.0139,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.2531 0.0014,
+            rotate = -0.5622 0.0000 0.0000,
+            scale = 0.9999,
+        }
+    }
+    model 1875Gun
+    {
+        mesh = Gunsmithing/1875Gun,
+        texture = Gunsmithing/Musket1855,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.6163 0.0154,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Hammer
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment TrapDoor
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+    }
+    model 1875Gun_HammerUncooked
+    {
+        mesh = Gunsmithing/1875Gun_HammerUncooked,
+        texture = Gunsmithing/Musket1855,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model 1875Gun_HammerCooked
+    {
+        mesh = Gunsmithing/1875Gun_HammerCooked,
+        texture = Gunsmithing/Musket1855,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model 1875Gun_TrapDoorClosed
+    {
+        mesh = Gunsmithing/1875Gun_TrapDoorClosed,
+        texture = Gunsmithing/Musket1855,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model 1875Gun_TrapDoorOpen
+    {
+        mesh = Gunsmithing/1875Gun_TrapDoorOpen,
+        texture = Gunsmithing/Musket1855,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model 1875Gun_Hammer_Crafted
+    {
+        mesh = Gunsmithing/1875Gun_HammerUncooked,
+        texture = Gunsmithing/Musket1855_Crafted,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model Musket1855
+    {
+        mesh = Gunsmithing/Musket1855,
+        texture = Gunsmithing/Musket1855,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.6163 0.0154,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.0980 0.0005,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model Musket1855_Crafted
+    {
+        mesh = Gunsmithing/Musket1855,
+        texture = Gunsmithing/Musket1855_Crafted,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.6163 0.0154,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.0980 0.0005,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model Musket1855_FlintCooked
+    {
+        mesh = Gunsmithing/Musket1855_FlintCooked,
+        texture = Gunsmithing/Musket1855,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model Musket1855_FlintUncooked
+    {
+        mesh = Gunsmithing/Musket1855_FlintUncooked,
+        texture = Gunsmithing/Musket1855,
+    }
+    model Musket1770_Crafted
+    {
+        mesh = Gunsmithing/Musket1770,
+        texture = Gunsmithing/Musket1770_Crafted,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.6391 0.0044,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.1079 -0.0144,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model Musket1770
+    {
+        mesh = Gunsmithing/Musket1770,
+        texture = Gunsmithing/Musket1770,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.6391 0.0044,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = 0.0230 -0.0000 0.0004,
+            rotate = 180.0000 1.0172 -180.0000,
+        }
+
+        attachment Flint
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment RamRod
+        {
+            offset = 0.0000 0.1079 -0.0144,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model Musket1770_RamRod
+    {
+        mesh = Gunsmithing/Musket1770_RamRod,
+        texture = Gunsmithing/Musket1770,
+
+        attachment world
+        {
+            offset = -0.0033 0.2621 -0.0000,
+            rotate = 0.0000 0.0000 -89.9440,
+        }
+    }
+    /* Shorter ramrod for the double-barrel flintlock shotgun only: same mesh, non-uniformly
+       scaled to 0.65 length (thickness kept), shipped as a .glb. See the FlintlockShotgun_RamRod item. */
+    model FlintlockShotgun_RamRod
+    {
+        mesh = Gunsmithing/FlintlockShotgun_RamRod,
+        texture = Gunsmithing/Musket1770,
+
+        attachment world
+        {
+            offset = -0.0033 0.2621 -0.0000,
+            rotate = 0.0000 0.0000 -89.9440,
+        }
+    }
+    model Musket1770_FlintCooked
+    {
+        mesh = Gunsmithing/Musket1770_FlintCooked,
+        texture = Gunsmithing/Musket1770,
+
+        attachment world
+        {
+            offset = 0.0009 0.0240 -0.0000,
+            rotate = 0.0000 0.0000 90.1119,
+        }
+    }
+    model Musket1770_FlintUncooked
+    {
+        mesh = Gunsmithing/Musket1770_FlintUncooked,
+        texture = Gunsmithing/Musket1770,
+    }
+}

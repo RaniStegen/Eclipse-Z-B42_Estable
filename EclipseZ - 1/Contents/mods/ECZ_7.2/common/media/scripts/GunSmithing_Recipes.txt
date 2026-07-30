@@ -1,0 +1,611 @@
+module Gunsmithing
+{
+/************************ Ore processing ************************/
+    craftRecipe Gunsmithing_CrushCinnabarOre
+    {
+        time = 150,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        xpAward = Blacksmith:5,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.CinnabarOre],
+        }
+        outputs
+        {
+            item 2 Gunsmithing.CinnabarOre_Crushed,
+        }
+    }
+
+    craftRecipe Gunsmithing_CrushZincOre
+    {
+        time = 150,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        xpAward = Blacksmith:5,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.ZincOre],
+        }
+        outputs
+        {
+            item 2 Gunsmithing.ZincOre_Crushed,
+        }
+    }
+
+/************************ Forged metal parts (Blacksmith, lit forge) ************************/
+    /* Long barrel forged from an iron OR steel ingot. Steel is the optional, better alt. */
+    craftRecipe Gunsmithing_ForgeGunBarrel
+    {
+        time = 450,
+        Tags = PrimitiveForge,
+        timedAction = HammerMetalStanding,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = false,
+        xpAward = Blacksmith:30,
+        inputs
+        {
+            item 3 tags[base:charcoal],
+            item 1 [Base.IronIngot;Base.SteelIngot],
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.Crafting_Barrel,
+        }
+    }
+
+    /* Internal lock/trigger parts. One ingot yields a batch. Iron or steel. */
+    craftRecipe Gunsmithing_ForgeGunParts
+    {
+        time = 350,
+        Tags = PrimitiveForge,
+        timedAction = HammerMetalStanding,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = false,
+        xpAward = Blacksmith:25,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.IronIngot;Base.SteelIngot],
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 8 Gunsmithing.GunParts,
+        }
+    }
+
+    /* Barrel bands. Also salvageable from cars/scrap in the world. Iron or steel. */
+    craftRecipe Gunsmithing_ForgeGunBands
+    {
+        time = 300,
+        Tags = PrimitiveForge,
+        timedAction = HammerMetalStanding,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = false,
+        xpAward = Blacksmith:20,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.IronIngot;Base.SteelIngot],
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 6 Gunsmithing.GunBands,
+        }
+    }
+
+/************************ Carved wood parts (Carving, in-hand) ************************/
+    craftRecipe Gunsmithing_CarveStock
+    {
+        time = 300,
+        timedAction = SharpenStakeWood,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Carving:1;Woodwork:2,
+        NeedToBeLearn = false,
+        xpAward = Carving:20,
+        inputs
+        {
+            item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+            item 2 [Base.Plank;Base.WoodenStick2] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.Crafting_Stock,
+        }
+    }
+
+    craftRecipe Gunsmithing_CarveRamrod
+    {
+        time = 150,
+        timedAction = SharpenStakeWood,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Carving:1,
+        NeedToBeLearn = false,
+        xpAward = Carving:5,
+        inputs
+        {
+            item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+            item 1 [Base.TreeBranch2;Base.WoodenStick2;Base.LongStick] flags[Prop2;AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.Musket1770_RamRod,
+        }
+    }
+
+/************************ Weapon assembly (in-hand, screwdriver) ************************/
+    /* Charleville 1770: flintlock smoothbore muzzleloader. Needs a flint flake. */
+    craftRecipe Gunsmithing_AssembleMusket1770
+    {
+        time = 500,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:2,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:2,
+        xpAward = Blacksmith:50,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.Crafting_Stock],
+            item 1 [Gunsmithing.Musket1770_RamRod],
+            item 1 [Gunsmithing.FlintFlake],
+            item 3 [Gunsmithing.GunBands],
+            item 2 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.Musket1770_Crafted,
+        }
+    }
+
+    /* Kentucky Rifle: flintlock rifled muzzleloader. Needs a flint flake. */
+    craftRecipe Gunsmithing_AssembleKentuckyRifle
+    {
+        time = 550,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:3,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:3,
+        xpAward = Blacksmith:55,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.Crafting_Stock],
+            item 1 [Gunsmithing.Musket1770_RamRod],
+            item 1 [Gunsmithing.FlintFlake],
+            item 3 [Gunsmithing.GunBands],
+            item 2 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.KentuckyRifle_Crafted,
+        }
+    }
+
+    /* 1861 Springfield (id Musket1855): percussion rifled muzzleloader. No flint (uses caps). */
+    craftRecipe Gunsmithing_AssembleMusket1855
+    {
+        time = 600,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:4,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:4,
+        xpAward = Blacksmith:60,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.Crafting_Stock],
+            item 1 [Gunsmithing.Musket1770_RamRod],
+            item 3 [Gunsmithing.GunBands],
+            item 2 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.Musket1855_Crafted,
+        }
+    }
+
+    /* 1875 Springfield Trapdoor: breechloader. Medium stock, no ramrod, more internal parts. */
+    craftRecipe Gunsmithing_Assemble1875Gun
+    {
+        time = 650,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:6,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:6,
+        xpAward = Blacksmith:70,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.Crafting_Stock],
+            item 2 [Gunsmithing.GunBands],
+            item 4 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.1875Gun,
+        }
+    }
+
+    /* Double-barrel flintlock shotgun: two barrels, needs a flint flake. */
+    craftRecipe Gunsmithing_AssembleDoubleBarrelShotgun
+    {
+        time = 700,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:5,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Blacksmith:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Gunsmithing.Crafting_Stock],
+            item 1 [Gunsmithing.Musket1770_RamRod],
+            item 1 [Gunsmithing.FlintFlake],
+            item 3 [Gunsmithing.GunBands],
+            item 2 [Gunsmithing.GunParts],
+            item 2 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.DoubleBarrelFlintlockShotgun,
+        }
+    }
+
+    /* Remington Army: cap-and-ball percussion revolver. Wood grip, no stock/ramrod/flint. */
+    craftRecipe Gunsmithing_AssembleRemingtonArmy
+    {
+        time = 450,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:5,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Blacksmith:55,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Plank;Base.WoodenStick2] mode:destroy,
+            item 2 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.RemingtonArmy_Percussion,
+        }
+    }
+
+    craftRecipe Gunsmithing_AssembleColtWalkerPercussion
+    {
+        time = 450,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:5,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Blacksmith:55,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Plank;Base.WoodenStick2] mode:destroy,
+            item 2 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.ColtWalker_Percussion,
+        }
+    }
+
+    /* Cartridge conversions: metallic-cartridge revolvers. */
+    craftRecipe Gunsmithing_AssembleColtWalkerCartridge
+    {
+        time = 500,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:6,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:6,
+        xpAward = Blacksmith:60,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Plank;Base.WoodenStick2] mode:destroy,
+            item 3 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.ColtWalker_Cartridge,
+        }
+    }
+
+    craftRecipe Gunsmithing_AssembleSchofield
+    {
+        time = 500,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:6,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:6,
+        xpAward = Blacksmith:60,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Plank;Base.WoodenStick2] mode:destroy,
+            item 3 [Gunsmithing.GunParts],
+            item 1 [Gunsmithing.Crafting_Barrel],
+        }
+        outputs
+        {
+            item 1 Gunsmithing.SchofieldCartridge,
+        }
+    }
+
+/************************ Materials and chemistry ************************/
+    /* Brass = copper + zinc, smelted together. Feeds percussion caps and cartridge casings. */
+    craftRecipe Gunsmithing_SmeltBrass
+    {
+        time = 300,
+        Tags = PrimitiveFurnace,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:2,
+        xpAward = Blacksmith:15,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.CopperScrap;Base.CopperIngot],
+            item 2 [Gunsmithing.ZincOre_Crushed],
+        }
+        outputs
+        {
+            item 1 Base.BrassIngot,
+        }
+    }
+
+    /* Saltpeter (potassium nitrate) leached from dung/compost + organic matter. */
+    craftRecipe Gunsmithing_ExtractSaltpeter
+    {
+        time = 250,
+        Tags = PrimitiveFurnace,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        xpAward = Blacksmith:5,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 3 [Base.Dung_Chicken;Base.Dung_Cow;Base.Dung_Pig;Base.Dung_Sheep;Base.CompostBag;Base.Fertilizer] mode:destroy,
+            item 1 [Base.GrassTuft;Base.GrassBag] mode:destroy,
+        }
+        outputs
+        {
+            item 2 Gunsmithing.Saltpeter,
+        }
+    }
+
+    /* Black powder = charcoal + saltpeter. The cornerstone propellant for the whole mod. */
+    craftRecipe Gunsmithing_MakeBlackPowder
+    {
+        time = 200,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:2,
+        xpAward = Blacksmith:10,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Gunsmithing.Saltpeter],
+        }
+        outputs
+        {
+            item 3 Base.GunPowder,
+        }
+    }
+
+    /* Percussion caps: reforged brass + mercury from crushed cinnabar (the fulminate igniter). */
+    craftRecipe Gunsmithing_MakePercussionCaps
+    {
+        time = 200,
+        Tags = PrimitiveForge,
+        timedAction = HammerMetalStanding,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:3,
+        xpAward = Blacksmith:15,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:3,
+        inputs
+        {
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.BrassIngot],
+            item 1 [Gunsmithing.CinnabarOre_Crushed] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Gunsmithing.CapsPackage,
+        }
+    }
+
+    /* Empty brass cartridge cases, drawn from a brass ingot. */
+    craftRecipe Gunsmithing_MakeBrassCasings
+    {
+        time = 250,
+        Tags = PrimitiveForge,
+        timedAction = HammerMetalStanding,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:3,
+        xpAward = Blacksmith:20,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:3,
+        inputs
+        {
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.BrassIngot],
+        }
+        outputs
+        {
+            item 10 Gunsmithing.BrassCasing,
+        }
+    }
+
+/************************ Ammunition ************************/
+    /* Lead balls + Minie bullets cast from lead objects over a furnace/campfire. */
+    craftRecipe Gunsmithing_CastMusketBall
+    {
+        time = 200,
+        Tags = PrimitiveFurnace,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        xpAward = Blacksmith:8,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 [Base.LeadPipe],
+        }
+        outputs
+        {
+            item 10 Gunsmithing.MusketBall,
+        }
+    }
+
+    craftRecipe Gunsmithing_CastMusketBullet
+    {
+        time = 200,
+        Tags = PrimitiveFurnace,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:2,
+        xpAward = Blacksmith:10,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 [Base.LeadPipe],
+        }
+        outputs
+        {
+            item 10 Gunsmithing.MusketBullet,
+        }
+    }
+
+    craftRecipe Gunsmithing_CastRoundBall44
+    {
+        time = 200,
+        Tags = PrimitiveFurnace,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:1,
+        xpAward = Blacksmith:8,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 [Base.LeadPipe],
+        }
+        outputs
+        {
+            item 15 Gunsmithing.RoundBall_44,
+        }
+    }
+
+    /* Paper cartridge = a measured black-powder charge wrapped in paper. The projectile is
+       loaded separately, so this is just the powder packet. */
+    craftRecipe Gunsmithing_MakePaperCartridge
+    {
+        time = 120,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Aiming:1,
+        NeedToBeLearn = false,
+        inputs
+        {
+            item 1 [Base.GunPowder] mode:destroy,
+            item 1 [Base.SheetPaper2;Base.Newspaper;Base.Magazine] mode:destroy,
+        }
+        outputs
+        {
+            item 5 Gunsmithing.PaperCartridge,
+        }
+    }
+
+    /* Self-contained .50-70 rifle cartridge: Minie bullet + brass case + powder. */
+    craftRecipe Gunsmithing_MakeHandmadeCartridge
+    {
+        time = 200,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:5,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Aiming:5,
+        inputs
+        {
+            item 5 [Gunsmithing.MusketBullet] mode:destroy,
+            item 5 [Gunsmithing.BrassCasing] mode:destroy,
+            item 2 [Base.GunPowder] mode:destroy,
+        }
+        outputs
+        {
+            item 5 Gunsmithing.HandmadeCartridge,
+        }
+    }
+
+    /* Self-contained metallic pistol cartridge for cartridge revolvers. */
+    craftRecipe Gunsmithing_MakePistolCartridge
+    {
+        time = 200,
+        timedAction = Making,
+        Tags = InHandCraft,
+        category = Gunsmithing,
+        SkillRequired = Blacksmith:5,
+        NeedToBeLearn = true,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Aiming:5,
+        inputs
+        {
+            item 5 [Gunsmithing.RoundBall_44] mode:destroy,
+            item 5 [Gunsmithing.BrassCasing] mode:destroy,
+            item 2 [Base.GunPowder] mode:destroy,
+        }
+        outputs
+        {
+            item 5 Gunsmithing.PistolCartridge,
+        }
+    }
+}

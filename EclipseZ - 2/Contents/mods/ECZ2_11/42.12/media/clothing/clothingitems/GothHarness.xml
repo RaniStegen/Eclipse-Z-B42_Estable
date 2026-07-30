@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>8bec04e0-9e22-4191-816b-c042ca5a7a22</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\TombWardrobe\Harness1</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Harness2</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Harness3</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Harness4</m_BaseTextures>
+	<m_BaseTextures>Clothes\TombWardrobe\Harness5</m_BaseTextures>
+</clothingItem>

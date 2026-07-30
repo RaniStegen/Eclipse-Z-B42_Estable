@@ -1,0 +1,9 @@
+Sandbox_ES = {
+    Sandbox_LootRequiresLight = "Loot requiere luz",
+    Sandbox_LootRequiresLight_EnableMod = "Activar Loot requiere luz",
+    Sandbox_LootRequiresLight_EnableMod_tooltip = "Interruptor general del mod.",
+    Sandbox_LootRequiresLight_RequireLightToLoot = "Requerir luz para saquear",
+    Sandbox_LootRequiresLight_RequireLightToLoot_tooltip = "Bloquea contenedores del mundo cuando no hay luz suficiente.",
+    Sandbox_LootRequiresLight_AllowSearchingInDarkness = "Permitir revisar a oscuras",
+    Sandbox_LootRequiresLight_AllowSearchingInDarkness_tooltip = "Permite una accion temporizada lenta para desbloquear temporalmente un contenedor oscuro.",
+}

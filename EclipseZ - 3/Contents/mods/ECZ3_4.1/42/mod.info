@@ -1,0 +1,7 @@
+name=ECZ3_4.1
+id=ECZ3_4.1
+poster=poster.png
+icon=icon.png
+pack=NC_NB_Beta
+description=
+require=\ECZ3_1

@@ -1,0 +1,85 @@
+VERSION = 1,
+
+option PagerMod.SignalMode
+{
+    type = enum, numValues = 2, default = 1,
+    page = PagerMod, translation = PagerMod_SignalMode,
+    valueTranslation = PagerMod_SignalMode,
+}
+
+option PagerMod.SignalRange
+{
+    type = integer, min = 50, max = 100000, default = 1500,
+    page = PagerMod, translation = PagerMod_SignalRange,
+}
+
+option PagerMod.AllowBroadcast
+{
+    type = boolean, default = true,
+    page = PagerMod, translation = PagerMod_AllowBroadcast,
+}
+
+option PagerMod.MaxMessages
+{
+    type = integer, min = 5, max = 500, default = 50,
+    page = PagerMod, translation = PagerMod_MaxMessages,
+}
+
+option PagerMod.MessageMaxLength
+{
+    type = integer, min = 20, max = 500, default = 140,
+    page = PagerMod, translation = PagerMod_MessageMaxLength,
+}
+
+option PagerMod.NotifySound
+{
+    type = boolean, default = true,
+    page = PagerMod, translation = PagerMod_NotifySound,
+}
+
+
+
+option PagerMod.LocationSharing
+{
+    type = enum, numValues = 3, default = 2,
+    page = PagerMod, translation = PagerMod_LocationSharing,
+    valueTranslation = PagerMod_LocationSharing,
+}
+
+option PagerMod.SendCooldown
+{
+    type = integer, min = 0, max = 600, default = 0,
+    page = PagerMod, translation = PagerMod_SendCooldown,
+}
+
+option PagerMod.ReadReceipts
+{
+    type = boolean, default = true,
+    page = PagerMod, translation = PagerMod_ReadReceipts,
+}
+
+option PagerMod.FactionScope
+{
+    type = enum, numValues = 2, default = 1,
+    page = PagerMod, translation = PagerMod_FactionScope,
+    valueTranslation = PagerMod_FactionScope,
+}
+
+option PagerMod.AllowSOS
+{
+    type = boolean, default = true,
+    page = PagerMod, translation = PagerMod_AllowSOS,
+}
+
+option PagerMod.AllowBlocking
+{
+    type = boolean, default = true,
+    page = PagerMod, translation = PagerMod_AllowBlocking,
+}
+
+option PagerMod.BatteryLife
+{
+    type = enum, numValues = 5, default = 2,
+    page = PagerMod, translation = PagerMod_BatteryLife,
+    valueTranslation = PagerMod_BatteryLife,
+}
