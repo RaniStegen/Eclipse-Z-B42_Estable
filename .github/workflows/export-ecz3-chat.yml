@@ -1,0 +1,26 @@
+name: Exportar ECZ3 Chat
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/export-ecz3-chat.yml
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar ECZ3 Chat
+        run: |
+          test -d "EclipseZ - 3/Contents/mods/ECZ3_Chat"
+          mkdir -p export
+          cp -a "EclipseZ - 3/Contents/mods/ECZ3_Chat" export/
+          find export/ECZ3_Chat -type f | sort > export/ARCHIVOS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ECZ3_Chat_actual
+          path: export
+          retention-days: 1
