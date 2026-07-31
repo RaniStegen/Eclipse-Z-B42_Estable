@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            EclipseZ - 3/Contents/mods/ECZ3_Chat
+          sparse-checkout-cone-mode: false
       - name: Empaquetar ECZ3 Chat
         run: |
           test -d "EclipseZ - 3/Contents/mods/ECZ3_Chat"
