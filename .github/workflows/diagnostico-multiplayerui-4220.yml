@@ -1,0 +1,50 @@
+name: Diagnóstico MultiplayerUI 42.20
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/diagnostico-multiplayerui-4220.yml
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/workflows/diagnostico-multiplayerui-4220.yml
+          sparse-checkout-cone-mode: false
+
+      - name: Instalar SteamCMD
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y steamcmd
+
+      - name: Descargar Project Zomboid Dedicated Server 42.20
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/pzserver"
+          steamcmd +force_install_dir "$GITHUB_WORKSPACE/pzserver" +login anonymous +app_update 380870 validate +quit
+
+      - name: Extraer archivos de diagnóstico
+        run: |
+          set -euxo pipefail
+          mkdir -p export
+          MP="$GITHUB_WORKSPACE/pzserver/media/lua/client/OptionScreens/MultiplayerUI.lua"
+          UI="$GITHUB_WORKSPACE/pzserver/media/lua/shared/Translate/EN/UI.json"
+          test -f "$MP"
+          cp "$MP" export/MultiplayerUI.lua
+          if [ -f "$UI" ]; then cp "$UI" export/UI_EN.json; fi
+          nl -ba "$MP" | sed -n '1080,1145p' > export/MultiplayerUI_lineas_1080_1145.txt
+          grep -n 'getText(' "$MP" > export/MultiplayerUI_getText.txt || true
+          grep -RIn 'UI_GameLoad_PlayerPopulation\|UI_servers_serverNb\|UI_servers_Ping\|UI_servers_refresh_timer' "$GITHUB_WORKSPACE/pzserver/media/lua" > export/usos_claves.txt || true
+          printf 'VERSION:\n' > export/version.txt
+          grep -RIn 'version=' "$GITHUB_WORKSPACE/pzserver"/version.txt "$GITHUB_WORKSPACE/pzserver"/steamapps/appmanifest_380870.acf 2>/dev/null >> export/version.txt || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-multiplayerui-4220
+          path: export
+          retention-days: 1
