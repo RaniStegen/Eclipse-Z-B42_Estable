@@ -1,0 +1,38 @@
+name: Consolidar ItemName ES-ES
+
+on:
+  push:
+    branches:
+      - fix/b42-20-traducciones-marz-ehr
+    paths:
+      - .github/workflows/consolidate-es-itemnames.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+        with:
+          ref: fix/b42-20-traducciones-marz-ehr
+          fetch-depth: 0
+
+      - name: Consolidar nombres de objetos
+        run: python3 Herramientas/consolidate_mod_localizations.py --root "$GITHUB_WORKSPACE"
+
+      - name: Guardar ItemName global completo
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "La traducción global ya estaba consolidada."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "ECZTraducciones/Contents/mods/ECZ_Mods/42.18/media/lua/shared/Translate/ES/ItemName.json"
+          git commit -m "Traducciones: consolidar ItemName ES-ES completo"
+          git push origin HEAD:fix/b42-20-traducciones-marz-ehr
