@@ -1,0 +1,66 @@
+name: Inspeccionar APIs EBFCopyPaste B42.20
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/inspect-ebf-b4220.yml
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Instalar SteamCMD
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lib32gcc-s1 ca-certificates wget tar openjdk-21-jdk-headless
+          mkdir -p "$HOME/steamcmd"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
+
+      - name: Descargar servidor dedicado estable
+        run: |
+          mkdir -p "$HOME/pzserver"
+          "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit
+
+      - name: Inspeccionar clases Java
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$HOME/ebf-api"
+          mkdir -p "$OUT"
+          echo '=== JARS ===' > "$OUT/classes.txt"
+          find "$HOME/pzserver" -type f -name '*.jar' -print | sort >> "$OUT/classes.txt"
+          echo '=== CLASES OBJETIVO ===' >> "$OUT/classes.txt"
+          while IFS= read -r jarfile; do
+            echo "--- $jarfile ---" >> "$OUT/classes.txt"
+            jar tf "$jarfile" | grep -Ei '(^|/)(PlayerRoomsFile|BuildingRoomsEditor|IsoObject|IsoGridSquare)\.class$' >> "$OUT/classes.txt" || true
+          done < <(find "$HOME/pzserver" -type f -name '*.jar' -print)
+
+          CP=$(find "$HOME/pzserver" -type f -name '*.jar' -print0 | tr '\0' ':')
+          for cls in \
+            zombie.iso.PlayerRoomsFile \
+            zombie.iso.areas.PlayerRoomsFile \
+            zombie.iso.buildingRooms.PlayerRoomsFile \
+            zombie.buildingRooms.PlayerRoomsFile \
+            zombie.characters.PlayerRoomsFile \
+            zombie.buildingRooms.BuildingRoomsEditor \
+            zombie.iso.IsoObject \
+            zombie.iso.IsoGridSquare; do
+            echo "===== JAVAP $cls =====" >> "$OUT/javap.txt"
+            javap -classpath "$CP" -p "$cls" >> "$OUT/javap.txt" 2>&1 || true
+          done
+
+          echo '=== VERSION ===' > "$OUT/version.txt"
+          grep -R "version=" "$HOME/pzserver" -n --include='*.properties' --include='*.txt' | head -n 30 >> "$OUT/version.txt" || true
+
+      - name: Subir resultados
+        uses: actions/upload-artifact@v4
+        with:
+          name: ebf-b4220-java-api
+          path: ~/ebf-api
+          retention-days: 1
