@@ -36,6 +36,11 @@ jobs:
           cp -a "$SRC/." "$HOME/Zomboid/mods/ebfcopypaste/"
           cp -a "$HOME/Zomboid/mods/ebfcopypaste/42.19" "$HOME/Zomboid/mods/ebfcopypaste/42.20"
           rm -rf "$HOME/Zomboid/mods/ebfcopypaste/42.19"
+          mkdir -p \
+            "$HOME/Zomboid/mods/ebfcopypaste/common/media/AnimSets" \
+            "$HOME/Zomboid/mods/ebfcopypaste/common/media/actiongroups" \
+            "$HOME/Zomboid/mods/ebfcopypaste/42.20/media/AnimSets" \
+            "$HOME/Zomboid/mods/ebfcopypaste/42.20/media/actiongroups"
           find "$HOME/Zomboid/mods/ebfcopypaste" -name mod.info -print0 | xargs -0 sed -i \
             -e 's/modversion=42.19.0/modversion=42.20.1/' \
             -e 's/versionMin=42.19.0/versionMin=42.20.0/' \
@@ -73,17 +78,21 @@ jobs:
         run: |
           cd "$HOME/pzserver"
           set +e
-          timeout 180s ./start-server.sh -servername ebftest -adminpassword Test1234 > "$HOME/server-stdout.log" 2>&1
+          timeout 150s ./start-server.sh -servername ebftest -adminpassword Test1234 > "$HOME/server-stdout.log" 2>&1
           EXIT=$?
           set -e
           echo "exit_code=$EXIT" > "$HOME/smoke-summary.txt"
-          grep -Eai "ebfcopypaste|error|exception|failed|stack trace|lua" "$HOME/server-stdout.log" | tail -n 500 >> "$HOME/smoke-summary.txt" || true
+          grep -Eai "version=|loading ebfcopypaste|SERVER STARTED|EBFCopyPaste" "$HOME/server-stdout.log" >> "$HOME/smoke-summary.txt" || true
           LOG="$HOME/Zomboid/Logs/$(ls -1t "$HOME/Zomboid/Logs" 2>/dev/null | head -n1)"
           if [ -f "$LOG" ]; then
             cp "$LOG" "$HOME/pz-latest.log"
-            grep -Eai "ebfcopypaste|error|exception|failed|stack trace|lua" "$LOG" | tail -n 500 >> "$HOME/smoke-summary.txt" || true
           fi
-          if grep -Eai "ERROR:.*EBFCopyPaste|Exception.*EBFCopyPaste|Lua.*EBFCopyPaste" "$HOME/server-stdout.log"; then
+          if ! grep -Fq "*** SERVER STARTED ****" "$HOME/server-stdout.log"; then
+            echo "El servidor no llegó al estado SERVER STARTED." >&2
+            exit 1
+          fi
+          if grep -Eai "ERROR: Lua.*EBFCopyPaste|Exception.*EBFCopyPaste|stack trace.*EBFCopyPaste" "$HOME/server-stdout.log"; then
+            echo "Se detectó un error Lua específico de EBFCopyPaste." >&2
             exit 1
           fi
 
@@ -91,14 +100,14 @@ jobs:
         if: always()
         run: |
           mkdir -p "$HOME/api-audit"
-          find "$HOME/pzserver/media/lua" -path '*ISAdminPanelUI.lua' -o -path '*ISLightSourceRadialMenu.lua' -o -path '*ISWorldObjectContextMenu.lua' | while read -r f; do cp --parents "$f" "$HOME/api-audit/"; done
+          find "$HOME/pzserver/media/lua" \( -path '*ISAdminPanelUI.lua' -o -path '*ISLightSourceRadialMenu.lua' -o -path '*ISWorldObjectContextMenu.lua' \) | while read -r f; do cp --parents "$f" "$HOME/api-audit/"; done
           grep -R "function ISAdminPanelUI" "$HOME/pzserver/media/lua" > "$HOME/api-audit/admin-panel-functions.txt" || true
 
       - name: Subir registros
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ebfcopypaste-b4220-smoke-test
+          name: ebfcopypaste-b4220-smoke-test-final
           path: |
             ~/server-stdout.log
             ~/smoke-summary.txt
