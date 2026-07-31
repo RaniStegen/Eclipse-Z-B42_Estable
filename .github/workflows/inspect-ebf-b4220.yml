@@ -37,7 +37,7 @@ jobs:
             sleep $((attempt * 15))
           done
           test "$ok" -eq 1
-          find "$HOME/pzserver" -maxdepth 2 -type f | head -n 50
+          find "$HOME/pzserver" -maxdepth 2 -type f -print > "$HOME/server-files.txt"
 
       - name: Inspeccionar clases Java
         shell: bash
@@ -45,6 +45,7 @@ jobs:
           set -euo pipefail
           OUT="$HOME/ebf-api"
           mkdir -p "$OUT"
+          cp "$HOME/server-files.txt" "$OUT/"
           echo '=== JARS ===' > "$OUT/classes.txt"
           find "$HOME/pzserver" -type f -name '*.jar' -print | sort >> "$OUT/classes.txt"
           echo '=== CLASES OBJETIVO ===' >> "$OUT/classes.txt"
