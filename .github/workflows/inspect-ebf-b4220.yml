@@ -11,7 +11,7 @@ on:
 jobs:
   inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Instalar SteamCMD
         run: |
@@ -23,9 +23,21 @@ jobs:
           tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
 
       - name: Descargar servidor dedicado estable
+        shell: bash
         run: |
+          set -euo pipefail
           mkdir -p "$HOME/pzserver"
-          "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit
+          ok=0
+          for attempt in 1 2 3 4; do
+            echo "Intento SteamCMD $attempt"
+            if "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit; then
+              ok=1
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$ok" -eq 1
+          find "$HOME/pzserver" -maxdepth 2 -type f | head -n 50
 
       - name: Inspeccionar clases Java
         shell: bash
@@ -42,19 +54,22 @@ jobs:
           done < <(find "$HOME/pzserver" -type f -name '*.jar' -print)
 
           CP=$(find "$HOME/pzserver" -type f -name '*.jar' -print0 | tr '\0' ':')
-          for cls in \
-            zombie.iso.PlayerRoomsFile \
-            zombie.iso.areas.PlayerRoomsFile \
-            zombie.iso.buildingRooms.PlayerRoomsFile \
-            zombie.buildingRooms.PlayerRoomsFile \
-            zombie.characters.PlayerRoomsFile \
-            zombie.buildingRooms.BuildingRoomsEditor \
-            zombie.iso.IsoObject \
-            zombie.iso.IsoGridSquare; do
+          while IFS= read -r cls; do
             echo "===== JAVAP $cls =====" >> "$OUT/javap.txt"
             javap -classpath "$CP" -p "$cls" >> "$OUT/javap.txt" 2>&1 || true
-          done
+          done <<'EOF'
+          zombie.iso.PlayerRoomsFile
+          zombie.iso.areas.PlayerRoomsFile
+          zombie.iso.buildingRooms.PlayerRoomsFile
+          zombie.buildingRooms.PlayerRoomsFile
+          zombie.characters.PlayerRoomsFile
+          zombie.buildingRooms.BuildingRoomsEditor
+          zombie.iso.IsoObject
+          zombie.iso.IsoGridSquare
+          EOF
 
+          echo '=== BUSQUEDA BINARIA PlayerRoomsFile ===' > "$OUT/binary-search.txt"
+          grep -R -a -l 'PlayerRoomsFile' "$HOME/pzserver" 2>/dev/null | sort >> "$OUT/binary-search.txt" || true
           echo '=== VERSION ===' > "$OUT/version.txt"
           grep -R "version=" "$HOME/pzserver" -n --include='*.properties' --include='*.txt' | head -n 30 >> "$OUT/version.txt" || true
 
