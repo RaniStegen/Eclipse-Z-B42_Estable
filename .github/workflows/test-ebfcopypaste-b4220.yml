@@ -17,17 +17,20 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update -qq
-          sudo apt-get install -y -qq steamcmd lib32gcc-s1
+          sudo apt-get install -y -qq lib32gcc-s1 ca-certificates wget tar
+          mkdir -p "$HOME/steamcmd"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
 
       - name: Descargar servidor dedicado 42.20 estable
         run: |
           mkdir -p "$HOME/pzserver"
-          steamcmd +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit
+          "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit
 
       - name: Descargar y adaptar EBFCopyPaste
         run: |
           mkdir -p "$HOME/workshop"
-          steamcmd +force_install_dir "$HOME/workshop" +login anonymous +workshop_download_item 108600 3733024748 validate +quit
+          "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/workshop" +login anonymous +workshop_download_item 108600 3733024748 validate +quit
           SRC="$HOME/workshop/steamapps/workshop/content/108600/3733024748/mods/ebfcopypaste"
           mkdir -p "$HOME/Zomboid/mods/ebfcopypaste"
           cp -a "$SRC/." "$HOME/Zomboid/mods/ebfcopypaste/"
@@ -84,6 +87,13 @@ jobs:
             exit 1
           fi
 
+      - name: Guardar Lua vanilla relevante
+        if: always()
+        run: |
+          mkdir -p "$HOME/api-audit"
+          find "$HOME/pzserver/media/lua" -path '*ISAdminPanelUI.lua' -o -path '*ISLightSourceRadialMenu.lua' -o -path '*ISWorldObjectContextMenu.lua' | while read -r f; do cp --parents "$f" "$HOME/api-audit/"; done
+          grep -R "function ISAdminPanelUI" "$HOME/pzserver/media/lua" > "$HOME/api-audit/admin-panel-functions.txt" || true
+
       - name: Subir registros
         if: always()
         uses: actions/upload-artifact@v4
@@ -93,5 +103,6 @@ jobs:
             ~/server-stdout.log
             ~/smoke-summary.txt
             ~/pz-latest.log
+            ~/api-audit
           if-no-files-found: ignore
           retention-days: 1
