@@ -1,9 +1,9 @@
 name: Probar EBFCopyPaste B42.20
 
 on:
-  push:
+  pull_request:
     branches:
-      - temp/test-ebfcopypaste-b4220
+      - main
     paths:
       - .github/workflows/test-ebfcopypaste-b4220.yml
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
           cp -a "$HOME/Zomboid/mods/ebfcopypaste/42.19" "$HOME/Zomboid/mods/ebfcopypaste/42.20"
           rm -rf "$HOME/Zomboid/mods/ebfcopypaste/42.19"
           find "$HOME/Zomboid/mods/ebfcopypaste" -name mod.info -print0 | xargs -0 sed -i \
-            -e 's/modversion=42.19.0/modversion=42.20.0/' \
+            -e 's/modversion=42.19.0/modversion=42.20.1/' \
             -e 's/versionMin=42.19.0/versionMin=42.20.0/' \
             -e '/versionMax=42.19.99/d'
           SHARED="$HOME/Zomboid/mods/ebfcopypaste/42.20/media/lua/shared/EBFCopyPaste/EBFCopyPaste_Shared.lua"
