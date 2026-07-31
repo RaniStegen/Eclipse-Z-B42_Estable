@@ -1,0 +1,55 @@
+name: Descargar EBFCopyPaste
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-download-ebfcopypaste.yml
+
+permissions:
+  contents: read
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Instalar dependencias
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y lib32gcc-s1 lib32stdc++6 ca-certificates curl unzip zip
+
+      - name: Descargar SteamCMD
+        run: |
+          mkdir -p "$RUNNER_TEMP/steamcmd"
+          curl -L --fail --retry 3 \
+            -o "$RUNNER_TEMP/steamcmd/steamcmd_linux.tar.gz" \
+            https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$RUNNER_TEMP/steamcmd/steamcmd_linux.tar.gz" -C "$RUNNER_TEMP/steamcmd"
+
+      - name: Descargar Workshop 3733024748
+        run: |
+          "$RUNNER_TEMP/steamcmd/steamcmd.sh" \
+            +force_install_dir "$RUNNER_TEMP/pzworkshop" \
+            +login anonymous \
+            +workshop_download_item 108600 3733024748 validate \
+            +quit
+
+          MOD_DIR="$RUNNER_TEMP/pzworkshop/steamapps/workshop/content/108600/3733024748"
+          if [ ! -d "$MOD_DIR" ]; then
+            echo "No se encontró el mod descargado en $MOD_DIR"
+            find "$RUNNER_TEMP" -maxdepth 6 -type d | sort
+            exit 1
+          fi
+
+          cd "$RUNNER_TEMP/pzworkshop/steamapps/workshop/content/108600"
+          zip -r "$RUNNER_TEMP/EBFCopyPaste_3733024748.zip" 3733024748
+
+      - name: Subir ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: EBFCopyPaste_3733024748
+          path: ${{ runner.temp }}/EBFCopyPaste_3733024748.zip
+          if-no-files-found: error
+          retention-days: 1
