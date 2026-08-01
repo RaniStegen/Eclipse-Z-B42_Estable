@@ -34,7 +34,7 @@ jobs:
           mkdir -p "$OUT/repo"
 
           git ls-tree -r --name-only HEAD | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/all-player-animation-paths.txt" || true
-          grep -Ei 'ECZ_25/.*/media/(animsets|actiongroups)/player/|/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123])\.xml$' "$OUT/all-player-animation-paths.txt" | sort -u > "$OUT/selected-player-animation-paths.txt" || true
+          grep -Ei 'ECZ_25/.*/media/(animsets|actiongroups)/player/|/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123]|chainsawdefault|chainsawmiss)\.xml$' "$OUT/all-player-animation-paths.txt" | sort -u > "$OUT/selected-player-animation-paths.txt" || true
 
           while IFS= read -r p; do
             [ -n "$p" ] || continue
@@ -80,7 +80,7 @@ jobs:
           mkdir -p "$OUT/vanilla" "$OUT/diffs"
 
           find "$HOME/pzserver" -type f | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/vanilla-all-player-animation-paths.txt" || true
-          grep -Ei '/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123])\.xml$' "$OUT/vanilla-all-player-animation-paths.txt" | sort -u > "$OUT/vanilla-selected-player-animation-paths.txt" || true
+          grep -Ei '/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123]|chainsawdefault|chainsawmiss)\.xml$' "$OUT/vanilla-all-player-animation-paths.txt" | sort -u > "$OUT/vanilla-selected-player-animation-paths.txt" || true
 
           while IFS= read -r p; do
             [ -n "$p" ] || continue
