@@ -1,0 +1,60 @@
+name: Exportar traducciones inglesas PZ B42.20
+
+on:
+  push:
+    branches: [fix/traducciones-authenticz-marz-base-b4220]
+    paths:
+      - .github/workflows/export-pz-b4220-english-translations.yml
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/workflows/export-pz-b4220-english-translations.yml
+          sparse-checkout-cone-mode: false
+
+      - name: Instalar SteamCMD
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo dpkg --add-architecture i386
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lib32gcc-s1 ca-certificates wget tar
+          mkdir -p "$HOME/steamcmd" "$HOME/pzserver"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
+
+      - name: Descargar servidor dedicado estable
+        shell: bash
+        run: |
+          set -euo pipefail
+          ok=0
+          for attempt in 1 2 3 4; do
+            if "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit; then
+              ok=1
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$ok" -eq 1
+
+      - name: Extraer traducciones y versión
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$HOME/export"
+          mkdir -p "$OUT"
+          cp -a "$HOME/pzserver/media/lua/shared/Translate/EN" "$OUT/EN"
+          find "$HOME/pzserver" -maxdepth 2 -type f \( -iname '*version*' -o -iname 'steam_appid.txt' \) -print > "$OUT/version-files.txt" || true
+          grep -RInE 'version|42\.20' "$HOME/pzserver" --include='*.txt' --include='*.json' --include='*.properties' 2>/dev/null | head -200 > "$OUT/version-hints.txt" || true
+          find "$OUT/EN" -type f | sort > "$OUT/files.txt"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PZ_B42.20_EN_Translations
+          path: ~/export
+          retention-days: 1
