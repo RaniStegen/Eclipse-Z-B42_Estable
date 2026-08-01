@@ -16,7 +16,7 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 35
     steps:
       - name: Checkout mínimo
         uses: actions/checkout@v4
@@ -26,29 +26,23 @@ jobs:
             .github/workflows/audit-player-animsets-b4220.yml
           sparse-checkout-cone-mode: false
 
-      - name: Extraer AnimSets de todos los mods y ECZ_25 completo
+      - name: Extraer únicamente gráficos de movimiento del repositorio
         shell: bash
         run: |
           set -euo pipefail
           OUT="$HOME/audit"
-          mkdir -p "$OUT/repo" "$OUT/ecz25"
+          mkdir -p "$OUT/repo"
 
-          git ls-tree -r --name-only HEAD | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/repo-player-animation-files.txt" || true
-          git ls-tree -r --name-only HEAD | grep -F 'EclipseZ - 1/Contents/mods/ECZ_25/' | sort > "$OUT/ecz25-files.txt" || true
+          git ls-tree -r --name-only HEAD | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/all-player-animation-paths.txt" || true
+          grep -Ei 'ECZ_25/.*/media/(animsets|actiongroups)/player/|/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123])\.xml$' "$OUT/all-player-animation-paths.txt" | sort -u > "$OUT/selected-player-animation-paths.txt" || true
 
           while IFS= read -r p; do
             [ -n "$p" ] || continue
             mkdir -p "$OUT/repo/$(dirname "$p")"
             git show "HEAD:$p" > "$OUT/repo/$p"
-          done < "$OUT/repo-player-animation-files.txt"
+          done < "$OUT/selected-player-animation-paths.txt"
 
-          while IFS= read -r p; do
-            [ -n "$p" ] || continue
-            mkdir -p "$OUT/ecz25/$(dirname "$p")"
-            git show "HEAD:$p" > "$OUT/ecz25/$p"
-          done < "$OUT/ecz25-files.txt"
-
-          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning' "$OUT/repo" > "$OUT/repo-turning-references.txt" || true
+          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning|moveDirection' "$OUT/repo" > "$OUT/repo-turning-references.txt" || true
           find "$OUT/repo" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/repo-sha256.txt" || true
 
       - name: Instalar SteamCMD
@@ -78,22 +72,24 @@ jobs:
           done
           test "$ok" -eq 1
 
-      - name: Extraer y comparar AnimSets vanilla
+      - name: Extraer y comparar gráficos vanilla
         shell: bash
         run: |
           set -euo pipefail
           OUT="$HOME/audit"
           mkdir -p "$OUT/vanilla" "$OUT/diffs"
 
-          find "$HOME/pzserver" -type f | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/vanilla-player-animation-files.txt" || true
+          find "$HOME/pzserver" -type f | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/vanilla-all-player-animation-paths.txt" || true
+          grep -Ei '/(movement|turn|turning|shove|ext)/|/(defaultwalk|shovedefault|ext0[123])\.xml$' "$OUT/vanilla-all-player-animation-paths.txt" | sort -u > "$OUT/vanilla-selected-player-animation-paths.txt" || true
+
           while IFS= read -r p; do
             [ -n "$p" ] || continue
             rel="${p#"$HOME/pzserver/"}"
             mkdir -p "$OUT/vanilla/$(dirname "$rel")"
             cp "$p" "$OUT/vanilla/$rel"
-          done < "$OUT/vanilla-player-animation-files.txt"
+          done < "$OUT/vanilla-selected-player-animation-paths.txt"
 
-          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning' "$OUT/vanilla" > "$OUT/vanilla-turning-references.txt" || true
+          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning|moveDirection' "$OUT/vanilla" > "$OUT/vanilla-turning-references.txt" || true
           find "$OUT/vanilla" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/vanilla-sha256.txt" || true
 
           : > "$OUT/comparison.txt"
@@ -110,9 +106,6 @@ jobs:
               echo "SOLO_MOD=$modfile" >> "$OUT/comparison.txt"
             fi
           done < <(find "$OUT/repo" -type f | sort)
-
-          grep -RIlE 'defaultwalk\.xml|shovedefault\.xml|ext0[123]\.xml' "$OUT/repo" > "$OUT/core-overrides.txt" || true
-          grep -RInE '<m_Name>|<m_StateName>|<m_AnimName>|<m_Target>|<m_TargetState>|turning' "$OUT/repo" > "$OUT/repo-state-summary.txt" || true
 
       - name: Subir auditoría
         uses: actions/upload-artifact@v4
