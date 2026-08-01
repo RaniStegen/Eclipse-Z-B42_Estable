@@ -1,0 +1,117 @@
+name: Auditar AnimSets jugador B42.20
+
+on:
+  push:
+    branches:
+      - fix/b42-20-player-turning-desync
+    paths:
+      - .github/workflows/audit-player-animsets-b4220.yml
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout mínimo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/workflows/audit-player-animsets-b4220.yml
+          sparse-checkout-cone-mode: false
+
+      - name: Extraer AnimSets de todos los mods y ECZ_25 completo
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$HOME/audit"
+          mkdir -p "$OUT/repo" "$OUT/ecz25"
+
+          git ls-tree -r --name-only HEAD | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/repo-player-animation-files.txt" || true
+          git ls-tree -r --name-only HEAD | grep -F 'EclipseZ - 1/Contents/mods/ECZ_25/' | sort > "$OUT/ecz25-files.txt" || true
+
+          while IFS= read -r p; do
+            [ -n "$p" ] || continue
+            mkdir -p "$OUT/repo/$(dirname "$p")"
+            git show "HEAD:$p" > "$OUT/repo/$p"
+          done < "$OUT/repo-player-animation-files.txt"
+
+          while IFS= read -r p; do
+            [ -n "$p" ] || continue
+            mkdir -p "$OUT/ecz25/$(dirname "$p")"
+            git show "HEAD:$p" > "$OUT/ecz25/$p"
+          done < "$OUT/ecz25-files.txt"
+
+          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning' "$OUT/repo" > "$OUT/repo-turning-references.txt" || true
+          find "$OUT/repo" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/repo-sha256.txt" || true
+
+      - name: Instalar SteamCMD
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo dpkg --add-architecture i386
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lib32gcc-s1 ca-certificates wget tar
+          mkdir -p "$HOME/steamcmd"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
+
+      - name: Descargar servidor dedicado 42.20
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/pzserver"
+          ok=0
+          for attempt in 1 2 3 4; do
+            echo "Intento SteamCMD $attempt"
+            if "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit; then
+              ok=1
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$ok" -eq 1
+
+      - name: Extraer y comparar AnimSets vanilla
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$HOME/audit"
+          mkdir -p "$OUT/vanilla" "$OUT/diffs"
+
+          find "$HOME/pzserver" -type f | grep -Ei '/media/(animsets|actiongroups)/player/' | sort > "$OUT/vanilla-player-animation-files.txt" || true
+          while IFS= read -r p; do
+            [ -n "$p" ] || continue
+            rel="${p#"$HOME/pzserver/"}"
+            mkdir -p "$OUT/vanilla/$(dirname "$rel")"
+            cp "$p" "$OUT/vanilla/$rel"
+          done < "$OUT/vanilla-player-animation-files.txt"
+
+          grep -RInE 'turning180|turningmovement180|turningidle180|turningaim180|turning' "$OUT/vanilla" > "$OUT/vanilla-turning-references.txt" || true
+          find "$OUT/vanilla" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/vanilla-sha256.txt" || true
+
+          : > "$OUT/comparison.txt"
+          while IFS= read -r modfile; do
+            rel="${modfile#*media/}"
+            vanilla=$(find "$OUT/vanilla" -type f -ipath "*/media/$rel" -print -quit || true)
+            if [ -n "$vanilla" ]; then
+              echo "=== $modfile" >> "$OUT/comparison.txt"
+              echo "VANILLA=$vanilla" >> "$OUT/comparison.txt"
+              sha256sum "$modfile" "$vanilla" >> "$OUT/comparison.txt"
+              safe=$(echo "$rel" | tr '/ ' '__')
+              diff -u "$vanilla" "$modfile" > "$OUT/diffs/$safe.diff" || true
+            else
+              echo "SOLO_MOD=$modfile" >> "$OUT/comparison.txt"
+            fi
+          done < <(find "$OUT/repo" -type f | sort)
+
+          grep -RIlE 'defaultwalk\.xml|shovedefault\.xml|ext0[123]\.xml' "$OUT/repo" > "$OUT/core-overrides.txt" || true
+          grep -RInE '<m_Name>|<m_StateName>|<m_AnimName>|<m_Target>|<m_TargetState>|turning' "$OUT/repo" > "$OUT/repo-state-summary.txt" || true
+
+      - name: Subir auditoría
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-player-animsets-b4220
+          path: ~/audit
+          retention-days: 1
