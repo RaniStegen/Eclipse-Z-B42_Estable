@@ -29,34 +29,36 @@ jobs:
             .github/workflows/validate-ecz25-turning-b4220.yml
           sparse-checkout-cone-mode: false
 
-      - name: Validación estática
+      - name: Validación estática contra B42.20
         shell: bash
         run: |
           set -euo pipefail
           MOD="EclipseZ - 1/Contents/mods/ECZ_25"
+          ROOT="$MOD/42/media/AnimSets/player"
           OUT="$HOME/validation"
           mkdir -p "$OUT"
 
-          forbidden=(
-            '42/media/AnimSets/player/ext/Ext01.xml'
-            '42/media/AnimSets/player/ext/Ext02.xml'
-            '42/media/AnimSets/player/ext/Ext03.xml'
-            '42/media/AnimSets/player/melee/2handed/ChainsawDefault.xml'
-            '42/media/AnimSets/player/melee/2handed/ChainsawMiss.xml'
-            '42/media/AnimSets/player/movement/defaultWalk.xml'
-            '42/media/AnimSets/player/shove/ShoveDefault.xml'
-          )
-          for rel in "${forbidden[@]}"; do
-            if [ -e "$MOD/$rel" ]; then
-              echo "Sigue presente un override vanilla incompatible: $rel" >&2
-              exit 1
-            fi
-          done
+          test -d "$MOD/common/media/AnimSets"
+          test -d "$MOD/common/media/actiongroups"
+          test -d "$MOD/42/media/actiongroups"
+
+          cat > "$OUT/expected-sha256.txt" <<'EOF'
+          f0d6f551a064504276c532454017de5ec8f876fc5e42d61259b63247f172ea07  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/ext/Ext01.xml
+          4040bd654bd761a02b6e37c7b347966409d4f2361dac5901d7e9a5b9e83005ca  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/ext/Ext02.xml
+          a60edec8dda94ae54124dccfe169dbe2feaa8311b0ab04db2386de1730e22a8c  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/ext/Ext03.xml
+          24927a38ddc140c0438bc6546efacb5ecbd4ae3aa9faf15e7610f91952f75d99  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/melee/2handed/ChainsawDefault.xml
+          9d5cc5d7294f6beb9a8d33d6eeaa2a8afeb2ef201d02007d744c39ea9d62d062  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/melee/2handed/ChainsawMiss.xml
+          db133c6942f22fbe0294379f231f74ccdfab0feeae76184fca608cec60b272de  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/movement/defaultWalk.xml
+          a0209e392c0fc2380717423219cfd061561635be19d08665dd710e5f7b00b7bd  EclipseZ - 1/Contents/mods/ECZ_25/42/media/AnimSets/player/shove/ShoveDefault.xml
+          EOF
+          sha256sum -c "$OUT/expected-sha256.txt" | tee "$OUT/hash-validation.txt"
 
           if grep -RIn '<m_Target>turn_walk_180</m_Target>' "$MOD" > "$OUT/old-turn-target.txt"; then
-            echo 'Persiste el destino antiguo turn_walk_180.' >&2
+            echo 'Persiste el destino obsoleto turn_walk_180.' >&2
             exit 1
           fi
+          grep -Fq '<m_Target>turn_walk_180L</m_Target>' "$ROOT/movement/defaultWalk.xml"
+          grep -Fq '<m_Name>isTurningAround</m_Name>' "$ROOT/movement/defaultWalk.xml"
 
           python3 - <<'PY'
           from pathlib import Path
@@ -76,8 +78,8 @@ jobs:
               raise SystemExit('\n'.join(errors))
           PY
 
-          find "$MOD/42/media/AnimSets/player" -type f -name '*.xml' -print | sort > "$OUT/player-animsets-final.txt"
-          grep -RInE 'turning180|turn_walk_180|turningmovement180|turningidle180|turningaim180' "$MOD/42/media/AnimSets/player" > "$OUT/turn-references-final.txt" || true
+          find "$ROOT" -type f -name '*.xml' -print | sort > "$OUT/player-animsets-final.txt"
+          grep -RInE 'turning180|turn_walk_180|turningmovement180|turningidle180|turningaim180' "$ROOT" > "$OUT/turn-references-final.txt" || true
 
       - name: Instalar SteamCMD
         shell: bash
@@ -136,13 +138,13 @@ jobs:
           rc=$?
           set -e
           echo "exit_code=$rc" > "$HOME/validation/smoke-summary.txt"
-          grep -Eai 'version=|loading ECZ_25|SERVER STARTED|AnimState not found|turning180|turn_walk_180|Exception|ERROR:' "$HOME/validation/server-stdout.log" >> "$HOME/validation/smoke-summary.txt" || true
+          grep -Eai 'version=|loading ECZ_25|SERVER STARTED|AnimNode.Parse|PZXmlParserException|AnimState not found|turning180|turn_walk_180|Exception|ERROR:' "$HOME/validation/server-stdout.log" >> "$HOME/validation/smoke-summary.txt" || true
           if ! grep -Fq '*** SERVER STARTED ****' "$HOME/validation/server-stdout.log"; then
             echo 'El servidor no llegó a SERVER STARTED.' >&2
             exit 1
           fi
-          if grep -Eai 'AnimState not found: turning180|target state "turning180"|<m_Target>turn_walk_180</m_Target>' "$HOME/validation/server-stdout.log"; then
-            echo 'Se detectó de nuevo la cadena de giro incompatible.' >&2
+          if grep -Eai 'AnimNode.Parse threw an exception reading file: .*/ECZ_25/|PZXmlParserException:.*ECZ_25|AnimState not found: turning180|target state "turning180"' "$HOME/validation/server-stdout.log"; then
+            echo 'Se detectó un error de AnimSets específico de ECZ_25.' >&2
             exit 1
           fi
 
@@ -158,12 +160,13 @@ jobs:
           ECZ_25 — corrección de orientación y giro para Project Zomboid 42.20
 
           1. Detén el servidor y cierra todos los clientes.
-          2. Elimina completamente la carpeta ECZ_25 instalada anteriormente.
-          3. Copia la carpeta EclipseZ - 1/Contents/mods/ECZ_25 de este paquete.
-          4. Reinicia servidor y clientes.
+          2. Sustituye ECZ_25 por la carpeta completa incluida en este paquete.
+          3. Actualiza el mismo paquete en el servidor y en todos los clientes.
+          4. Reinicia completamente servidor y clientes.
 
-          Es obligatorio eliminar la carpeta anterior: copiar encima no borra los siete
-          AnimSets antiguos que causan el fallo de caminar visualmente hacia atrás.
+          Esta versión contiene las siete bases de animación exactas de Build 42.20,
+          por lo que también puede copiarse encima de la versión anterior aceptando
+          sobrescribir. Sustituir la carpeta completa sigue siendo la opción más limpia.
           EOF
           cd "$OUT"
           zip -qr "$HOME/ECZ_25_B42.20_Orientacion_MP_Fix.zip" "EclipseZ - 1" INSTALACION.txt
