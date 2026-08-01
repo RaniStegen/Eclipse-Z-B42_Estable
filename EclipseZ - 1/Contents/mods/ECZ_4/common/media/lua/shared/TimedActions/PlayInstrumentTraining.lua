@@ -242,8 +242,8 @@ function PlayInstrumentTraining:learnMidSong()
 end
 
 function PlayInstrumentTraining:soundPing()
-	local soundRadius, volume = 10, 5
-	if self.character:isOutside() then soundRadius, volume = 30, 10; end
+	local soundRadius, volume = 8, 3
+	if self.character:isOutside() then soundRadius, volume = 20, 6; end
 	addSound(self.character,self.character:getX(),self.character:getY(),self.character:getZ(),soundRadius,volume)
 end
 
