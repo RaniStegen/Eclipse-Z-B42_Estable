@@ -1,0 +1,273 @@
+name: Validar ECZ3_8 agricultura B42.20
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/validate-ecz3-8-farming-b4220.yml
+      - EclipseZ - 3/Contents/mods/ECZ3_8/**
+  push:
+    branches:
+      - fix/ecz3-8-farming-modal-b4220
+    paths:
+      - .github/workflows/validate-ecz3-8-farming-b4220.yml
+      - EclipseZ - 3/Contents/mods/ECZ3_8/**
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout ECZ3_8
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            EclipseZ - 3/Contents/mods/ECZ3_8
+            .github/workflows/validate-ecz3-8-farming-b4220.yml
+          sparse-checkout-cone-mode: false
+
+      - name: Instalar herramientas
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo dpkg --add-architecture i386
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lua5.4 zip lib32gcc-s1 ca-certificates wget tar
+          mkdir -p "$HOME/validation"
+
+      - name: Validar sintaxis y protecciones
+        shell: bash
+        run: |
+          set -euo pipefail
+          MOD="EclipseZ - 3/Contents/mods/ECZ3_8"
+          PANEL="$MOD/42/media/lua/client/NeatRocco/NR_Farming/NR_PlantPanel.lua"
+          PATCH="$MOD/42/media/lua/client/NeatRocco/NR_Patches/NR_Patch_Farming.lua"
+          OUT="$HOME/validation"
+
+          : > "$OUT/lua-syntax.txt"
+          while IFS= read -r f; do
+            luac5.4 -p "$f"
+            echo "OK $f" >> "$OUT/lua-syntax.txt"
+          done < <(find "$MOD/42/media/lua" -type f -name '*.lua' | sort)
+
+          grep -Fq 'self:_restoreDrawHooks()' "$PANEL"
+          grep -Fq 'xpcall(function()' "$PANEL"
+          grep -Fq 'NR_FarmingUI_DisableForSession' "$PANEL"
+          grep -Fq 'disabledForSession' "$PATCH"
+          grep -Fq 'NR_fallbackToVanilla' "$PATCH"
+          grep -Fq 'ISBaseTimedAction.perform(self)' "$PATCH"
+
+          if grep -Fq 'farming_vegetableconf.props[plant.typeOfSeed].icon' "$PANEL"; then
+            echo 'Sigue presente el acceso inseguro al icono de un cultivo personalizado.' >&2
+            exit 1
+          fi
+
+          cat > "$OUT/static-summary.txt" <<'EOF'
+          Protección de render tipo finally: presente
+          Fallback automático a ventana vanilla: presente
+          Cierre de todos los paneles tras error: presente
+          Finalización de la acción temporizada: presente
+          Acceso seguro a iconos de cultivos personalizados: presente
+          EOF
+
+      - name: Prueba Lua aislada de bloqueo y fallback
+        shell: bash
+        run: |
+          set -euo pipefail
+          MOD="EclipseZ - 3/Contents/mods/ECZ3_8"
+          PANEL="$MOD/42/media/lua/client/NeatRocco/NR_Farming/NR_PlantPanel.lua"
+          PATCH="$MOD/42/media/lua/client/NeatRocco/NR_Patches/NR_Patch_Farming.lua"
+          TEST="$HOME/validation/test-farming.lua"
+
+          cat > "$TEST" <<'LUA'
+          local PANEL_PATH = assert(os.getenv('PANEL_PATH'))
+          local PATCH_PATH = assert(os.getenv('PATCH_PATH'))
+
+          package.preload['NeatRocco/NR_Utils/NR_BasePanel'] = function() return true end
+          package.preload['NeatRocco/NR_Utils/NR_CollapseUtils'] = function() return true end
+          package.preload['NeatRocco/NR_Config'] = function() return true end
+          package.preload['NeatRocco/NR_Farming/NR_PlantPanel'] = function() return NR_PlantPanel end
+
+          local function derive(base, name)
+              local cls = { Type = name }
+              cls.__index = cls
+              setmetatable(cls, { __index = base })
+              function cls:derive(childName) return derive(self, childName) end
+              return cls
+          end
+
+          ISPanelJoypad = {}
+          ISPanelJoypad.__index = ISPanelJoypad
+          function ISPanelJoypad:derive(name) return derive(self, name) end
+          function ISPanelJoypad.new(self, x, y, w, h)
+              local o = setmetatable({ x=x, y=y, width=w, height=h, visible=false }, self)
+              function o:setWantKeyEvents() end
+              function o:setWidth(v) self.width=v end
+              function o:setHeight(v) self.height=v end
+              function o:setVisible(v) self.visible=v end
+              function o:addToUIManager() self.added=true self.visible=true end
+              function o:removeFromUIManager() self.removed=true self.visible=false end
+              function o:isReallyVisible() return self.visible end
+              function o:initialise() end
+              function o:drawText() end
+              return o
+          end
+          function ISPanelJoypad.render() end
+          function ISPanelJoypad.update() end
+          function ISPanelJoypad.onJoypadDown() end
+
+          ISFarmingInfo = ISPanelJoypad:derive('ISFarmingInfo')
+          function ISFarmingInfo.prerender() end
+          function ISFarmingInfo.render(self)
+              self:drawText('Etiqueta', 13, 0, 1, 1, 1, 1)
+              error('fallo de render forzado')
+          end
+
+          NR_Config = { padding=6, headerHeight=30, buttonSize=20, lineHeight=18, barHeight=10 }
+          NR_CollapseUtils = {
+              init=function() end,
+              isBodyVisible=function() return true end,
+              update=function() end,
+              onClickCollapse=function() end,
+              onHeaderHover=function() end,
+          }
+          NR_BasePanel = {
+              initBase=function() end,
+              createChildren=function(self) self.header={setWidth=function() end,calculateLayout=function() end} end,
+              prerender=function() end,
+              closeBase=function(self) self.removed=true self.visible=false end,
+          }
+          NR_DrawUtils = { drawLabelValue=function() end }
+          NR_DrawBar = { drawBar=function() end }
+
+          UIFont = { Small=1, Medium=2 }
+          Keyboard = { KEY_ESCAPE=1 }
+          Joypad = { BButton=2 }
+          JoypadState = { players={} }
+          farming_vegetableconf = { props={} }
+          function getTextManager()
+              return { getFontHeight=function() return 12 end, MeasureStringX=function(_,_,s) return #tostring(s or '') end }
+          end
+          function getText(key) return key end
+          function getTexture() return nil end
+          function getPlayerScreenLeft() return 0 end
+          function getPlayerScreenTop() return 0 end
+
+          local vanillaCalls, baseCalls = 0, 0
+          ISPlantInfoAction = {}
+          ISPlantInfoAction.perform = function() vanillaCalls = vanillaCalls + 1 end
+          ISBaseTimedAction = { perform=function() baseCalls = baseCalls + 1 end }
+          function NR_RegisterWindowToggleCallback(_, cb) cb(true) end
+
+          dofile(PANEL_PATH)
+          dofile(PATCH_PATH)
+
+          local character = { getPlayerNum=function() return 0 end, DistTo=function() return 0 end }
+          local square = { getX=function() return 1 end, getY=function() return 1 end }
+          local plant = {
+              typeOfSeed='CultivoPersonalizadoSinIcono',
+              updateFromIsoObject=function() end,
+              getIsoObject=function() return {} end,
+              getObject=function() return {} end,
+              getSquare=function() return square end,
+          }
+          local action = { character=character, plant=plant, playerNum=0 }
+
+          local customPerform = ISPlantInfoAction.perform
+          customPerform(action)
+          assert(baseCalls == 1, 'la acción personalizada no finalizó')
+          local panel = assert(NR_PlantPanel.panels[character], 'no se creó el panel')
+          assert(panel.vegetable == nil, 'el cultivo sin icono debería usar nil sin fallar')
+
+          panel:render()
+          assert(panel._closed == true, 'el panel con error no se cerró')
+          assert(panel._drawHooksActive == false, 'los hooks de dibujo quedaron activos')
+          assert(rawget(panel, 'drawText') == nil, 'drawText no fue restaurado')
+          assert(NR_FarmingUIState.disabledForSession == true, 'no se activó el fallback de sesión')
+          assert(ISPlantInfoAction.perform == ISPlantInfoAction._NR_old_perform, 'no se restauró el perform vanilla')
+
+          ISPlantInfoAction.perform(action)
+          assert(vanillaCalls == 1, 'el siguiente intento no usó la ventana vanilla')
+
+          NR_FarmingUIState.disabledForSession = false
+          ISPlantInfoAction.perform = customPerform
+          NR_PlantPanel.panels = {}
+          local originalNew = NR_PlantPanel.new
+          NR_PlantPanel.new = function() error('fallo de construcción forzado') end
+          customPerform(action)
+          NR_PlantPanel.new = originalNew
+          assert(vanillaCalls == 2, 'el fallo de apertura no recurrió a vanilla')
+
+          print('OK: panel cerrado, hooks restaurados, acción finalizada y fallback vanilla operativo')
+          LUA
+
+          PANEL_PATH="$PANEL" PATCH_PATH="$PATCH" lua5.4 "$TEST" | tee "$HOME/validation/mock-test.txt"
+
+      - name: Descargar API oficial 42.20
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/steamcmd" "$HOME/pzserver"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
+          ok=0
+          for attempt in 1 2 3 4; do
+            if "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit; then
+              ok=1
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$ok" -eq 1
+
+          INFO="$HOME/pzserver/media/lua/client/Farming/ISUI/ISFarmingInfo.lua"
+          ACTION="$HOME/pzserver/media/lua/client/Farming/TimedActions/ISPlantInfoAction.lua"
+          test -f "$INFO"
+          test -f "$ACTION"
+          cp "$INFO" "$HOME/validation/ISFarmingInfo_B42.20.lua"
+          cp "$ACTION" "$HOME/validation/ISPlantInfoAction_B42.20.lua"
+          grep -q 'function ISFarmingInfo:isPlantValid' "$INFO"
+          grep -q 'self.plant:updateFromIsoObject()' "$INFO"
+          grep -q 'self.plant:getObject()' "$INFO"
+          grep -q 'function ISPlantInfoAction:perform' "$ACTION"
+          grep -q 'ISBaseTimedAction.perform(self)' "$ACTION"
+          sha256sum "$INFO" "$ACTION" > "$HOME/validation/vanilla-api.sha256.txt"
+
+      - name: Exportar ECZ3_8 corregido
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$HOME/export"
+          mkdir -p "$OUT/EclipseZ - 3/Contents/mods"
+          cp -a "EclipseZ - 3/Contents/mods/ECZ3_8" "$OUT/EclipseZ - 3/Contents/mods/"
+          cat > "$OUT/INSTALACION.txt" <<'EOF'
+          ECZ3_8 — corrección del estado de cosecha para Project Zomboid 42.20
+
+          1. Detén el servidor y cierra todos los clientes.
+          2. Elimina la carpeta ECZ3_8 instalada anteriormente.
+          3. Copia la carpeta EclipseZ - 3/Contents/mods/ECZ3_8 de este paquete.
+          4. Distribuye exactamente la misma versión a todos los clientes.
+          5. Reinicia servidor y clientes.
+
+          El arreglo evita que la ventana quede bloqueada. Si un cultivo o un parche de
+          terceros falla al dibujarse, el panel Neat se cierra, restaura sus hooks y usa
+          automáticamente la ventana vanilla durante el resto de la sesión.
+          EOF
+          cd "$OUT"
+          zip -qr "$HOME/ECZ3_8_B42.20_Estado_Cosecha_Fix.zip" "EclipseZ - 3" INSTALACION.txt
+          sha256sum "$HOME/ECZ3_8_B42.20_Estado_Cosecha_Fix.zip" > "$HOME/ECZ3_8_B42.20_Estado_Cosecha_Fix.sha256.txt"
+
+      - name: Subir resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ECZ3_8_B42.20_Estado_Cosecha_Fix
+          path: |
+            ~/ECZ3_8_B42.20_Estado_Cosecha_Fix.zip
+            ~/ECZ3_8_B42.20_Estado_Cosecha_Fix.sha256.txt
+            ~/validation
+          if-no-files-found: ignore
+          retention-days: 1
