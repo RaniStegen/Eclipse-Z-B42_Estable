@@ -1,0 +1,67 @@
+name: Inspeccionar pilas de objetos B42.20
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/inspect-b4220-item-stacks.yml
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/workflows/inspect-b4220-item-stacks.yml
+          sparse-checkout-cone-mode: false
+
+      - name: Instalar herramientas
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo dpkg --add-architecture i386
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lib32gcc-s1 ca-certificates wget tar openjdk-21-jdk-headless
+          mkdir -p "$HOME/steamcmd" "$HOME/pzserver" "$HOME/out"
+          wget -q -O "$HOME/steamcmd/steamcmd.tar.gz" https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xzf "$HOME/steamcmd/steamcmd.tar.gz" -C "$HOME/steamcmd"
+
+      - name: Descargar servidor dedicado
+        shell: bash
+        run: |
+          set -euo pipefail
+          ok=0
+          for attempt in 1 2 3 4; do
+            if "$HOME/steamcmd/steamcmd.sh" +force_install_dir "$HOME/pzserver" +login anonymous +app_update 380870 validate +quit; then
+              ok=1
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$ok" -eq 1
+          find "$HOME/pzserver" -type f -name '*.jar' | sort > "$HOME/out/jars.txt"
+
+      - name: Decompilar API de cantidades y consumo
+        shell: bash
+        run: |
+          set -euo pipefail
+          JAR=$(grep -E '/projectzomboid\.jar$' "$HOME/out/jars.txt" | head -1 || true)
+          if [ -z "$JAR" ]; then
+            JAR=$(grep -E '/ProjectZomboid[^/]*\.jar$' "$HOME/out/jars.txt" | head -1 || true)
+          fi
+          test -n "$JAR"
+          echo "$JAR" > "$HOME/out/main-jar.txt"
+          javap -classpath "$JAR" -p -c zombie.inventory.InventoryItem > "$HOME/out/InventoryItem.javap.txt"
+          javap -classpath "$JAR" -p -c zombie.inventory.ItemContainer > "$HOME/out/ItemContainer.javap.txt"
+          javap -classpath "$JAR" -p -c zombie.network.GameServer > "$HOME/out/GameServer.javap.txt" || true
+          javap -classpath "$JAR" -p -c zombie.network.GameClient > "$HOME/out/GameClient.javap.txt" || true
+          grep -nE 'getCount|setCount|getCurrentUses|getUses|setUses|Use\(|UseItem|syncItemFields|sendItemStats|sendRemoveItemFromContainer' "$HOME/out/InventoryItem.javap.txt" > "$HOME/out/InventoryItem-relevant.txt" || true
+          grep -nE 'Remove\(|removeItemWithID|AddItem|sendItemStats|sendRemove' "$HOME/out/ItemContainer.javap.txt" > "$HOME/out/ItemContainer-relevant.txt" || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PZ_B42.20_ITEM_STACK_API
+          path: ~/out
+          retention-days: 1
