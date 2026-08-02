@@ -1,0 +1,11 @@
+Workshop ID: 3065705138
+Title: EclipseZ
+Consumer App ID: 108600 (Project Zomboid)
+Steam file name: 1698614089_new_preview_EclipseZ Logo 2.0 Fondo.png
+Downloaded content: 2124070058520008862_legacy.bin
+Downloaded size: 2054912 bytes
+Mod ID: NONE
+Map folder: NONE
+mod.info files found: 0
+media/maps folders found: 0
+Conclusion: this Workshop item is an image/shared-file entry for the EclipseZ community, not a Project Zomboid mod or map. It must not be added to Mods= or Map= in the server INI.
