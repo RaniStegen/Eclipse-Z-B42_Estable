@@ -5,6 +5,11 @@ on:
     branches: [fix/ecz10-distillery-stack-b4220]
     paths:
       - .github/workflows/export-ecz10-distillery.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/export-ecz10-distillery.yml
+      - EclipseZ - 1/Contents/mods/ECZ_10/**
   workflow_dispatch:
 
 jobs:
