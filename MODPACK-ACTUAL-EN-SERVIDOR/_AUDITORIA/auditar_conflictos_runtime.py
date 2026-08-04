@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Parte 3: conflictos globales, símbolos persistentes y riesgos de runtime.
 
-Analiza únicamente el contenido interno de MODPACK-ACTUAL-EN-SERVIDOR. Las
- dependencias externas declaradas en la configuración se conservan en el orden
- de carga, pero no se exige que sus archivos estén presentes en el repositorio.
+Los archivos especiales de Project Zomboid (`sandbox-options.txt`,
+`registries.lua`, `fileGuidTable.xml` y `clothing.xml`) se analizan como
+contribuciones acumulativas de cada mod, no como sustituciones por orden.
 """
 from __future__ import annotations
 
@@ -11,28 +11,28 @@ import argparse
 import hashlib
 import json
 import re
-import sys
 import xml.etree.ElementTree as ET
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
 VERSION_RE = re.compile(r"^\d+(?:\.\d+)*$")
 OPTION_RE = re.compile(r"^\s*option\s+([A-Za-z0-9_.-]+)\s*\{")
-MODULE_RE = re.compile(r"\bmodule\s+([A-Za-z0-9_.-]+)")
-SCRIPT_DECL_RE = re.compile(r"^\s*(item|entity|vehicle|fluid)\s+([A-Za-z0-9_.-]+)\b", re.I | re.M)
-LUA_TABLE_KEY_RE = re.compile(r"(?:\[\s*[\"']([^\"']+)[\"']\s*\]|^\s*([A-Za-z_][A-Za-z0-9_.-]*))\s*=", re.M)
-LUA_REGISTER_RE = re.compile(r"\b(?:register|add|insert)[A-Za-z0-9_]*\s*\(\s*[\"']([^\"']+)[\"']", re.I)
+MODULE_RE = re.compile(r"^\s*module\s+([A-Za-z0-9_.-]+)\b", re.I)
+DECL_RE = re.compile(r"^\s*(item|entity|vehicle|fluid)\s+([A-Za-z_][A-Za-z0-9_.-]*)\b", re.I)
+REGISTER_RE = re.compile(r"\b([A-Za-z_][A-Za-z0-9_.]*)\.register\s*\(\s*[\"']([^\"']+)[\"']", re.I)
 CHAT_FUNCTION_RE = re.compile(r"^\s*function\s+(ISChat[.:][A-Za-z0-9_]+)", re.M)
 
-SENSITIVE = {
+SENSITIVE = (
     "media/sandbox-options.txt",
     "media/registries.lua",
     "media/fileguidtable.xml",
     "media/clothing/clothing.xml",
     "media/lua/client/chat/ischat.lua",
-}
+)
+CUMULATIVE = set(SENSITIVE[:-1])
+
 
 @dataclass
 class Finding:
@@ -54,7 +54,7 @@ def parse_args() -> argparse.Namespace:
 
 def version_tuple(value: str) -> tuple[int, ...]:
     parts = tuple(int(x) for x in value.split("."))
-    return parts + (0,) * (4 - len(parts))
+    return parts + (0,) * max(0, 4 - len(parts))
 
 
 def compatible(version: str, build: str) -> bool:
@@ -79,22 +79,22 @@ def read_text(path: Path) -> str:
     return raw.decode("utf-8", errors="replace")
 
 
+def rel(path: Path, root: Path) -> str:
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def parse_mod_info(path: Path) -> dict[str, list[str]]:
     out: dict[str, list[str]] = defaultdict(list)
     for raw in read_text(path).splitlines():
         line = raw.strip()
         if not line or line.startswith(("#", "--", "//")) or "=" not in line:
             continue
-        k, v = line.split("=", 1)
-        out[k.strip()].append(v.strip())
+        key, value = line.split("=", 1)
+        out[key.strip()].append(value.strip())
     return dict(out)
-
-
-def rel(path: Path, root: Path) -> str:
-    try:
-        return path.relative_to(root).as_posix()
-    except ValueError:
-        return path.as_posix()
 
 
 def discover_mods(root: Path, build: str) -> dict[str, dict[str, Any]]:
@@ -103,29 +103,27 @@ def discover_mods(root: Path, build: str) -> dict[str, dict[str, Any]]:
         if not mods_dir.is_dir():
             continue
         for mod_root in sorted(p for p in mods_dir.iterdir() if p.is_dir()):
-            infos = []
+            ids: set[str] = set()
             for info in sorted(mod_root.rglob("mod.info")):
                 if "media" in {part.lower() for part in info.relative_to(mod_root).parts}:
                     continue
-                data = parse_mod_info(info)
-                ids = data.get("id", [])
-                if len(ids) == 1:
-                    infos.append((info, ids[0], data))
-            if not infos:
-                continue
-            ids = {entry[1] for entry in infos}
+                values = parse_mod_info(info).get("id", [])
+                if len(values) == 1:
+                    ids.add(values[0])
             if len(ids) != 1:
                 continue
             mod_id = next(iter(ids))
             versions = sorted(
-                [p for p in mod_root.iterdir() if p.is_dir() and VERSION_RE.fullmatch(p.name) and compatible(p.name, build)],
+                (p for p in mod_root.iterdir() if p.is_dir() and VERSION_RE.fullmatch(p.name) and compatible(p.name, build)),
                 key=lambda p: version_tuple(p.name),
             )
             layers: list[tuple[str, Path]] = []
-            if (mod_root / "media").is_dir():
-                layers.append(("root", mod_root / "media"))
-            if (mod_root / "common" / "media").is_dir():
-                layers.append(("common", mod_root / "common" / "media"))
+            for layer_name, media in (
+                ("root", mod_root / "media"),
+                ("common", mod_root / "common" / "media"),
+            ):
+                if media.is_dir():
+                    layers.append((layer_name, media))
             if versions and (versions[-1] / "media").is_dir():
                 layers.append((versions[-1].name, versions[-1] / "media"))
             found[mod_id] = {
@@ -138,10 +136,7 @@ def discover_mods(root: Path, build: str) -> dict[str, dict[str, Any]]:
 
 
 def active_files(mod: dict[str, Any]) -> dict[str, dict[str, Any]]:
-    """Devuelve una vista efectiva por ruta virtual dentro de un mod.
-
-    root < common < versión activa. La última capa sustituye la ruta previa.
-    """
+    """Vista efectiva dentro de un solo mod: root < common < versión activa."""
     files: dict[str, dict[str, Any]] = {}
     for layer_name, media in mod["layers"]:
         for path in media.rglob("*"):
@@ -167,27 +162,6 @@ def canonical_text(text: str) -> str:
     return "\n".join(lines)
 
 
-def sandbox_blocks(text: str) -> dict[str, str]:
-    lines = text.splitlines()
-    out: dict[str, str] = {}
-    i = 0
-    while i < len(lines):
-        m = OPTION_RE.match(lines[i])
-        if not m:
-            i += 1
-            continue
-        name = m.group(1)
-        block = [lines[i]]
-        depth = lines[i].count("{") - lines[i].count("}")
-        i += 1
-        while i < len(lines) and depth > 0:
-            block.append(lines[i])
-            depth += lines[i].count("{") - lines[i].count("}")
-            i += 1
-        out[name] = canonical_text("\n".join(block))
-    return out
-
-
 def canonical_xml(elem: ET.Element) -> str:
     attrs = " ".join(f"{k}={v}" for k, v in sorted(elem.attrib.items()))
     text = (elem.text or "").strip()
@@ -195,150 +169,279 @@ def canonical_xml(elem: ET.Element) -> str:
     return f"<{elem.tag} {attrs}>{text}{children}</{elem.tag}>"
 
 
-def first_identifier(elem: ET.Element) -> str | None:
-    for key in ("id", "name", "guid", "GUID", "m_Name", "item", "path", "file"):
-        if elem.attrib.get(key):
-            return elem.attrib[key]
-    for child_name in ("m_Name", "name", "id", "m_GUID", "guid"):
-        child = elem.find(child_name)
-        if child is not None and (child.text or "").strip():
-            return (child.text or "").strip()
-    return None
-
-
-def inspect_fileguid(copies: list[dict[str, Any]], findings: list[Finding]) -> dict[str, Any]:
-    guid_to_path: dict[str, set[str]] = defaultdict(set)
-    path_to_guid: dict[str, set[str]] = defaultdict(set)
-    parse_errors = []
-    for copy in copies:
-        try:
-            root = ET.parse(copy["path"]).getroot()
-        except ET.ParseError as exc:
-            parse_errors.append({"path": copy["rel"], "error": str(exc)})
-            findings.append(Finding("error", "FILEGUID_XML_INVALID", str(exc), copy["rel"], copy["mod_id"]))
+def sandbox_blocks(text: str) -> list[tuple[str, str]]:
+    lines = text.splitlines()
+    out: list[tuple[str, str]] = []
+    index = 0
+    while index < len(lines):
+        match = OPTION_RE.match(lines[index])
+        if not match:
+            index += 1
             continue
-        for elem in root.iter():
-            attrs = {str(k).lower(): str(v) for k, v in elem.attrib.items()}
-            guid = attrs.get("guid") or attrs.get("id")
-            path = attrs.get("path") or attrs.get("file") or attrs.get("name")
-            if guid and path:
-                guid_to_path[guid].add(path.lower())
-                path_to_guid[path.lower()].add(guid)
-    for guid, paths in guid_to_path.items():
-        if len(paths) > 1:
-            findings.append(Finding("error", "FILEGUID_GUID_CONFLICT", f"El GUID {guid} apunta a rutas distintas.", details={"paths": sorted(paths)}))
-    for path, guids in path_to_guid.items():
-        if len(guids) > 1:
-            findings.append(Finding("error", "FILEGUID_PATH_CONFLICT", f"La ruta {path} tiene GUID distintos.", details={"guids": sorted(guids)}))
-    return {
-        "guid_entries": len(guid_to_path),
-        "path_entries": len(path_to_guid),
-        "parse_errors": parse_errors,
-        "guid_conflicts": sum(len(v) > 1 for v in guid_to_path.values()),
-        "path_conflicts": sum(len(v) > 1 for v in path_to_guid.values()),
-    }
-
-
-def inspect_clothing(copies: list[dict[str, Any]], findings: list[Finding]) -> dict[str, Any]:
-    definitions: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
-    parse_errors = []
-    for copy in copies:
-        try:
-            root = ET.parse(copy["path"]).getroot()
-        except ET.ParseError as exc:
-            parse_errors.append({"path": copy["rel"], "error": str(exc)})
-            findings.append(Finding("error", "CLOTHING_XML_INVALID", str(exc), copy["rel"], copy["mod_id"]))
-            continue
-        for elem in root.iter():
-            ident = first_identifier(elem)
-            if not ident:
-                continue
-            key = (elem.tag.lower(), ident)
-            definitions[key].append({"mod": copy["mod_id"], "path": copy["rel"], "canonical": canonical_xml(elem)})
-    conflicts = 0
-    identical = 0
-    for (tag, ident), defs in definitions.items():
-        owners = {d["mod"] for d in defs}
-        variants = {d["canonical"] for d in defs}
-        if len(owners) > 1 and len(variants) > 1:
-            conflicts += 1
-            findings.append(Finding("error", "CLOTHING_DEFINITION_CONFLICT", f"{tag}:{ident} tiene definiciones distintas en varios mods.", details={"sources": [{"mod": d["mod"], "path": d["path"]} for d in defs]}))
-        elif len(owners) > 1:
-            identical += 1
-    return {
-        "identified_elements": len(definitions),
-        "conflicting_definitions": conflicts,
-        "identical_duplicates": identical,
-        "parse_errors": parse_errors,
-    }
-
-
-def inspect_registries(copies: list[dict[str, Any]], findings: list[Finding]) -> dict[str, Any]:
-    keys: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for copy in copies:
-        text = read_text(copy["path"])
-        for m in LUA_TABLE_KEY_RE.finditer(text):
-            key = m.group(1) or m.group(2)
-            if key:
-                line = text[m.start(): text.find("\n", m.start()) if text.find("\n", m.start()) != -1 else len(text)].strip()
-                keys[key].append({"mod": copy["mod_id"], "path": copy["rel"], "line": canonical_text(line)})
-        for m in LUA_REGISTER_RE.finditer(text):
-            key = m.group(1)
-            line = text[m.start(): text.find("\n", m.start()) if text.find("\n", m.start()) != -1 else len(text)].strip()
-            keys[f"call:{key}"].append({"mod": copy["mod_id"], "path": copy["rel"], "line": canonical_text(line)})
-    conflicts = 0
-    identical = 0
-    for key, defs in keys.items():
-        owners = {d["mod"] for d in defs}
-        variants = {d["line"] for d in defs}
-        if len(owners) > 1 and len(variants) > 1:
-            conflicts += 1
-            findings.append(Finding("warning", "REGISTRY_KEY_CONFLICT", f"La clave de registro {key} aparece con líneas distintas.", details={"sources": defs[:20]}))
-        elif len(owners) > 1:
-            identical += 1
-    return {"keys": len(keys), "conflicting_keys": conflicts, "identical_duplicates": identical}
+        name = match.group(1)
+        block = [lines[index]]
+        depth = lines[index].count("{") - lines[index].count("}")
+        index += 1
+        while index < len(lines) and depth > 0:
+            block.append(lines[index])
+            depth += lines[index].count("{") - lines[index].count("}")
+            index += 1
+        out.append((name, canonical_text("\n".join(block))))
+    return out
 
 
 def inspect_sandbox(copies: list[dict[str, Any]], findings: list[Finding]) -> dict[str, Any]:
     options: dict[str, list[dict[str, str]]] = defaultdict(list)
+    within_file_duplicates = 0
     for copy in copies:
-        for name, body in sandbox_blocks(read_text(copy["path"])).items():
+        blocks = sandbox_blocks(read_text(copy["path"]))
+        counts = Counter(name for name, _ in blocks)
+        for name, count in counts.items():
+            if count > 1:
+                within_file_duplicates += 1
+                findings.append(Finding(
+                    "error", "SANDBOX_OPTION_DUPLICATED_IN_FILE",
+                    f"La opción {name} está repetida {count} veces en el mismo archivo.",
+                    copy["rel"], copy["mod_id"],
+                ))
+        for name, body in blocks:
             options[name].append({"mod": copy["mod_id"], "path": copy["rel"], "body": body})
     conflicts = 0
     identical = 0
-    for name, defs in options.items():
-        owners = {d["mod"] for d in defs}
-        variants = {d["body"] for d in defs}
+    for name, definitions in options.items():
+        owners = {entry["mod"] for entry in definitions}
+        variants = {entry["body"] for entry in definitions}
         if len(owners) > 1 and len(variants) > 1:
             conflicts += 1
-            findings.append(Finding("error", "SANDBOX_OPTION_CONFLICT", f"La opción {name} tiene definiciones distintas.", details={"sources": [{"mod": d["mod"], "path": d["path"]} for d in defs]}))
+            findings.append(Finding(
+                "error", "SANDBOX_OPTION_CONFLICT",
+                f"La opción {name} tiene definiciones distintas en varios mods.",
+                details={"sources": [{"mod": d["mod"], "path": d["path"]} for d in definitions]},
+            ))
         elif len(owners) > 1:
             identical += 1
-    return {"options": len(options), "conflicting_options": conflicts, "identical_duplicates": identical}
+    return {
+        "contributors": len(copies),
+        "options": len(options),
+        "conflicting_options": conflicts,
+        "identical_duplicates": identical,
+        "duplicates_inside_file": within_file_duplicates,
+    }
+
+
+def child_text_map(elem: ET.Element) -> dict[str, str]:
+    return {child.tag.lower(): (child.text or "").strip() for child in list(elem)}
+
+
+def inspect_fileguid(copies: list[dict[str, Any]], findings: list[Finding]) -> tuple[dict[str, Any], set[str]]:
+    guid_to_paths: dict[str, set[str]] = defaultdict(set)
+    path_to_guids: dict[str, set[str]] = defaultdict(set)
+    pair_sources: dict[tuple[str, str], set[str]] = defaultdict(set)
+    parse_errors = 0
+    for copy in copies:
+        try:
+            xml_root = ET.parse(copy["path"]).getroot()
+        except ET.ParseError as exc:
+            parse_errors += 1
+            findings.append(Finding("error", "FILEGUID_XML_INVALID", str(exc), copy["rel"], copy["mod_id"]))
+            continue
+        for elem in xml_root.iter():
+            values = child_text_map(elem)
+            attrs = {str(k).lower(): str(v).strip() for k, v in elem.attrib.items()}
+            path = values.get("path") or attrs.get("path") or attrs.get("file")
+            guid = values.get("guid") or attrs.get("guid")
+            if not path or not guid:
+                continue
+            normalized_path = path.replace("\\", "/").lower()
+            normalized_guid = guid.lower()
+            guid_to_paths[normalized_guid].add(normalized_path)
+            path_to_guids[normalized_path].add(normalized_guid)
+            pair_sources[(normalized_path, normalized_guid)].add(copy["mod_id"])
+    guid_conflicts = 0
+    path_conflicts = 0
+    identical_duplicates = 0
+    for guid, paths in guid_to_paths.items():
+        if len(paths) > 1:
+            guid_conflicts += 1
+            findings.append(Finding("error", "FILEGUID_GUID_CONFLICT", f"El GUID {guid} apunta a rutas distintas.", details={"paths": sorted(paths)}))
+    for path, guids in path_to_guids.items():
+        if len(guids) > 1:
+            path_conflicts += 1
+            findings.append(Finding("error", "FILEGUID_PATH_CONFLICT", f"La ruta {path} tiene GUID distintos.", details={"guids": sorted(guids)}))
+    for sources in pair_sources.values():
+        if len(sources) > 1:
+            identical_duplicates += 1
+    return ({
+        "contributors": len(copies),
+        "entries": len(pair_sources),
+        "guid_conflicts": guid_conflicts,
+        "path_conflicts": path_conflicts,
+        "identical_duplicates": identical_duplicates,
+        "parse_errors": parse_errors,
+    }, set(guid_to_paths))
+
+
+def inspect_clothing(copies: list[dict[str, Any]], findings: list[Finding]) -> tuple[dict[str, Any], set[str]]:
+    by_name: dict[str, list[dict[str, str]]] = defaultdict(list)
+    by_guid: dict[str, list[dict[str, str]]] = defaultdict(list)
+    referenced_item_guids: set[str] = set()
+    parse_errors = 0
+    outfit_count = 0
+    for copy in copies:
+        try:
+            xml_root = ET.parse(copy["path"]).getroot()
+        except ET.ParseError as exc:
+            parse_errors += 1
+            findings.append(Finding("error", "CLOTHING_XML_INVALID", str(exc), copy["rel"], copy["mod_id"]))
+            continue
+        for tag in ("m_FemaleOutfits", "m_MaleOutfits"):
+            for outfit in xml_root.iter(tag):
+                name = (outfit.findtext("m_Name") or "").strip()
+                guid = (outfit.findtext("m_Guid") or "").strip().lower()
+                if not name and not guid:
+                    continue
+                outfit_count += 1
+                entry = {
+                    "mod": copy["mod_id"],
+                    "path": copy["rel"],
+                    "hash": hashlib.sha256(canonical_xml(outfit).encode("utf-8")).hexdigest(),
+                    "name": name,
+                    "guid": guid,
+                }
+                if name:
+                    by_name[name].append(entry)
+                if guid:
+                    by_guid[guid].append(entry)
+        for item_guid in xml_root.iter("itemGUID"):
+            value = (item_guid.text or "").strip().lower()
+            if value:
+                referenced_item_guids.add(value)
+    name_conflicts = 0
+    guid_conflicts = 0
+    identical_duplicates = 0
+    for name, definitions in by_name.items():
+        owners = {d["mod"] for d in definitions}
+        hashes = {d["hash"] for d in definitions}
+        if len(owners) > 1 and len(hashes) > 1:
+            name_conflicts += 1
+            findings.append(Finding("error", "CLOTHING_OUTFIT_NAME_CONFLICT", f"El outfit {name} tiene definiciones distintas.", details={"sources": definitions}))
+        elif len(owners) > 1:
+            identical_duplicates += 1
+    for guid, definitions in by_guid.items():
+        owners = {d["mod"] for d in definitions}
+        hashes = {d["hash"] for d in definitions}
+        if len(owners) > 1 and len(hashes) > 1:
+            guid_conflicts += 1
+            findings.append(Finding("error", "CLOTHING_OUTFIT_GUID_CONFLICT", f"El GUID de outfit {guid} tiene definiciones distintas.", details={"sources": definitions}))
+    return ({
+        "contributors": len(copies),
+        "outfits": outfit_count,
+        "unique_names": len(by_name),
+        "unique_guids": len(by_guid),
+        "name_conflicts": name_conflicts,
+        "guid_conflicts": guid_conflicts,
+        "identical_duplicates": identical_duplicates,
+        "item_guid_references": len(referenced_item_guids),
+        "parse_errors": parse_errors,
+    }, referenced_item_guids)
+
+
+def inspect_registries(copies: list[dict[str, Any]], findings: list[Finding]) -> dict[str, Any]:
+    registrations: dict[str, list[dict[str, str]]] = defaultdict(list)
+    invalid_base_tags = 0
+    for copy in copies:
+        for line_number, raw in enumerate(read_text(copy["path"]).splitlines(), 1):
+            line = raw.split("--", 1)[0]
+            for registry_type, registry_id in REGISTER_RE.findall(line):
+                normalized_id = registry_id.lower()
+                registrations[normalized_id].append({
+                    "mod": copy["mod_id"],
+                    "path": copy["rel"],
+                    "line": str(line_number),
+                    "type": registry_type,
+                })
+                if registry_type.lower().endswith("itemtag") and normalized_id.startswith("base:"):
+                    invalid_base_tags += 1
+                    findings.append(Finding(
+                        "error", "INVALID_BASE_ITEMTAG",
+                        f"ItemTag.register usa el espacio de nombres inválido {registry_id}.",
+                        copy["rel"], copy["mod_id"], {"line": line_number},
+                    ))
+    duplicate_ids = 0
+    type_conflicts = 0
+    for registry_id, definitions in registrations.items():
+        owners = {d["mod"] for d in definitions}
+        types = {d["type"].lower() for d in definitions}
+        if len(types) > 1:
+            type_conflicts += 1
+            findings.append(Finding("error", "REGISTRY_TYPE_CONFLICT", f"El ID {registry_id} se registra con tipos distintos.", details={"sources": definitions}))
+        elif len(owners) > 1:
+            duplicate_ids += 1
+            findings.append(Finding("error", "REGISTRY_ID_DUPLICATED", f"El ID {registry_id} se registra desde varios mods.", details={"sources": definitions}))
+    return {
+        "contributors": len(copies),
+        "registrations": len(registrations),
+        "duplicate_ids": duplicate_ids,
+        "type_conflicts": type_conflicts,
+        "invalid_base_itemtags": invalid_base_tags,
+    }
 
 
 def inspect_chat(copies: list[dict[str, Any]], order: dict[str, int], findings: list[Finding]) -> dict[str, Any]:
     if not copies:
         return {"copies": 0}
-    effective = max(copies, key=lambda c: order.get(c["mod_id"], -1))
+    effective = max(copies, key=lambda entry: order.get(entry["mod_id"], -1))
     text = read_text(effective["path"])
-    funcs = sorted(set(CHAT_FUNCTION_RE.findall(text)))
+    functions = sorted(set(CHAT_FUNCTION_RE.findall(text)))
     findings.append(Finding(
-        "warning",
-        "ISCHAT_FULL_REPLACEMENT",
-        f"{effective['mod_id']} aporta el ISChat.lua efectivo completo; requiere prueba tras cada actualización del juego.",
-        effective["rel"],
-        effective["mod_id"],
-        {"lines": len(text.splitlines()), "sha256": effective["sha256"], "functions": len(funcs)},
+        "warning", "ISCHAT_FULL_REPLACEMENT",
+        f"{effective['mod_id']} aporta el ISChat.lua completo; debe compararse con el vanilla exacto después de cada actualización.",
+        effective["rel"], effective["mod_id"],
+        {"layer": effective["layer"], "lines": len(text.splitlines()), "sha256": effective["sha256"], "functions": len(functions)},
     ))
     return {
         "copies": len(copies),
         "effective_mod": effective["mod_id"],
         "effective_path": effective["rel"],
+        "active_layer": effective["layer"],
         "lines": len(text.splitlines()),
-        "functions": funcs,
-        "hashes": sorted({c["sha256"] for c in copies}),
+        "functions": functions,
     }
+
+
+def declaration_blocks(text: str) -> Iterable[tuple[str, str, str]]:
+    lines = text.splitlines()
+    module = "?"
+    depth = 0
+    index = 0
+    while index < len(lines):
+        raw = lines[index]
+        clean = raw.split("//", 1)[0]
+        module_match = MODULE_RE.match(clean)
+        if module_match and depth == 0:
+            module = module_match.group(1)
+        declaration = DECL_RE.match(clean) if depth == 1 else None
+        if declaration:
+            kind, name = declaration.group(1).lower(), declaration.group(2)
+            block_lines = [raw]
+            cursor = index
+            opened = clean.count("{")
+            balance = clean.count("{") - clean.count("}")
+            while opened == 0 and cursor + 1 < len(lines):
+                cursor += 1
+                block_lines.append(lines[cursor])
+                candidate = lines[cursor].split("//", 1)[0]
+                opened += candidate.count("{")
+                balance += candidate.count("{") - candidate.count("}")
+            while opened > 0 and balance > 0 and cursor + 1 < len(lines):
+                cursor += 1
+                block_lines.append(lines[cursor])
+                candidate = lines[cursor].split("//", 1)[0]
+                balance += candidate.count("{") - candidate.count("}")
+            yield kind, f"{module}.{name}", canonical_text("\n".join(block_lines))
+        depth += clean.count("{") - clean.count("}")
+        depth = max(depth, 0)
+        index += 1
 
 
 def scan_symbols(mods: dict[str, dict[str, Any]], order: list[str], root: Path, findings: list[Finding]) -> dict[str, Any]:
@@ -350,25 +453,35 @@ def scan_symbols(mods: dict[str, dict[str, Any]], order: list[str], root: Path, 
         for virtual, file in active_files(mod).items():
             if not virtual.startswith("media/scripts/") or file["path"].suffix.lower() != ".txt":
                 continue
-            text = read_text(file["path"])
-            module_match = MODULE_RE.search(text)
-            module = module_match.group(1) if module_match else "?"
-            for kind, name in SCRIPT_DECL_RE.findall(text):
-                full = f"{module}.{name}"
-                symbols[f"{kind.lower()}:{full}"].append({"mod": mod_id, "path": rel(file["path"], root)})
-    duplicate_conflicts = 0
-    for symbol, defs in symbols.items():
-        owners = {d["mod"] for d in defs}
-        if len(owners) > 1:
-            duplicate_conflicts += 1
-            severity = "error" if symbol.startswith(("item:", "entity:", "vehicle:", "fluid:")) else "warning"
-            findings.append(Finding(severity, "SCRIPT_SYMBOL_DUPLICATED", f"{symbol} está declarado en varios mods.", details={"sources": defs}))
+            for kind, full_name, body in declaration_blocks(read_text(file["path"])):
+                symbols[f"{kind}:{full_name}"].append({
+                    "mod": mod_id,
+                    "path": rel(file["path"], root),
+                    "hash": hashlib.sha256(body.encode("utf-8")).hexdigest(),
+                })
+    different_duplicates = 0
+    identical_duplicates = 0
+    same_mod_duplicates = 0
+    for symbol, definitions in symbols.items():
+        owners = {d["mod"] for d in definitions}
+        hashes = {d["hash"] for d in definitions}
+        if len(definitions) > 1 and len(owners) == 1:
+            same_mod_duplicates += 1
+            if len(hashes) > 1:
+                findings.append(Finding("error", "SCRIPT_SYMBOL_DUPLICATED_IN_MOD", f"{symbol} se declara varias veces con contenido distinto dentro de {next(iter(owners))}.", details={"sources": definitions[:20]}))
+        elif len(owners) > 1 and len(hashes) > 1:
+            different_duplicates += 1
+            findings.append(Finding("error", "SCRIPT_SYMBOL_CONFLICT", f"{symbol} tiene definiciones distintas en varios mods.", details={"sources": definitions[:20]}))
+        elif len(owners) > 1:
+            identical_duplicates += 1
     critical = "entity:Base.IDBFS_LiquidBarrelRack"
     if critical not in symbols:
         findings.append(Finding("error", "CRITICAL_ENTITY_MISSING", "Falta Base.IDBFS_LiquidBarrelRack en los scripts activos."))
     return {
         "symbols": len(symbols),
-        "duplicate_symbols": duplicate_conflicts,
+        "different_cross_mod_duplicates": different_duplicates,
+        "identical_cross_mod_duplicates": identical_duplicates,
+        "same_mod_duplicates": same_mod_duplicates,
         "critical_entity_present": critical in symbols,
         "critical_entity_sources": symbols.get(critical, []),
     }
@@ -377,83 +490,68 @@ def scan_symbols(mods: dict[str, dict[str, Any]], order: list[str], root: Path, 
 def audit(root: Path, config: dict[str, Any]) -> tuple[list[Finding], dict[str, Any]]:
     findings: list[Finding] = []
     build = str(config["build"])
-    order_list = [str(x) for x in config.get("mods", [])]
-    external = {str(x) for x in config.get("external_mods", [])}
-    order = {mod_id: i for i, mod_id in enumerate(order_list)}
+    mods_order = [str(value) for value in config.get("mods", [])]
+    external = {str(value) for value in config.get("external_mods", [])}
+    order_index = {mod_id: index for index, mod_id in enumerate(mods_order)}
     mods = discover_mods(root, build)
 
-    copies_by_virtual: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    all_collisions: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for mod_id in order_list:
+    files_by_virtual: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for mod_id in mods_order:
         if mod_id in external or mod_id not in mods:
             continue
         for virtual, file in active_files(mods[mod_id]).items():
-            copy = {
+            files_by_virtual[virtual].append({
                 **file,
                 "mod_id": mod_id,
                 "rel": rel(file["path"], root),
-                "order": order[mod_id],
-            }
-            all_collisions[virtual].append(copy)
-            if virtual in SENSITIVE:
-                copies_by_virtual[virtual].append(copy)
+                "order": order_index[mod_id],
+            })
 
     sensitive_report: dict[str, Any] = {}
-    for virtual in sorted(SENSITIVE):
-        copies = copies_by_virtual.get(virtual, [])
-        effective = max(copies, key=lambda c: c["order"]) if copies else None
-        report = {
+    known_file_guids: set[str] = set()
+    clothing_references: set[str] = set()
+    for virtual in SENSITIVE:
+        copies = files_by_virtual.get(virtual, [])
+        base = {
+            "mode": "cumulative" if virtual in CUMULATIVE else "replacement",
             "copies": len(copies),
-            "owners": [c["mod_id"] for c in sorted(copies, key=lambda c: c["order"])],
-            "paths": [c["rel"] for c in sorted(copies, key=lambda c: c["order"])],
-            "hashes": sorted({c["sha256"] for c in copies}),
-            "identical": len({c["sha256"] for c in copies}) <= 1,
-            "effective_mod": effective["mod_id"] if effective else None,
-            "effective_path": effective["rel"] if effective else None,
+            "contributors": [entry["mod_id"] for entry in sorted(copies, key=lambda e: e["order"])],
+            "paths": [entry["rel"] for entry in sorted(copies, key=lambda e: e["order"])],
+            "unique_hashes": len({entry["sha256"] for entry in copies}),
         }
         if virtual == "media/sandbox-options.txt":
-            report["semantic"] = inspect_sandbox(copies, findings)
-        elif virtual == "media/fileguidtable.xml":
-            report["semantic"] = inspect_fileguid(copies, findings)
-        elif virtual == "media/clothing/clothing.xml":
-            report["semantic"] = inspect_clothing(copies, findings)
+            base["semantic"] = inspect_sandbox(copies, findings)
         elif virtual == "media/registries.lua":
-            report["semantic"] = inspect_registries(copies, findings)
-        elif virtual == "media/lua/client/chat/ischat.lua":
-            report["semantic"] = inspect_chat(copies, order, findings)
-        sensitive_report[virtual] = report
+            base["semantic"] = inspect_registries(copies, findings)
+        elif virtual == "media/fileguidtable.xml":
+            semantic, known_file_guids = inspect_fileguid(copies, findings)
+            base["semantic"] = semantic
+        elif virtual == "media/clothing/clothing.xml":
+            semantic, clothing_references = inspect_clothing(copies, findings)
+            base["semantic"] = semantic
+        else:
+            base["semantic"] = inspect_chat(copies, order_index, findings)
+        sensitive_report[virtual] = base
 
-    exact_collisions = {
-        virtual: copies
-        for virtual, copies in all_collisions.items()
-        if len({c["mod_id"] for c in copies}) > 1
-    }
-    non_identical_collisions = 0
-    for virtual, copies in exact_collisions.items():
-        hashes = {c["sha256"] for c in copies}
-        if len(hashes) > 1:
-            non_identical_collisions += 1
-            if virtual in SENSITIVE:
-                continue
-            findings.append(Finding(
-                "warning",
-                "VIRTUAL_PATH_COLLISION",
-                f"La ruta {virtual} tiene versiones distintas y prevalece el último mod de Mods=.",
-                details={
-                    "owners": [c["mod_id"] for c in sorted(copies, key=lambda c: c["order"])],
-                    "effective": max(copies, key=lambda c: c["order"])["mod_id"],
-                },
-            ))
+    collisions = {path: copies for path, copies in files_by_virtual.items() if len({entry["mod_id"] for entry in copies}) > 1}
+    expected_translation_collisions = sum(path.startswith("media/lua/shared/translate/") for path in collisions)
+    keep_collisions = sum(path.endswith("/.keep") for path in collisions)
+    other_collisions = len(collisions) - expected_translation_collisions - keep_collisions
 
-    symbols = scan_symbols(mods, order_list, root, findings)
+    symbols = scan_symbols(mods, mods_order, root, findings)
     stats = {
         "build": build,
         "internal_mods_discovered": len(mods),
         "external_mods": sorted(external),
-        "active_virtual_files": len(all_collisions),
-        "colliding_virtual_paths": len(exact_collisions),
-        "non_identical_virtual_collisions": non_identical_collisions,
+        "active_virtual_files": len(files_by_virtual),
+        "shared_virtual_paths": len(collisions),
+        "translation_shared_paths": expected_translation_collisions,
+        "keep_shared_paths": keep_collisions,
+        "other_shared_paths": other_collisions,
         "sensitive": sensitive_report,
+        "fileguid_known_guids": len(known_file_guids),
+        "clothing_item_guid_references": len(clothing_references),
+        "clothing_refs_not_in_mod_fileguid": len(clothing_references - known_file_guids),
         "symbols": symbols,
         "errors": sum(f.severity == "error" for f in findings),
         "warnings": sum(f.severity == "warning" for f in findings),
@@ -471,28 +569,40 @@ def markdown(findings: list[Finding], stats: dict[str, Any]) -> str:
         "",
         f"- Mods internos detectados: **{stats['internal_mods_discovered']}**",
         f"- Rutas virtuales activas: **{stats['active_virtual_files']}**",
-        f"- Rutas presentes en varios mods: **{stats['colliding_virtual_paths']}**",
-        f"- Colisiones con contenido distinto: **{stats['non_identical_virtual_collisions']}**",
+        f"- Rutas compartidas entre mods: **{stats['shared_virtual_paths']}**",
+        f"- Rutas compartidas de traducción: **{stats['translation_shared_paths']}**",
+        f"- Rutas `.keep` compartidas: **{stats['keep_shared_paths']}**",
+        f"- Otras rutas compartidas: **{stats['other_shared_paths']}**",
         f"- Errores: **{stats['errors']}**",
         f"- Advertencias: **{stats['warnings']}**",
         "",
+        "Las rutas compartidas no se consideran por sí mismas un error. Solo se elevan hallazgos cuando el formato permite demostrar un ID, GUID, opción o símbolo incompatible.",
+        "",
         "## Archivos globales sensibles",
         "",
-        "| Ruta | Copias | Orden de propietarios | Efectivo | Idénticas | Resultado semántico |",
-        "|---|---:|---|---|---|---|",
+        "| Ruta | Modo | Copias | Contribuyentes | Resultado semántico |",
+        "|---|---|---:|---|---|",
     ]
     for virtual, data in stats["sensitive"].items():
         semantic = data.get("semantic", {})
         summary = ", ".join(f"{k}={v}" for k, v in semantic.items() if isinstance(v, (str, int, bool))) or "—"
-        out.append(f"| `{virtual}` | {data['copies']} | {' → '.join(data['owners']) or '—'} | `{data['effective_mod'] or '—'}` | {'sí' if data['identical'] else 'no'} | {summary} |")
-    out.extend(["", "## Símbolos persistentes", ""])
-    out.append(f"- Símbolos analizados: **{stats['symbols']['symbols']}**")
-    out.append(f"- Símbolos duplicados: **{stats['symbols']['duplicate_symbols']}**")
-    out.append(f"- `Base.IDBFS_LiquidBarrelRack`: **{'presente' if stats['symbols']['critical_entity_present'] else 'ausente'}**")
-    out.extend(["", "## Hallazgos", ""])
+        out.append(f"| `{virtual}` | {data['mode']} | {data['copies']} | {' → '.join(data['contributors']) or '—'} | {summary} |")
+    out.extend([
+        "",
+        "## Símbolos persistentes",
+        "",
+        f"- Símbolos analizados: **{stats['symbols']['symbols']}**",
+        f"- Duplicados diferentes entre mods: **{stats['symbols']['different_cross_mod_duplicates']}**",
+        f"- Duplicados idénticos entre mods: **{stats['symbols']['identical_cross_mod_duplicates']}**",
+        f"- Duplicados dentro del mismo mod: **{stats['symbols']['same_mod_duplicates']}**",
+        f"- `Base.IDBFS_LiquidBarrelRack`: **{'presente' if stats['symbols']['critical_entity_present'] else 'ausente'}**",
+        "",
+        "## Hallazgos",
+        "",
+    ])
     if not findings:
-        out.append("No se encontraron conflictos ni riesgos adicionales.")
-    for finding in sorted(findings, key=lambda f: (0 if f.severity == "error" else 1, f.code, f.path or "")):
+        out.append("No se encontraron conflictos demostrables.")
+    for finding in sorted(findings, key=lambda item: (0 if item.severity == "error" else 1, item.code, item.path or "")):
         icon = "❌" if finding.severity == "error" else "⚠️"
         out.extend([f"### {icon} `{finding.code}`", "", finding.message])
         if finding.mod_id:
@@ -503,9 +613,13 @@ def markdown(findings: list[Finding], stats: dict[str, Any]) -> str:
             out.extend(["", "```json", json.dumps(finding.details, ensure_ascii=False, indent=2), "```"])
         out.append("")
     out.extend([
-        "## Límites de esta pasada",
+        "## Nota sobre GUID de ropa",
         "",
-        "La auditoría estática no sustituye una conexión real a Project Zomboid. La validación de Workshop, servidor, cliente y partida existente se realiza con los manifiestos y el validador de logs incluidos en esta misma carpeta.",
+        "Las referencias de ropa que no aparecen en los `fileGuidTable.xml` de los mods no se marcan como error porque pueden pertenecer al juego base. La comprobación definitiva requiere comparar también con el `fileGuidTable` vanilla de Build 42.20.",
+        "",
+        "## Límite de la auditoría",
+        "",
+        "Esta pasada no sustituye una conexión real. La paridad GitHub/Workshop/servidor/cliente se verifica con `generar_manifest_despliegue.py` y los logs con `validar_logs_runtime.py`.",
         "",
     ])
     return "\n".join(out)
@@ -518,7 +632,7 @@ def main() -> int:
     findings, stats = audit(root, config)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.with_suffix(".json").write_text(
-        json.dumps({"stats": stats, "findings": [asdict(f) for f in findings]}, ensure_ascii=False, indent=2) + "\n",
+        json.dumps({"stats": stats, "findings": [asdict(item) for item in findings]}, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     args.output.with_suffix(".md").write_text(markdown(findings, stats), encoding="utf-8")
