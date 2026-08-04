@@ -48,7 +48,7 @@ jobs:
         id: conflictos
         continue-on-error: true
         run: |
-          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_conflictos_runtime.py \
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_conflictos_runtime_v2.py \
             --output "$RUNNER_TEMP/resultado_parte3"
 
       - name: Generar manifiesto del repositorio
