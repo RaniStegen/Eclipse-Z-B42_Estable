@@ -6,6 +6,9 @@ on:
       - agent/auditoria-modpack-b42-20
     paths:
       - ".github/workflows/diagnosticar-ecz61-version.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/diagnosticar-ecz61-version.yml"
   workflow_dispatch:
 
 permissions:
