@@ -1,0 +1,46 @@
+name: Diagnosticar equipamiento, chat y escaleras
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/diagnosticar-equip-chat-escaleras.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+      - name: Recoger fuentes relacionadas
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/diagnostico"
+          mkdir -p "$OUT/archivos"
+          find MODPACK-ACTUAL-EN-SERVIDOR -type f \( \
+            -iname 'ECZChat_Config.lua' -o \
+            -iname 'ECZChat_V2UI.lua' -o \
+            -iname '*BodyLocations*.lua' -o \
+            -iname '*ConciseStairs*.lua' -o \
+            -iname 'entity_*concisestairs.txt' -o \
+            -iname '*BuildRecipeCode*.lua' \
+          \) -print0 | while IFS= read -r -d '' f; do
+            mkdir -p "$OUT/archivos/$(dirname "$f")"
+            cp "$f" "$OUT/archivos/$f"
+          done
+          find "$OUT/archivos" -type f | sort > "$OUT/ARCHIVOS.txt"
+          grep -RIn --include='*.lua' --include='*.txt' -E \
+            'localizeSystemText|Item \(\.%-\)|Added in|BuildRecipeCode\.stairs|stairs[TBM][NW]|BodyLocations\.reset|fixtures_stairs_01_(0|1|2|8|9|10|80|81|82|88|89|90)' \
+            MODPACK-ACTUAL-EN-SERVIDOR > "$OUT/COINCIDENCIAS.txt" || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-equip-chat-escaleras
+          path: ${{ runner.temp }}/diagnostico
+          if-no-files-found: error
+          retention-days: 7
