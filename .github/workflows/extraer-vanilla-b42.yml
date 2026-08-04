@@ -6,6 +6,9 @@ on:
       - agent/auditoria-modpack-b42-20
     paths:
       - ".github/workflows/extraer-vanilla-b42.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/extraer-vanilla-b42.yml"
   workflow_dispatch:
 
 permissions:
