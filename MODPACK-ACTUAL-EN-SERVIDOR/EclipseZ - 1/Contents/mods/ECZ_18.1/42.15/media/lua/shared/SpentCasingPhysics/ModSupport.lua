@@ -1,0 +1,13 @@
+local SpentCasingPhysics         = require("SpentCasingPhysics/Init")
+
+SpentCasingPhysics.MarzGuns      = getActivatedMods():contains('ECZ_18.3')
+SpentCasingPhysics.GWG           = getActivatedMods():contains('ECZ_18.2')
+SpentCasingPhysics.G93           = getActivatedMods():contains('guns93')
+SpentCasingPhysics.GGS           = getActivatedMods():contains('GaelGunStore_B42')
+SpentCasingPhysics.VFE           = getActivatedMods():contains('VFExpansionReduxb42')
+SpentCasingPhysics.VFES          = getActivatedMods():contains('VFExpansion2Reduxb42')
+SpentCasingPhysics.VFE93         = getActivatedMods():contains('VFExpansion3Reduxb42')
+SpentCasingPhysics.FIREARMS      = getActivatedMods():contains('2256623447/firearmmod')
+SpentCasingPhysics.FIREARMS_BETA = getActivatedMods():contains('2256623447/firearmmodbeta')
+SpentCasingPhysics.SCGL          = getActivatedMods():contains('GunsAndLeatherWeapons')
+SpentCasingPhysics.AMMOMAKER     = getActivatedMods():contains('ammomaker')

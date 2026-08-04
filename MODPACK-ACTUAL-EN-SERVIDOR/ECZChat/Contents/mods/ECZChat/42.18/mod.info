@@ -1,0 +1,8 @@
+name=EclipseZ - Chat
+id=ECZChat
+version=2.2.0-clean-b42.20
+description=ECZ Chat clásico: cabecera Eclipse Z, opciones del chat, nombres RP y comandos. Sin tema global de interfaces.
+versionMin=42.18
+versionMax=42.20
+poster=poster.png
+icon=icon.png

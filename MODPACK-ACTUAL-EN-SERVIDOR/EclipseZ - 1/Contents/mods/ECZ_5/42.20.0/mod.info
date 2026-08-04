@@ -1,0 +1,10 @@
+name=ECZ_5
+id=ECZ_5
+poster=poster.png
+icon=icon.png
+description=
+pzversion=42
+modversion=0.1
+supports=42.20.0
+versionMin=42.20.0
+versionMax=43.0.0

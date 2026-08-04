@@ -1,0 +1,33 @@
+module MarzGuns
+{
+    model M67_READY
+    {
+        mesh = weapons/throwing/M67|M67_READY,
+        texture = weapons/throwing/grenades/M67,
+    }
+    model M67_THROW
+    {
+        mesh = weapons/throwing/M67|M67_THROW,
+        texture = weapons/throwing/grenades/M67,
+    }
+    model M18_READY
+    {
+        mesh = weapons/throwing/M18|M18_READY,
+        texture = weapons/throwing/grenades/M18,
+    }
+    model M18_THROW
+    {
+        mesh = weapons/throwing/M18|M18_THROW,
+        texture = weapons/throwing/grenades/M18,
+    }
+    model M14_READY
+    {
+        mesh = weapons/throwing/M18|M18_READY,
+        texture = weapons/throwing/grenades/M14,
+    }
+    model M14_THROW
+    {
+        mesh = weapons/throwing/M18|M18_THROW,
+        texture = weapons/throwing/grenades/M14,
+    }
+}

@@ -1,0 +1,64 @@
+module MarzGuns
+{
+    model 762x51Box100_M60
+    {
+        mesh = weapons/magazines/lmgs|762x51Box100_M60,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_1
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_1,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_2
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_2,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_3
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_3,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_4
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_4,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_5
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_5,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_6
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_6,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_7
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_7,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_8
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_8,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 762x51_M60_9
+    {
+        mesh = weapons/magazines/lmgs|762x51_M60_9,
+        texture = weapons/magazines/lmgs/762x51Box100_M60,
+    }
+    model 3006Magazine20_BAR
+    {
+        mesh = weapons/magazines/lmgs|3006Magazine20_BAR,
+        texture = weapons/magazines/lmgs/3006Magazine20_BAR,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+}

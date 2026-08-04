@@ -1,0 +1,6 @@
+IG_UI_ES = {
+    IGUI_LRL_NoLight = "No veo nada.",
+    IGUI_LRL_NeedMoreLight = "Necesito mas luz para revisar esto.",
+    IGUI_LRL_SearchInDarkness = "Revisar a oscuras",
+    IGUI_LRL_FailedDarkSearch = "Siento cosas adentro, pero no puedo distinguir que son.",
+}

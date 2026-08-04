@@ -1,0 +1,6 @@
+{
+    "Tooltip_CTT_NeedAxe": "需要斧头，或带有砍树标签的其他工具。",
+    "Tooltip_CTT_NeedAxeSkill": "需要斧头技能等级 %1。",
+    "Tooltip_CTT_AlreadyOpen": "砍树小游戏已经打开。",
+    "Tooltip_CTT_VanillaDisabled": "原版砍树已被 Cut That Tree 设置禁用。"
+}

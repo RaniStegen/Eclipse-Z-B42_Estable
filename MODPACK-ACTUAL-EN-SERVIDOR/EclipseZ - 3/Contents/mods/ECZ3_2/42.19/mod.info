@@ -1,0 +1,8 @@
+name=ECZ3_2
+id=ECZ3_2
+poster=poster.png
+icon=icon.png
+modversion=2.6.14
+versionMin=42.19.0
+require=ECZ3_1
+description=

@@ -1,0 +1,6 @@
+Tooltip_RU = {
+    Tooltip_CTT_NeedAxe = "Нужен топор или другой инструмент с тегом рубки деревьев.",
+    Tooltip_CTT_NeedAxeSkill = "Нужен навык топора %1.",
+    Tooltip_CTT_AlreadyOpen = "Миниигра рубки уже открыта.",
+    Tooltip_CTT_VanillaDisabled = "Ванильная рубка деревьев отключена настройками Cut That Tree.",
+}

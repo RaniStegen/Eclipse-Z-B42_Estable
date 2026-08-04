@@ -1,0 +1,13 @@
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\93SwatJacket</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\93SwatJacket_F</m_FemaleModel>
+	<m_GUID>1cbfbfae-e862-4375-a240-dc22ed9fafcd</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_Masks>3</m_Masks>
+	<m_Masks>5</m_Masks>
+	<m_AttachBone></m_AttachBone>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\93SwatJacket</textureChoices>
+</clothingItem>

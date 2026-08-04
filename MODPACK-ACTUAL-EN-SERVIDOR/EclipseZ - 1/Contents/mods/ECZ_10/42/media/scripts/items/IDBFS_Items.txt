@@ -1,0 +1,554 @@
+module IDBFS
+{
+    imports
+    {
+        Base
+    }
+
+    item LiquidContainerEmpty
+    {
+        DisplayCategory = Container,
+        ItemType = base:normal,
+        DisplayName = Empty Liquid Container,
+        Weight = 0.5,
+        Icon = WaterBottle,
+        StaticModel = WaterBottle,
+        WorldStaticModel = WaterBottleFull,
+        Tags = idbfs:empty_liquid_container,
+        component FluidContainer
+        {
+            ContainerName = DistilleryContainer,
+            Capacity = 1.0,
+            TransferRate = 1.0,
+        }
+    }
+
+    item EmptyJug
+    {
+        DisplayCategory = Container,
+        ItemType = base:normal,
+        DisplayName = Empty Distillery Jug,
+        Weight = 0.7,
+        Icon = WaterBottle,
+        StaticModel = WaterBottle,
+        WorldStaticModel = WaterBottleFull,
+        Tags = idbfs:empty_liquid_container,
+        component FluidContainer
+        {
+            ContainerName = DistilleryJug,
+            Capacity = 1.5,
+            TransferRate = 1.0,
+        }
+    }
+
+    item EmptyCanister
+    {
+        DisplayCategory = Container,
+        ItemType = base:normal,
+        DisplayName = Empty Canister,
+        Weight = 1.0,
+        Icon = Petrol,
+        StaticModel = GasCan,
+        WorldStaticModel = GasCan_Ground,
+        Tags = idbfs:empty_liquid_container,
+        component FluidContainer
+        {
+            ContainerName = Canister,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+        }
+    }
+
+    item TransferContainer
+    {
+        DisplayCategory = Container,
+        ItemType = base:normal,
+        DisplayName = Transfer Container,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:empty_liquid_container,
+        component FluidContainer
+        {
+            ContainerName = TransferContainer,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+        }
+    }
+
+    item MashContainer
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Raw Mash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = RawMash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSFruitMash:1.0,
+            }
+        }
+    }
+
+    item MashContainer_Fruit
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Fruit Mash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = FruitMash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSFruitMash:1.0,
+            }
+        }
+    }
+
+    item MashContainer_Grain
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Grain Mash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = GrainMash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSGrainMash:1.0,
+            }
+        }
+    }
+
+    item MashContainer_Corn
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Corn Mash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = CornMash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSCornMash:1.0,
+            }
+        }
+    }
+
+    item MashContainer_Potato
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Potato Mash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = PotatoMash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSPotatoMash:1.0,
+            }
+        }
+    }
+
+    item WashContainer_Sugar
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Sugar Wash,
+        Weight = 1.0,
+        Icon = MetalBucket,
+        StaticModel = Bucket,
+        WorldStaticModel = Bucket_Ground,
+        Tags = idbfs:liquid_container;idbfs:mash,
+        component FluidContainer
+        {
+            ContainerName = SugarWash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSSugarWash:1.0,
+            }
+        }
+    }
+
+    item PressOutput_FruitMash
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Fruit Mash,
+        Weight = 0.0,
+        Icon = Apple,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_GrainMash
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Grain Mash,
+        Weight = 0.0,
+        Icon = WheatBundle,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_CornMash
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Corn Mash,
+        Weight = 0.0,
+        Icon = Corn,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_PotatoMash
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Potato Mash,
+        Weight = 0.0,
+        Icon = Potato,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_SugarWash
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Sugar Wash,
+        Weight = 0.0,
+        Icon = Sugar,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_SunflowerOil
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Sunflower Oil,
+        Weight = 0.0,
+        Icon = SunflowerHead_Dried,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item PressOutput_OliveOil
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Olive Oil,
+        Weight = 0.0,
+        Icon = Olives,
+        Tags = idbfs:recipe_proxy,
+    }
+
+    item FermentedLiquid
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Fermented Liquid,
+        Weight = 1.0,
+        Icon = Wine,
+        StaticModel = WhiteWineBottle,
+        WorldStaticModel = WineWhiteGround,
+        Tags = idbfs:liquid_container;idbfs:fermented,
+        component FluidContainer
+        {
+            ContainerName = FermentedWash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSFermentedWash:1.0,
+            }
+        }
+    }
+
+    item FermentedLiquidContainer
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Fermented Wash,
+        Weight = 1.0,
+        Icon = Wine,
+        StaticModel = WhiteWineBottle,
+        WorldStaticModel = WineWhiteGround,
+        Tags = idbfs:liquid_container;idbfs:fermented,
+        component FluidContainer
+        {
+            ContainerName = FermentedWash,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSFermentedWash:1.0,
+            }
+        }
+    }
+
+    item DistilledAlcoholContainer
+    {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        DisplayName = Distilled Alcohol,
+        Weight = 1.0,
+        Icon = Whiskey,
+        StaticModel = WhiskeyBottle,
+        WorldStaticModel = WhiskeyBottleGround,
+        Tags = idbfs:liquid_container;idbfs:distilled,
+        component FluidContainer
+        {
+            ContainerName = DistilledAlcohol,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSDistilledAlcohol:1.0,
+            }
+        }
+    }
+
+    item Ethanol
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        DisplayName = Ethanol,
+        Weight = 1.0,
+        Icon = Petrol,
+        StaticModel = GasCan,
+        WorldStaticModel = GasCan_Ground,
+        Tags = idbfs:liquid_container;idbfs:fuel_alcohol,
+        component FluidContainer
+        {
+            ContainerName = Ethanol,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSEthanol:1.0,
+            }
+        }
+    }
+
+    item EthanolContainer
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        DisplayName = Ethanol Canister,
+        Weight = 1.0,
+        Icon = Petrol,
+        StaticModel = GasCan,
+        WorldStaticModel = GasCan_Ground,
+        Tags = idbfs:liquid_container;idbfs:fuel_alcohol,
+        component FluidContainer
+        {
+            ContainerName = Ethanol,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSEthanol:1.0,
+            }
+        }
+    }
+
+    item Biofuel
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        DisplayName = Biofuel,
+        Weight = 1.0,
+        Icon = Petrol,
+        StaticModel = GasCan,
+        ReplaceInSecondHand = Bag_GasCan_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_GasCan_RHand holdingbagright,
+        WorldStaticModel = GasCan_Ground,
+        Tags = idbfs:liquid_container;idbfs:biofuel,
+        component FluidContainer
+        {
+            ContainerName = Biofuel,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSBiofuel:1.0,
+            }
+        }
+    }
+
+    item BiofuelContainer
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        DisplayName = Biofuel Canister,
+        Weight = 1.0,
+        Icon = Petrol,
+        StaticModel = GasCan,
+        ReplaceInSecondHand = Bag_GasCan_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_GasCan_RHand holdingbagright,
+        WorldStaticModel = GasCan_Ground,
+        Tags = idbfs:liquid_container;idbfs:biofuel,
+        component FluidContainer
+        {
+            ContainerName = Biofuel,
+            Capacity = 10.0,
+            TransferRate = 5.0,
+            Fluids
+            {
+                fluid = IDBFSBiofuel:1.0,
+            }
+        }
+    }
+
+    item StarterYeast
+    {
+        DisplayCategory = Cooking,
+        ItemType = base:drainable,
+        DisplayName = Fermentation Starter,
+        Weight = 0.1,
+        Icon = Yeast,
+        UseDelta = 0.25,
+        Tags = idbfs:fermentation_agent,
+    }
+
+    item YeastMixture
+    {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        DisplayName = Yeast Mixture,
+        Weight = 0.3,
+        Icon = CakeBatter,
+        Tags = idbfs:yeast_mixture,
+    }
+
+    item FuelAdditive
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Obsolete Fuel Additive,
+        Weight = 0.2,
+        Icon = TZ_IndieStoneNPK,
+        Tags = idbfs:obsolete,
+    }
+
+    item MoveableManualPress
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Distillery Press,
+        Weight = 15.0,
+        Icon = IDBFS_ManualPress,
+        WorldObjectSprite = crafted_05_0,
+        Tags = idbfs:moveable;idbfs:distillery;idbfs:press,
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_IDBFS_ManualPress,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = IDBFSPress,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_0 crafted_05_1,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_3,
+                    row = crafted_05_2,
+                }
+            }
+        }
+    }
+
+    item MoveableFermentationBarrel
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Fermentation Barrel,
+        Weight = 15.0,
+        Icon = IDBFS_FermentationBarrel,
+        WorldObjectSprite = location_business_distillery_01_8,
+        Tags = idbfs:moveable;idbfs:distillery;idbfs:barrel,
+    }
+
+    item MoveableLiquidBarrelRack
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Double Barrel Container,
+        Weight = 25.0,
+        Icon = IDBFS_LiquidBarrelRack,
+        WorldObjectSprite = location_business_distillery_01_1,
+        Tags = idbfs:moveable;idbfs:distillery;idbfs:barrel,
+    }
+
+    item MoveableDistillationStill
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Distillation Still,
+        Weight = 25.0,
+        Icon = IDBFS_DistillationStill,
+        WorldObjectSprite = location_business_distillery_01_29,
+        Tags = idbfs:moveable;idbfs:distillery;idbfs:still,
+    }
+
+    item MoveableIndustrialTank
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Industrial Tank,
+        Weight = 25.0,
+        Icon = IDBFS_IndustrialTank,
+        WorldObjectSprite = industry_02_73,
+        Tags = idbfs:moveable;idbfs:distillery;idbfs:tank,
+    }
+}

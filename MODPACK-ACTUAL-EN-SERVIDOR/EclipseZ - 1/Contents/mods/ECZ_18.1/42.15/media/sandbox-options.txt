@@ -1,0 +1,23 @@
+VERSION = 1,
+option HB.PermanentCasings {
+    type = boolean,
+    default = true,
+    page = HB,
+    translation = HB_PermanentCasings,
+}
+
+option HB.MultiplayerTick {
+    type = integer,
+    default = 0,
+    min = 0,
+    max = 5,
+    page = HB,
+    translation = HB_MultiplayerTick,
+}
+
+option HB.CustomIcons {
+    type = boolean,
+    default = true,
+    page = HB,
+    translation = HB_CustomIcons,
+}

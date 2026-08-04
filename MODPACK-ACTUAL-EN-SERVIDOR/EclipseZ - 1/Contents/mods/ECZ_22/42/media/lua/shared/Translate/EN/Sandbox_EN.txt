@@ -1,0 +1,9 @@
+Sandbox_EN = {
+    Sandbox_LootRequiresLight = "Loot Requires Light",
+    Sandbox_LootRequiresLight_EnableMod = "Enable mod",
+    Sandbox_LootRequiresLight_EnableMod_tooltip = "Master switch for Loot Requires Light.",
+    Sandbox_LootRequiresLight_RequireLightToLoot = "Require light to loot",
+    Sandbox_LootRequiresLight_RequireLightToLoot_tooltip = "Blocks world containers when there is not enough light.",
+    Sandbox_LootRequiresLight_AllowSearchingInDarkness = "Allow searching in darkness",
+    Sandbox_LootRequiresLight_AllowSearchingInDarkness_tooltip = "Allows a slow timed action to temporarily unlock a dark container.",
+}

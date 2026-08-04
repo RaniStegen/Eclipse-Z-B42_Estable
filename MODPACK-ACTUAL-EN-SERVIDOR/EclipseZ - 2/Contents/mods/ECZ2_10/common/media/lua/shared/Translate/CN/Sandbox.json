@@ -1,0 +1,5 @@
+{
+    "Sandbox_FRUsedCars": "莱姆斯 二手车",
+    "Sandbox_LowConPartsFall": "低耐久度的部件有几率从车上脱落",
+    "Sandbox_PartFallsWithParent": "若母件脱落，子件也会脱落. (例如轮胎爆了，轮毂盖也会掉)"
+}

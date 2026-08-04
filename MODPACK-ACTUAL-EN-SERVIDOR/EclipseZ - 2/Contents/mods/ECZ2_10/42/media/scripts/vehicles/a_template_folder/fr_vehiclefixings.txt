@@ -1,0 +1,338 @@
+module Base
+{
+	fixing Fix Hood Welding
+	{
+		Require = Base.EngineDoor1;Base.EngineDoor2;Base.EngineDoor3;Base.PerformanceEngineDoor1;Base.PerformanceEngineDoor2;Base.PerformanceEngineDoor3,
+		GlobalItem = Base.BlowTorch=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.SheetMetal;MetalWelding=1;Mechanics=2,
+		Fixer = Base.SmallSheetMetal=2;MetalWelding=1;Mechanics=2,
+	}
+
+	fixing Fix Hood
+	{
+		Require = Base.EngineDoor1;Base.EngineDoor2;Base.EngineDoor3;Base.PerformanceEngineDoor1;Base.PerformanceEngineDoor2;Base.PerformanceEngineDoor3,
+		GlobalItem = Base.Screws=8,
+		ConditionModifier = 0.5,
+
+		Fixer = Base.SheetMetal;Mechanics=2,
+	}
+
+	fixing Fix Trunk Lid Welding
+	{
+		Require = Base.TrunkDoor1;Base.TrunkDoor2;Base.TrunkDoor3;Base.PerformanceTrunkDoor1;Base.PerformanceTrunkDoor2;Base.PerformanceTrunkDoor3,
+		GlobalItem = Base.BlowTorch=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.SheetMetal;MetalWelding=1;Mechanics=2,
+		Fixer = Base.SmallSheetMetal=2;MetalWelding=1;Mechanics=2,
+	}
+
+	fixing Fix Trunk Lid
+	{
+		Require = Base.TrunkDoor1;Base.TrunkDoor2;Base.TrunkDoor3;Base.PerformanceTrunkDoor1;Base.PerformanceTrunkDoor2;Base.PerformanceTrunkDoor3,
+		GlobalItem = Base.Screws=8,
+		ConditionModifier = 0.5,
+
+		Fixer = Base.SheetMetal;Mechanics=2,
+	}
+
+	fixing Fix Door Welding
+	{
+		Require = Base.FrontCarDoor1;Base.FrontCarDoor2;Base.FrontCarDoor3;Base.RearCarDoor1;Base.RearCarDoor2;Base.RearCarDoor3;Base.RearCarDoorDouble1;Base.RearCarDoorDouble2;Base.RearCarDoorDouble3;Base.FRFrontConHardDoor1;Base.FRFrontConHardDoor2;Base.FRFrontConHardDoor3;Base.FRRearConHardDoor1;Base.FRRearConHardDoor2;Base.FRRearConHardDoor3,
+		GlobalItem = Base.BlowTorch=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.SheetMetal;MetalWelding=3;Mechanics=2,
+		Fixer = Base.SmallSheetMetal=2;MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix Canvas Door Sewing
+	{
+		Require = Base.FRFrontConSoftDoor1;Base.FRFrontConSoftDoor2;Base.FRFrontConSoftDoor3;Base.FRRearConSoftDoor1;Base.FRRearConSoftDoor2;Base.FRRearConSoftDoor3,
+		GlobalItem = Base.Thread=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.DenimStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.DenimStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheets;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheetsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.AlcoholRippedSheets;Tailoring=3;Mechanics=2,
+	}
+
+	fixing Fix Canvas Door
+	{
+		Require = Base.FRFrontConSoftDoor1;Base.FRFrontConSoftDoor2;Base.FRFrontConSoftDoor3;Base.FRRearConSoftDoor1;Base.FRRearConSoftDoor2;Base.FRRearConSoftDoor3,
+		ConditionModifier = 0.5,
+
+		Fixer = Base.DuctTape=2;Mechanics=1,
+	}
+	
+	/********Side Attachments********/
+
+	fixing Fix Fender Skirt Welding
+    {
+       Require = Base.FRFenderSkirt1;Base.FRFenderSkirt2;Base.FRFenderSkirt3;Base.FRCustomFenderSkirt1;Base.FRCustomFenderSkirt2;Base.FRCustomFenderSkirt3;Base.FRPerformanceFenderSkirt1;Base.FRPerformanceFenderSkirt2;Base.FRPerformanceFenderSkirt3,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal;MetalWelding=1;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2;MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Fender Skirt
+	{
+       Require = Base.FRFenderSkirt1;Base.FRFenderSkirt2;Base.FRFenderSkirt3,
+	   GlobalItem = Base.Screws=8,
+	   ConditionModifier = 0.5,
+
+       Fixer = Base.SheetMetal;Mechanics=2,
+	}
+
+	fixing Fix Side Step Welding
+    {
+       Require = Base.FROldSideStep;Base.FRNormalSideStep;Base.FRPerformanceSideStep,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal;MetalWelding=1;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2;MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Side Step
+	{
+       Require = Base.FROldSideStep;Base.FRNormalSideStep;Base.FRPerformanceSideStep,
+	   GlobalItem = Base.Screws=8,
+	   ConditionModifier = 0.5,
+
+       Fixer = Base.SheetMetal;Mechanics=2,
+	}
+	
+	/********Bed Attachment*******/
+	
+	fixing Fix Roll Bars Welding
+    {
+       Require = Base.FRRollcage,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.MetalBar=2;MetalWelding=3;Mechanics=2,
+       Fixer = Base.MetalPipe=2;MetalWelding=3;Mechanics=2,
+    }
+
+    fixing Fix Hard Bed Cap
+	{
+       Require = Base.FRBedCapHard,
+	   GlobalItem = Base.Screws=8,
+	   ConditionModifier = 0.8,
+
+       Fixer = Base.SheetMetal;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2;Mechanics=2,
+	}
+
+	fixing Fix Soft Bed Cap Sewing
+	{
+		Require = Base.FRBedCapSoft,
+		GlobalItem = Base.Thread=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.DenimStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.DenimStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheets;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheetsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.AlcoholRippedSheets;Tailoring=3;Mechanics=2,
+	}
+
+	fixing Fix Soft Bed Cap
+	{
+		Require = Base.FRBedCapSoft,
+		ConditionModifier = 0.5,
+
+		Fixer = Base.DuctTape=2;Mechanics=1,
+	}
+	
+	/******Roof Attachment*******/
+
+	fixing Fix Fog Lights Welding
+    {
+       Require = Base.FRTopLightsFog,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.MetalBar=1;MetalWelding=3;Mechanics=2,
+       Fixer = Base.MetalPipe=1;MetalWelding=3;Mechanics=2,
+    }
+
+	fixing Fix Fog Lights
+    {
+       Require = Base.FRTopLightsFog,
+       GlobalItem = Base.Screws=4,
+       ConditionModifier = 0.5,
+
+       Fixer = Base.MetalBar=1;Mechanics=2,
+       Fixer = Base.MetalPipe=1;Mechanics=2,
+    }
+
+	fixing Fix Light Bar Electronics
+    {
+       Require = Base.FRTopLightBar,
+       GlobalItem = Base.Screws=4,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.ElectronicsScrap=2;Electricity=3;Mechanics=2,
+    }
+
+	fixing Fix Taxi Topper
+    {
+       Require = Base.FRTaxiTopper,
+       ConditionModifier = 0.8,
+
+       Fixer = Base.DuctTape=2;Mechanics=1,
+       Fixer = Base.Glue=2;Mechanics=1,
+    }
+	
+	/************Bump N' Grind***********/	
+	
+	fixing Fix Side Step Welding
+    {
+       Require = Base.FRStockFrontBumper1;Base.FRStockFrontBumper2;Base.FRStockFrontBumper3;Base.FRCustomFrontBumper1;Base.FRCustomFrontBumper2;Base.FRCustomFrontBumper3;Base.FRPerformanceFrontBumper1;Base.FRPerformanceFrontBumper2;Base.FRPerformanceFrontBumper3;Base.FRStockRearBumper1;Base.FRStockRearBumper2;Base.FRStockRearBumper3;Base.FRCustomRearBumper1;Base.FRCustomRearBumper2;Base.FRCustomRearBumper3;Base.FRPerformanceRearBumper1;Base.FRPerformanceRearBumper2;Base.FRPerformanceRearBumper3,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal;MetalWelding=1;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2;MetalWelding=1;Mechanics=2,
+    }
+
+	fixing Fix Bumper Bar Welding
+    {
+       Require = Base.FROffroadBumperBar;Base.FRPoliceBumperBar,
+       GlobalItem = Base.BlowTorch=2,
+       ConditionModifier = 1.2,
+
+       Fixer = Base.MetalBar=2;MetalWelding=3;Mechanics=2,
+       Fixer = Base.MetalPipe=2;MetalWelding=3;Mechanics=2,
+    }
+
+	fixing Fix Bumper Bar
+    {
+       Require = Base.FROffroadBumperBar;Base.FRPoliceBumperBar,
+       GlobalItem = Base.Screws=8,
+       ConditionModifier = 0.5,
+
+       Fixer = Base.MetalBar=2;Mechanics=2,
+       Fixer = Base.MetalPipe=2;Mechanics=2,
+    }
+	
+	/*********Interior Items********/
+
+    fixing Fix Interior Container
+	{
+	   Require = Base.FR_VehicleArmory;Base.FR_KitchenCabinet;Base.FR_Wardrobe,
+
+       Fixer = Base.DuctTape=2;Mechanics=1,
+       Fixer = Base.Glue=2;Mechanics=1,
+	}
+
+    fixing Fix Interior Appliance
+	{
+	   Require = Base.FR_Fridge;FR_Oven,
+       GlobalItem = Base.Screws=4,
+
+       Fixer = Base.ElectronicsScrap=2;Electricity=3;Mechanics=2,
+	}
+	
+	/**********Storage Tanks***********/
+	
+	fixing Fix Storage Tank Welding
+	{
+	   Require = Base.FRSmallPropaneStorageTank;Base.FRNormalPropaneStorageTank;Base.FRLargePropaneStorageTank;Base.FRSmallFuelStorageTank;Base.FRNormalFuelStorageTank;Base.FRLargeFuelStorageTank,
+	   GlobalItem = Base.BlowTorch=2,
+	   ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+	
+	/**********Roofs***********/
+	
+	fixing Fix Hard Roof Welding
+	{
+	   Require = Base.FRRoofHard1;Base.FRRoofHard2;Base.FRRoofHard3,
+	   GlobalItem = Base.BlowTorch=2,
+	   ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+	
+	fixing Fix Hard Roof
+	{
+	   Require = Base.FRRoofHard1;Base.FRRoofHard2;Base.FRRoofHard3,
+	   GlobalItem = Base.Screws=8,
+	   ConditionModifier = 0.5,
+
+       Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix Canvas Roof Sewing
+	{
+		Require = Base.FRRoofConSoft1;Base.FRRoofConSoft2;Base.FRRoofConSoft3,
+		GlobalItem = Base.Thread=2,
+		ConditionModifier = 1.2,
+
+		Fixer = Base.DenimStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.DenimStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStrips;Tailoring=3;Mechanics=2,
+		Fixer = Base.LeatherStripsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheets;Tailoring=3;Mechanics=2,
+		Fixer = Base.RippedSheetsDirty;Tailoring=3;Mechanics=2,
+		Fixer = Base.AlcoholRippedSheets;Tailoring=3;Mechanics=2,
+	}
+
+	fixing Fix Canvas Roof
+	{
+		Require = Base.FRRoofConSoft1;Base.FRRoofConSoft2;Base.FRRoofConSoft3,
+		ConditionModifier = 0.5,
+
+		Fixer = Base.DuctTape=2;Mechanics=1,
+	}
+
+    fixing Fix Hard Removable Roofs
+	{
+       Require = Base.FRRoofConHard1;Base.FRRoofConHard2;Base.FRRoofConHard3;Base.FRRoofTTop1;Base.FRRoofTTop2;Base.FRRoofTTop3,
+	   GlobalItem = Base.Screws=8,
+	   ConditionModifier = 0.8,
+
+       Fixer = Base.SheetMetal;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2;Mechanics=2,
+	}
+	
+	/*******Trunks********/
+
+	fixing Fix Custom Trunks Welding
+	{
+	   Require = Base.FRSideContainer;Base.FRTinyTrunk;Base.FRSmallTrunk;Base.FRNormalTrunk;Base.FRBigTrunk;Base.FRLargeTrunk;Base.FRSmallCargoTrunk;Base.FRNormalCargoTrunk;Base.FRLargeCargoTrunk;Base.FRSemiCargoTrunk;Base.FRBedStep;Base.FRBigBed;Base.FRLargeBed,
+	   GlobalItem = Base.BlowTorch=2,
+	   ConditionModifier = 1.2,
+
+       Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+	
+	/*******Trailer Hitch*********/
+	
+	fixing Fix Trailer Hitch Welding
+	{
+	   Require = Base.FRTrailerHitch1;Base.FRTrailerHitch2;Base.FRTrailerHitch3,
+	   GlobalItem = Base.BlowTorch=2,
+	   ConditionModifier = 1.2,
+
+       Fixer = Base.SmallSheetMetal=1; MetalWelding=3;Mechanics=2,
+	}
+}

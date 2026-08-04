@@ -1,0 +1,8 @@
+module MarzGuns
+{
+    model RepairPack
+    {
+        mesh = Worlditems/Others/repair_pack,
+        texture = Worlditems/Others/repair_pack,
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "Sandbox_FancyHandwork": "Fancy Handwork",
+  "Sandbox_FancyHandwork_ExperiencedAim": "Nivel de Puntería para cambiar la animación",
+  "Sandbox_FancyHandwork_ExperiencedAim_tooltip": "Nivel de Puntería con armas de fuego a partir del cual se utilizará la animación de apuntado táctico. <LINE> Establécelo en 0 para usarla siempre y en 11 para no usarla nunca.",
+  "Sandbox_FancyHandwork_DisableTurn": "Giro forzado hacia los objetos",
+  "Sandbox_FancyHandwork_DisableTurn_tooltip": "Controla cuándo se obliga al personaje a girarse hacia un objeto al realizar una interacción con el mundo.",
+  "Sandbox_FancyHandwork_DT_option1": "No forzar nunca el giro",
+  "Sandbox_FancyHandwork_DT_option2": "Forzar el giro tras el retardo",
+  "Sandbox_FancyHandwork_DT_option3": "Forzar siempre el giro",
+  "Sandbox_FancyHandwork_TurnDelaySec": "Retardo del giro forzado",
+  "Sandbox_FancyHandwork_TurnDelaySec_tooltip": "Cuando el personaje esté quieto, se girará hacia el objeto con el que interactúa después de este número de segundos. <LINE> Requiere que el retardo de giro esté activado.",
+  "Sandbox_FancyHandwork_TurnBehavior": "Comportamiento de las animaciones hacia atrás",
+  "Sandbox_FancyHandwork_TurnBehavior_tooltip": "Determina con qué frecuencia se reproducen animaciones hacia atrás en lugar de girar al personaje. <LINE> El personaje seguirá girándose hacia los objetos que no dispongan de una animación trasera, salvo que el giro forzado esté desactivado. <LINE> Para mostrar animaciones traseras debe elegirse un retardo de giro o desactivarse el giro. «Forzar siempre el giro» impide estas animaciones.",
+  "Sandbox_FancyHandwork_TB_option1": "No reproducir nunca animaciones hacia atrás",
+  "Sandbox_FancyHandwork_TB_option2": "Reproducirlas hasta que termine el retardo",
+  "Sandbox_FancyHandwork_TB_option3": "Reproducir siempre animaciones hacia atrás",
+  "Sandbox_FancyHandwork_HideDoorProgressBar": "Ocultar la barra al usar puertas de vehículos",
+  "Sandbox_FancyHandwork_HideDoorProgressBar_tooltip": "Oculta la barra de progreso al abrir o cerrar una puerta y al entrar o salir de un vehículo.",
+  "Sandbox_FancyHandwork_HideVehicleWalkProgressBar": "Ocultar la barra «Ir a» de los vehículos",
+  "Sandbox_FancyHandwork_HideVehicleWalkProgressBar_tooltip": "Oculta la barra de progreso mientras el personaje camina hacia un punto para interactuar con un vehículo.",
+  "Sandbox_FancyHandwork_EnableLeftHandAiming": "Activar apuntado con la mano izquierda",
+  "Sandbox_FancyHandwork_EnableLeftHandAiming_tooltip": "Activa las animaciones de apuntado con dos armas: la mano izquierda mantiene el arma secundaria mientras se apunta. <LINE> Desactívalo si utilizas otros mods de animaciones, como Tactical Hold, para evitar conflictos."
+}

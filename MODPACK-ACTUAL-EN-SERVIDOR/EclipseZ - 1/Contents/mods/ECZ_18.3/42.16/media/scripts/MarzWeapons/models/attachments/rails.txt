@@ -1,0 +1,53 @@
+module MarzGuns
+{
+	model Picatinny_Rail
+    {
+        mesh = weapons/parts/rails|Picatinny_Rail_World,
+        texture = weapons/parts/rails/Picatinny_Rail,
+    }
+	model Picatinny_Rail_Up
+    {
+        mesh = weapons/parts/rails|Picatinny_Rail_Up,
+        texture = weapons/parts/rails/Picatinny_Rail,
+    }
+	model Picatinny_Rail_Down
+    {
+        mesh = weapons/parts/rails|Picatinny_Rail_Down,
+        texture = weapons/parts/rails/Picatinny_Rail,
+    }
+	model Picatinny_Rail_Left
+    {
+        mesh = weapons/parts/rails|Picatinny_Rail_Left,
+        texture = weapons/parts/rails/Picatinny_Rail,
+    }
+	model Picatinny_Rail_Right
+    {
+        mesh = weapons/parts/rails|Picatinny_Rail_Right,
+        texture = weapons/parts/rails/Picatinny_Rail,
+    }
+	model AK_Mount
+    {
+        mesh = weapons/parts/rails|AK_Mount,
+        texture = weapons/parts/rails/AK_Mount,
+    }
+	model Sniper_Mount
+    {
+        mesh = weapons/parts/rails|Sniper_Mount,
+        texture = weapons/parts/rails/Sniper_Mount,
+    }
+	model Beretta_Mount
+    {
+        mesh = weapons/parts/rails|Beretta_Mount,
+        texture = weapons/parts/rails/Beretta_Mount,
+    }
+	model Colt_Mount
+    {
+        mesh = weapons/parts/rails|Colt_Mount,
+        texture = weapons/parts/rails/Colt_Mount,
+    }
+	model Heavy_Pistol_Rail
+    {
+        mesh = weapons/parts/rails|Heavy_Pistol_Rail,
+        texture = weapons/parts/rails/Heavy_Pistol_Rail,
+    }
+}

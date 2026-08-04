@@ -1,0 +1,8 @@
+-- ECZ B42.20 - corrección 03-08-2026
+--
+-- Desactivado: el parche v7 intentaba crear de nuevo los componentes de
+-- IDBFS.MoveableManualPress incluso cuando la entidad ya los tenía.
+-- Eso generaba GameEntityException y bucles de reparación por Tick/OnGameStart.
+--
+-- Se conserva el archivo para sobrescribir limpiamente la copia problemática,
+-- pero no se registran eventos ni se modifican entidades existentes.

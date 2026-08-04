@@ -1,0 +1,30 @@
+module MarzGuns
+{
+    item Bipod_Deployed
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Bipod_Deployed,
+        Weight           = 1.3,
+        WeightModifier   = 1.3,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Bipod,
+        WorldStaticModel = MarzGuns.Bipod_Deployed,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Bipod_Folded
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Bipod_Folded,
+        Weight           = 1.3,
+        WeightModifier   = 1.3,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Bipod,
+        WorldStaticModel = MarzGuns.Bipod_Folded,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+}

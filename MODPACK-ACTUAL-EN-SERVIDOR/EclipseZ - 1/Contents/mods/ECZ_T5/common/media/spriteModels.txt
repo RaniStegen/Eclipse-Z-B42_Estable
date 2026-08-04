@@ -1,0 +1,33 @@
+spriteModel
+{
+	VERSION = 1,
+
+	tileset
+	{
+		name = LiuDing_Tiles_door,
+
+		tile
+		{
+			xy = 0 0,
+			runtime = standard_door w closed,
+		}
+
+		tile
+		{
+			xy = 1 0,
+			runtime = standard_door n closed,
+		}
+
+		tile
+		{
+			xy = 2 0,
+			runtime = standard_door w open,
+		}
+
+		tile
+		{
+			xy = 3 0,
+			runtime = standard_door n open,
+		}
+	}
+}

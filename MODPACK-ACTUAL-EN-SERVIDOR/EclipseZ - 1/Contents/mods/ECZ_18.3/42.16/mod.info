@@ -1,0 +1,10 @@
+name=ECZ_18.3
+id=ECZ_18.3
+description=
+poster=poster.png
+icon=icon.png
+versionMin=42.16
+require=ECZ_18.1,ECZ_18.2
+loadModAfter=ECZ_18.1,ECZ_18.2
+loadModBefore=ECZ_18.4
+incompatible=RAF,VFExpansionReduxb42,VFExpansion2Reduxb42,VFExpansion3Reduxb42

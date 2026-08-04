@@ -1,0 +1,420 @@
+module LC
+{
+    item LC01
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC01_2
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01_2XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC01_3
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01_3XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC01_4
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01_4XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC01_5
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01_5XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC01_6
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tendrilspawn,
+        ClothingItem = LC01_6XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC02
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Nephthysquid,
+        ClothingItem = LC02XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC03
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Inversius,
+        ClothingItem = LC03XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC04
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Mawlord,
+        ClothingItem = LC04XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC05
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Archspine,
+        ClothingItem = LC05XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC06
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Oculomorph,
+        ClothingItem = LC06XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC07
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Glaivemaw,
+        ClothingItem = LC07XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC08
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Spinejarl,
+        ClothingItem = LC08XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC09
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Sewamorph,
+        ClothingItem = LC09XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC10
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Nodulon,
+        ClothingItem = LC10XML,
+        BodyLocation = MaskFull,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC10_2
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Nodulon,
+        ClothingItem = LC10_2XML,
+        BodyLocation = MaskFull,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC10_3
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Nodulon,
+        ClothingItem = LC10_3XML,
+        BodyLocation = MaskFull,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC10_4
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Nodulon,
+        ClothingItem = LC10_4XML,
+        BodyLocation = MaskFull,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC11
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Monocepheus,
+        ClothingItem = LC11XML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC11_2
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Monocepheus,
+        ClothingItem = LC11_2XML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC11_3
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Monocepheus,
+        ClothingItem = LC11_3XML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC12
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Grunt12,
+        ClothingItem = LC12XML,
+        BodyLocation = BodyCostume,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item Pustules
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        DisplayName = Pustules,
+        ClothingItem = PustulesXML,
+        BodyLocation = base:necklace,
+        Icon = Tumor,
+        Weight = 0.1,
+        Cosmetic = TRUE,
+        WorldStaticModel = LC.Ground_Goo_Model,
+    }
+
+    item LC20F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Picismalus,
+        ClothingItem = LC20FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC21F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Picifis,
+        ClothingItem = LC21FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC22F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Tuskus,
+        ClothingItem = LC22FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC23F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Frogman,
+        ClothingItem = LC23FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC24F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Slhurg,
+        ClothingItem = LC24FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item LC25F
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        DisplayName = Arafhis,
+        ClothingItem = LC25FXML,
+        BodyLocation = base:hat,
+        Icon = Ichor,
+        BloodLocation = Head,
+        ChanceToFall = 0,
+        WorldStaticModel = LC.Ground_Goo_Model,
+        Weight = 90,
+    }
+
+    item Coral_Face_Accessory
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        DisplayName = Coral Face,
+        ClothingItem = CoralFaceAccXML,
+        BodyLocation = base:necklace,
+        Icon = Ichor_Pot,
+        Weight = 0.1,
+        Cosmetic = TRUE,
+        WorldStaticModel = LC.Ground_Ichor_Pot_Model,
+    }
+}

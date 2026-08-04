@@ -1,0 +1,26 @@
+module MarzGuns
+{
+    model Muzzle_Mount_Device
+    {
+        mesh = weapons/parts/muzzles|Muzzle_Mount_Device,
+        texture = weapons/parts/muzzles/Muzzle_Mount_Device,
+    }
+    
+    model LR2_Compensator
+    {
+        mesh = weapons/parts/muzzles|LR2_Compensator,
+        texture = weapons/parts/muzzles/LR2_Compensator,
+    }
+    
+    model LX_Flashhider
+    {
+        mesh = weapons/parts/muzzles|LX_Flashhider,
+        texture = weapons/parts/muzzles/LX_Flashhider,
+    }
+    
+    model Trix42_Muzzlebreak
+    {
+        mesh = weapons/parts/muzzles|Trix42_Muzzlebreak,
+        texture = weapons/parts/muzzles/Trix42_Muzzlebreak,
+    }
+}

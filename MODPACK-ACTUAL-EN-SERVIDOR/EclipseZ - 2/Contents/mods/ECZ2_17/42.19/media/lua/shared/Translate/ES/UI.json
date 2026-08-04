@@ -1,0 +1,9 @@
+{
+  "UI_Init_FancyHandwork": "¡Fancy Handwork inicializado!",
+  "UI_optionscreen_binding_FancyHandwork": "Fancy Handwork",
+  "UI_optionscreen_binding_FHModifier": "Tecla modificadora",
+  "UI_optionscreen_binding_FHSwapKey": "Intercambiar objetos (solo tecla)",
+  "UI_optionscreen_binding_FHSwapKeyMod": "Intercambiar objetos (modificador + tecla)",
+  "UI_optionscreen_binding_FHDebugKey": "Tecla de depuración (solo en modo depuración)",
+  "UI_ModOptions_FHfixLHandRotation": "Aplicar animaciones"
+}

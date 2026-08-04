@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\M_NeoShades.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\F_NeoShades.fbx</m_FemaleModel>
+	<m_GUID>e420dbf0-b196-4a76-9ca2-ee24f32fc8f3</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_MasksFolder>none</m_MasksFolder>
+	<textureChoices>Clothes\TombWardrobe\NeoShades</textureChoices>
+</clothingItem>

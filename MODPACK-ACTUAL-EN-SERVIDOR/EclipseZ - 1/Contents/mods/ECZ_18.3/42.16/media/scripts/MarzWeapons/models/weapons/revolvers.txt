@@ -1,0 +1,141 @@
+module MarzGuns
+{
+	model SW629
+    {
+        mesh = weapons/firearms/SW629|SW629_BODY,
+        texture = weapons/firearms/revolvers/SW629,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2362 -0.0465,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment rail_up
+        {
+            offset = 0.0000 0.1574 -0.0544,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope
+        {
+            offset = 0.0000 0.1689 -0.0616,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope_large
+        {
+            offset = 0.0000 0.1550 -0.0604,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model MP412
+    {
+        mesh = weapons/firearms/MP412|MP412_BODY,
+        texture = weapons/firearms/revolvers/MP412,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.1927 -0.0377,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model RHINO
+    {
+        mesh = weapons/firearms/RHINO|RHINO_BODY,
+        texture = weapons/firearms/revolvers/RHINO,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1744 -0.0239,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model COLT_SINGLE
+    {
+        mesh = weapons/firearms/COLT_SINGLE|COLT_SINGLE_BODY,
+        texture = weapons/firearms/revolvers/COLT_SINGLE,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2431 -0.0423,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model PYTHON
+    {
+        mesh = weapons/firearms/PYTHON|PYTHON_BODY,
+        texture = weapons/firearms/revolvers/PYTHON,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2038 -0.0448,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment rail_up
+        {
+            offset = 0.0000 0.1420 -0.0511,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope
+        {
+            offset = 0.0000 0.1532 -0.0577,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope_large
+        {
+            offset = 0.0000 0.1390 -0.0574,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model DETECTIVE_38
+    {
+        mesh = weapons/firearms/DETECTIVE_38|DETECTIVE_38_BODY,
+        texture = weapons/firearms/revolvers/DETECTIVE_38,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.2038 -0.0448,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+}

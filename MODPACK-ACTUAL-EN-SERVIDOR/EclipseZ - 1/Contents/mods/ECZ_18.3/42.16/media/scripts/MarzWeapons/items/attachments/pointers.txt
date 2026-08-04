@@ -1,0 +1,189 @@
+module MarzGuns
+{
+    /*-----Pistols-----*/
+    
+    item PJ-3_Laser
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PJ-3_Laser,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        MountOn          = MarzGuns.M92FS;MarzGuns.HIPOWER;MarzGuns.M1911;MarzGuns.USP;MarzGuns.DEAGLE;MarzGuns.P226,
+        PartType         = Underbarrel,
+        MetalValue       = 15.0,
+        WorldStaticModel = MarzGuns.PJ-3_Laser,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PX1_Laser
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PX1_Laser,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        MountOn          = MarzGuns.M92FS;MarzGuns.HIPOWER;MarzGuns.M1911;MarzGuns.USP;MarzGuns.DEAGLE;MarzGuns.P226,
+        PartType         = Underbarrel,
+        MetalValue       = 15.0,
+        WorldStaticModel = MarzGuns.PX1_Laser,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item TR-1_Laser
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = TR-1_Laser,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        MountOn          = MarzGuns.M92FS;MarzGuns.HIPOWER;MarzGuns.M1911;MarzGuns.USP;MarzGuns.DEAGLE;MarzGuns.P226,
+        PartType         = Underbarrel,
+        MetalValue       = 15.0,
+        WorldStaticModel = MarzGuns.TR-1_Laser,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item LP_Light
+    {
+        DisplayCategory    = WeaponPart,
+        ItemType           = base:weaponpart,
+        Icon               = LP_Light,
+        Weight             = 0.2,
+        WeightModifier     = 0.2,
+        AimingTimeModifier = 5,
+        MountOn            = MarzGuns.M92FS;MarzGuns.HIPOWER;MarzGuns.M1911;MarzGuns.USP;MarzGuns.DEAGLE;MarzGuns.P226,
+        PartType           = Underbarrel,
+        StaticModel        = MarzGuns.LP_Light,
+        MetalValue         = 10.0,
+        WorldStaticModel   = Handgun_Light_Ground,
+        ActivatedItem      = true,
+        LightDistance      = 15,
+        LightStrength      = 1.3,
+        TorchCone          = true,
+        TorchDot           = 0.66,
+        SoundMap           = Activate FlashlightOn,
+        SoundMap           = Deactivate FlashlightOff,
+        primaryAnimMask    = HoldingTorchRight,
+        secondaryAnimMask  = HoldingTorchLeft,
+        DisappearOnUse     = false,
+        UseDelta           = 0.001,
+        Tags               = base:flashlight;base:usesbattery,
+    }
+    
+    item TL_Light
+    {
+        DisplayCategory    = WeaponPart,
+        ItemType           = base:weaponpart,
+        Icon               = TL_Light,
+        Weight             = 0.2,
+        WeightModifier     = 0.2,
+        AimingTimeModifier = 5,
+        MountOn            = MarzGuns.M92FS;MarzGuns.HIPOWER;MarzGuns.M1911;MarzGuns.USP;MarzGuns.DEAGLE;MarzGuns.P226,
+        PartType           = Underbarrel,
+        StaticModel        = MarzGuns.TL_Light,
+        MetalValue         = 10.0,
+        WorldStaticModel   = Handgun_Light_Ground,
+        ActivatedItem      = true,
+        LightDistance      = 15,
+        LightStrength      = 1.3,
+        TorchCone          = true,
+        TorchDot           = 0.66,
+        SoundMap           = Activate FlashlightOn,
+        SoundMap           = Deactivate FlashlightOff,
+        primaryAnimMask    = HoldingTorchRight,
+        secondaryAnimMask  = HoldingTorchLeft,
+        DisappearOnUse     = false,
+        UseDelta           = 0.001,
+        Tags               = base:flashlight;base:usesbattery,
+    }
+    
+    /*-----Rifles-----*/
+    
+    item AimRight_Laser
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = AimRight_Laser,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = LaserRifle,
+        MetalValue       = 15.0,
+        WorldStaticModel = MarzGuns.AimRight_Laser,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item LRX-7_Laser
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = LRX-7_Laser,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = LaserRifle,
+        MetalValue       = 15.0,
+        WorldStaticModel = MarzGuns.LRX-7_Laser,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item BrightPoint-5_Light
+    {
+        DisplayCategory    = WeaponPart,
+        ItemType           = base:weaponpart,
+        Icon               = BrightPoint-5_Light,
+        Weight             = 0.2,
+        WeightModifier     = 0.2,
+        AimingTimeModifier = 5,
+        MountOn            = MarzGuns.FakeItemRifles,
+        PartType           = LightRifle,
+        StaticModel        = MarzGuns.BrightPoint-5_Light,
+        MetalValue         = 10.0,
+        WorldStaticModel   = Handgun_Light_Ground,
+        ActivatedItem      = true,
+        LightDistance      = 15,
+        LightStrength      = 1.3,
+        TorchCone          = true,
+        TorchDot           = 0.66,
+        SoundMap           = Activate FlashlightOn,
+        SoundMap           = Deactivate FlashlightOff,
+        primaryAnimMask    = HoldingTorchRight,
+        secondaryAnimMask  = HoldingTorchLeft,
+        DisappearOnUse     = false,
+        UseDelta           = 0.001,
+        Tags               = base:flashlight;base:usesbattery,
+    }
+    
+    item SR7_Light
+    {
+        DisplayCategory    = WeaponPart,
+        ItemType           = base:weaponpart,
+        Icon               = SR7_Light,
+        Weight             = 0.2,
+        WeightModifier     = 0.2,
+        AimingTimeModifier = 5,
+        MountOn            = MarzGuns.FakeItemRifles,
+        PartType           = LightRifle,
+        StaticModel        = MarzGuns.SR7_Light,
+        MetalValue         = 10.0,
+        WorldStaticModel   = Handgun_Light_Ground,
+        ActivatedItem      = true,
+        LightDistance      = 15,
+        LightStrength      = 1.3,
+        TorchCone          = true,
+        TorchDot           = 0.66,
+        SoundMap           = Activate FlashlightOn,
+        SoundMap           = Deactivate FlashlightOff,
+        primaryAnimMask    = HoldingTorchRight,
+        secondaryAnimMask  = HoldingTorchLeft,
+        DisappearOnUse     = false,
+        UseDelta           = 0.001,
+        Tags               = base:flashlight;base:usesbattery,
+    }
+}

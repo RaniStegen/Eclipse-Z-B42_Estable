@@ -1,0 +1,13 @@
+module RLP
+{
+    character_profession_definition rlp:medicoforense
+    {
+        CharacterProfession = rlp:medicoforense,
+        Cost = -2,
+        UIName = UI_prof_MedicoForense,
+        UIDescription = UI_prof_MedicoForenseDesc,
+        IconPathName = prof_lab,
+        XPBoosts = Doctor=2;SmallBlade=2;Lightfoot=1,
+        GrantedTraits = rlp:autopsyspecialist,
+    }
+}

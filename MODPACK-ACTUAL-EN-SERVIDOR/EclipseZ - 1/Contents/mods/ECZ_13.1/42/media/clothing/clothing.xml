@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+
+<m_MaleOutfits>
+<m_Name>Grunt01</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>f4bf7bce-41a0-4955-bd1c-72e1c9c6114f</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal> 
+
+		<m_items>
+			<itemGUID>82623b9e-dc7d-4014-915d-ee9471209807</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>2dd4f72d-01cd-45d9-bc25-e48d7afda706</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>fe5d812e-c341-408a-a4a2-99d361acd665</itemGUID>
+		</m_items>
+		
+		<m_items>
+					<probability>0.3</probability>
+			<itemGUID>bae4c6a3-7f51-4339-a66d-89edebb6c3bc</itemGUID>
+		</m_items>
+		
+				<m_items>
+							<probability>0.3</probability>
+			<itemGUID>bdafc83f-a684-48f3-a35c-d249b9e0641f</itemGUID>
+		</m_items>
+		
+				<m_items>
+							<probability>0.3</probability>
+			<itemGUID>65cd54e0-344b-4334-bc96-677660bf25ab</itemGUID>
+		</m_items>
+		
+</m_MaleOutfits>
+<m_FemaleOutfits>
+<m_Name>Grunt01</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>f4bf7bce-41a0-4955-bd1c-72e1c9c6114f</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal> 
+
+		<m_items>
+			<itemGUID>82623b9e-dc7d-4014-915d-ee9471209807</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>2dd4f72d-01cd-45d9-bc25-e48d7afda706</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>fe5d812e-c341-408a-a4a2-99d361acd665</itemGUID>
+		</m_items>
+		
+		<m_items>
+					<probability>0.3</probability>
+			<itemGUID>bae4c6a3-7f51-4339-a66d-89edebb6c3bc</itemGUID>
+		</m_items>
+		
+				<m_items>
+							<probability>0.3</probability>
+			<itemGUID>bdafc83f-a684-48f3-a35c-d249b9e0641f</itemGUID>
+		</m_items>
+		
+				<m_items>
+							<probability>0.3</probability>
+			<itemGUID>65cd54e0-344b-4334-bc96-677660bf25ab</itemGUID>
+		</m_items>
+		
+</m_FemaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt02</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>f838da9f-b1fd-43a6-b6b4-4c5c989f5f4c</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>ef08d5cd-3d22-4f2a-860b-84a3e7b4a7ca</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt03</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>002273ae-3c2d-47dc-8f2a-56e8680ee04d</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>59a88adc-667a-4022-b597-2cf7e47ca4a7</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt04</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>685d0640-1160-41e3-be19-20970b7b47ee</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>9fee30d7-b214-47ba-9bfc-d1866379ce9b</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt05</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>94c1b02e-111a-4c6b-9b99-d939180b5f96</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>0301c822-71c8-4421-881b-d0aff9f1e98a</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt06</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>adf650fb-3d54-498d-8018-9645a0655976</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>c6a108d8-97fe-4e61-8b4b-cae39f9d3bd9</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+<m_FemaleOutfits>
+<m_Name>Grunt06</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>adf650fb-3d54-498d-8018-9645a0655976</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>c6a108d8-97fe-4e61-8b4b-cae39f9d3bd9</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt07</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>1a919fae-8b31-4e35-92ff-a20e1acd40bb</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>9e3a1c27-cbe6-4751-aa60-fe285b0196e5</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+<m_FemaleOutfits>
+<m_Name>Grunt07</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>1a919fae-8b31-4e35-92ff-a20e1acd40bb</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>9e3a1c27-cbe6-4751-aa60-fe285b0196e5</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt16</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>e2b9701e-677a-4679-a9c5-5e227cd0b744</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>10c13791-622f-4602-b5e2-98e5e1f73b99</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+<m_MaleOutfits>
+<m_Name>Grunt17</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>a364f591-badd-4906-9f6e-7f47a8f53d42</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>104fe649-9ee5-430d-8d84-fea56c87c8c7</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+
+<m_MaleOutfits>
+<m_Name>Grunt08</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>c8bc7ce9-ed40-4296-9cec-93e215b5180b</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>ed919038-4b41-4a73-9853-09d4686247e2</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt09</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>a976a125-780a-4130-8426-931232102e15</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+		<itemGUID>8f8e2dfe-5913-4f82-b11a-ec44780736c1</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt10</m_Name>
+		<m_Guid>46d953e9-a81c-4ec3-b2c5-34baae051dbd</m_Guid>
+		<m_Pants>true</m_Pants>
+		
+				<m_items> 
+			<itemGUID>549306ab-bde9-40be-87c3-8451b105e0b2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>c24ba80b-2af3-4e74-8305-a9ed1f9f6c7e</itemGUID>
+		</m_items>
+		
+				<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4feff500-2f92-4ffd-a962-34d1be6b7166</itemGUID>
+		</m_items>
+		
+						<m_items>
+			<probability>0.4</probability>
+			<itemGUID>c92a7975-d8c8-41f5-848f-3277c9216075</itemGUID>
+		</m_items>
+		
+
+				
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		
+</m_MaleOutfits>
+<m_FemaleOutfits>
+<m_Name>Grunt10</m_Name>
+		<m_Guid>46d953e9-a81c-4ec3-b2c5-34baae051dbd</m_Guid>
+		<m_Pants>true</m_Pants>
+		
+		<m_items> 
+			<itemGUID>549306ab-bde9-40be-87c3-8451b105e0b2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+				<itemGUID>c24ba80b-2af3-4e74-8305-a9ed1f9f6c7e</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+				<itemGUID>4feff500-2f92-4ffd-a962-34d1be6b7166</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.4</probability>
+				<itemGUID>c92a7975-d8c8-41f5-848f-3277c9216075</itemGUID>
+		</m_items>
+		
+		
+
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_FemaleOutfits>
+<m_Name>Grunt02</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>f838da9f-b1fd-43a6-b6b4-4c5c989f5f4c</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>ef08d5cd-3d22-4f2a-860b-84a3e7b4a7ca</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+	
+	
+<m_FemaleOutfits>
+<m_Name>Grunt03</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>002273ae-3c2d-47dc-8f2a-56e8680ee04d</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>59a88adc-667a-4022-b597-2cf7e47ca4a7</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_FemaleOutfits>
+<m_Name>Grunt04</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>685d0640-1160-41e3-be19-20970b7b47ee</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>9fee30d7-b214-47ba-9bfc-d1866379ce9b</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_FemaleOutfits>
+<m_Name>Grunt05</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>94c1b02e-111a-4c6b-9b99-d939180b5f96</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>0301c822-71c8-4421-881b-d0aff9f1e98a</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_FemaleOutfits>
+<m_Name>Grunt08</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>c8bc7ce9-ed40-4296-9cec-93e215b5180b</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>ed919038-4b41-4a73-9853-09d4686247e2</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_FemaleOutfits>
+<m_Name>Grunt09</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>a976a125-780a-4130-8426-931232102e15</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>8f8e2dfe-5913-4f82-b11a-ec44780736c1</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt11</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>dcd04dea-21af-4d67-a3b2-581fe8db8f47</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal> 
+
+		<m_items> 
+			<itemGUID>dda524b4-85e2-4949-ab13-ba9ffbfad7e6</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>aa3e1d75-8dbe-4f84-beec-fc5edc4da3d9</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>1036fb6b-4575-43ed-b855-ad78b0d5373d</itemGUID>
+		</m_items>
+
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt13</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>dbf76f1a-9b0b-4af3-9f52-be4b076e7228</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>true</m_Top>
+		<m_Pants>true</m_Pants>
+		<m_AllowPantsHue>true</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>true</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>true</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> 
+			<itemGUID>aeb75175-d105-41ff-b43c-98b9a22d1c12</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>0568d710-b5a8-443f-a6ed-036f9de221e5</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>c2222eb8-e45c-4994-aaca-a4bfe87e5ab5</itemGUID>
+		</m_items>
+		
+		
+		
+		
+
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt14</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>3428ab82-4620-4c60-91d6-0b5f60f0a4ec</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>true</m_Top>
+		<m_Pants>true</m_Pants>
+		<m_AllowPantsHue>true</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>true</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>true</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> 
+			<itemGUID>80737d2a-a556-4115-bf88-fba96f3877f2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>a7d62e1d-33a1-48f2-b257-002fbd2d56e8</itemGUID>
+		</m_items>
+		
+		
+		
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<itemGUID>4601d062-d9ad-49b4-828a-cd0661ead6b6</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		
+		
+		
+		
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+
+</m_MaleOutfits>
+<m_FemaleOutfits>
+<m_Name>Grunt14</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>7c286203-d0ca-4e5c-a52f-3e5e56416e47</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>true</m_Top>
+		<m_Pants>true</m_Pants>
+		<m_AllowPantsHue>true</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>true</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>true</m_AllowTShirtDecal>                       <!-- No decal allowed on shirt -->
+
+		<m_items> 
+			<itemGUID>80737d2a-a556-4115-bf88-fba96f3877f2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>a7d62e1d-33a1-48f2-b257-002fbd2d56e8</itemGUID>
+		</m_items>
+		
+		
+				<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8973893f-f324-4cdb-a32b-43cd0378174f</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<itemGUID>4601d062-d9ad-49b4-828a-cd0661ead6b6</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+
+</m_FemaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt12</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>dbbafced-ff00-43ae-a0f3-9de96b4280d0</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>af66435c-9b2a-4e2b-8864-e08a956ce9f0</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt18</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>ccfeb43d-7390-4c0e-9100-affe06f90082</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>9fffaf48-64d7-4afc-86ff-fedb0c51b71d</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt19</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>8967b3c5-b53c-4f29-a5d7-339f60c2c731</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>7eb6df07-f16a-4040-843a-0db2e372a782</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>GruntTesting</m_Name>
+		<m_Guid>933f1eee-f7dd-4461-b527-8147a5067572</m_Guid>
+		
+		
+		
+				<m_items> 
+			<itemGUID>549306ab-bde9-40be-87c3-8451b105e0b2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>c24ba80b-2af3-4e74-8305-a9ed1f9f6c7e</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>4feff500-2f92-4ffd-a962-34d1be6b7166</itemGUID>
+		</m_items>
+		
+				<m_items>
+			<probability>0.4</probability>
+			<itemGUID>c92a7975-d8c8-41f5-848f-3277c9216075</itemGUID>
+		</m_items>
+		
+		
+		
+		
+
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+<m_FemaleOutfits>
+		<m_Name>GruntTesting</m_Name>
+		<m_Guid>933f1eee-f7dd-4461-b527-8147a5067572</m_Guid>
+		
+		
+						<m_items> 
+			<itemGUID>549306ab-bde9-40be-87c3-8451b105e0b2</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>c24ba80b-2af3-4e74-8305-a9ed1f9f6c7e</itemGUID>
+		</m_items>
+		
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>4feff500-2f92-4ffd-a962-34d1be6b7166</itemGUID>
+		</m_items>
+		
+				<m_items>
+			<probability>0.4</probability>
+			<itemGUID>c92a7975-d8c8-41f5-848f-3277c9216075</itemGUID>
+		</m_items>
+		
+		
+		
+
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>8fc17470-453b-4ed0-945d-c20ba6f5af59</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>903c06ea-78e7-4f42-a3da-768be61f216f</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>4b278ded-d489-4b64-b457-e059a9963beb</itemGUID>
+		</m_items>
+
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>825f5380-d6ef-4cf8-8d77-d3a115724f4a</itemGUID>
+		</m_items>
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>cba6763a-6897-4631-8748-0c15f5450c93</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt20</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>494d5112-ef9e-4d19-a043-9b5e821235bf</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>dd046320-5dc1-4169-9120-06bacd92c752</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+<m_MaleOutfits>
+<m_Name>Grunt21</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>3eff8d74-7795-443d-872b-de57945a8482</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>d824d4da-f846-40bd-bf97-6bbd87904b29</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt22</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>f2614622-12f8-4eab-9a2a-8760ae9a6c2d</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>193b2541-fc36-4ae9-9169-0d860152c34b</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt23</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>051a79a1-7429-4586-8807-ef89d86380c6</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>d1c2b967-bf61-4071-902c-a399d6df4a04</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+
+<m_MaleOutfits>
+<m_Name>Grunt24</m_Name>                                <!-- The Name of the zombie outfit, it will appear like this in the debug list of Zombie manager -->
+		<m_Guid>a34518d0-d82b-42bd-84a1-92d3d7c1f9e0</m_Guid>               <!-- The outfit needs a new GUID. Get a new GUID. -->
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>                            <!-- No pants hue change to the textures -->
+		<m_AllowTopTint>false</m_AllowTopTint>                              <!-- No top tint to the textures -->
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>                      <!-- No decal allowed on shirt -->
+
+		<m_items> <!-- Hat -->
+			<itemGUID>a48dfca9-b394-45d8-bfcb-32841164bb92</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+	
+</outfitManager>

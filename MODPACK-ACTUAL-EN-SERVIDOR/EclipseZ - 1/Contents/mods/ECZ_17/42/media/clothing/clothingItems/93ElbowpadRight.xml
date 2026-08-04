@@ -1,0 +1,11 @@
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\93ElbowpadRight</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\93ElbowpadRight_F</m_FemaleModel>
+	<m_GUID>93a491c4-41d2-4b6e-a284-f4bf60b61f4f</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\93ElbowpadRight</textureChoices>
+</clothingItem>

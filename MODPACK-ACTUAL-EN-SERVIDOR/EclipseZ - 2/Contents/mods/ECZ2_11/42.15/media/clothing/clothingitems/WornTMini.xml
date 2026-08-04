@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>a2ea3e67-6dd4-4dec-93f7-5f32d0278e5a</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>true</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\TombWardrobe\Shirts\WornTMini</m_BaseTextures>
+</clothingItem>

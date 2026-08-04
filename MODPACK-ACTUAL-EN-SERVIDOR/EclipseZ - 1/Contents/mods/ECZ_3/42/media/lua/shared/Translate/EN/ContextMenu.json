@@ -1,0 +1,7 @@
+{
+  "ContextMenu_JaxeRevival_Action": "Revive %1",
+  "ContextMenu_JaxeRevival_ActionFirstAidRequired": "Cannot revive %1 (Requires First Aid level %2)",
+  "ContextMenu_JaxeRevival_ActionDoctorProfessionRequired": "Cannot revive %1 (Requires Doctor profession)",
+  "ContextMenu_JaxeRevival_ActionDoctorOrNurseProfessionRequired": "Cannot revive %1 (Requires Doctor or Nurse profession)",
+  "ContextMenu_JaxeRevival_ActionProfessionRequired": "Cannot revive %1 (Missing profession)"
+}

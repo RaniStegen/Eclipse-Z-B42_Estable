@@ -1,0 +1,36 @@
+module MarzGuns
+{
+    item 762x51Box100_M60
+    {
+        AmmoType         = marzguns:bullet_762x51,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 762x51Box100_M60,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 100,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.6,
+        WeightModifier   = 0.6,
+        StaticModel      = MarzGuns.762x51Box100_M60,
+        WorldStaticModel = MarzGuns.762x51Box100_M60,
+    }
+    
+    item 3006Magazine20_BAR
+    {
+        AmmoType         = marzguns:bullet_3006,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 3006Magazine20_BAR,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        StaticModel      = MarzGuns.3006Magazine20_BAR,
+        WorldStaticModel = MarzGuns.3006Magazine20_BAR,
+    }
+}

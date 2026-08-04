@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option FRUsedCars.LowConPartsFall
+{
+	type = boolean,
+    default = true,
+	page = FRUsedCars,
+	translation = LowConPartsFall,
+}
+
+option FRUsedCars.PartFallsWithParent
+{
+	type = boolean,
+    default = true,
+	page = FRUsedCars,
+	translation = PartFallsWithParent,
+}

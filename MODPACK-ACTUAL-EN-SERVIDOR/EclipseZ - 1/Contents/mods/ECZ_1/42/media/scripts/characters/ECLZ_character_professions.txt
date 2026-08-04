@@ -1,0 +1,112 @@
+module ECLZJobs
+{
+    character_profession_definition eclzjobs:taxista
+    {
+        CharacterProfession = eclzjobs:taxista,
+        Cost = 4,
+        UIName = UI_prof_ECLZ_Taxista,
+        UIDescription = UI_prof_ECLZ_TaxistaDesc,
+        IconPathName = profession_taxista,
+        XPBoosts = SmallBlunt=1;Mechanics=1;Electricity=1;Maintenance=1,
+    }
+
+    character_profession_definition eclzjobs:joyero
+    {
+        CharacterProfession = eclzjobs:joyero,
+        Cost = 1,
+        UIName = UI_prof_ECLZ_Joyero,
+        UIDescription = UI_prof_ECLZ_JoyeroDesc,
+        IconPathName = profession_joyero,
+        XPBoosts = MetalWelding=1;Maintenance=1;SmallBlade=1;Knapping=1;Glassmaking=2,
+    }
+
+    character_profession_definition eclzjobs:camarero
+    {
+        CharacterProfession = eclzjobs:camarero,
+        Cost = 0,
+        UIName = UI_prof_ECLZ_Camarero,
+        UIDescription = UI_prof_ECLZ_CamareroDesc,
+        IconPathName = profession_camarero,
+        XPBoosts = Fitness=2;Cooking=1;SmallBlade=1;Nimble=1,
+    }
+
+    character_profession_definition eclzjobs:preso
+    {
+        CharacterProfession = eclzjobs:preso,
+        Cost = -2,
+        UIName = UI_prof_ECLZ_Preso,
+        UIDescription = UI_prof_ECLZ_PresoDesc,
+        IconPathName = profession_preso,
+        XPBoosts = Sprinting=2;Fitness=1;Nimble=1;Sneak=1;SmallBlade=2;Carving=1,
+    }
+
+    character_profession_definition eclzjobs:farmaceutico
+    {
+        CharacterProfession = eclzjobs:farmaceutico,
+        Cost = 2,
+        UIName = UI_prof_ECLZ_Farmaceutico,
+        UIDescription = UI_prof_ECLZ_FarmaceuticoDesc,
+        IconPathName = profession_farmaceutico,
+        XPBoosts = Cooking=2;Farming=1;Doctor=2;SmallBlade=1,
+    }
+
+    character_profession_definition eclzjobs:armero
+    {
+        CharacterProfession = eclzjobs:armero,
+        Cost = -3,
+        UIName = UI_prof_ECLZ_Armero,
+        UIDescription = UI_prof_ECLZ_ArmeroDesc,
+        IconPathName = profession_armero,
+        XPBoosts = Reloading=1;Maintenance=2;Aiming=1;SmallBlade=1;Blacksmith=1,
+    }
+
+    character_profession_definition eclzjobs:repartidor
+    {
+        CharacterProfession = eclzjobs:repartidor,
+        Cost = 0,
+        UIName = UI_prof_ECLZ_Repartidor,
+        UIDescription = UI_prof_ECLZ_RepartidorDesc,
+        IconPathName = profession_repartidor,
+        XPBoosts = Fitness=1;Sprinting=1;Nimble=1;Strength=1,
+    }
+
+    character_profession_definition eclzjobs:conserje
+    {
+        CharacterProfession = eclzjobs:conserje,
+        Cost = 2,
+        UIName = UI_prof_ECLZ_Conserje,
+        UIDescription = UI_prof_ECLZ_ConserjeDesc,
+        IconPathName = profession_conserje,
+        XPBoosts = Nimble=1;Maintenance=1;Electricity=1;Spear=1,
+    }
+
+    character_profession_definition eclzjobs:medicocombate
+    {
+        CharacterProfession = eclzjobs:medicocombate,
+        Cost = -4,
+        UIName = UI_prof_ECLZ_MedicoCombate,
+        UIDescription = UI_prof_ECLZ_MedicoCombateDesc,
+        IconPathName = profession_medicocombate,
+        XPBoosts = Doctor=2;SmallBlade=1;Aiming=1;Sprinting=1,
+    }
+
+    character_profession_definition eclzjobs:pueblerino
+    {
+        CharacterProfession = eclzjobs:pueblerino,
+        Cost = -9,
+        UIName = UI_prof_ECLZ_Pueblerino,
+        UIDescription = UI_prof_ECLZ_PueblerinoDesc,
+        IconPathName = profession_pueblerino,
+        XPBoosts = Aiming=1;Farming=1;Husbandry=1;Woodwork=1;PlantScavenging=1;Maintenance=1;Cooking=1,
+    }
+
+    character_profession_definition eclzjobs:tatuador
+    {
+        CharacterProfession = eclzjobs:tatuador,
+        Cost = 3,
+        UIName = UI_prof_ECLZ_Tatuador,
+        UIDescription = UI_prof_ECLZ_TatuadorDesc,
+        IconPathName = profession_tatuador,
+        XPBoosts = Doctor=1;Tailoring=1;Nimble=1;SmallBlade=1,
+    }
+}

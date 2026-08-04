@@ -1,0 +1,187 @@
+module TTRP
+{
+	imports
+	{
+		Base
+	}
+
+	item Forbidden_Splits_Card
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Forbidden_Twerk_Card
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item GirlypopTwerk
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Forbidden_T-Pose
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Forbidden_TPOSE
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Forbidden_Frey
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Forbidden_Restart
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item PinkGuy
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item SexySax
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item HurricaneKick
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item SpookyMonthDance
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Ascension
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item InfectedAnim1
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item InfectedCeilingCrawler
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Howler_Idle2
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Howler_Call
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Howler_Idle
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+
+	item Trickshot
+	{
+		Weight = 0.01,
+		ItemType = base:normal,
+		Tooltip = Tooltip_TTRPcard,
+		Icon = MagazineElectronics03,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+	}
+}

@@ -1,0 +1,182 @@
+module MarzGuns
+{
+    item 45Magazine30_THOMPSON
+    {
+        AmmoType         = marzguns:bullet_45,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 45Magazine30_THOMPSON,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 30,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.15,
+        WeightModifier   = 0.15,
+        StaticModel      = MarzGuns.45Magazine30_THOMPSON,
+        WorldStaticModel = MarzGuns.45Magazine30_THOMPSON,
+    }
+    item 45Magazine20_THOMPSON
+    {
+        AmmoType         = marzguns:bullet_45,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 45Magazine20_THOMPSON,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.45Magazine20_THOMPSON,
+        WorldStaticModel = MarzGuns.45Magazine20_THOMPSON,
+    }
+    item 45Magazine100_THOMPSON
+    {
+        AmmoType         = marzguns:bullet_45,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 45Magazine100_THOMPSON,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 100,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.35,
+        WeightModifier   = 0.35,
+        StaticModel      = MarzGuns.45Magazine100_THOMPSON,
+        WorldStaticModel = MarzGuns.45Magazine100_THOMPSON,
+    }
+    
+    item 9x19Magazine20_MP5
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine20_MP5,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.08,
+        WeightModifier   = 0.08,
+        StaticModel      = MarzGuns.9x19Magazine20_MP5,
+        WorldStaticModel = MarzGuns.9x19Magazine20_MP5,
+    }
+    item 9x19Magazine25_MP5
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine25_MP5,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 25,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.9x19Magazine25_MP5,
+        WorldStaticModel = MarzGuns.9x19Magazine25_MP5,
+    }
+    item 9x19Magazine30_MP5
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine30_MP5,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 30,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.18,
+        WeightModifier   = 0.18,
+        StaticModel      = MarzGuns.9x19Magazine30_MP5,
+        WorldStaticModel = MarzGuns.9x19Magazine30_MP5,
+    }
+    item 9x19Magazine60_MP5
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine60_MP5,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 60,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.22,
+        WeightModifier   = 0.22,
+        StaticModel      = MarzGuns.9x19Magazine60_MP5,
+        WorldStaticModel = MarzGuns.9x19Magazine60_MP5,
+    }
+    item 9x19Magazine100_MP5
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine100_MP5,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 100,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.33,
+        WeightModifier   = 0.33,
+        StaticModel      = MarzGuns.9x19Magazine100_MP5,
+        WorldStaticModel = MarzGuns.9x19Magazine100_MP5,
+    }
+    
+    item 9x19Magazine20_TEC9
+    {
+        AmmoType         = marzguns:bullet_9x19,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 9x19Magazine20_TEC9,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.9x19Magazine20_TEC9,
+        WorldStaticModel = MarzGuns.9x19Magazine20_TEC9,
+    }
+    
+    item 45Magazine30_MAC10
+    {
+        AmmoType         = marzguns:bullet_45,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 45Magazine30_MAC10,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 30,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.45Magazine30_MAC10,
+        WorldStaticModel = MarzGuns.45Magazine30_MAC10,
+    }
+    item 45Magazine40_MAC10
+    {
+        AmmoType         = marzguns:bullet_45,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 45Magazine40_MAC10,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 40,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        StaticModel      = MarzGuns.45Magazine40_MAC10,
+        WorldStaticModel = MarzGuns.45Magazine40_MAC10,
+    }
+}

@@ -1,0 +1,6 @@
+version=1
+id=3755505534
+title=ECZChat
+description=Mod para la comunidad roleplay EclipseZ
+tags=Build 42
+visibility=public

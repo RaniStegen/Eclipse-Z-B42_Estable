@@ -1,0 +1,7 @@
+{
+    "Sandbox_TTRP Poses": "Poses de TTRP",
+    "Sandbox_ToggleGhosting": "Activar modo fantasma durante las poses",
+    "Sandbox_ToggleGhosting_tooltip": "Activa el modo fantasma para evitar colisiones entre jugadores mientras posan. Facilita la colocación de poses en pareja.",
+    "Sandbox_GhostToggleRange": "Distancia para desactivar el modo fantasma",
+    "Sandbox_GhostToggleRange_tooltip": "Cuando el modo fantasma durante las poses está activado, establece a qué distancia de los zombis se desactiva automáticamente. La distancia se expresa en casillas."
+}

@@ -1,0 +1,14 @@
+{
+    "OpenBoxOf50Bullets": "Abrir caja (50 cartuchos)",
+    "OpenBoxOf20Bullets": "Abrir caja (20 cartuchos)",
+    "OpenBoxOf25Bullets": "Abrir caja (25 cartuchos)",
+    "OpenBoxOf10Bullets": "Abrir caja (10 cartuchos)",
+    "place50BulletsInBox": "Guardar munición en una caja (50 cartuchos)",
+    "place20BulletsInBox": "Guardar munición en una caja (20 cartuchos)",
+    "place25BulletsInBox": "Guardar munición en una caja (25 cartuchos)",
+    "place10BulletsInBox": "Guardar munición en una caja (10 cartuchos)",
+    "OpenCartonOfBoxesOfAmmo": "Abrir paquete de cajas de munición",
+    "PlaceBoxesOfAmmoInCarton": "Guardar cajas de munición en un paquete",
+    "OpenCrateOfBoxesOfAmmo": "Abrir cajón de cajas de munición",
+    "PlaceBoxesOfAmmoInCrates": "Guardar cajas de munición en un cajón"
+}

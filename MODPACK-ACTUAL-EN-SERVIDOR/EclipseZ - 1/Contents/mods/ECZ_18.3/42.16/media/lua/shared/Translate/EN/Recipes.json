@@ -1,0 +1,17 @@
+{
+  "OpenBoxOf50Bullets": "Open Box (50 Bullets)",
+  "OpenBoxOf20Bullets": "Open Box (20 Bullets)",
+  "OpenBoxOf25Bullets": "Open Box (25 Bullets)",
+  "OpenBoxOf10Bullets": "Open Box (10 Bullets)",
+
+  "place50BulletsInBox": "Pack Ammo in Box (50 Bullets)",
+  "place20BulletsInBox": "Pack Ammo in Box (20 Bullets)",
+  "place25BulletsInBox": "Pack Ammo in Box (25 Bullets)",
+  "place10BulletsInBox": "Pack Ammo in Box (10 Bullets)",
+
+  "OpenCartonOfBoxesOfAmmo": "Open Carton of Ammo Boxes",
+  "PlaceBoxesOfAmmoInCarton": "Place Ammo Boxes in Carton",
+
+  "OpenCrateOfBoxesOfAmmo": "Open Crate of Ammo Boxes",
+  "PlaceBoxesOfAmmoInCrates": "Place Ammo Boxes in Crate"
+}
