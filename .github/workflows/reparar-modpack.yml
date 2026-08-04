@@ -1,0 +1,43 @@
+name: Reparar modpack
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/reparar_modpack.py"
+      - ".github/workflows/reparar-modpack.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  reparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Descargar rama
+        uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 1
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Aplicar reparaciones
+        run: python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/reparar_modpack.py
+
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No hay cambios pendientes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Reparar hallazgos automáticos del modpack [skip ci]"
+          git push origin HEAD:agent/auditoria-modpack-b42-20
