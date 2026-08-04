@@ -83,6 +83,13 @@ jobs:
             --self-test \
             --output "$RUNNER_TEMP/runtime_selftest"
 
+      - name: Diagnosticar lag y coste por mod
+        id: lag
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/diagnosticar_lag_servidor.py \
+            --output "$RUNNER_TEMP/diagnostico_lag_servidor"
+
       - name: Publicar informe general
         if: always()
         uses: actions/upload-artifact@v4
@@ -119,6 +126,16 @@ jobs:
             ${{ runner.temp }}/manifest_github.json
           if-no-files-found: error
 
+      - name: Publicar diagnóstico de lag
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-lag-servidor
+          path: |
+            ${{ runner.temp }}/diagnostico_lag_servidor.json
+            ${{ runner.temp }}/diagnostico_lag_servidor.md
+          if-no-files-found: error
+
       - name: Resultado de las auditorías
         if: always()
         run: |
@@ -127,7 +144,8 @@ jobs:
              [ "${{ steps.guid.outcome }}" != "success" ] || \
              [ "${{ steps.parte3_final.outcome }}" != "success" ] || \
              [ "${{ steps.manifest.outcome }}" != "success" ] || \
-             [ "${{ steps.runtime.outcome }}" != "success" ]; then
+             [ "${{ steps.runtime.outcome }}" != "success" ] || \
+             [ "${{ steps.lag.outcome }}" != "success" ]; then
             echo "Una o varias auditorías efectivas han detectado errores."
             exit 1
           fi
