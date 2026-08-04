@@ -19,11 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Localizar Version.lua y referencias
+      - name: Localizar Version.lua, metadatos y requisitos
         run: |
           mkdir -p "$RUNNER_TEMP/diag"
-          find "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_6.1" -type f -iname 'Version.lua' -print > "$RUNNER_TEMP/diag/rutas.txt"
-          grep -RIn --include='*.lua' 'getModVersion' "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_6.1" > "$RUNNER_TEMP/diag/getModVersion.txt" || true
+          MODROOT="MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_6.1"
+          find "$MODROOT" -type f -iname 'Version.lua' -print > "$RUNNER_TEMP/diag/rutas.txt"
+          grep -RIn --include='*.lua' 'getModVersion' "$MODROOT" > "$RUNNER_TEMP/diag/getModVersion.txt" || true
+          find "$MODROOT" -type f -iname 'mod.info' -print -exec sh -c 'echo "### $1"; cat "$1"' _ {} \; > "$RUNNER_TEMP/diag/modinfos.txt"
+          grep -RIn --include='*.lua' -E 'Starlit.*ensureVersion|ensureVersion\(' MODPACK-ACTUAL-EN-SERVIDOR > "$RUNNER_TEMP/diag/ensureVersion_usos.txt" || true
+          grep -RIn --include='*.lua' -E 'require\(["'"']Starlit/Version["'"']\)' MODPACK-ACTUAL-EN-SERVIDOR > "$RUNNER_TEMP/diag/version_requires.txt" || true
           while IFS= read -r file; do
             safe=$(echo "$file" | tr '/ ' '__')
             cp "$file" "$RUNNER_TEMP/diag/${safe}"
