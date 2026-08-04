@@ -30,12 +30,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Auditar modpack
+      - name: Auditar modpack general
+        id: general
+        continue-on-error: true
         run: |
           python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modpack_v2.py \
             --output "$RUNNER_TEMP/resultado_auditoria"
 
-      - name: Publicar informe
+      - name: Parte 2 - revisar mod.info, dependencias y versiones
+        id: modinfo
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modinfo_versiones.py \
+            --output "$RUNNER_TEMP/resultado_modinfo_versiones"
+
+      - name: Publicar informe general
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -44,3 +53,22 @@ jobs:
             ${{ runner.temp }}/resultado_auditoria.json
             ${{ runner.temp }}/resultado_auditoria.md
           if-no-files-found: warn
+
+      - name: Publicar informe de la Parte 2
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parte-2-modinfo-versiones
+          path: |
+            ${{ runner.temp }}/resultado_modinfo_versiones.json
+            ${{ runner.temp }}/resultado_modinfo_versiones.md
+            ${{ runner.temp }}/resultado_modinfo_versiones_Mods.txt
+          if-no-files-found: error
+
+      - name: Resultado de las auditorías
+        if: always()
+        run: |
+          if [ "${{ steps.general.outcome }}" != "success" ] || [ "${{ steps.modinfo.outcome }}" != "success" ]; then
+            echo "Una o ambas auditorías han detectado errores."
+            exit 1
+          fi
