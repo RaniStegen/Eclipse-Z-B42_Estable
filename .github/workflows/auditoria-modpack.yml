@@ -32,7 +32,7 @@ jobs:
 
       - name: Auditar modpack
         run: |
-          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modpack.py \
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modpack_v2.py \
             --output "$RUNNER_TEMP/resultado_auditoria"
 
       - name: Publicar informe
