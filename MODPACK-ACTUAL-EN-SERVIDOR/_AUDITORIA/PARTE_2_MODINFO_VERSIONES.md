@@ -2,14 +2,20 @@
 
 Revisión realizada contra Project Zomboid Build **42.20.0** y contra la línea `Mods=` de referencia del servidor.
 
+## Alcance correcto
+
+El repositorio contiene el modpack propio de Eclipse-Z. `NewMusic` y `eclipsemusic` son dependencias externas independientes, instaladas mediante sus propios Workshop Items. Deben continuar en `WorkshopItems=` y `Mods=`, pero no se espera que sus carpetas estén dentro de `MODPACK-ACTUAL-EN-SERVIDOR`.
+
 ## Cobertura
 
 - 78 entradas de `Mods=` comparadas.
-- 5 paquetes Workshop presentes revisados.
-- 76 carpetas de mods revisadas.
-- 92 archivos `mod.info` analizados.
+- 76 IDs internos revisados.
+- 2 IDs externos reconocidos: `NewMusic` y `eclipsemusic`.
+- 5 paquetes Workshop internos presentes revisados.
+- 2 Workshop Items externos declarados.
+- 76 carpetas internas de mods revisadas.
+- 92 archivos `mod.info` internos analizados.
 - 80 carpetas numéricas de versión comprobadas.
-- 76 IDs activos detectados.
 
 ## Correcciones aplicadas
 
@@ -18,20 +24,15 @@ Revisión realizada contra Project Zomboid Build **42.20.0** y contra la línea 
 3. La auditoría acepta correctamente `pack=`, `tiledef=`, `require=` y los campos de orden como claves multivalor válidas; no se ha eliminado ninguna declaración de tiles o packs.
 4. La estructura de `ECZ_9`, con metadata en `common/mod.info` y contenido versionado en `42.0`, se considera válida para la arquitectura versionada de Build 42.
 5. Se han validado IDs, nombres, dependencias, capitalización, orden, versiones compatibles, versiones futuras, assets declarados y duplicados entre carpetas.
+6. Los auditores distinguen ahora entre contenido interno y dependencias externas, evitando falsos errores por la ausencia deliberada de `NewMusic` y `eclipsemusic` dentro del repositorio.
 
 ## Resultado final
 
-- **0 errores** en los 76 mods presentes.
-- **0 advertencias** en los 76 mods presentes.
-- La línea de carga ya respeta todas las dependencias detectadas.
+- **0 errores** en los 76 mods internos.
+- **0 advertencias** en los 76 mods internos.
+- Las dos dependencias externas están correctamente representadas en la configuración, sin exigir carpeta ni `mod.info` dentro del repositorio.
+- La línea de carga respeta todas las dependencias internas detectadas.
 - `ECZ_Mods;ECZ_Idioma` permanece como final protegido.
-
-Quedan fuera de la validación únicamente dos IDs incluidos en el servidor pero no subidos al repositorio:
-
-- `NewMusic`
-- `eclipsemusic`
-
-No pueden revisarse sus `mod.info`, dependencias ni carpetas de versión hasta que sus paquetes completos estén dentro de `MODPACK-ACTUAL-EN-SERVIDOR`.
 
 ## Línea Mods= corregida
 
