@@ -1,0 +1,5 @@
+Revalidación de la Parte 3 después de aplicar:
+- compatibilidad de recetas y etiquetas;
+- corrección de GUID de fileGuidTable;
+- corrección de GUID de outfits;
+- referencia separada de camiseta/pantalón de AuthenticKilla.
