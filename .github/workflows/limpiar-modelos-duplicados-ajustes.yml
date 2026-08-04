@@ -1,0 +1,43 @@
+name: Limpiar modelos duplicados de Ajustes
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/eliminar_modelos_duplicados_ajustes.py"
+      - ".github/workflows/limpiar-modelos-duplicados-ajustes.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Eliminar únicamente duplicados exactos
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/eliminar_modelos_duplicados_ajustes.py
+
+      - name: Guardar limpieza en la rama
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No hay cambios que guardar."
+          else
+            git commit -m "Eliminar 402 modelos duplicados de ECZ2_Ajustes"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
