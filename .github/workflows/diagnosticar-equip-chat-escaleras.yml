@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   diagnosticar:
@@ -21,7 +21,8 @@ jobs:
       - name: Recoger fuentes relacionadas
         run: |
           set -euo pipefail
-          OUT="$RUNNER_TEMP/diagnostico"
+          OUT="MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_EQUIP_CHAT_ESCALERAS"
+          rm -rf "$OUT"
           mkdir -p "$OUT/archivos"
           find MODPACK-ACTUAL-EN-SERVIDOR -type f \( \
             -iname 'ECZChat_Config.lua' -o \
@@ -38,9 +39,14 @@ jobs:
           grep -RIn --include='*.lua' --include='*.txt' -E \
             'localizeSystemText|Item \(\.%-\)|Added in|BuildRecipeCode\.stairs|stairs[TBM][NW]|BodyLocations\.reset|fixtures_stairs_01_(0|1|2|8|9|10|80|81|82|88|89|90)' \
             MODPACK-ACTUAL-EN-SERVIDOR > "$OUT/COINCIDENCIAS.txt" || true
-      - uses: actions/upload-artifact@v4
-        with:
-          name: diagnostico-equip-chat-escaleras
-          path: ${{ runner.temp }}/diagnostico
-          if-no-files-found: error
-          retention-days: 7
+      - name: Guardar diagnóstico temporal
+        run: |
+          git config user.name "Eclipse-Z Diagnóstico"
+          git config user.email "actions@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_EQUIP_CHAT_ESCALERAS
+          if git diff --cached --quiet; then
+            echo "Diagnóstico sin cambios."
+          else
+            git commit -m "Diagnóstico temporal de equipamiento, chat y escaleras"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
