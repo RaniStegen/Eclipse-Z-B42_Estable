@@ -94,7 +94,10 @@ def restore_missing_workshop_packages(changes: list[str]) -> None:
     for item_id in sorted(missing):
         choices = sorted(candidates[item_id], key=lambda p: (len(p.parts), p.as_posix()))
         if not choices:
-            raise RuntimeError(f"No se encontró una copia fuente del Workshop Item {item_id}")
+            changes.append(
+                f"PENDIENTE: el Workshop Item {item_id} no existe en ninguna otra carpeta del repositorio"
+            )
+            continue
         source = choices[0]
         destination = MODPACK_ROOT / source.name
         if destination.exists():
@@ -179,8 +182,6 @@ def apply_known_json_fixes(changes: list[str]) -> None:
             write_json(path, data)
             changes.append(f"Traducción reparada: {relative} ({', '.join(changed_keys)})")
 
-    # La corrección temporal deja de ser necesaria al quedar arreglados los
-    # archivos de origen.
     temporary_override = (
         MODPACK_ROOT
         / "ECZTraducciones/Contents/mods/ECZ_Mods/42.20.0/media/lua/shared/Translate/ES/ZZZZ_ECZ_EncodingCorrections.json"
