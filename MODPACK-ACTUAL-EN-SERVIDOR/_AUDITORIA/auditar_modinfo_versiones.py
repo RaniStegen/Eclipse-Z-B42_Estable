@@ -9,6 +9,7 @@ from typing import Any
 VER = re.compile(r"^\d+(?:\.\d+)*$")
 VALID_ID = re.compile(r"^[A-Za-z0-9_.-]+$")
 DEP_KEYS = ("require", "requires", "requiredMods")
+MULTI_KEYS = {"pack", "tiledef", "require", "requires", "requiredMods", "loadModAfter", "loadModBefore"}
 
 @dataclass
 class Finding:
@@ -105,13 +106,12 @@ def audit(root:Path,cfg):
         modsdir=package/"Contents"/"mods"
         if not modsdir.is_dir():continue
         for modroot in sorted(p for p in modsdir.iterdir() if p.is_dir()):
-            versions=[];future=[];compatible=[];malformed=[]
+            versions=[];future=[];compatible=[];malformed=[];version_without_info=[]
             for child in sorted(p for p in modroot.iterdir() if p.is_dir()):
                 if VER.fullmatch(child.name):
                     versions.append(child.name)
                     (compatible if leq(child.name,build) else future).append(child.name)
-                    if not (child/"mod.info").is_file():
-                        findings.append(Finding("error","VERSION_WITHOUT_MODINFO",f"{child.name} no contiene mod.info.",rel(child,root),modroot.name))
+                    if not (child/"mod.info").is_file():version_without_info.append(child)
                 elif child.name and child.name[0].isdigit():
                     malformed.append(child.name)
                     findings.append(Finding("warning","VERSION_FOLDER_MALFORMED",f"Carpeta de versión no numérica: {child.name}.",rel(child,root),modroot.name))
@@ -124,7 +124,8 @@ def audit(root:Path,cfg):
                 item={"path":rel(p,root),"kind":kind,"version":version,"ids":ids,"names":names,"deps":ds,"rawdeps":rawdeps,"fields":fields}
                 infos.append(item)
                 if enc!="utf-8":findings.append(Finding("warning","MODINFO_ENCODING",f"Codificación {enc}; se recomienda UTF-8.",item["path"],modroot.name))
-                if dupes:findings.append(Finding("error","MODINFO_DUPLICATE_KEYS",f"Claves repetidas: {', '.join(dupes)}.",item["path"],modroot.name))
+                bad_dupes=[k for k in dupes if k not in MULTI_KEYS]
+                if bad_dupes:findings.append(Finding("error","MODINFO_DUPLICATE_KEYS",f"Claves no multivalor repetidas: {', '.join(bad_dupes)}.",item["path"],modroot.name))
                 if len(ids)!=1:findings.append(Finding("error","MODINFO_ID_COUNT","Debe existir un único id=.",item["path"],modroot.name,{"ids":ids}))
                 if len(names)!=1 or not names[0]:findings.append(Finding("error","MODINFO_NAME_COUNT","Debe existir un único name= no vacío.",item["path"],modroot.name,{"names":names}))
                 for i in ids:
@@ -137,6 +138,9 @@ def audit(root:Path,cfg):
                         value=vals[-1]
                         if not ((p.parent/value).is_file() or (modroot/value).is_file()):
                             findings.append(Finding("warning","ASSET_MISSING",f"{asset}={value} no existe.",item["path"],ids[-1] if ids else modroot.name))
+            has_generic=any(x["kind"] in ("root","common") for x in infos)
+            for missing_version in version_without_info:
+                if not has_generic:findings.append(Finding("error","VERSION_WITHOUT_MODINFO",f"{missing_version.name} no contiene mod.info ni existe metadata raíz/common.",rel(missing_version,root),modroot.name))
             selected=choose(infos,build); active_id=None
             if selected and len(selected["ids"])==1:
                 active_id=selected["ids"][0];active[active_id].append(rel(modroot,root));depmap[active_id]=selected["deps"]
