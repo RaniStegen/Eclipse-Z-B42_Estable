@@ -1,6 +1,9 @@
 name: Diagnosticar escalera concisa
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - agent/auditoria-modpack-b42-20
@@ -28,7 +31,7 @@ jobs:
             echo "# Archivos cuyo nombre parece relacionado"
             find "$ROOT" -type f | grep -Ei '(stair|escaler)' || true
             echo
-            echo "# Definiciones de Neat Building relacionadas con suelo/escalera"
+            echo "# Archivos del paquete ECZ3_3"
             find "$ROOT/EclipseZ - 3/Contents/mods/ECZ3_3" -type f -print 2>/dev/null | sort || true
           } > "$OUT"
           wc -l "$OUT"
