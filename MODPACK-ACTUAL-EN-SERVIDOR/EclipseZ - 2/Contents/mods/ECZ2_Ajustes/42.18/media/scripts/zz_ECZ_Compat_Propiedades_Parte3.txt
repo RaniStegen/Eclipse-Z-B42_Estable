@@ -1,0 +1,44 @@
+/**
+ * ECZ Parte 3 — resolución explícita de propiedades no acumulables.
+ * ECZ2_Ajustes se carga después de los mods de origen.
+ */
+
+module SapphCooking
+{
+    item FryBatter
+    {
+        Icon = FryBatterIcon,
+    }
+
+    item VegetableBroth
+    {
+        ReplaceOnUse = Base.BottleCrafted,
+        HungerChange = -20,
+        Calories = 800,
+    }
+}
+
+module Base
+{
+    item FountainCupWater
+    {
+        primaryAnimMask = HoldingAngleTorchRight,
+        secondaryAnimMask = HoldingAngleTorchLeft,
+    }
+}
+
+module VFX
+{
+    item SlicedPotato
+    {
+        ThirstChange = -3.0,
+    }
+}
+
+module AuthenticZClothing
+{
+    item AuthenticGlowstick_Red
+    {
+        ItemType = base:Normal,
+    }
+}
