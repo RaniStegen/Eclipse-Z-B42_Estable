@@ -151,7 +151,9 @@ Estos tamaños afectan sobre todo a descarga, verificación, almacenamiento y me
 
 ## Validación
 
-La auditoría completa de la rama termina correctamente después de aplicar las correcciones. Sigue pendiente la única comprobación que no puede hacerse de forma estática: desplegar en el servidor real, regenerar `map_zone.bin` y ejecutar `PARTE_4_PRUEBA_LAG_CATHAYA.md` con dos clientes.
+La auditoría completa de la rama termina correctamente después de aplicar las correcciones. Esto confirma la coherencia estática, las dependencias, los hashes y la ausencia de los duplicados detectados, pero **no demuestra todavía el comportamiento real del servidor**.
+
+Sigue pendiente desplegar en producción, regenerar `map_zone.bin` y ejecutar `PARTE_4_PRUEBA_LAG_CATHAYA.md` con dos clientes.
 
 El resultado se considerará confirmado cuando:
 
