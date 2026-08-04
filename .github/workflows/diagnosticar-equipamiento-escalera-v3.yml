@@ -1,0 +1,174 @@
+name: Diagnosticar equipamiento y escalera v3
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/diagnosticar-equipamiento-escalera-v3.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Analizar registros corporales, objetos y escalera
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          from pathlib import Path
+          import json, re, hashlib
+
+          root = Path('MODPACK-ACTUAL-EN-SERVIDOR')
+          out_dir = root / '_AUDITORIA' / 'TEMP_DIAGNOSTICO_EQUIPAMIENTO_ESCALERA_V3'
+          out_dir.mkdir(parents=True, exist_ok=True)
+
+          text_exts = {'.lua', '.txt', '.xml', '.json', '.md'}
+          files = [p for p in root.rglob('*') if p.is_file() and p.suffix.lower() in text_exts]
+
+          def read_text(path: Path) -> str:
+              data = path.read_bytes()
+              for enc in ('utf-8-sig', 'utf-8', 'cp1252', 'latin-1'):
+                  try:
+                      return data.decode(enc)
+                  except UnicodeDecodeError:
+                      pass
+              return data.decode('utf-8', errors='replace')
+
+          body_hits = []
+          item_hits = []
+          stair_hits = []
+          suspicious = []
+
+          body_rx = re.compile(r'BodyLocations|ItemBodyLocation|BodyLocation|moveLocationToIndex|setExclusive|setHideModel|setAltModel', re.I)
+          item_rx = re.compile(r'\b(?:Watch|WristWatch|DigitalWatch|FannyPack|BeltBag|WaistBag|Riñonera|Rinonera)\b', re.I)
+          stair_rx = re.compile(r'Wood_ConciseStairs|Welding_ConciseStairs|fixtures_stairs_01_(?:0|1|2|8|9|10|80|81|82|88|89|90)\b|BuildRecipeCode\.stairs|ConciseStairs', re.I)
+
+          for path in files:
+              text = read_text(path)
+              rel = path.as_posix()
+              lines = text.splitlines()
+
+              for i, line in enumerate(lines, 1):
+                  if body_rx.search(line):
+                      body_hits.append({'file': rel, 'line': i, 'text': line[:1000]})
+                  if item_rx.search(line):
+                      item_hits.append({'file': rel, 'line': i, 'text': line[:1000]})
+                  if stair_rx.search(line):
+                      stair_hits.append({'file': rel, 'line': i, 'text': line[:1000]})
+
+              lower = text.lower()
+              checks = {
+                  'BodyLocations.reset': 'bodylocations.reset' in lower,
+                  'moveLocationToIndex': 'movelocationtoindex' in lower,
+                  'BodyLocations.getAllGroups': 'bodylocations.getallgroups' in lower,
+                  'group replacement': bool(re.search(r'BodyLocations\s*=|BodyAPI\s*=', text)),
+                  'global sprite setType': bool(re.search(r'getSprite\s*\([^\n]+\)\s*[:\.]\s*setType|sprite\s*:\s*setType', text)),
+                  'LoadGridsquare': 'loadgridsquare' in lower,
+              }
+              if any(checks.values()):
+                  suspicious.append({'file': rel, 'checks': checks, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
+
+          # Extract complete item blocks for likely vanilla wearables overridden by mods.
+          wearable_blocks = []
+          item_block_rx = re.compile(r'(?ms)^\s*item\s+([A-Za-z0-9_:.\-]+)\s*\{(.*?)^\s*\}')
+          for path in files:
+              if path.suffix.lower() != '.txt':
+                  continue
+              text = read_text(path)
+              for match in item_block_rx.finditer(text):
+                  name = match.group(1)
+                  block = match.group(0)
+                  if re.search(r'Watch|Wrist|Digital|Fanny|BeltBag|WaistBag', name, re.I) or re.search(r'BodyLocation\s*=\s*(?:LeftWrist|RightWrist|FannyPack|BeltExtra)', block, re.I):
+                      wearable_blocks.append({'file': path.as_posix(), 'item': name, 'block': block[:12000]})
+
+          # Copy full high-value files into the diagnostic directory.
+          copied = []
+          high_value_names = {
+              'AuthenticZ_BodyLocations.lua',
+              'KATTAJ1_ExtraBodyLocations.lua',
+              'BodyLocations_Helper.lua',
+              'BodyLocations_Setup.lua',
+              'NB_ConciseStairs_B42_20.lua',
+              'entity_wood_concisestairs.txt',
+              'entity_welding_concisestairs.txt',
+          }
+          for path in root.rglob('*'):
+              if path.is_file() and path.name in high_value_names:
+                  target = out_dir / 'archivos' / path.relative_to(root)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(path.read_bytes())
+                  copied.append(path.as_posix())
+
+          result = {
+              'body_hits': body_hits,
+              'item_hits': item_hits,
+              'stair_hits': stair_hits,
+              'suspicious_files': suspicious,
+              'wearable_blocks': wearable_blocks,
+              'copied_files': copied,
+              'counts': {
+                  'body_hits': len(body_hits),
+                  'item_hits': len(item_hits),
+                  'stair_hits': len(stair_hits),
+                  'suspicious_files': len(suspicious),
+                  'wearable_blocks': len(wearable_blocks),
+                  'copied_files': len(copied),
+              },
+          }
+          (out_dir / 'diagnostico.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+
+          md = []
+          md.append('# Diagnóstico de equipamiento y escalera v3')
+          md.append('')
+          md.append('## Conteos')
+          for key, value in result['counts'].items():
+              md.append(f'- **{key}:** {value}')
+          md.append('')
+          md.append('## Archivos sospechosos')
+          for row in suspicious:
+              active = ', '.join(k for k, v in row['checks'].items() if v)
+              md.append(f"- `{row['file']}` — {active}")
+          md.append('')
+          md.append('## Bloques de objetos equipables')
+          for row in wearable_blocks:
+              md.append(f"### `{row['item']}` — `{row['file']}`")
+              md.append('```text')
+              md.append(row['block'])
+              md.append('```')
+          md.append('')
+          md.append('## Coincidencias corporales')
+          for row in body_hits:
+              md.append(f"- `{row['file']}:{row['line']}` — `{row['text'].replace('`', "'")}`")
+          md.append('')
+          md.append('## Coincidencias de escalera')
+          for row in stair_hits:
+              md.append(f"- `{row['file']}:{row['line']}` — `{row['text'].replace('`', "'")}`")
+          (out_dir / 'diagnostico.md').write_text('\n'.join(md) + '\n', encoding='utf-8')
+          print(json.dumps(result['counts'], indent=2))
+          PY
+
+      - name: Guardar diagnóstico en la rama
+        run: |
+          git config user.name "Eclipse-Z Diagnóstico"
+          git config user.email "actions@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_EQUIPAMIENTO_ESCALERA_V3
+          if git diff --cached --quiet; then
+            echo "Diagnóstico sin cambios."
+          else
+            git commit -m "Diagnosticar equipamiento y escalera concisa v3"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
