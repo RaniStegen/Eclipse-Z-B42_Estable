@@ -1,0 +1,32 @@
+name: Diagnosticar ECZ_6.1 Version
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/diagnosticar-ecz61-version.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Localizar Version.lua y referencias
+        run: |
+          mkdir -p "$RUNNER_TEMP/diag"
+          find "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_6.1" -type f -iname 'Version.lua' -print > "$RUNNER_TEMP/diag/rutas.txt"
+          grep -RIn --include='*.lua' 'getModVersion' "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_6.1" > "$RUNNER_TEMP/diag/getModVersion.txt" || true
+          while IFS= read -r file; do
+            safe=$(echo "$file" | tr '/ ' '__')
+            cp "$file" "$RUNNER_TEMP/diag/${safe}"
+          done < "$RUNNER_TEMP/diag/rutas.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-ecz61-version
+          path: ${{ runner.temp }}/diag
+          if-no-files-found: error
