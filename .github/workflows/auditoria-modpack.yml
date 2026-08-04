@@ -1,0 +1,46 @@
+name: Auditoría del modpack
+
+on:
+  push:
+    branches:
+      - main
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/**"
+      - ".github/workflows/auditoria-modpack.yml"
+  pull_request:
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/**"
+      - ".github/workflows/auditoria-modpack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Auditar modpack
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modpack.py \
+            --output "$RUNNER_TEMP/resultado_auditoria"
+
+      - name: Publicar informe
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-modpack
+          path: |
+            ${{ runner.temp }}/resultado_auditoria.json
+            ${{ runner.temp }}/resultado_auditoria.md
+          if-no-files-found: warn
