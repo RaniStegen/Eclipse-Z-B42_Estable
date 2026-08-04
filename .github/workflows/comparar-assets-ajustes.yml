@@ -1,0 +1,36 @@
+name: Comparar assets de Ajustes
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/comparar_assets_ecz2_18_ajustes.py"
+      - ".github/workflows/comparar-assets-ajustes.yml"
+  pull_request:
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/comparar_assets_ecz2_18_ajustes.py"
+      - ".github/workflows/comparar-assets-ajustes.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  comparar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/comparar_assets_ecz2_18_ajustes.py \
+            --output "$RUNNER_TEMP/comparacion_assets_ecz2_18_ajustes"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: comparacion-assets-ajustes
+          path: |
+            ${{ runner.temp }}/comparacion_assets_ecz2_18_ajustes.json
+            ${{ runner.temp }}/comparacion_assets_ecz2_18_ajustes.md
+          if-no-files-found: error
