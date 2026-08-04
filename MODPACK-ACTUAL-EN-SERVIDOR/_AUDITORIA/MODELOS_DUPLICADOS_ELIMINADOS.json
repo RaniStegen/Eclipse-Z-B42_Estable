@@ -1,0 +1,2021 @@
+{
+  "source": "EclipseZ - 2/Contents/mods/ECZ2_18/42/media",
+  "target": "EclipseZ - 2/Contents/mods/ECZ2_Ajustes/42.18/media",
+  "removed_files": 402,
+  "removed_bytes": 230671000,
+  "skipped_files": 0,
+  "removed": [
+    {
+      "path": "anims_X/bob/bob_idlesmoke.fbx",
+      "sha256": "1c38bb27ae08ae9137837d296cfd0d267891040f0d6ff30689a317dcfde5250c",
+      "bytes": 685692
+    },
+    {
+      "path": "anims_X/bob/bttb_flute.fbx",
+      "sha256": "a8d0cbce79f33001365a59e700f064df4ad16e350c6348ba265b91e3d9033a90",
+      "bytes": 585916
+    },
+    {
+      "path": "anims_X/bob/bttb_harmonica.fbx",
+      "sha256": "37411da6d36564efb38ad9647184f77f450dd05e85c48c61af28af7a093fd7ae",
+      "bytes": 595484
+    },
+    {
+      "path": "anims_X/bob/bttb_keytar.fbx",
+      "sha256": "ea0d15243ef7e9d08696e8f167608f86d81c2d207fb286e0378cead8b482b706",
+      "bytes": 576748
+    },
+    {
+      "path": "anims_X/bob/bttb_saxplaying1.fbx",
+      "sha256": "2e221f84c577a5416438ec9ec19af623e9a5d870c8344b309938fd0a0b05bc99",
+      "bytes": 617612
+    },
+    {
+      "path": "anims_X/bob/bttb_saxplaying2.fbx",
+      "sha256": "fc3556e8a8a72e00df793553eebf9156d03fc12857bcddd74da1c3e3590886c4",
+      "bytes": 586012
+    },
+    {
+      "path": "anims_X/bob/bttb_strumming.fbx",
+      "sha256": "feb5a28b12b6357c754d23cf7cf0569eba2cf86d2f3807dbf1c8f9d7498dd08d",
+      "bytes": 583372
+    },
+    {
+      "path": "anims_X/bob/bttb_violin.fbx",
+      "sha256": "53c49f3201cb20fb399cbe2ade0bf9ce47de2073ca7ba85406ce2c04c3aa687a",
+      "bytes": 580252
+    },
+    {
+      "path": "anims_X/bob/ttrp-1hwep-composed.fbx",
+      "sha256": "b2a91ae58b2422e20a2bd0287fac4f448c692f3f1205fe7771d3b81be00beb8b",
+      "bytes": 579276
+    },
+    {
+      "path": "anims_X/bob/ttrp_1hshield.fbx",
+      "sha256": "3b833d6f39f67659e71b4fcf45dd36b85fe99df597c1e6f585c9b79a6aeb0db7",
+      "bytes": 582220
+    },
+    {
+      "path": "anims_X/bob/ttrp_2haurarest.fbx",
+      "sha256": "2cd4f9c023fa1ab89fcfe9b71ccc2f9c941fe5a4ed033c919874d7de8daa0915",
+      "bytes": 574396
+    },
+    {
+      "path": "anims_X/bob/ttrp_2hweaponinground.fbx",
+      "sha256": "ddccf121f25ad4c1c105667324c63808257218fb24b75155d6f294cfa83217c5",
+      "bytes": 574876
+    },
+    {
+      "path": "anims_X/bob/ttrp_2hweaponingroundbig.fbx",
+      "sha256": "a559b48478f070ca6051a0ec6fe4d62684a016068258cd90709d9eaf2768bafb",
+      "bytes": 573932
+    },
+    {
+      "path": "anims_X/bob/ttrp_accost.fbx",
+      "sha256": "e1204964350c07b006d269d39e9c4b1041cec3a4b2fc63be56cf47ab660dbf33",
+      "bytes": 431228
+    },
+    {
+      "path": "anims_X/bob/ttrp_airdrummingwalk.fbx",
+      "sha256": "6a96cef7ed50778cb9b1f12d272934ee2481149e4c7d8989b93187d90a35bf2c",
+      "bytes": 559436
+    },
+    {
+      "path": "anims_X/bob/ttrp_anton.fbx",
+      "sha256": "041dbfa5f5cc7bb64fd0e8c488748f5b3b941c6b1b92e0c6d5005ceabb953496",
+      "bytes": 573820
+    },
+    {
+      "path": "anims_X/bob/ttrp_apemode.fbx",
+      "sha256": "8e18c384eb693482ac18ae82c2eac3b545dc328e8248cae8c2f1a7cf9d7513cc",
+      "bytes": 579852
+    },
+    {
+      "path": "anims_X/bob/ttrp_arm-around-other1.fbx",
+      "sha256": "ecf6e46a9a679ba015bd52bd8b6c5d43a10bb31e12aa9e87cd5a73cbc1ee4860",
+      "bytes": 582412
+    },
+    {
+      "path": "anims_X/bob/ttrp_arm-around-other2.fbx",
+      "sha256": "33c1a00d3a4864f511b20187f3d22e0f45aa0c4467c0770f4c1f76a07a0d8d1b",
+      "bytes": 577532
+    },
+    {
+      "path": "anims_X/bob/ttrp_arm-around-two.fbx",
+      "sha256": "aa0668f7f27960e44315b331350fef2ffa6f00f6f7f83effe9111e1dd484b399",
+      "bytes": 579020
+    },
+    {
+      "path": "anims_X/bob/ttrp_armsling.fbx",
+      "sha256": "68df0c5f9a024f6d0935990d4dd9f1ba369fe29d5ad4944b2805a1b79b458720",
+      "bytes": 571772
+    },
+    {
+      "path": "anims_X/bob/ttrp_artorias.fbx",
+      "sha256": "5dd4fb914ef63b4f2fc80f7882dfd68be92676cc00123de3339624a40c2b0b2f",
+      "bytes": 570188
+    },
+    {
+      "path": "anims_X/bob/ttrp_ashtest.fbx",
+      "sha256": "fe4be09c24a5c20a87aba85f66f4d7df508fc9b803a5132b8d37bb0eb9a7b1e7",
+      "bytes": 372316
+    },
+    {
+      "path": "anims_X/bob/ttrp_asl.fbx",
+      "sha256": "8192ac356f642164fbb5c82d2384c5c5b63ca908f95af15013c85ab8d05d4f4c",
+      "bytes": 677292
+    },
+    {
+      "path": "anims_X/bob/ttrp_aurafarm.fbx",
+      "sha256": "d77da21193a433aabdfb0087c360128d1bbf65fb3600cf16ca2fac1d27983b72",
+      "bytes": 581548
+    },
+    {
+      "path": "anims_X/bob/ttrp_averagefighter.fbx",
+      "sha256": "beffe09f2a14eaff308dedefc322ebb422bb978f7c8d97e69fb0713a3730e23f",
+      "bytes": 579836
+    },
+    {
+      "path": "anims_X/bob/ttrp_awkwarddance1.fbx",
+      "sha256": "75d673d78ce00b149520be053d485122b5bd6a8826f5b0fae07ae867bf472962",
+      "bytes": 375100
+    },
+    {
+      "path": "anims_X/bob/ttrp_awkwarddance2.fbx",
+      "sha256": "7bd2eb82a707c5bc3df4ddc72c43d27a67ca3d696d0ddde58ca2bf8eb5cc2c12",
+      "bytes": 363708
+    },
+    {
+      "path": "anims_X/bob/ttrp_awkwarddance3.fbx",
+      "sha256": "48c02bc5030317ac746f4a6f53f97ce6d8dd62d4be601fe53c9022fdc63787bc",
+      "bytes": 366076
+    },
+    {
+      "path": "anims_X/bob/ttrp_axe.fbx",
+      "sha256": "c3f3b4c9bc1fd9d1140ff204b5d47a0a92bd1e131916ce6776c82014cbea0b83",
+      "bytes": 582396
+    },
+    {
+      "path": "anims_X/bob/ttrp_backpackrummage.fbx",
+      "sha256": "5a81163c221686893989de6760d5e4b8152ca65a494bf0bad79183c9d052d31e",
+      "bytes": 401468
+    },
+    {
+      "path": "anims_X/bob/ttrp_batpat.fbx",
+      "sha256": "01474e24ff509b817088aa58b3ed523d5035e6243b93baed65d2e5c72a04a2cd",
+      "bytes": 573900
+    },
+    {
+      "path": "anims_X/bob/ttrp_batterup.fbx",
+      "sha256": "db263deb22bb1f7a6cc3f9caf65fded73d641419d515ec852a6539f7525c1d77",
+      "bytes": 579916
+    },
+    {
+      "path": "anims_X/bob/ttrp_bbqshimmy.fbx",
+      "sha256": "fffa4a538a04ba981737f4f6a2a0879773dd9868c28d77b433562f06e5aa5b3b",
+      "bytes": 626988
+    },
+    {
+      "path": "anims_X/bob/ttrp_beastmode.fbx",
+      "sha256": "d649d07c99d370a60b1b4107fc0bac5f448a1cd3ebe78ebc467b8e5817fff5d3",
+      "bytes": 578556
+    },
+    {
+      "path": "anims_X/bob/ttrp_bent_forward.fbx",
+      "sha256": "d977a81a774cd2da725e25a27785cff819a6f3ed99d59f345f4196e79ef7d93f",
+      "bytes": 576780
+    },
+    {
+      "path": "anims_X/bob/ttrp_bicyclekick.fbx",
+      "sha256": "4ceb1932ef79b95801bf7942d90a8524555d3e152b6587d11f08a935a9265eaf",
+      "bytes": 300636
+    },
+    {
+      "path": "anims_X/bob/ttrp_bigwave.fbx",
+      "sha256": "7d741f44589606230a43c60646f9a0ad9853a81db77e2480906bfaeaffa0debe",
+      "bytes": 389580
+    },
+    {
+      "path": "anims_X/bob/ttrp_blackboard.fbx",
+      "sha256": "e8dfc8ea9590711561f68bdf4aa7e26777dab7983beeede0056841c8666b417c",
+      "bytes": 428108
+    },
+    {
+      "path": "anims_X/bob/ttrp_bladerunner.fbx",
+      "sha256": "5d7886933c47e523f03739bf73b83960a95a02e1510cf4f035e48a6c695ca6c0",
+      "bytes": 576652
+    },
+    {
+      "path": "anims_X/bob/ttrp_boxinghitman.fbx",
+      "sha256": "ae72006d50a9a395ccf3859f01fc36334f2329322763190e6f15e5375b958d5a",
+      "bytes": 587644
+    },
+    {
+      "path": "anims_X/bob/ttrp_brushmop.fbx",
+      "sha256": "3d5c5639ac062302daebd88eccf3dcab1292b886535529bc5562a36c1d984a8c",
+      "bytes": 568508
+    },
+    {
+      "path": "anims_X/bob/ttrp_campfiresit.fbx",
+      "sha256": "0b8becc1d4d467f37dc522b50e19885f6cf5d80c76fea768dbb6ee4fea5b1c38",
+      "bytes": 586732
+    },
+    {
+      "path": "anims_X/bob/ttrp_capoeira.fbx",
+      "sha256": "dd8c07ab7cdeeb928a74f833edeac42a36244e12ec7d7a356844fae8b33a14ff",
+      "bytes": 605196
+    },
+    {
+      "path": "anims_X/bob/ttrp_caseyfrey.fbx",
+      "sha256": "dc581892af972865bfd130e9fba6eecaaf351da59b454e4dcb00bead3cf9dbf7",
+      "bytes": 564892
+    },
+    {
+      "path": "anims_X/bob/ttrp_casualkneel.fbx",
+      "sha256": "04a084b6b1be823e4cb96886f4f5a13a9f94c07ce84869fe50104da3e8801637",
+      "bytes": 573964
+    },
+    {
+      "path": "anims_X/bob/ttrp_chaiselounge.fbx",
+      "sha256": "c00695ca26f47b3f709ccaae0371e8661224e617e6dc68eba089732f038472ea",
+      "bytes": 573500
+    },
+    {
+      "path": "anims_X/bob/ttrp_chaiseloungereversed.fbx",
+      "sha256": "254937c5ceffe9067495422e82f4528ad19d7fb11a5f9d25eb00dc0561cf382a",
+      "bytes": 587036
+    },
+    {
+      "path": "anims_X/bob/ttrp_challenge.fbx",
+      "sha256": "f99b8496517d774787d679d02868b4d57dab52c3cbc3ae14475b80744fd64952",
+      "bytes": 577676
+    },
+    {
+      "path": "anims_X/bob/ttrp_clean_pistol.fbx",
+      "sha256": "1a68db1598680a5458ab1e065fe91037db5781d6e677ee579f6198f01e534765",
+      "bytes": 523884
+    },
+    {
+      "path": "anims_X/bob/ttrp_cloudspotting.fbx",
+      "sha256": "6aa28144054ef9b9a80249b53b0bec2b867aff31b62da77b58dd4e8ddce7880e",
+      "bytes": 564636
+    },
+    {
+      "path": "anims_X/bob/ttrp_clutchingtoilet.fbx",
+      "sha256": "18a8cbcdab6d8f78187130a75b5f04cb425daf93c4ccb35c44babb00857fcdb7",
+      "bytes": 1147420
+    },
+    {
+      "path": "anims_X/bob/ttrp_composedreverse.fbx",
+      "sha256": "6b755ce93080a4a89f2154f7550402e657811bfb19f65e510aff6c291e1231aa",
+      "bytes": 577772
+    },
+    {
+      "path": "anims_X/bob/ttrp_cookingwithspice.fbx",
+      "sha256": "f02060d6f9a20a56c20987fbe20fad64b186c7bd4857c2f7e070ff33df3f9c15",
+      "bytes": 397788
+    },
+    {
+      "path": "anims_X/bob/ttrp_coolingoff.fbx",
+      "sha256": "d3d124fa83bf78560e26d920c00f8fc9e20fcae6a48717875202b6d010ae8d13",
+      "bytes": 359596
+    },
+    {
+      "path": "anims_X/bob/ttrp_cpr.fbx",
+      "sha256": "1c1ef7bfa3f28117ec38600c541cdfcfa6bef69427022e7b85e4304bd0bad687",
+      "bytes": 358028
+    },
+    {
+      "path": "anims_X/bob/ttrp_crawling.fbx",
+      "sha256": "af823a7ffc4b7650432e2730aa7c80afebbdd3e3b50175c3aac957dc244442b5",
+      "bytes": 322748
+    },
+    {
+      "path": "anims_X/bob/ttrp_crossed-arm-lean-left.fbx",
+      "sha256": "4c96c14648df823b108d94dde6bf40b8bb162ad96cc0dfc5b7f88f7dff7eece3",
+      "bytes": 361324
+    },
+    {
+      "path": "anims_X/bob/ttrp_crossed-arm-lean-right.fbx",
+      "sha256": "61193e382ffb1e5ba1ef519c7958ff9569ed0d61df9bf28ab5636bd9eb90d211",
+      "bytes": 365468
+    },
+    {
+      "path": "anims_X/bob/ttrp_crossedlegs_inlap.fbx",
+      "sha256": "cc9aada42d33906e7066421dc03effac7ca50baab1766448f9196268eaa5c785",
+      "bytes": 574508
+    },
+    {
+      "path": "anims_X/bob/ttrp_crossedlegs_leaned.fbx",
+      "sha256": "d6ae82d2aba82841b1c5d44c829b3e17e0bfa5d7d08f4ce403c38eb1b5e31e2a",
+      "bytes": 574460
+    },
+    {
+      "path": "anims_X/bob/ttrp_crossedlegs_sassy.fbx",
+      "sha256": "966bbccec498e4f4ab48ed6a24be6ab15bb758ef80d1847e2a8dfcb384b4a956",
+      "bytes": 576652
+    },
+    {
+      "path": "anims_X/bob/ttrp_crouched-rifle-2.fbx",
+      "sha256": "5de4549d9b878e85f157b02e2f8f0c3630c194cbd5bd221bcf162909da09adea",
+      "bytes": 363372
+    },
+    {
+      "path": "anims_X/bob/ttrp_crouchedsniper.fbx",
+      "sha256": "72356958ce621ab27c571eef02fc789a7208d3c1189e71e2cf948a7cd0ba43d9",
+      "bytes": 359516
+    },
+    {
+      "path": "anims_X/bob/ttrp_crying1.fbx",
+      "sha256": "3da77d51f94baac3a4aca1a664958bfdf07f48bb573a69a59b8d1e92d28536c1",
+      "bytes": 396364
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuddle-reversed-offset.fbx",
+      "sha256": "22a1f312094c727c5fe2ed4ce3de69bb6817bbba06c2e801e5de55bec1c7d33a",
+      "bytes": 573660
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuddle-reversed.fbx",
+      "sha256": "d083551120e3019d3d6fd4bd31703b55fdc70ca607329534fdfdc938f444429d",
+      "bytes": 575804
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuddle1-offset.fbx",
+      "sha256": "e4702f15ce81b8a567a69d4d1251af6722e60222ff86b1f874f93418055d5fa0",
+      "bytes": 563596
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuddle1.fbx",
+      "sha256": "1c56ff5ea3232bf00791e10afde755fbb478a9f949d74098bc9051a04f79deec",
+      "bytes": 573068
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuffsbehind.fbx",
+      "sha256": "f2e3fd1a46c16e87ad69873db5c0e0b6b21f30815ab629fb4e2d749435425f10",
+      "bytes": 576348
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuffsbehindstruggle.fbx",
+      "sha256": "1c099eab13c8c134cd8b2f135de3e0435722c90c031dd8cb2f2620d5c4ac0b6e",
+      "bytes": 603772
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuffsinfront.fbx",
+      "sha256": "2c27543d13713d9c7f006383380e926dc0839d2e400963764dfcbc9db6314d70",
+      "bytes": 576204
+    },
+    {
+      "path": "anims_X/bob/ttrp_cuffsinfrontstruggle.fbx",
+      "sha256": "65f7e246959e315aff7d8f5acf012ebf4c5c636a160468271a06d7d9cf3afea5",
+      "bytes": 599628
+    },
+    {
+      "path": "anims_X/bob/ttrp_dafoe.fbx",
+      "sha256": "7f5c8d019ee554d84f90846f0e228834aabe85bade53b7dea247e33acbfae6bd",
+      "bytes": 1733580
+    },
+    {
+      "path": "anims_X/bob/ttrp_deeplean.fbx",
+      "sha256": "e405e034dae3ecc5544709a9343acd5eca1726c06353954ea5827d5f03593ac2",
+      "bytes": 574540
+    },
+    {
+      "path": "anims_X/bob/ttrp_deepleanreversed.fbx",
+      "sha256": "b2f191c426ffa2101e7d1d4c2e80595afbad8107b4195b3cf417716725653b7f",
+      "bytes": 572572
+    },
+    {
+      "path": "anims_X/bob/ttrp_deepsquat.fbx",
+      "sha256": "4eb69c975594bf9ca1968ca73ab2b5ad36f9da12d346b911adf382fd6e940569",
+      "bytes": 661852
+    },
+    {
+      "path": "anims_X/bob/ttrp_desperadosgrandstand.fbx",
+      "sha256": "2faa3649ff091170c61962514f3460ce5082c4f84871f0cb6710e03af2becc8e",
+      "bytes": 575260
+    },
+    {
+      "path": "anims_X/bob/ttrp_downandout.fbx",
+      "sha256": "fa56fac002a84fa405f14138f9a5d0d43e51d31f7c9572015b3118f7be35e0a6",
+      "bytes": 595084
+    },
+    {
+      "path": "anims_X/bob/ttrp_drunk.fbx",
+      "sha256": "a6881d243ddee9149980168040ffe19bc039114e5885144d14061d3b5e4ead04",
+      "bytes": 453964
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualknives.fbx",
+      "sha256": "03d34f66cb17e4a580d9ccfb80feb4f8a94fc94325e76f75d791f27dd8d9389e",
+      "bytes": 577500
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualpistols.fbx",
+      "sha256": "443f2d639ceaee2c68a2470973df4e5bde41ce498b8423671b0c5ca7c40dde43",
+      "bytes": 574300
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualpistols2.fbx",
+      "sha256": "9de7658848889cf05a22c884135b6db9a6bbc82196c5bc41f5323d22dbe49032",
+      "bytes": 573324
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualpistolscrouch.fbx",
+      "sha256": "5add0f051d19753621a78508056d8b46fcdf4e3ea0559fdfd5383652eef02959",
+      "bytes": 574844
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualswords.fbx",
+      "sha256": "ed56b17dbd897fb9ba9d1d0f80d1f41b84dca15689e979967fc64b12b369bf6a",
+      "bytes": 582748
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualwieldagile.fbx",
+      "sha256": "ee3f0e1a63c5cd9e2122ad78e13a2d805128379015e2956d6a8d953573a8a65a",
+      "bytes": 584940
+    },
+    {
+      "path": "anims_X/bob/ttrp_dualwieldcomposed.fbx",
+      "sha256": "5e351a7da41f6ae52b3dbc087c50f42058dc9348b45addb6107bdb6fd361bd12",
+      "bytes": 579020
+    },
+    {
+      "path": "anims_X/bob/ttrp_elbowonknee.fbx",
+      "sha256": "4f1136625e7ba7d412d2c9e01985412e8ecaea39155e6850befcff3d252cc1d9",
+      "bytes": 371500
+    },
+    {
+      "path": "anims_X/bob/ttrp_examinehand.fbx",
+      "sha256": "7669fcd1b4fc1c740f92fc3019306c19c9b1252748126929878bb87f756aa07d",
+      "bytes": 378924
+    },
+    {
+      "path": "anims_X/bob/ttrp_facepalm.fbx",
+      "sha256": "cd4a7bcadbfabc0fbedf6247b50c498a26611cd802660ed88e61db285511bcfa",
+      "bytes": 380780
+    },
+    {
+      "path": "anims_X/bob/ttrp_faceplant.fbx",
+      "sha256": "8977d7a13f6ea5ba373a2a02b073bb67c141746abe9bfe72854fb472ab0446bf",
+      "bytes": 365388
+    },
+    {
+      "path": "anims_X/bob/ttrp_fanrevolver.fbx",
+      "sha256": "787f2206b8349a3f670c70eeb9cb7b6966e4c72a64e31db8da3ab7ebbfcbe62a",
+      "bytes": 365900
+    },
+    {
+      "path": "anims_X/bob/ttrp_feetonsofa.fbx",
+      "sha256": "63efcfc2a53e063b3f5c52a7989b9f7911b3e0da0d73e9d206a358f01b3c241f",
+      "bytes": 395388
+    },
+    {
+      "path": "anims_X/bob/ttrp_fencing1.fbx",
+      "sha256": "c68c81eef59d65c5a50a2ed1aa96f1b3c8e2e96236bce515be36659d59482d9d",
+      "bytes": 574988
+    },
+    {
+      "path": "anims_X/bob/ttrp_fetalfurniture.fbx",
+      "sha256": "96a7ad25bb98561156e7c9ce5b7726d93095d9b9ca965b8ce5eb905fbf8d6443",
+      "bytes": 572700
+    },
+    {
+      "path": "anims_X/bob/ttrp_fetalposition.fbx",
+      "sha256": "a317c0650d6910dd1fa12da770f46f72591904f3d3eab660115cebb2d3c76279",
+      "bytes": 458284
+    },
+    {
+      "path": "anims_X/bob/ttrp_fightingstance1.fbx",
+      "sha256": "22bb7f9286b20909c897d13635b1b4fd0c07e960856bca64c269a4782b4134fe",
+      "bytes": 573020
+    },
+    {
+      "path": "anims_X/bob/ttrp_fightingstance2.fbx",
+      "sha256": "fea0b8ef19c5205c048d1d52234aabf803b3613be01e24cb5ab21a5a4436de82",
+      "bytes": 531148
+    },
+    {
+      "path": "anims_X/bob/ttrp_fightingstance3.fbx",
+      "sha256": "b1c8f873d60aa4d09ecd6c0baccc896dfb0a9799274fa8b6232427bbb989be49",
+      "bytes": 728060
+    },
+    {
+      "path": "anims_X/bob/ttrp_fisticuffs.fbx",
+      "sha256": "350cb55e38a144035cb8ba3d3063a5a28c1b232a1a70a13b132b213e9ee4f4cd",
+      "bytes": 581724
+    },
+    {
+      "path": "anims_X/bob/ttrp_fistreload.fbx",
+      "sha256": "e9c44571a6ca40a6a4d0e9185cd95a77d0228949eafa74e953f24eeb6a98632c",
+      "bytes": 617356
+    },
+    {
+      "path": "anims_X/bob/ttrp_flipkick.fbx",
+      "sha256": "6a0fc6897d5453f55c3f0fbf79efdf4992e2d4626b4ee4b880545b188780f1b0",
+      "bytes": 369884
+    },
+    {
+      "path": "anims_X/bob/ttrp_flourishingbow.fbx",
+      "sha256": "e3176c4e9cadeb71df6af7b11a053b0bd593d82308a7bc6e1cb92332b6d2e919",
+      "bytes": 579756
+    },
+    {
+      "path": "anims_X/bob/ttrp_footbounce.fbx",
+      "sha256": "1f8de56dbb204afad4d9060a5c9fe1a940225a741322961f2c192128398a53ab",
+      "bytes": 1336380
+    },
+    {
+      "path": "anims_X/bob/ttrp_forearms-thighs.fbx",
+      "sha256": "73e0c8e62f4920b5332c947c5caafd6546a11f131d50059f8b14120a56eb2193",
+      "bytes": 652252
+    },
+    {
+      "path": "anims_X/bob/ttrp_freizastance.fbx",
+      "sha256": "1ef94eb079e93a5ad3f88776cd19cf5f3c123c46c56f1576567a81c417682f8c",
+      "bytes": 574028
+    },
+    {
+      "path": "anims_X/bob/ttrp_french-girl-reversed.fbx",
+      "sha256": "627ea9fc3ecf1a27739d9653e95196c7a52d4949326ff714e3e5e518ec0ba842",
+      "bytes": 576236
+    },
+    {
+      "path": "anims_X/bob/ttrp_french-girl-reversedfurniture.fbx",
+      "sha256": "78051688108db42f37af108c2eb6a8c9d06ca8bb98958b91abadada353b558d3",
+      "bytes": 576316
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchboy.fbx",
+      "sha256": "67d2a926ceb1893a934546959621aaa4d3d477dac02661939de421492a7ee746",
+      "bytes": 574684
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchboy_bed.fbx",
+      "sha256": "9ccff043991e5382ea99600edb66b8059d49e9b78df7235cac94f3d00f33960d",
+      "bytes": 371404
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchboy_bedreversed.fbx",
+      "sha256": "4ded45772401387e41e448f5f691d544db0fc3189564d55c4df8a9e991db6512",
+      "bytes": 573948
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchboyreversed.fbx",
+      "sha256": "cc5dfba6c43bd335f95982a481416362af095199e34a07ca9a22b2868fbef284",
+      "bytes": 574044
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchgirl.fbx",
+      "sha256": "024229b15683fb5c5952816f9677a33d3358084f55375cd568b628b3caf7daff",
+      "bytes": 575980
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchgirl_bed.fbx",
+      "sha256": "c5d7ee51a32fb29de58f06775b5cc38d1420024114958f1baf4e9e8ba9b83f5b",
+      "bytes": 575996
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchgirl_bedreversed.fbx",
+      "sha256": "081bd89b63154fb1eeaffa37d5db44372d30a6de29e7ae0484fcc9a36aab2bba",
+      "bytes": 572204
+    },
+    {
+      "path": "anims_X/bob/ttrp_frenchgirlreversed.fbx",
+      "sha256": "aabe2cb448f1bbcadc1f3826f58f9bfc9474ed99355b3646cf5cd21a4d3801d9",
+      "bytes": 572172
+    },
+    {
+      "path": "anims_X/bob/ttrp_gangnamstyle.fbx",
+      "sha256": "c6fdf2d197f77f5d89bcc3595695ddd1921622cb018c84cb053dff5e91aa92bc",
+      "bytes": 526812
+    },
+    {
+      "path": "anims_X/bob/ttrp_gangsta.fbx",
+      "sha256": "d979164e7bd305b6123b7d7cc65b6b7eb0a808328110e343adf3738f20b0e019",
+      "bytes": 575788
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlyarm.fbx",
+      "sha256": "89b1c2e3581f80edc4b16d91df240926ac52b8213118b396b5190369853b70e0",
+      "bytes": 575004
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlyarm2.fbx",
+      "sha256": "50959deeb3c0f02ae713648b21b83679b5d8050ef40b16b0e6d3a72d28c499f4",
+      "bytes": 574828
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlypop-chair-sit.fbx",
+      "sha256": "038a592a97f423bd18ad56a8ddab8f117238cac6fd79b5553863d0f4bbe73fbe",
+      "bytes": 576156
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlypopdoorleanleft.fbx",
+      "sha256": "aa472ee8d09d509efac3fc47950517b69b40fb32833403ac3c87ddbbeaa87af7",
+      "bytes": 360124
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlypopdoorleanright.fbx",
+      "sha256": "cff36ea7e55bf50859284b5416406d70a6f38e1200c80573ac384c72fcd86a5b",
+      "bytes": 365964
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlypopsit.fbx",
+      "sha256": "788ff7a44a44d238ac4c7ce814c714468f0c7aa50f1783a7e75b959f33a088ac",
+      "bytes": 1004988
+    },
+    {
+      "path": "anims_X/bob/ttrp_girlypoptwerk.fbx",
+      "sha256": "3dd6a47d6d5df2fce112dd55dbecc60f656624aaef1d0c142f4885cee7970f6e",
+      "bytes": 579228
+    },
+    {
+      "path": "anims_X/bob/ttrp_glassboxofemotion.fbx",
+      "sha256": "b7482b9ba74d489a62fd5958990411c662ede53c8dafcbbe92e83d4c017d3a51",
+      "bytes": 361836
+    },
+    {
+      "path": "anims_X/bob/ttrp_goblinsit.fbx",
+      "sha256": "dd9df9869684aff0bfb538c4caa977fc0d742f596594fb6062240e53c9c3ba2e",
+      "bytes": 579740
+    },
+    {
+      "path": "anims_X/bob/ttrp_goblinsitground.fbx",
+      "sha256": "da15d5d2a5c7adc0921eb964373eee672232bc4fc9143ea8ebbb5bd3f2273747",
+      "bytes": 577308
+    },
+    {
+      "path": "anims_X/bob/ttrp_gojo.fbx",
+      "sha256": "c7100d74734f93a9aee1a08152b09c46b4e54e8f2ac7944304e6a647a6b6c87a",
+      "bytes": 587404
+    },
+    {
+      "path": "anims_X/bob/ttrp_grappler.fbx",
+      "sha256": "b5052c77849afc311067ca60b35bbe8a9782a7d6bb59cd5f2faaba6eb98cf3fd",
+      "bytes": 583564
+    },
+    {
+      "path": "anims_X/bob/ttrp_groundcrossedlegs.fbx",
+      "sha256": "7a98bf2a07f4af2b9b40244e954c8c6323a597464094a132996ec329faf4b353",
+      "bytes": 3007548
+    },
+    {
+      "path": "anims_X/bob/ttrp_guitarplaylaying.fbx",
+      "sha256": "69d9a7d93a59c3da6c79d4ab95c6fff1fad33b48e1bf972e7cc772849a0d43cf",
+      "bytes": 593068
+    },
+    {
+      "path": "anims_X/bob/ttrp_guitarplaysitting.fbx",
+      "sha256": "b792cde818fa7ce67c96860f147e910680a6eddb30eb95ba40679723d596b43b",
+      "bytes": 578796
+    },
+    {
+      "path": "anims_X/bob/ttrp_gunslingerready.fbx",
+      "sha256": "78d14236719622c3f3555e707d7eb9da7b0963c720c76323ea535aacd95b3228",
+      "bytes": 568108
+    },
+    {
+      "path": "anims_X/bob/ttrp_hand-behind-head-rub.fbx",
+      "sha256": "b3c34c288d951befa7332325d203cb076524d0b375084fce4fc94c5faf945de1",
+      "bytes": 572876
+    },
+    {
+      "path": "anims_X/bob/ttrp_handhipforearmforehead.fbx",
+      "sha256": "2809e47411e3626692ffba37d4df10e7cc3f67f7be664df3bf44273de238bac5",
+      "bytes": 572396
+    },
+    {
+      "path": "anims_X/bob/ttrp_handinpocket.fbx",
+      "sha256": "8a72b661230bc8560ba0cc1e36fcbb983a0d779873c6fcf207360896abc5bb22",
+      "bytes": 360588
+    },
+    {
+      "path": "anims_X/bob/ttrp_handinpocketcasual.fbx",
+      "sha256": "fa7d9b04ca8700cf68187e6de8cd4a84fa235bbd23faf5fd4c5eecb81de477f0",
+      "bytes": 357260
+    },
+    {
+      "path": "anims_X/bob/ttrp_handonhipalt.fbx",
+      "sha256": "db1c36d76fa6507ab79ea32858af0fa4ec3fa5514723a7d0656197a67729e31f",
+      "bytes": 374540
+    },
+    {
+      "path": "anims_X/bob/ttrp_handonhiphandonchin.fbx",
+      "sha256": "7c6cb24c78c771754e44c14c65df982dc5034d9387b512ae118cc4f924dac4c5",
+      "bytes": 590572
+    },
+    {
+      "path": "anims_X/bob/ttrp_handovereyes.fbx",
+      "sha256": "49d6614bb301f6aac80b83a3f8d7fe78d838bd3f6c753f9f7854004fe24b9e99",
+      "bytes": 364908
+    },
+    {
+      "path": "anims_X/bob/ttrp_hands-on-others-chest.fbx",
+      "sha256": "801dac7bacfa7c89a910d60151106cb8a86e1d82c3a20af76c6358c0a6df267c",
+      "bytes": 565084
+    },
+    {
+      "path": "anims_X/bob/ttrp_hands_on_thighs.fbx",
+      "sha256": "1bba971493b19550d3da192c7ae16df4169401cd771f85e2db3c505053be11d2",
+      "bytes": 575692
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsbehindheadchair.fbx",
+      "sha256": "b45572f63e32d0cda6bc769a36bd8c00817ad65f54306037a90104f7288291e5",
+      "bytes": 656604
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsbehindheadshocked.fbx",
+      "sha256": "5f6d0bd9cbfe0d4932b15826d0fa6fe8d31f2aad38e23e856dd14a46646a203d",
+      "bytes": 369580
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsboundkneel.fbx",
+      "sha256": "43000b54b7ae404b2849817c5d4bac3b3e6aef5009fa32787bd9ba97a24c5894",
+      "bytes": 388828
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsfoldeddemure.fbx",
+      "sha256": "d017d75d3d930ed8271583d35af473a836f2ffe56b83c370cc67f0854c5e6851",
+      "bytes": 566924
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsonhipsidle.fbx",
+      "sha256": "6abb9202a07a6186ca4552fe5e1cb9afba297d8045f31786f22006ca1d3dac63",
+      "bytes": 571212
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsonknee.fbx",
+      "sha256": "5c80c5fe34cc8eeb7902d1fe8f5fe0c95cbcffd7e0e11f2a20b2d8339f39c13e",
+      "bytes": 361868
+    },
+    {
+      "path": "anims_X/bob/ttrp_handsoverstomach.fbx",
+      "sha256": "cfe4db60c7cb1b4a346ec83df57fd51ca7d37805ad86e6717a52468d583d968b",
+      "bytes": 363292
+    },
+    {
+      "path": "anims_X/bob/ttrp_handthigharmthigh.fbx",
+      "sha256": "561b54dd0bde696a0ef0804e23e8c8915c5228dc359f89df4c6b25f8a32b5dd6",
+      "bytes": 579692
+    },
+    {
+      "path": "anims_X/bob/ttrp_handwash.fbx",
+      "sha256": "5de5cef58a9bc6f5cf59245b06fe548b50f3043e3da0ade1dca8dcde41779281",
+      "bytes": 673036
+    },
+    {
+      "path": "anims_X/bob/ttrp_head-in-lap.fbx",
+      "sha256": "80df91bf5869955203020ea7ebfdb4c01be3c5bb3d622087cbbb8031a5da7c3e",
+      "bytes": 573388
+    },
+    {
+      "path": "anims_X/bob/ttrp_headinhandssit.fbx",
+      "sha256": "687898068919cf143d668f13043f3e8699aca407f401928fd2d5fae258552041",
+      "bytes": 1007276
+    },
+    {
+      "path": "anims_X/bob/ttrp_headrub.fbx",
+      "sha256": "f555fa744505940c339a3cdb2009ded96abebe9a20d15471c21698737d7b3a83",
+      "bytes": 1808268
+    },
+    {
+      "path": "anims_X/bob/ttrp_heldatgunpoint.fbx",
+      "sha256": "a25126c188425d3459a990f0af7ab2957082b24963e12af2ab73ba97c02b4537",
+      "bytes": 366572
+    },
+    {
+      "path": "anims_X/bob/ttrp_heldatgunpointolympic.fbx",
+      "sha256": "065cfbb297f20fb52ca07196f32474a5ebb47a34a481b56a99d8ad5647b459f6",
+      "bytes": 364684
+    },
+    {
+      "path": "anims_X/bob/ttrp_highready.fbx",
+      "sha256": "1498b888535cf9a1c26e73d56501c79d1c674758d08f8b0311ce04392d0b9d4d",
+      "bytes": 575452
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdatgunpointrifle.fbx",
+      "sha256": "690896bf9dd954f12c5ef72fed6967d908a005ca28fea871c59f0c7f86a4526c",
+      "bytes": 574620
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdatspearpoint.fbx",
+      "sha256": "dc1f3f9dd18b8e2c4badda1c04ad5965e3fa674793153cbcfa2888efce6ce8b2",
+      "bytes": 591500
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdbehindhead.fbx",
+      "sha256": "479673667eff429afa8c5957b001b84425ed6d4720c46bb55c50a799bb8890e3",
+      "bytes": 506188
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdhandsshy.fbx",
+      "sha256": "24e8de37296352b2fe995e9c9d4da7ed6b2e5e8756db92fa2f5fdcd13acb232b",
+      "bytes": 389084
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdhips.fbx",
+      "sha256": "2897aae502fc3fa73615f33c2728d81538d32b9964cb3e320dbceb2d8134fe70",
+      "bytes": 565724
+    },
+    {
+      "path": "anims_X/bob/ttrp_holding.fbx",
+      "sha256": "16c8d98373616c2ac43b86ade8a4a9fefd38eb9f19c4422b658ff5d64bc75886",
+      "bytes": 568860
+    },
+    {
+      "path": "anims_X/bob/ttrp_holding_rifle_idle_2.fbx",
+      "sha256": "266c4161e0eee97488dd7beb13abcaaa6cdd60766f5bf2dde475267a0c94dbfe",
+      "bytes": 565916
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdingspear.fbx",
+      "sha256": "5d82fe0adf879fb4ea6c0663e4b4feb19516cf951a9fc4a9f9e23044c5427d92",
+      "bytes": 575724
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdneck.fbx",
+      "sha256": "4da03f0aee9cee292501143ab6c72da28f1dc3783c3359c696ec04e9e5d21edd",
+      "bytes": 578732
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdpistol.fbx",
+      "sha256": "9293a40c844e4f5f84236a1fadfaed01e70cce5154ed15f23bd64ff564e023a8",
+      "bytes": 360252
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdpistolcrouchedhunched.fbx",
+      "sha256": "742e5a040e46012d3857ea790b49a0ed7d2b785dac6a0d923c768d6f4c5c6ad2",
+      "bytes": 355884
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdpistolcrouching.fbx",
+      "sha256": "e1dbc15456bb85d07702a75f4211b90a291cc5726f88046c5d5f5da255be9e3f",
+      "bytes": 360668
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdpistollowready.fbx",
+      "sha256": "595937398fb069eab3d6b4f8d77f249734010173288e6c873ce2a8fe0f1e0570",
+      "bytes": 359116
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdpistolproned.fbx",
+      "sha256": "b8b407f9d73c53c57d1567d8b43ac8f28670d6bbdec1c990fa439af907ea967f",
+      "bytes": 357676
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifle.fbx",
+      "sha256": "097db2afb079f68cd36bc92cfaa2a6266ddc6e6349f929456b549c0e9422d844",
+      "bytes": 367180
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifleathip.fbx",
+      "sha256": "491d9234df86fe4cdf3ad78b68d9b0547fd1b6fc97d61920d476893be47eada3",
+      "bytes": 578716
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifleidlekneel.fbx",
+      "sha256": "3cd58e8c8113e8e1ce515bc63c2bfc1ae8b84df9334e89a3c99d226f919786f1",
+      "bytes": 450652
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdriflekneel.fbx",
+      "sha256": "a1d5da588275bf8b5784a36e65e535288bcf17b268a62b1130dac7fa429e1222",
+      "bytes": 361612
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdriflesteady.fbx",
+      "sha256": "29d80caff469944dcbb847381b42b85f1e33e6fa9fc4f4792a5cb2bdbb2507da",
+      "bytes": 360060
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifletohip.fbx",
+      "sha256": "a56338df1fac0272b546c37a74200860d49df6830802746c8d29bada311e07bd",
+      "bytes": 577964
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifleunderarmpit.fbx",
+      "sha256": "1d7879bd48471e6bbd62838b0d0404bd862bfaafba332c040c71d74b801586a9",
+      "bytes": 572124
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdrifleup.fbx",
+      "sha256": "f0dc7182f29f26903321c99765c70acda1f1c450e76cde0672fbefbaf37c10e3",
+      "bytes": 576604
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdspear.fbx",
+      "sha256": "83157bf38c61818072c8aac342916804130b907d1e3f5adffa3a652248aed2c5",
+      "bytes": 577916
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdspearanime.fbx",
+      "sha256": "86f16781a65781aeb97b459f0ba046b2e7f97449f578f6ba0f9f7bd3d654a74d",
+      "bytes": 576108
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdvest.fbx",
+      "sha256": "7f73e86492c308b139e90e5e2cccc23fb994412c246030469675e1069bf2e5ac",
+      "bytes": 360076
+    },
+    {
+      "path": "anims_X/bob/ttrp_holdweapononshoulder.fbx",
+      "sha256": "597c5cfa7e60f6988a92e2fbb3d25d9dc58d0af467b684f47c9d8a35de389ee5",
+      "bytes": 574044
+    },
+    {
+      "path": "anims_X/bob/ttrp_horsestance.fbx",
+      "sha256": "554c2a3a5a9b877d3ac3247ddfcae317777db703d000ad2062e52efecf897852",
+      "bytes": 575932
+    },
+    {
+      "path": "anims_X/bob/ttrp_howler_call.fbx",
+      "sha256": "e11ebf68a7316aa18e161d6181de58d1ee89f3d425b1bd46fc76510fe49fddb8",
+      "bytes": 1348076
+    },
+    {
+      "path": "anims_X/bob/ttrp_howler_idle.fbx",
+      "sha256": "212537f45b50590ff7009d6847d98ee614db9ea2ad567b54b414b0eba1e4c061",
+      "bytes": 1322476
+    },
+    {
+      "path": "anims_X/bob/ttrp_howler_idle2.fbx",
+      "sha256": "d39958bb832dc9767fc84f5a0e5df527b6a3c1b61eb986d452081e5691a8d3ef",
+      "bytes": 1814972
+    },
+    {
+      "path": "anims_X/bob/ttrp_hug1.fbx",
+      "sha256": "f822b092a8be3fd0c4b3242ba210eaef5514c53a124ee4ed0bc9a41d1ee2d3c8",
+      "bytes": 684812
+    },
+    {
+      "path": "anims_X/bob/ttrp_hugging_self.fbx",
+      "sha256": "3eefb6efa488d33decfa8deb443a775c9fe116b82e2465d86b52be096c179ff6",
+      "bytes": 565772
+    },
+    {
+      "path": "anims_X/bob/ttrp_hurricanekick.fbx",
+      "sha256": "35101333cce13b561fd03cc1b7f3a11042f888f7150892280aed1c450ea08db2",
+      "bytes": 446972
+    },
+    {
+      "path": "anims_X/bob/ttrp_iaido.fbx",
+      "sha256": "82f8e0f64864581df2b069add1f573fef9612ee53481aa69c62e13b2f2267c60",
+      "bytes": 574124
+    },
+    {
+      "path": "anims_X/bob/ttrp_infectedanim1.fbx",
+      "sha256": "cb813a7cc3102403a8b7a7b279e4ccc966fc85fbc97e37ee1e1bef50790468d5",
+      "bytes": 592636
+    },
+    {
+      "path": "anims_X/bob/ttrp_infectedceilingcrawler.fbx",
+      "sha256": "dcf8e6f6fcf0ac27be680734156c60fbfec918fa5f349dd8b2051c1cfee2c9fe",
+      "bytes": 575004
+    },
+    {
+      "path": "anims_X/bob/ttrp_injured_lyingclutchstomach.fbx",
+      "sha256": "3cf3c5626fc953905ba51585cc684442841601eb61fede7beb01ce93dad24146",
+      "bytes": 663548
+    },
+    {
+      "path": "anims_X/bob/ttrp_injuredcrawl.fbx",
+      "sha256": "e193732145851df95dd2b80f01e833c8ba2fac0a07328ed8110817770206a807",
+      "bytes": 402140
+    },
+    {
+      "path": "anims_X/bob/ttrp_injuredkneel.fbx",
+      "sha256": "19f3ead7812d8b5f396c7d44dc47aa8605f9276ede7be32168f5221580c2d055",
+      "bytes": 584780
+    },
+    {
+      "path": "anims_X/bob/ttrp_injuredwalk1.fbx",
+      "sha256": "ccbedc4c8613638c44bd4dee25efbae625c38965f7b34c7234418e63252fdb24",
+      "bytes": 322076
+    },
+    {
+      "path": "anims_X/bob/ttrp_injuredwalk2.fbx",
+      "sha256": "fc5cc03646d0524f0ef07842bce16013de029a79d5edc336323bb71859462264",
+      "bytes": 318412
+    },
+    {
+      "path": "anims_X/bob/ttrp_isoceles.fbx",
+      "sha256": "de049afe1e4ab256c566026f7e81eb5592ffb906197cd2b4f7a4c3a20455efb5",
+      "bytes": 573724
+    },
+    {
+      "path": "anims_X/bob/ttrp_jackrude.fbx",
+      "sha256": "eade740a27acbe45047471a39a85499971eeba12e9ad5b48bfe57d20ed7c60ce",
+      "bytes": 1201004
+    },
+    {
+      "path": "anims_X/bob/ttrp_jarl.fbx",
+      "sha256": "651aac1e2ed82f56d286926343bc7dc98bf8272c72fc9097b22df4c8812911ad",
+      "bytes": 806924
+    },
+    {
+      "path": "anims_X/bob/ttrp_jarl_arms_down.fbx",
+      "sha256": "b699c413a30312c6f7665ab6bcc09482e7cb5d6b3578455b0fe7df77f39fb58a",
+      "bytes": 791228
+    },
+    {
+      "path": "anims_X/bob/ttrp_jeetkunedo.fbx",
+      "sha256": "6cd48181ff46e18dcd0de26064efe989910ff4c3863709278b3f1149e8cb3537",
+      "bytes": 577628
+    },
+    {
+      "path": "anims_X/bob/ttrp_jojopose.fbx",
+      "sha256": "ac519ccc0c4dada2378046c9fc565ac85dd9805c0ea97eb3df8253c2439285b7",
+      "bytes": 381196
+    },
+    {
+      "path": "anims_X/bob/ttrp_jumpingjacks.fbx",
+      "sha256": "e0eede355161666610b32e4869060b5e04f55310f7295183a077cbcdcaa3ff02",
+      "bytes": 306636
+    },
+    {
+      "path": "anims_X/bob/ttrp_kabedon.fbx",
+      "sha256": "2d6ae6d26a2b1c56ec62399631dc6cd2781fe2f4a3b6177cf1641c13f1fbf31b",
+      "bytes": 582124
+    },
+    {
+      "path": "anims_X/bob/ttrp_katana-stance-1.fbx",
+      "sha256": "d88ce43d8eefce402995393ae7d08fa248eac8d54872de11f25348cb2ccce8b1",
+      "bytes": 562428
+    },
+    {
+      "path": "anims_X/bob/ttrp_katana-stance-2.fbx",
+      "sha256": "95eeadc9d62ca575f9b60392b481395da5d2277ee4e8485a2f9c9e428c677b1c",
+      "bytes": 565532
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneelhandonwall.fbx",
+      "sha256": "23978822558c64b5440fdb5b858037e8cc56053acaed4735d6c67126bf3b0870",
+      "bytes": 849900
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneelheaddown.fbx",
+      "sha256": "c18e17a47a7532bfc0ebbd23d9f2d4f9138d07a2065b09da744fa73342f7b3ad",
+      "bytes": 573068
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneeling_pained.fbx",
+      "sha256": "d2c689c859898c99b48e93855f8bc976e1871dd5f914dccb50b0039af9fe7a75",
+      "bytes": 584764
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneelingcrossedarms.fbx",
+      "sha256": "2ccd09279e413ad6ed32e61bffa111d31dc32db130840e324cde1bc7bd9f7c9e",
+      "bytes": 362124
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneelingcrossedhand.fbx",
+      "sha256": "9349d4f7c7dd14592962552d2d2d0b30f9b2a59f004ef2798f36d45679d936c5",
+      "bytes": 363356
+    },
+    {
+      "path": "anims_X/bob/ttrp_kneelsurrender.fbx",
+      "sha256": "d44b069ceb64d1a1667720243e7e7578c08fd633ef081b39a61c76ccce4fcd05",
+      "bytes": 577836
+    },
+    {
+      "path": "anims_X/bob/ttrp_knifecomposed.fbx",
+      "sha256": "7e3a277d666bf953d221f8da79f93433888d1e4daf2d285955d768b76ebed8fd",
+      "bytes": 582876
+    },
+    {
+      "path": "anims_X/bob/ttrp_lars.fbx",
+      "sha256": "558cb057b88e2f766592946102d994ed6152aeec20f7a8eaad81b09b733a7104",
+      "bytes": 597196
+    },
+    {
+      "path": "anims_X/bob/ttrp_laststand.fbx",
+      "sha256": "439d72e5f9d575743ef0030e660049eeb030918d654f33bb80f7f1af205f4bda",
+      "bytes": 370588
+    },
+    {
+      "path": "anims_X/bob/ttrp_laying-head-in-lap.fbx",
+      "sha256": "e1678879c8a6fb27ac25f1041f7950b5915934c7bcc911f0f89272154677b175",
+      "bytes": 576076
+    },
+    {
+      "path": "anims_X/bob/ttrp_laystomach1.fbx",
+      "sha256": "f5606474f6609515b81ce360ec492d4f01f66052ea57e5644b4d4e5b701377be",
+      "bytes": 366172
+    },
+    {
+      "path": "anims_X/bob/ttrp_lazyboy.fbx",
+      "sha256": "f5a83cbc33b6e8da287230a63cc6525913ddf82f6c0bdb2b29cbecf0dd7c08b8",
+      "bytes": 574268
+    },
+    {
+      "path": "anims_X/bob/ttrp_lean-back-arms-crossed.fbx",
+      "sha256": "b1bbab452e88c5141b13a87cabcdbe313fa4b3cdc19612c96d21bfeb0696088b",
+      "bytes": 574156
+    },
+    {
+      "path": "anims_X/bob/ttrp_lean-back-hands-folded.fbx",
+      "sha256": "12493bea532b5228a0635c4402371b3d449977d4066ee3f87bb44cf3f3b467e6",
+      "bytes": 564812
+    },
+    {
+      "path": "anims_X/bob/ttrp_lean-on-chest.fbx",
+      "sha256": "6ae07d1a9bdace6021c364a485c909387f12c6abfa709b5f9bf8ec561fa08fdb",
+      "bytes": 580300
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanarmupleft.fbx",
+      "sha256": "60927c4c0248138d0a5ca0ecf6cf0b0ca80ca297314be0707856cf93137cb506",
+      "bytes": 576508
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanarmupright.fbx",
+      "sha256": "b91d8ff4da20a028f6c3438a3ee1e779429a81504e84851409f889a656a71969",
+      "bytes": 374252
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanbackhandinpocket.fbx",
+      "sha256": "ef9ce3a554cfa47c19cc81d5caa3352f811fd10f7308619c93504bc69c48ef6a",
+      "bytes": 372156
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanbackhandspockets.fbx",
+      "sha256": "59f52c23600e9db2ab6aae6d25c1fcfb9726b6527e345b686a4b257142e50097",
+      "bytes": 572940
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanbackholdvest.fbx",
+      "sha256": "9adf6e8384ee1adbede3663b3266fb97a68f14e5ec78c06eb1f708fab5bc5a1d",
+      "bytes": 574140
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanhandsflat.fbx",
+      "sha256": "fec980a4ce37c8ae2bbfa56e117bc93abd1f5b83c829b20fd36c9211b90059ed",
+      "bytes": 834972
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanlefttable.fbx",
+      "sha256": "72155a83e87d61c625642863fbb42dc8018d9d111770eaa132de0a1ec718f413",
+      "bytes": 572156
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanonchin.fbx",
+      "sha256": "5533b6d62413f5b5db544b42e6988253e1f212ab56619f9fe3c95fa82f2580b2",
+      "bytes": 375628
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanonspear.fbx",
+      "sha256": "66f4c67d1f26cbd38cdd9844a6c7c6664f59a4fc3c4b873195203083c46ed678",
+      "bytes": 575756
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanonspearstanding.fbx",
+      "sha256": "d57931f1015125af0d0b255fdfbcd864eaae23eb8d40fdc1df88a6793fcc7551",
+      "bytes": 572124
+    },
+    {
+      "path": "anims_X/bob/ttrp_leanrighttable.fbx",
+      "sha256": "45c8ada212b5010b049af27a0d6d33729b4fb8dfb1e0a1da531c41279601dbe3",
+      "bytes": 575500
+    },
+    {
+      "path": "anims_X/bob/ttrp_leantbackhandsresting.fbx",
+      "sha256": "e52911cc33d10bc551bef89dc6df539a72459ec3a2d13e19574379e681dbafff",
+      "bytes": 666796
+    },
+    {
+      "path": "anims_X/bob/ttrp_legflutterfurniture.fbx",
+      "sha256": "00ca99e2ad5844abf9d68ff6f28630fa943ec5a955516a92764f2c19f2229744",
+      "bytes": 594684
+    },
+    {
+      "path": "anims_X/bob/ttrp_legscrossedchair.fbx",
+      "sha256": "5808f0b34419baaf37834a158555c3ef64ac8c37899075f101343b9b97ab971d",
+      "bytes": 573484
+    },
+    {
+      "path": "anims_X/bob/ttrp_lie_flutter_kick.fbx",
+      "sha256": "70ff11650e9e7c3fad5ceb68faf9e8cbd695a47bca195c14586eaec336db5ff1",
+      "bytes": 594780
+    },
+    {
+      "path": "anims_X/bob/ttrp_lieagainstwallinjured.fbx",
+      "sha256": "8f9720e04fdd907f13d011281015f4f77518e1c6d4b23c3576beff8a7a03f218",
+      "bytes": 574236
+    },
+    {
+      "path": "anims_X/bob/ttrp_lieagainstwallinjured2.fbx",
+      "sha256": "48f72006aebe39ccaddb7034e5e6f57ac0cf60b1cd7a79e9ba81e5952fa35c82",
+      "bytes": 654572
+    },
+    {
+      "path": "anims_X/bob/ttrp_limpleg.fbx",
+      "sha256": "18a04086a6fb7ae2fc8a601aff70e3406a58bb44ebc751ccbfb9fb1d2e7f71d0",
+      "bytes": 1371356
+    },
+    {
+      "path": "anims_X/bob/ttrp_longweaponinjured.fbx",
+      "sha256": "20713d857db7f11bd3254e7380a3483b30fc9dd617b3552e1445ba4819a554e0",
+      "bytes": 576524
+    },
+    {
+      "path": "anims_X/bob/ttrp_lookingdownat.fbx",
+      "sha256": "4892f0916b3337cc404dffd3a181526604e5436a6fe6e192e8af745d97cc8c43",
+      "bytes": 574604
+    },
+    {
+      "path": "anims_X/bob/ttrp_lowcrossedarms.fbx",
+      "sha256": "82145028c2dec6bd2d01125bc95c8c89d6c23f902d312c4eafd140874ce0efb0",
+      "bytes": 572188
+    },
+    {
+      "path": "anims_X/bob/ttrp_lurchinginjured.fbx",
+      "sha256": "975914aa938c5e6a96941ab318ff72309e048e60e91f062c504e1c98ecd6dc29",
+      "bytes": 584284
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-asleep-reversed.fbx",
+      "sha256": "13d3aeb9ffd8c94c046761595995df32dd31d549ae3846d93d1470d7560c461e",
+      "bytes": 577260
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-asleep-reversedfurniture.fbx",
+      "sha256": "dedf89d2a1b8611599b071342c8f37f9641ca2433a2f3f86beccb996d8f668fe",
+      "bytes": 577596
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-asleep.fbx",
+      "sha256": "e97847d4901f65a07efde0d52bf7518b2a993544d2c7474604e14300eb247610",
+      "bytes": 590652
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-asleepfurniture.fbx",
+      "sha256": "3b22dbf3fd57851e1dd91ab1afeade7918113b1067c9438da0a7a653469b8f5d",
+      "bytes": 575356
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-sleeping2.fbx",
+      "sha256": "d5e7dc478d23e65f70da66f3a4b88394f28a79a511151110b2fa41944c8973a5",
+      "bytes": 592988
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying-sleeping2furniture.fbx",
+      "sha256": "4d3c5d1fe265cf5dbe0acd2f0a27b9d721a392b4f36486326f47fae520d90c38",
+      "bytes": 576988
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying_elbows.fbx",
+      "sha256": "b31458f25bbf25dc9cc264f5cbf395491c2a2c419a6028ee4ef2061d7ca582ef",
+      "bytes": 572636
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying_elbows_bed.fbx",
+      "sha256": "12da7a4a8ae4cb2892dd6578ce9a75d25ec4a348d17208a339db565343425ecc",
+      "bytes": 573980
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying_limpclutchtummy.fbx",
+      "sha256": "fd5ac92503d86ac583c6dba0858722467583fd48db663d665ee21b0da26f5fdf",
+      "bytes": 576428
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying_raptured.fbx",
+      "sha256": "b6947098b94d47cf8269654138b7c0dcf50eba749c2ec958cd04d616e9011909",
+      "bytes": 576124
+    },
+    {
+      "path": "anims_X/bob/ttrp_lying_rapturedforbidden.fbx",
+      "sha256": "36d0a7520e3a84b92b30df9615fa5895565226dc2f477ebe18cc815950fb8c43",
+      "bytes": 753772
+    },
+    {
+      "path": "anims_X/bob/ttrp_lyinginjured2.fbx",
+      "sha256": "8c816c503d6e5be02fbd545e616633737836b8f25376662dc9f99ed5b143cc95",
+      "bytes": 377772
+    },
+    {
+      "path": "anims_X/bob/ttrp_majimathugging.fbx",
+      "sha256": "a251fd80105a86c458b26cf29cbdebb5d69a5a08316fc882d201738e680f3578",
+      "bytes": 575852
+    },
+    {
+      "path": "anims_X/bob/ttrp_makeout1.fbx",
+      "sha256": "3f60d8d000113e0b3f52f4a2eb1748909d1581ee06f4922c7af73c5be6189c96",
+      "bytes": 377596
+    },
+    {
+      "path": "anims_X/bob/ttrp_makeout2.fbx",
+      "sha256": "d5e47f75bd0981288d89b9748a65267e129033554e1f7872d9fb2870b6dea15f",
+      "bytes": 383788
+    },
+    {
+      "path": "anims_X/bob/ttrp_manleanleft.fbx",
+      "sha256": "7233de231833204c12c660fc694cf8f8b207de7b23c9da7831792b90c09fe887",
+      "bytes": 575404
+    },
+    {
+      "path": "anims_X/bob/ttrp_manleanright.fbx",
+      "sha256": "642101d53979865666f492dfc9db2396d292bd42d63646a879c88a9eaeef9dc3",
+      "bytes": 576764
+    },
+    {
+      "path": "anims_X/bob/ttrp_manspread.fbx",
+      "sha256": "9fc7c4bba1440dc3d3c3d17e3fa4d29955d6b37520613dc686c69920432dfd59",
+      "bytes": 573804
+    },
+    {
+      "path": "anims_X/bob/ttrp_manspreadcrossedarms.fbx",
+      "sha256": "a3bba2163f9f49b574e9aaab91145df9bfe1823426d98327a922a2e673a1e011",
+      "bytes": 561804
+    },
+    {
+      "path": "anims_X/bob/ttrp_meditate.fbx",
+      "sha256": "9a9570ee9af13570e534fac8a899b04c14bebd96b2cadca475eb9b002662716a",
+      "bytes": 577596
+    },
+    {
+      "path": "anims_X/bob/ttrp_meditate2.fbx",
+      "sha256": "51a972bdb66f32e7484a6fe60f27be8533a6e880deb863bad36319542ac28853",
+      "bytes": 577340
+    },
+    {
+      "path": "anims_X/bob/ttrp_meditate2_furniture.fbx",
+      "sha256": "404797c15209f2870e67e5cf7074d8d96c6fa706d6aded2a3b2e519e4fbe6338",
+      "bytes": 577420
+    },
+    {
+      "path": "anims_X/bob/ttrp_mentalbreak.fbx",
+      "sha256": "aabc910c8d5394c15937a3342674456e9023502d1a97e3651bc60f9e25fa997c",
+      "bytes": 612780
+    },
+    {
+      "path": "anims_X/bob/ttrp_militarysalute.fbx",
+      "sha256": "f85af5bd1e58b6f26a08596e6f86a99f4b7bd87739544f1619a531aea0cf88f8",
+      "bytes": 361340
+    },
+    {
+      "path": "anims_X/bob/ttrp_motivated.fbx",
+      "sha256": "f1201bd1d914ef30e1f3bdc65baaa74f70041e82070d129eb50e8f1519280754",
+      "bytes": 581564
+    },
+    {
+      "path": "anims_X/bob/ttrp_muaythai.fbx",
+      "sha256": "d0b4f0f124fe434319e71ed2046bcdade5ebe86855315cd6fe0a94bfeab8abf3",
+      "bytes": 582268
+    },
+    {
+      "path": "anims_X/bob/ttrp_murderstance.fbx",
+      "sha256": "333bfa2826cbc8297076bd6d2d186954f5d78588e53c1056d28395a61bb0c2ce",
+      "bytes": 586172
+    },
+    {
+      "path": "anims_X/bob/ttrp_murderstance1h.fbx",
+      "sha256": "f834df6960d4ed6d5e60ae55e8feb66813cf5a82e979d18ab7d4584ccaa3d5d4",
+      "bytes": 589100
+    },
+    {
+      "path": "anims_X/bob/ttrp_murderstancedw.fbx",
+      "sha256": "fef3475746f846a44541d56fa5241ac21c991af0e923dedd14d616b3befbfc58",
+      "bytes": 584332
+    },
+    {
+      "path": "anims_X/bob/ttrp_nodding.fbx",
+      "sha256": "3dea6ecd4aebf1a415c38c632e85c379e90bb3a1912827cfff4b6203c4c2ca54",
+      "bytes": 569020
+    },
+    {
+      "path": "anims_X/bob/ttrp_one-leg-up-one-down-reversed.fbx",
+      "sha256": "422aed52cd5b7b42e81b11a4d1725a8ad5e9e9dba7923b8a231d64b7f0b6d21d",
+      "bytes": 573772
+    },
+    {
+      "path": "anims_X/bob/ttrp_one-leg-up-one-down.fbx",
+      "sha256": "4b34997d824262ae62947e0103e5f7f730b3148742c02f5d15fdab790c48be02",
+      "bytes": 574444
+    },
+    {
+      "path": "anims_X/bob/ttrp_panic.fbx",
+      "sha256": "7eca263c2882453b2bb21bbae9cbbf3cc9fc90eb5e657ff4c657bda17aa20a00",
+      "bytes": 398236
+    },
+    {
+      "path": "anims_X/bob/ttrp_panickedscramble.fbx",
+      "sha256": "4a2e0718ff074407e97e097151638b26777b02eacb79dceab0854721862fdb44",
+      "bytes": 368108
+    },
+    {
+      "path": "anims_X/bob/ttrp_peekabooboxing.fbx",
+      "sha256": "02ae9f69580649b52bf0110d44159cfd92097855087e8d296ca39d5c8b5259f4",
+      "bytes": 582444
+    },
+    {
+      "path": "anims_X/bob/ttrp_pierceheaven.fbx",
+      "sha256": "b164d8c8ffede74464d7ca97ed01bad8ad4300873c2f4a8edcdfe83fc034bf68",
+      "bytes": 578764
+    },
+    {
+      "path": "anims_X/bob/ttrp_pinkguy.fbx",
+      "sha256": "9050050c9af16186cf771becd893e1d74272caffaa37de7fd82193a24d67a41d",
+      "bytes": 568492
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistol-held-upwards.fbx",
+      "sha256": "a13e5829f86a2f6e58738ceb5a2d954ec1f1dda90bc05545824b39785e2dcb0e",
+      "bytes": 575996
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolhipdrawn.fbx",
+      "sha256": "804c50afcab1ea6681a190c72d5714e37fd1e28fcb3303bb524125351492fee3",
+      "bytes": 368268
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolmelee.fbx",
+      "sha256": "a8deda9ecdf533eddf0373e52a97f31c94fbecce2e091b452f99276b88704ff7",
+      "bytes": 577452
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolmelee2.fbx",
+      "sha256": "cd566a2e3a5ae51510689a9a84b33ed6e020d41078a1310c24a812c1da64bab4",
+      "bytes": 576188
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolsolo.fbx",
+      "sha256": "b1d258ce66364857fa53e69221980ffb0665032405662592f1ca4c8d10b943f7",
+      "bytes": 574876
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolspy.fbx",
+      "sha256": "93c7b73c2a79430852ba0704d034e07a229501bb5034c4e4f7f8cd24343cb6f1",
+      "bytes": 574236
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithmelee3.fbx",
+      "sha256": "c2260fc4559aae35e5a4837514ddded28d4b38529cff79ec8e09d0afca4c1d7b",
+      "bytes": 578284
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithmelee4.fbx",
+      "sha256": "cf9c5b55fb0282d210f930dba66382c0b71672a67e5002c6776e1ed9abe4f9c1",
+      "bytes": 578220
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithmelee5.fbx",
+      "sha256": "9072683b41ce6282fd88f4b6509296d15b4b0caabb2932118c08289e4cf46320",
+      "bytes": 582812
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithmelee5alt.fbx",
+      "sha256": "6a8206b626f9e6639296259996080b5a779cb2d136de29b881bc10bb6056677b",
+      "bytes": 585500
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithsass.fbx",
+      "sha256": "ac6e9f97a91279a7f19dac370c4c1aef90094d451c00683845c96b9d317308e2",
+      "bytes": 575644
+    },
+    {
+      "path": "anims_X/bob/ttrp_pistolwithsassaim.fbx",
+      "sha256": "c5996234fe2b9a088eabbcf980995f756a955c961f8b179c35c97f729b868f26",
+      "bytes": 575932
+    },
+    {
+      "path": "anims_X/bob/ttrp_pixiesticks.fbx",
+      "sha256": "2d1dde1cf3528e980a57c64c7d5aed98cd5c083c842b9948699f142b03a9b445",
+      "bytes": 425308
+    },
+    {
+      "path": "anims_X/bob/ttrp_pondering.fbx",
+      "sha256": "05bb112f50084bf82550e9fb61486f6f7b6cab2d49e6f2d8652f5fed173cfd2b",
+      "bytes": 359084
+    },
+    {
+      "path": "anims_X/bob/ttrp_pose28.fbx",
+      "sha256": "15656dbc288b47e930922c672d4c035e02be8c42b97b5aae0b2121f2380be238",
+      "bytes": 583356
+    },
+    {
+      "path": "anims_X/bob/ttrp_postedup.fbx",
+      "sha256": "cdf209d8c1630f3dedb90868c46c61a7a86c03291e7f3408c251eba7cdb254a8",
+      "bytes": 575852
+    },
+    {
+      "path": "anims_X/bob/ttrp_prayerchair.fbx",
+      "sha256": "6f9f62ef7457c01cf0065c8b6752e1cda3032ca2a6bfd2180b46904918df0ba1",
+      "bytes": 658476
+    },
+    {
+      "path": "anims_X/bob/ttrp_prayerstanding.fbx",
+      "sha256": "5b2f511c9356859a8e9d720f76be681bd858c17da7bce7271511f26ea8da979e",
+      "bytes": 577980
+    },
+    {
+      "path": "anims_X/bob/ttrp_pronerifle.fbx",
+      "sha256": "a452cb3581e199dc34522154ec96bbd3baf36d19b39d529a90297c77177b6577",
+      "bytes": 356764
+    },
+    {
+      "path": "anims_X/bob/ttrp_proptoss.fbx",
+      "sha256": "91289d34d145faa1ad7aa2635bbd8c5ceee7874ea0f75e2c0265ba60d8ee27e3",
+      "bytes": 557436
+    },
+    {
+      "path": "anims_X/bob/ttrp_prostrating.fbx",
+      "sha256": "433904329d41250277a07229d1e01c517dab1a0225613a924973583fdde05422",
+      "bytes": 591788
+    },
+    {
+      "path": "anims_X/bob/ttrp_raid.fbx",
+      "sha256": "40974b86f3da73fc64a4d550c531b963b3997155fb5e30acae593f9cd45c0f3f",
+      "bytes": 583324
+    },
+    {
+      "path": "anims_X/bob/ttrp_readystance.fbx",
+      "sha256": "0d61eaad0c1236a2397cc6781b707b0cdad9e19e170106cd003ac0b9e5a9d82a",
+      "bytes": 583196
+    },
+    {
+      "path": "anims_X/bob/ttrp_recorded.fbx",
+      "sha256": "d4cc8e46e77920879de280ad2af4cc985e8ea4425e1ef1ec67df97d5e7ee858e",
+      "bytes": 490924
+    },
+    {
+      "path": "anims_X/bob/ttrp_restart.fbx",
+      "sha256": "29ffc9544b09993dffab38543b3fb629e59a98c88e4194ad74e24539552a2fa8",
+      "bytes": 586620
+    },
+    {
+      "path": "anims_X/bob/ttrp_rifle-one-hand-up.fbx",
+      "sha256": "7e8fab32c222d3da82c142ac86ee76dab67e03925732781878408de1da2f89de",
+      "bytes": 564460
+    },
+    {
+      "path": "anims_X/bob/ttrp_rifleoverlap.fbx",
+      "sha256": "d3c724dbf5551b8a7509387f769d2dcefc6b4c4b35b44d52a1f21e9af0a5c060",
+      "bytes": 574940
+    },
+    {
+      "path": "anims_X/bob/ttrp_sassylean.fbx",
+      "sha256": "59c78d39f49d4a5d3b0dad82b06643f559472eeffb7481d4a1674f9ca385640c",
+      "bytes": 469788
+    },
+    {
+      "path": "anims_X/bob/ttrp_sassyleanreverse.fbx",
+      "sha256": "5fc49e1be33f2d3b69da0f6c63a4b0fcd37c7ef15980132ed10dbc1fb2b7e585",
+      "bytes": 568108
+    },
+    {
+      "path": "anims_X/bob/ttrp_sassysit.fbx",
+      "sha256": "4410bfbbfc0f3900fbe83517445ab0d43ee0409e2148ec72130a84604ba2c64d",
+      "bytes": 651772
+    },
+    {
+      "path": "anims_X/bob/ttrp_sassystance.fbx",
+      "sha256": "9decbb5c4446521333686a0fefe91297144a2a865b3f3900d09f59d88771a616",
+      "bytes": 577980
+    },
+    {
+      "path": "anims_X/bob/ttrp_scared_look.fbx",
+      "sha256": "9a0bc333c1cf64a499f8d9c106d9e9dd929157cc34e1f11e21eb60a7d768143d",
+      "bytes": 609388
+    },
+    {
+      "path": "anims_X/bob/ttrp_sentinel.fbx",
+      "sha256": "64d64546bb68ff58b023e9a0edeca21c3afe9d83ff0b34b090a5757a3eb6bffc",
+      "bytes": 573756
+    },
+    {
+      "path": "anims_X/bob/ttrp_shadowboxing.fbx",
+      "sha256": "742d12cc6f9499813ad395cf337e67a44fd4f2e543139df432843bbf472ffa16",
+      "bytes": 390364
+    },
+    {
+      "path": "anims_X/bob/ttrp_shy-hands-around-self-2.fbx",
+      "sha256": "c9f8d3a60527a6f53ab414a2ef20be99ad3c8fcb0931d9adfd3134503ea5d153",
+      "bytes": 577196
+    },
+    {
+      "path": "anims_X/bob/ttrp_shyarmrub.fbx",
+      "sha256": "5aef6843843a4aa415b9a5f939ff0c7abfa320e0ed93dce165e92250a12c0b96",
+      "bytes": 570396
+    },
+    {
+      "path": "anims_X/bob/ttrp_shyholdself.fbx",
+      "sha256": "c12bee09c92e347b2e09b21e23c8ebc8f3010f1fa055b7bc803e6bbb89a25843",
+      "bytes": 578044
+    },
+    {
+      "path": "anims_X/bob/ttrp_sighing.fbx",
+      "sha256": "7acc0236422fd7f16d163d52ac1b10b120eb72975f16780af0dc0181bda90fa9",
+      "bytes": 399964
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-arm-around-left.fbx",
+      "sha256": "d380007ba7f0df6791fbf366e48235d49f27fd207ee23c80a8defb655c0143a8",
+      "bytes": 572812
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-arm-around-right.fbx",
+      "sha256": "a53f4c4254186d31ccfa7eb499f3a875e9d4cf1f2b92de5f80261477d57028d2",
+      "bytes": 574044
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-between-legs.fbx",
+      "sha256": "9d7f25215119dfe02d853e6c6038ba0e54b243071d4a0787ed90099e1ba0d988",
+      "bytes": 578268
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-cross-chair.fbx",
+      "sha256": "266894a668a8269896e73e451b8cb6e6d5a881f39038df30d41c8316e656e619",
+      "bytes": 662988
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-hands-on-chair.fbx",
+      "sha256": "c3ac194e28bb48baa0909cbef1eccb3d49198c6fa85c6386cdc7d2446c945eca",
+      "bytes": 659516
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-legs-kicked-up.fbx",
+      "sha256": "db7d4d44f14a066278f6df90232a579162fd4d576a9a48ab97830f21d7ae0069",
+      "bytes": 572460
+    },
+    {
+      "path": "anims_X/bob/ttrp_sit-on-ground-legs-spread.fbx",
+      "sha256": "55c53ddffeed0af86b806de43c1821e90e416259b41a00854c6867b91fbfb96a",
+      "bytes": 577308
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitbesidehandthighleft.fbx",
+      "sha256": "70aa7934f1d2b7cb5c03066cff0cfbf646fdf8149b43268d0f520b3246bb351a",
+      "bytes": 575436
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitbesidehandthighright.fbx",
+      "sha256": "309f97ee1c1c15ab2ffe814cdaf84585b2b6b7750701e6e552d5d1082faf1236",
+      "bytes": 567260
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitchairarmsaroundself.fbx",
+      "sha256": "9107513ae4ffc606357cafe963f81b5d73ef960cddb12f79e301be00d28022fe",
+      "bytes": 861004
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitcrossedlegarmsout.fbx",
+      "sha256": "7a105a2d790015381dc0fa4df37bf850bc6c86feea1cb3358162006a727da8bb",
+      "bytes": 369772
+    },
+    {
+      "path": "anims_X/bob/ttrp_sithandsfolded.fbx",
+      "sha256": "b8c1da1a34596ec0a4d9219495b94068749d850cdc5aa4bd83df189d72ff210a",
+      "bytes": 575308
+    },
+    {
+      "path": "anims_X/bob/ttrp_sithandtap.fbx",
+      "sha256": "d4d772068d3dccfdec8a7288894b725a91130f2577a4057810cd5b4948bffdba",
+      "bytes": 370828
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitinchairlegscrossed.fbx",
+      "sha256": "fa16778789ebbc9b6fe9b4b293f79716f7410bddecdea468647c6e822b882f7b",
+      "bytes": 577628
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitinchaironelegup.fbx",
+      "sha256": "17f5719c52e90c222e2fe93f63cd052f418572eb254d9cd812cb1c0080beb947",
+      "bytes": 573084
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitonground.fbx",
+      "sha256": "50791a50543c0664532124c3a7e60d3a6ed0f609adf7650e00bf28372593c230",
+      "bytes": 573004
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitprayer.fbx",
+      "sha256": "5fe4b228a01c595045a421edf367f3fd49017c40fffabb6afb6ec518004eae43",
+      "bytes": 369068
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitsway.fbx",
+      "sha256": "d9f60b110d50bca0a5268cd8372dce4436332253baea3f74351af4a7b519d9a3",
+      "bytes": 410060
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting-arm-around.fbx",
+      "sha256": "8c595c1c003fa1d30211a590b5e0641f49affa35f774520dead5d67e4ca131ed",
+      "bytes": 572332
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting-arm-around2.fbx",
+      "sha256": "1f8a16c325ce50118c49ba91db87b95997204ced44a49250c8cfc64e4f70554f",
+      "bytes": 573244
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting_forearmsthighs.fbx",
+      "sha256": "1be9b108334627bd005e743c7c8f0f3fe8d3c37a9268ca72393b52357797827e",
+      "bytes": 575292
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting_hands-head.fbx",
+      "sha256": "48e86d60f250b3e0fb29d881276b65b2225bb54c9653b859257d1bc5fded1358",
+      "bytes": 572892
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting_injuredarm.fbx",
+      "sha256": "10d047ff16af0cf1a07c36a77b845a9414e6f3247fbd436eb560df129f2c7a87",
+      "bytes": 663404
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitting_injuredarmtucked.fbx",
+      "sha256": "b4b30c158c1b346a86997d5b30bea66bae1726c24383bbdd649a5ac71c8d2c99",
+      "bytes": 664140
+    },
+    {
+      "path": "anims_X/bob/ttrp_sittingarmsoverknee.fbx",
+      "sha256": "5a89a4765dd4c4eaaef0008c9127ef0f2f5179ce23d2e607c229bb82a902f3ad",
+      "bytes": 366156
+    },
+    {
+      "path": "anims_X/bob/ttrp_sittinghiprifle.fbx",
+      "sha256": "17f230c1450df510cc74db01e219cdca4e9cbe89b7aef67aebaa8afb7c721a1b",
+      "bytes": 573148
+    },
+    {
+      "path": "anims_X/bob/ttrp_sittingnextto.fbx",
+      "sha256": "dcae13cd9fa104325e9988634d0847fdee4a6891b6692e236c6fe60ba126f59c",
+      "bytes": 564684
+    },
+    {
+      "path": "anims_X/bob/ttrp_sittingnexttoground.fbx",
+      "sha256": "f2243511bf29418e56adb486efa832208add0f51e263ae8cadf8da982ed24f2a",
+      "bytes": 565356
+    },
+    {
+      "path": "anims_X/bob/ttrp_sittingriflebetweenlegs.fbx",
+      "sha256": "c8059b9ae314c49bcc4b7a1a6746780c31e9ee85bf96c1ea99bc2556b2a2db1e",
+      "bytes": 571340
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitwithchininhand-chair.fbx",
+      "sha256": "be5da3bcf2c75e5d8ac0f0f0f7500bacbc7cd63378a8408c4f5711ac16424b57",
+      "bytes": 572732
+    },
+    {
+      "path": "anims_X/bob/ttrp_sitwithchininhands.fbx",
+      "sha256": "f3a2915f9f194ebffbe09843ec768cf7c6447c5d36f3f6c5eccf982bd962832a",
+      "bytes": 371132
+    },
+    {
+      "path": "anims_X/bob/ttrp_skyroar.fbx",
+      "sha256": "f198cb38389a92a09a58c53f6fe6e247fe71df326178df543bc18195e48b303a",
+      "bytes": 567724
+    },
+    {
+      "path": "anims_X/bob/ttrp_snowangel.fbx",
+      "sha256": "2f4fc7703b85ba7bd23a423ade9bfd3678f15ba4b429e39c44fc7eb0af746167",
+      "bytes": 583420
+    },
+    {
+      "path": "anims_X/bob/ttrp_soccerflex.fbx",
+      "sha256": "86dcfc82d92d5dbad905e2230d2da0d0c567f593819ab776a61d3a5ca7cf48f1",
+      "bytes": 586540
+    },
+    {
+      "path": "anims_X/bob/ttrp_spearline.fbx",
+      "sha256": "8db198ed6c8f937b968a583b2b0537e8752e048287d3a82009066965a132f2d9",
+      "bytes": 575436
+    },
+    {
+      "path": "anims_X/bob/ttrp_spearpose1.fbx",
+      "sha256": "df86e5619694b0604ae53b5640360ac5077f5572fd2b88972bf0c36501339b59",
+      "bytes": 574508
+    },
+    {
+      "path": "anims_X/bob/ttrp_spearposerelaxed.fbx",
+      "sha256": "4e48f1f8004058a25af0c0bd1b970c3d75a421957f02b2e039f4c10fff49e19f",
+      "bytes": 573948
+    },
+    {
+      "path": "anims_X/bob/ttrp_spearthrust.fbx",
+      "sha256": "0a362d3443ad85d5a75b082d346a2c689b5dba33f236f4315a3ad08335fc9069",
+      "bytes": 583100
+    },
+    {
+      "path": "anims_X/bob/ttrp_spookymonthdance.fbx",
+      "sha256": "bb8b16553f40794c6ec43efdce2762bbdfd7f772517777d09cb1431e88b24012",
+      "bytes": 587260
+    },
+    {
+      "path": "anims_X/bob/ttrp_spookymonthdanceforbidden.fbx",
+      "sha256": "93dec7e0a189606747d60f91d4ff89ffc1ff48f416bff8891fc358db850297dc",
+      "bytes": 572652
+    },
+    {
+      "path": "anims_X/bob/ttrp_squareup.fbx",
+      "sha256": "e0f57e061fd17605ad81634d8426a241574fed19bdc903b6e11e0cd95f1f70fe",
+      "bytes": 579836
+    },
+    {
+      "path": "anims_X/bob/ttrp_standing-foot-on-object.fbx",
+      "sha256": "0b71a62f1baa9cf139fb7d12adeae4444c78d07fe5318d586a0ac252c4d52870",
+      "bytes": 449212
+    },
+    {
+      "path": "anims_X/bob/ttrp_standing_oofowmyballs.fbx",
+      "sha256": "31fd2c377b4ed6c24a4106b3a693247ad45ea522aa3f119cc0e13c49759e4b14",
+      "bytes": 593820
+    },
+    {
+      "path": "anims_X/bob/ttrp_stomachlaybed.fbx",
+      "sha256": "9bbcdda9834f88979884b2f74a101f90aeb9bf2b2028797a7d7781a30842e15b",
+      "bytes": 387676
+    },
+    {
+      "path": "anims_X/bob/ttrp_stretch_standingbacksplit.fbx",
+      "sha256": "cf6a5f4466a60e47bee0abc39c68d35137385cc62f8cdc230941bdff109a0e0f",
+      "bytes": 1778540
+    },
+    {
+      "path": "anims_X/bob/ttrp_stretch_triangle.fbx",
+      "sha256": "784448a8572c594fb2c04b8306c06f1d2084f878269d0b8df9c193fe03925325",
+      "bytes": 1762252
+    },
+    {
+      "path": "anims_X/bob/ttrp_sukuna.fbx",
+      "sha256": "91b6c27ec5ae6cb9da349315d2cdd29c191febd8200ba8ea615bb33e6e73e9b4",
+      "bytes": 584716
+    },
+    {
+      "path": "anims_X/bob/ttrp_suntanning.fbx",
+      "sha256": "865b0583a340b04726fb0501067437516bbddc37fd8d5a636fdd92577fb7684f",
+      "bytes": 575804
+    },
+    {
+      "path": "anims_X/bob/ttrp_suntanning2.fbx",
+      "sha256": "0a7d724c5ecdc3c58826dadae2eaac50e2df0d17290762048045d1ee3a9da544",
+      "bytes": 579132
+    },
+    {
+      "path": "anims_X/bob/ttrp_suntanningfurniture.fbx",
+      "sha256": "79cb45d0e8a11dd6ea8cf167fc3d6e748cadfc9541a28c8f275e71756c50f37e",
+      "bytes": 573676
+    },
+    {
+      "path": "anims_X/bob/ttrp_swordheldlow.fbx",
+      "sha256": "01cb9406c81c9eb42eff6134c8c6fca19fa385ae27fa180035c3021707849c9f",
+      "bytes": 576796
+    },
+    {
+      "path": "anims_X/bob/ttrp_swordstance1.fbx",
+      "sha256": "df78a082d880567a8599c5f993134608759e58f9da5f53f534fee4be54ea5254",
+      "bytes": 575020
+    },
+    {
+      "path": "anims_X/bob/ttrp_swordstance2.fbx",
+      "sha256": "8a28d510af46b01a4ba63f2b08590eabe947d7e616f96d83d573815d919dbbc6",
+      "bytes": 370444
+    },
+    {
+      "path": "anims_X/bob/ttrp_swordstance3.fbx",
+      "sha256": "a63cf9528d34877096506f17ab591e4dd8c81c4ad3675c9fbf68b69d05065ceb",
+      "bytes": 574076
+    },
+    {
+      "path": "anims_X/bob/ttrp_swordstance4.fbx",
+      "sha256": "e52fcf69d33a0464d11e44dcb4709055cdb1f468fe40123d56e865c1252747f7",
+      "bytes": 574380
+    },
+    {
+      "path": "anims_X/bob/ttrp_t-pose.fbx",
+      "sha256": "5ca606a8e576e9d6e2d81a08758a5507e2213570768e7106552dcb79bf37ba80",
+      "bytes": 592156
+    },
+    {
+      "path": "anims_X/bob/ttrp_taunt.fbx",
+      "sha256": "c7134b2c092319dcc0fcf4d3096cd7574264df8f74e10bd5d0d7680ca205a3a0",
+      "bytes": 569420
+    },
+    {
+      "path": "anims_X/bob/ttrp_test.fbx",
+      "sha256": "6cbade49807d3da3ab1fb1f6779b7d1541ee2f2f6c7da5c88910c7f9436a2480",
+      "bytes": 382476
+    },
+    {
+      "path": "anims_X/bob/ttrp_texting.fbx",
+      "sha256": "05a628fed76bf3423c15f1bbf44e877fd835f19a29cb129d8cd742f376acc126",
+      "bytes": 579356
+    },
+    {
+      "path": "anims_X/bob/ttrp_thanesit.fbx",
+      "sha256": "40f4cb568ef9ad24f2c87346ee5e723e5e1f80efbc1dddf0dc3c8f9df925d0c0",
+      "bytes": 584188
+    },
+    {
+      "path": "anims_X/bob/ttrp_think.fbx",
+      "sha256": "fdb3d1c9ac84dccc896cd797b37ff58d4911eed20023ae70b50885b8388eb584",
+      "bytes": 413004
+    },
+    {
+      "path": "anims_X/bob/ttrp_thinkholdselfblend.fbx",
+      "sha256": "8a9f4726404d9c8374c1142a3863c50241cd84ac48229b7dedd64fb969732c44",
+      "bytes": 575612
+    },
+    {
+      "path": "anims_X/bob/ttrp_timeoutbruh.fbx",
+      "sha256": "205152163092e9c995bda1c288bdf6616dbf06d523878a7f9de1deec96f5c912",
+      "bytes": 571756
+    },
+    {
+      "path": "anims_X/bob/ttrp_tpose.fbx",
+      "sha256": "e150a0921df0896a62e5c7a8aee68eb25bde2c1e7387e9ea75ca20d4145af0ab",
+      "bytes": 566300
+    },
+    {
+      "path": "anims_X/bob/ttrp_trickshot.fbx",
+      "sha256": "7108c81bf73cd723960fd756368a9ebb223a22bcb5aaa46f0d73d05e7831c99d",
+      "bytes": 571388
+    },
+    {
+      "path": "anims_X/bob/ttrp_twerk.fbx",
+      "sha256": "842eada2966235fef7f3ed55ad67a67dc51bb65baabe80a35a3664055b5ff46d",
+      "bytes": 656620
+    },
+    {
+      "path": "anims_X/bob/ttrp_twerksplits.fbx",
+      "sha256": "afdbefa0a57398fa1f4f6eb81cce0b65a3a7ba010be81d07591a9b20dd8f8ac1",
+      "bytes": 578380
+    },
+    {
+      "path": "anims_X/bob/ttrp_unbothered.fbx",
+      "sha256": "383164a77db340386bac050d3fa2b7c555f91d5bca54545ebdc4ec650e24dc40",
+      "bytes": 574380
+    },
+    {
+      "path": "anims_X/bob/ttrp_untouched.fbx",
+      "sha256": "0a449e3b9ae982eb7a64f98103731335d3983eb8f22444b2e16de844777326d0",
+      "bytes": 573324
+    },
+    {
+      "path": "anims_X/bob/ttrp_upyours.fbx",
+      "sha256": "d0afe3bcc571151ebd2991bd503017a40162809697b3cd3a624b834e83be790e",
+      "bytes": 395788
+    },
+    {
+      "path": "anims_X/bob/ttrp_upyourscasual.fbx",
+      "sha256": "63c2cc43e78d9a50a577dfaa1a766c5cc922a50395a87dca1b4c657e15d0d22f",
+      "bytes": 375388
+    },
+    {
+      "path": "anims_X/bob/ttrp_wall_tinkle.fbx",
+      "sha256": "e20d6258573a9a8ebdce93233c647e839dd9899aec1984bbc3e38c5e5a363c8b",
+      "bytes": 359324
+    },
+    {
+      "path": "anims_X/bob/ttrp_weapon-shoulder.fbx",
+      "sha256": "0970a9039e55b2e5cef2a5af7e7c40c16c3618e073b8f812f44f6459d3608466",
+      "bytes": 568812
+    },
+    {
+      "path": "anims_X/bob/ttrp_whodoyouthinkiamblend.fbx",
+      "sha256": "5f72dad16744130ebd99bc40011ac73c9cb5fa108ca9de516e1a8e3e391d9ca0",
+      "bytes": 576684
+    },
+    {
+      "path": "anims_X/bob/ttrp_wrappedkneesground.fbx",
+      "sha256": "536c06456388e9ca794ce325611d65b27fd34b48c6627946e6e25185b51a2d2b",
+      "bytes": 1598652
+    },
+    {
+      "path": "anims_X/bob/ttrp_wrestling.fbx",
+      "sha256": "a59987cb905307be54f6df94b01d02c3420e80f0a96966c714a4e17fc1ec4a8d",
+      "bytes": 588236
+    },
+    {
+      "path": "anims_X/bob/ttrp_wrestlingblend.fbx",
+      "sha256": "3af03dc04544bf701d1c65c3c74b16811b82a6ac86239aecb0baa33250f6cfd3",
+      "bytes": 588236
+    },
+    {
+      "path": "anims_X/bob/ttrp_wristhold.fbx",
+      "sha256": "7ce5a1a96e5dff372404055c8e1281292a1abd7dc1dfabecc0a4cc9841cd45d8",
+      "bytes": 580316
+    },
+    {
+      "path": "anims_X/bob/ttrp_wsitting.fbx",
+      "sha256": "bb44e9065c2a8a99ef7f4845d721d28b2399741d177d14aba9f1994a15f34bb4",
+      "bytes": 358636
+    },
+    {
+      "path": "anims_X/bob/ttrp_zyzzflex.fbx",
+      "sha256": "fa4d4df28abf520b134e121a4d4d8ac793114a273bdb2e2061716abc61190051",
+      "bytes": 572508
+    },
+    {
+      "path": "anims_X/bob/ttrpg_holdrifle.fbx",
+      "sha256": "58aafc7b91734c467f18e43295327786738512a65e08cf0a7622943655877f58",
+      "bytes": 367180
+    }
+  ],
+  "skipped": [],
+  "safety": "Solo se elimina cuando ruta virtual y SHA-256 coinciden exactamente con ECZ2_18."
+}
