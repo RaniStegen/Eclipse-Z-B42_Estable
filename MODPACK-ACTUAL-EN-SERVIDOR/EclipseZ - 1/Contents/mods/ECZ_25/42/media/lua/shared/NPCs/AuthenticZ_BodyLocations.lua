@@ -1,87 +1,54 @@
 -- AuthenticZ_BodyLocations.lua
 -- Build 42.20 multiplayer-safe body-location setup for AuthenticZ.
 --
--- AuthenticZ only needs to add its own slots to the existing Human group.
--- Never reset or rebuild BodyLocations here: doing so invalidates the live
--- BodyLocationGroup used by the character and can make vanilla watches,
--- fanny packs and other wearable items finish their timed action without
--- actually becoming equipped.
+-- Add only AuthenticZ's own locations to the existing Human group.  Never
+-- reset, rebuild or reorder the live BodyLocationGroup: WornItems keeps a
+-- reference to that exact group and vanilla wrist/fanny-pack slots must remain
+-- untouched.
 
 require "NPCs/BodyLocations"
 
-local BodyAPI = BodyLocations
-local SlotAPI = ItemBodyLocation
-local RL = ResourceLocation
+local CUSTOM_LOCATIONS = {
+    "AZ:HeadExtra",
+    "AZ:HeadExtraHair",
+    "AZ:HeadExtraPlus",
+    "AZ:NeckExtra",
+    "AZ:LegsExtra",
+    "AZ:TorsoRigPlus2",
+    "AZ:TorsoExtraPlus1",
+}
 
 local function resolveLocation(value)
     if value == nil then return nil end
     if type(value) ~= "string" then return value end
-    return SlotAPI.get(RL.of(value))
-end
-
-local function insertRelative(group, anchorValue, beforeAnchor, rawIds)
-    if not group then return end
-
-    local anchorId = resolveLocation(anchorValue)
-    local ids = {}
-
-    for _, rawId in ipairs(rawIds) do
-        local locationId = resolveLocation(rawId)
-        if locationId then
-            group:getOrCreateLocation(locationId)
-            ids[#ids + 1] = locationId
-        end
+    if not ItemBodyLocation or not ResourceLocation then return nil end
+    if type(ItemBodyLocation.get) ~= "function" or type(ResourceLocation.of) ~= "function" then
+        return nil
     end
 
-    -- Ordering is visual only, but keep the original anchored order whenever
-    -- the current Build exposes the required methods.  Failure to move a slot
-    -- must never remove or recreate any existing vanilla/modded location.
-    if not anchorId or not group.indexOf or not group.moveLocationToIndex then
-        return
-    end
+    local okResource, resource = pcall(ResourceLocation.of, value)
+    if not okResource or not resource then return nil end
 
-    local ok, anchorIndex = pcall(function()
-        return group:indexOf(anchorId)
-    end)
-    if not ok or anchorIndex == nil or anchorIndex < 0 then
-        return
-    end
-
-    local firstIndex = beforeAnchor and anchorIndex or (anchorIndex + 1)
-    for offset, locationId in ipairs(ids) do
-        pcall(function()
-            group:moveLocationToIndex(locationId, firstIndex + offset - 1)
-        end)
-    end
+    local okLocation, location = pcall(ItemBodyLocation.get, resource)
+    if okLocation then return location end
+    return nil
 end
 
 local function setupAuthenticZBodyLocations()
-    local group = BodyAPI.getGroup("Human")
-    if not group then return end
+    local group = BodyLocations and BodyLocations.getGroup and BodyLocations.getGroup("Human") or nil
+    if not group or type(group.getOrCreateLocation) ~= "function" then return end
 
-    local outerVestLayer =
-        SlotAPI.TORSO_EXTRA_VEST_BULLET
-        or SlotAPI.TORSO_EXTRA_VEST
-        or SlotAPI.TORSO_EXTRA
-
-    insertRelative(group, SlotAPI.HAT, false, {
-        "AZ:HeadExtra",
-        "AZ:HeadExtraHair",
-        "AZ:HeadExtraPlus",
-    })
-
-    insertRelative(group, SlotAPI.JACKET, false, {
-        "AZ:NeckExtra",
-    })
-
-    insertRelative(group, SlotAPI.SHOES, true, {
-        "AZ:LegsExtra",
-    })
-
-    insertRelative(group, outerVestLayer, false, {
-        "AZ:TorsoRigPlus2",
-        "AZ:TorsoExtraPlus1",
-    })
+    for _, rawId in ipairs(CUSTOM_LOCATIONS) do
+        local locationId = resolveLocation(rawId)
+        if locationId then
+            pcall(group.getOrCreateLocation, group, locationId)
+        end
+    end
 end
 
-Events.OnGameBoot.Add(setupAuthenticZBodyLocations)
+-- BodyLocations.lua is required above, so the group normally exists already.
+-- Repeating this on boot is idempotent and catches unusual load orders.
+setupAuthenticZBodyLocations()
+if Events and Events.OnGameBoot then
+    Events.OnGameBoot.Add(setupAuthenticZBodyLocations)
+end
