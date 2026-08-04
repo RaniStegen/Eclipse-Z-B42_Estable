@@ -1,0 +1,46 @@
+name: Limpiar diagnósticos de equipamiento v3-v5
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/limpiar-diagnosticos-equipamiento-v3-v5.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 0
+
+      - name: Eliminar diagnósticos temporales
+        run: |
+          set -euo pipefail
+          rm -rf \
+            MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_EQUIPAMIENTO_ESCALERA_V3 \
+            MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4 \
+            MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_ISWEAR_V5
+
+          git rm --ignore-unmatch \
+            .github/workflows/diagnosticar-equipamiento-escalera-v3.yml \
+            .github/workflows/diagnosticar-wear-action-v4.yml \
+            .github/workflows/diagnosticar-iswear-v5.yml \
+            .github/workflows/limpiar-diagnosticos-equipamiento-v3-v5.yml
+
+          git config user.name "Eclipse-Z Diagnóstico"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No quedaban diagnósticos temporales."
+          else
+            git commit -m "Eliminar diagnósticos temporales de equipamiento"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
