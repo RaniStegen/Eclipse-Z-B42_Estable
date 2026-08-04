@@ -1,0 +1,98 @@
+name: Diagnosticar acción de vestir v4
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/diagnosticar-wear-action-v4.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Analizar acción de vestir y registros
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, json, hashlib
+
+          root = Path('MODPACK-ACTUAL-EN-SERVIDOR')
+          out = root / '_AUDITORIA' / 'TEMP_DIAGNOSTICO_WEAR_ACTION_V4'
+          out.mkdir(parents=True, exist_ok=True)
+
+          def read(path):
+              data = path.read_bytes()
+              for enc in ('utf-8-sig','utf-8','cp1252','latin-1'):
+                  try: return data.decode(enc)
+                  except UnicodeDecodeError: pass
+              return data.decode('utf-8', errors='replace')
+
+          needles = [
+              r'ISWearClothing', r'setWornItem', r'removeWornItem', r'getWornItem',
+              r'wearItem', r'onWear', r'doWear', r'CanBeEquipped', r'BodyLocation',
+              r'ItemBodyLocation\.register', r'ItemBodyLocation\.get',
+              r'BodyLocations\.getGroup', r'moveLocationToIndex', r'BodyLocations\.reset',
+          ]
+          rx = re.compile('|'.join(needles), re.I)
+          assign_rx = re.compile(r'(?:function\s+ISWearClothing|ISWearClothing\s*[.:]|ISInventoryPaneContextMenu\s*[.:].*(?:Wear|Cloth)|setWornItem\s*=)', re.I)
+
+          hits=[]; overrides=[]; registries=[]; copied=[]
+          for p in root.rglob('*'):
+              if not p.is_file(): continue
+              if p.suffix.lower() not in {'.lua','.txt','.xml'}: continue
+              text=read(p); rel=p.as_posix()
+              lines=text.splitlines()
+              local_hits=[]
+              for i,line in enumerate(lines,1):
+                  if rx.search(line):
+                      row={'file':rel,'line':i,'text':line[:1200]}
+                      hits.append(row); local_hits.append(row)
+                  if assign_rx.search(line):
+                      overrides.append({'file':rel,'line':i,'text':line[:1200]})
+              if p.name.lower() == 'registries.lua':
+                  registries.append({'file':rel,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'content':text})
+              if local_hits and (p.suffix.lower()=='.lua' or p.name.lower()=='registries.lua'):
+                  target=out/'archivos'/p.relative_to(root)
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  target.write_bytes(p.read_bytes()); copied.append(rel)
+
+          result={'overrides':overrides,'registries':registries,'hits':hits,'copied':sorted(set(copied)),
+                  'counts':{'overrides':len(overrides),'registries':len(registries),'hits':len(hits),'copied':len(set(copied))}}
+          (out/'diagnostico.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          md=['# Diagnóstico de acción de vestir v4','','## Conteos']
+          for k,v in result['counts'].items(): md.append(f'- **{k}:** {v}')
+          md += ['','## Overrides o interceptores']
+          for r in overrides: md.append(f"- `{r['file']}:{r['line']}` — `{r['text'].replace('`', "'")}`")
+          md += ['','## registries.lua']
+          for r in registries:
+              md += [f"### `{r['file']}`",f"SHA-256: `{r['sha256']}`",'```lua',r['content'],'```']
+          md += ['','## Todas las coincidencias']
+          for r in hits: md.append(f"- `{r['file']}:{r['line']}` — `{r['text'].replace('`', "'")}`")
+          (out/'diagnostico.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
+          print(json.dumps(result['counts'],indent=2))
+          PY
+      - name: Guardar diagnóstico
+        run: |
+          git config user.name "Eclipse-Z Diagnóstico"
+          git config user.email "actions@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "Diagnosticar acción de vestir y registros v4"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
