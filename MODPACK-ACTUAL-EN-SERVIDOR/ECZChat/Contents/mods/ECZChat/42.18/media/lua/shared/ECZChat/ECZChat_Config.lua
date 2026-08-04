@@ -1,6 +1,6 @@
 ECZChatConfig = ECZChatConfig or {}
 
-ECZChatConfig.VERSION = "2.1.0"
+ECZChatConfig.VERSION = "2.1.1"
 ECZChatConfig.MAX_VISIBLE_LINES = 200
 ECZChatConfig.MAX_STORED_MESSAGES = 250
 ECZChatConfig.MAX_COMMAND_HISTORY = 40
@@ -57,9 +57,24 @@ function ECZChatConfig.localizeSystemText(value)
     text = text:gsub("User ([%w_%.%-]+) is now admin", function(username)
         return ECZChatConfig.text("UI_ECZChat_UserNowAdmin", "User " .. username .. " is now an administrator.", username)
     end)
-    text = text:gsub("Item (.-) Added in (.-)'s inventory%.", function(itemName, username)
-        return ECZChatConfig.text("UI_ECZChat_ItemAdded", itemName .. " was added to " .. username .. "'s inventory.", itemName, username)
-    end)
+
+    -- Kahlua does not reliably pass every Lua-pattern capture to a gsub
+    -- replacement callback.  The previous two-capture callback therefore
+    -- received a nil username and failed whenever the item-search tool spawned
+    -- an object.  Parse the whole message first and rebuild it without a
+    -- multi-capture callback.
+    local before, itemName, username, after = text:match("^(.-)Item (.-) Added in (.-)'s inventory%.(.*)$")
+    if itemName ~= nil and username ~= nil then
+        local fallback = tostring(itemName) .. " was added to " .. tostring(username) .. "'s inventory."
+        local localized = ECZChatConfig.text(
+            "UI_ECZChat_ItemAdded",
+            fallback,
+            tostring(itemName),
+            tostring(username)
+        )
+        text = tostring(before or "") .. tostring(localized or fallback) .. tostring(after or "")
+    end
+
     text = text:gsub("UI_ECZChat_VerbSays", ECZChatConfig.text("UI_ECZChat_VerbSays", "says:"))
     text = text:gsub("UI_ECZChat_Shouts", ECZChatConfig.text("UI_ECZChat_ChannelShout", "Shout"))
     return text
