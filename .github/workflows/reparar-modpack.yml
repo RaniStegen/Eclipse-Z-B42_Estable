@@ -7,12 +7,20 @@ on:
     paths:
       - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/reparar_modpack.py"
       - ".github/workflows/reparar-modpack.yml"
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/reparar_modpack.py"
+      - ".github/workflows/reparar-modpack.yml"
 
 permissions:
   contents: write
 
 jobs:
   reparar:
+    if: github.event_name == 'push' || github.event.pull_request.head.ref == 'agent/auditoria-modpack-b42-20'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
