@@ -9,6 +9,26 @@
     "3755715727",
     "3739256725"
   ],
+  "external_workshop_items": [
+    {
+      "id": "3755715727",
+      "mods": [
+        "NewMusic"
+      ],
+      "scope": "external"
+    },
+    {
+      "id": "3739256725",
+      "mods": [
+        "eclipsemusic"
+      ],
+      "scope": "external"
+    }
+  ],
+  "external_mods": [
+    "NewMusic",
+    "eclipsemusic"
+  ],
   "mods": [
     "ECZ_1",
     "ECZ_2",
