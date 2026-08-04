@@ -25,6 +25,49 @@ module Base
         primaryAnimMask = HoldingAngleTorchRight,
         secondaryAnimMask = HoldingAngleTorchLeft,
     }
+
+    /**
+     * ECZ_16 aporta el modelo genérico Wheel_Hand. ECZ2_10 añade los modelos
+     * de Filibuster Rhymes, las sustituciones de mano y los modelos de suelo.
+     * Se fija aquí el StaticModel final para que la resolución no dependa de
+     * un pisado implícito entre ambos mods.
+     */
+    item OldTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item OldTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item OldTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
 }
 
 module VFX
