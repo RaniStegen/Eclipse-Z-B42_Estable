@@ -1,0 +1,513 @@
+{
+  "target": "EclipseZ - 2/Contents/mods/ECZ2_Ajustes/42.18/media/scripts/zz_ECZ_Compat_Recetas_Etiquetas.txt",
+  "items": 166,
+  "modules": {
+    "SapphCooking": 3,
+    "Base": 162,
+    "VFX": 1
+  },
+  "entries": {
+    "SapphCooking.ArborioRiceBowl": {
+      "Tags": "SapphCookingRiceBowl;sapphcooking:returnbowl;base:ricerecipe"
+    },
+    "SapphCooking.HomemadeSourCream": {
+      "EvolvedRecipe": "Pizza:5;Soup:5;Stew:5;Pie:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;Roasted Vegetables:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;Taco:5;Burrito:5;BowlOfFood:5",
+      "Tags": "base:cheese;sapphcooking:sourcream"
+    },
+    "SapphCooking.BrownEgg": {
+      "EvolvedRecipe": "Stir fry Griddle Pan:10;Stir fry:10;Sandwich:10|Cooked;Sandwich Baguette:10|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;BlenderSalty:8|Cooked;BowlOfFood:5|Cooked"
+    },
+    "Base.OpenBeans": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:12;Burrito:12;Casserole:24;Chili:24;Enchilada:12;Meatloaf:24;Nachos:12;Omelette:12;Pie:12;Quesadilla:12;Rice:24;Salad:8;Sandwich:8;Soup:24;Stew:24;Taco:6;Toast:8"
+    },
+    "Base.CannedCarrotsOpen": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:10;BakedPotato:6;Burrito:6;Casserole:12;Chili:12;Curry:12;Enchilada:6;Meatloaf:12;Nachos:6;Omelette:6;Pasta:12;Pie:12;Quesadilla:6;Quiche:6;Ramen:6;Rice:12;Salad:6;Sandwich:6;ScallopedPotatoBake:6;Soup:12;Stew:12;Stir fry:12;Taco:6"
+    },
+    "Base.CannedChiliOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:8;Burger:8;Burrito:8;Casserole:16;Chili:16;Curry:16;Enchilada:16;Hotdog:8;Meatloaf:16;Nachos:16;Omelette:8;Pasta:8;Pie:16;Quesadilla:16;Quiche:8;Rice:16;Sandwich:8;Stew:16;Stir fry:16;Taco:8;Toast:8"
+    },
+    "Base.CannedCornOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;AddBaitToChum:10;BakedPotato:8;Burger:8;Burrito:8;Casserole:16;Chili:16;Curry:16;Enchilada:8;Hotdog:8;Meatloaf:16;Nachos:8;Omelette:8;Pasta:16;Pie:8;Quesadilla:8;Quiche:8;Ramen:8;Rice:16;Salad:16;ScallopedPotatoBake:8;Soup:16;Stew:16;Stir fry:16;Taco:8"
+    },
+    "Base.CannedCornedBeefOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:6;Burger:12;Casserole:12;Chili:12;Curry:12;Meatloaf:12;Omelette:8;Pasta:12;Pie:12;Pizza:12;Quiche:12;Rice:12;Salad:12;Sandwich:8;ScallopedPotatoBake:12;Soup:12;Stew:12;Stir fry:12;Toast:8"
+    },
+    "Base.DogfoodOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;AddBaitToChum:30;BakedPotato:5;Burger:10|Cooked;Burrito:10|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:5;Meatloaf:15;Nachos:5|Cooked;Omelette:15;Pasta:15;Pizza:15;Quesadilla:5;Quiche:15;Ramen:5;Rice:15;Sandwich:10|Cooked;ScallopedPotatoBake:5;Soup:15;Stew:15;Taco:5|Cooked;Toast:5|Cooked"
+    },
+    "Base.CannedMushroomSoupOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;Burger:5;Casserole:10;Chili:10;Meatloaf:10;Omelette:5;Pasta:10;Rice:10;Salad:10;SauceCream:10;SauceStock:10;Soup:10;Stew:10;Stir fry:10"
+    },
+    "Base.CannedPeasOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:8;Casserole:16;Chili:16;Curry:16;Meatloaf:16;Omelette:8;Pasta:16;Pie:8;Quiche:8;Ramen:8;Rice:16;Salad:8;ScallopedPotatoBake:8;Soup:16;Stew:16;Stir fry:16"
+    },
+    "Base.CannedPotatoOpen": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:10;BakedPotato:9;Casserole:18;Chili:18;Curry:18;Meatloaf:18;Omelette:9;Pasta:18;Pie:18;Quiche:9;Ramen:9;Rice:18;Salad:9;ScallopedPotatoBake:9;Soup:18;Stew:18;Stir fry:18"
+    },
+    "Base.CannedSardinesOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:14;Burger:7;Burrito:7;Casserole:14;Enchilada:7;Meatloaf:14;Nachos:7;Omelette:7;Pasta:14;Pie:14;Pizza:14;Quesadilla:7;Quiche:14;Ramen:7;Rice:14;Salad:7;Sandwich:7;ScallopedPotatoBake:14;Soup:14;Stew:14;Stir fry:14;Sushi:7;Taco:7;Toast:7"
+    },
+    "Base.CannedBologneseOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:12;Burger:12;Casserole:24;Chili:24;Meatloaf:24;Omelette:12;Pasta:24;Pie:24;Quiche:12;Rice:24;Sandwich:6;Stew:24;Stir fry:24;Toast:6"
+    },
+    "Base.CannedTomatoOpen": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:10;BakedPotato:6;Burger:6;Burrito:6;Casserole:12;Chili:12;Curry:12;Enchilada:6;Meatloaf:12;Nachos:6;Omelette:12;Pasta:12;Pie:12;Pizza:12;Quesadilla:6;Quiche:12;Ramen:6;Rice:12;Salad:6;Sandwich:6;SauceTomato:12;ScallopedPotatoBake:6;Soup:12;Stew:12;Stir fry:12;Taco:6"
+    },
+    "Base.TunaTinOpen": {
+      "EvolvedRecipe": "BlenderSalty:10;BakedPotato:18;Burger:9;Burrito:18;Casserole:18;Meatloaf:18;Omelette:9;Pasta:18;Pizza:18;Quiche:18;Ramen:18;Rice:18;Salad:9;Sandwich:9;ScallopedPotatoBake:18;Soup:18;Stew:18;Stir fry:18;Sushi:9;Taco:9;Toast:9"
+    },
+    "Base.CannedPineappleOpen": {
+      "EvolvedRecipe": "BlenderSweet:10;BakedPotato:7;Burrito:7;Cake:15;ConeIcecream:5;Curry:15;Enchilada:7;FruitSalad:15;IceCream:15;Jam:10;Milkshake:5;Muffin:15;Nachos:7;Oatmeal:5;Pancakes:5;PieSweet:15;Pizza:15;Quesadilla:7;Rice:15;Salad:15;Stir fry:15;Taco:7;Yogurt:15"
+    },
+    "Base.CannedFruitBeverageOpen": {
+      "EvolvedRecipe": "BlenderSweet:10;Cake:15;FruitSalad:15;IceCream:15;Milkshake:5;Muffin:15;Pancakes:15;Yogurt:15"
+    },
+    "Base.CannedFruitCocktailOpen": {
+      "EvolvedRecipe": "BlenderSweet:10;Cake:15;ConeIcecream:5;FruitSalad:15;IceCream:15;Jam:10;Milkshake:5;Muffin:15;Oatmeal:5;Pancakes:15;PieSweet:15;Yogurt:15"
+    },
+    "Base.CannedMilkOpen": {
+      "EvolvedRecipe": "BlenderSweet:10;Cake:5;Cereal:2;Cheesecake:5;FruitSalad:2;HotDrink:2;IceCream:15;Milkshake:5;Muffin:5;Oatmeal:2;Pancakes:2;PieSweet:5;SauceCream:5;Yogurt:15"
+    },
+    "Base.CannedPeachesOpen": {
+      "EvolvedRecipe": "BlenderSweet:10;Cake:15;ConeIcecream:5;FruitSalad:15;IceCream:15;Jam:10;Milkshake:5;Muffin:15;Oatmeal:5;Pancakes:15;PieSweet:15;Yogurt:15"
+    },
+    "Base.MushroomGeneric1": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:6;Burger:13;Casserole:13;Chili:13;Curry:13;Enchilada:6;Hotdog:13;HotDrink:6;Meatloaf:13;Nachos:6;Omelette:13;Pasta:13;Pie:13;Pizza:13;Quesadilla:6;Quiche:6;Ramen:13;Rice:13;Salad:13;Sandwich:13;ScallopedPotatoBake:6;Soup:13;Stew:13;Stir fry:13"
+    },
+    "Base.MushroomGeneric2": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:6;Burger:13;Casserole:13;Chili:13;Curry:13;Enchilada:6;Hotdog:13;HotDrink:6;Meatloaf:13;Nachos:6;Omelette:13;Pasta:13;Pie:13;Pizza:13;Quesadilla:6;Quiche:6;Ramen:13;Rice:13;Salad:13;Sandwich:13;ScallopedPotatoBake:6;Soup:13;Stew:13;Stir fry:13"
+    },
+    "Base.MushroomGeneric3": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:7;Burger:15;Casserole:15;Chili:15;Curry:15;Enchilada:7;Hotdog:15;HotDrink:5;Meatloaf:15;Nachos:7;Omelette:15;Pasta:15;Pie:15;Pizza:15;Quesadilla:7;Quiche:7;Ramen:15;Rice:15;Salad:15;Sandwich:15;ScallopedPotatoBake:7;Soup:15;Stew:15;Stir fry:15"
+    },
+    "Base.MushroomGeneric4": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:6;Burger:13;Casserole:13;Chili:13;Curry:13;Enchilada:6;Hotdog:13;HotDrink:5;Meatloaf:13;Nachos:6;Omelette:13;Pasta:13;Pie:13;Pizza:13;Quesadilla:6;Quiche:6;Ramen:13;Rice:13;Salad:13;Sandwich:13;ScallopedPotatoBake:6;Soup:13;Stew:13;Stir fry:13"
+    },
+    "Base.MushroomGeneric5": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:7;Burger:15;Casserole:15;Chili:15;Curry:15;Enchilada:7;Hotdog:15;HotDrink:5;Meatloaf:15;Nachos:7;Omelette:15;Pasta:15;Pie:15;Pizza:15;Quesadilla:7;Quiche:7;Ramen:15;Rice:15;Salad:15;Sandwich:15;ScallopedPotatoBake:7;Soup:15;Stew:15;Stir fry:15"
+    },
+    "Base.MushroomGeneric6": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:6;Burger:13;Casserole:13;Chili:13;Curry:13;Enchilada:6;Hotdog:13;HotDrink:6;Meatloaf:13;Nachos:6;Omelette:13;Pasta:13;Pie:13;Pizza:13;Quesadilla:6;Quiche:6;Ramen:13;Rice:13;Salad:13;Sandwich:13;ScallopedPotatoBake:6;Soup:13;Stew:13;Stir fry:13"
+    },
+    "Base.MushroomGeneric7": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10;BlenderSalty:8;BakedPotato:6;Burger:13;Casserole:13;Chili:13;Curry:13;Enchilada:6;Hotdog:13;HotDrink:6;Meatloaf:13;Nachos:6;Omelette:13;Pasta:13;Pie:13;Pizza:13;Quesadilla:6;Quiche:6;Ramen:13;Rice:13;Salad:13;Sandwich:13;ScallopedPotatoBake:6;Soup:13;Stew:13;Stir fry:13"
+    },
+    "Base.Broccoli": {
+      "EvolvedRecipe": "SkewerVegetable:10;Skewer:10;BowlOfFood:10;BlenderSalty:8;Casserole:9;Chili:9;Curry:9;Meatloaf:9;Omelette:9;Pasta:9;Pie:9;Pizza:9;Quiche:4;Rice:9;Salad:9;ScallopedPotatoBake:9;Soup:9;Stew:9;Stir fry:9"
+    },
+    "Base.TomatoPaste": {
+      "EvolvedRecipe": "Skewer:4;BowlOfFood:5;BlenderSalty:8;BakedPotato:1;Casserole:3;Chili:3;Curry:3;Enchilada:3;Meatloaf:3;Nachos:1;Omelette:3;Pasta:3;Pie:3;Pizza:3;Quesadilla:3;Quiche:3;Rice:3;Salad:3;Sandwich:3;ScallopedPotatoBake:3;Soup:3;Stew:3;Stir fry:3"
+    },
+    "Base.Ketchup": {
+      "EvolvedRecipe": "Skewer:4;BowlOfFood:10;BakedPotato:2;Burger:2;Burrito:2;Casserole:2;Chili:2;Curry:2;Enchilada:2;Hotdog:2;Meatloaf:2;Nachos:2;Pasta:2;Quesadilla:2;Quiche:2;Ramen:2;Rice:2;Sandwich:2;ScallopedPotatoBake:2;Taco:2"
+    },
+    "Base.Potato": {
+      "EvolvedRecipe": "SkewerVegetable:10;Skewer:10;BowlOfFood:10;BlenderSalty:10;Casserole:30;Curry:30;Meatloaf:30;Omelette:9;Pie:30;Quiche:9;Ramen:9|Cooked;Salad:9|Cooked;Soup:30;Stew:30;Stir fry:30"
+    },
+    "Base.SweetPotato": {
+      "EvolvedRecipe": "SkewerVegetable:10;Skewer:10;BowlOfFood:10;BlenderSalty:10;BlenderSweet:10;BakedPotato:30;Casserole:30;Chili:30;Curry:30;Meatloaf:30;Pie:30;PieSweet:30;Quiche:9;Ramen:9;Salad:9|Cooked;ScallopedPotatoBake:30;Soup:30;Stew:30;Stir fry:30"
+    },
+    "Base.Carrots": {
+      "EvolvedRecipe": "SkewerVegetable:10;Skewer:10;BowlOfFood:10;BlenderSalty:10;BlenderSweet:10;BakedPotato:4;Bread:4;Casserole:8;Chili:8;Curry:8;Meatloaf:8;Pasta:8;Pie:8;Quiche:8;Ramen:8;Rice:8;Salad:4;Sandwich:4;ScallopedPotatoBake:8;Soup:8;Stew:8;Stir fry:8;Sushi:4"
+    },
+    "Base.MincedMeat": {
+      "EvolvedRecipe": "BowlOfFood:10|Cooked;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:20;Chili:20;Curry:20;Enchilada:10;Hotdog:10|Cooked;Meatloaf:20;Nachos:10;Pasta:20;Pie:20;Pizza:20;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:20;Sandwich:5|Cooked;ScallopedPotatoBake:10;Stew:20;Stir fry:20;Taco:10|Cooked",
+      "Tags": "sapphcooking:mincedmeat;VFX:GroundMeat"
+    },
+    "Base.Rabbitmeat": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:15;Burger:10|Cooked;Burrito:15|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:10;Meatloaf:15;Nachos:15;Pasta:15;Pie:15;Quesadilla:15;Quiche:15;Ramen:15|Cooked;Rice:15;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:15;Soup:15;Stew:15;Stir fry:15;Sushi:15|Cooked;Taco:15|Cooked"
+    },
+    "Base.Beef": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;AddBaitToChum:20;BakedPotato:5;Burrito:10|Cooked;Casserole:20;Chili:20;Curry:20;Enchilada:10;Meatloaf:20;Nachos:10;Pasta:20;Pie:20;Pizza:20;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:20;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:10;Soup:20;Stew:20;Stir fry:20;Taco:5|Cooked",
+      "Tags": "sapphcooking:beef;VFX:MakesGroundBeef"
+    },
+    "Base.MeatPatty": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;AddBaitToChum:30;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:20;Chili:20;Curry:20;Enchilada:10;Meatloaf:20;Nachos:10;Pie:20;Quesadilla:10;Quiche:10;Ramen:10|Cooked;ScallopedPotatoBake:10;Stew:20;Taco:10|Cooked"
+    },
+    "Base.Smallbirdmeat": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;AddBaitToChum:15;BakedPotato:8;Burger:10|Cooked;Burrito:8|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:5;Meatloaf:15;Nachos:8;Pasta:15;Pie:15;Quesadilla:8;Quiche:8;Ramen:8|Cooked;Rice:15;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:8;Soup:15;Stew:15;Stir fry:15;Sushi:5|Cooked;Taco:8|Cooked"
+    },
+    "Base.ChickenFillet": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:12;Burger:12|Cooked;Burrito:12|Cooked;Casserole:18;Chili:18;Curry:18;Enchilada:12;Meatloaf:18;Nachos:12;Pasta:18;Pie:12;Pizza:12;Quesadilla:12;Quiche:12;Ramen:10|Cooked;Rice:18;Salad:6|Cooked;Sandwich:6|Cooked;ScallopedPotatoBake:12;Soup:18;Stew:18;Stir fry:18;Sushi:10|Cooked;Taco:6|Cooked"
+    },
+    "Base.Chicken": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:30;Chili:30;Curry:30;Enchilada:10;Meatloaf:30;Nachos:10;Pasta:30;Pie:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:30;Salad:10|Cooked;Sandwich:10|Cooked;ScallopedPotatoBake:10;Soup:30;Stew:30;Stir fry:30;Sushi:10|Cooked;Taco:10|Cooked"
+    },
+    "Base.ChickenWings": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:15;Burger:15|Cooked;Burrito:15|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:15;Meatloaf:15;Nachos:15;Pasta:15;Pie:15;Pizza:15;Quesadilla:15;Quiche:15;Ramen:10|Cooked;Rice:15;Salad:15|Cooked;Sandwich:15|Cooked;ScallopedPotatoBake:15;Soup:15;Stew:15;Stir fry:15;Taco:15|Cooked"
+    },
+    "Base.TurkeyFillet": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:20|Cooked;Burrito:10|Cooked;Casserole:20;Chili:20;Curry:20;Enchilada:20;Meatloaf:20;Nachos:20;Pasta:20;Pie:20;Pizza:20;Quesadilla:20;Quiche:20;Ramen:10|Cooked;Rice:20;Salad:20|Cooked;Sandwich:20|Cooked;ScallopedPotatoBake:20;Soup:20;Stew:20;Stir fry:20;Taco:10|Cooked"
+    },
+    "Base.TurkeyLegs": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:31;Chili:31;Curry:31;Enchilada:10;Meatloaf:31;Nachos:10;Pasta:31;Pie:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:31;Salad:10|Cooked;Sandwich:10|Cooked;ScallopedPotatoBake:10;Soup:31;Stew:31;Stir fry:31;Taco:10|Cooked"
+    },
+    "Base.TurkeyWings": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:25|Cooked;Burrito:12|Cooked;Casserole:25;Chili:25;Curry:25;Enchilada:10;Meatloaf:25;Nachos:10;Pasta:25;Pie:25;Pizza:25;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:25;Salad:25|Cooked;Sandwich:25|Cooked;ScallopedPotatoBake:10;Soup:25;Stew:25;Stir fry:25;Taco:12|Cooked"
+    },
+    "Base.Pork": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:5;Burger:10|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:5;Meatloaf:15;Nachos:5;Pasta:15;Pie:15;Quesadilla:5;Quiche:5;Ramen:10|Cooked;Rice:15;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:5;Soup:15;Stew:15;Stir fry:15;Sushi:5|Cooked"
+    },
+    "Base.PorkChop": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:5;Burger:10|Cooked;Casserole:30;Chili:30;Curry:30;Enchilada:15;Meatloaf:30;Nachos:15;Pasta:15;Pie:15;Quesadilla:15;Quiche:15;Ramen:10|Cooked;Rice:15;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:15;Soup:15;Stew:15;Stir fry:15;Sushi:5|Cooked"
+    },
+    "Base.HamSlice": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:10;Burrito:10;Casserole:10;Chili:10;Curry:10;Enchilada:10;Meatloaf:10;Nachos:10;Omelette:10;Pasta:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10;Rice:10;Salad:10;Sandwich:10;ScallopedPotatoBake:10;Soup:10;Stew:10;Taco:10;Toast:10"
+    },
+    "Base.Sausage": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:20;Chili:20;Curry:20;Enchilada:10;Meatloaf:20;Nachos:10;Pasta:20;Pizza:20;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:20;Salad:5|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:10;Soup:20;Stew:20;Stir fry:20;Taco:5|Cooked"
+    },
+    "Base.Hotdog_single": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:10;Casserole:10;Chili:10;Curry:10;Enchilada:10;Meatloaf:10;Nachos:10;Pasta:10;Pie:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10|Cooked;Rice:10;ScallopedPotatoBake:10;Stew:10;Stir fry:10"
+    },
+    "Base.Oysters": {
+      "EvolvedRecipe": "BowlOfFood:5|Cooked;BakedPotato:5;Burger:5|Cooked;Casserole:5;Chili:5;Curry:5;Enchilada:5;Nachos:5;Pasta:5;Pie:5;Pizza:5;Quesadilla:5;Quiche:5;Ramen:5;Rice:5;Salad:5|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:5;Soup:5;Stew:5;Stir fry:5;Sushi:5"
+    },
+    "Base.Salmon": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;BakedPotato:15;Burrito:10|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:15;Nachos:15;Pasta:15;Pie:15;Pizza:15;Quesadilla:15;Quiche:15;Ramen:15;Rice:15;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:15;Soup:15;Stew:15;Stir fry:15;Sushi:15;Taco:5|Cooked"
+    },
+    "Base.Shrimp": {
+      "EvolvedRecipe": "Skewer:10;BowlOfFood:10|Cooked;AddBaitToChum:10;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:10;Chili:10;Curry:10;Enchilada:10;Nachos:10;Pasta:10;Pie:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10;Rice:10;Salad:10|Cooked;Sandwich:10|Cooked;ScallopedPotatoBake:10;Soup:10;Stew:10;Stir fry:10;Sushi:10;Taco:5|Cooked"
+    },
+    "Base.Lobster": {
+      "EvolvedRecipe": "BowlOfFood:15|Cooked;BakedPotato:20;Burger:10|Cooked;Burrito:10|Cooked;Casserole:40;Chili:40;Curry:40;Enchilada:20;Nachos:20;Pasta:20;Pie:10;Pizza:10;Quesadilla:20;Quiche:20;Ramen:20;Rice:20;Salad:5|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:20;Soup:20;Stew:20;Stir fry:20;Sushi:40;Taco:5|Cooked"
+    },
+    "Base.SquidCalamari": {
+      "EvolvedRecipe": "Skewer:2;BowlOfFood:2;BakedPotato:10;Burger:10|Cooked;Burrito:10|Cooked;Casserole:10;Chili:10;Curry:10;Enchilada:10;Nachos:10;Pasta:10;Pie:10;Pizza:10;Quesadilla:10;Quiche:10;Ramen:10;Rice:10;Salad:10|Cooked;Sandwich:5|Cooked;ScallopedPotatoBake:10;Soup:10;Stew:10;Stir fry:10;Sushi:10;Taco:5|Cooked"
+    },
+    "Base.Caviar": {
+      "EvolvedRecipe": "BowlOfFood:2;Ramen:2;Salad:2;Sushi:2;Toast:2"
+    },
+    "Base.Icing": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:10;Cheesecake:10;ConeIcecream:5;Milkshake:10;Muffin:10;Pancakes:5;PieSweet:10;Toast:5",
+      "Tags": "sapphcooking:icing;VFX:Frosting"
+    },
+    "Base.Chocolate": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:10;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_Butterchunkers": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_Deux": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_Candy": {
+      "EvolvedRecipe": "BlenderSweet:10;Cake:5;Cereal:5;Cheesecake:5;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:5;Oatmeal:5;Pancakes:5;Yogurt:5"
+    },
+    "Base.Chocolate_Crackle": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_GalacticDairy": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_RoysPBPucks": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_Smirkers": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.Chocolate_SnikSnak": {
+      "EvolvedRecipe": "BlenderSweet:10;Bread:10;Cake:20;Cereal:5;Cheesecake:20;ConeIcecream:5;IceCream:5;Milkshake:5;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:20;Toast:5;Yogurt:5"
+    },
+    "Base.SourCream": {
+      "EvolvedRecipe": "BlenderSalty:6;BowlOfFood:6;BakedPotato:2;Burger:2;Burrito:2;Casserole:2;Chili:2;Curry:2;Enchilada:2;Meatloaf:2;Nachos:2;Omelette:2;Pasta:2;Pizza:2;Quesadilla:2;Quiche:2;Rice:2;Salad:2;Sandwich:2;ScallopedPotatoBake:2;Soup:2;Stew:2;Taco:2"
+    },
+    "Base.Cockroach": {
+      "EvolvedRecipe": "BlenderSalty:5;BowlOfFood:5;SkewerInsect:1"
+    },
+    "Base.Worm": {
+      "EvolvedRecipe": "BlenderSalty:5;BowlOfFood:5;SkewerInsect:1"
+    },
+    "Base.Cricket": {
+      "EvolvedRecipe": "BlenderSalty:5;BowlOfFood:5;SkewerInsect:1"
+    },
+    "Base.Grasshopper": {
+      "EvolvedRecipe": "BlenderSalty:5;BowlOfFood:5;SkewerInsect:1"
+    },
+    "Base.Egg": {
+      "EvolvedRecipe": "BlenderSalty:8|Cooked;BowlOfFood:5|Cooked;Burger:15|Cooked;Burrito:15|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:15|Cooked;Meatloaf:15;Nachos:15|Cooked;Omelette:15;Pasta:15;Quesadilla:15|Cooked;Quiche:15;Ramen:15|Cooked;Rice:15;Salad:15|Cooked;Sandwich:15|Cooked;Soup:15;Stew:15;Stir fry:15;Taco:3|Cooked"
+    },
+    "Base.TurkeyEgg": {
+      "EvolvedRecipe": "BlenderSalty:8|Cooked;BowlOfFood:5|Cooked;Burger:18|Cooked;Burrito:18|Cooked;Casserole:18;Chili:18;Curry:18;Enchilada:18|Cooked;Meatloaf:18;Nachos:18|Cooked;Omelette:18;Pasta:18;Quesadilla:18|Cooked;Quiche:18;Ramen:18|Cooked;Rice:18;Salad:18|Cooked;Sandwich:18|Cooked;Soup:18;Stew:18;Stir fry:18;Taco:5|Cooked"
+    },
+    "Base.WildEggs": {
+      "EvolvedRecipe": "BlenderSalty:8|Cooked;BowlOfFood:5|Cooked;Burger:15|Cooked;Burrito:15|Cooked;Casserole:15;Chili:15;Curry:15;Enchilada:15|Cooked;Meatloaf:15;Nachos:15|Cooked;Omelette:15;Pasta:15;Quesadilla:15|Cooked;Quiche:15;Ramen:15|Cooked;Rice:15;Salad:15|Cooked;Sandwich:15|Cooked;Soup:15;Stew:15;Stir fry:15;Taco:3|Cooked"
+    },
+    "Base.EggBoiled": {
+      "EvolvedRecipe": "BlenderSalty:8|Cooked;BowlOfFood:5|Cooked;Burger:10;Burrito:10;Casserole:10;Enchilada:10;Meatloaf:10;Nachos:10;Quesadilla:10;Ramen:10;Salad:10;Sandwich:10;Soup:10;Stew:10;Taco:5"
+    },
+    "Base.Strewberrie": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:5;ConeIcecream:5;FruitSalad:5;HotDrink:5;IceCream:3;Jam:3;Oatmeal:5;Pancakes:5;PieSweet:5;Salad:5;Yogurt:3"
+    },
+    "Base.Apple": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:16;Cereal:16;Cheesecake:16;Chili:8;Curry:8;FruitSalad:8;IceCream:8;Jam:8;Milkshake:16;Muffin:8;Oatmeal:4;Pancakes:8;PieSweet:16;Salad:8;Yogurt:8"
+    },
+    "Base.Banana": {
+      "EvolvedRecipe": "BlenderSweet:8;Bread:16;Cake:16;Cereal:16;Cheesecake:16;Chili:8;ConeIcecream:4;Curry:8;FruitSalad:8;IceCream:8;Jam:8;Milkshake:16;Muffin:8;Oatmeal:4;Pancakes:8;PieSweet:16;Sandwich:8;Yogurt:8"
+    },
+    "Base.DriedApricots": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:16;Cereal:16;Cheesecake:16;Chili:8;Curry:8;FruitSalad:8;IceCream:8;Milkshake:16;Muffin:8;Oatmeal:8;Pancakes:8;PieSweet:16;Salad:8;Yogurt:8"
+    },
+    "Base.BeautyBerry": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.HollyBerry": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.WinterBerry": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryBlack": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryBlue": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryGeneric1": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:5;Cereal:5;Cheesecake:5;Chili:3;ConeIcecream:5;Curry:3;FruitSalad:5;IceCream:3;Jam:3;Milkshake:5;Muffin:5;Oatmeal:5;Pancakes:5;PieSweet:5;Yogurt:3"
+    },
+    "Base.BerryGeneric2": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryGeneric3": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:5;Cereal:5;Cheesecake:5;Chili:3;ConeIcecream:5;Curry:3;FruitSalad:5;IceCream:3;Jam:3;Milkshake:5;Muffin:5;Oatmeal:5;Pancakes:5;PieSweet:5;Yogurt:3"
+    },
+    "Base.BerryGeneric4": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryGeneric5": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:10;Cheesecake:10;Chili:5;ConeIcecream:5;Curry:5;FruitSalad:10;IceCream:5;Jam:5;Milkshake:10;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:5"
+    },
+    "Base.BerryPoisonIvy": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:5;Cereal:5;Cheesecake:5;Chili:3;ConeIcecream:5;Curry:3;FruitSalad:5;IceCream:3;Jam:3;Milkshake:5;Muffin:5;Oatmeal:5;Pancakes:5;PieSweet:5;Yogurt:3"
+    },
+    "Base.Cherry": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:3;Cereal:3;Cheesecake:3;ConeIcecream:3;FruitSalad:3;IceCream:2;Jam:2;Milkshake:3;Muffin:3;Oatmeal:5;Pancakes:3;PieSweet:3;Yogurt:2"
+    },
+    "Base.Grapefruit": {
+      "EvolvedRecipe": "BlenderSweet:8;Cereal:20;Cheesecake:20;Chili:10;Curry:10;FruitSalad:10;IceCream:10;Jam:10;Milkshake:20;Muffin:10;Pancakes:10;Salad:10;Yogurt:10"
+    },
+    "Base.Grapes": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:15;Cereal:15;Cheesecake:15;Chili:8;Curry:8;FruitSalad:15;IceCream:8;Jam:8;Milkshake:15;Muffin:15;Pancakes:15;Salad:5;Yogurt:8"
+    },
+    "Base.Lemon": {
+      "EvolvedRecipe": "BlenderSweet:8;Burrito:2;Cake:5;Cereal:10;Cheesecake:10;Chili:5;Curry:5;FruitSalad:5;HotDrink:2;IceCream:5;Jam:5;Milkshake:10;Muffin:5;Pancakes:5;PieSweet:5;Soup:10;Stir fry:5;Taco:2;Yogurt:5"
+    },
+    "Base.Lime": {
+      "EvolvedRecipe": "BlenderSweet:8;Burrito:2;Cake:5;Cereal:10;Cheesecake:10;Chili:5;Curry:5;FruitSalad:2;HotDrink:2;IceCream:5;Jam:5;Milkshake:10;Muffin:5;Pancakes:2;PieSweet:5;Soup:10;Stir fry:5;Taco:2;Yogurt:5"
+    },
+    "Base.Mango": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:10;Cereal:20;Cheesecake:20;Chili:10;Curry:10;FruitSalad:10;IceCream:10;Jam:10;Milkshake:20;Muffin:10;Oatmeal:5;Pancakes:10;PieSweet:10;Yogurt:10"
+    },
+    "Base.Orange": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:12;Cereal:12;Cheesecake:12;Chili:6;Curry:6;FruitSalad:6;IceCream:6;Jam:6;Milkshake:12;Muffin:6;Pancakes:6;PieSweet:12;Salad:6;Yogurt:6"
+    },
+    "Base.Peach": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:12;Cereal:12;Cheesecake:12;Chili:6;Curry:6;FruitSalad:6;IceCream:6;Jam:6;Milkshake:12;Muffin:6;Oatmeal:5;Pancakes:6;PieSweet:12;Yogurt:6"
+    },
+    "Base.Pear": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:8;Cereal:16;Cheesecake:16;Chili:8;Curry:8;FruitSalad:8;IceCream:8;Jam:8;Milkshake:16;Muffin:8;Oatmeal:4;Pancakes:8;PieSweet:8;Salad:8;Yogurt:8"
+    },
+    "Base.Pineapple": {
+      "EvolvedRecipe": "BlenderSweet:8;Cake:12;Cereal:24;Cheesecake:24;Chili:12;ConeIcecream:4;Curry:12;FruitSalad:8;IceCream:12;Jam:12;Milkshake:24;Muffin:8;Oatmeal:4;Pancakes:8;PieSweet:12;Pizza:12;Yogurt:12"
+    },
+    "Base.Rosehips": {
+      "EvolvedRecipe": "BlenderSweet:8;Bread:6;Casserole:6;Cheesecake:3;Chili:6;Curry:6;FruitSalad:3;HotDrink:2;IceCream:3;Jam:3;Meatloaf:6;Milkshake:3;PieSweet:6;Salad:3;Soup:6;Yogurt:3"
+    },
+    "Base.WatermelonSmashed": {
+      "EvolvedRecipe": "BlenderSweet:8;Cereal:12;Cheesecake:12;Chili:6;Curry:6;FruitSalad:12;IceCream:6;Jam:6;Milkshake:12;Muffin:12;Pancakes:12;Salad:12;Yogurt:6"
+    },
+    "Base.WatermelonSliced": {
+      "EvolvedRecipe": "BlenderSweet:8;Cereal:6;Cheesecake:6;Chili:3;Curry:3;FruitSalad:6;IceCream:3;Jam:3;Milkshake:6;Muffin:6;Pancakes:6;Salad:6;Yogurt:3"
+    },
+    "Base.Guacamole": {
+      "EvolvedRecipe": "BlenderSalty:8;BowlOfFood:5;BakedPotato:2;Burger:2;Burrito:2;Enchilada:2;Hotdog:2;Nachos:2;Omelette:2;Quesadilla:2;Quiche:2;Salad:2;Sandwich:2;Sushi:2;Taco:2;Toast:2"
+    },
+    "Base.Gravy": {
+      "EvolvedRecipe": "BlenderSalty:8;BowlOfFood:5;BakedPotato:2;Burger:1;Casserole:4;Hotdog:1;Meatloaf:4;Pie:4;Rice:4;Sandwich:1;Stew:4"
+    },
+    "Base.Butter": {
+      "EvolvedRecipe": "BlenderSalty:8;BakedPotato:4;Bread:4;Burrito:4;Cake:4;Curry:4;Muffin:4;Oatmeal:4;Pancakes:4;Pasta:4;PieSweet:4;Rice:4;Sandwich:4;Soup:4;Stew:4;Stir fry:4;Taco:4;Toast:4"
+    },
+    "Base.BalsamicVinegar": {
+      "EvolvedRecipe": "BlenderSalty:8;BowlOfFood:5;Burger:2;Burrito:2;Casserole:2;Chili:2;Curry:2;Meatloaf:2;Pasta:2;Rice:2;Salad:2;Sandwich:2;Stir fry:2;Taco:2"
+    },
+    "Base.BBQSauce": {
+      "EvolvedRecipe": "BlenderSalty:8;BowlOfFood:5;Burger:2;Burrito:2;Casserole:2;Chili:2;Curry:2;Hotdog:2;Meatloaf:2;Pasta:2;Pizza:2;Rice:2;Sandwich:2;Taco:2"
+    },
+    "Base.Lard": {
+      "EvolvedRecipe": "BlenderSalty:8;BowlOfFood:5;BakedPotato:2;Burrito:2;Casserole:4;Chili:4;Curry:4;Meatloaf:4;Pasta:4;Quiche:4;Sandwich:2;ScallopedPotatoBake:2;Soup:4;Stew:4;Stir fry:4;Taco:2;Toast:2"
+    },
+    "Base.Basil": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Basil": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.BasilDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Chives": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Chives": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.ChivesDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Cilantro": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Cilantro": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.CilantroDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;SauceCream:1;SauceOil:1;SauceStock:1;SauceTomato:1;SauceVinegar:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Cinnamon": {
+      "EvolvedRecipe": "BlenderSweet:2;BowlOfFood:2;Cake:1;Cereal:1;Cheesecake:1;ConeIcecream:1;HotDrink:1;IceCream:1;Jam:1;Milkshake:1;Muffin:1;Oatmeal:1;Pancakes:1;Pie:1;PieSweet:1;Soup:1;Stew:1;Toast:1;Yogurt:1"
+    },
+    "Base.Garlic": {
+      "EvolvedRecipe": "BlenderSalty:8;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.GreenOnions": {
+      "EvolvedRecipe": "BlenderSalty:8;BakedPotato:1;Bread:1;Burger:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Nachos:1;Omelette:1;Pasta:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Toast:1"
+    },
+    "Base.Oregano": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Oregano": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.OreganoDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Parsley": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Rosemary": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Rosemary": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.RosemaryDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Sage": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Sage": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.SageDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Thyme": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Seasoning_Thyme": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.ThymeDried": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatball:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.SesameOil": {
+      "EvolvedRecipe": "BlenderSalty:8;BakedPotato:1;Burger:2;Casserole:1;Chili:1;Curry:1;Meatloaf:1;Pasta:2;Quiche:1;Ramen:1;Rice:2;Salad:2;Sandwich:2;ScallopedPotatoBake:1;Stir fry:2;Sushi:1"
+    },
+    "Base.SunflowerSeeds": {
+      "EvolvedRecipe": "BlenderSalty:2;Bread:5;Casserole:5;Cereal:5;Cheesecake:5;IceCream:1;Muffin:5;Oatmeal:5;Pancakes:1;Salad:1;Stir fry:5;Yogurt:1"
+    },
+    "Base.FlaxSeed": {
+      "EvolvedRecipe": "BlenderSalty:2;Bread:1;IceCream:1;Muffin:1;Pancakes:1;Salad:1;Yogurt:1"
+    },
+    "Base.PowderedGarlic": {
+      "EvolvedRecipe": "BlenderSalty:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Meatloaf:1;Milkshake:1;Nachos:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.PumpkinSeed": {
+      "EvolvedRecipe": "BlenderSalty:2;Bread:5;Casserole:5;Cereal:5;Cheesecake:5;IceCream:1;Muffin:5;Oatmeal:5;Pancakes:1;Pie:1;Salad:1;Stir fry:5;Yogurt:1"
+    },
+    "Base.Wasabi": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Burger:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Meatloaf:1;Nachos:1;Pasta:1;Pie:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1"
+    },
+    "Base.GingerPickled": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Casserole:1;Chili:1;Curry:1;Enchilada:1;Nachos:1;Quesadilla:1;Quiche:1;Ramen:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1"
+    },
+    "Base.GingerRoot": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;HotDrink:1;Meatloaf:1;Milkshake:1;Nachos:1;Omelette:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:2;Stew:2;Stir fry:2;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Ginseng": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;Casserole:1;Chili:1;Curry:1;HotDrink:1;Meatloaf:1;Ramen:1"
+    },
+    "Base.PoppySeed": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;Bread:1;Cheesecake:1;IceCream:1;Muffin:1;Pancakes:1;Salad:1;Yogurt:1"
+    },
+    "Base.Hotsauce": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Burrito:2;Casserole:2;Chili:2;Curry:2;Enchilada:2;Hotdog:2;Meatloaf:2;Nachos:2;Omelette:2;Pasta:2;Pizza:4;Quesadilla:2;Quiche:2;Ramen:2;Rice:2;Sandwich:2;ScallopedPotatoBake:2;Stir fry:4;Sushi:2;Taco:2"
+    },
+    "Base.Margarine": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burrito:4;Casserole:4;Chili:4;Curry:4;Meatloaf:4;Oatmeal:4;Pancakes:4;Pasta:4;Quiche:4;Sandwich:4;ScallopedPotatoBake:4;Soup:4;Stew:4;Stir fry:4;Taco:4;Toast:4"
+    },
+    "Base.Marinara": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Casserole:2;Chili:2;Curry:2;Enchilada:2;Hotdog:2;Meatloaf:2;Nachos:2;Pasta:2;Pizza:5;Quesadilla:2;Quiche:2;Ramen:2;Rice:2;Sandwich:2;ScallopedPotatoBake:2"
+    },
+    "Base.Mustard": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Casserole:2;Chili:2;Curry:2;Enchilada:2;Hotdog:2;Meatloaf:2;Nachos:2;Pasta:2;Quesadilla:2;Quiche:2;Ramen:2;Rice:2;Salad:2;Sandwich:2;ScallopedPotatoBake:2"
+    },
+    "Base.Dip_NachoCheese": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Burrito:2;Enchilada:2;Hotdog:2;Nachos:2;Omelette:2;Pasta:2;Pizza:4;Quesadilla:2;Quiche:2;Rice:2;Salad:2;Sandwich:2;Stir fry:4;Taco:2;Toast:2"
+    },
+    "Base.PowderedOnion": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Meatloaf:1;Milkshake:1;Nachos:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Pepper": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatloaf:1;Milkshake:1;Nachos:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Pickles": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:6;Burger:2;Chili:6;ConeIcecream:2;Curry:6;Enchilada:6;Hotdog:2;Nachos:6;Pasta:2;Quesadilla:6;Quiche:6;Ramen:3;Rice:2;Salad:2;Sandwich:2;ScallopedPotatoBake:6;Sushi:6"
+    },
+    "Base.Dip_Ranch": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Burrito:2;Enchilada:2;Hotdog:2;Nachos:2;Omelette:2;Pasta:2;Pizza:4;Quesadilla:2;Quiche:2;Rice:2;Salad:2;Sandwich:2;Stir fry:4;Taco:2;Toast:2"
+    },
+    "Base.Dip_Salsa": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:2;Burger:2;Burrito:2;Enchilada:2;Hotdog:2;Nachos:2;Omelette:2;Pasta:2;Pizza:4;Quesadilla:2;Quiche:2;Rice:2;Salad:2;Sandwich:2;Stir fry:4;Taco:2;Toast:2"
+    },
+    "Base.Salt": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Hotdog:1;Meatloaf:1;Milkshake:1;Nachos:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.SeasoningSalt": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;BakedPotato:1;Bread:1;Burger:1;Burrito:1;Casserole:1;Cereal:1;Cheesecake:1;Chili:1;Curry:1;Enchilada:1;Meatloaf:1;Milkshake:1;Nachos:1;Pasta:1;Pie:1;Pizza:1;Quesadilla:1;Quiche:1;Ramen:1;Rice:1;Salad:1;Sandwich:1;ScallopedPotatoBake:1;Soup:1;Stew:1;Stir fry:1;Sushi:1;Taco:1;Toast:1"
+    },
+    "Base.Soysauce": {
+      "EvolvedRecipe": "BlenderSalty:2;BowlOfFood:2;Burger:2;Casserole:2;Chili:2;Curry:2;Meatloaf:2;Pasta:2;Ramen:2;Rice:2;Salad:2;Sandwich:2;Soup:2;Stew:2;Stir fry:2;Sushi:2"
+    },
+    "Base.MapleSyrup": {
+      "EvolvedRecipe": "BlenderSalty:4;Cake:5;Cereal:3;Cheesecake:5;ConeIcecream:3;FruitSalad:3;IceCream:5;Jam:3;Milkshake:5;Muffin:5;Oatmeal:3;Pancakes:3;PieSweet:5;Toast:3;Yogurt:5"
+    },
+    "Base.SugarBrown": {
+      "EvolvedRecipe": "BlenderSalty:4;Bread:1;Cake:1;Cereal:1;Cheesecake:1;HotDrink:1;Muffin:1;Oatmeal:1;PieSweet:1;Toast:1"
+    },
+    "Base.Honey": {
+      "EvolvedRecipe": "BlenderSalty:4;Cake:5;Cereal:2;Cheesecake:5;ConeIcecream:2;FruitSalad:2;HotDrink:2;IceCream:5;Jam:2;Milkshake:2;Muffin:5;Oatmeal:2;Pancakes:2;PieSweet:5;Sandwich:2;Toast:2;Yogurt:5"
+    },
+    "Base.SugarCubes": {
+      "EvolvedRecipe": "BlenderSalty:4;Bread:1;Cake:1;Cereal:1;Cheesecake:1;HotDrink:1;Muffin:1;Oatmeal:1;PieSweet:1;Toast:1"
+    },
+    "Base.SugarPacket": {
+      "EvolvedRecipe": "BlenderSalty:4;Bread:1;Cake:1;Cereal:1;Cheesecake:1;HotDrink:1;Muffin:1;Oatmeal:1;PieSweet:1;Toast:1"
+    },
+    "Base.Sugar": {
+      "EvolvedRecipe": "BlenderSalty:4;Bread:1;Cake:1;Cereal:1;Cheesecake:1;HotDrink:1;Muffin:1;Oatmeal:1;PieSweet:1;Toast:1"
+    },
+    "VFX.SugarBeetMolassesPotForged": {
+      "EvolvedRecipe": "HotDrink:1;Toast:1;Oatmeal:1;Cereal:1"
+    },
+    "Base.Crackers": {
+      "EvolvedRecipe": "BakedPotato:5;Casserole:5;Chili:5;Curry:5;Meatloaf:5;ScallopedPotatoBake:5;Soup:5;Stew:5"
+    },
+    "Base.BouillonCube": {
+      "EvolvedRecipe": "Casserole:3;Chili:3;Curry:3;HotDrink:1;Meatloaf:3;Pasta:3;Ramen:3;Rice:3;Soup:3;Stew:3"
+    }
+  }
+}
