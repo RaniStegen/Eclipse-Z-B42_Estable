@@ -1,0 +1,81 @@
+name: Diagnosticar ISWearClothing v5
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/diagnosticar-iswear-v5.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar overrides exactos
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+
+          root=Path('MODPACK-ACTUAL-EN-SERVIDOR')
+          out=root/'_AUDITORIA'/'TEMP_DIAGNOSTICO_ISWEAR_V5'
+          out.mkdir(parents=True,exist_ok=True)
+
+          def read(p):
+              b=p.read_bytes()
+              for e in ('utf-8-sig','utf-8','cp1252','latin-1'):
+                  try:return b.decode(e)
+                  except UnicodeDecodeError:pass
+              return b.decode('utf-8',errors='replace')
+
+          exact=[]; files_named=[]; set_worn=[]
+          patterns=[
+              re.compile(r'^\s*function\s+ISWearClothing[:.]',re.I),
+              re.compile(r'^\s*ISWearClothing\.(?:complete|perform|start|stop|new|isValid|isAlreadyEquipped)\s*=',re.I),
+              re.compile(r'^\s*local\s+\w+\s*=\s*ISWearClothing\.(?:complete|perform|start|stop|new)',re.I),
+          ]
+          for p in root.rglob('*'):
+              if not p.is_file() or p.suffix.lower()!='.lua': continue
+              rel=p.as_posix(); text=read(p)
+              if p.name.lower()=='iswearclothing.lua':
+                  files_named.append({'file':rel,'content':text})
+              for i,line in enumerate(text.splitlines(),1):
+                  if any(rx.search(line) for rx in patterns):
+                      exact.append({'file':rel,'line':i,'text':line})
+                  if 'setWornItem' in line:
+                      set_worn.append({'file':rel,'line':i,'text':line})
+          result={'exact':exact,'files_named':files_named,'set_worn':set_worn,
+                  'counts':{'exact':len(exact),'files_named':len(files_named),'set_worn':len(set_worn)}}
+          (out/'diagnostico.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          md=['# Diagnóstico exacto ISWearClothing v5','',f"- exact: {len(exact)}",f"- files_named: {len(files_named)}",f"- set_worn: {len(set_worn)}",'','## Overrides exactos']
+          for r in exact: md.append(f"- `{r['file']}:{r['line']}` — `{r['text'].replace('`',"'")}`")
+          md += ['','## Archivos ISWearClothing.lua']
+          for r in files_named: md += [f"### `{r['file']}`",'```lua',r['content'],'```']
+          md += ['','## setWornItem']
+          for r in set_worn: md.append(f"- `{r['file']}:{r['line']}` — `{r['text'].replace('`',"'")}`")
+          (out/'diagnostico.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
+          print(result['counts'])
+          PY
+      - name: Guardar diagnóstico
+        run: |
+          git config user.name "Eclipse-Z Diagnóstico"
+          git config user.email "actions@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_ISWEAR_V5
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "Diagnosticar overrides exactos de ISWearClothing v5"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi
