@@ -13,8 +13,13 @@ jobs:
   diagnostico:
     runs-on: ubuntu-latest
     steps:
-      - name: Descargar repositorio
+      - name: Descargar solo los paquetes relevantes
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 3/Contents/mods/ECZ3_3
+            MODPACK-ACTUAL-EN-SERVIDOR/ECZTraducciones
+          sparse-checkout-cone-mode: false
 
       - name: Buscar definiciones y código de escaleras
         shell: bash
