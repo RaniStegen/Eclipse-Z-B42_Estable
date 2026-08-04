@@ -1,6 +1,11 @@
 -- AuthenticZ_BodyLocations.lua
--- Build 42.13+ Multiplayer-safe body location setup for AuthenticZ
--- Uses deterministic rebuild + anchored insertion
+-- Build 42.20 multiplayer-safe body-location setup for AuthenticZ.
+--
+-- AuthenticZ only needs to add its own slots to the existing Human group.
+-- Never reset or rebuild BodyLocations here: doing so invalidates the live
+-- BodyLocationGroup used by the character and can make vanilla watches,
+-- fanny packs and other wearable items finish their timed action without
+-- actually becoming equipped.
 
 require "NPCs/BodyLocations"
 
@@ -8,120 +13,74 @@ local BodyAPI = BodyLocations
 local SlotAPI = ItemBodyLocation
 local RL = ResourceLocation
 
-------------------------------------------------------------
--- Utility: clone layering rules from an existing group
-------------------------------------------------------------
-local function cloneLocationRules(sourceGroup, locationId, targetGroup)
-	for i = 0, sourceGroup:size() - 1 do
-		local otherId = sourceGroup:getLocationByIndex(i):getId()
-
-		if sourceGroup:isExclusive(locationId, otherId) then
-			targetGroup:setExclusive(locationId, otherId)
-		end
-		if sourceGroup:isHideModel(locationId, otherId) then
-			targetGroup:setHideModel(locationId, otherId)
-		end
-		if sourceGroup:isAltModel(locationId, otherId) then
-			targetGroup:setAltModel(locationId, otherId)
-		end
-	end
+local function resolveLocation(value)
+    if value == nil then return nil end
+    if type(value) ~= "string" then return value end
+    return SlotAPI.get(RL.of(value))
 end
 
-------------------------------------------------------------
--- Core: rebuild a body group and inject new locations
-------------------------------------------------------------
-local function rebuildGroupWithInsertions(targetGroupId, insertions)
-	local created = {}
+local function insertRelative(group, anchorValue, beforeAnchor, rawIds)
+    if not group then return end
 
-	-- Snapshot groups (reset clears the live view)
-	local groupView = BodyAPI.getAllGroups()
-	local groupSnapshot = {}
-	for i = 0, groupView:size() - 1 do
-		groupSnapshot[#groupSnapshot + 1] = groupView:get(i)
-	end
+    local anchorId = resolveLocation(anchorValue)
+    local ids = {}
 
-	BodyAPI.reset()
+    for _, rawId in ipairs(rawIds) do
+        local locationId = resolveLocation(rawId)
+        if locationId then
+            group:getOrCreateLocation(locationId)
+            ids[#ids + 1] = locationId
+        end
+    end
 
-	for _, oldGroup in ipairs(groupSnapshot) do
-		local newGroup = BodyAPI.getGroup(oldGroup:getId())
+    -- Ordering is visual only, but keep the original anchored order whenever
+    -- the current Build exposes the required methods.  Failure to move a slot
+    -- must never remove or recreate any existing vanilla/modded location.
+    if not anchorId or not group.indexOf or not group.moveLocationToIndex then
+        return
+    end
 
-		for i = 0, oldGroup:size() - 1 do
-			local existingId = oldGroup:getLocationByIndex(i):getId()
+    local ok, anchorIndex = pcall(function()
+        return group:indexOf(anchorId)
+    end)
+    if not ok or anchorIndex == nil or anchorIndex < 0 then
+        return
+    end
 
-			-- Insert BEFORE anchor
-			if oldGroup:getId() == targetGroupId then
-				for _, def in ipairs(insertions) do
-					if def.before then
-						local anchorId = type(def.anchor) == "string"
-							and RL.of(def.anchor)
-							or def.anchor
-
-						if anchorId == existingId then
-							local newId = type(def.id) == "string"
-								and SlotAPI.get(RL.of(def.id))
-								or def.id
-
-							created[def.id] = newGroup:getOrCreateLocation(newId)
-						end
-					end
-				end
-			end
-
-			-- Recreate original vanilla slot
-			newGroup:getOrCreateLocation(existingId)
-
-			-- Insert AFTER anchor
-			if oldGroup:getId() == targetGroupId then
-				for _, def in ipairs(insertions) do
-					if not def.before then
-						local anchorId = type(def.anchor) == "string"
-							and RL.of(def.anchor)
-							or def.anchor
-
-						if anchorId == existingId then
-							local newId = type(def.id) == "string"
-								and SlotAPI.get(RL.of(def.id))
-								or def.id
-
-							created[def.id] = newGroup:getOrCreateLocation(newId)
-						end
-					end
-				end
-			end
-		end
-
-		-- Restore vanilla behavior
-		for i = 0, oldGroup:size() - 1 do
-			local locId = oldGroup:getLocationByIndex(i):getId()
-			newGroup:setMultiItem(locId, oldGroup:isMultiItem(locId))
-			cloneLocationRules(oldGroup, locId, newGroup)
-		end
-	end
-
-	return created
+    local firstIndex = beforeAnchor and anchorIndex or (anchorIndex + 1)
+    for offset, locationId in ipairs(ids) do
+        pcall(function()
+            group:moveLocationToIndex(locationId, firstIndex + offset - 1)
+        end)
+    end
 end
 
-------------------------------------------------------------
--- Initialization
-------------------------------------------------------------
 local function setupAuthenticZBodyLocations()
-    -- Correct B42.13 constants (match vanilla BodyLocations.lua)
+    local group = BodyAPI.getGroup("Human")
+    if not group then return end
+
     local outerVestLayer =
         SlotAPI.TORSO_EXTRA_VEST_BULLET
         or SlotAPI.TORSO_EXTRA_VEST
         or SlotAPI.TORSO_EXTRA
 
-    rebuildGroupWithInsertions("Human", {
-        { id = "AZ:HeadExtra",     anchor = SlotAPI.HAT },
-        { id = "AZ:HeadExtraHair", anchor = SlotAPI.HAT },
-        { id = "AZ:HeadExtraPlus", anchor = SlotAPI.HAT },
+    insertRelative(group, SlotAPI.HAT, false, {
+        "AZ:HeadExtra",
+        "AZ:HeadExtraHair",
+        "AZ:HeadExtraPlus",
+    })
 
-        { id = "AZ:NeckExtra", anchor = SlotAPI.JACKET },
-        { id = "AZ:LegsExtra", anchor = SlotAPI.SHOES, before = true },
+    insertRelative(group, SlotAPI.JACKET, false, {
+        "AZ:NeckExtra",
+    })
 
-        -- Outer torso gear (webbing / bandoliers)
-        { id = "AZ:TorsoRigPlus2",   anchor = outerVestLayer },
-        { id = "AZ:TorsoExtraPlus1", anchor = outerVestLayer },
+    insertRelative(group, SlotAPI.SHOES, true, {
+        "AZ:LegsExtra",
+    })
+
+    insertRelative(group, outerVestLayer, false, {
+        "AZ:TorsoRigPlus2",
+        "AZ:TorsoExtraPlus1",
     })
 end
 
