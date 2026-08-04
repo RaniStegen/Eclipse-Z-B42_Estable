@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Retira de ECZ2_Ajustes solo modelos idénticos ya suministrados por ECZ2_18."""
 from __future__ import annotations
 
 import hashlib
