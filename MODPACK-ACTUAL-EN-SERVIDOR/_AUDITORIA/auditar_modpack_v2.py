@@ -194,6 +194,11 @@ def translation_maps(directory: Path) -> dict[str, dict[str, Any]]:
 
 def audit(root: Path, config: dict[str, Any]) -> tuple[list[Finding], dict[str, int]]:
     findings: list[Finding] = []
+    external_mods = {str(value) for value in config.get("external_mods", [])}
+    external_workshop_items = {
+        str(item.get("id")) if isinstance(item, dict) else str(item)
+        for item in config.get("external_workshop_items", [])
+    }
     stats = {
         "workshop_items": 0,
         "mod_directories": 0,
@@ -201,6 +206,8 @@ def audit(root: Path, config: dict[str, Any]) -> tuple[list[Finding], dict[str, 
         "json_files": 0,
         "spanish_translation_json": 0,
         "sensitive_overrides": 0,
+        "external_mods": len(external_mods),
+        "external_workshop_items": len(external_workshop_items),
     }
 
     # Workshop Items.
@@ -218,8 +225,8 @@ def audit(root: Path, config: dict[str, Any]) -> tuple[list[Finding], dict[str, 
     stats["workshop_items"] = sum(len(paths) for paths in workshops.values())
 
     for item_id in map(str, config.get("workshop_items", [])):
-        if item_id not in workshops:
-            findings.append(Finding("error", "WORKSHOP_ITEM_MISSING", f"Falta el Workshop Item {item_id}"))
+        if item_id not in workshops and item_id not in external_workshop_items:
+            findings.append(Finding("error", "WORKSHOP_ITEM_MISSING", f"Falta el Workshop Item interno {item_id}"))
     for item_id, paths in workshops.items():
         if len(paths) > 1:
             findings.append(Finding("error", "WORKSHOP_ID_DUPLICATED", f"El Workshop ID {item_id} está duplicado", details={"paths": [rel(path, root) for path in paths]}))
@@ -269,14 +276,14 @@ def audit(root: Path, config: dict[str, Any]) -> tuple[list[Finding], dict[str, 
 
     expected_mods = [str(value) for value in config.get("mods", [])]
     for mod_id in expected_mods:
-        if mod_id not in ids_to_roots:
-            findings.append(Finding("error", "SERVER_MOD_MISSING", f"Mods= contiene {mod_id}, pero ese ID no está en el modpack"))
+        if mod_id not in ids_to_roots and mod_id not in external_mods:
+            findings.append(Finding("error", "SERVER_MOD_MISSING", f"Mods= contiene {mod_id}, pero ese ID interno no está en el modpack"))
 
     required_tail = [str(value) for value in config.get("required_tail_order", [])]
     if required_tail and expected_mods[-len(required_tail):] != required_tail:
         findings.append(Finding("error", "MOD_ORDER_TAIL_INVALID", "El final de Mods= es incorrecto", details={"expected": required_tail, "actual": expected_mods[-len(required_tail):]}))
 
-    all_ids = set(ids_to_roots)
+    all_ids = set(ids_to_roots) | external_mods
     for mod_id, required in dependencies.items():
         for dependency in required:
             if dependency not in all_ids:
@@ -382,6 +389,7 @@ def markdown(root: Path, config: dict[str, Any], findings: list[Finding], stats:
         f"- Build: `{config.get('build', 'desconocida')}`",
         f"- Errores: **{counts['error']}**",
         f"- Advertencias: **{counts['warning']}**",
+        f"- Dependencias externas excluidas del contenido interno: **{len(config.get('external_mods', []))}**",
         "",
         "## Estadísticas",
         "",

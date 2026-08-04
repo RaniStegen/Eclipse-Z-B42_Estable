@@ -97,7 +97,7 @@ def topological(mods,dependency_map,tail):
     return result,cycles
 
 def audit(root:Path,cfg):
-    build=str(cfg["build"]); line=list(map(str,cfg["mods"])); tail=list(map(str,cfg.get("required_tail_order",[])))
+    build=str(cfg["build"]); line=list(map(str,cfg["mods"])); tail=list(map(str,cfg.get("required_tail_order",[]))); external=set(map(str,cfg.get("external_mods",[])))
     pos={m:i+1 for i,m in enumerate(line)}; findings=[]; folders=[]
     active=defaultdict(list); any_ids=defaultdict(list); depmap={}
     for m,n in Counter(line).items():
@@ -157,7 +157,7 @@ def audit(root:Path,cfg):
         if len(set(owners))>1:findings.append(Finding("error","ACTIVE_ID_DUPLICATED",f"{i} existe en varias carpetas.",mod_id=i,details={"folders":owners}))
     active_ids=set(active); lower={i.lower():i for i in active_ids}
     for idx,m in enumerate(line,1):
-        if m in active_ids:continue
+        if m in active_ids or m in external:continue
         if m.lower() in lower:findings.append(Finding("error","MODS_CASE_MISMATCH",f"Mods= usa {m}; el ID real es {lower[m.lower()]}.",mod_id=m,details={"position":idx}))
         elif m in any_ids:findings.append(Finding("error","MOD_INACTIVE_FOR_BUILD",f"{m} existe, pero no en el mod.info activo para Build {build}.",mod_id=m,details={"paths":any_ids[m]}))
         else:findings.append(Finding("error","MODS_ID_MISSING",f"{m} no existe en el modpack.",mod_id=m,details={"position":idx}))
@@ -165,7 +165,7 @@ def audit(root:Path,cfg):
     for m,ds in depmap.items():
         for d in ds:
             if d==m:findings.append(Finding("error","SELF_DEPENDENCY",f"{m} se requiere a sí mismo.",mod_id=m));continue
-            if d not in active_ids:
+            if d not in active_ids and d not in external:
                 actual=lower.get(d.lower())
                 msg=f"{m} requiere {d}, pero el ID real es {actual}." if actual else f"{m} requiere {d}, pero no existe como mod activo."
                 findings.append(Finding("error","DEPENDENCY_MISSING",msg,mod_id=m));continue
@@ -177,19 +177,22 @@ def audit(root:Path,cfg):
     errmods={f.mod_id for f in findings if f.severity=="error"};warnmods={f.mod_id for f in findings if f.severity=="warning"}
     for r in folders:
         r["position"]=pos.get(r["active_id"]);r["status"]="ERROR" if r["active_id"] in errmods or r["folder"] in errmods else ("AVISO" if r["active_id"] in warnmods or r["folder"] in warnmods else "OK")
-    stats={"build":build,"mods_line":len(line),"packages":len({r["package"] for r in folders}),"folders":len(folders),"mod_info":sum(r["info_count"] for r in folders),"active_ids":len(active_ids),"version_folders":sum(len(r["versions"]) for r in folders),"errors":sum(f.severity=="error" for f in findings),"warnings":sum(f.severity=="warning" for f in findings),"recommended":recommended,"order_unchanged":recommended==line}
+    stats={"build":build,"mods_line":len(line),"packages":len({r["package"] for r in folders}),"folders":len(folders),"mod_info":sum(r["info_count"] for r in folders),"active_ids":len(active_ids),"external_ids":len(external),"version_folders":sum(len(r["versions"]) for r in folders),"errors":sum(f.severity=="error" for f in findings),"warnings":sum(f.severity=="warning" for f in findings),"recommended":recommended,"order_unchanged":recommended==line}
     return findings,folders,stats
 
 def markdown(findings,folders,stats,cfg):
-    line=list(map(str,cfg["mods"])); byid={r["active_id"]:r for r in folders if r["active_id"]}
-    out=["# Parte 2 — revisión de mod.info, dependencias y versiones","",f"Build: **{stats['build']}**","","## Resumen","",f"- `Mods=`: **{stats['mods_line']}** entradas",f"- Paquetes: **{stats['packages']}**",f"- Carpetas: **{stats['folders']}**",f"- `mod.info`: **{stats['mod_info']}**",f"- IDs activos: **{stats['active_ids']}**",f"- Carpetas de versión: **{stats['version_folders']}**",f"- Errores: **{stats['errors']}**",f"- Advertencias: **{stats['warnings']}**","","## Errores",""]
+    line=list(map(str,cfg["mods"])); external=set(map(str,cfg.get("external_mods",[]))); byid={r["active_id"]:r for r in folders if r["active_id"]}
+    out=["# Parte 2 — revisión de mod.info, dependencias y versiones","",f"Build: **{stats['build']}**","","## Resumen","",f"- `Mods=`: **{stats['mods_line']}** entradas",f"- Paquetes internos: **{stats['packages']}**",f"- Carpetas internas: **{stats['folders']}**",f"- `mod.info` internos: **{stats['mod_info']}**",f"- IDs internos activos: **{stats['active_ids']}**",f"- IDs externos declarados: **{stats['external_ids']}**",f"- Carpetas de versión: **{stats['version_folders']}**",f"- Errores: **{stats['errors']}**",f"- Advertencias: **{stats['warnings']}**","","## Errores",""]
     errors=[f for f in findings if f.severity=="error"];warnings=[f for f in findings if f.severity=="warning"]
     out+=([f"- **{f.code}**{f' [{f.mod_id}]' if f.mod_id else ''}: {f.message}{f' — `{f.path}`' if f.path else ''}" for f in errors] or ["- Ninguno."])
     out+=["","## Advertencias",""]+([f"- **{f.code}**{f' [{f.mod_id}]' if f.mod_id else ''}: {f.message}{f' — `{f.path}`' if f.path else ''}" for f in warnings] or ["- Ninguna."])
     out+=["","## Comparación exacta con `Mods=`","","| # | ID | Carpeta | `mod.info` activo | Versión | Dependencias | Estado |","|---:|---|---|---|---|---|---|"]
     for n,m in enumerate(line,1):
         r=byid.get(m)
-        if not r:out.append(f"| {n} | `{m}` | — | — | — | — | **FALTA** |");continue
+        if not r:
+            state="EXTERNO" if m in external else "FALTA"
+            out.append(f"| {n} | `{m}` | — | — | — | — | **{state}** |")
+            continue
         ds=", ".join(f"`{d}`" for d in r["dependencies"]) or "—"
         out.append(f"| {n} | `{m}` | `{r['path']}` | `{r['active_info']}` | `{r['active_version']}` | {ds} | **{r['status']}** |")
     out+=["","## Inventario de carpetas y versiones","","| Paquete | Carpeta | ID activo | Versiones | Compatibles | Futuras | `mod.info` activo | Estado |","|---|---|---|---|---|---|---|---|"]
@@ -198,7 +201,7 @@ def markdown(findings,folders,stats,cfg):
     out+=["","## Orden por dependencias",""]
     if stats["order_unchanged"]:out.append("La línea actual ya respeta todas las dependencias detectadas y el final protegido.")
     else:out+=["```ini","Mods="+";".join(stats["recommended"]),"```"]
-    out+=["","## Criterio de versión","","Se selecciona la carpeta numérica más alta que no sea posterior a Build 42.20.0. Si no existe, se usa el `mod.info` raíz o `common/mod.info`. `common/media` se considera contenido compartido.",""]
+    out+=["","## Dependencias externas","", "`NewMusic` y `eclipsemusic` se mantienen en `Mods=` y `WorkshopItems=`, pero no forman parte del contenido interno de este repositorio. Se muestran como **EXTERNO** y no se exige que tengan carpeta o `mod.info` aquí.", "", "## Criterio de versión","","Se selecciona la carpeta numérica más alta que no sea posterior a Build 42.20.0. Si no existe, se usa el `mod.info` raíz o `common/mod.info`. `common/media` se considera contenido compartido.",""]
     return "\n".join(out)
 
 def main():
