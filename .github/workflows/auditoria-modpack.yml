@@ -20,7 +20,7 @@ permissions:
 jobs:
   auditar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -44,6 +44,29 @@ jobs:
           python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modinfo_versiones.py \
             --output "$RUNNER_TEMP/resultado_modinfo_versiones"
 
+      - name: Parte 3 - conflictos globales y símbolos persistentes
+        id: conflictos
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_conflictos_runtime.py \
+            --output "$RUNNER_TEMP/resultado_parte3"
+
+      - name: Generar manifiesto del repositorio
+        id: manifest
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/generar_manifest_despliegue.py \
+            MODPACK-ACTUAL-EN-SERVIDOR \
+            --output "$RUNNER_TEMP/manifest_github.json"
+
+      - name: Autoprueba del validador de logs
+        id: runtime
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/validar_logs_runtime.py \
+            --self-test \
+            --output "$RUNNER_TEMP/runtime_selftest"
+
       - name: Publicar informe general
         if: always()
         uses: actions/upload-artifact@v4
@@ -65,10 +88,25 @@ jobs:
             ${{ runner.temp }}/resultado_modinfo_versiones_Mods.txt
           if-no-files-found: error
 
+      - name: Publicar informe de la Parte 3
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parte-3-conflictos-runtime
+          path: |
+            ${{ runner.temp }}/resultado_parte3.json
+            ${{ runner.temp }}/resultado_parte3.md
+            ${{ runner.temp }}/manifest_github.json
+          if-no-files-found: error
+
       - name: Resultado de las auditorías
         if: always()
         run: |
-          if [ "${{ steps.general.outcome }}" != "success" ] || [ "${{ steps.modinfo.outcome }}" != "success" ]; then
-            echo "Una o ambas auditorías han detectado errores."
+          if [ "${{ steps.general.outcome }}" != "success" ] || \
+             [ "${{ steps.modinfo.outcome }}" != "success" ] || \
+             [ "${{ steps.conflictos.outcome }}" != "success" ] || \
+             [ "${{ steps.manifest.outcome }}" != "success" ] || \
+             [ "${{ steps.runtime.outcome }}" != "success" ]; then
+            echo "Una o varias auditorías han detectado errores."
             exit 1
           fi
