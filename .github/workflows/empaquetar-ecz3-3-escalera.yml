@@ -1,0 +1,58 @@
+name: Empaquetar ECZ3_3 escalera
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+  workflow_dispatch:
+
+jobs:
+  empaquetar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar ECZ3_3
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 3/Contents/mods/ECZ3_3
+          sparse-checkout-cone-mode: false
+
+      - name: Crear descarga lista para sustituir
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 3/Contents/mods/ECZ3_3"
+          test -f "$SRC/common/media/lua/shared/Neat_Building/Patch/NB_ConciseStairs_B42_20.lua"
+          test -f "$SRC/42.15/media/scripts/generated/entities/neat_expand/stairs/entity_wood_concisestairs.txt"
+          test -f "$SRC/42.15/media/scripts/generated/entities/neat_expand/stairs/entity_welding_concisestairs.txt"
+
+          rm -rf DESCARGA
+          mkdir -p DESCARGA
+          cp -a "$SRC" DESCARGA/ECZ3_3
+          cat > DESCARGA/LEEME_INSTALACION.txt <<'EOF'
+ECZ3_3 B42.20 - FIX ESCALERA CONCISA
+
+Contenido:
+- Mod ECZ3_3 completo.
+- Reparacion de la escalera de madera concisa.
+- Reparacion preventiva de la escalera metalica concisa.
+- Compatibilidad con escaleras ya construidas al cargar la cuadricula.
+
+Instalacion:
+1. Deten el servidor.
+2. Sustituye la carpeta ECZ3_3 existente por la carpeta ECZ3_3 de este ZIP.
+3. Actualiza la misma carpeta en la copia que se distribuye a los clientes/Workshop.
+4. Inicia de nuevo el servidor.
+5. Prueba una escalera nueva y una ya construida.
+
+No borres la partida ni el WorldDictionary.
+EOF
+          cd DESCARGA
+          zip -r -9 ../ECZ3_3_B42.20_FIX_ESCALERA_CONCISA.zip ECZ3_3 LEEME_INSTALACION.txt
+
+      - name: Publicar descarga
+        uses: actions/upload-artifact@v4
+        with:
+          name: ECZ3_3-B42.20-FIX-ESCALERA-CONCISA
+          path: ECZ3_3_B42.20_FIX_ESCALERA_CONCISA.zip
+          if-no-files-found: error
