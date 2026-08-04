@@ -1,83 +1,89 @@
-# Corrección de equipamiento, buscador de objetos y escaleras — 2026-08-04
+# Corrección de equipamiento, buscador de objetos y escaleras — 4 de agosto de 2026
 
-## Build objetivo
+## Estado
 
-Project Zomboid **42.20.0**.
+La primera corrección de relojes/riñoneras y la segunda revisión de la escalera concisa resultaron incompletas durante la prueba real. Este documento describe la revisión v3 actualmente aplicada en la rama.
 
-## 1. Relojes y riñoneras no se equipaban
+## 1. Relojes y riñoneras
 
-### Síntoma
+### Diagnóstico final
 
-La acción «Ponerse» completaba la animación y la barra de progreso, pero el objeto permanecía en el inventario sin equiparse. Se reproducía con objetos vanilla.
+`ISWearClothing.complete()` no estaba sustituido por ningún mod activo: el único hook directo localizado modifica `start()` para el sombrero neural de Lifestyle y no afecta a muñecas ni riñoneras.
 
-### Causa
+El problema restante estaba en la manipulación del grupo corporal `Human`:
 
-`ECZ_25` ejecutaba `BodyLocations.reset()` durante `OnGameBoot` y reconstruía todos los grupos corporales. En Build 42.20 esto podía invalidar la instancia activa del grupo `Human` y eliminar o desacoplar ranuras registradas por vanilla y otros mods.
+- AuthenticZ había dejado de ejecutar `BodyLocations.reset()`, pero todavía reordenaba ranuras mediante `moveLocationToIndex`.
+- Spongie Open Jackets también reordenaba el grupo desde `BodyLocations_Helper.lua`.
+- Glasses With Gas Masks movía sus dos ranuras personalizadas junto a las posiciones vanilla.
 
-### Corrección
+Build 42.20 declara las localizaciones en orden de renderizado desde `BodyLocations.lua`; cambiar los índices del grupo vivo después de inicializar `WornItems` puede dejar desacopladas posiciones como muñecas y riñoneras.
 
-`AuthenticZ_BodyLocations.lua` ya no reinicia ni reconstruye `BodyLocations`.
+### Corrección v3
 
-Ahora:
+- Eliminado todo uso activo de `BodyLocations.reset()`.
+- Eliminado todo uso activo de `moveLocationToIndex` en los tres proveedores afectados.
+- Los mods añaden exclusivamente sus ranuras personalizadas mediante `getOrCreateLocation`.
+- Añadido un parche tardío en `ECZ2_Ajustes` que garantiza, tanto en el grupo global como en el grupo corporal real del personaje:
+  - `ItemBodyLocation.LEFT_WRIST`;
+  - `ItemBodyLocation.RIGHT_WRIST`;
+  - `ItemBodyLocation.FANNY_PACK_FRONT`;
+  - `ItemBodyLocation.FANNY_PACK_BACK`.
+- `ISWearClothing.complete()` sigue siendo la implementación vanilla. El parche solo prepara esas cuatro ranuras antes de la llamada y repite el mismo `setWornItem` cuando la operación vanilla termina sin dejar el objeto equipado.
 
-- obtiene el grupo `Human` existente;
-- añade únicamente las siete ranuras de AuthenticZ;
-- conserva todas las ranuras vanilla y de terceros;
-- mantiene el orden visual relativo cuando la API lo permite;
-- no sustituye el grupo activo del personaje.
+Archivo añadido:
 
-## 2. Error al generar objetos desde el buscador
+```text
+EclipseZ - 2/Contents/mods/ECZ2_Ajustes/42.18/media/lua/shared/NPCs/zz_ECZ_BodyLocations_B42_20.lua
+```
 
-### Síntoma
+## 2. Buscador de objetos
 
-Cada objeto creado desde el buscador generaba una excepción en el chat.
+El error procedía de `ECZChat_Config.lua`: el callback de `string.gsub` esperaba dos capturas al traducir el mensaje `Item ... Added in ...'s inventory.`, pero Kahlua podía entregar `nil` para el usuario y provocar `__concat not defined`.
 
-### Causa confirmada por el registro
+El mensaje se analiza ahora con `string.match` y se recompone sin callback multicaptura.
 
-`ECZChat_Config.lua` utilizaba un `string.gsub` con dos capturas y una función de reemplazo. Kahlua entregaba `nil` como segundo argumento y el código intentaba concatenarlo con `"'s inventory."`.
+## 3. Escaleras de madera concisas
 
-### Corrección
+### Diagnóstico final
 
-El mensaje se analiza primero con `string.match` y después se recompone sin callback multicaptura. Se convierten a texto todos los valores antes de concatenarlos y se conservan posibles prefijos o sufijos del mensaje.
+La segunda revisión invirtió el orden de los tres sprites. Los archivos de escaleras funcionales y el callback vanilla demuestran que cada fila está declarada como:
 
-## 3. Escaleras concisas y movimiento de todas las escaleras
+1. tramo superior;
+2. tramo central;
+3. tramo inferior.
 
-### Síntomas tras el primer parche
+Por tanto, la escalera de madera concisa debe usar:
 
-- el rellano superior aparecía al lado de la escalera;
-- la subida avanzaba por saltos visibles;
-- el comportamiento se extendía a otras escaleras.
+```text
+82 = stairsTN
+81 = stairsMN
+80 = stairsBN
 
-### Causa
+90 = stairsTW
+89 = stairsMW
+88 = stairsBW
+```
 
-El parche anterior modificaba con `IsoSprite:setType()` doce sprites del tileset global `fixtures_stairs_01` durante varios eventos y al cargar cada cuadrícula. Esos sprites no pertenecen exclusivamente a la receta concisa, por lo que el cambio afectaba a cualquier escalera que los utilizase.
+La versión invertida identificaba el tramo inferior como superior, por lo que solo este modelo volvía a fallar.
 
-Además, el orden de los tres sprites se interpretó como superior/central/inferior cuando `SpriteConfig` los construye de inferior a superior. El tramo inferior quedó marcado como superior y el callback vanilla generó el rellano desde la casilla equivocada.
+### Corrección v3
 
-### Corrección
+- Restaurado el orden superior/central/inferior.
+- `OnCreate` cambia únicamente el tipo de la instancia recién construida.
+- `OnIsValid` entrega temporalmente al callback vanilla el tipo correcto del sprite y restaura inmediatamente el tipo original.
+- No existen cambios globales persistentes, eventos `LoadGridsquare` ni barridos de chunks.
+- Las demás escaleras conservan su comportamiento vanilla.
 
-El parche global se ha retirado.
+Las escaleras concisas construidas con versiones anteriores pueden conservar objetos o rellanos erróneos guardados en la partida; deben retirarse y reconstruirse una vez tras actualizar.
 
-La compatibilidad actual:
+## Validación
 
-- no modifica ninguna definición compartida de `IsoSprite`;
-- no registra eventos globales;
-- no recorre cuadrículas cargadas;
-- solo asigna el tipo al objeto conciso que acaba de construirse;
-- usa el orden correcto inferior/central/superior;
-- delega la finalización y el rellano en `BuildRecipeCode.stairs.OnCreate`.
+La auditoría estática completa del modpack terminó correctamente sobre el commit funcional de esta revisión. También se verificó específicamente:
 
-## Prueba dentro del juego
+- ausencia de `BodyLocations.reset()` activo;
+- ausencia de `moveLocationToIndex` en los tres proveedores corregidos;
+- ausencia de `LoadGridsquare` y de mutación persistente de sprites en la escalera;
+- orden correcto de los seis sprites de madera y los seis metálicos;
+- conservación del callback vanilla como autoridad.
 
-Tras sustituir los archivos, servidor y clientes deben cerrarse completamente y usar exactamente la misma versión.
-
-Comprobar:
-
-1. equipar un reloj vanilla en ambas muñecas;
-2. equipar una riñonera vanilla delante y detrás;
-3. generar varios objetos desde el buscador y verificar que no aparece una excepción;
-4. construir escaleras vanilla de madera y metal;
-5. construir las escaleras concisas de madera y metal en las dos orientaciones;
-6. comprobar una subida continua y que el rellano aparece frente al tramo superior.
-
-No se modifican partidas, personajes, chunks ni `WorldDictionary`.
+La validación interactiva final requiere servidor y cliente reales de Project Zomboid 42.20.
