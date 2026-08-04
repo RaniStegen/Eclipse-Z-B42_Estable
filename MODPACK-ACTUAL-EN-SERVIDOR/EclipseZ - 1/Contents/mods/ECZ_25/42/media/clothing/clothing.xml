@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Authentic Z Outfits -->
 <outfitManager>
 
@@ -194,7 +194,7 @@
 </m_MaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticB4BEvangelo</m_Name>
-		<m_Guid>e00cb8c4-eb3e-47a1-8d8a-4d0cd378bcb7</m_Guid>
+		<m_Guid>9a09f49a-ec5b-5f12-a889-eb9f4a87bf6d</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
@@ -2807,7 +2807,7 @@
 	</m_FemaleOutfits>
 	
 <m_MaleOutfits> <m_Name>AuthenticCEDAHazmatBlue</m_Name>
-		<m_Guid>d6b0f9b0-0b87-49e8-b7db-069644859db0</m_Guid>
+		<m_Guid>ba9bfc24-2ae2-5482-9def-674bede36ffc</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
 		<m_items><!-- Blue CEDA Hazmat Suit -->
@@ -2860,7 +2860,7 @@
 	</m_MaleOutfits>
 
 <m_FemaleOutfits> <m_Name>AuthenticCEDAHazmatBlue</m_Name>
-		<m_Guid>d6b0f9b0-0b87-49e8-b7db-069644859db0</m_Guid>
+		<m_Guid>ba9bfc24-2ae2-5482-9def-674bede36ffc</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
 		<m_items><!-- Blue CEDA Hazmat Suit -->
@@ -3019,7 +3019,7 @@
 </m_FemaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticCEDAHazmatRed</m_Name>
-		<m_Guid>d6b0f9b0-0b87-49e8-b7db-069644859db0</m_Guid>
+		<m_Guid>4e2ab978-408f-5b88-aa40-193e548f8c9b</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
 		<m_items><!-- Red CEDA Hazmat Suit -->
@@ -3072,7 +3072,7 @@
 	</m_MaleOutfits>
 
 <m_FemaleOutfits> <m_Name>AuthenticCEDAHazmatRed</m_Name>
-		<m_Guid>d6b0f9b0-0b87-49e8-b7db-069644859db0</m_Guid>
+		<m_Guid>4e2ab978-408f-5b88-aa40-193e548f8c9b</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
 		<m_items><!-- Red CEDA Hazmat Suit -->
@@ -5799,7 +5799,7 @@
 </m_MaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticDocBrown</m_Name>
-		<m_Guid>35dd7ab7-ee6f-4605-a293-fd98c8906901</m_Guid>
+		<m_Guid>aa870514-4a71-53fd-9ff8-56dd5b5a033c</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>
@@ -6552,7 +6552,7 @@
 	</m_MaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticFat01Fisherman</m_Name>
-		<m_Guid>709cc2a0-f585-4654-88d7-1913f6807448</m_Guid>
+		<m_Guid>c3610d7c-8e92-5ac2-8ada-a9d9fece230e</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_items> <!-- Fat Skin 01 Dad Bod -->
@@ -7871,7 +7871,7 @@
 	</m_FemaleOutfits>	
 
 <m_FemaleOutfits> <m_Name>AuthenticFat02Dress</m_Name> <!-- Plus Sized Dresses-->
-		<m_Guid>bbe6deb6-7ed1-44df-b3b6-af77e9ec0430</m_Guid>
+		<m_Guid>24da231e-d16b-5ab0-b1cc-52a00a2bb745</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_items> <!-- Fat Skin 02 Plus Sized -->
@@ -9601,7 +9601,7 @@
 </m_MaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticFootballGreenBayPacker</m_Name>
-		<m_Guid>c7957d85-2494-44bf-8317-f69dd1851035</m_Guid>
+		<m_Guid>323ca9e5-1021-53cf-8c9b-0fb6377f48ca</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_items>  <!-- Greenbay Jersey -->
 			<itemGUID>4e882976-a778-42d1-ad10-669acdf201d7</itemGUID>
@@ -10345,7 +10345,7 @@
 </m_MaleOutfits>	
 	
 <m_MaleOutfits> <m_Name>AuthenticFrancis</m_Name>
-		<m_Guid>6e916ae2-436b-4ab8-a237-93bf217eea4d</m_Guid>
+		<m_Guid>f846e73b-f91f-59e5-8b78-7efccb507fe1</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
@@ -11677,7 +11677,7 @@
 	</m_MaleOutfits>
 	
 <m_FemaleOutfits> <m_Name>AuthenticGrindhouseCherry</m_Name>
-		<m_Guid>3be0021e-0b8c-4c78-91ea-44e2f8ea9355</m_Guid>
+		<m_Guid>700172cc-c614-5bb4-86f4-6ba844401629</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
@@ -13197,7 +13197,11 @@
 				<itemGUID>30c303ef-18ab-4f14-a602-8305e92376b0</itemGUID>
 			</subItems>				
 		</m_items>			
-	</m_MaleOutfits>
+	
+		<m_items> <!-- Killa Long T-Shirt: GUID separado por Eclipse-Z -->
+			<itemGUID>71d225cc-784b-5aac-8ed1-71bb1cdcf0eb</itemGUID>
+		</m_items>
+</m_MaleOutfits>
 
 <m_MaleOutfits> <m_Name>AuthenticKleiner</m_Name>
 		<m_Guid>869706bc-7005-41f5-a322-84cb4c7a3d62</m_Guid>
@@ -13479,7 +13483,7 @@
 	</m_MaleOutfits>
 	
 <m_MaleOutfits> <m_Name>AuthenticLouis</m_Name>
-		<m_Guid>6e916ae2-436b-4ab8-a237-93bf217eea4d</m_Guid>
+		<m_Guid>14a5f2f6-c42c-578d-9d49-06ca864001d7</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
@@ -13542,7 +13546,7 @@
 	</m_MaleOutfits>		
 
 <m_MaleOutfits> <m_Name>AuthenticMadMax</m_Name>
-		<m_Guid>b3e7fb9f-221d-4c48-8a90-7c7cd20878ed</m_Guid>
+		<m_Guid>723d265d-0a4a-55d3-8e9f-d96914584e99</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_items>  <!-- Black Jacket -->
 			<itemGUID>9e094ca7-29b4-4c7d-ae70-597fa4c8a330</itemGUID>
@@ -13620,7 +13624,7 @@
 	</m_MaleOutfits>
 
 <m_FemaleOutfits> <m_Name>AuthenticMaid</m_Name>
-		<m_Guid>ca3f3ea3-4a27-400f-bd96-a57a975e2a79</m_Guid>
+		<m_Guid>b597c516-1045-5be3-ad33-ed0db52c2cf8</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
@@ -13932,7 +13936,7 @@
 	</m_FemaleOutfits>	
 
 <m_MaleOutfits> <m_Name>AuthenticNateAnderson</m_Name>
-		<m_Guid>ec1e890d-ab6b-4d56-9434-4b215c51a74e</m_Guid>
+		<m_Guid>e7c328db-c0ad-5c8f-a549-ac927db65ba5</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>	
 		<m_items> <!-- Jeans -->
@@ -14388,7 +14392,7 @@
 	</m_MaleOutfits>		
 
 <m_MaleOutfits> <m_Name>AuthenticNightClub</m_Name>
-		<m_Guid>f416f265-24d4-4ab2-be2d-2108f33c14ef</m_Guid>
+		<m_Guid>1b4f6c89-1277-5fd5-8965-6dcd3e84afd8</m_Guid>
 		<m_Top>true</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>true</m_AllowTopTint>	
@@ -14555,7 +14559,7 @@
 </m_MaleOutfits>		
 
 <m_FemaleOutfits> <m_Name>AuthenticNightClub</m_Name>
-		<m_Guid>f416f265-24d4-4ab2-be2d-2108f33c14ef</m_Guid>
+		<m_Guid>1b4f6c89-1277-5fd5-8965-6dcd3e84afd8</m_Guid>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
 		<m_items> <!-- Choker necklace -->
@@ -17003,7 +17007,7 @@
 </m_FemaleOutfits>	
 
 <m_MaleOutfits> <m_Name>AuthenticReporter3LMBWRadio</m_Name>
-		<m_Guid>8df43e08-2afb-4bf5-a9a6-62bfde7f1e24</m_Guid>
+		<m_Guid>f7055c0b-0ef1-51e9-8589-4c328e5d01bd</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>
@@ -21586,7 +21590,7 @@
 </m_MaleOutfits>		
 	
 <m_FemaleOutfits> <m_Name>AuthenticZoey</m_Name>
-		<m_Guid>ec1e890d-ab6b-4d56-9434-4b215c51a74e</m_Guid>
+		<m_Guid>0eaec078-ae6a-5eaf-b95a-dfa5a9691f91</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>	
 		<m_items> <!-- Jeans -->
