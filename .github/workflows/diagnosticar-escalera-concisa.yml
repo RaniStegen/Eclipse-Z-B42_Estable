@@ -1,0 +1,41 @@
+name: Diagnosticar escalera concisa
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Buscar definiciones y código de escaleras
+        shell: bash
+        run: |
+          set -o pipefail
+          ROOT="MODPACK-ACTUAL-EN-SERVIDOR"
+          OUT="diagnostico-escalera-concisa.txt"
+          {
+            echo "# Coincidencias de texto"
+            grep -RInE --binary-files=without-match \
+              '(concisa|concise|escalera|staircase|stairs|stair|wooden[_ -]?stair|wood[_ -]?stair)' \
+              "$ROOT" 2>/dev/null || true
+            echo
+            echo "# Archivos cuyo nombre parece relacionado"
+            find "$ROOT" -type f | grep -Ei '(stair|escaler)' || true
+            echo
+            echo "# Definiciones de Neat Building relacionadas con suelo/escalera"
+            find "$ROOT/EclipseZ - 3/Contents/mods/ECZ3_3" -type f -print 2>/dev/null | sort || true
+          } > "$OUT"
+          wc -l "$OUT"
+
+      - name: Publicar diagnóstico
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-escalera-concisa
+          path: diagnostico-escalera-concisa.txt
+          if-no-files-found: error
