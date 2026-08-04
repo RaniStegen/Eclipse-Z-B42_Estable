@@ -1,0 +1,34 @@
+name: Ajustar dependencias externas
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/ajustar_dependencias_externas.py"
+      - ".github/workflows/ajustar-dependencias-externas.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  ajustar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Aplicar ajuste
+        run: python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/ajustar_dependencias_externas.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modpack_v2.py \
+                  MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_modinfo_versiones.py
+          git commit -m "Tratar NewMusic y eclipsemusic como dependencias externas [skip ci]"
+          git push origin HEAD:agent/auditoria-modpack-b42-20
