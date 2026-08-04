@@ -1,0 +1,972 @@
+{
+  "exact": [
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 32,
+      "text": "local og_start = ISWearClothing.start;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 33,
+      "text": "function ISWearClothing:start()"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 32,
+      "text": "local og_start = ISWearClothing.start;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 33,
+      "text": "function ISWearClothing:start()"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 32,
+      "text": "local og_start = ISWearClothing.start;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/hooks/Wear.lua",
+      "line": 33,
+      "text": "function ISWearClothing:start()"
+    }
+  ],
+  "files_named": [],
+  "set_worn": [
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/LSUtil.lua",
+      "line": 805,
+      "text": "\t\t--character:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 443,
+      "text": "\t\t\tplayer:setWornItem(item:canBeEquipped(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 446,
+      "text": "\t\t\tplayer:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 181,
+      "text": "\t\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 184,
+      "text": "\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 293,
+      "text": "\t\t\t\t\t\t--player:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 474,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 477,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 542,
+      "text": "\t--\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 545,
+      "text": "\t--\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Helper/TransferHelper.lua",
+      "line": 257,
+      "text": "\t\t\tcharacter:setWornItem(item:getBodyLocation(), item)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 321,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 324,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 395,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 398,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 461,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 464,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 619,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 622,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/Makeup/LSMirrorMenu_server.lua",
+      "line": 103,
+      "text": "\t\t\t\tcharacter:setWornItem(bodyL, bodyLocationItem)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 211,
+      "text": "\t\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 215,
+      "text": "\t\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 219,
+      "text": "\t\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 223,
+      "text": "\t\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 227,
+      "text": "\t\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 231,
+      "text": "\t\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 235,
+      "text": "\t\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 239,
+      "text": "\t\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 243,
+      "text": "\t\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 247,
+      "text": "\t\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 251,
+      "text": "\t\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 255,
+      "text": "\t\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 275,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 277,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 279,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 281,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 283,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 285,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 287,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 289,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 291,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 293,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 295,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 297,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 395,
+      "text": "\tself.character:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 500,
+      "text": "\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 533,
+      "text": "\t\t\t\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 561,
+      "text": "\t\t\tcharacter:setWornItem(bodyLocationItem:getBodyLocation(), bodyLocationItem);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1942,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); elseif (not bodyLocationItem) and self.mO and self.mO.FF then self.character:setWornItem(self.mO.FF:getBodyLocation(), self.mO.FF); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1944,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); elseif (not bodyLocationItem) and self.mO and self.mO.E then self.character:setWornItem(self.mO.E:getBodyLocation(), self.mO.E); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1946,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); elseif (not bodyLocationItem) and self.mO and self.mO.ES then self.character:setWornItem(self.mO.ES:getBodyLocation(), self.mO.ES); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1948,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); elseif (not bodyLocationItem) and self.mO and self.mO.L then self.character:setWornItem(self.mO.L:getBodyLocation(), self.mO.L); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1950,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); elseif (not bodyLocationItem) and self.mO and self.mO.FT then self.character:setWornItem(self.mO.FT:getBodyLocation(), self.mO.FT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1952,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); elseif (not bodyLocationItem) and self.mO and self.mO.UBT then self.character:setWornItem(self.mO.UBT:getBodyLocation(), self.mO.UBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1954,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); elseif (not bodyLocationItem) and self.mO and self.mO.LBT then self.character:setWornItem(self.mO.LBT:getBodyLocation(), self.mO.LBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1956,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); elseif (not bodyLocationItem) and self.mO and self.mO.BT then self.character:setWornItem(self.mO.BT:getBodyLocation(), self.mO.BT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1958,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); elseif (not bodyLocationItem) and self.mO and self.mO.LAT then self.character:setWornItem(self.mO.LAT:getBodyLocation(), self.mO.LAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1960,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); elseif (not bodyLocationItem) and self.mO and self.mO.RAT then self.character:setWornItem(self.mO.RAT:getBodyLocation(), self.mO.RAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1962,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); elseif (not bodyLocationItem) and self.mO and self.mO.LLT then self.character:setWornItem(self.mO.LLT:getBodyLocation(), self.mO.LLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1964,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); elseif (not bodyLocationItem) and self.mO and self.mO.RLT then self.character:setWornItem(self.mO.RLT:getBodyLocation(), self.mO.RLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 288,
+      "text": "                    character:setWornItem(result:canBeEquipped(), result)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 295,
+      "text": "                        character:setWornItem(result:getBodyLocation(), result)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/LSUtil.lua",
+      "line": 805,
+      "text": "\t\t--character:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 443,
+      "text": "\t\t\tplayer:setWornItem(item:canBeEquipped(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 446,
+      "text": "\t\t\tplayer:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 181,
+      "text": "\t\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 184,
+      "text": "\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 293,
+      "text": "\t\t\t\t\t\t--player:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 474,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 477,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 542,
+      "text": "\t--\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 545,
+      "text": "\t--\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Helper/TransferHelper.lua",
+      "line": 257,
+      "text": "\t\t\tcharacter:setWornItem(item:getBodyLocation(), item)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 321,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 324,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 395,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 398,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 461,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 464,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 619,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 622,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/Makeup/LSMirrorMenu_server.lua",
+      "line": 103,
+      "text": "\t\t\t\tcharacter:setWornItem(bodyL, bodyLocationItem)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 211,
+      "text": "\t\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 215,
+      "text": "\t\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 219,
+      "text": "\t\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 223,
+      "text": "\t\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 227,
+      "text": "\t\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 231,
+      "text": "\t\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 235,
+      "text": "\t\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 239,
+      "text": "\t\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 243,
+      "text": "\t\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 247,
+      "text": "\t\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 251,
+      "text": "\t\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 255,
+      "text": "\t\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 275,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 277,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 279,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 281,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 283,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 285,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 287,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 289,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 291,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 293,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 295,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 297,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 395,
+      "text": "\tself.character:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 500,
+      "text": "\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 533,
+      "text": "\t\t\t\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 561,
+      "text": "\t\t\tcharacter:setWornItem(bodyLocationItem:getBodyLocation(), bodyLocationItem);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1942,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); elseif (not bodyLocationItem) and self.mO and self.mO.FF then self.character:setWornItem(self.mO.FF:getBodyLocation(), self.mO.FF); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1944,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); elseif (not bodyLocationItem) and self.mO and self.mO.E then self.character:setWornItem(self.mO.E:getBodyLocation(), self.mO.E); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1946,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); elseif (not bodyLocationItem) and self.mO and self.mO.ES then self.character:setWornItem(self.mO.ES:getBodyLocation(), self.mO.ES); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1948,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); elseif (not bodyLocationItem) and self.mO and self.mO.L then self.character:setWornItem(self.mO.L:getBodyLocation(), self.mO.L); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1950,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); elseif (not bodyLocationItem) and self.mO and self.mO.FT then self.character:setWornItem(self.mO.FT:getBodyLocation(), self.mO.FT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1952,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); elseif (not bodyLocationItem) and self.mO and self.mO.UBT then self.character:setWornItem(self.mO.UBT:getBodyLocation(), self.mO.UBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1954,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); elseif (not bodyLocationItem) and self.mO and self.mO.LBT then self.character:setWornItem(self.mO.LBT:getBodyLocation(), self.mO.LBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1956,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); elseif (not bodyLocationItem) and self.mO and self.mO.BT then self.character:setWornItem(self.mO.BT:getBodyLocation(), self.mO.BT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1958,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); elseif (not bodyLocationItem) and self.mO and self.mO.LAT then self.character:setWornItem(self.mO.LAT:getBodyLocation(), self.mO.LAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1960,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); elseif (not bodyLocationItem) and self.mO and self.mO.RAT then self.character:setWornItem(self.mO.RAT:getBodyLocation(), self.mO.RAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1962,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); elseif (not bodyLocationItem) and self.mO and self.mO.LLT then self.character:setWornItem(self.mO.LLT:getBodyLocation(), self.mO.LLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1964,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); elseif (not bodyLocationItem) and self.mO and self.mO.RLT then self.character:setWornItem(self.mO.RLT:getBodyLocation(), self.mO.RLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 288,
+      "text": "                    character:setWornItem(result:canBeEquipped(), result)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 295,
+      "text": "                        character:setWornItem(result:getBodyLocation(), result)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/LSUtil.lua",
+      "line": 805,
+      "text": "\t\t--character:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 443,
+      "text": "\t\t\tplayer:setWornItem(item:canBeEquipped(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/LSservercommands.lua",
+      "line": 446,
+      "text": "\t\t\tplayer:setWornItem(item:getBodyLocation(), item);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 181,
+      "text": "\t\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 184,
+      "text": "\t\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 293,
+      "text": "\t\t\t\t\t\t--player:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 474,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 477,
+      "text": "\t\t\t\t\t\t\t\t\t--\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 542,
+      "text": "\t--\t\t\t\t\t\tplayer:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/WardrobeChange.lua",
+      "line": 545,
+      "text": "\t--\t\t\t\t\tplayer:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/Helper/TransferHelper.lua",
+      "line": 257,
+      "text": "\t\t\tcharacter:setWornItem(item:getBodyLocation(), item)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 321,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 324,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 395,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToiletGround.lua",
+      "line": 398,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 461,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 464,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 619,
+      "text": "\t\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:canBeEquipped(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/shared/TimedActions/LSUseToilet.lua",
+      "line": 622,
+      "text": "\t\t\t\t\t\tself.character:setWornItem(itemToBeWorn:getBodyLocation(), itemToBeWorn);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/server/Makeup/LSMirrorMenu_server.lua",
+      "line": 103,
+      "text": "\t\t\t\tcharacter:setWornItem(bodyL, bodyLocationItem)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 211,
+      "text": "\t\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 215,
+      "text": "\t\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 219,
+      "text": "\t\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 223,
+      "text": "\t\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 227,
+      "text": "\t\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 231,
+      "text": "\t\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 235,
+      "text": "\t\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 239,
+      "text": "\t\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 243,
+      "text": "\t\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 247,
+      "text": "\t\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 251,
+      "text": "\t\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 255,
+      "text": "\t\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 275,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 277,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 279,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 281,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 283,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 285,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 287,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 289,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 291,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 293,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 295,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 297,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 395,
+      "text": "\tself.character:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 500,
+      "text": "\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 533,
+      "text": "\t\t\t\t\tcharacter:setWornItem(makeup:getBodyLocation(), makeup);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 561,
+      "text": "\t\t\tcharacter:setWornItem(bodyLocationItem:getBodyLocation(), bodyLocationItem);"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1942,
+      "text": "\tif (self.resetMakeupFull ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupFull and (self.resetMakeupFull ~= 0) then self.character:setWornItem(self.resetMakeupFull:getBodyLocation(), self.resetMakeupFull); elseif (not bodyLocationItem) and self.mO and self.mO.FF then self.character:setWornItem(self.mO.FF:getBodyLocation(), self.mO.FF); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1944,
+      "text": "\tif (self.resetMakeupEye ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEye and (self.resetMakeupEye ~= 0) then self.character:setWornItem(self.resetMakeupEye:getBodyLocation(), self.resetMakeupEye); elseif (not bodyLocationItem) and self.mO and self.mO.E then self.character:setWornItem(self.mO.E:getBodyLocation(), self.mO.E); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1946,
+      "text": "\tif (self.resetMakeupEyeShadow ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupEyeShadow and (self.resetMakeupEyeShadow ~= 0) then self.character:setWornItem(self.resetMakeupEyeShadow:getBodyLocation(), self.resetMakeupEyeShadow); elseif (not bodyLocationItem) and self.mO and self.mO.ES then self.character:setWornItem(self.mO.ES:getBodyLocation(), self.mO.ES); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1948,
+      "text": "\tif (self.resetMakeupLipstick ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupLipstick and (self.resetMakeupLipstick ~= 0) then self.character:setWornItem(self.resetMakeupLipstick:getBodyLocation(), self.resetMakeupLipstick); elseif (not bodyLocationItem) and self.mO and self.mO.L then self.character:setWornItem(self.mO.L:getBodyLocation(), self.mO.L); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1950,
+      "text": "\tif (self.resetMakeupTattooFace ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooFace and (self.resetMakeupTattooFace ~= 0) then self.character:setWornItem(self.resetMakeupTattooFace:getBodyLocation(), self.resetMakeupTattooFace); elseif (not bodyLocationItem) and self.mO and self.mO.FT then self.character:setWornItem(self.mO.FT:getBodyLocation(), self.mO.FT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1952,
+      "text": "\tif (self.resetMakeupTattooUB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooUB and (self.resetMakeupTattooUB ~= 0) then self.character:setWornItem(self.resetMakeupTattooUB:getBodyLocation(), self.resetMakeupTattooUB); elseif (not bodyLocationItem) and self.mO and self.mO.UBT then self.character:setWornItem(self.mO.UBT:getBodyLocation(), self.mO.UBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1954,
+      "text": "\tif (self.resetMakeupTattooLB ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLB and (self.resetMakeupTattooLB ~= 0) then self.character:setWornItem(self.resetMakeupTattooLB:getBodyLocation(), self.resetMakeupTattooLB); elseif (not bodyLocationItem) and self.mO and self.mO.LBT then self.character:setWornItem(self.mO.LBT:getBodyLocation(), self.mO.LBT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1956,
+      "text": "\tif (self.resetMakeupTattooBack ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooBack and (self.resetMakeupTattooBack ~= 0) then self.character:setWornItem(self.resetMakeupTattooBack:getBodyLocation(), self.resetMakeupTattooBack); elseif (not bodyLocationItem) and self.mO and self.mO.BT then self.character:setWornItem(self.mO.BT:getBodyLocation(), self.mO.BT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1958,
+      "text": "\tif (self.resetMakeupTattooLA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLA and (self.resetMakeupTattooLA ~= 0) then self.character:setWornItem(self.resetMakeupTattooLA:getBodyLocation(), self.resetMakeupTattooLA); elseif (not bodyLocationItem) and self.mO and self.mO.LAT then self.character:setWornItem(self.mO.LAT:getBodyLocation(), self.mO.LAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1960,
+      "text": "\tif (self.resetMakeupTattooRA ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRA and (self.resetMakeupTattooRA ~= 0) then self.character:setWornItem(self.resetMakeupTattooRA:getBodyLocation(), self.resetMakeupTattooRA); elseif (not bodyLocationItem) and self.mO and self.mO.RAT then self.character:setWornItem(self.mO.RAT:getBodyLocation(), self.mO.RAT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1962,
+      "text": "\tif (self.resetMakeupTattooLL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooLL and (self.resetMakeupTattooLL ~= 0) then self.character:setWornItem(self.resetMakeupTattooLL:getBodyLocation(), self.resetMakeupTattooLL); elseif (not bodyLocationItem) and self.mO and self.mO.LLT then self.character:setWornItem(self.mO.LLT:getBodyLocation(), self.mO.LLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_4/common/media/lua/client/ISUI/LSMirrorMenu.lua",
+      "line": 1964,
+      "text": "\tif (self.resetMakeupTattooRL ~= 0) and bodyLocationItem then self.character:removeWornItem(bodyLocationItem); end; if self.resetMakeupTattooRL and (self.resetMakeupTattooRL ~= 0) then self.character:setWornItem(self.resetMakeupTattooRL:getBodyLocation(), self.resetMakeupTattooRL); elseif (not bodyLocationItem) and self.mO and self.mO.RLT then self.character:setWornItem(self.mO.RLT:getBodyLocation(), self.mO.RLT); end;"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 288,
+      "text": "                    character:setWornItem(result:canBeEquipped(), result)"
+    },
+    {
+      "file": "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/_AUDITORIA/TEMP_DIAGNOSTICO_WEAR_ACTION_V4/archivos/EclipseZ - 1/Contents/mods/ECZ_25/42/media/lua/server/AuthenticZ_RecipeCode.lua",
+      "line": 295,
+      "text": "                        character:setWornItem(result:getBodyLocation(), result)"
+    }
+  ],
+  "counts": {
+    "exact": 6,
+    "files_named": 0,
+    "set_worn": 186
+  }
+}
