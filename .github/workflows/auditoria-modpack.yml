@@ -51,6 +51,13 @@ jobs:
           python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_conflictos_runtime_v3.py \
             --output "$RUNNER_TEMP/resultado_parte3"
 
+      - name: Diagnosticar GUID de ropa
+        id: guid
+        continue-on-error: true
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/diagnosticar_guid_ropa.py \
+            --output "$RUNNER_TEMP/diagnostico_guid_ropa"
+
       - name: Generar manifiesto del repositorio
         id: manifest
         continue-on-error: true
@@ -96,6 +103,8 @@ jobs:
           path: |
             ${{ runner.temp }}/resultado_parte3.json
             ${{ runner.temp }}/resultado_parte3.md
+            ${{ runner.temp }}/diagnostico_guid_ropa.json
+            ${{ runner.temp }}/diagnostico_guid_ropa.md
             ${{ runner.temp }}/manifest_github.json
           if-no-files-found: error
 
@@ -105,6 +114,7 @@ jobs:
           if [ "${{ steps.general.outcome }}" != "success" ] || \
              [ "${{ steps.modinfo.outcome }}" != "success" ] || \
              [ "${{ steps.conflictos.outcome }}" != "success" ] || \
+             [ "${{ steps.guid.outcome }}" != "success" ] || \
              [ "${{ steps.manifest.outcome }}" != "success" ] || \
              [ "${{ steps.runtime.outcome }}" != "success" ]; then
             echo "Una o varias auditorías han detectado errores."
