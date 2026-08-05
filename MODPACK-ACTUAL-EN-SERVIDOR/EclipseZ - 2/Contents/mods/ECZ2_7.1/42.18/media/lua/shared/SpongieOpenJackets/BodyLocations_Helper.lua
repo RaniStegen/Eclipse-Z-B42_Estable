@@ -1,23 +1,32 @@
 local BodyLocations_Helper = {}
 
 BodyLocations_Helper.group = BodyLocations.getGroup("Human")
-function BodyLocations_Helper:AddLocation(name, i)
-	self.group:getOrCreateLocation(name)
-	self.group:moveLocationToIndex(name, i)
+
+function BodyLocations_Helper:AddLocation(name, _index)
+    -- Build 42.20: append the custom slot without reordering the live Human
+    -- group.  moveLocationToIndex is an old/internal helper and changing the
+    -- group's indices after WornItems has been initialised can break unrelated
+    -- vanilla slots such as wrists and fanny packs.
+    if self.group and self.group.getOrCreateLocation then
+        self.group:getOrCreateLocation(name)
+    end
 end
+
 function BodyLocations_Helper:SetExclusive(name, list)
-    for i, v in ipairs(list) do
-        self.group:setExclusive(name, v)
+    for _, value in ipairs(list or {}) do
+        self.group:setExclusive(name, value)
     end
 end
+
 function BodyLocations_Helper:SetHidden(name, list)
-    for i, v in ipairs(list) do
-        self.group:setHideModel(name, v)
+    for _, value in ipairs(list or {}) do
+        self.group:setHideModel(name, value)
     end
 end
+
 function BodyLocations_Helper:SetAltModel(name, list)
-    for i, v in ipairs(list) do
-        self.group:setAltModel(name, v)
+    for _, value in ipairs(list or {}) do
+        self.group:setAltModel(name, value)
     end
 end
 

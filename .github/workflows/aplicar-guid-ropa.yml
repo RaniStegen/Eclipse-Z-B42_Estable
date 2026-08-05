@@ -1,0 +1,52 @@
+name: Aplicar correcciones GUID de ropa
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/aplicar_correcciones_guid_ropa.py"
+      - ".github/workflows/aplicar-guid-ropa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aplicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Corregir GUID
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/aplicar_correcciones_guid_ropa.py
+      - name: Validar XML modificados
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          paths=[]
+          for p in Path('MODPACK-ACTUAL-EN-SERVIDOR').rglob('*.xml'):
+              n=p.name.lower()
+              if n in {'clothing.xml','fileguidtable.xml'}:
+                  ET.parse(p)
+                  paths.append(p)
+          print(f'XML validados: {len(paths)}')
+          PY
+      - name: Guardar resultado en la rama
+        run: |
+          git config user.name "Eclipse-Z Auditor"
+          git config user.email "actions@users.noreply.github.com"
+          git add MODPACK-ACTUAL-EN-SERVIDOR
+          if git diff --cached --quiet; then
+            echo "Los GUID ya estaban corregidos."
+          else
+            git commit -m "Parte 3: corregir GUID duplicados de ropa"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi

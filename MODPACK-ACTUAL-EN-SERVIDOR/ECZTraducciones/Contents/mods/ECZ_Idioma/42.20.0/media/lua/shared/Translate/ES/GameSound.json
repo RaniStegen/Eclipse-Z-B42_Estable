@@ -2,7 +2,7 @@
     "GameSound_ButtonAdvanced": "Avanzado",
     "GameSound_ButtonReload": "Recargar",
     "GameSound_ButtonReload_tt": "Recargar todos los archivos sounds.txt",
-    "GameSound_VolumeControlTooltip": "Volumen: %1%<br>Volumen general: %2 %3%",
+    "GameSound_VolumeControlTooltip": "Volumen: %1%<br>Volumen general: %2 %3%%",
     "GameSound_Category_AUTO": "AUTO",
     "GameSound_Category_Item": "Objetos",
     "GameSound_Category_Meta": "Eventos",

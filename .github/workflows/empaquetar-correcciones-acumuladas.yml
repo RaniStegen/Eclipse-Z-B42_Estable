@@ -1,0 +1,222 @@
+name: Empaquetar correcciones acumuladas
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/empaquetar-correcciones-acumuladas.yml"
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/GENERAR_PAQUETE_ACUMULATIVO.txt"
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - ".github/workflows/empaquetar-correcciones-acumuladas.yml"
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/GENERAR_PAQUETE_ACUMULATIVO.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  empaquetar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Descargar rama completa
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Crear parche acumulativo instalable
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || '161c014e6c1e22376468cf2687ea7a6b25e56df0' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import os
+          import shutil
+          import subprocess
+          import zipfile
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          base = os.environ['BASE_SHA']
+          head = os.environ['HEAD_SHA']
+          package_name = 'ECZ_B42.20_TODAS_LAS_CORRECCIONES_ACUMULADAS'
+          work = Path(os.environ['RUNNER_TEMP']) / package_name
+          overlay = work / 'PARCHE'
+          work.mkdir(parents=True, exist_ok=True)
+          overlay.mkdir(parents=True, exist_ok=True)
+
+          raw = subprocess.check_output([
+              'git', 'diff', '--name-status', '-z', base, head,
+              '--', 'MODPACK-ACTUAL-EN-SERVIDOR'
+          ])
+          tokens = raw.split(b'\0')
+          if tokens and tokens[-1] == b'':
+              tokens.pop()
+
+          changed: list[str] = []
+          deleted: list[str] = []
+          i = 0
+          while i < len(tokens):
+              status = tokens[i].decode('utf-8', errors='replace')
+              i += 1
+              code = status[0]
+              if code in {'R', 'C'}:
+                  old = tokens[i].decode('utf-8', errors='surrogateescape')
+                  new = tokens[i + 1].decode('utf-8', errors='surrogateescape')
+                  i += 2
+                  if code == 'R':
+                      deleted.append(old)
+                  changed.append(new)
+              else:
+                  path = tokens[i].decode('utf-8', errors='surrogateescape')
+                  i += 1
+                  if code == 'D':
+                      deleted.append(path)
+                  else:
+                      changed.append(path)
+
+          copied = 0
+          copied_bytes = 0
+          for relative in sorted(set(changed)):
+              source = Path(relative)
+              if not source.is_file():
+                  continue
+              destination = overlay / relative
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
+              copied += 1
+              copied_bytes += source.stat().st_size
+
+          deleted = sorted(set(deleted))
+          (work / 'BORRAR_ARCHIVOS.txt').write_text(
+              '\n'.join(deleted) + ('\n' if deleted else ''),
+              encoding='utf-8'
+          )
+
+          readme = f'''ECZ — Project Zomboid Build 42.20
+          TODAS LAS CORRECCIONES ACUMULADAS
+
+          Este paquete reúne en una sola instalación todas las correcciones de la rama de auditoría:
+          - traducciones y formato del menú multijugador;
+          - mod.info, dependencias y carpetas de versión;
+          - recetas, etiquetas, propiedades y WorldDictionary conservado;
+          - ropa, GUID, outfits, modelos y traducciones;
+          - Neat Building / SpriteConfig;
+          - Cathaya Valley y documentación de map_zone.bin;
+          - framework de armas duplicado;
+          - modelos duplicados de ECZ2_Ajustes;
+          - correcciones de vehículos, destilería, Lifestyle, chat y compatibilidad acumulada.
+
+          BASE: {base}
+          VERSIÓN CORREGIDA: {head}
+          ARCHIVOS NUEVOS O SUSTITUIDOS: {copied}
+          ARCHIVOS QUE SE ELIMINAN: {len(deleted)}
+
+          INSTALACIÓN RECOMENDADA
+          1. Haz una copia de seguridad de tu modpack y de la partida del servidor.
+          2. Extrae este ZIP.
+          3. Ejecuta APLICAR_CORRECCIONES.bat.
+          4. Indica la carpeta raíz que contiene MODPACK-ACTUAL-EN-SERVIDOR.
+          5. El instalador elimina primero los archivos antiguos indicados y copia después todas las correcciones.
+          6. Sube/publica el resultado completo y usa exactamente la misma versión en servidor y clientes.
+
+          IMPORTANTE PARA EL LAG DE CATHAYA
+          El parche corrige los mods, pero no modifica automáticamente la partida. Con el servidor apagado y una copia completa, hay que renombrar únicamente map_zone.bin siguiendo:
+          MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/REPARAR_MAP_ZONE_CATHAYA.md
+
+          No borres map_meta.bin, players.db, vehicles.db, chunks ni WorldDictionary.
+
+          NewMusic y eclipsemusic no están incluidos porque son dependencias externas independientes del modpack.
+          '''
+          (work / 'LEEME_PRIMERO.txt').write_text(readme, encoding='utf-8')
+
+          ps1 = r'''param([string]$Destino)
+          $ErrorActionPreference = 'Stop'
+          $Paquete = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+          if (-not $Destino) {
+              $Actual = (Get-Location).Path
+              if (Test-Path (Join-Path $Actual 'MODPACK-ACTUAL-EN-SERVIDOR')) {
+                  $Destino = $Actual
+              } else {
+                  $Destino = Read-Host 'Ruta de la carpeta raiz que contiene MODPACK-ACTUAL-EN-SERVIDOR'
+              }
+          }
+
+          $Destino = [System.IO.Path]::GetFullPath($Destino)
+          if (-not (Test-Path (Join-Path $Destino 'MODPACK-ACTUAL-EN-SERVIDOR'))) {
+              throw "La ruta no contiene MODPACK-ACTUAL-EN-SERVIDOR: $Destino"
+          }
+
+          Write-Host 'Aplicando eliminaciones verificadas...'
+          $Lista = Join-Path $Paquete 'BORRAR_ARCHIVOS.txt'
+          foreach ($Relativa in Get-Content -LiteralPath $Lista -Encoding UTF8) {
+              if ([string]::IsNullOrWhiteSpace($Relativa)) { continue }
+              $Ruta = [System.IO.Path]::GetFullPath((Join-Path $Destino $Relativa))
+              if (-not $Ruta.StartsWith($Destino, [System.StringComparison]::OrdinalIgnoreCase)) {
+                  throw "Ruta insegura en la lista de borrado: $Relativa"
+              }
+              if (Test-Path -LiteralPath $Ruta) {
+                  Remove-Item -LiteralPath $Ruta -Recurse -Force
+              }
+          }
+
+          Write-Host 'Copiando todas las correcciones acumuladas...'
+          $Origen = Join-Path $Paquete 'PARCHE'
+          Copy-Item -Path (Join-Path $Origen '*') -Destination $Destino -Recurse -Force
+
+          Write-Host ''
+          Write-Host 'Correcciones aplicadas correctamente.' -ForegroundColor Green
+          Write-Host 'Recuerda regenerar solo map_zone.bin en el servidor siguiendo REPARAR_MAP_ZONE_CATHAYA.md.' -ForegroundColor Yellow
+          Read-Host 'Pulsa Intro para cerrar'
+          '''
+          (work / 'APLICAR_CORRECCIONES.ps1').write_text(ps1, encoding='utf-8-sig')
+
+          bat = r'''@echo off
+          setlocal
+          powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0APLICAR_CORRECCIONES.ps1" %*
+          if errorlevel 1 (
+            echo.
+            echo ERROR: no se pudieron aplicar las correcciones.
+            pause
+            exit /b 1
+          )
+          endlocal
+          '''
+          (work / 'APLICAR_CORRECCIONES.bat').write_text(bat, encoding='utf-8')
+
+          version = (
+              f'Base: {base}\n'
+              f'Corregido: {head}\n'
+              f'Generado UTC: {datetime.now(timezone.utc).isoformat()}\n'
+              f'Archivos copiados: {copied}\n'
+              f'Bytes copiados: {copied_bytes}\n'
+              f'Archivos eliminados: {len(deleted)}\n'
+          )
+          (work / 'VERSION.txt').write_text(version, encoding='utf-8')
+
+          archive = Path(os.environ['RUNNER_TEMP']) / f'{package_name}.zip'
+          with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
+              for path in sorted(work.rglob('*')):
+                  if path.is_file():
+                      zf.write(path, Path(package_name) / path.relative_to(work))
+          print(f'Paquete: {archive}')
+          print(version)
+          PY
+
+      - name: Publicar ZIP único
+        uses: actions/upload-artifact@v4
+        with:
+          name: ECZ-B42.20-todas-las-correcciones
+          path: ${{ runner.temp }}/ECZ_B42.20_TODAS_LAS_CORRECCIONES_ACUMULADAS.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30

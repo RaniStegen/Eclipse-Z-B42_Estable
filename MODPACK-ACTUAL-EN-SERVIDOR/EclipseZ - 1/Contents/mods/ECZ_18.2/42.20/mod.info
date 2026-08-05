@@ -1,0 +1,5 @@
+name=ECZ_18.2
+id=ECZ_18.2
+description=
+require=ECZ_7.1
+loadModAfter=ECZ_7.1

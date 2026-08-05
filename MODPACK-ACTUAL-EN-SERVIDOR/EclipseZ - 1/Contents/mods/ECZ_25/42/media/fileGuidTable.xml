@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <fileGuidTable>
 	<files>
 		<path>media/clothing/clothingItems/AmmoStrap_Bullets.xml</path>
@@ -8305,10 +8305,7 @@
 		<path>media/clothing/clothingItems/Hat_Soldier_Yankee.xml</path>
 		<guid>519c9a3a-1b1c-4113-b4fc-bcfbdec0e881</guid>
 	</files>	
-	<files>
-		<path>media/clothing/clothingItems/Hat_StovePipe.xml</path>
-		<guid>0601a52d-84c8-49f8-b216-d2b1fc54c3a9</guid>
-	</files>
+	
 	<files>
 		<path>media/clothing/clothingItems/Hat_SummerWhite.xml</path>
 		<guid>165d60a9-9ca1-4c71-a467-deb9ba793941</guid>
@@ -8709,14 +8706,8 @@
 		<path>media/clothing/clothingItems/InvisibleSuit.xml</path>
 		<guid>1cd9dcb3-8618-46c1-a123-875d9e982715</guid>
 	</files>	
-	<files>
-		<path>media/clothing/clothingItems/Jacket_ArmyCamoUrban.xml</path>
-		<guid>44c2f074-88aa-47c4-a91b-1ebdbdd5a2a4</guid>
-	</files>
-	<files>
-		<path>media/clothing/clothingItems/Jacket_ArmyOliveDrab.xml</path>
-		<guid>d4324c64-f094-46f8-b953-b6e7ea24ea4d</guid>
-	</files>	
+	
+		
 	<files>
 		<path>media/clothing/clothingItems/Jacket_ArmyOliveDrab2.xml</path>
 		<guid>b047609f-fac8-483c-b719-681db8973f61</guid>
@@ -9777,10 +9768,7 @@
 		<path>media/clothing/clothingItems/Trousers_Grimes.xml</path>
 		<guid>92d60950-28a8-42cb-bee6-0384069f250d</guid>
 	</files>
-	<files>
-		<path>media/clothing/clothingItems/Trousers_OliveDrab.xml</path>
-		<guid>7f40ac6b-0e10-4d7e-abe5-01f8fc2a0eb9</guid>
-	</files>
+	
 	<files>
 		<path>media/clothing/clothingItems/Trousers_OliveDrab2.xml</path>
 		<guid>4e56e71e-5e95-4c3f-a295-29638c5886d9</guid>
@@ -9873,10 +9861,7 @@
 		<path>media/clothing/clothingItems/TrousersMesh_Rave.xml</path>
 		<guid>10246bb3-cdb5-41f2-97b6-fc241f7ee511</guid>
 	</files>	
-	<files>
-		<path>media/clothing/clothingItems/Trousers_Sport.xml</path>
-		<guid>da0fe0e3-0337-4ef4-8b22-11066d0b028e</guid>
-	</files>
+	
 	<files>
 		<path>media/clothing/clothingItems/Trousers_SuitGMan.xml</path>
 		<guid>bd1f51ec-22ef-4bb7-a7da-b09bc3c0e331</guid>
@@ -9945,10 +9930,7 @@
 		<path>media/clothing/clothingItems/Tshirt_Rochelle.xml</path>
 		<guid>00f5f41c-8075-44cb-adb3-c85fcb7315b4</guid>
 	</files>
-	<files>
-		<path>media/clothing/clothingItems/Tshirt_Rock2.xml</path>
-		<guid>0a09ac23-a71b-490c-8c25-19eba9ed66fb</guid>
-	</files>	
+		
 	<files>
 		<path>media/clothing/clothingItems/Tshirt_SpiffoNEW.xml</path>
 		<guid>7a91607d-9586-4bf1-b146-fc2eaab9f5bc</guid>
@@ -9971,7 +9953,7 @@
 	</files>
 	<files>
 		<path>media/clothing/clothingItems/Tshirt_SportKillaLong.xml</path>
-		<guid>291c39bb-44ed-4434-8b1a-7c48237e35d8</guid>
+		<guid>71d225cc-784b-5aac-8ed1-71bb1cdcf0eb</guid>
 	</files>
 	<files>
 		<path>media/clothing/clothingItems/Tshirt_SportLightBlue.xml</path>

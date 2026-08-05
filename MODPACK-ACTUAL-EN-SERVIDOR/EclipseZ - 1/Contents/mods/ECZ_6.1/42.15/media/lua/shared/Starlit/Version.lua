@@ -1,4 +1,4 @@
-local modInfo = getModInfoByID("StarlitLibrary")
+local modInfo = getModInfoByID("ECZ_6.1") or getModInfoByID("StarlitLibrary")
 
 local POPUP_HEIGHT = 100
 local STEAM_ENABLED = getSteamModeActive()
@@ -16,7 +16,11 @@ local Version = {}
 ---@doctype const
 ---@type string
 ---@readonly
-Version.VERSION_STRING = modInfo:getModVersion()
+local detectedVersion = modInfo and modInfo:getModVersion() or nil
+if not detectedVersion or detectedVersion == "" then
+    detectedVersion = "2.1.3"
+end
+Version.VERSION_STRING = detectedVersion
 
 do
     local major, minor, patch = string.match(Version.VERSION_STRING, "(%d+)%.(%d+)%.(%d+)")
@@ -33,19 +37,19 @@ do
     ---@doctype const
     ---@type integer
     ---@readonly
-    Version.MAJOR = tonumber(major) --[[@as integer]]
+    Version.MAJOR = tonumber(major) or 2 --[[@as integer]]
 
     ---The minor version of Starlit. Minor versions are incremented when new features are added, and old features may be deprecated.
     ---@doctype const
     ---@type integer
     ---@readonly
-    Version.MINOR = tonumber(minor) --[[@as integer]]
+    Version.MINOR = tonumber(minor) or 1 --[[@as integer]]
 
     ---The patch version of Starlit. Patch versions are incremented by bug fixes that don't change (intended) functionality.
     ---@doctype const
     ---@type integer
     ---@readonly
-    Version.PATCH = tonumber(patch) --[[@as integer]]
+    Version.PATCH = tonumber(patch) or 3 --[[@as integer]]
 end
 
 ---Compares the version specified to the current version.

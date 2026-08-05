@@ -1,0 +1,255 @@
+{
+  "file_path_fixes": [
+    {
+      "path": "media/clothing/clothingitems/hat_stovepipe.xml",
+      "removed_guid": "0601a52d-84c8-49f8-b216-d2b1fc54c3a9",
+      "canonical_guid": "7194ee1d-04f4-491a-8ba2-375195136afc"
+    },
+    {
+      "path": "media/clothing/clothingitems/jacket_armycamourban.xml",
+      "removed_guid": "44c2f074-88aa-47c4-a91b-1ebdbdd5a2a4",
+      "canonical_guid": "2c7bcdf0-9416-4b4b-863a-7366b5968992"
+    },
+    {
+      "path": "media/clothing/clothingitems/jacket_armyolivedrab.xml",
+      "removed_guid": "d4324c64-f094-46f8-b953-b6e7ea24ea4d",
+      "canonical_guid": "4b6578be-60cf-488c-ae9d-e7199c5799ee"
+    },
+    {
+      "path": "media/clothing/clothingitems/trousers_olivedrab.xml",
+      "removed_guid": "7f40ac6b-0e10-4d7e-abe5-01f8fc2a0eb9",
+      "canonical_guid": "26d63da5-2e5f-4244-983a-23cde64a2a78"
+    },
+    {
+      "path": "media/clothing/clothingitems/trousers_sport.xml",
+      "removed_guid": "da0fe0e3-0337-4ef4-8b22-11066d0b028e",
+      "canonical_guid": "0cb518b2-098f-438c-bcef-d1601ab17979"
+    },
+    {
+      "path": "media/clothing/clothingitems/tshirt_rock2.xml",
+      "removed_guid": "0a09ac23-a71b-490c-8c25-19eba9ed66fb",
+      "canonical_guid": "9992b01b-36e8-4437-ba76-5f0d29d252fb"
+    }
+  ],
+  "file_guid_splits": [
+    {
+      "mod": "ECZ_25",
+      "path": "media/clothing/clothingitems/tshirt_sportkillalong.xml",
+      "old_guid": "291c39bb-44ed-4434-8b1a-7c48237e35d8",
+      "new_guid": "71d225cc-784b-5aac-8ed1-71bb1cdcf0eb",
+      "kept_path": "media/clothing/clothingitems/trousers_sportkillalong.xml"
+    }
+  ],
+  "outfit_guid_fixes": [
+    {
+      "mod": "ECZ_12",
+      "name": "VGE_FBI",
+      "old_guid": "f0984d17-baf1-499d-9a5e-59d3e08ed20e",
+      "new_guid": "910ec4e2-9779-5045-9bd9-2e960557a4d2",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_12",
+        "name": "VGE_SWAT"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticB4BEvangelo",
+      "old_guid": "e00cb8c4-eb3e-47a1-8d8a-4d0cd378bcb7",
+      "new_guid": "9a09f49a-ec5b-5f12-a889-eb9f4a87bf6d",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticAshEvilDead"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticDocBrown",
+      "old_guid": "35dd7ab7-ee6f-4605-a293-fd98c8906901",
+      "new_guid": "aa870514-4a71-53fd-9ff8-56dd5b5a033c",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticBankRobber"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticFrancis",
+      "old_guid": "6e916ae2-436b-4ab8-a237-93bf217eea4d",
+      "new_guid": "f846e73b-f91f-59e5-8b78-7efccb507fe1",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticBillOverbeck"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticLouis",
+      "old_guid": "6e916ae2-436b-4ab8-a237-93bf217eea4d",
+      "new_guid": "14a5f2f6-c42c-578d-9d49-06ca864001d7",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticBillOverbeck"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticCEDAHazmatBlue",
+      "old_guid": "d6b0f9b0-0b87-49e8-b7db-069644859db0",
+      "new_guid": "ba9bfc24-2ae2-5482-9def-674bede36ffc",
+      "blocks_changed": 2,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticCEDAHazmatBlack"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticCEDAHazmatRed",
+      "old_guid": "d6b0f9b0-0b87-49e8-b7db-069644859db0",
+      "new_guid": "4e2ab978-408f-5b88-aa40-193e548f8c9b",
+      "blocks_changed": 2,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticCEDAHazmatBlack"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticMaid",
+      "old_guid": "ca3f3ea3-4a27-400f-bd96-a57a975e2a79",
+      "new_guid": "b597c516-1045-5be3-ad33-ed0db52c2cf8",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticChainsawMaid"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticNateAnderson",
+      "old_guid": "ec1e890d-ab6b-4d56-9434-4b215c51a74e",
+      "new_guid": "e7c328db-c0ad-5c8f-a549-ac927db65ba5",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticDianneCaldwell"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticZoey",
+      "old_guid": "ec1e890d-ab6b-4d56-9434-4b215c51a74e",
+      "new_guid": "0eaec078-ae6a-5eaf-b95a-dfa5a9691f91",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticDianneCaldwell"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticGrindhouseCherry",
+      "old_guid": "3be0021e-0b8c-4c78-91ea-44e2f8ea9355",
+      "new_guid": "700172cc-c614-5bb4-86f4-6ba844401629",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticDRJessieMcCarney"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticFat01Fisherman",
+      "old_guid": "709cc2a0-f585-4654-88d7-1913f6807448",
+      "new_guid": "c3610d7c-8e92-5ac2-8ada-a9d9fece230e",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticFat01"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticFat02Dress",
+      "old_guid": "bbe6deb6-7ed1-44df-b3b6-af77e9ec0430",
+      "new_guid": "24da231e-d16b-5ab0-b1cc-52a00a2bb745",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticFat02Cook"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticFootballGreenBayPacker",
+      "old_guid": "c7957d85-2494-44bf-8317-f69dd1851035",
+      "new_guid": "323ca9e5-1021-53cf-8c9b-0fb6377f48ca",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticFootballChiefs"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticMadMax",
+      "old_guid": "b3e7fb9f-221d-4c48-8a90-7c7cd20878ed",
+      "new_guid": "723d265d-0a4a-55d3-8e9f-d96914584e99",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticGordonFreeman"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticNightClub",
+      "old_guid": "f416f265-24d4-4ab2-be2d-2108f33c14ef",
+      "new_guid": "1b4f6c89-1277-5fd5-8965-6dcd3e84afd8",
+      "blocks_changed": 2,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticNick"
+      }
+    },
+    {
+      "mod": "ECZ2_7.2",
+      "name": "Classy",
+      "old_guid": "3b730e3e-71dc-4454-a0ef-5650880313fb",
+      "new_guid": "fe100fe0-fa72-50a0-9f2a-f394151ea63d",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticPoncho"
+      }
+    },
+    {
+      "mod": "ECZ_25",
+      "name": "AuthenticReporter3LMBWRadio",
+      "old_guid": "8df43e08-2afb-4bf5-a9a6-62bfde7f1e24",
+      "new_guid": "f7055c0b-0ef1-51e9-8589-4c328e5d01bd",
+      "blocks_changed": 1,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticReporter2LBMW"
+      }
+    },
+    {
+      "mod": "ECZ2_7.2",
+      "name": "Ranger",
+      "old_guid": "13b1baed-4903-4a02-8e7e-e6da9c3dfaa2",
+      "new_guid": "b5490bb0-8cd6-5252-83ee-a5d9d97a418e",
+      "blocks_changed": 2,
+      "canonical": {
+        "mod": "ECZ_25",
+        "name": "AuthenticSurvivorRanger"
+      }
+    }
+  ],
+  "killa_reference_added": 1
+}

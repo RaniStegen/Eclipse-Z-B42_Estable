@@ -1,128 +1,54 @@
 -- AuthenticZ_BodyLocations.lua
--- Build 42.13+ Multiplayer-safe body location setup for AuthenticZ
--- Uses deterministic rebuild + anchored insertion
+-- Build 42.20 multiplayer-safe body-location setup for AuthenticZ.
+--
+-- Add only AuthenticZ's own locations to the existing Human group.  Never
+-- reset, rebuild or reorder the live BodyLocationGroup: WornItems keeps a
+-- reference to that exact group and vanilla wrist/fanny-pack slots must remain
+-- untouched.
 
 require "NPCs/BodyLocations"
 
-local BodyAPI = BodyLocations
-local SlotAPI = ItemBodyLocation
-local RL = ResourceLocation
+local CUSTOM_LOCATIONS = {
+    "AZ:HeadExtra",
+    "AZ:HeadExtraHair",
+    "AZ:HeadExtraPlus",
+    "AZ:NeckExtra",
+    "AZ:LegsExtra",
+    "AZ:TorsoRigPlus2",
+    "AZ:TorsoExtraPlus1",
+}
 
-------------------------------------------------------------
--- Utility: clone layering rules from an existing group
-------------------------------------------------------------
-local function cloneLocationRules(sourceGroup, locationId, targetGroup)
-	for i = 0, sourceGroup:size() - 1 do
-		local otherId = sourceGroup:getLocationByIndex(i):getId()
+local function resolveLocation(value)
+    if value == nil then return nil end
+    if type(value) ~= "string" then return value end
+    if not ItemBodyLocation or not ResourceLocation then return nil end
+    if type(ItemBodyLocation.get) ~= "function" or type(ResourceLocation.of) ~= "function" then
+        return nil
+    end
 
-		if sourceGroup:isExclusive(locationId, otherId) then
-			targetGroup:setExclusive(locationId, otherId)
-		end
-		if sourceGroup:isHideModel(locationId, otherId) then
-			targetGroup:setHideModel(locationId, otherId)
-		end
-		if sourceGroup:isAltModel(locationId, otherId) then
-			targetGroup:setAltModel(locationId, otherId)
-		end
-	end
+    local okResource, resource = pcall(ResourceLocation.of, value)
+    if not okResource or not resource then return nil end
+
+    local okLocation, location = pcall(ItemBodyLocation.get, resource)
+    if okLocation then return location end
+    return nil
 end
 
-------------------------------------------------------------
--- Core: rebuild a body group and inject new locations
-------------------------------------------------------------
-local function rebuildGroupWithInsertions(targetGroupId, insertions)
-	local created = {}
-
-	-- Snapshot groups (reset clears the live view)
-	local groupView = BodyAPI.getAllGroups()
-	local groupSnapshot = {}
-	for i = 0, groupView:size() - 1 do
-		groupSnapshot[#groupSnapshot + 1] = groupView:get(i)
-	end
-
-	BodyAPI.reset()
-
-	for _, oldGroup in ipairs(groupSnapshot) do
-		local newGroup = BodyAPI.getGroup(oldGroup:getId())
-
-		for i = 0, oldGroup:size() - 1 do
-			local existingId = oldGroup:getLocationByIndex(i):getId()
-
-			-- Insert BEFORE anchor
-			if oldGroup:getId() == targetGroupId then
-				for _, def in ipairs(insertions) do
-					if def.before then
-						local anchorId = type(def.anchor) == "string"
-							and RL.of(def.anchor)
-							or def.anchor
-
-						if anchorId == existingId then
-							local newId = type(def.id) == "string"
-								and SlotAPI.get(RL.of(def.id))
-								or def.id
-
-							created[def.id] = newGroup:getOrCreateLocation(newId)
-						end
-					end
-				end
-			end
-
-			-- Recreate original vanilla slot
-			newGroup:getOrCreateLocation(existingId)
-
-			-- Insert AFTER anchor
-			if oldGroup:getId() == targetGroupId then
-				for _, def in ipairs(insertions) do
-					if not def.before then
-						local anchorId = type(def.anchor) == "string"
-							and RL.of(def.anchor)
-							or def.anchor
-
-						if anchorId == existingId then
-							local newId = type(def.id) == "string"
-								and SlotAPI.get(RL.of(def.id))
-								or def.id
-
-							created[def.id] = newGroup:getOrCreateLocation(newId)
-						end
-					end
-				end
-			end
-		end
-
-		-- Restore vanilla behavior
-		for i = 0, oldGroup:size() - 1 do
-			local locId = oldGroup:getLocationByIndex(i):getId()
-			newGroup:setMultiItem(locId, oldGroup:isMultiItem(locId))
-			cloneLocationRules(oldGroup, locId, newGroup)
-		end
-	end
-
-	return created
-end
-
-------------------------------------------------------------
--- Initialization
-------------------------------------------------------------
 local function setupAuthenticZBodyLocations()
-    -- Correct B42.13 constants (match vanilla BodyLocations.lua)
-    local outerVestLayer =
-        SlotAPI.TORSO_EXTRA_VEST_BULLET
-        or SlotAPI.TORSO_EXTRA_VEST
-        or SlotAPI.TORSO_EXTRA
+    local group = BodyLocations and BodyLocations.getGroup and BodyLocations.getGroup("Human") or nil
+    if not group or type(group.getOrCreateLocation) ~= "function" then return end
 
-    rebuildGroupWithInsertions("Human", {
-        { id = "AZ:HeadExtra",     anchor = SlotAPI.HAT },
-        { id = "AZ:HeadExtraHair", anchor = SlotAPI.HAT },
-        { id = "AZ:HeadExtraPlus", anchor = SlotAPI.HAT },
-
-        { id = "AZ:NeckExtra", anchor = SlotAPI.JACKET },
-        { id = "AZ:LegsExtra", anchor = SlotAPI.SHOES, before = true },
-
-        -- Outer torso gear (webbing / bandoliers)
-        { id = "AZ:TorsoRigPlus2",   anchor = outerVestLayer },
-        { id = "AZ:TorsoExtraPlus1", anchor = outerVestLayer },
-    })
+    for _, rawId in ipairs(CUSTOM_LOCATIONS) do
+        local locationId = resolveLocation(rawId)
+        if locationId then
+            pcall(group.getOrCreateLocation, group, locationId)
+        end
+    end
 end
 
-Events.OnGameBoot.Add(setupAuthenticZBodyLocations)
+-- BodyLocations.lua is required above, so the group normally exists already.
+-- Repeating this on boot is idempotent and catches unusual load orders.
+setupAuthenticZBodyLocations()
+if Events and Events.OnGameBoot then
+    Events.OnGameBoot.Add(setupAuthenticZBodyLocations)
+end

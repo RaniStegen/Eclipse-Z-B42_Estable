@@ -1,0 +1,35 @@
+name: Diagnóstico GUID de ropa
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/diagnosticar_guid_ropa.py"
+      - ".github/workflows/diagnostico-guid-ropa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Trazar GUID
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/diagnosticar_guid_ropa.py \
+            --output "$RUNNER_TEMP/diagnostico_guid_ropa"
+      - name: Publicar diagnóstico
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-guid-ropa
+          path: |
+            ${{ runner.temp }}/diagnostico_guid_ropa.json
+            ${{ runner.temp }}/diagnostico_guid_ropa.md
+          if-no-files-found: error

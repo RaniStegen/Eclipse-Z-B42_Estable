@@ -1,0 +1,39 @@
+name: Auditar Cathaya
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_mapa_cathaya.py"
+      - "MODPACK-ACTUAL-EN-SERVIDOR/**/Cathaya Valley2.0/**"
+      - ".github/workflows/auditar-cathaya.yml"
+  pull_request:
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_mapa_cathaya.py"
+      - "MODPACK-ACTUAL-EN-SERVIDOR/**/Cathaya Valley2.0/**"
+      - ".github/workflows/auditar-cathaya.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Analizar objetos y coordenadas
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/auditar_mapa_cathaya.py \
+            --output "$RUNNER_TEMP/auditoria_mapa_cathaya"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-mapa-cathaya
+          path: |
+            ${{ runner.temp }}/auditoria_mapa_cathaya.json
+            ${{ runner.temp }}/auditoria_mapa_cathaya.md
+          if-no-files-found: error

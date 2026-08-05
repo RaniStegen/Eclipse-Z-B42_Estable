@@ -1,0 +1,36 @@
+name: Inventario de mods
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/inventario_nombres_mods.py"
+      - ".github/workflows/inventario-nombres-mods.yml"
+  pull_request:
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/inventario_nombres_mods.py"
+      - ".github/workflows/inventario-nombres-mods.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventario:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/inventario_nombres_mods.py \
+            --output "$RUNNER_TEMP/inventario_nombres_mods"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inventario-nombres-mods
+          path: |
+            ${{ runner.temp }}/inventario_nombres_mods.json
+            ${{ runner.temp }}/inventario_nombres_mods.md
+          if-no-files-found: error

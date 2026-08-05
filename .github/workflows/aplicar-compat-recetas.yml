@@ -1,0 +1,42 @@
+name: Aplicar compatibilidad de recetas
+
+on:
+  push:
+    branches:
+      - agent/auditoria-modpack-b42-20
+    paths:
+      - "MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/generar_compat_recetas_etiquetas.py"
+      - ".github/workflows/aplicar-compat-recetas.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aplicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/auditoria-modpack-b42-20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar parche
+        run: |
+          python MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/generar_compat_recetas_etiquetas.py \
+            --report MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/COMPAT_RECETAS_ETIQUETAS.json
+      - name: Guardar resultado en la rama
+        run: |
+          git config user.name "Eclipse-Z Auditor"
+          git config user.email "actions@users.noreply.github.com"
+          git add \
+            MODPACK-ACTUAL-EN-SERVIDOR/EclipseZ\ -\ 2/Contents/mods/ECZ2_Ajustes/42.18/media/scripts/zz_ECZ_Compat_Recetas_Etiquetas.txt \
+            MODPACK-ACTUAL-EN-SERVIDOR/_AUDITORIA/COMPAT_RECETAS_ETIQUETAS.json
+          if git diff --cached --quiet; then
+            echo "El parche ya estaba actualizado."
+          else
+            git commit -m "Parte 3: fusionar recetas y etiquetas incompatibles"
+            git push origin HEAD:agent/auditoria-modpack-b42-20
+          fi

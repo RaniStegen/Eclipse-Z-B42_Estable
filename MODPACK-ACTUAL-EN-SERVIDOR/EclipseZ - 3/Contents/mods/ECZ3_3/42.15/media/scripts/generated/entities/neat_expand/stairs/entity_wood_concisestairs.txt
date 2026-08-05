@@ -21,8 +21,8 @@ module Base
 
         component SpriteConfig
         {
-        	OnCreate = BuildRecipeCode.stairs.OnCreate,
-        	OnIsValid = BuildRecipeCode.stairs.OnIsValid,
+        	OnCreate = NB_BuildRecipeCode.ConciseStairs.OnCreate,
+        	OnIsValid = NB_BuildRecipeCode.ConciseStairs.OnIsValid,
 
             face S
             {
