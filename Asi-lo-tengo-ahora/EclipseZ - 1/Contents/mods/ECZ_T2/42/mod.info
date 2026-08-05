@@ -1,0 +1,9 @@
+name=ECZ_T2
+id=ECZ_T2
+description=
+poster=poster.png
+icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
+pack=SimonMDsTiles
+tiledef=SimonMDsTiles 3333

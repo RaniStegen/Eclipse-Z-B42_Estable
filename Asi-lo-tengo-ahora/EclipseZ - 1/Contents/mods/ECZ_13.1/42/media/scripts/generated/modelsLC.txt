@@ -1,0 +1,122 @@
+module LC
+{
+    model Ground_Goo_Model
+    {
+        mesh = WorldItems/Ground_Goo,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Tool_01_Model
+    {
+        mesh = WorldItems/Ground_Tool_01,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Tool_02_Model
+    {
+        mesh = WorldItems/Ground_Tool_02,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Tool_03_Model
+    {
+        mesh = WorldItems/Ground_Tool_03,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Ichor_Model
+    {
+        mesh = WorldItems/Ground_Ichor,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Ichor_Pot_Model
+    {
+        mesh = WorldItems/Ground_Ichor_Pot,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Ichor_Pot_3_Model
+    {
+        mesh = WorldItems/Ground_Ichor_Pot_3,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Ichor_Pot_Large_Model
+    {
+        mesh = WorldItems/Ground_Ichor_Pot_Large,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Relic_01_Model
+    {
+        mesh = WorldItems/Ground_Relic_01,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model Ground_Relic_02_Model
+    {
+        mesh = WorldItems/Ground_Relic_02,
+        scale = 1,
+
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+}

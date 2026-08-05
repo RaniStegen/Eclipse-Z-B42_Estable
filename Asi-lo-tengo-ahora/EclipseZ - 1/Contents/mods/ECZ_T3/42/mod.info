@@ -1,0 +1,11 @@
+name=ECZ_T3
+id=ECZ_T3
+description=
+poster=poster.png
+icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
+pack=melos_tiles_for_miles1
+pack=melos_tiles_for_miles2
+tiledef=melos_tiles_for_miles_def1 237
+tiledef=melos_tiles_for_miles_def2 238

@@ -1,0 +1,6 @@
+{
+    "Tooltip_CTT_NeedAxe": "木を切るタグを持つ斧または別の道具が必要です。",
+    "Tooltip_CTT_NeedAxeSkill": "斧スキルレベル %1 が必要です。",
+    "Tooltip_CTT_AlreadyOpen": "伐採ミニゲームはすでに開いています。",
+    "Tooltip_CTT_VanillaDisabled": "バニラの伐採は Cut That Tree の設定で無効化されています。"
+}

@@ -1,0 +1,3 @@
+ContextMenu_EN = {
+    ContextMenu_RetroDash_Scale = "Dashboard Scale",
+}

@@ -1,0 +1,86 @@
+module Base
+{
+	craftRecipe FRBuildSideBoard
+	{
+        timedAction = SawLogs,
+		Time = 200,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+        xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		
+		inputs
+		{
+			item 6 [Base.Plank],
+            item 12 [Base.Nails],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+		}
+		outputs
+		{
+			item 1 Base.FRBedSideBoards,
+		}
+	}
+
+	craftRecipe FRConvertM151Tires
+	{
+		time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:5,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 4 [Base.SmallSheetMetal],
+			item 1 [Base.ClassicTire2;Base.OldTire2;Base.NormalTire2;Base.ModernTire2] flags[InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.MakeshiftTireMutt_mil,
+        }
+	}
+
+	craftRecipe FRConvertHMMWVTires
+	{
+		time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:5,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 4 [Base.SmallSheetMetal],
+			item 1 [Base.OldOffroadTire;Base.NormalOffroadTire;Base.PerformanceOffroadTire] flags[InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.MakeshiftHmmwv_mil,
+        }
+	}
+
+	craftRecipe FRConvertM35Tires
+	{
+		time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:5,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 4 [Base.SmallSheetMetal],
+			item 1 [Base.OldHeavyDutyTire;Base.NormalHeavyDutyTire;Base.ModernHeavyDutyTire] flags[InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.MakeshiftTireDeuce_mil,
+        }
+	}
+}

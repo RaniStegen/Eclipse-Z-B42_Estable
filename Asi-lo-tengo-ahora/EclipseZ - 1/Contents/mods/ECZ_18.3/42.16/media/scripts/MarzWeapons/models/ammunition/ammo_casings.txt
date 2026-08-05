@@ -1,0 +1,191 @@
+module MarzGuns
+{
+    model 9x19_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|9x19_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Standard_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 9x39_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|9x39_Casing,
+        texture = WorldItems/Ammunition/Rounds/Russian_Steel_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 12Gauge_Hull_Red
+    {
+        mesh = Worlditems/Ammunition/Rounds|12Gauge_Hull,
+        texture = WorldItems/Ammunition/Rounds/Shotgun_Shell_Red,
+        scale = 0.012,
+    }
+    
+    model 12Gauge_Hull_Green
+    {
+        mesh = Worlditems/Ammunition/Rounds|12Gauge_Hull,
+        texture = WorldItems/Ammunition/Rounds/Shotgun_Shell_Green,
+        scale = 0.012,
+    }
+    
+    model 22_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|22_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Light_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 38_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|38_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Standard_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 44_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|44_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Heavy_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 45_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|45_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Medium_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 46x30_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|46x30_Casing,
+        texture = WorldItems/Ammunition/Rounds/H&K_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 50_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|50_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Heavy_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 57x28_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|57x28_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 357_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|357_Casing,
+        texture = WorldItems/Ammunition/Rounds/Revolver_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 545x39_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|545x39_Casing,
+        texture = WorldItems/Ammunition/Rounds/Russian_Brass_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 556x45_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|556x45_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 223_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|223_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_CIV,
+        scale = 0.015,
+    }
+    
+    model 762x39_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|762x39_Casing,
+        texture = WorldItems/Ammunition/Rounds/Russian_Steel_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 762x51_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|762x51_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 308_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|762x51_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_CIV,
+        scale = 0.015,
+    }
+    
+    model 762x54_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|762x54_Casing,
+        texture = WorldItems/Ammunition/Rounds/Russian_Steel_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 792x57_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|792x57_Casing,
+        texture = WorldItems/Ammunition/Rounds/German_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 3006_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|3006_Casing,
+        texture = WorldItems/Ammunition/Rounds/Nato_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 3030_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|3030_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Standard_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 4570_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|4570_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Standard_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 30_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|30_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Standard_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 410Gauge_Hull_Yellow
+    {
+        mesh = Worlditems/Ammunition/Rounds|410Gauge_Hull,
+        texture = WorldItems/Ammunition/Rounds/Shotgun_Shell_Yellow,
+        scale = 0.015,
+    }
+    
+    model 40mm_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|40mm_Casing,
+        texture = WorldItems/Ammunition/Rounds/40mm_Round_Base,
+        scale = 0.015,
+    }
+    
+    model 500_Casing
+    {
+        mesh = Worlditems/Ammunition/Rounds|500_Casing,
+        texture = WorldItems/Ammunition/Rounds/Pistol_Heavy_Round_Base,
+        scale = 0.015,
+    }
+}

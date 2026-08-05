@@ -1,0 +1,12 @@
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\93SwatBalaclava</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\93SwatBalaclava_F</m_FemaleModel>
+	<m_GUID>84d65cc4-600d-4deb-8eff-3c98941c03c4</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>true</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_HatCategory>nohairnobeard</m_HatCategory>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\93SwatBalaclava</textureChoices>
+</clothingItem>

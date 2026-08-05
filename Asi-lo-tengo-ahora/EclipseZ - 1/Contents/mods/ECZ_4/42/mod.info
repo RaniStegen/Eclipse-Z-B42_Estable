@@ -1,0 +1,13 @@
+name=ECZ_4
+id=ECZ_4
+description=
+poster=poster.png
+icon=icon.png
+
+pack=LS_Tiles
+pack=LS_Tiles.floor
+pack=LS_Artwork
+pack=LS_Artwork2
+pack=LS_Artwork2.floor
+pack=LS_Farming
+tiledef=LS_Tiles 5620

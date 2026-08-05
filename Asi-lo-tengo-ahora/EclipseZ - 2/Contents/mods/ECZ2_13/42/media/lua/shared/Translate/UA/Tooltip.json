@@ -1,0 +1,6 @@
+{
+    "Tooltip_CTT_NeedAxe": "Потрібна сокира або інший інструмент із тегом рубання дерев.",
+    "Tooltip_CTT_NeedAxeSkill": "Потрібен рівень сокири %1.",
+    "Tooltip_CTT_AlreadyOpen": "Мінігра рубання вже відкрита.",
+    "Tooltip_CTT_VanillaDisabled": "Ванільне рубання дерев вимкнено налаштуваннями Cut That Tree."
+}

@@ -1,0 +1,87 @@
+/**
+ * ECZ Parte 3 — resolución explícita de propiedades no acumulables.
+ * ECZ2_Ajustes se carga después de los mods de origen.
+ */
+
+module SapphCooking
+{
+    item FryBatter
+    {
+        Icon = FryBatterIcon,
+    }
+
+    item VegetableBroth
+    {
+        ReplaceOnUse = Base.BottleCrafted,
+        HungerChange = -20,
+        Calories = 800,
+    }
+}
+
+module Base
+{
+    item FountainCupWater
+    {
+        primaryAnimMask = HoldingAngleTorchRight,
+        secondaryAnimMask = HoldingAngleTorchLeft,
+    }
+
+    /**
+     * ECZ_16 aporta el modelo genérico Wheel_Hand. ECZ2_10 añade los modelos
+     * de Filibuster Rhymes, las sustituciones de mano y los modelos de suelo.
+     * Se fija aquí el StaticModel final para que la resolución no dependa de
+     * un pisado implícito entre ambos mods.
+     */
+    item OldTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item OldTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item OldTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item NormalTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire1
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire2
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+    item ModernTire3
+    {
+        StaticModel = FR_Equipped_TireSmall,
+    }
+}
+
+module VFX
+{
+    item SlicedPotato
+    {
+        ThirstChange = -3.0,
+    }
+}
+
+module AuthenticZClothing
+{
+    item AuthenticGlowstick_Red
+    {
+        ItemType = base:Normal,
+    }
+}

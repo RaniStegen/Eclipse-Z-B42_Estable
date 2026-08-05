@@ -1,0 +1,128 @@
+module MarzGuns
+{
+    model 12Gauge_Box_Buckshot
+    {
+        mesh = Worlditems/Ammunition/Boxes|12Gauge_Box_Buckshot,
+        texture = WorldItems/Ammunition/Boxes/12Gauge_Box,
+    }
+    
+    model 12Gauge_Box_Slug
+    {
+        mesh = Worlditems/Ammunition/Boxes|12Gauge_Box_Slug,
+        texture = WorldItems/Ammunition/Boxes/12Gauge_Box,
+    }
+    
+    model 9x19_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|9x19_Box,
+        texture = WorldItems/Ammunition/Boxes/9x19_Box,
+    }
+    
+    model 45_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|45_Box,
+        texture = WorldItems/Ammunition/Boxes/45_Box,
+    }
+    
+    model 38_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|38_Box,
+        texture = WorldItems/Ammunition/Boxes/38_Box,
+    }
+    
+    model 44_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|44_Box,
+        texture = WorldItems/Ammunition/Boxes/44_Box,
+    }
+    
+    model 50_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|50_Box,
+        texture = WorldItems/Ammunition/Boxes/50_Box,
+    }
+    
+    model 762x51_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|762x51_Box,
+        texture = WorldItems/Ammunition/Boxes/762x51_Box,
+    }
+    
+    model 308_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|308_Box,
+        texture = WorldItems/Ammunition/Boxes/308_Box,
+    }
+    
+    model 762x54_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|762x54_Box,
+        texture = WorldItems/Ammunition/Boxes/762x54_Box,
+    }
+    
+    model 556x45_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|556x45_Box,
+        texture = WorldItems/Ammunition/Boxes/556x45_Box,
+    }
+    
+    model 223_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|223_Box,
+        texture = WorldItems/Ammunition/Boxes/223_Box,
+    }
+    
+    model 545x39_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|545x39_Box,
+        texture = WorldItems/Ammunition/Boxes/545x39_Box,
+    }
+    
+    model 762x39_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|762x39_Box,
+        texture = WorldItems/Ammunition/Boxes/762x39_Box,
+    }
+    
+    model 9x39_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|545x39_Box,
+        texture = WorldItems/Ammunition/Boxes/9x39_Box,
+    }
+    
+    model 3006_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|3006_Box,
+        texture = WorldItems/Ammunition/Boxes/3006_Box,
+    }
+    
+    model 3030_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|3030_Box,
+        texture = WorldItems/Ammunition/Boxes/3030_Box,
+    }
+    
+    model 357_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|357_Box,
+        texture = WorldItems/Ammunition/Boxes/357_Box,
+    }
+    
+    model 4570_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|545x39_Box,
+        texture = WorldItems/Ammunition/Boxes/4570_Box,
+    }
+    
+    model 40mm_Box
+    {
+        mesh = Worlditems/Ammunition/Boxes|40mm_Box,
+        texture = WorldItems/Ammunition/Boxes/40mm_Box,
+    }
+    
+    model Ammo_Crate
+    {
+        mesh = Worlditems/Ammunition/Boxes|Ammo_Crate,
+        texture = WorldItems/Ammunition/Boxes/Ammo_Crate,
+    }
+}

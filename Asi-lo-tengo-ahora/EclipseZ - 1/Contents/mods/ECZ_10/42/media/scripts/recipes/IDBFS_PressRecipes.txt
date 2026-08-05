@@ -1,0 +1,137 @@
+module IDBFS
+{
+    imports
+    {
+        Base
+    }
+
+    craftRecipe PressFruitMash
+    {
+        timedAction = UseHandPress,
+        time = 180,
+        OnCreate = IDBFS_OnCreatePressFruitMash,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 5 [Base.Apple;Base.BerryBlack;Base.BerryBlue;Base.BerryGeneric1;Base.BerryGeneric2;Base.BerryGeneric3;Base.BerryGeneric4;Base.BerryGeneric5;Base.BeautyBerry;Base.Cherry;Base.Grapefruit;Base.Grapes;Base.Peach;Base.Pear;Base.Strewberrie;Base.WinterBerry],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_FruitMash,
+        }
+    }
+
+    craftRecipe PressGrainMash
+    {
+        timedAction = UseHandPress,
+        time = 180,
+        OnCreate = IDBFS_OnCreatePressGrainMash,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 1 [Base.BarleySheafDried;Base.RyeSheafDried;Base.WheatSheafDried],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 categories[Water] mode:mixture,
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_GrainMash,
+        }
+    }
+
+    craftRecipe PressCornMash
+    {
+        timedAction = UseHandPress,
+        time = 180,
+        OnCreate = IDBFS_OnCreatePressCornMash,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 4 [Base.Corn],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_CornMash,
+        }
+    }
+
+    craftRecipe PressPotatoMash
+    {
+        timedAction = UseHandPress,
+        time = 180,
+        OnCreate = IDBFS_OnCreatePressPotatoMash,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 4 [Base.Potato],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_PotatoMash,
+        }
+    }
+
+    craftRecipe PressSugarWash
+    {
+        timedAction = UseHandPress,
+        time = 180,
+        OnCreate = IDBFS_OnCreatePressSugarWash,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 1 tags[base:sugar],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 categories[Water] mode:mixture,
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_SugarWash,
+        }
+    }
+
+    craftRecipe PressVegetableOil
+    {
+        timedAction = UseHandPress,
+        time = 480,
+        OnCreate = IDBFS_OnCreatePressSunflowerOil,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 4 [Base.SunflowerHeadDried;Base.Corn],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_SunflowerOil,
+        }
+    }
+
+    craftRecipe PressOliveOil
+    {
+        timedAction = UseHandPress,
+        time = 480,
+        OnCreate = IDBFS_OnCreatePressOliveOil,
+        Tags = IDBFSPress,
+        category = Distillery,
+        inputs
+        {
+            item 2 [Base.Olives],
+            item 1 tags[base:bucket] mode:keep flags[IsEmpty],
+        }
+        outputs
+        {
+            item 1 IDBFS.PressOutput_OliveOil,
+        }
+    }
+}

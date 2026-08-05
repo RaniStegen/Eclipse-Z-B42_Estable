@@ -1,0 +1,314 @@
+module MarzGuns
+{
+    item 9x19_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.007,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 9x19_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.9x19_Casing,
+        WorldStaticModel = MarzGuns.9x19_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 9x39_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.009,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 9x39_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.9x39_Casing,
+        WorldStaticModel = MarzGuns.9x39_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 12Gauge_Hull_Red
+    {
+        CanStack         = true,
+        Weight           = 0.023,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 12Gauge_Shell_Red,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.12Gauge_Hull_Red,
+        WorldStaticModel = MarzGuns.12Gauge_Hull_Red,
+        Tags             = hb:shotgunshell,
+    }
+    
+    item 12Gauge_Hull_Green
+    {
+        CanStack         = true,
+        Weight           = 0.023,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 12Gauge_Shell_Green,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.12Gauge_Hull_Green,
+        WorldStaticModel = MarzGuns.12Gauge_Hull_Green,
+        Tags             = hb:shotgunshell,
+    }
+    
+    item 22_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.002,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 22_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.22_Casing,
+        WorldStaticModel = MarzGuns.22_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 38_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.008,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 38_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.38_Casing,
+        WorldStaticModel = MarzGuns.38_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 44_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.012,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 44_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.44_Casing,
+        WorldStaticModel = MarzGuns.44_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 45_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.011,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 45_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.45_Casing,
+        WorldStaticModel = MarzGuns.45_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 46x30_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.005,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 46x30_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.46x30_Casing,
+        WorldStaticModel = MarzGuns.46x30_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 50_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.018,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 50_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.50_Casing,
+        WorldStaticModel = MarzGuns.50_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 57x28_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.005,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 57x28_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.57x28_Casing,
+        WorldStaticModel = MarzGuns.57x28_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 357_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.009,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 357_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.357_Casing,
+        WorldStaticModel = MarzGuns.357_Casing,
+        Tags             = hb:lightcasing,
+    }
+    
+    item 545x39_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.005,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 545x39_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.545x39_Casing,
+        WorldStaticModel = MarzGuns.545x39_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 556x45_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.006,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 556x45_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.556x45_Casing,
+        WorldStaticModel = MarzGuns.556x45_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 223_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.006,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 556x45_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.556x45_Casing,
+        WorldStaticModel = MarzGuns.556x45_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 762x39_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.009,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762x39_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.762x39_Casing,
+        WorldStaticModel = MarzGuns.762x39_Casing,
+        Tags             = hb:mediumcasing,
+    }
+    
+    item 762x51_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.012,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762x51_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.762x51_Casing,
+        WorldStaticModel = MarzGuns.762x51_Casing,
+        Tags             = hb:casing,
+    }
+    
+    item 308_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.013,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762x51_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.762x51_Casing,
+        WorldStaticModel = MarzGuns.762x51_Casing,
+        Tags             = hb:heavycasing,
+    }
+    
+    item 762x54_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.012,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762x54_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.762x54_Casing,
+        WorldStaticModel = MarzGuns.762x54_Casing,
+        Tags             = hb:heavycasing,
+    }
+    
+    item 792x57_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 792x57_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.792x57_Casing,
+        WorldStaticModel = MarzGuns.792x57_Casing,
+        Tags             = hb:casing,
+    }
+    
+    item 3006_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.014,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 3006_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.3006_Casing,
+        WorldStaticModel = MarzGuns.3006_Casing,
+        Tags             = hb:casing,
+    }
+    
+    item 3030_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.011,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 3030_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.3030_Casing,
+        WorldStaticModel = MarzGuns.3030_Casing,
+        Tags             = hb:casing,
+    }
+    
+    item 4570_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.017,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 4570_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.4570_Casing,
+        WorldStaticModel = MarzGuns.4570_Casing,
+        Tags             = hb:casing,
+    }
+    
+    item 40mm_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.12,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 40mm_Casing,
+        MetalValue       = 1,
+        StaticModel      = MarzGuns.40mm_Casing,
+        WorldStaticModel = MarzGuns.40mm_Casing,
+        Tags             = hb:casing,
+    }
+}

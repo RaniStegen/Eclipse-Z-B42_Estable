@@ -1,0 +1,8 @@
+name=EclipseZ - Ajustes de objetos y habilidades
+id=ECZ2_Ajustes
+description=Ajustes específicos de objetos, baterías y límites de habilidad por puntos iniciales para Build 42.20.
+versionMin=42.20.0
+versionMax=43.0.0
+poster=poster.png
+icon=icon.png
+loadModAfter=ECZ_Estilo_de_Vida

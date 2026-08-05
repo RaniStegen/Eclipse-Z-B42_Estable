@@ -1,0 +1,8 @@
+name=ECZ_T5
+id=ECZ_T5
+description=
+icon=icon.png
+poster=poster.png
+pack=LiuDing_Tiles_02
+pack=LiuDing_Tiles_02.floor
+tiledef=LiuDing_Tiles_02 1995

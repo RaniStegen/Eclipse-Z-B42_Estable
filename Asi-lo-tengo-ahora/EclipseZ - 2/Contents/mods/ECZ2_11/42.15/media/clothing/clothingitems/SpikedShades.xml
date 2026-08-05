@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\M_SpikedShades.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\F_SpikedShades.fbx</m_FemaleModel>
+	<m_GUID>85c831ab-16bb-4c22-b7be-5e7c555b77d9</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\TombWardrobe\Spikedshades_S</textureChoices>
+</clothingItem>

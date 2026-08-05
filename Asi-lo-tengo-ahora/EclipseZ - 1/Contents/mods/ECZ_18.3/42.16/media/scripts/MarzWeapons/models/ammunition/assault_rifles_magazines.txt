@@ -1,0 +1,148 @@
+module MarzGuns
+{
+    
+    model 556x45Magazine20_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine20_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine20_STANAG,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 556x45Magazine25_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine25_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine25_STANAG,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 556x45Magazine30_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine30_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine30_STANAG,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 556x45Magazine60_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine60_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine60_STANAG,
+    }
+    model 556x45Magazine50_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine50_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine50_STANAG,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 556x45Magazine75_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine75_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine75_STANAG,
+    }
+    model 556x45Magazine100_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine100_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine100_STANAG,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 556x45Magazine150_STANAG
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine150_STANAG,
+        texture = weapons/magazines/assault_rifles/556x45Magazine150_STANAG,
+    }
+    model 556x45Magazine30_G36
+    {
+        mesh = weapons/magazines/assault_rifles|556x45Magazine30_G36,
+        texture = weapons/magazines/assault_rifles/556x45Magazine30_G36,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 545x39Magazine30_Bakelite
+    {
+        mesh = weapons/magazines/assault_rifles|545x39Magazine30,
+        texture = weapons/magazines/assault_rifles/545x39Magazine30,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 545x39Magazine45_Bakelite
+    {
+        mesh = weapons/magazines/assault_rifles|545x39Magazine45,
+        texture = weapons/magazines/assault_rifles/545x39Magazine45,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 545x39Magazine100_Drum
+    {
+        mesh = weapons/magazines/assault_rifles|545x39Magazine100,
+        texture = weapons/magazines/assault_rifles/545x39Magazine100,
+    }
+    
+    model 9x39Magazine30
+    {
+        mesh = weapons/magazines/assault_rifles|9x39Magazine30,
+        texture = weapons/magazines/assault_rifles/9x39Magazine30,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 762x39Magazine30
+    {
+        mesh = weapons/magazines/assault_rifles|762x39Magazine30,
+        texture = weapons/magazines/assault_rifles/762x39Magazine30,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 762x39Magazine75
+    {
+        mesh = weapons/magazines/assault_rifles|762x39Magazine75,
+        texture = weapons/magazines/assault_rifles/762x39Magazine75,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+}

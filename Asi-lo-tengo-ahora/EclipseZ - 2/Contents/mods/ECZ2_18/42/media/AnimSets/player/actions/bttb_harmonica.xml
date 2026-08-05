@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<animNode>
+	<m_Name>BttB_Harmonica</m_Name>
+	<m_AnimName>BttB_Harmonica</m_AnimName>
+	<m_BlendTime>0.1</m_BlendTime>
+	<m_Conditions>
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>BttB_Harmonica</m_StringValue>
+	</m_Conditions>
+</animNode>

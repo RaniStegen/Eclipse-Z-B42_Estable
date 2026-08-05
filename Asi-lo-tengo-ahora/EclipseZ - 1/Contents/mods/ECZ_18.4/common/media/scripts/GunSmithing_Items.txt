@@ -1,0 +1,289 @@
+module Gunsmithing
+{
+
+
+/************************ Crafting ************************/
+    item CinnabarOre
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = CinnabarOre,
+        StaticModel = CinnabarOre,
+        WorldStaticModel = CinnabarOre,
+        Tags = base:hasmetal;base:heavyitem,
+        RequiresEquippedBothHands = true,
+    }
+    item ZincOre
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = ZincOre,
+        StaticModel = ZincOre,
+        WorldStaticModel = ZincOre,
+        Tags = base:hasmetal;base:heavyitem,
+        RequiresEquippedBothHands = true,
+    }
+    item CinnabarOre_Crushed
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = CinnabarOreCrushed,
+        StaticModel = CinnabarOre_Crushed,
+        WorldStaticModel = CinnabarOre_Crushed,
+    }
+    item ZincOre_Crushed
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = ZincOreCrushed,
+        StaticModel = ZincOre_Crushed,
+        WorldStaticModel = ZincOre_Crushed,
+    }
+    /* Galena (lead ore). Reuses the zinc-ore art tinted a dull blue-grey. */
+    item LeadOre
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = ZincOre,
+        StaticModel = LeadOre,
+        WorldStaticModel = LeadOre,
+        ColorRed = 148,
+        ColorGreen = 156,
+        ColorBlue = 176,
+        Tags = base:hasmetal;base:heavyitem,
+        RequiresEquippedBothHands = true,
+    }
+    item LeadOre_Crushed
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = ZincOreCrushed,
+        StaticModel = LeadOre_Crushed,
+        WorldStaticModel = LeadOre_Crushed,
+        ColorRed = 148,
+        ColorGreen = 156,
+        ColorBlue = 176,
+    }
+    /* Smelted lead, the feedstock for every cast projectile. Reuses the vanilla iron-ingot art. */
+    item LeadIngot
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.0,
+        Icon = Ingot_Iron,
+        StaticModel = LeadIngot,
+        WorldStaticModel = LeadIngot,
+        ColorRed = 132,
+        ColorGreen = 140,
+        ColorBlue = 158,
+        Tags = base:hasmetal;base:ingot,
+    }
+    item PaperCartridge
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.015,
+        Icon = PaperCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = PaperCartridge,
+        WorldStaticModel = PaperCartridge,
+        Tags = base:ammo,
+    }
+    /* Combined cartridges: the powder charge and its projectile wrapped in one paper tube, so a
+       muzzleloader loads a single item per round. Tinted off the plain PaperCartridge art -- warm
+       grey for the round ball, buff for the conical Minie. */
+    item PaperCartridge_Ball
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.03,
+        Icon = PaperCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = PaperCartridge,
+        WorldStaticModel = PaperCartridge,
+        ColorRed = 214,
+        ColorGreen = 208,
+        ColorBlue = 190,
+        Tags = base:ammo,
+    }
+    item PaperCartridge_Bullet
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.03,
+        Icon = PaperCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = PaperCartridge,
+        WorldStaticModel = PaperCartridge,
+        ColorRed = 226,
+        ColorGreen = 198,
+        ColorBlue = 150,
+        Tags = base:ammo,
+    }
+    item HandmadeCartridge
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.015,
+        Icon = HandmadeCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        WorldStaticModel = HandmadeCartridge,
+        Tags = base:ammo,
+    }
+    item MusketBall
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.015,
+        Icon = MusketBall,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = MusketBall,
+        WorldStaticModel = MusketBall,
+        Tags = base:ammo,
+    }
+    item MusketBullet
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.015,
+        Icon = MusketBullet,
+        count = 5,
+        MetalValue = 1.0,
+        WorldStaticModel = MusketBullet,
+        Tags = base:ammo,
+    }
+    /* A tin of percussion caps: a drainable with 30 uses. Each round of a cap-lock reload drains
+       one cap (see the Gunworks consumes path). UseDelta 0.0333 -> floor(1/0.0333) = 30 uses. */
+    item CapsPackage
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        Icon = CapsPackage,
+        UseDelta = 0.0333,
+        MetalValue = 1.0,
+        WorldStaticModel = CapsPackage,
+        Tags = base:ammo,
+    }
+    /* Revolver round ball: reuses the MusketBall art scaled down (smaller pistol calibre). */
+    item RoundBall_44
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.01,
+        Icon = MusketBall,
+        count = 5,
+        MetalValue = 0.8,
+        StaticModel = RoundBall_44,
+        WorldStaticModel = RoundBall_44,
+        Tags = base:ammo,
+    }
+    /* Self-contained metallic pistol cartridge: reuses the HandmadeCartridge art scaled down. */
+    item PistolCartridge
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.012,
+        Icon = HandmadeCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = PistolCartridge,
+        WorldStaticModel = PistolCartridge,
+        Tags = base:ammo,
+    }
+    /* Saltpeter (potassium nitrate) for black powder; reuses a crushed-ore look. */
+    item Saltpeter
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = ZincOreCrushed,
+        StaticModel = ZincOre_Crushed,
+        WorldStaticModel = ZincOre_Crushed,
+    }
+    /* Empty brass cartridge case for building metallic cartridges; reuses HandmadeCartridge art. */
+    item BrassCasing
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.01,
+        Icon = HandmadeCartridge,
+        count = 5,
+        MetalValue = 1.0,
+        StaticModel = BrassCasing,
+        WorldStaticModel = BrassCasing,
+        Tags = base:hasmetal,
+    }
+    /* Stock and barrel carry their own wear, the way vanilla's axe and hammer heads do, so a gun
+       can be stripped back into parts and a still-good stock reused under a fresh barrel. */
+    item Crafting_Stock
+    {
+        DisplayCategory = Material,
+        Weight = 1.0,
+        ItemType = base:normal,
+        Icon = StockCrafting,
+        StaticModel = Crafting_Stock,
+        WorldStaticModel = Crafting_Stock,
+        ConditionMax = 10,
+        ConditionLowerChanceOneIn = 5,
+        Tags = base:repairwithtape;base:repairwithglue,
+    }
+    item Crafting_Barrel
+    {
+        DisplayCategory = Material,
+        Weight = 1.0,
+        ItemType = base:normal,
+        Icon = BarrelCrafting,
+        StaticModel = Crafting_Barrel,
+        WorldStaticModel = Crafting_Barrel,
+        ConditionMax = 10,
+        ConditionLowerChanceOneIn = 5,
+        MetalValue = 12.0,
+        Tags = base:hasmetal,
+    }
+    /* Forged metal bands that hold barrel to stock. Iron or steel. Reuses a metal-lump icon. */
+    item GunBands
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = ZincOreCrushed,
+        StaticModel = ZincOre_Crushed,
+        WorldStaticModel = ZincOre_Crushed,
+        MetalValue = 4.0,
+        Tags = base:hasmetal,
+    }
+    /* Internal lock/trigger mechanism parts. Iron or steel. Reuses the flintlock art. */
+    item GunParts
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Flintlock,
+        StaticModel = Musket1770_FlintUncooked,
+        WorldStaticModel = Musket1770_FlintUncooked,
+        MetalValue = 5.0,
+        Tags = base:hasmetal,
+    }
+    /* Knapped flint flake for a flintlock's frizzen strike. Reuses a stone-chip look. */
+    item FlintFlake
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = ZincOreCrushed,
+        StaticModel = ZincOre_Crushed,
+        WorldStaticModel = ZincOre_Crushed,
+    }
+}

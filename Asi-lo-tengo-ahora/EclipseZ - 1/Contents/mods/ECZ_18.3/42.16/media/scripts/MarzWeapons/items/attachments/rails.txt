@@ -1,0 +1,157 @@
+module MarzGuns
+{
+    item Picatinny_Rail
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Picatinny_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = RailUp,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Picatinny_Rail_Up
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Picatinny_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M16A1;MarzGuns.M16A2;MarzGuns.M16A2_M203;MarzGuns.M16A3;MarzGuns.AR15;MarzGuns.FNC;MarzGuns.FAMAS;MarzGuns.CAR15;MarzGuns.XM177;MarzGuns.M4A1;MarzGuns.M14;MarzGuns.FAL;MarzGuns.G3;MarzGuns.M24;MarzGuns.MOSSBERG_590;MarzGuns.BENELLI_M4;MarzGuns.REMINGTON_870;MarzGuns.PSG1;MarzGuns.W1894;MarzGuns.M1895;MarzGuns.W1887;MarzGuns.W1873;MarzGuns.MP5;MarzGuns.MP5A2;MarzGuns.MP5SD;MarzGuns.MP5K,
+        PartType         = RailUp,
+        Tooltip          = Tooltip_Rail,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Picatinny_Rail_Down
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Picatinny_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M16A1;MarzGuns.M16A2;MarzGuns.M16A3;MarzGuns.AR15;MarzGuns.AKS74U;MarzGuns.ASVAL;MarzGuns.FAMAS;MarzGuns.CAR15;MarzGuns.XM177;MarzGuns.M4A1;MarzGuns.G36;MarzGuns.M14;MarzGuns.FAL;MarzGuns.G3;MarzGuns.AA12;MarzGuns.SVD;MarzGuns.PSG1;MarzGuns.MP5;MarzGuns.MP5A2;MarzGuns.MP5SD,
+        PartType         = RailDown,
+        Tooltip          = Tooltip_Rail,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Picatinny_Rail_Right
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Picatinny_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M16A2;MarzGuns.M16A3;MarzGuns.ASVAL;MarzGuns.CAR15;MarzGuns.XM177;MarzGuns.M4A1;MarzGuns.G36C;MarzGuns.G36;MarzGuns.FAL;MarzGuns.G3;MarzGuns.AA12;MarzGuns.MP5;MarzGuns.MP5A2;MarzGuns.MP5SD,
+        PartType         = RailRight,
+        Tooltip          = Tooltip_Rail,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Picatinny_Rail_Left
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Picatinny_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M16A2;MarzGuns.M16A3;MarzGuns.ASVAL;MarzGuns.CAR15;MarzGuns.XM177;MarzGuns.M4A1;MarzGuns.G36C;MarzGuns.G36;MarzGuns.FAL;MarzGuns.G3;MarzGuns.AA12;MarzGuns.MP5;MarzGuns.MP5A2;MarzGuns.MP5SD,
+        PartType         = RailLeft,
+        Tooltip          = Tooltip_Rail,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item AK_Mount
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = AK_Mount,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.AK74;MarzGuns.AKS74U;MarzGuns.ASVAL;MarzGuns.SVD;MarzGuns.AK47,
+        PartType         = RailUp,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Picatinny_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Sniper_Mount
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Sniper_Mount,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.MOSIN;MarzGuns.M1903,
+        PartType         = RailUp,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Sniper_Mount,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Beretta_Mount
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Beretta_Mount,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M92FS;MarzGuns.M93R;MarzGuns.HIPOWER;MarzGuns.P226,
+        PartType         = RailUp,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Beretta_Mount,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Colt_Mount
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Colt_Mount,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.M1911;MarzGuns.USP,
+        PartType         = RailUp,
+        Tooltip          = Tooltip_Rail,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Colt_Mount,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Heavy_Pistol_Rail
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Heavy_Pistol_Rail,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.DEAGLE;MarzGuns.PYTHON;MarzGuns.SW629,
+        PartType         = RailUp,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Heavy_Pistol_Rail,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+}

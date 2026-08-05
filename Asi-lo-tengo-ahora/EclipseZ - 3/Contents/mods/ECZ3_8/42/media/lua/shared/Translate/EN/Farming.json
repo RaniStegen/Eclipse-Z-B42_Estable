@@ -1,0 +1,8 @@
+{
+    "Farming_ECZ_DestroyedPlot": "Destroyed farming plot",
+    "Farming_ECZ_DeadPlot": "Dead farming plot",
+    "Farming_ECZ_RottenPlot": "Rotten farming plot",
+    "Farming_ECZ_HarvestedPlot": "Harvested farming plot",
+    "Farming_ECZ_UnknownPlot": "Farming plot",
+    "Farming_ECZ_InvalidCropInfo": "This plot does not contain a valid crop with information to display."
+}

@@ -1,0 +1,20 @@
+module MarzGuns
+{
+    model Stub_Foregrip
+    {
+        mesh = weapons/parts/foregrips|Stub_Foregrip,
+        texture = weapons/parts/foregrips/Stub_Foregrip,
+    }
+    
+    model MKC_Foregrip
+    {
+        mesh = weapons/parts/foregrips|MKC_Foregrip,
+        texture = weapons/parts/foregrips/MKC_Foregrip,
+    }
+    
+    model MK2_Foregrip
+    {
+        mesh = weapons/parts/foregrips|MK2_Foregrip,
+        texture = weapons/parts/foregrips/MK2_Foregrip,
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>FR_Bob_ShoveIdle</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_AnimName>Bob_IdleDriving</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions>
+		<m_Name>FR_Vehicle</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>True</m_StringValue>
+	</m_Conditions>
+</animNode>

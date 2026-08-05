@@ -1,0 +1,39 @@
+module MarzGuns
+{
+    item FakeItem
+    {
+        DisplayCategory = Junk,
+        ItemType        = base:normal,
+    }
+    
+    item FakeItemPistols
+    {
+        DisplayCategory = Junk,
+        ItemType        = base:normal,
+    }
+    
+    item FakeItemRifles
+    {
+        DisplayCategory = Junk,
+        ItemType        = base:normal,
+    }
+    
+    item FakeItemRails
+    {
+        DisplayCategory = Junk,
+        ItemType        = base:normal,
+    }
+    
+    item RepairPack
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.0,
+        Icon             = RepairPack,
+        SurvivalGear     = true,
+        Tooltip          = Tooltip_RepairPack,
+        UseDelta         = 0.25,
+        UseWhileEquipped = false,
+        WorldStaticModel = MarzGuns.RepairPack,
+    }
+}

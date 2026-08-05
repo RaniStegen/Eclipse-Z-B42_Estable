@@ -1,0 +1,5 @@
+{
+    "Sandbox_FRUsedCars": "Vehículos usados de Filibuster Rhymes",
+    "Sandbox_LowConPartsFall": "Las piezas con baja durabilidad pueden desprenderse de los vehículos",
+    "Sandbox_PartFallsWithParent": "Si la pieza principal se desprende, la secundaria también lo hará (Ej: si se sale el neumático, el tapacubos también)"
+}

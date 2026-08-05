@@ -1,0 +1,44 @@
+module MarzGuns
+{
+    model 3006Clip8
+    {
+        mesh = weapons/magazines/battle_rifles|3006Clip8,
+        texture = weapons/magazines/battle_rifles/3006Clip8,
+    }
+    
+    model 762x51Magazine20_M14
+    {
+        mesh = weapons/magazines/battle_rifles|762x51Magazine20_M14,
+        texture = weapons/magazines/battle_rifles/762x51Magazine20_M14,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 762x51Magazine20_FAL
+    {
+        mesh = weapons/magazines/battle_rifles|762x51Magazine20_FAL,
+        texture = weapons/magazines/battle_rifles/762x51Magazine20_FAL,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 762x51Magazine20_G3
+    {
+        mesh = weapons/magazines/battle_rifles|762x51Magazine20_G3,
+        texture = weapons/magazines/battle_rifles/762x51Magazine20_G3,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+}

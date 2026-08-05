@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\CoralFaceAccModel</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\CoralFaceAccModel</m_FemaleModel>
+	<m_GUID>806d47d4-ba82-4158-b474-426a04ad28e0</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_HatCategory>Group01</m_HatCategory>
+
+	<textureChoices>Clothes\ZombieSkins\CoralFaceAcc</textureChoices>
+</clothingItem>

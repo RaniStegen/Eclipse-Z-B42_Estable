@@ -1,0 +1,10 @@
+-- ECZ B42.20 - corrección 03-08-2026
+--
+-- Este archivo sustituye el registro inválido añadido por la actualización anterior:
+--   ItemTag.register("base:keyduplicator")
+--   ItemTag.register("base:choppingblock")
+--
+-- Build 42.20 rechaza el espacio de nombres predeterminado "base:" dentro de
+-- ItemTag.register(), provocando excepciones Lua durante cada ResetLua.
+-- Las etiquetas originales siguen pudiendo ser descubiertas por sus mods de origen.
+-- Se deja el archivo intencionadamente sin llamadas de registro.

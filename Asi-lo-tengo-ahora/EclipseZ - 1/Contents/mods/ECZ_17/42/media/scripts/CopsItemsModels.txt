@@ -1,0 +1,40 @@
+module Base
+{
+    model MagliteFlashlight
+    {
+        mesh = Static/MagliteFlashlight,
+	texture = WorldItems/MagliteFlashlight,
+    }
+    model MagliteFlashlightGROUND
+    {
+        mesh = WorldItems/MagliteFlashlight,
+        texture = WorldItems/MagliteFlashlight,
+        scale = 1,
+        attachment world
+        {
+            offset = -0.00 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+    model SilverCoinMorgan
+    {
+        mesh = WorldItems/Coin,
+        texture = WorldItems/Coin_Silver,
+        scale = 0.125,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+    model RiotShield
+    {
+        mesh = Static/RiotShield,
+        texture = Clothes/RiotShield,
+        attachment world
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "Farming_ECZ_DestroyedPlot": "Parcela de cultivo destruida",
+    "Farming_ECZ_DeadPlot": "Parcela de cultivo muerta",
+    "Farming_ECZ_RottenPlot": "Parcela de cultivo podrida",
+    "Farming_ECZ_HarvestedPlot": "Parcela de cultivo cosechada",
+    "Farming_ECZ_UnknownPlot": "Parcela de cultivo",
+    "Farming_ECZ_InvalidCropInfo": "Esta parcela no contiene un cultivo válido del que mostrar información."
+}

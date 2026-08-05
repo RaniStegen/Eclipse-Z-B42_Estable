@@ -1,0 +1,6 @@
+Tooltip_EN = {
+    Tooltip_CTT_NeedAxe = "Requires an axe or another tool tagged for chopping trees.",
+    Tooltip_CTT_NeedAxeSkill = "Requires Axe skill level %1.",
+    Tooltip_CTT_AlreadyOpen = "A chopping minigame is already open.",
+    Tooltip_CTT_VanillaDisabled = "Vanilla tree cutting is disabled by Cut That Tree.",
+}

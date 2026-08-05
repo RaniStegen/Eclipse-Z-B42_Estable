@@ -1,0 +1,351 @@
+module IDBFS
+{
+    imports
+    {
+        Base
+    }
+
+    craftRecipe PrepareYeastMixture
+    {
+        timedAction = MixingBowl,
+        time = 120,
+        OnCreate = IDBFS_OnCreateYeastMixture,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 tags[base:flour],
+            item 1 tags[base:bowl] mode:keep,
+            -fluid 0.3 categories[Water] mode:mixture,
+        }
+        outputs
+        {
+            item 1 IDBFS.YeastMixture,
+        }
+    }
+
+    craftRecipe MakeStarterYeast
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = IDBFS_OnCreateStarterYeast,
+        OnTest = IDBFS_OnTestYeastMixtureReady,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [IDBFS.YeastMixture] mode:destroy flags[ItemCount],
+        }
+        outputs
+        {
+            item 1 IDBFS.StarterYeast,
+        }
+    }
+
+    craftRecipe BottleVinegar
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [IDBFSVinegar],
+        }
+        outputs
+        {
+            item 1 Base.Vinegar2,
+        }
+    }
+
+    craftRecipe BottleSunflowerOil
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [IDBFSSunflowerOil],
+        }
+        outputs
+        {
+            item 1 Base.OilVegetable,
+        }
+    }
+
+    craftRecipe BottleOliveOil
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [IDBFSOliveOil],
+        }
+        outputs
+        {
+            item 1 Base.OilOlive,
+        }
+    }
+
+    craftRecipe BottleDistilledAlcohol
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 10.0 [IDBFSDistilledAlcohol],
+        }
+        outputs
+        {
+            item 1 IDBFS.DistilledAlcoholContainer,
+        }
+    }
+
+    craftRecipe BottleBeer
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.3 [Beer],
+        }
+        outputs
+        {
+            item 1 Base.BeerBottle,
+        }
+    }
+
+    craftRecipe BottleWhiskey
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Whiskey],
+        }
+        outputs
+        {
+            item 1 Base.Whiskey,
+        }
+    }
+
+    craftRecipe BottleWine
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Wine],
+        }
+        outputs
+        {
+            item 1 Base.Wine,
+        }
+    }
+
+    craftRecipe BottleRum
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Rum],
+        }
+        outputs
+        {
+            item 1 Base.Rum,
+        }
+    }
+
+    craftRecipe BottleVodka
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Vodka],
+        }
+        outputs
+        {
+            item 1 Base.Vodka,
+        }
+    }
+
+    craftRecipe BottleBrandy
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Brandy],
+        }
+        outputs
+        {
+            item 1 Base.Brandy,
+        }
+    }
+
+    craftRecipe BottleChampagne
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Champagne],
+        }
+        outputs
+        {
+            item 1 Base.Champagne,
+        }
+    }
+
+    craftRecipe BottleCider
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Cider],
+        }
+        outputs
+        {
+            item 1 Base.Cider,
+        }
+    }
+
+    craftRecipe BottleGin
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Gin],
+        }
+        outputs
+        {
+            item 1 Base.Gin,
+        }
+    }
+
+    craftRecipe BottleTequila
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Tequila],
+        }
+        outputs
+        {
+            item 1 Base.Tequila,
+        }
+    }
+
+    craftRecipe BottleVermouth
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Vermouth],
+        }
+        outputs
+        {
+            item 1 Base.Vermouth,
+        }
+    }
+
+    craftRecipe BottleScotch
+    {
+        timedAction = Making,
+        time = 50,
+        OnTest = IDBFS_OnTestBottlingSource,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Distillery,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Scotch],
+        }
+        outputs
+        {
+            item 1 Base.Scotch,
+        }
+    }
+
+    craftRecipe MakeMolotovCocktailIDBFS
+    {
+        timedAction = MakingElectrical,
+        time = 80,
+        Tags = InHandCraft,
+        category = Electrical,
+        inputs
+        {
+            item 1 tags[base:glassbottle] mode:destroy,
+            -fluid 1.0 [Brandy;Champagne;Cider;Gin;Rum;Scotch;Vermouth;Wine],
+            item 1 [Base.RippedSheets;Base.RippedSheetsDirty;Base.DenimStrips;Base.DenimStripsDirty] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Molotov,
+        }
+    }
+
+}
