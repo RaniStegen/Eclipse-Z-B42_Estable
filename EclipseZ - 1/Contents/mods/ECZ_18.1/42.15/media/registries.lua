@@ -1,13 +1,6 @@
-AmmoType.register("firearms:bullets_22", "Base.Bullets22")
-AmmoType.register("firearms:bullets_10mm", "Base.Bullets10mm")
-AmmoType.register("firearms:bullets_762x39", "Base.762x39Bullets")
-AmmoType.register("firearms:bullets_30_06", "Base.Bullets3006")
-AmmoType.register("firearms:bullets_44_40", "Base.Bullets4440")
+HBTags = {}
 
-FirearmsTags = {}
-FirearmsTags.firearmsService = ItemTag.register("firearms:firearms_service")
-FirearmsTags.firearmsSuppressor = ItemTag.register("firearms:suppressor")
-FirearmsTags.firearmsSuppressorCrafted = ItemTag.register("firearms:suppressor_crafted")
-FirearmsTags.firearmsSuppressorCraftedBad = ItemTag.register("firearms:suppressor_crafted_bad")
-FirearmsTags.firearmsCompensator = ItemTag.register("firearms:compensator")
-FirearmsTags.firearmsUnderBarrelRail = ItemTag.register("firearms:under_barrel_rail")
+HBTags.LightCasing = ItemTag.register("hb:lightcasing")
+HBTags.MediumCasing = ItemTag.register("hb:mediumcasing")
+HBTags.HeavyCasing = ItemTag.register("hb:heavycasing")
+HBTags.ShotgunShell = ItemTag.register("hb:shotgunshell")

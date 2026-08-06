@@ -1,0 +1,15 @@
+{
+  "ecz_id": "ECZ_27",
+  "name": "Offline Survivor",
+  "target": "Project Zomboid 42.20.0",
+  "source_workshop_id": "3771083376",
+  "source_mod_id": "OfflineSurvivor",
+  "source_version_layer": "42.0",
+  "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3771083376",
+  "redistribution_permission": "Confirmado por el responsable del modpack el 30 de julio de 2026.",
+  "notes": [
+    "El manifiesto usa el ID ECZ_27, el icono y el póster normalizados de Eclipse-Z y no incluye descripción.",
+    "Las opciones de Sandbox, la interfaz, los avisos al jugador y los mensajes de diagnóstico están adaptados al español de España.",
+    "No se han eliminado archivos de ejecución de la capa 42.0."
+  ]
+}

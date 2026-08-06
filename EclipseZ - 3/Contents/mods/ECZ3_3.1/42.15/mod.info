@@ -5,4 +5,4 @@ icon=icon.png
 pack=NeatBuilding_Tiles
 tiledef=NeatBuilding_Tiles 7811
 description=
-require=\ECZ3_1
+require=ECZ3_1

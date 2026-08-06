@@ -1,9 +1,0 @@
-name=ECZ_8.5
-id=ECZ_8.5
-description=
-poster=poster.png
-icon=icon.png
-pack=perts_xmas_tiles
-pack=perts_tiles
-tiledef=Pert_tiledefinitions 4242
-tiledef=ChristmasVillage 4243

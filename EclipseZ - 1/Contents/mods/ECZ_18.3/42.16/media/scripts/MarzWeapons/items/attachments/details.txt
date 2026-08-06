@@ -1,0 +1,66 @@
+module MarzGuns
+{
+    item Bullet_1
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated1,
+    }
+    item Bullet_2
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated2,
+    }
+    item Bullet_3
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated3,
+    }
+    item Bullet_4
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated4,
+    }
+    item Bullet_5
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated5,
+    }
+    item Bullet_6
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated6,
+    }
+    item Bullet_7
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated7,
+    }
+    item Bullet_8
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated8,
+    }
+    item Bullet_9
+    {
+        ItemType        = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        MountOn         = MarzGuns.FakeItem,
+        PartType        = Animated9,
+    }
+}

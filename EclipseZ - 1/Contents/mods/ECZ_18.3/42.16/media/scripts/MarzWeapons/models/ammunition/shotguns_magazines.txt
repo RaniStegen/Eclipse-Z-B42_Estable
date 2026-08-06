@@ -1,0 +1,13 @@
+module MarzGuns
+{
+    model 12GMagazine8_AA12
+    {
+        mesh = weapons/magazines/shotguns|12GMagazine8_AA12,
+        texture = weapons/magazines/shotguns/12GMagazine8_AA12,
+    }
+    model 12GMagazine20_AA12
+    {
+        mesh = weapons/magazines/shotguns|12GMagazine20_AA12,
+        texture = weapons/magazines/shotguns/12GMagazine20_AA12,
+    }
+}

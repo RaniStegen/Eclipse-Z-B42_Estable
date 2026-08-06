@@ -1,0 +1,242 @@
+module MarzGuns
+{
+    model Booster_Scope
+    {
+        mesh = weapons/parts/scopes|Booster_Scope,
+        texture = weapons/parts/scopes/Booster_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model Booster_Scope_Off
+    {
+        mesh = weapons/parts/scopes|Booster_Scope_Off,
+        texture = weapons/parts/scopes/Booster_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model EXPS1_Sight
+    {
+        mesh = weapons/parts/scopes|EXPS1_Sight,
+        texture = weapons/parts/scopes/EXPS1_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model EXPS3_Sight
+    {
+        mesh = weapons/parts/scopes|EXPS3_Sight,
+        texture = weapons/parts/scopes/EXPS3_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model ElcanX2_Scope
+    {
+        mesh = weapons/parts/scopes|ElcanX2_Scope,
+        texture = weapons/parts/scopes/ElcanX2_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model LR10X_Scope
+    {
+        mesh = weapons/parts/scopes|LR10X_Scope,
+        texture = weapons/parts/scopes/LR10X_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model Aimpoint_Sight
+    {
+        mesh = weapons/parts/scopes|Aimpoint_Sight,
+        texture = weapons/parts/scopes/Aimpoint_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model TA28_Scope
+    {
+        mesh = weapons/parts/scopes|TA28_Scope,
+        texture = weapons/parts/scopes/TA28_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model LR4X_Scope
+    {
+        mesh = weapons/parts/scopes|LR4X_Scope,
+        texture = weapons/parts/scopes/LR4X_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model OKP3_Sight
+    {
+        mesh = weapons/parts/scopes|OKP3_Sight,
+        texture = weapons/parts/scopes/OKP3_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model ReflexS2_Sight
+    {
+        mesh = weapons/parts/scopes|ReflexS2_Sight,
+        texture = weapons/parts/scopes/ReflexS2_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model JS14_Sight
+    {
+        mesh = weapons/parts/scopes|JS14_Sight,
+        texture = weapons/parts/scopes/JS14_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model Kobra_Sight
+    {
+        mesh = weapons/parts/scopes|Kobra_Sight,
+        texture = weapons/parts/scopes/Kobra_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model TR06X_Scope
+    {
+        mesh = weapons/parts/scopes|TR06X_Scope,
+        texture = weapons/parts/scopes/TR06X_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model PSO1_Scope
+    {
+        mesh = weapons/parts/scopes|PSO1_Scope,
+        texture = weapons/parts/scopes/PSO1_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model LRX12X_Scope
+    {
+        mesh = weapons/parts/scopes|LRX12X_Scope,
+        texture = weapons/parts/scopes/LRX12X_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model PL4_Sight
+    {
+        mesh = weapons/parts/scopes|PL4_Sight,
+        texture = weapons/parts/scopes/PL4_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model PM2_Sight
+    {
+        mesh = weapons/parts/scopes|PM2_Sight,
+        texture = weapons/parts/scopes/PM2_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model PS1_Sight
+    {
+        mesh = weapons/parts/scopes|PS1_Sight,
+        texture = weapons/parts/scopes/PS1_Sight,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model PRL1_Scope
+    {
+        mesh = weapons/parts/scopes|PRL1_Scope,
+        texture = weapons/parts/scopes/PRL1_Scope,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+}

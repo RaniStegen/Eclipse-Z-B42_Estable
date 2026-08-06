@@ -1,0 +1,70 @@
+module MarzGuns
+{
+    item 3006Clip8
+    {
+        AmmoType         = marzguns:bullet_3006,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 3006Clip8,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 8,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.05,
+        WeightModifier   = 0.05,
+        StaticModel      = MarzGuns.3006Clip8,
+        WorldStaticModel = MarzGuns.3006Clip8,
+    }
+    
+    item 762x51Magazine20_M14
+    {
+        AmmoType         = marzguns:bullet_762x51,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 762x51Magazine20_M14,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        StaticModel      = MarzGuns.762x51Magazine20_M14,
+        WorldStaticModel = MarzGuns.762x51Magazine20_M14,
+    }
+    
+    item 762x51Magazine20_FAL
+    {
+        AmmoType         = marzguns:bullet_762x51,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 762x51Magazine20_FAL,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        StaticModel      = MarzGuns.762x51Magazine20_FAL,
+        WorldStaticModel = MarzGuns.762x51Magazine20_FAL,
+    }
+    
+    item 762x51Magazine20_G3
+    {
+        AmmoType         = marzguns:bullet_762x51,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        Icon             = 762x51Magazine20_G3,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Clip,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        StaticModel      = MarzGuns.762x51Magazine20_G3,
+        WorldStaticModel = MarzGuns.762x51Magazine20_G3,
+    }
+}

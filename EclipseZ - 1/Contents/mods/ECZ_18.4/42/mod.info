@@ -1,0 +1,8 @@
+name=ECZ_18.4
+id=ECZ_18.4
+description=
+poster=poster.png
+icon=icon.png
+modversion=1.1.0
+require=ECZ_18.2
+loadModAfter=ECZ_18.2,ECZ_18.3

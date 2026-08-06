@@ -1,7 +1,5 @@
 module LC
 {
-    imports { Base }
-
     model Ground_Goo_Model
     {
         mesh = WorldItems/Ground_Goo,

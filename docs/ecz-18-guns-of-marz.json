@@ -1,0 +1,46 @@
+{
+  "family": "ECZ_18",
+  "target": "Project Zomboid 42.20.0",
+  "redistribution_permission": "Confirmado por el propietario del repositorio el 30 de julio de 2026.",
+  "load_order": [
+    {
+      "ecz_id": "ECZ_18.1",
+      "name": "Hot Brass",
+      "source_workshop_id": "3610677934",
+      "source_mod_id": "HBVCEFb42",
+      "source_version_layer": "42.15",
+      "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934"
+    },
+    {
+      "ecz_id": "ECZ_18.2",
+      "name": "Gunworks Framework",
+      "source_workshop_id": "3722064198",
+      "source_mod_id": "SWMG",
+      "source_version_layer": "42.13",
+      "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722064198"
+    },
+    {
+      "ecz_id": "ECZ_18.3",
+      "name": "Guns of Marz",
+      "source_workshop_id": "3722134990",
+      "source_mod_id": "MarzGuns",
+      "source_version_layer": "42.16",
+      "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990"
+    },
+    {
+      "ecz_id": "ECZ_18.4",
+      "name": "Black Powder Gunsmithing",
+      "source_workshop_id": "3766140920",
+      "source_mod_id": "BlackPowderGunsmithing",
+      "source_version_layer": "42",
+      "source_page": "https://steamcommunity.com/sharedfiles/filedetails/?id=3766140920"
+    }
+  ],
+  "notes": [
+    "Los nombres técnicos internos SWMG, HBVCEF y MarzGuns se conservan porque forman parte de módulos, objetos y mensajes de red.",
+    "Las comprobaciones de mods activos y los manifiestos se adaptan a los IDs ECZ sin alterar los espacios de nombres internos.",
+    "Los cuatro manifiestos usan los iconos y pósteres normalizados de Eclipse-Z y no incluyen descripción.",
+    "Black Powder Gunsmithing exige Gunworks y se carga después de ECZ_18.2 y ECZ_18.3.",
+    "ECZ_7.2 era una versión anterior del mismo Black Powder Gunsmithing y se retiró para evitar módulos, objetos y registros de munición duplicados."
+  ]
+}

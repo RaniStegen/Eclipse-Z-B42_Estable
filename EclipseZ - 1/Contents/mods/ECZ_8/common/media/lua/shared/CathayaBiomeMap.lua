@@ -1,0 +1,1 @@
+getWorld():setMap('Cathaya Valley2.0'..';'..getWorld():getMap())

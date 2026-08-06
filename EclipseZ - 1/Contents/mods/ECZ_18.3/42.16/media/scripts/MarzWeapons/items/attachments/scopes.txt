@@ -1,0 +1,309 @@
+module MarzGuns
+{
+    item Booster_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Booster_Scope,
+        Weight           = 0.3,
+        WeightModifier   = 0.3,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = BoosterScope,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Booster_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Booster_Scope_Off
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Booster_Scope_Off,
+        Weight           = 0.3,
+        WeightModifier   = 0.3,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = BoosterScope,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.Booster_Scope_Off,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    /*-----Short Sights-----*/
+    item ReflexS2_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = ReflexS2_Sight,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.ReflexS2_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Kobra_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Kobra_Sight,
+        Weight           = 0.22,
+        WeightModifier   = 0.22,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.Kobra_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item OKP3_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = OKP3_Sight,
+        Weight           = 0.4,
+        WeightModifier   = 0.4,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.OKP3_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item JS14_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = JS14_Sight,
+        Weight           = 0.44,
+        WeightModifier   = 0.44,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.JS14_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item EXPS3_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = EXPS3_Sight,
+        Weight           = 0.45,
+        WeightModifier   = 0.45,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.EXPS3_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item EXPS1_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = EXPS1_Sight,
+        Weight           = 0.45,
+        WeightModifier   = 0.45,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 22.0,
+        WorldStaticModel = MarzGuns.EXPS1_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item Aimpoint_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = Aimpoint_Sight,
+        Weight           = 0.45,
+        WeightModifier   = 0.45,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.Aimpoint_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    /*-----Mid Range-----*/
+    
+    item LR4X_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = LR4X_Scope,
+        Weight           = 0.8,
+        WeightModifier   = 0.8,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.LR4X_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item TA28_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = TA28_Scope,
+        Weight           = 0.82,
+        WeightModifier   = 0.82,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.TA28_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item ElcanX2_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = ElcanX2_Scope,
+        Weight           = 0.9,
+        WeightModifier   = 0.9,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.ElcanX2_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    /*-----Long range rifle Scopes-----*/
+    
+    item TR06X_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = TR06X_Scope,
+        Weight           = 1.0,
+        WeightModifier   = 1.0,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.TR06X_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PSO1_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PSO1_Scope,
+        Weight           = 1.1,
+        WeightModifier   = 1.1,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.PSO1_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item LR10X_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = LR10X_Scope,
+        Weight           = 1.2,
+        WeightModifier   = 1.2,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.LR10X_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item LRX12X_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = LRX12X_Scope,
+        Weight           = 1.2,
+        WeightModifier   = 1.2,
+        MountOn          = MarzGuns.FakeItemRifles,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.LRX12X_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    /*-----Pistols Scopes-----*/
+    
+    item PL4_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PL4_Sight,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.PL4_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PS1_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PS1_Sight,
+        Weight           = 0.15,
+        WeightModifier   = 0.15,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.PS1_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PM2_Sight
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PM2_Sight,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.PM2_Sight,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+    
+    item PRL1_Scope
+    {
+        DisplayCategory  = WeaponPart,
+        ItemType         = base:weaponpart,
+        Icon             = PRL1_Scope,
+        Weight           = 0.4,
+        WeightModifier   = 0.4,
+        MountOn          = MarzGuns.FakeItemPistols,
+        PartType         = Scope,
+        MetalValue       = 25.0,
+        WorldStaticModel = MarzGuns.PRL1_Scope,
+        CanAttach        = ItemCodeOnTest.hasScrewdriver,
+        CanDetach        = ItemCodeOnTest.hasScrewdriver,
+    }
+}

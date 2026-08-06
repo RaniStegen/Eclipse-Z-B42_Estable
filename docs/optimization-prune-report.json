@@ -1,0 +1,26 @@
+{
+  "target": "Project Zomboid 42.20.0",
+  "applied": true,
+  "filesRemovedNet": 21230,
+  "bytesRemovedNet": 4632644214,
+  "gibRemovedNet": 4.314,
+  "activeIds": 78,
+  "removedIds": [
+    "ECZ2_17",
+    "ECZ3_8",
+    "ECZ_8.3",
+    "ECZ_8.4",
+    "ECZ_8.5",
+    "ECZ_7.2"
+  ],
+  "renamedIds": {
+    "ECZ_8.2": "ECZ_T1"
+  },
+  "strategy": [
+    "Se conserva únicamente la capa numérica más reciente compatible de cada mod.",
+    "Se retiran capas heredadas de media y Resources cuando existe una capa moderna.",
+    "Los paquetes de tiles se conservan exclusivamente bajo los IDs ECZ_T1 a ECZ_T7, sin duplicados cruzados.",
+    "Se eliminan artefactos de desarrollo que no forman parte del mod en ejecución."
+  ],
+  "recovery": "Todos los elementos retirados permanecen recuperables desde el historial de Git."
+}

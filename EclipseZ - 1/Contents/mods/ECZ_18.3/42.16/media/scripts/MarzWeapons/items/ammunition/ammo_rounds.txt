@@ -1,0 +1,340 @@
+module MarzGuns
+{
+    item 12Gauge_Shell_Buckshot
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.031,
+        Icon             = 12Gauge_Shell_Red,
+        count            = 6,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.12Gauge_Shell_Red,
+        Tags             = base:ammo;base:shotgunshell;marzguns:ammo25,
+        AmmoType         = marzguns:shell_12g_buckshot,
+    }
+    
+    item 12Gauge_Shell_Slug
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.031,
+        Icon             = 12Gauge_Shell_Green,
+        count            = 6,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.12Gauge_Shell_Green,
+        Tags             = base:ammo;base:shotgunshell;marzguns:ammo25,
+        AmmoType         = marzguns:shell_12g_slug,
+    }
+    
+    item 9x19_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.009,
+        Icon             = 9x19_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.9x19_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_9x19,
+    }
+    
+    item 45_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0145,
+        Icon             = 45_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.45_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_45,
+    }
+    
+    item 38_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.01,
+        Icon             = 38_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.38_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_38,
+    }
+    
+    item 44_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.016,
+        Icon             = 44_Round_Base,
+        count            = 3,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.44_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_44,
+    }
+    
+    item 50_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.024,
+        Icon             = 50_Round_Base,
+        count            = 3,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.50_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_50,
+    }
+    
+    item 762x51_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0165,
+        Icon             = 762x51_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.762x51_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_762x51,
+    }
+    
+    item 308_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0175,
+        Icon             = 308_Round,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.308_Round,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_308,
+    }
+    
+    item 762x54_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.016,
+        Icon             = 762x54_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.762x54_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_762x54,
+    }
+    
+    item 556x45_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 556x45_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.556x45_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_556x45,
+    }
+    
+    item 556x45_Bullet_HollowPoint
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 556x45_Round_HP,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.556x45_Round_HP,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_556x45_hollow_point,
+    }
+    
+    item 556x45_Bullet_ArmorPiercing
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 556x45_Round_AP,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.556x45_Round_AP,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_556x45_armor_piercing,
+    }
+    
+    item 556x45_Bullet_Subsonic
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 556x45_Round_SS,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.556x45_Round_SS,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_556x45_subsonic,
+    }
+    
+    item 556x45_Bullet_Overpressured
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 556x45_Round_OP,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.556x45_Round_OP,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_556x45_overpressured,
+    }
+    
+    item 223_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0085,
+        Icon             = 223_Round,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.223_Round,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_223,
+    }
+    
+    item 545x39_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.007,
+        Icon             = 545x39_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.545x39_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_545x39,
+    }
+    
+    item 762x39_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.012,
+        Icon             = 762x39_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.762x39_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_762x39,
+    }
+    
+    item 9x39_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0115,
+        Icon             = 9x39_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.9x39_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_9x39,
+    }
+    
+    item 3006_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.019,
+        Icon             = 3006_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.3006_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_3006,
+    }
+    
+    item 3030_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.015,
+        Icon             = 3030_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.3030_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_3030,
+    }
+    
+    item 357_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.0115,
+        Icon             = 357_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.357_Round_Base,
+        Tags             = base:ammo;marzguns:ammo50,
+        AmmoType         = marzguns:bullet_357,
+    }
+    
+    item 4570_Bullet
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.023,
+        Icon             = 4570_Round_Base,
+        count            = 5,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.4570_Round_Base,
+        Tags             = base:ammo;marzguns:ammo20,
+        AmmoType         = marzguns:bullet_4570,
+    }
+    
+    item 40mm_Round_Buckshot
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.16,
+        Icon             = 40mm_Round_Base,
+        count            = 6,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.40mm_Round_Base,
+        Tags             = base:ammo;marzguns:ammo10,
+        AmmoType         = marzguns:round_40mm_buckshot,
+    }
+    
+    item 40mm_Round_HE
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.16,
+        Icon             = 40mm_Round_Base,
+        count            = 6,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.40mm_Round_Base,
+        Tags             = base:ammo;marzguns:ammo10,
+        AmmoType         = marzguns:round_40mm_he,
+    }
+    
+    item 40mm_Round_Incendiary
+    {
+        DisplayCategory  = Ammo,
+        ItemType         = base:normal,
+        Weight           = 0.16,
+        Icon             = 40mm_Round_Base,
+        count            = 6,
+        MetalValue       = 1.0,
+        WorldStaticModel = MarzGuns.40mm_Round_Base,
+        Tags             = base:ammo;marzguns:ammo10,
+        AmmoType         = marzguns:round_40mm_incendiary,
+    }
+}

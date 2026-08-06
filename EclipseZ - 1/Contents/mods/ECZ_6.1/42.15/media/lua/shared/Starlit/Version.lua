@@ -1,4 +1,4 @@
-local modInfo = getModInfoByID("StarlitLibrary")
+local modInfo = getModInfoByID("ECZ_6.1") or getModInfoByID("StarlitLibrary")
 
 local POPUP_HEIGHT = 100
 local STEAM_ENABLED = getSteamModeActive()
@@ -16,7 +16,7 @@ local Version = {}
 ---@doctype const
 ---@type string
 ---@readonly
-Version.VERSION_STRING = modInfo:getModVersion()
+Version.VERSION_STRING = (modInfo and modInfo:getModVersion()) or "1.5.0"
 
 do
     local major, minor, patch = string.match(Version.VERSION_STRING, "(%d+)%.(%d+)%.(%d+)")

@@ -3,3 +3,5 @@ id=ECZ_18.1
 description=
 poster=poster.png
 icon=icon.png
+author=Marz
+loadModBefore=ECZ_18.2,ECZ_18.3,ECZ_18.4

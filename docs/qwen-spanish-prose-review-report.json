@@ -1,0 +1,7 @@
+{
+  "model": "qwen3.5:latest",
+  "selected": 1597,
+  "reviewed": 1597,
+  "pending": 0,
+  "policy": "docs/es-es-translation-style-guide.md"
+}

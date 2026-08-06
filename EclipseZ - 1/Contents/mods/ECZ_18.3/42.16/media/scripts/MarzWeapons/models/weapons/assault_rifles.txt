@@ -1,0 +1,1464 @@
+module MarzGuns
+{
+    model AR15
+    {
+        mesh = weapons/firearms/M16A2|M16A2_BODY,
+        texture = weapons/firearms/assault_rifles/AR15,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4966 0.0247,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3861 0.0045,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2637 0.0065,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2947 0.0013,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2383 0.0057,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4565 0.0244,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0237 0.3142 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0250 0.3168 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M16A2
+    {
+        mesh = weapons/firearms/M16A2|M16A2_BODY,
+        texture = weapons/firearms/assault_rifles/M16A2,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4966 0.0247,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3861 0.0045,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2637 0.0065,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2947 0.0013,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2383 0.0057,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4565 0.0244,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1082 0.0672,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0237 0.3142 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0250 0.3168 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M16A3
+    {
+        mesh = weapons/firearms/M16A2|M16A2_BODY,
+        texture = weapons/firearms/assault_rifles/M16A3,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4966 0.0247,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3861 0.0045,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2637 0.0065,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0182 0.3015 0.0265,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2947 0.0013,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2383 0.0057,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4565 0.0244,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0237 0.3142 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0250 0.3168 0.0260,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M16A2_BOLT
+    {
+        mesh = weapons/firearms/M16A2|M16A2_BOLT,
+        texture = weapons/firearms/assault_rifles/M16A2,
+    }
+    model M16A1
+    {
+        mesh = weapons/firearms/M16A1|M16A1_BODY,
+        texture = weapons/firearms/assault_rifles/M16A1,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4768 0.0247,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.3861 0.0045,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2637 0.0101,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2947 0.0051,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2383 0.0057,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4565 0.0244,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M16A1_BOLT
+    {
+        mesh = weapons/firearms/M16A1|M16A1_BOLT,
+        texture = weapons/firearms/assault_rifles/M16A1,
+    }
+    model M16A2_M203
+    {
+        mesh = weapons/firearms/M16A2_M203|M16A2_M203_BODY,
+        texture = weapons/firearms/assault_rifles/M16A2_M203,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4966 0.0247,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4565 0.0244,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M16A2_M203_BOLT
+    {
+        mesh = weapons/firearms/M16A2_M203|M16A2_M203_BOLT,
+        texture = weapons/firearms/assault_rifles/M16A2_M203,
+    }
+    model CAR15
+    {
+        mesh = weapons/firearms/CAR15|CAR15_BODY,
+        texture = weapons/firearms/assault_rifles/CAR15,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4001 0.0258,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0473 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment stock_folded
+        {
+            offset = 0.0000 0.0538 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2074 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2043 0.0058,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0257 0.2175 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0269 0.2168 0.0254,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.3595 0.0241,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model CAR15_BOLT
+    {
+        mesh = weapons/firearms/CAR15|CAR15_BOLT,
+        texture = weapons/firearms/assault_rifles/CAR15,
+    }
+    model CAR15_STOCK
+    {
+        mesh = weapons/firearms/CAR15|CAR15_STOCK,
+        texture = weapons/firearms/assault_rifles/CAR15,
+    }
+    model XM177
+    {
+        mesh = weapons/firearms/XM177|XM177_BODY,
+        texture = weapons/firearms/assault_rifles/XM177,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4001 0.0258,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0473 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment stock_folded
+        {
+            offset = 0.0000 0.0538 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2074 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2043 0.0058,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0257 0.2175 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0269 0.2168 0.0254,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model XM177_BOLT
+    {
+        mesh = weapons/firearms/XM177|XM177_BOLT,
+        texture = weapons/firearms/assault_rifles/XM177,
+    }
+    model XM177_STOCK
+    {
+        mesh = weapons/firearms/XM177|XM177_STOCK,
+        texture = weapons/firearms/assault_rifles/XM177,
+    }
+    model M4A1
+    {
+        mesh = weapons/firearms/M4A1|M4A1_BODY,
+        texture = weapons/firearms/assault_rifles/M4A1,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4001 0.0258,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1030 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0473 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment stock_folded
+        {
+            offset = 0.0000 0.0538 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2074 0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0199 0.2075 0.0257,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0870 0.0646,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1092 0.0670,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0581 0.0677,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2043 0.0058,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0257 0.2175 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0269 0.2168 0.0254,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.3599 0.0243,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M4A1_BOLT
+    {
+        mesh = weapons/firearms/M4A1|M4A1_BOLT,
+        texture = weapons/firearms/assault_rifles/M4A1,
+    }
+    model M4A1_STOCK
+    {
+        mesh = weapons/firearms/M4A1|M4A1_STOCK,
+        texture = weapons/firearms/assault_rifles/M4A1,
+    }
+    model FNC
+    {
+        mesh = weapons/firearms/FNC|FNC_BODY,
+        texture = weapons/firearms/assault_rifles/FNC,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4575 0.0267,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1142 0.0159,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0431 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1078 0.0495,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1305 0.0533,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0693 0.0533,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model FNC_BOLT
+    {
+        mesh = weapons/firearms/FNC|FNC_BOLT,
+        texture = weapons/firearms/assault_rifles/FNC,
+    }
+    model FNC_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/FNC|FNC_STOCK_FOLDED,
+        texture = weapons/firearms/assault_rifles/FNC,
+    }
+    model FNC_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/FNC|FNC_STOCK_DEPLOYED,
+        texture = weapons/firearms/assault_rifles/FNC,
+    }
+    model M4
+    {
+        mesh = weapons/firearms/M4|M4_BODY,
+        texture = weapons/firearms/assault_rifles/M4,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3746 0.0351,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1102 0.0137,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1325 0.0575,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0732 0.0569,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2229 0.0166,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0225 0.2324 0.0353,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0227 0.2340 0.0349,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.2384 0.0171,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.3381 0.0358,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model G36C
+    {
+        mesh = weapons/firearms/G36C|G36C_BODY,
+        texture = weapons/firearms/assault_rifles/G36C,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3011 0.0239,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1101 0.0165,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0497 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1602 0.0660,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1008 0.0663,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2447 -0.0039,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.2906 0.0238,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0126 0.2119 0.0248,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0126 0.2119 0.0248,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0194 0.2274 0.0239,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0186 0.2442 0.0248,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model G36C_BOLT
+    {
+        mesh = weapons/firearms/G36C|G36C_BOLT,
+        texture = weapons/firearms/assault_rifles/G36C,
+    }
+    model G36C_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/G36C|G36C_STOCK_DEPLOYED,
+        texture = weapons/firearms/assault_rifles/G36C,
+    }
+    model G36C_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/G36C|G36C_STOCK_FOLDED,
+        texture = weapons/firearms/assault_rifles/G36C,
+    }
+    model G36
+    {
+        mesh = weapons/firearms/G36|G36_BODY,
+        texture = weapons/firearms/assault_rifles/G36,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4668 0.0237,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1101 0.0165,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0497 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1602 0.0660,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1008 0.0663,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2372 0.0016,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4464 0.0238,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2571 0.0047,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0121 0.2682 0.0213,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0121 0.2682 0.0213,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0190 0.2794 0.0207,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0188 0.2751 0.0209,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model G36_BOLT
+    {
+        mesh = weapons/firearms/G36|G36_BOLT,
+        texture = weapons/firearms/assault_rifles/G36,
+    }
+    model G36_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/G36|G36_STOCK_DEPLOYED,
+        texture = weapons/firearms/assault_rifles/G36,
+    }
+    model G36_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/G36|G36_STOCK_FOLDED,
+        texture = weapons/firearms/assault_rifles/G36,
+    }
+    model AKS74U
+    {
+        mesh = weapons/firearms/AKS74U|AKS74U_BODY,
+        texture = weapons/firearms/assault_rifles/AKS74U,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3449 0.0146,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1163 -0.0014,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0823 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1346 0.0503,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0776 0.0493,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.3303 0.0137,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2206 -0.0071,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2225 -0.0090,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AKS74U_BOLT
+    {
+        mesh = weapons/firearms/AKS74U|AKS74U_BOLT,
+        texture = weapons/firearms/assault_rifles/AKS74U,
+    }
+    model AKS74U_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/AKS74U|AKS74U_STOCK_DEPLOYED,
+        texture = weapons/firearms/assault_rifles/AKS74U,
+    }
+    model AKS74U_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/AKS74U|AKS74U_STOCK_FOLDED,
+        texture = weapons/firearms/assault_rifles/AKS74U,
+    }
+    model AK74
+    {
+        mesh = weapons/firearms/AK74|AK74_BODY,
+        texture = weapons/firearms/assault_rifles/AK74,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4784 0.0130,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1163 -0.0014,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0764 0.0225,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1095 0.0471,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0527 0.0462,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4446 0.0148,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AK74_BOLT
+    {
+        mesh = weapons/firearms/AK74|AK74_BOLT,
+        texture = weapons/firearms/assault_rifles/AK74,
+    }
+    model ASVAL
+    {
+        mesh = weapons/firearms/ASVAL|ASVAL_BODY,
+        texture = weapons/firearms/assault_rifles/ASVAL,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4455 0.0335,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1379 0.0176,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0481 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1456 0.0386,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1908 0.0650,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1337 0.0634,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.2530 0.0170,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.2554 0.0176,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_left
+        {
+            offset = 0.0149 0.2529 0.0321,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_right
+        {
+            offset = -0.0149 0.2529 0.0321,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser_right
+        {
+            offset = -0.0216 0.2710 0.0362,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment light_left
+        {
+            offset = 0.0221 0.2699 0.0372,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model ASVAL_BOLT
+    {
+        mesh = weapons/firearms/ASVAL|ASVAL_BOLT,
+        texture = weapons/firearms/assault_rifles/ASVAL,
+    }
+    model ASVAL_STOCK_DEPLOYED
+    {
+        mesh = weapons/firearms/ASVAL|ASVAL_STOCK_DEPLOYED,
+        texture = weapons/firearms/assault_rifles/ASVAL,
+    }
+    model ASVAL_STOCK_FOLDED
+    {
+        mesh = weapons/firearms/ASVAL|ASVAL_STOCK_FOLDED,
+        texture = weapons/firearms/assault_rifles/ASVAL,
+    }
+    model FAMAS
+    {
+        mesh = weapons/firearms/FAMAS|FAMAS_BODY,
+        texture = weapons/firearms/assault_rifles/FAMAS,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3158 0.0181,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 -0.0763 0.0146,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0611 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0474 0.0820,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_down
+        {
+            offset = 0.0000 0.1686 -0.0083,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0689 0.0852,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.2818 0.0177,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bayonet
+        {
+            offset = 0.0000 0.2329 0.0381,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+        
+        attachment foregrip
+        {
+            offset = 0.0000 0.1803 -0.0107,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model FAMAS_BOLT
+    {
+        mesh = weapons/firearms/FAMAS|FAMAS_BOLT,
+        texture = weapons/firearms/assault_rifles/FAMAS,
+    }
+    model AK47
+    {
+        mesh = weapons/firearms/AK47|AK47_BODY,
+        texture = weapons/firearms/assault_rifles/AK47,
+        cullFace = None,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4336 0.0167,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment bolt_fired
+        {
+            offset = 0.0000 -0.0470 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.1185 -0.0014,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0834 0.0216,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1395 0.0480,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.0805 0.0475,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.4239 0.0170,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AK47_BOLT
+    {
+        mesh = weapons/firearms/AK47|AK47_BOLT,
+        texture = weapons/firearms/assault_rifles/AK47,
+    }
+}

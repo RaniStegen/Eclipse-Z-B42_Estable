@@ -1,0 +1,32 @@
+module MarzGuns
+{
+    model Shellholder
+    {
+        mesh = weapons/parts/custom|Shellholder,
+        texture = weapons/parts/custom/Shellholder,
+    }
+    
+    model Beretta_Stock_Deployed
+    {
+        mesh = weapons/parts/custom|Beretta_Stock_Deployed,
+        texture = weapons/parts/custom/Beretta_Stock,
+    }
+    
+    model Beretta_Stock_Folded
+    {
+        mesh = weapons/parts/custom|Beretta_Stock_Folded,
+        texture = weapons/parts/custom/Beretta_Stock,
+    }
+    
+    model M203
+    {
+        mesh = weapons/parts/custom|M203,
+        texture = weapons/parts/custom/M203,
+    }
+    
+    model VP70M_Stock
+    {
+        mesh = weapons/firearms/VP70M|VP70M_Stock,
+        texture = weapons/parts/custom/VP70M_Stock,
+    }
+}

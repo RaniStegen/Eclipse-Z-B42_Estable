@@ -1,7 +1,9 @@
-name=ECZ_T4
-id=ECZ_T4
-description=
+name=ECZ_T2 - Simon MD's Tiles
+id=ECZ_T2
+description=Paquete independiente de Simon MD's Tiles preparado para Build 42.20.
 poster=poster.png
 icon=icon.png
+versionMin=42.20.0
+versionMax=43.0.0
 pack=SimonMDsTiles
 tiledef=SimonMDsTiles 3333

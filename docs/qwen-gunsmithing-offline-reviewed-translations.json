@@ -1,0 +1,152 @@
+{
+  "itemname::Gunsmithing.LeadIngot": {
+    "category": "itemname",
+    "key": "Gunsmithing.LeadIngot",
+    "file": "ItemName.json",
+    "value": "Ingote de plomo"
+  },
+  "itemname::Gunsmithing.LeadOre": {
+    "category": "itemname",
+    "key": "Gunsmithing.LeadOre",
+    "file": "ItemName.json",
+    "value": "Mineral de plomo"
+  },
+  "itemname::Gunsmithing.LeadOre_Crushed": {
+    "category": "itemname",
+    "key": "Gunsmithing.LeadOre_Crushed",
+    "file": "ItemName.json",
+    "value": "Mineral de plomo triturado"
+  },
+  "itemname::Gunsmithing.PaperCartridge_Ball": {
+    "category": "itemname",
+    "key": "Gunsmithing.PaperCartridge_Ball",
+    "file": "ItemName.json",
+    "value": "Cartucho de papel (bala esférica)"
+  },
+  "itemname::Gunsmithing.PaperCartridge_Bullet": {
+    "category": "itemname",
+    "key": "Gunsmithing.PaperCartridge_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho de papel (bala Minié)"
+  },
+  "recipes::Gunsmithing_CrushLeadOre": {
+    "category": "recipes",
+    "key": "Gunsmithing_CrushLeadOre",
+    "file": "Recipes.json",
+    "value": "Triturar mineral de plomo"
+  },
+  "recipes::Gunsmithing_KnapFlintFlakes": {
+    "category": "recipes",
+    "key": "Gunsmithing_KnapFlintFlakes",
+    "file": "Recipes.json",
+    "value": "Tallar lascas de sílex"
+  },
+  "recipes::Gunsmithing_MakePaperCartridgeBall": {
+    "category": "recipes",
+    "key": "Gunsmithing_MakePaperCartridgeBall",
+    "file": "Recipes.json",
+    "value": "Fabricar cartuchos de papel (bala esférica)"
+  },
+  "recipes::Gunsmithing_MakePaperCartridgeBullet": {
+    "category": "recipes",
+    "key": "Gunsmithing_MakePaperCartridgeBullet",
+    "file": "Recipes.json",
+    "value": "Fabricar cartuchos de papel (bala Minié)"
+  },
+  "recipes::Gunsmithing_PullBallFromCartridge": {
+    "category": "recipes",
+    "key": "Gunsmithing_PullBallFromCartridge",
+    "file": "Recipes.json",
+    "value": "Extraer la bala esférica del cartucho"
+  },
+  "recipes::Gunsmithing_PullBulletFromCartridge": {
+    "category": "recipes",
+    "key": "Gunsmithing_PullBulletFromCartridge",
+    "file": "Recipes.json",
+    "value": "Extraer la bala Minié del cartucho"
+  },
+  "recipes::Gunsmithing_RipPagesFromBook": {
+    "category": "recipes",
+    "key": "Gunsmithing_RipPagesFromBook",
+    "file": "Recipes.json",
+    "value": "Arrancar páginas del libro"
+  },
+  "recipes::Gunsmithing_SalvageDoubleBarrel": {
+    "category": "recipes",
+    "key": "Gunsmithing_SalvageDoubleBarrel",
+    "file": "Recipes.json",
+    "value": "Fundir escopeta de dos cañones"
+  },
+  "recipes::Gunsmithing_SalvageLongarm": {
+    "category": "recipes",
+    "key": "Gunsmithing_SalvageLongarm",
+    "file": "Recipes.json",
+    "value": "Fundir arma de fuego"
+  },
+  "recipes::Gunsmithing_SalvageRevolver": {
+    "category": "recipes",
+    "key": "Gunsmithing_SalvageRevolver",
+    "file": "Recipes.json",
+    "value": "Fundir revólver"
+  },
+  "recipes::Gunsmithing_SeatBallInCartridge": {
+    "category": "recipes",
+    "key": "Gunsmithing_SeatBallInCartridge",
+    "file": "Recipes.json",
+    "value": "Introducir la bala esférica en el cartucho"
+  },
+  "recipes::Gunsmithing_SeatBulletInCartridge": {
+    "category": "recipes",
+    "key": "Gunsmithing_SeatBulletInCartridge",
+    "file": "Recipes.json",
+    "value": "Introducir la bala Minié en el cartucho"
+  },
+  "recipes::Gunsmithing_SmeltGunBarrel": {
+    "category": "recipes",
+    "key": "Gunsmithing_SmeltGunBarrel",
+    "file": "Recipes.json",
+    "value": "Fundir cañón de arma de fuego"
+  },
+  "recipes::Gunsmithing_SmeltLeadIngot": {
+    "category": "recipes",
+    "key": "Gunsmithing_SmeltLeadIngot",
+    "file": "Recipes.json",
+    "value": "Fundir lingote de plomo"
+  },
+  "recipes::Gunsmithing_Strip1875Gun": {
+    "category": "recipes",
+    "key": "Gunsmithing_Strip1875Gun",
+    "file": "Recipes.json",
+    "value": "Desmontar Springfield Trapdoor para piezas"
+  },
+  "recipes::Gunsmithing_StripDoubleBarrel": {
+    "category": "recipes",
+    "key": "Gunsmithing_StripDoubleBarrel",
+    "file": "Recipes.json",
+    "value": "Desmontar escopeta de doble cañón para piezas"
+  },
+  "recipes::Gunsmithing_StripLongarm": {
+    "category": "recipes",
+    "key": "Gunsmithing_StripLongarm",
+    "file": "Recipes.json",
+    "value": "Desmontar arma de fuego para piezas"
+  },
+  "recipes::Gunsmithing_StripRevolver": {
+    "category": "recipes",
+    "key": "Gunsmithing_StripRevolver",
+    "file": "Recipes.json",
+    "value": "Desmontar revólver para piezas"
+  },
+  "tooltip::Tooltip_Gunsmithing_BarrelClean": {
+    "category": "tooltip",
+    "key": "Tooltip_Gunsmithing_BarrelClean",
+    "file": "Tooltip.json",
+    "value": "El cañón ya está limpio."
+  },
+  "tooltip::Tooltip_Gunsmithing_NeedsCleaningSupplies": {
+    "category": "tooltip",
+    "key": "Tooltip_Gunsmithing_NeedsCleaningSupplies",
+    "file": "Tooltip.json",
+    "value": "Necesita grasa de cocina, grasa lubricante o aceite y un trapo."
+  }
+}

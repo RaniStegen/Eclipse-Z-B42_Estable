@@ -1,0 +1,387 @@
+{
+  "policy": "Spanish sentence case; proper names and technical tokens preserved",
+  "spanish_dictionary_used": true,
+  "changed_values": 8301,
+  "changed_words": 16138,
+  "by_file": {
+    "IG_UI.json": 3148,
+    "ItemName.json": 3076,
+    "Recipes.json": 1004,
+    "Sandbox.json": 362,
+    "Moveables.json": 309,
+    "UI.json": 264,
+    "Tooltip.json": 44,
+    "GameSound.json": 30,
+    "Farming.json": 23,
+    "Stash.json": 14,
+    "SurvivalGuide.json": 10,
+    "Moodles.json": 8,
+    "EvolvedRecipeName.json": 3,
+    "Challenge.json": 2,
+    "Print_Text.json": 2,
+    "Fluids.json": 1,
+    "Mod.json": 1
+  },
+  "samples": [
+    {
+      "file": "Challenge.json",
+      "key": "Challenge_Challenge1_desc",
+      "before": "Se les oye acercarse. Hordas de muertos invaden tu solitaria cabaña desde todos los ángulos. La muerte es inevitable, pero tienes una escopeta al alcance de la mano. <LINE> <LINE> Última Resistencia presenta interminables oleadas de zombis cada vez mayores. Sobrevive el mayor tiempo posible a pesar de las circunstancias.",
+      "after": "Se les oye acercarse. Hordas de muertos invaden tu solitaria cabaña desde todos los ángulos. La muerte es inevitable, pero tienes una escopeta al alcance de la mano. <LINE> <LINE> Última resistencia presenta interminables oleadas de zombis cada vez mayores. Sobrevive el mayor tiempo posible a pesar de las circunstancias."
+    },
+    {
+      "file": "Challenge.json",
+      "key": "Challenge_Challenge2_desc",
+      "before": "Un día más, otra cabaña lista para la matanza. Las hordas están encima de ti, y tu muerte será tan dolorosa como espantosa. Así que sal a pelear... <LINE> <LINE> Última Resistencia acumulable presenta oleadas interminables de zombis cada vez mayores. Usa el dinero ganado matando zombis para comprar equipamiento, subir de nivel y reparar tu armamento.",
+      "after": "Un día más, otra cabaña lista para la matanza. Las hordas están encima de ti, y tu muerte será tan dolorosa como espantosa. Así que sal a pelear... <LINE> <LINE> Última resistencia acumulable presenta oleadas interminables de zombis cada vez mayores. Usa el dinero ganado matando zombis para comprar equipamiento, subir de nivel y reparar tu armamento."
+    },
+    {
+      "file": "EvolvedRecipeName.json",
+      "key": "VFX.EarlGrayTeaBag",
+      "before": "Bolsita de té Earl Grey",
+      "after": "Bolsita de té Earl grey"
+    },
+    {
+      "file": "EvolvedRecipeName.json",
+      "key": "VFX.EarlGrayTeaBag_2",
+      "before": "Bolsita de té Earl Grey",
+      "after": "Bolsita de té Earl grey"
+    },
+    {
+      "file": "EvolvedRecipeName.json",
+      "key": "VFX.JarBrusselSproutsOpen",
+      "before": "Tarro abierto de coles de Bruselas",
+      "after": "Tarro abierto de coles de bruselas"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_BlackSage",
+      "before": "Salvia Negra",
+      "after": "Salvia negra"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_BroadleafPlantain",
+      "before": "Llanten De Hoja Ancha",
+      "after": "Llanten de hoja ancha"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_CastIronPlant",
+      "before": "Planta De Hierro Fundido",
+      "after": "Planta de hierro fundido"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_ChineseEvergreen",
+      "before": "Siempreverde Chino",
+      "after": "Siempreverde chino"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Fertilizer_TooMuch",
+      "before": "Si (Demasiado)",
+      "after": "Si (demasiado)"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Greenpeas",
+      "before": "Guisantes Verdes",
+      "after": "Guisantes verdes"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Harvest_Soon",
+      "before": "Casi Listo Para La Cosecha",
+      "after": "Casi listo para la cosecha"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Kale",
+      "before": "Col Rizada",
+      "after": "Col rizada"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Lemongrass",
+      "before": "Hierba De Limon",
+      "after": "Hierba de Limon"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Seed_bearing",
+      "before": "Portador De Semillas",
+      "after": "Portador de semillas"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Slugs",
+      "before": "Babosas Y Caracoles",
+      "after": "Babosas Y caracoles"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_SnakePlant",
+      "before": "Planta Serpiente",
+      "after": "Planta serpiente"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Strawberryplant",
+      "before": "Planta De Fresa",
+      "after": "Planta de fresa"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_SugarBeets",
+      "before": "Remolacha Azucarera",
+      "after": "Remolacha azucarera"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_SweetPotato",
+      "before": "Batatas Dulces",
+      "after": "Batatas dulces"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_BadMonth",
+      "before": "Fuera De Temporada",
+      "after": "Fuera de temporada"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_BestMonth",
+      "before": "Temporada De Siembra - Mejor Mes",
+      "after": "Temporada de siembra - Mejor mes"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_BestMonth2",
+      "before": "Mejor Mes",
+      "after": "Mejor mes"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_InSeason",
+      "before": "Temporada De Siembra",
+      "after": "Temporada de siembra"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_RiskMonth",
+      "before": "Temporada De Siembra - Mes Pobre",
+      "after": "Temporada de siembra - Mes pobre"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Tooltip_RiskMonth2",
+      "before": "Mes Pobre",
+      "after": "Mes pobre"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_Wheat",
+      "before": "Trigo De Invierno",
+      "after": "Trigo de invierno"
+    },
+    {
+      "file": "Farming.json",
+      "key": "Farming_WildGarlic",
+      "before": "Ajo Silvestre",
+      "after": "Ajo silvestre"
+    },
+    {
+      "file": "Fluids.json",
+      "key": "Fluid_Name_VFX_PinotGris",
+      "before": "Pinot Gris",
+      "after": "Pinot gris"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_HumanFootstepGrass",
+      "before": "Pasos (Hierba)",
+      "after": "Pasos (hierba)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_HumanFootstepUpstairs",
+      "before": "Pasos (Piso superior)",
+      "after": "Pasos (piso superior)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_HumanFootstepWood",
+      "before": "Pasos (Madera)",
+      "after": "Pasos (madera)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaAssaultRifle1",
+      "before": "Meta Evento - Disparos de rifles de asalto",
+      "after": "Meta evento - Disparos de rifles de asalto"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaDogBark",
+      "before": "Meta Evento - Ladridos de perro",
+      "after": "Meta evento - Ladridos de perro"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaOwl",
+      "before": "Meta Evento - Buho",
+      "after": "Meta evento - Buho"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaPistol1",
+      "before": "Meta Evento - Disparos de pistola 1",
+      "after": "Meta evento - Disparos de pistola 1"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaPistol2",
+      "before": "Meta Evento - Disparos de pistola 2",
+      "after": "Meta evento - Disparos de pistola 2"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaPistol3",
+      "before": "Meta Evento - Disparos de pistola 3",
+      "after": "Meta evento - Disparos de pistola 3"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaScream",
+      "before": "Meta Evento - Grito",
+      "after": "Meta evento - Grito"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaShotgun1",
+      "before": "Meta Evento - Escopeta",
+      "after": "Meta evento - Escopeta"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_MetaWolfHowl",
+      "before": "Meta Evento - Aullido de lobo",
+      "after": "Meta evento - Aullido de lobo"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_AmbientGuitar",
+      "before": "Oficial: Ambient (Guitar)",
+      "after": "Oficial: Ambient (guitar)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_AmbientPiano",
+      "before": "Oficial: Ambient (Piano)",
+      "after": "Oficial: Ambient (piano)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_DesperateEscape",
+      "before": "Oficial: Desperate Escape",
+      "after": "Oficial: Desperate escape"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_EchoesFromBefore",
+      "before": "Oficial: Ecos de Antes",
+      "after": "Oficial: Ecos de antes"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_FinallyCalm",
+      "before": "Oficial: Finalmente Calma",
+      "after": "Oficial: Finalmente calma"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_MainTheme",
+      "before": "Oficial: Tema Principal",
+      "after": "Oficial: Tema principal"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_OnlyOneWay",
+      "before": "Oficial: Solo Ida",
+      "after": "Oficial: Solo ida"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_TakeStock",
+      "before": "Oficial: Take Stock",
+      "after": "Oficial: Take stock"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_TheInevitable",
+      "before": "Oficial: The Inevitable",
+      "after": "Oficial: The inevitable"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_ThePlan",
+      "before": "Oficial: The Plan",
+      "after": "Oficial: The plan"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_ThinkingOfThePast",
+      "before": "Oficial: Pensando en el Pasado",
+      "after": "Oficial: Pensando en el pasado"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_WWL_Solo",
+      "before": "Oficial: Lo Que Se Perdio (Solo)",
+      "after": "Oficial: Lo que se perdio (solo)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_WhatWasLostActive",
+      "before": "Oficial: Lo Que Se Perdio (Activo)",
+      "after": "Oficial: Lo que se perdio (activo)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_NewMusic_WhatWasLostActive2",
+      "before": "Oficial: Lo que se perdio (Activo 2)",
+      "after": "Oficial: Lo que se perdio (activo 2)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_OldMusic_guitar",
+      "before": "EA: Ambiente (Guitarra)",
+      "after": "EA: Ambiente (guitarra)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_OldMusic_low",
+      "before": "EA: Ambiente (Bajo)",
+      "after": "EA: Ambiente (bajo)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_OldMusic_piano",
+      "before": "EA: Ambiente (Piano)",
+      "after": "EA: Ambiente (piano)"
+    },
+    {
+      "file": "GameSound.json",
+      "key": "GameSound_OldMusic_the_horde",
+      "before": "EA: La Horda",
+      "after": "EA: La horda"
+    },
+    {
+      "file": "IG_UI.json",
+      "key": "IGUI_AACS_Notify_AdoptLimitReached",
+      "before": "[AACS] Se ha alcanzado el límite de adopciones (%1).",
+      "after": "[AACS] se ha alcanzado el límite de adopciones (%1)."
+    }
+  ]
+}

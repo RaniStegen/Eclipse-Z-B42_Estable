@@ -1,0 +1,127 @@
+module MarzGuns
+{
+    model 45Magazine20_THOMPSON
+    {
+        mesh = weapons/magazines/smgs|45Magazine20_THOMPSON,
+        texture = weapons/magazines/smgs/45Magazine20_THOMPSON,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 45Magazine30_THOMPSON
+    {
+        mesh = weapons/magazines/smgs|45Magazine30_THOMPSON,
+        texture = weapons/magazines/smgs/45Magazine30_THOMPSON,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 45Magazine100_THOMPSON
+    {
+        mesh = weapons/magazines/smgs|45Magazine100_THOMPSON,
+        texture = weapons/magazines/smgs/45Magazine100_THOMPSON,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 9x19Magazine20_MP5
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine20_MP5,
+        texture = weapons/magazines/smgs/9x19Magazine20_MP5,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 9x19Magazine25_MP5
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine25_MP5,
+        texture = weapons/magazines/smgs/9x19Magazine25_MP5,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 9x19Magazine30_MP5
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine30_MP5,
+        texture = weapons/magazines/smgs/9x19Magazine30_MP5,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 9x19Magazine60_MP5
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine60_MP5,
+        texture = weapons/magazines/smgs/9x19Magazine60_MP5,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 9x19Magazine100_MP5
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine100_MP5,
+        texture = weapons/magazines/smgs/9x19Magazine100_MP5,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 9x19Magazine20_TEC9
+    {
+        mesh = weapons/magazines/smgs|9x19Magazine20_TEC9,
+        texture = weapons/magazines/smgs/9x19Magazine20_TEC9,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    
+    model 45Magazine20_MAC10
+    {
+        mesh = weapons/magazines/smgs|45Magazine20_MAC10,
+        texture = weapons/magazines/smgs/45Magazine20_MAC10,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+    model 45Magazine30_MAC10
+    {
+        mesh = weapons/magazines/smgs|45Magazine30_MAC10,
+        texture = weapons/magazines/smgs/45Magazine20_MAC10,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 90.0000 0.0000 -90.0000,
+        }
+    }
+}

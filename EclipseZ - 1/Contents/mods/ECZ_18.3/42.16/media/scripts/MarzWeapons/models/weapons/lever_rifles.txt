@@ -1,0 +1,210 @@
+module MarzGuns
+{
+    model W1894
+    {
+        mesh = weapons/firearms/W1894|W1894_BODY,
+        texture = weapons/firearms/lever_rifles/W1894,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4115 0.0295,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1341 0.0384,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1606 0.0418,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1104 0.0419,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model W1894_LEVER
+    {
+        mesh = weapons/firearms/W1894|W1894_LEVER,
+        texture = weapons/firearms/lever_rifles/W1894,
+    }
+    model W1894_LEVER_FIRED
+    {
+        mesh = weapons/firearms/W1894|W1894_LEVER_FIRED,
+        texture = weapons/firearms/lever_rifles/W1894,
+    }
+    model M1895
+    {
+        mesh = weapons/firearms/M1895|M1895_BODY,
+        texture = weapons/firearms/lever_rifles/M1895,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4822 0.0313,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1683 0.0393,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1908 0.0426,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1397 0.0428,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M1895_LEVER
+    {
+        mesh = weapons/firearms/M1895|M1895_LEVER,
+        texture = weapons/firearms/lever_rifles/M1895,
+    }
+    model M1895_LEVER_FIRED
+    {
+        mesh = weapons/firearms/M1895|M1895_LEVER_FIRED,
+        texture = weapons/firearms/lever_rifles/M1895,
+    }
+    model W1887
+    {
+        mesh = weapons/firearms/W1887|W1887_BODY,
+        texture = weapons/firearms/lever_rifles/W1887,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5584 0.0376,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1611 0.0471,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1828 0.0502,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1239 0.0499,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model W1887_LEVER
+    {
+        mesh = weapons/firearms/W1887|W1887_LEVER,
+        texture = weapons/firearms/lever_rifles/W1887,
+    }
+    model W1887_LEVER_FIRED
+    {
+        mesh = weapons/firearms/W1887|W1887_LEVER_FIRED,
+        texture = weapons/firearms/lever_rifles/W1887,
+    }
+    model W1873
+    {
+        mesh = weapons/firearms/W1873|W1873_BODY,
+        texture = weapons/firearms/lever_rifles/W1873,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5060 0.0295,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1611 0.0356,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1710 0.0394,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment booster_scope
+        {
+            offset = 0.0000 0.1173 0.0388,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model W1873_LEVER
+    {
+        mesh = weapons/firearms/W1873|W1873_LEVER,
+        texture = weapons/firearms/lever_rifles/W1873,
+    }
+    model W1873_LEVER_FIRED
+    {
+        mesh = weapons/firearms/W1873|W1873_LEVER_FIRED,
+        texture = weapons/firearms/lever_rifles/W1873,
+    }
+    model W1873_CARBINE
+    {
+        mesh = weapons/firearms/W1873_CARBINE|W1873_CARBINE_BODY,
+        texture = weapons/firearms/lever_rifles/W1873_CARBINE,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3377 0.0297,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+    model W1873_CARBINE_LEVER
+    {
+        mesh = weapons/firearms/W1873_CARBINE|W1873_CARBINE_LEVER,
+        texture = weapons/firearms/lever_rifles/W1873_CARBINE,
+    }
+    model W1873_CARBINE_LEVER_FIRED
+    {
+        mesh = weapons/firearms/W1873_CARBINE|W1873_CARBINE_LEVER_FIRED,
+        texture = weapons/firearms/lever_rifles/W1873_CARBINE,
+    }
+}

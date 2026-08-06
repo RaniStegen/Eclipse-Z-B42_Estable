@@ -1,0 +1,602 @@
+{
+  "challenge::Challenge_AReallyCDDAy_desc": {
+    "category": "challenge",
+    "key": "Challenge_AReallyCDDAy_desc",
+    "file": "Challenge.json",
+    "value": "Sales de la ducha y tropiezas. Estás completamente borracho y tienes un terrible resfriado. <LINE> <LINE> Encima de todo, ¡la casa está en llamas! Hoy definitivamente no es tu día. <LINE> <LINE> Un reto inspirado en A Really Bad Day del impresionante, maravilloso e IMPRESCINDIBLE Cataclysm: Dark Days Ahead"
+  },
+  "challenge::Challenge_AStormIsComingInfoBox": {
+    "category": "challenge",
+    "key": "Challenge_AStormIsComingInfoBox",
+    "file": "Challenge.json",
+    "value": "<CENTRE> Se avecina una incesante tormenta..."
+  },
+  "challenge::Challenge_AStormIsComing_desc": {
+    "category": "challenge",
+    "key": "Challenge_AStormIsComing_desc",
+    "file": "Challenge.json",
+    "value": "Las nubes se ciernen sobre Kentucky. El estruendo de los truenos se oye a lo lejos. <LINE> <LINE> A medida que el cielo se oscurece, los muertos que vagan por las calles se inquietan. <LINE> <LINE> Es una tempestad que aumentará y disminuirá en su magnitud, pero que nunca terminará."
+  },
+  "challenge::Challenge_Challenge1_desc": {
+    "category": "challenge",
+    "key": "Challenge_Challenge1_desc",
+    "file": "Challenge.json",
+    "value": "Se les oye acercarse. Hordas de muertos invaden tu solitaria cabaña desde todos los ángulos. La muerte es inevitable, pero tienes una escopeta al alcance de la mano. <LINE> <LINE> Última Resistencia presenta interminables oleadas de zombis cada vez mayores. Sobrevive el mayor tiempo posible a pesar de las circunstancias."
+  },
+  "challenge::Challenge_Challenge1_name": {
+    "category": "challenge",
+    "key": "Challenge_Challenge1_name",
+    "file": "Challenge.json",
+    "value": "Casa en el bosque - Última batalla"
+  },
+  "challenge::Challenge_Challenge2_WaveStart": {
+    "category": "challenge",
+    "key": "Challenge_Challenge2_WaveStart",
+    "file": "Challenge.json",
+    "value": "Oleada %1 en : %2 (presiona Intro para saltar)"
+  },
+  "challenge::Challenge_Challenge2_desc": {
+    "category": "challenge",
+    "key": "Challenge_Challenge2_desc",
+    "file": "Challenge.json",
+    "value": "Un día más, otra cabaña lista para la matanza. Las hordas están encima de ti, y tu muerte será tan dolorosa como espantosa. Así que sal a pelear... <LINE> <LINE> Última Resistencia acumulable presenta oleadas interminables de zombis cada vez mayores. Usa el dinero ganado matando zombis para comprar equipamiento, subir de nivel y reparar tu armamento."
+  },
+  "challenge::Challenge_Challenge2_name": {
+    "category": "challenge",
+    "key": "Challenge_Challenge2_name",
+    "file": "Challenge.json",
+    "value": "Casa en el bosque - Última batalla acumulable"
+  },
+  "challenge::Challenge_Kingsmouth_desc": {
+    "category": "challenge",
+    "key": "Challenge_Kingsmouth_desc",
+    "file": "Challenge.json",
+    "value": "¡Disfruta de una relajante estancia en la isla de Kingsmouth!"
+  },
+  "challenge::Challenge_OpeningHoursInfoBox": {
+    "category": "challenge",
+    "key": "Challenge_OpeningHoursInfoBox",
+    "file": "Challenge.json",
+    "value": "<CENTRE> El centro comercial abre a las 9AM. <LINE> <LINE> Preparate para la avalancha..."
+  },
+  "challenge::Challenge_OpeningHours_desc": {
+    "category": "challenge",
+    "key": "Challenge_OpeningHours_desc",
+    "file": "Challenge.json",
+    "value": "El centro comercial está rodeado. Hace mucho tiempo, fue un lugar importante en sus vidas. El instinto los ha llevado a sus puertas. Un recuerdo de lo que solían hacer... <LINE> <LINE> Estás solo, pero no por mucho tiempo. A las 9 de la mañana el centro comercial estará preparado para la apertura: las puertas se abrirán y las hordas podrán entrar. <LINE> <LINE> Preparate a recibirlos."
+  },
+  "challenge::Challenge_TheDescendingFogInfoBox": {
+    "category": "challenge",
+    "key": "Challenge_TheDescendingFogInfoBox",
+    "file": "Challenge.json",
+    "value": "<CENTRE> Se está poniendo nebuloso..."
+  },
+  "challenge::Challenge_TheDescendingFog_desc": {
+    "category": "challenge",
+    "key": "Challenge_TheDescendingFog_desc",
+    "file": "Challenge.json",
+    "value": "La gente la vio por primera vez en el agua. Una débil manta blanca sobre el río Ohio. <LINE> <LINE> Comenzó como una neblina. Luego envolvió la ciudad. Los habitantes del pueblo murieron mientras gritaban en la oscuridad. Ahora ellos deambulan por ahí. <LINE> <LINE> Invisibles, inadvertidos e implacables en su búsqueda de los supervivientes."
+  },
+  "challenge::Challenge_WinterIsComingInfoBox": {
+    "category": "challenge",
+    "key": "Challenge_WinterIsComingInfoBox",
+    "file": "Challenge.json",
+    "value": "<CENTRE> En tres días comienza un invierno interminable. <LINE> <LINE> Abrigate..."
+  },
+  "challenge::Challenge_WinterIsComing_desc": {
+    "category": "challenge",
+    "key": "Challenge_WinterIsComing_desc",
+    "file": "Challenge.json",
+    "value": "Estamos a mediados de julio, pero de repente la brisa se vuelve fría. Dentro de solo tres días, el invierno llegará como nunca antes. <LINE> <LINE> Te despiertas en un lugar aislado. Tienes pocas provisiones, y las hordas de zombies pueden ser ralentizadas por el intenso frío, pero no son menos mortíferas. <LINE> <LINE> Abrigate, superviviente..."
+  },
+  "challenge::Challenge_YouHaveOneDayInfoBox": {
+    "category": "challenge",
+    "key": "Challenge_YouHaveOneDayInfoBox",
+    "file": "Challenge.json",
+    "value": "<CENTRE> En 24 horas tu regreso al condado de Knox se convertirá en un infierno..."
+  },
+  "challenge::Challenge_YouHaveOneDay_desc": {
+    "category": "challenge",
+    "key": "Challenge_YouHaveOneDay_desc",
+    "file": "Challenge.json",
+    "value": "Estás de regreso en el condado de Knox. Has vuelto al mapa donde comenzó la infección de Project Zomboid. <LINE> <LINE> Tienes un día de relativa seguridad. Llegará una gran cantidad de zombis y te encontrarán. ¿Dónde te esconderás para resistir de nuevo? ¿Dónde te escondiste la última vez? Será mejor que lo encuentres rápido. <LINE> <LINE> [Nuestro agradecimiento a BobHeckling por recrear el mapa de la versión 0.1.5 con las herramientas actuales de PZ.]"
+  },
+  "contextmenu::ContextMenu_00_01_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_B",
+    "file": "ContextMenu.json",
+    "value": "Última Entrada"
+  },
+  "contextmenu::ContextMenu_00_01_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_F",
+    "file": "ContextMenu.json",
+    "value": "Hot Cross Buns"
+  },
+  "contextmenu::ContextMenu_00_01_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_GA",
+    "file": "ContextMenu.json",
+    "value": "Bébe conmigo solo con tus ojos"
+  },
+  "contextmenu::ContextMenu_00_01_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_GE",
+    "file": "ContextMenu.json",
+    "value": "Bad Moon Rising"
+  },
+  "contextmenu::ContextMenu_00_01_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_GEB",
+    "file": "ContextMenu.json",
+    "value": "Ao Unico"
+  },
+  "contextmenu::ContextMenu_00_01_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_H",
+    "file": "ContextMenu.json",
+    "value": "Vals de la despedida"
+  },
+  "contextmenu::ContextMenu_00_01_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_S",
+    "file": "ContextMenu.json",
+    "value": "Suelta la rienda"
+  },
+  "contextmenu::ContextMenu_00_01_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_01_T",
+    "file": "ContextMenu.json",
+    "value": "Oh Susanna"
+  },
+  "contextmenu::ContextMenu_00_02_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_B",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_00_02_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_F",
+    "file": "ContextMenu.json",
+    "value": "Mary tenía un corderito"
+  },
+  "contextmenu::ContextMenu_00_02_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_GA",
+    "file": "ContextMenu.json",
+    "value": "Las orillas del Don"
+  },
+  "contextmenu::ContextMenu_00_02_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_GE",
+    "file": "ContextMenu.json",
+    "value": "Happy Birthday"
+  },
+  "contextmenu::ContextMenu_00_02_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_GEB",
+    "file": "ContextMenu.json",
+    "value": "Mary tenía un corderito"
+  },
+  "contextmenu::ContextMenu_00_02_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_H",
+    "file": "ContextMenu.json",
+    "value": "Ninguem Explica Deus"
+  },
+  "contextmenu::ContextMenu_00_02_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_K",
+    "file": "ContextMenu.json",
+    "value": "Oxygene Part 4"
+  },
+  "contextmenu::ContextMenu_00_02_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_S",
+    "file": "ContextMenu.json",
+    "value": "Mary, ¿sabías?"
+  },
+  "contextmenu::ContextMenu_00_02_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_02_T",
+    "file": "ContextMenu.json",
+    "value": "Juega con los acordes"
+  },
+  "contextmenu::ContextMenu_00_03_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_B",
+    "file": "ContextMenu.json",
+    "value": "Hierve la col hasta abajo"
+  },
+  "contextmenu::ContextMenu_00_03_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_F",
+    "file": "ContextMenu.json",
+    "value": "Oda a la alegría"
+  },
+  "contextmenu::ContextMenu_00_03_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_GA",
+    "file": "ContextMenu.json",
+    "value": "El flautista de bambú"
+  },
+  "contextmenu::ContextMenu_00_03_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_GE",
+    "file": "ContextMenu.json",
+    "value": "Hombre sin nombre"
+  },
+  "contextmenu::ContextMenu_00_03_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_GEB",
+    "file": "ContextMenu.json",
+    "value": "Oda a la alegría"
+  },
+  "contextmenu::ContextMenu_00_03_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_H",
+    "file": "ContextMenu.json",
+    "value": "Noche de paz"
+  },
+  "contextmenu::ContextMenu_00_03_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_K",
+    "file": "ContextMenu.json",
+    "value": "Caminata de la vida"
+  },
+  "contextmenu::ContextMenu_00_03_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_S",
+    "file": "ContextMenu.json",
+    "value": "Corre con mí"
+  },
+  "contextmenu::ContextMenu_00_03_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_03_T",
+    "file": "ContextMenu.json",
+    "value": "Salta a mi Lou"
+  },
+  "contextmenu::ContextMenu_00_04_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_B",
+    "file": "ContextMenu.json",
+    "value": "Estrellita, estrellita"
+  },
+  "contextmenu::ContextMenu_00_04_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_F",
+    "file": "ContextMenu.json",
+    "value": "Yankee Doodle"
+  },
+  "contextmenu::ContextMenu_00_04_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_GA",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_00_04_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_GE",
+    "file": "ContextMenu.json",
+    "value": "Estrellita, estrellita"
+  },
+  "contextmenu::ContextMenu_00_04_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_GEB",
+    "file": "ContextMenu.json",
+    "value": "Estrellita, estrellita"
+  },
+  "contextmenu::ContextMenu_00_04_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_K",
+    "file": "ContextMenu.json",
+    "value": "La cuenta atrás final"
+  },
+  "contextmenu::ContextMenu_00_04_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_S",
+    "file": "ContextMenu.json",
+    "value": "Los tres reyes del oriente"
+  },
+  "contextmenu::ContextMenu_00_04_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_00_04_T",
+    "file": "ContextMenu.json",
+    "value": "William Tell"
+  },
+  "contextmenu::ContextMenu_01_01_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_B",
+    "file": "ContextMenu.json",
+    "value": "Panecillos sencillos"
+  },
+  "contextmenu::ContextMenu_01_01_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_F",
+    "file": "ContextMenu.json",
+    "value": "Garota de Ipanema"
+  },
+  "contextmenu::ContextMenu_01_01_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_GA",
+    "file": "ContextMenu.json",
+    "value": "Fuego y lluvia"
+  },
+  "contextmenu::ContextMenu_01_01_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_GE",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_01_01_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_GEB",
+    "file": "ContextMenu.json",
+    "value": "Amor hermoso"
+  },
+  "contextmenu::ContextMenu_01_01_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_H",
+    "file": "ContextMenu.json",
+    "value": "Abend Wird Es Wieder"
+  },
+  "contextmenu::ContextMenu_01_01_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_S",
+    "file": "ContextMenu.json",
+    "value": "Auld Lang Syne"
+  },
+  "contextmenu::ContextMenu_01_01_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_01_T",
+    "file": "ContextMenu.json",
+    "value": "Estrellita, estrellita"
+  },
+  "contextmenu::ContextMenu_01_02_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_B",
+    "file": "ContextMenu.json",
+    "value": "Happy Birthday"
+  },
+  "contextmenu::ContextMenu_01_02_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_F",
+    "file": "ContextMenu.json",
+    "value": "Tema de Hedwig"
+  },
+  "contextmenu::ContextMenu_01_02_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_GE",
+    "file": "ContextMenu.json",
+    "value": "Hojas de otoño"
+  },
+  "contextmenu::ContextMenu_01_02_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_GEB",
+    "file": "ContextMenu.json",
+    "value": "Groove de bajo funk"
+  },
+  "contextmenu::ContextMenu_01_02_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_H",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_01_02_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_K",
+    "file": "ContextMenu.json",
+    "value": "Cada aliento que tomas"
+  },
+  "contextmenu::ContextMenu_01_02_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_02_T",
+    "file": "ContextMenu.json",
+    "value": "Noche de paz"
+  },
+  "contextmenu::ContextMenu_01_03_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_B",
+    "file": "ContextMenu.json",
+    "value": "Old MacDonald tenía una granja"
+  },
+  "contextmenu::ContextMenu_01_03_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_F",
+    "file": "ContextMenu.json",
+    "value": "Que nieve"
+  },
+  "contextmenu::ContextMenu_01_03_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_GEB",
+    "file": "ContextMenu.json",
+    "value": "Mi único y único amor"
+  },
+  "contextmenu::ContextMenu_01_03_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_H",
+    "file": "ContextMenu.json",
+    "value": "Auld Lang Syne"
+  },
+  "contextmenu::ContextMenu_01_03_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_K",
+    "file": "ContextMenu.json",
+    "value": "Happy Birthday"
+  },
+  "contextmenu::ContextMenu_01_03_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_S",
+    "file": "ContextMenu.json",
+    "value": "Happy Birthday"
+  },
+  "contextmenu::ContextMenu_01_03_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_03_T",
+    "file": "ContextMenu.json",
+    "value": "El puente de Londres se está cayendo"
+  },
+  "contextmenu::ContextMenu_01_04_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_B",
+    "file": "ContextMenu.json",
+    "value": "Angeline la panadera"
+  },
+  "contextmenu::ContextMenu_01_04_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_F",
+    "file": "ContextMenu.json",
+    "value": "Noche de paz"
+  },
+  "contextmenu::ContextMenu_01_04_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_GA",
+    "file": "ContextMenu.json",
+    "value": "Lágrimas en el cielo"
+  },
+  "contextmenu::ContextMenu_01_04_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_GE",
+    "file": "ContextMenu.json",
+    "value": "Noche de paz"
+  },
+  "contextmenu::ContextMenu_01_04_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_GEB",
+    "file": "ContextMenu.json",
+    "value": "El viajero"
+  },
+  "contextmenu::ContextMenu_01_04_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_K",
+    "file": "ContextMenu.json",
+    "value": "Carrera por el túnel de Terminator"
+  },
+  "contextmenu::ContextMenu_01_04_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_04_S",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_01_05_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_01_05_F",
+    "file": "ContextMenu.json",
+    "value": "Vals de la Danubio Azul"
+  },
+  "contextmenu::ContextMenu_02_01_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_B",
+    "file": "ContextMenu.json",
+    "value": "Cava un hoyo en el prado"
+  },
+  "contextmenu::ContextMenu_02_01_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_GA",
+    "file": "ContextMenu.json",
+    "value": "Pequeña Marta"
+  },
+  "contextmenu::ContextMenu_02_01_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_GE",
+    "file": "ContextMenu.json",
+    "value": "Blues en Do"
+  },
+  "contextmenu::ContextMenu_02_01_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_GEB",
+    "file": "ContextMenu.json",
+    "value": "Isnt She Lovely"
+  },
+  "contextmenu::ContextMenu_02_01_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_H",
+    "file": "ContextMenu.json",
+    "value": "Crossroads Blues"
+  },
+  "contextmenu::ContextMenu_02_01_P": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_P",
+    "file": "ContextMenu.json",
+    "value": "Oda a la alegría"
+  },
+  "contextmenu::ContextMenu_02_01_S": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_S",
+    "file": "ContextMenu.json",
+    "value": "Ciudad de medianoche"
+  },
+  "contextmenu::ContextMenu_02_01_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_01_T",
+    "file": "ContextMenu.json",
+    "value": "Amazing Grace"
+  },
+  "contextmenu::ContextMenu_02_02_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_B",
+    "file": "ContextMenu.json",
+    "value": "Noche de paz"
+  },
+  "contextmenu::ContextMenu_02_02_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_F",
+    "file": "ContextMenu.json",
+    "value": "Sitio do PicaPau Amarelo"
+  },
+  "contextmenu::ContextMenu_02_02_GA": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_GA",
+    "file": "ContextMenu.json",
+    "value": "Brazos de amor"
+  },
+  "contextmenu::ContextMenu_02_02_GE": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_GE",
+    "file": "ContextMenu.json",
+    "value": "Danny Box"
+  },
+  "contextmenu::ContextMenu_02_02_GEB": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_GEB",
+    "file": "ContextMenu.json",
+    "value": "Rey de mi corazón"
+  },
+  "contextmenu::ContextMenu_02_02_H": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_H",
+    "file": "ContextMenu.json",
+    "value": "Pueblo viejo y sucio"
+  },
+  "contextmenu::ContextMenu_02_02_K": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_K",
+    "file": "ContextMenu.json",
+    "value": "Siento el amor"
+  },
+  "contextmenu::ContextMenu_02_02_P": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_P",
+    "file": "ContextMenu.json",
+    "value": "Pastel pasado"
+  },
+  "contextmenu::ContextMenu_02_02_T": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_02_T",
+    "file": "ContextMenu.json",
+    "value": "Aura Lee"
+  },
+  "contextmenu::ContextMenu_02_03_B": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_03_B",
+    "file": "ContextMenu.json",
+    "value": "8 millas más hasta Louisville"
+  },
+  "contextmenu::ContextMenu_02_03_F": {
+    "category": "contextmenu",
+    "key": "ContextMenu_02_03_F",
+    "file": "ContextMenu.json",
+    "value": "Salón Swadian"
+  }
+}

@@ -1,0 +1,3764 @@
+{
+  "ig_ui::IGUI_ItemCat_Casings": {
+    "category": "ig_ui",
+    "key": "IGUI_ItemCat_Casings",
+    "file": "IG_UI.json",
+    "value": "Vainas disparadas"
+  },
+  "itemname::HBVCEF.10x25_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.10x25_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 10x25mm automática"
+  },
+  "itemname::HBVCEF.12Gauge_Hull_Green": {
+    "category": "itemname",
+    "key": "HBVCEF.12Gauge_Hull_Green",
+    "file": "ItemName.json",
+    "value": "Vaina de escopeta verde vacía"
+  },
+  "itemname::HBVCEF.12Gauge_Hull_Red": {
+    "category": "itemname",
+    "key": "HBVCEF.12Gauge_Hull_Red",
+    "file": "ItemName.json",
+    "value": "Vaina de escopeta roja vacía"
+  },
+  "itemname::HBVCEF.223_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.223_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .223"
+  },
+  "itemname::HBVCEF.22_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.22_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .22"
+  },
+  "itemname::HBVCEF.3006_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.3006_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .30-06"
+  },
+  "itemname::HBVCEF.3030_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.3030_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .30-30"
+  },
+  "itemname::HBVCEF.308_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.308_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .308"
+  },
+  "itemname::HBVCEF.357_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.357_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .357"
+  },
+  "itemname::HBVCEF.38_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.38_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .38 Special"
+  },
+  "itemname::HBVCEF.44_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.44_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .44 Magnum"
+  },
+  "itemname::HBVCEF.4570_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.4570_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .45-70"
+  },
+  "itemname::HBVCEF.45_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.45_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .45 automática"
+  },
+  "itemname::HBVCEF.46x30_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.46x30_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 4.6x30mm"
+  },
+  "itemname::HBVCEF.50_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.50_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .50AE"
+  },
+  "itemname::HBVCEF.545x39_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.545x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 5.45x39mm"
+  },
+  "itemname::HBVCEF.556x45_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.556x45_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 5.56x45mm"
+  },
+  "itemname::HBVCEF.57x28_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.57x28_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 5.7x28mm"
+  },
+  "itemname::HBVCEF.762x39_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.762x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 7.62x39mm"
+  },
+  "itemname::HBVCEF.762x51_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.762x51_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 7.62x51mm"
+  },
+  "itemname::HBVCEF.762x54_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.762x54_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 7.62x54mm"
+  },
+  "itemname::HBVCEF.792x57_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.792x57_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 7.92x57mm"
+  },
+  "itemname::HBVCEF.9x19_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.9x19_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 9x19mm"
+  },
+  "itemname::HBVCEF.9x39_Casing": {
+    "category": "itemname",
+    "key": "HBVCEF.9x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina 9x39mm"
+  },
+  "itemname::MarzGuns.12GMagazine20_AA12": {
+    "category": "itemname",
+    "key": "MarzGuns.12GMagazine20_AA12",
+    "file": "ItemName.json",
+    "value": "Cargador de tambor de 20 cartuchos de escopeta de calibre 12 para AA-12"
+  },
+  "itemname::MarzGuns.12GMagazine8_AA12": {
+    "category": "itemname",
+    "key": "MarzGuns.12GMagazine8_AA12",
+    "file": "ItemName.json",
+    "value": "Cargador de 8 cartuchos de escopeta de calibre 12 para AA-12"
+  },
+  "itemname::MarzGuns.12Gauge_Box_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Box_Buckshot",
+    "file": "ItemName.json",
+    "value": "Caja de postas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Box_Slug": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Box_Slug",
+    "file": "ItemName.json",
+    "value": "Caja de balas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Carton_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Carton_Buckshot",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de postas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Carton_Slug": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Carton_Slug",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de balas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Crate_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Crate_Buckshot",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de postas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Crate_Slug": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Crate_Slug",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de balas de escopeta de calibre 12"
+  },
+  "itemname::MarzGuns.12Gauge_Hull_Green": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Hull_Green",
+    "file": "ItemName.json",
+    "value": "Vaina de escopeta de calibre 12 verde"
+  },
+  "itemname::MarzGuns.12Gauge_Hull_Red": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Hull_Red",
+    "file": "ItemName.json",
+    "value": "Vaina de escopeta de calibre 12 roja"
+  },
+  "itemname::MarzGuns.12Gauge_Shell_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Shell_Buckshot",
+    "file": "ItemName.json",
+    "value": "Cartucho de escopeta de calibre 12 con postas"
+  },
+  "itemname::MarzGuns.12Gauge_Shell_Slug": {
+    "category": "itemname",
+    "key": "MarzGuns.12Gauge_Shell_Slug",
+    "file": "ItemName.json",
+    "value": "Cartucho de escopeta de calibre 12 con bala"
+  },
+  "itemname::MarzGuns.223_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.223_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .223 Remington"
+  },
+  "itemname::MarzGuns.223_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.223_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .223 Remington"
+  },
+  "itemname::MarzGuns.223_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.223_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .223 Remington"
+  },
+  "itemname::MarzGuns.223_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.223_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .223 Remington"
+  },
+  "itemname::MarzGuns.223_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.223_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .223 Remington"
+  },
+  "itemname::MarzGuns.22_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.22_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .22 LR"
+  },
+  "itemname::MarzGuns.3006Clip8": {
+    "category": "itemname",
+    "key": "MarzGuns.3006Clip8",
+    "file": "ItemName.json",
+    "value": "Peine de 8 cartuchos de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006Magazine20_BAR": {
+    "category": "itemname",
+    "key": "MarzGuns.3006Magazine20_BAR",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.3006_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.3006_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.3006_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.3006_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3006_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.3006_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .30-06 Springfield"
+  },
+  "itemname::MarzGuns.3030_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.3030_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .30-30 Winchester"
+  },
+  "itemname::MarzGuns.3030_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.3030_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .30-30 Winchester"
+  },
+  "itemname::MarzGuns.3030_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.3030_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .30-30 Winchester"
+  },
+  "itemname::MarzGuns.3030_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.3030_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .30-30 Winchester"
+  },
+  "itemname::MarzGuns.3030_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.3030_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .30-30 Winchester"
+  },
+  "itemname::MarzGuns.308_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.308_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .308 Winchester"
+  },
+  "itemname::MarzGuns.308_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.308_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .308 Winchester"
+  },
+  "itemname::MarzGuns.308_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.308_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .308 Winchester"
+  },
+  "itemname::MarzGuns.308_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.308_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .308 Winchester"
+  },
+  "itemname::MarzGuns.308_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.308_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .308 Winchester"
+  },
+  "itemname::MarzGuns.357SpeedLoader6_PYTHON": {
+    "category": "itemname",
+    "key": "MarzGuns.357SpeedLoader6_PYTHON",
+    "file": "ItemName.json",
+    "value": "Cargador rápido de 6 cartuchos de .357 Magnum para Colt Python"
+  },
+  "itemname::MarzGuns.357_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.357_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .357 Magnum"
+  },
+  "itemname::MarzGuns.357_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.357_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .357 Magnum"
+  },
+  "itemname::MarzGuns.357_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.357_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .357 Magnum"
+  },
+  "itemname::MarzGuns.357_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.357_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .357 Magnum"
+  },
+  "itemname::MarzGuns.357_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.357_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .357 Magnum"
+  },
+  "itemname::MarzGuns.38_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.38_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .38 Special"
+  },
+  "itemname::MarzGuns.38_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.38_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .38 Special"
+  },
+  "itemname::MarzGuns.38_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.38_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .38 Special"
+  },
+  "itemname::MarzGuns.38_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.38_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .38 Special"
+  },
+  "itemname::MarzGuns.38_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.38_Crate",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .38 Special"
+  },
+  "itemname::MarzGuns.40mm_Box_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Box_Buckshot",
+    "file": "ItemName.json",
+    "value": "Caja de postas de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Box_HE": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Box_HE",
+    "file": "ItemName.json",
+    "value": "Caja de granadas de alto explosivo de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Box_Incendiary": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Box_Incendiary",
+    "file": "ItemName.json",
+    "value": "Caja de granadas incendiarias de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Round_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Round_Buckshot",
+    "file": "ItemName.json",
+    "value": "Cartucho de postas de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Round_HE": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Round_HE",
+    "file": "ItemName.json",
+    "value": "Cartucho de granada de alto explosivo de 40mm"
+  },
+  "itemname::MarzGuns.40mm_Round_Incendiary": {
+    "category": "itemname",
+    "key": "MarzGuns.40mm_Round_Incendiary",
+    "file": "ItemName.json",
+    "value": "Cartucho de granada incendiaria de 40mm"
+  },
+  "itemname::MarzGuns.410Gauge_Hull_Yellow": {
+    "category": "itemname",
+    "key": "MarzGuns.410Gauge_Hull_Yellow",
+    "file": "ItemName.json",
+    "value": "Vaina de escopeta de calibre .410"
+  },
+  "itemname::MarzGuns.410_Bore_Shells_Buckshot": {
+    "category": "itemname",
+    "key": "MarzGuns.410_Bore_Shells_Buckshot",
+    "file": "ItemName.json",
+    "value": "Cartucho de escopeta de postas de calibre .410"
+  },
+  "itemname::MarzGuns.44_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.44_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .44 Magnum"
+  },
+  "itemname::MarzGuns.44_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.44_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .44 Magnum"
+  },
+  "itemname::MarzGuns.44_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.44_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .44 Magnum"
+  },
+  "itemname::MarzGuns.44_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.44_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .44 Magnum"
+  },
+  "itemname::MarzGuns.44_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.44_Crate",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .44 Magnum"
+  },
+  "itemname::MarzGuns.4570_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.4570_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .45-70 Government"
+  },
+  "itemname::MarzGuns.4570_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.4570_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .45-70 Government"
+  },
+  "itemname::MarzGuns.4570_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.4570_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .45-70 Government"
+  },
+  "itemname::MarzGuns.4570_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.4570_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .45-70 Government"
+  },
+  "itemname::MarzGuns.4570_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.4570_Crate",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .45-70 Government"
+  },
+  "itemname::MarzGuns.45Magazine100_THOMPSON": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine100_THOMPSON",
+    "file": "ItemName.json",
+    "value": "Cargador de tambor Thompson de 100 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine12_USP": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine12_USP",
+    "file": "ItemName.json",
+    "value": "Cargador USP de 12 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine20_THOMPSON": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine20_THOMPSON",
+    "file": "ItemName.json",
+    "value": "Cargador Thompson de 20 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine20_USP": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine20_USP",
+    "file": "ItemName.json",
+    "value": "Cargador USP de 20 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine30_MAC10": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine30_MAC10",
+    "file": "ItemName.json",
+    "value": "Cargador MAC-10 de 30 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine30_THOMPSON": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine30_THOMPSON",
+    "file": "ItemName.json",
+    "value": "Cargador Thompson de 30 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine40_MAC10": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine40_MAC10",
+    "file": "ItemName.json",
+    "value": "Cargador extendido MAC-10 de 40 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45Magazine7_M1911": {
+    "category": "itemname",
+    "key": "MarzGuns.45Magazine7_M1911",
+    "file": "ItemName.json",
+    "value": "Cargador M1911 de 7 cartuchos de .45 ACP"
+  },
+  "itemname::MarzGuns.45_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .45 ACP"
+  },
+  "itemname::MarzGuns.45_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .45 ACP"
+  },
+  "itemname::MarzGuns.45_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .45 ACP"
+  },
+  "itemname::MarzGuns.45_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de .45 ACP"
+  },
+  "itemname::MarzGuns.45_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición .45 ACP"
+  },
+  "itemname::MarzGuns.45_Muzzle_Mount_Device": {
+    "category": "itemname",
+    "key": "MarzGuns.45_Muzzle_Mount_Device",
+    "file": "ItemName.json",
+    "value": "Dispositivo de montaje de boca para familia .45 ACP"
+  },
+  "itemname::MarzGuns.46x30_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.46x30_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 4.6x30mm"
+  },
+  "itemname::MarzGuns.50Magazine12_DEAGLE": {
+    "category": "itemname",
+    "key": "MarzGuns.50Magazine12_DEAGLE",
+    "file": "ItemName.json",
+    "value": "Cargador de 12 cartuchos de .50 AE"
+  },
+  "itemname::MarzGuns.50Magazine8_DEAGLE": {
+    "category": "itemname",
+    "key": "MarzGuns.50Magazine8_DEAGLE",
+    "file": "ItemName.json",
+    "value": "Cargador de 8 cartuchos de .50 AE"
+  },
+  "itemname::MarzGuns.50_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.50_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de .50 AE"
+  },
+  "itemname::MarzGuns.50_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.50_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho .50 AE"
+  },
+  "itemname::MarzGuns.50_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.50_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de .50 AE"
+  },
+  "itemname::MarzGuns.50_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.50_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina .50 AE"
+  },
+  "itemname::MarzGuns.50_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.50_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de .50 AE"
+  },
+  "itemname::MarzGuns.545x39Magazine100_Drum": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39Magazine100_Drum",
+    "file": "ItemName.json",
+    "value": "Cargador de tambor de 100 cartuchos de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39Magazine30_Bakelite": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39Magazine30_Bakelite",
+    "file": "ItemName.json",
+    "value": "Cargador Bakelite de 30 cartuchos de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39Magazine45_Bakelite": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39Magazine45_Bakelite",
+    "file": "ItemName.json",
+    "value": "Cargador Bakelite de 45 cartuchos de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 5.45x39mm"
+  },
+  "itemname::MarzGuns.545x39_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.545x39_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de munición de 5.45x39mm"
+  },
+  "itemname::MarzGuns.556x45Magazine100_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine100_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 100 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine150_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine150_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 150 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine20_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine20_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 20 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine25_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine25_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 25 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine30_G36": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine30_G36",
+    "file": "ItemName.json",
+    "value": "Cargador G36 de 30 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine30_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine30_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 30 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine50_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine50_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 50 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine60_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine60_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 60 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45Magazine75_STANAG": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45Magazine75_STANAG",
+    "file": "ItemName.json",
+    "value": "Cargador STANAG de 75 cartuchos de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Box",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Box_ArmorPiercing": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Box_ArmorPiercing",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos perforantes de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Box_HollowPoint": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Box_HollowPoint",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de punta hueca de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Box_Overpressured": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Box_Overpressured",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de 5.56x45mm [+P]"
+  },
+  "itemname::MarzGuns.556x45_Box_Subsonic": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Box_Subsonic",
+    "file": "ItemName.json",
+    "value": "Caja de cartuchos de de 5.56x45mm subsónicos"
+  },
+  "itemname::MarzGuns.556x45_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Bullet_ArmorPiercing": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Bullet_ArmorPiercing",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.56x45mm Penetrante"
+  },
+  "itemname::MarzGuns.556x45_Bullet_HollowPoint": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Bullet_HollowPoint",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.56x45mm punta hueca"
+  },
+  "itemname::MarzGuns.556x45_Bullet_Overpressured": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Bullet_Overpressured",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.56x45mm [+P]"
+  },
+  "itemname::MarzGuns.556x45_Bullet_Subsonic": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Bullet_Subsonic",
+    "file": "ItemName.json",
+    "value": "Cartucho 5.56x45mm Subsonico"
+  },
+  "itemname::MarzGuns.556x45_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de munición de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Carton_ArmorPiercing": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Carton_ArmorPiercing",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 5.56x45mm perforantes"
+  },
+  "itemname::MarzGuns.556x45_Carton_HollowPoint": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Carton_HollowPoint",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 5.56x45mm punta hueca"
+  },
+  "itemname::MarzGuns.556x45_Carton_Overpressured": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Carton_Overpressured",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 5.56x45mm [+P]"
+  },
+  "itemname::MarzGuns.556x45_Carton_Subsonic": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Carton_Subsonic",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 5.56x45mm subsónicas"
+  },
+  "itemname::MarzGuns.556x45_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.56x45mm"
+  },
+  "itemname::MarzGuns.556x45_Crate_ArmorPiercing": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Crate_ArmorPiercing",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.56x45mm perforantes"
+  },
+  "itemname::MarzGuns.556x45_Crate_HollowPoint": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Crate_HollowPoint",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.56x45mm punta hueca"
+  },
+  "itemname::MarzGuns.556x45_Crate_Overpressured": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Crate_Overpressured",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.56x45mm [+P]"
+  },
+  "itemname::MarzGuns.556x45_Crate_Subsonic": {
+    "category": "itemname",
+    "key": "MarzGuns.556x45_Crate_Subsonic",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.56x45mm subsónicas"
+  },
+  "itemname::MarzGuns.57x28_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.57x28_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 5.7x28mm"
+  },
+  "itemname::MarzGuns.57x28_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.57x28_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho de 5.7x28mm"
+  },
+  "itemname::MarzGuns.57x28_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.57x28_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 5.7x28mm"
+  },
+  "itemname::MarzGuns.57x28_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.57x28_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 5.7x28mm"
+  },
+  "itemname::MarzGuns.57x28_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.57x28_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 5.7x28mm"
+  },
+  "itemname::MarzGuns.762x39Magazine30": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39Magazine30",
+    "file": "ItemName.json",
+    "value": "Cargador de 7.62x39mm de 30 cartuchos"
+  },
+  "itemname::MarzGuns.762x39Magazine75": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39Magazine75",
+    "file": "ItemName.json",
+    "value": "Cargador extendido de 7.62x39mm de 75 cartuchos"
+  },
+  "itemname::MarzGuns.762x39_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 7.62x39mm"
+  },
+  "itemname::MarzGuns.762x39_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho de 7.62x39mm"
+  },
+  "itemname::MarzGuns.762x39_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 7.62x39mm"
+  },
+  "itemname::MarzGuns.762x39_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 7.62x39mm"
+  },
+  "itemname::MarzGuns.762x39_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.762x39_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 7.62x39mm"
+  },
+  "itemname::MarzGuns.762x51Box100_M60": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Box100_M60",
+    "file": "ItemName.json",
+    "value": "Caja de 100 cartuchos de 7.62x51mm para M60"
+  },
+  "itemname::MarzGuns.762x51Magazine20_FAL": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Magazine20_FAL",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de 7.62x51mm para FAL"
+  },
+  "itemname::MarzGuns.762x51Magazine20_G3": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Magazine20_G3",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de 7.62x51mm para G3"
+  },
+  "itemname::MarzGuns.762x51Magazine20_M14": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Magazine20_M14",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de 7.62x51mm para M14"
+  },
+  "itemname::MarzGuns.762x51Magazine5_M24": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Magazine5_M24",
+    "file": "ItemName.json",
+    "value": "Cargador de 5 cartuchos de 7.62x51mm para M24"
+  },
+  "itemname::MarzGuns.762x51Magazine5_PSG1": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51Magazine5_PSG1",
+    "file": "ItemName.json",
+    "value": "Cargador de 5 cartuchos de 7.62x51mm para PSG-1"
+  },
+  "itemname::MarzGuns.762x51_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 7.62x51mm"
+  },
+  "itemname::MarzGuns.762x51_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51_Bullet",
+    "file": "ItemName.json",
+    "value": "Cartucho de 7.62x51mm"
+  },
+  "itemname::MarzGuns.762x51_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 7.62x51mm"
+  },
+  "itemname::MarzGuns.762x51_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 7.62x51mm"
+  },
+  "itemname::MarzGuns.762x51_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.762x51_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 7.62x51mm"
+  },
+  "itemname::MarzGuns.762x54Magazine10_SVD": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54Magazine10_SVD",
+    "file": "ItemName.json",
+    "value": "Cargador de 10 cartuchos de 7.62x54mm para SVD"
+  },
+  "itemname::MarzGuns.762x54StripperClip5_MOSIN": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54StripperClip5_MOSIN",
+    "file": "ItemName.json",
+    "value": "Mosin-Nagant peine de 5 cartuchos de 7.62x54mm"
+  },
+  "itemname::MarzGuns.762x54_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 7.62x54mm"
+  },
+  "itemname::MarzGuns.762x54_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54_Bullet",
+    "file": "ItemName.json",
+    "value": "Bala de 7.62x54mm"
+  },
+  "itemname::MarzGuns.762x54_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 7.62x54mm"
+  },
+  "itemname::MarzGuns.762x54_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 7.62x54mm"
+  },
+  "itemname::MarzGuns.762x54_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.762x54_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 7.62x54mm"
+  },
+  "itemname::MarzGuns.792x57_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.792x57_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 7.92x57mm (8mm Mauser)"
+  },
+  "itemname::MarzGuns.9x19Magazine100_MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine100_MP5",
+    "file": "ItemName.json",
+    "value": "Cargador de tambor de 100 cartuchos de 9x19mm para MP5"
+  },
+  "itemname::MarzGuns.9x19Magazine10_P226": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine10_P226",
+    "file": "ItemName.json",
+    "value": "Cargador de 10 cartuchos de 9x19mm para P226"
+  },
+  "itemname::MarzGuns.9x19Magazine13_HIPOWER": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine13_HIPOWER",
+    "file": "ItemName.json",
+    "value": "Cargador de 13 cartuchos de 9x19mm para Hi-Power"
+  },
+  "itemname::MarzGuns.9x19Magazine15_M92FS": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine15_M92FS",
+    "file": "ItemName.json",
+    "value": "Cargador de 15 cartuchos de 9x19mm para M92FS"
+  },
+  "itemname::MarzGuns.9x19Magazine18_M93R": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine18_M93R",
+    "file": "ItemName.json",
+    "value": "Cargador de 18 cartuchos de 9x19mm para M93R"
+  },
+  "itemname::MarzGuns.9x19Magazine18_VP70M": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine18_VP70M",
+    "file": "ItemName.json",
+    "value": "Cargador de 18 cartuchos de 9x19mm para VP70M"
+  },
+  "itemname::MarzGuns.9x19Magazine20_MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine20_MP5",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de 9x19mm para MP5"
+  },
+  "itemname::MarzGuns.9x19Magazine20_TEC9": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine20_TEC9",
+    "file": "ItemName.json",
+    "value": "Cargador de 20 cartuchos de 9x19mm para TEC-9"
+  },
+  "itemname::MarzGuns.9x19Magazine25_MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine25_MP5",
+    "file": "ItemName.json",
+    "value": "Cargador de 25 cartuchos de 9x19mm para MP5"
+  },
+  "itemname::MarzGuns.9x19Magazine30_M92FS": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine30_M92FS",
+    "file": "ItemName.json",
+    "value": "Cargador extendido de 30 cartuchos de 9x19mm para M92FS"
+  },
+  "itemname::MarzGuns.9x19Magazine30_MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine30_MP5",
+    "file": "ItemName.json",
+    "value": "Cargador de 30 cartuchos de 9x19mm para MP5"
+  },
+  "itemname::MarzGuns.9x19Magazine30_VP70M": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine30_VP70M",
+    "file": "ItemName.json",
+    "value": "Cargador de 30 cartuchos de 9x19mm para VP70M"
+  },
+  "itemname::MarzGuns.9x19Magazine50_M92FS": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine50_M92FS",
+    "file": "ItemName.json",
+    "value": "Cargador de tambor de 50 cartuchos de 9x19mm para M92FS"
+  },
+  "itemname::MarzGuns.9x19Magazine60_M93R": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine60_M93R",
+    "file": "ItemName.json",
+    "value": "Cargador extendido de 60 cartuchos de 9x19mm para M93R"
+  },
+  "itemname::MarzGuns.9x19Magazine60_MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine60_MP5",
+    "file": "ItemName.json",
+    "value": "Cargador dual de 60 cartuchos de 9x19mm para MP5"
+  },
+  "itemname::MarzGuns.9x19Magazine8_LUGER": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19Magazine8_LUGER",
+    "file": "ItemName.json",
+    "value": "Cargador de 8 cartuchos de 9x19mm para Luger"
+  },
+  "itemname::MarzGuns.9x19_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 9x19mm"
+  },
+  "itemname::MarzGuns.9x19_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19_Bullet",
+    "file": "ItemName.json",
+    "value": "Bala de 9x19mm"
+  },
+  "itemname::MarzGuns.9x19_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 9x19mm"
+  },
+  "itemname::MarzGuns.9x19_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 9x19mm"
+  },
+  "itemname::MarzGuns.9x19_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.9x19_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 9x19mm"
+  },
+  "itemname::MarzGuns.9x39Magazine30": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39Magazine30",
+    "file": "ItemName.json",
+    "value": "Cargador de 30 cartuchos de 9x39mm"
+  },
+  "itemname::MarzGuns.9x39_Box": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39_Box",
+    "file": "ItemName.json",
+    "value": "Caja de 9x39mm"
+  },
+  "itemname::MarzGuns.9x39_Bullet": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39_Bullet",
+    "file": "ItemName.json",
+    "value": "Bala de 9x39mm"
+  },
+  "itemname::MarzGuns.9x39_Carton": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39_Carton",
+    "file": "ItemName.json",
+    "value": "Paquete de cajas de 9x39mm"
+  },
+  "itemname::MarzGuns.9x39_Casing": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39_Casing",
+    "file": "ItemName.json",
+    "value": "Vaina de 9x39mm"
+  },
+  "itemname::MarzGuns.9x39_Crate": {
+    "category": "itemname",
+    "key": "MarzGuns.9x39_Crate",
+    "file": "ItemName.json",
+    "value": "Cajón de cajas de 9x39mm"
+  },
+  "itemname::MarzGuns.AA12": {
+    "category": "itemname",
+    "key": "MarzGuns.AA12",
+    "file": "ItemName.json",
+    "value": "Escopeta automática AA-12"
+  },
+  "itemname::MarzGuns.AK47": {
+    "category": "itemname",
+    "key": "MarzGuns.AK47",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto AK-47"
+  },
+  "itemname::MarzGuns.AK74": {
+    "category": "itemname",
+    "key": "MarzGuns.AK74",
+    "file": "ItemName.json",
+    "value": "AK-74 de asalto"
+  },
+  "itemname::MarzGuns.AKS74U": {
+    "category": "itemname",
+    "key": "MarzGuns.AKS74U",
+    "file": "ItemName.json",
+    "value": "AKS-74U de asalto"
+  },
+  "itemname::MarzGuns.AKS74U_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.AKS74U_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "AKS-74U con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.AKS74U_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.AKS74U_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "AKS-74U con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.AK_Mount": {
+    "category": "itemname",
+    "key": "MarzGuns.AK_Mount",
+    "file": "ItemName.json",
+    "value": "Riel de montaje AK"
+  },
+  "itemname::MarzGuns.AK_Muzzle_Mount_Device": {
+    "category": "itemname",
+    "key": "MarzGuns.AK_Muzzle_Mount_Device",
+    "file": "ItemName.json",
+    "value": "Dispositivo de montaje en boca para familia AK"
+  },
+  "itemname::MarzGuns.AR15": {
+    "category": "itemname",
+    "key": "MarzGuns.AR15",
+    "file": "ItemName.json",
+    "value": "AR-15 de asalto"
+  },
+  "itemname::MarzGuns.AR_Muzzle_Mount_Device": {
+    "category": "itemname",
+    "key": "MarzGuns.AR_Muzzle_Mount_Device",
+    "file": "ItemName.json",
+    "value": "Dispositivo de montaje en boca para familia AR"
+  },
+  "itemname::MarzGuns.ASVAL": {
+    "category": "itemname",
+    "key": "MarzGuns.ASVAL",
+    "file": "ItemName.json",
+    "value": "AS VAL de asalto"
+  },
+  "itemname::MarzGuns.ASVAL_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.ASVAL_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "AS VAL con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.ASVAL_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.ASVAL_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "AS VAL con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.AimRight_Laser": {
+    "category": "itemname",
+    "key": "MarzGuns.AimRight_Laser",
+    "file": "ItemName.json",
+    "value": "Láser AimRight"
+  },
+  "itemname::MarzGuns.Aimpoint_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.Aimpoint_Sight",
+    "file": "ItemName.json",
+    "value": "Mira Aimpoint"
+  },
+  "itemname::MarzGuns.BAR": {
+    "category": "itemname",
+    "key": "MarzGuns.BAR",
+    "file": "ItemName.json",
+    "value": "Browning Automatic Rifle"
+  },
+  "itemname::MarzGuns.BAR_Integrated_Bipod_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.BAR_Integrated_Bipod_Deployed",
+    "file": "ItemName.json",
+    "value": "Bípode integrado de la BAR (desplegado)"
+  },
+  "itemname::MarzGuns.BAR_Integrated_Bipod_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.BAR_Integrated_Bipod_Folded",
+    "file": "ItemName.json",
+    "value": "Bípode integrado de la BAR (plegado)"
+  },
+  "itemname::MarzGuns.BENELLI_M4": {
+    "category": "itemname",
+    "key": "MarzGuns.BENELLI_M4",
+    "file": "ItemName.json",
+    "value": "Escopeta semiautomática Benelli M4"
+  },
+  "itemname::MarzGuns.BENELLI_M4_TAC": {
+    "category": "itemname",
+    "key": "MarzGuns.BENELLI_M4_TAC",
+    "file": "ItemName.json",
+    "value": "Escopeta semiautomática táctica Benelli M4"
+  },
+  "itemname::MarzGuns.Barrel_Close": {
+    "category": "itemname",
+    "key": "MarzGuns.Barrel_Close",
+    "file": "ItemName.json",
+    "value": "Cañón cerrado"
+  },
+  "itemname::MarzGuns.Barrel_Open": {
+    "category": "itemname",
+    "key": "MarzGuns.Barrel_Open",
+    "file": "ItemName.json",
+    "value": "Cañón abierto"
+  },
+  "itemname::MarzGuns.Beretta_Mount": {
+    "category": "itemname",
+    "key": "MarzGuns.Beretta_Mount",
+    "file": "ItemName.json",
+    "value": "Riel de montaje Beretta"
+  },
+  "itemname::MarzGuns.Beretta_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.Beretta_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "Culata de la Beretta (desplegada)"
+  },
+  "itemname::MarzGuns.Beretta_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.Beretta_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "Culata de la Beretta (plegada)"
+  },
+  "itemname::MarzGuns.Bipod_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.Bipod_Deployed",
+    "file": "ItemName.json",
+    "value": "Bípode (desplegado)"
+  },
+  "itemname::MarzGuns.Bipod_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.Bipod_Folded",
+    "file": "ItemName.json",
+    "value": "Bípode (plegado)"
+  },
+  "itemname::MarzGuns.Bolt_Fired": {
+    "category": "itemname",
+    "key": "MarzGuns.Bolt_Fired",
+    "file": "ItemName.json",
+    "value": "Culata disparada"
+  },
+  "itemname::MarzGuns.Bolt_Lock": {
+    "category": "itemname",
+    "key": "MarzGuns.Bolt_Lock",
+    "file": "ItemName.json",
+    "value": "Culata bloqueada"
+  },
+  "itemname::MarzGuns.Booster_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.Booster_Scope",
+    "file": "ItemName.json",
+    "value": "Mira Booster"
+  },
+  "itemname::MarzGuns.Booster_Scope_Off": {
+    "category": "itemname",
+    "key": "MarzGuns.Booster_Scope_Off",
+    "file": "ItemName.json",
+    "value": "Mira Booster (apagada)"
+  },
+  "itemname::MarzGuns.BrightPoint-5_Light": {
+    "category": "itemname",
+    "key": "MarzGuns.BrightPoint-5_Light",
+    "file": "ItemName.json",
+    "value": "Luz BrightPoint-5"
+  },
+  "itemname::MarzGuns.C96": {
+    "category": "itemname",
+    "key": "MarzGuns.C96",
+    "file": "ItemName.json",
+    "value": "Mauser C96"
+  },
+  "itemname::MarzGuns.CAR15": {
+    "category": "itemname",
+    "key": "MarzGuns.CAR15",
+    "file": "ItemName.json",
+    "value": "CAR-15 de asalto"
+  },
+  "itemname::MarzGuns.CAR15_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.CAR15_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "CAR-15 con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.CAR15_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.CAR15_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "CAR-15 con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.COLT_SINGLE": {
+    "category": "itemname",
+    "key": "MarzGuns.COLT_SINGLE",
+    "file": "ItemName.json",
+    "value": "Revólver de acción simple Colt"
+  },
+  "itemname::MarzGuns.Colt_Mount": {
+    "category": "itemname",
+    "key": "MarzGuns.Colt_Mount",
+    "file": "ItemName.json",
+    "value": "Riel de montaje Colt"
+  },
+  "itemname::MarzGuns.DEAGLE": {
+    "category": "itemname",
+    "key": "MarzGuns.DEAGLE",
+    "file": "ItemName.json",
+    "value": ".50 Desert Eagle"
+  },
+  "itemname::MarzGuns.DETECTIVE_38": {
+    "category": "itemname",
+    "key": "MarzGuns.DETECTIVE_38",
+    "file": "ItemName.json",
+    "value": "Revólver Detective .38"
+  },
+  "itemname::MarzGuns.DOUBLEBARREL": {
+    "category": "itemname",
+    "key": "MarzGuns.DOUBLEBARREL",
+    "file": "ItemName.json",
+    "value": "Escopeta de doble cañón"
+  },
+  "itemname::MarzGuns.EXPS1_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.EXPS1_Sight",
+    "file": "ItemName.json",
+    "value": "Mira EXPS1"
+  },
+  "itemname::MarzGuns.EXPS3_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.EXPS3_Sight",
+    "file": "ItemName.json",
+    "value": "Mira EXPS3"
+  },
+  "itemname::MarzGuns.ElcanX2_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.ElcanX2_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica Elcan X2"
+  },
+  "itemname::MarzGuns.FAL": {
+    "category": "itemname",
+    "key": "MarzGuns.FAL",
+    "file": "ItemName.json",
+    "value": "FN FAL de batalla"
+  },
+  "itemname::MarzGuns.FAMAS": {
+    "category": "itemname",
+    "key": "MarzGuns.FAMAS",
+    "file": "ItemName.json",
+    "value": "FAMAS de asalto"
+  },
+  "itemname::MarzGuns.FIVESEVEN": {
+    "category": "itemname",
+    "key": "MarzGuns.FIVESEVEN",
+    "file": "ItemName.json",
+    "value": "5.7x28mm Five-SeveN"
+  },
+  "itemname::MarzGuns.FNC": {
+    "category": "itemname",
+    "key": "MarzGuns.FNC",
+    "file": "ItemName.json",
+    "value": "FN FNC de asalto"
+  },
+  "itemname::MarzGuns.FNC_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.FNC_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "FN FNC con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.FNC_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.FNC_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "FN FNC con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.FakeItem": {
+    "category": "itemname",
+    "key": "MarzGuns.FakeItem",
+    "file": "ItemName.json",
+    "value": "Elemento falso"
+  },
+  "itemname::MarzGuns.FakeItemPistols": {
+    "category": "itemname",
+    "key": "MarzGuns.FakeItemPistols",
+    "file": "ItemName.json",
+    "value": "Pistolas y revólveres"
+  },
+  "itemname::MarzGuns.FakeItemRails": {
+    "category": "itemname",
+    "key": "MarzGuns.FakeItemRails",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny, soportes AK y rieles integrados"
+  },
+  "itemname::MarzGuns.FakeItemRifles": {
+    "category": "itemname",
+    "key": "MarzGuns.FakeItemRifles",
+    "file": "ItemName.json",
+    "value": "Fusiles y escopetas"
+  },
+  "itemname::MarzGuns.G3": {
+    "category": "itemname",
+    "key": "MarzGuns.G3",
+    "file": "ItemName.json",
+    "value": "G3 de batalla"
+  },
+  "itemname::MarzGuns.G36": {
+    "category": "itemname",
+    "key": "MarzGuns.G36",
+    "file": "ItemName.json",
+    "value": "G36 de asalto"
+  },
+  "itemname::MarzGuns.G36C": {
+    "category": "itemname",
+    "key": "MarzGuns.G36C",
+    "file": "ItemName.json",
+    "value": "G36C de asalto"
+  },
+  "itemname::MarzGuns.G36C_Integrated_Rail_Down": {
+    "category": "itemname",
+    "key": "MarzGuns.G36C_Integrated_Rail_Down",
+    "file": "ItemName.json",
+    "value": "Riel integrado G36C (bajado)"
+  },
+  "itemname::MarzGuns.G36C_Integrated_Rail_Up": {
+    "category": "itemname",
+    "key": "MarzGuns.G36C_Integrated_Rail_Up",
+    "file": "ItemName.json",
+    "value": "Riel integrado G36C (subido)"
+  },
+  "itemname::MarzGuns.G36C_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.G36C_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "G36C con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.G36C_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.G36C_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "G36C con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.G36_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.G36_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "G36 con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.G36_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.G36_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "G36 con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.GLOCK17": {
+    "category": "itemname",
+    "key": "MarzGuns.GLOCK17",
+    "file": "ItemName.json",
+    "value": "Glock 17"
+  },
+  "itemname::MarzGuns.HIPOWER": {
+    "category": "itemname",
+    "key": "MarzGuns.HIPOWER",
+    "file": "ItemName.json",
+    "value": "Browning Hi-Power"
+  },
+  "itemname::MarzGuns.Heavy_Pistol_Rail": {
+    "category": "itemname",
+    "key": "MarzGuns.Heavy_Pistol_Rail",
+    "file": "ItemName.json",
+    "value": "Riel de montaje para pistola pesada"
+  },
+  "itemname::MarzGuns.JS14_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.JS14_Sight",
+    "file": "ItemName.json",
+    "value": "Mira JS14"
+  },
+  "itemname::MarzGuns.K98_BAYONET": {
+    "category": "itemname",
+    "key": "MarzGuns.K98_BAYONET",
+    "file": "ItemName.json",
+    "value": "Bayoneta Karabiner 98k"
+  },
+  "itemname::MarzGuns.K98_Bayonet_Attachment": {
+    "category": "itemname",
+    "key": "MarzGuns.K98_Bayonet_Attachment",
+    "file": "ItemName.json",
+    "value": "Bayoneta Karabiner 98k (acoplada)"
+  },
+  "itemname::MarzGuns.Kobra_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.Kobra_Sight",
+    "file": "ItemName.json",
+    "value": "Mira Kobra"
+  },
+  "itemname::MarzGuns.LP_Light": {
+    "category": "itemname",
+    "key": "MarzGuns.LP_Light",
+    "file": "ItemName.json",
+    "value": "Linterna táctica LP"
+  },
+  "itemname::MarzGuns.LR10X_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.LR10X_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica LR10X"
+  },
+  "itemname::MarzGuns.LR2_Compensator": {
+    "category": "itemname",
+    "key": "MarzGuns.LR2_Compensator",
+    "file": "ItemName.json",
+    "value": "Compensador LR2"
+  },
+  "itemname::MarzGuns.LR4X_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.LR4X_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica LR4X"
+  },
+  "itemname::MarzGuns.LRX-7_Laser": {
+    "category": "itemname",
+    "key": "MarzGuns.LRX-7_Laser",
+    "file": "ItemName.json",
+    "value": "Láser LRX-7"
+  },
+  "itemname::MarzGuns.LRX12X_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.LRX12X_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica LRX12X"
+  },
+  "itemname::MarzGuns.LUGER": {
+    "category": "itemname",
+    "key": "MarzGuns.LUGER",
+    "file": "ItemName.json",
+    "value": "Luger P08"
+  },
+  "itemname::MarzGuns.LX_Flashhider": {
+    "category": "itemname",
+    "key": "MarzGuns.LX_Flashhider",
+    "file": "ItemName.json",
+    "value": "Apagallamas LX"
+  },
+  "itemname::MarzGuns.Lever_Fired": {
+    "category": "itemname",
+    "key": "MarzGuns.Lever_Fired",
+    "file": "ItemName.json",
+    "value": "Palanca disparada"
+  },
+  "itemname::MarzGuns.Lever_Lock": {
+    "category": "itemname",
+    "key": "MarzGuns.Lever_Lock",
+    "file": "ItemName.json",
+    "value": "Palanca bloqueada"
+  },
+  "itemname::MarzGuns.M&P_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.M&P_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador M&P (pistolas de 9 mm)"
+  },
+  "itemname::MarzGuns.M14": {
+    "category": "itemname",
+    "key": "MarzGuns.M14",
+    "file": "ItemName.json",
+    "value": "Fusil de combate M14"
+  },
+  "itemname::MarzGuns.M14_Incendiary": {
+    "category": "itemname",
+    "key": "MarzGuns.M14_Incendiary",
+    "file": "ItemName.json",
+    "value": "Granada incendiaria M14"
+  },
+  "itemname::MarzGuns.M16A1": {
+    "category": "itemname",
+    "key": "MarzGuns.M16A1",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M16A1"
+  },
+  "itemname::MarzGuns.M16A2": {
+    "category": "itemname",
+    "key": "MarzGuns.M16A2",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M16A2"
+  },
+  "itemname::MarzGuns.M16A2_M203": {
+    "category": "itemname",
+    "key": "MarzGuns.M16A2_M203",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M16A2 con M203"
+  },
+  "itemname::MarzGuns.M16A2_M203_Integrated": {
+    "category": "itemname",
+    "key": "MarzGuns.M16A2_M203_Integrated",
+    "file": "ItemName.json",
+    "value": "Lanzagranadas integrado M203"
+  },
+  "itemname::MarzGuns.M16A3": {
+    "category": "itemname",
+    "key": "MarzGuns.M16A3",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M16A3"
+  },
+  "itemname::MarzGuns.M18": {
+    "category": "itemname",
+    "key": "MarzGuns.M18",
+    "file": "ItemName.json",
+    "value": "Granada de humo M18"
+  },
+  "itemname::MarzGuns.M1895": {
+    "category": "itemname",
+    "key": "MarzGuns.M1895",
+    "file": "ItemName.json",
+    "value": "Fusil Marlin 1895"
+  },
+  "itemname::MarzGuns.M1903": {
+    "category": "itemname",
+    "key": "MarzGuns.M1903",
+    "file": "ItemName.json",
+    "value": "Fusil de cerrojo M1903 Springfield"
+  },
+  "itemname::MarzGuns.M1911": {
+    "category": "itemname",
+    "key": "MarzGuns.M1911",
+    "file": "ItemName.json",
+    "value": "Colt M1911"
+  },
+  "itemname::MarzGuns.M1_GARAND": {
+    "category": "itemname",
+    "key": "MarzGuns.M1_GARAND",
+    "file": "ItemName.json",
+    "value": "Fusil de combate M1 Garand"
+  },
+  "itemname::MarzGuns.M203": {
+    "category": "itemname",
+    "key": "MarzGuns.M203",
+    "file": "ItemName.json",
+    "value": "Lanzagranadas M203"
+  },
+  "itemname::MarzGuns.M24": {
+    "category": "itemname",
+    "key": "MarzGuns.M24",
+    "file": "ItemName.json",
+    "value": "Fusil de francotirador M24"
+  },
+  "itemname::MarzGuns.M24_Integrated_Bipod_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.M24_Integrated_Bipod_Deployed",
+    "file": "ItemName.json",
+    "value": "Bípode integrado M24 (desplegado)"
+  },
+  "itemname::MarzGuns.M24_Integrated_Bipod_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.M24_Integrated_Bipod_Folded",
+    "file": "ItemName.json",
+    "value": "Bípode integrado M24 (plegado)"
+  },
+  "itemname::MarzGuns.M4": {
+    "category": "itemname",
+    "key": "MarzGuns.M4",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M4"
+  },
+  "itemname::MarzGuns.M4A1": {
+    "category": "itemname",
+    "key": "MarzGuns.M4A1",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto M4A1"
+  },
+  "itemname::MarzGuns.M4A1_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.M4A1_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "Culata integrada M4A1 (desplegada)"
+  },
+  "itemname::MarzGuns.M4A1_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.M4A1_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "Culata integrada M4A1 (plegada)"
+  },
+  "itemname::MarzGuns.M4_Integrated_Rail_Down": {
+    "category": "itemname",
+    "key": "MarzGuns.M4_Integrated_Rail_Down",
+    "file": "ItemName.json",
+    "value": "Riel integrado M4 (abajo)"
+  },
+  "itemname::MarzGuns.M4_Integrated_Rail_Left": {
+    "category": "itemname",
+    "key": "MarzGuns.M4_Integrated_Rail_Left",
+    "file": "ItemName.json",
+    "value": "Riel integrado M4 (izquierda)"
+  },
+  "itemname::MarzGuns.M4_Integrated_Rail_Right": {
+    "category": "itemname",
+    "key": "MarzGuns.M4_Integrated_Rail_Right",
+    "file": "ItemName.json",
+    "value": "Riel integrado M4 (derecha)"
+  },
+  "itemname::MarzGuns.M4_Integrated_Rail_Up": {
+    "category": "itemname",
+    "key": "MarzGuns.M4_Integrated_Rail_Up",
+    "file": "ItemName.json",
+    "value": "Riel integrado M4 (arriba)"
+  },
+  "itemname::MarzGuns.M5_BAYONET": {
+    "category": "itemname",
+    "key": "MarzGuns.M5_BAYONET",
+    "file": "ItemName.json",
+    "value": "Bayoneta M5"
+  },
+  "itemname::MarzGuns.M5_Bayonet_Attachment": {
+    "category": "itemname",
+    "key": "MarzGuns.M5_Bayonet_Attachment",
+    "file": "ItemName.json",
+    "value": "Bayoneta M5 (acoplada)"
+  },
+  "itemname::MarzGuns.M60": {
+    "category": "itemname",
+    "key": "MarzGuns.M60",
+    "file": "ItemName.json",
+    "value": "M60 Ametralladora"
+  },
+  "itemname::MarzGuns.M60_Integrated_Bipod_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.M60_Integrated_Bipod_Deployed",
+    "file": "ItemName.json",
+    "value": "M60 con bípode integrado (desplegado)"
+  },
+  "itemname::MarzGuns.M60_Integrated_Bipod_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.M60_Integrated_Bipod_Folded",
+    "file": "ItemName.json",
+    "value": "M60 con bípode integrado (plegado)"
+  },
+  "itemname::MarzGuns.M67": {
+    "category": "itemname",
+    "key": "MarzGuns.M67",
+    "file": "ItemName.json",
+    "value": "Granada de fragmentación M67"
+  },
+  "itemname::MarzGuns.M79": {
+    "category": "itemname",
+    "key": "MarzGuns.M79",
+    "file": "ItemName.json",
+    "value": "Lanzagranadas M79"
+  },
+  "itemname::MarzGuns.M92FS": {
+    "category": "itemname",
+    "key": "MarzGuns.M92FS",
+    "file": "ItemName.json",
+    "value": "Beretta M92FS"
+  },
+  "itemname::MarzGuns.M93R": {
+    "category": "itemname",
+    "key": "MarzGuns.M93R",
+    "file": "ItemName.json",
+    "value": "Beretta M93R"
+  },
+  "itemname::MarzGuns.M9_BAYONET": {
+    "category": "itemname",
+    "key": "MarzGuns.M9_BAYONET",
+    "file": "ItemName.json",
+    "value": "Bayoneta M9"
+  },
+  "itemname::MarzGuns.M9_Bayonet_Attachment": {
+    "category": "itemname",
+    "key": "MarzGuns.M9_Bayonet_Attachment",
+    "file": "ItemName.json",
+    "value": "Bayoneta M9 (acoplada)"
+  },
+  "itemname::MarzGuns.MAC10": {
+    "category": "itemname",
+    "key": "MarzGuns.MAC10",
+    "file": "ItemName.json",
+    "value": "Ingram MAC-10"
+  },
+  "itemname::MarzGuns.MASTERKEY": {
+    "category": "itemname",
+    "key": "MarzGuns.MASTERKEY",
+    "file": "ItemName.json",
+    "value": "Masterkey bajo el cañón"
+  },
+  "itemname::MarzGuns.MK2_Foregrip": {
+    "category": "itemname",
+    "key": "MarzGuns.MK2_Foregrip",
+    "file": "ItemName.json",
+    "value": "Empuñadura delantera MK2"
+  },
+  "itemname::MarzGuns.MKC_Foregrip": {
+    "category": "itemname",
+    "key": "MarzGuns.MKC_Foregrip",
+    "file": "ItemName.json",
+    "value": "Empuñadura delantera MKC"
+  },
+  "itemname::MarzGuns.MKI_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.MKI_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador MKI (fusiles de 5,56 mm)"
+  },
+  "itemname::MarzGuns.MOSIN": {
+    "category": "itemname",
+    "key": "MarzGuns.MOSIN",
+    "file": "ItemName.json",
+    "value": "Mosin-Nagant de culata"
+  },
+  "itemname::MarzGuns.MOSSBERG_590": {
+    "category": "itemname",
+    "key": "MarzGuns.MOSSBERG_590",
+    "file": "ItemName.json",
+    "value": "Mossberg 590"
+  },
+  "itemname::MarzGuns.MP412": {
+    "category": "itemname",
+    "key": "MarzGuns.MP412",
+    "file": "ItemName.json",
+    "value": "MP-412"
+  },
+  "itemname::MarzGuns.MP5": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5",
+    "file": "ItemName.json",
+    "value": "MP5"
+  },
+  "itemname::MarzGuns.MP5A2": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5A2",
+    "file": "ItemName.json",
+    "value": "MP5A2"
+  },
+  "itemname::MarzGuns.MP5K": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5K",
+    "file": "ItemName.json",
+    "value": "MP5K"
+  },
+  "itemname::MarzGuns.MP5SD": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5SD",
+    "file": "ItemName.json",
+    "value": "MP5SD"
+  },
+  "itemname::MarzGuns.MP5SD_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5SD_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "MP5SD con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.MP5SD_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5SD_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "MP5SD con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.MP5_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "MP5 con culata integrada (desplegada)"
+  },
+  "itemname::MarzGuns.MP5_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.MP5_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "MP5 con culata integrada (plegada)"
+  },
+  "itemname::MarzGuns.NDR_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.NDR_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador NDR (fusiles de 5,56 mm)"
+  },
+  "itemname::MarzGuns.OKP3_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.OKP3_Sight",
+    "file": "ItemName.json",
+    "value": "Mira OKP3"
+  },
+  "itemname::MarzGuns.P226": {
+    "category": "itemname",
+    "key": "MarzGuns.P226",
+    "file": "ItemName.json",
+    "value": "Sig Sauer P226"
+  },
+  "itemname::MarzGuns.P45_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.P45_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador P45 (armas de .45 ACP)"
+  },
+  "itemname::MarzGuns.PBS-1_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.PBS-1_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador PBS-1 (fusiles AK)"
+  },
+  "itemname::MarzGuns.PJ-3_Laser": {
+    "category": "itemname",
+    "key": "MarzGuns.PJ-3_Laser",
+    "file": "ItemName.json",
+    "value": "Láser PJ-3"
+  },
+  "itemname::MarzGuns.PL-4_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.PL-4_Sight",
+    "file": "ItemName.json",
+    "value": "Mira PL-4"
+  },
+  "itemname::MarzGuns.PL4_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.PL4_Sight",
+    "file": "ItemName.json",
+    "value": "Mira PL-4"
+  },
+  "itemname::MarzGuns.PM-2_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.PM-2_Sight",
+    "file": "ItemName.json",
+    "value": "Mira PM-2"
+  },
+  "itemname::MarzGuns.PM2_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.PM2_Sight",
+    "file": "ItemName.json",
+    "value": "Mira PM-2"
+  },
+  "itemname::MarzGuns.PRL1_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.PRL1_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica PRL-1"
+  },
+  "itemname::MarzGuns.PS1_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.PS1_Sight",
+    "file": "ItemName.json",
+    "value": "Mira PS1"
+  },
+  "itemname::MarzGuns.PSG1": {
+    "category": "itemname",
+    "key": "MarzGuns.PSG1",
+    "file": "ItemName.json",
+    "value": "PSG-1 Carabina semiautomática"
+  },
+  "itemname::MarzGuns.PSO1_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.PSO1_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica PSO1"
+  },
+  "itemname::MarzGuns.PX1_Laser": {
+    "category": "itemname",
+    "key": "MarzGuns.PX1_Laser",
+    "file": "ItemName.json",
+    "value": "Láser PX1"
+  },
+  "itemname::MarzGuns.PYTHON": {
+    "category": "itemname",
+    "key": "MarzGuns.PYTHON",
+    "file": "ItemName.json",
+    "value": "Revólver Colt Python"
+  },
+  "itemname::MarzGuns.Picatinny_Rail": {
+    "category": "itemname",
+    "key": "MarzGuns.Picatinny_Rail",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny"
+  },
+  "itemname::MarzGuns.Picatinny_Rail_Down": {
+    "category": "itemname",
+    "key": "MarzGuns.Picatinny_Rail_Down",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny (Abajo)"
+  },
+  "itemname::MarzGuns.Picatinny_Rail_Left": {
+    "category": "itemname",
+    "key": "MarzGuns.Picatinny_Rail_Left",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny (Izquierda)"
+  },
+  "itemname::MarzGuns.Picatinny_Rail_Right": {
+    "category": "itemname",
+    "key": "MarzGuns.Picatinny_Rail_Right",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny (Derecha)"
+  },
+  "itemname::MarzGuns.Picatinny_Rail_Up": {
+    "category": "itemname",
+    "key": "MarzGuns.Picatinny_Rail_Up",
+    "file": "ItemName.json",
+    "value": "Riel Picatinny (Arriba)"
+  },
+  "itemname::MarzGuns.Pistol_Muzzle_Mount_Device": {
+    "category": "itemname",
+    "key": "MarzGuns.Pistol_Muzzle_Mount_Device",
+    "file": "ItemName.json",
+    "value": "Dispositivo de montaje de boca para pistola"
+  },
+  "itemname::MarzGuns.Pump_Fired": {
+    "category": "itemname",
+    "key": "MarzGuns.Pump_Fired",
+    "file": "ItemName.json",
+    "value": "Manguito disparado"
+  },
+  "itemname::MarzGuns.Pump_Lock": {
+    "category": "itemname",
+    "key": "MarzGuns.Pump_Lock",
+    "file": "ItemName.json",
+    "value": "Manguito bloqueado"
+  },
+  "itemname::MarzGuns.REMINGTON_870": {
+    "category": "itemname",
+    "key": "MarzGuns.REMINGTON_870",
+    "file": "ItemName.json",
+    "value": "Escopeta Remington 870"
+  },
+  "itemname::MarzGuns.RHINO": {
+    "category": "itemname",
+    "key": "MarzGuns.RHINO",
+    "file": "ItemName.json",
+    "value": "Revólver Rhino"
+  },
+  "itemname::MarzGuns.ReflexS2_Sight": {
+    "category": "itemname",
+    "key": "MarzGuns.ReflexS2_Sight",
+    "file": "ItemName.json",
+    "value": "Mira Reflex S2"
+  },
+  "itemname::MarzGuns.RepairPack": {
+    "category": "itemname",
+    "key": "MarzGuns.RepairPack",
+    "file": "ItemName.json",
+    "value": "Pack de reparación de armas"
+  },
+  "itemname::MarzGuns.SAIGAS12": {
+    "category": "itemname",
+    "key": "MarzGuns.SAIGAS12",
+    "file": "ItemName.json",
+    "value": "Escopeta semiautomática Saiga-12"
+  },
+  "itemname::MarzGuns.SKS": {
+    "category": "itemname",
+    "key": "MarzGuns.SKS",
+    "file": "ItemName.json",
+    "value": "SKS Carabina"
+  },
+  "itemname::MarzGuns.SKS_Bayonet_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.SKS_Bayonet_Deployed",
+    "file": "ItemName.json",
+    "value": "Bayoneta SKS (desplegada)"
+  },
+  "itemname::MarzGuns.SKS_Bayonet_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.SKS_Bayonet_Folded",
+    "file": "ItemName.json",
+    "value": "Bayoneta SKS (plegada)"
+  },
+  "itemname::MarzGuns.SPAS12": {
+    "category": "itemname",
+    "key": "MarzGuns.SPAS12",
+    "file": "ItemName.json",
+    "value": "Escopeta semiautomática SPAS-12"
+  },
+  "itemname::MarzGuns.SPAS12_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.SPAS12_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "Culata integrada SPAS-12 (desplegada)"
+  },
+  "itemname::MarzGuns.SPAS12_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.SPAS12_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "Culata integrada SPAS-12 (plegada)"
+  },
+  "itemname::MarzGuns.SR7_Light": {
+    "category": "itemname",
+    "key": "MarzGuns.SR7_Light",
+    "file": "ItemName.json",
+    "value": "Luz táctica SR7"
+  },
+  "itemname::MarzGuns.STEVENS_555": {
+    "category": "itemname",
+    "key": "MarzGuns.STEVENS_555",
+    "file": "ItemName.json",
+    "value": "Escopeta de doble cañón Stevens 555"
+  },
+  "itemname::MarzGuns.SVD": {
+    "category": "itemname",
+    "key": "MarzGuns.SVD",
+    "file": "ItemName.json",
+    "value": "SVD Carabina semiautomática"
+  },
+  "itemname::MarzGuns.SW629": {
+    "category": "itemname",
+    "key": "MarzGuns.SW629",
+    "file": "ItemName.json",
+    "value": "Smith & Wesson Modelo 629"
+  },
+  "itemname::MarzGuns.Shellholder": {
+    "category": "itemname",
+    "key": "MarzGuns.Shellholder",
+    "file": "ItemName.json",
+    "value": "Soporte de vainas"
+  },
+  "itemname::MarzGuns.Shh9_Suppressor": {
+    "category": "itemname",
+    "key": "MarzGuns.Shh9_Suppressor",
+    "file": "ItemName.json",
+    "value": "Silenciador Shh9 (pistolas de 9 mm)"
+  },
+  "itemname::MarzGuns.Slide_Fired": {
+    "category": "itemname",
+    "key": "MarzGuns.Slide_Fired",
+    "file": "ItemName.json",
+    "value": "Culata disparada"
+  },
+  "itemname::MarzGuns.Slide_Lock": {
+    "category": "itemname",
+    "key": "MarzGuns.Slide_Lock",
+    "file": "ItemName.json",
+    "value": "Culata bloqueada"
+  },
+  "itemname::MarzGuns.Sniper_Mount": {
+    "category": "itemname",
+    "key": "MarzGuns.Sniper_Mount",
+    "file": "ItemName.json",
+    "value": "Riel de montaje para francotirador"
+  },
+  "itemname::MarzGuns.Stub_Foregrip": {
+    "category": "itemname",
+    "key": "MarzGuns.Stub_Foregrip",
+    "file": "ItemName.json",
+    "value": "Empuñadura delantera Stub"
+  },
+  "itemname::MarzGuns.TA28_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.TA28_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica TA28"
+  },
+  "itemname::MarzGuns.TEC9": {
+    "category": "itemname",
+    "key": "MarzGuns.TEC9",
+    "file": "ItemName.json",
+    "value": "Pistola ametralladora TEC-9"
+  },
+  "itemname::MarzGuns.THOMPSON": {
+    "category": "itemname",
+    "key": "MarzGuns.THOMPSON",
+    "file": "ItemName.json",
+    "value": "Subfusil Thompson"
+  },
+  "itemname::MarzGuns.TL_Light": {
+    "category": "itemname",
+    "key": "MarzGuns.TL_Light",
+    "file": "ItemName.json",
+    "value": "Luz táctica TL"
+  },
+  "itemname::MarzGuns.TR-1_Laser": {
+    "category": "itemname",
+    "key": "MarzGuns.TR-1_Laser",
+    "file": "ItemName.json",
+    "value": "Láser TR-1"
+  },
+  "itemname::MarzGuns.TR06X_Scope": {
+    "category": "itemname",
+    "key": "MarzGuns.TR06X_Scope",
+    "file": "ItemName.json",
+    "value": "Mira telescópica TR06X"
+  },
+  "itemname::MarzGuns.TRENCHGUN": {
+    "category": "itemname",
+    "key": "MarzGuns.TRENCHGUN",
+    "file": "ItemName.json",
+    "value": "Escopeta de trinchera"
+  },
+  "itemname::MarzGuns.Trix42_Muzzlebreak": {
+    "category": "itemname",
+    "key": "MarzGuns.Trix42_Muzzlebreak",
+    "file": "ItemName.json",
+    "value": "Freno de boca Trix42"
+  },
+  "itemname::MarzGuns.USP": {
+    "category": "itemname",
+    "key": "MarzGuns.USP",
+    "file": "ItemName.json",
+    "value": "Heckler & Koch USP"
+  },
+  "itemname::MarzGuns.VP70M": {
+    "category": "itemname",
+    "key": "MarzGuns.VP70M",
+    "file": "ItemName.json",
+    "value": "Heckler & Koch VP70M"
+  },
+  "itemname::MarzGuns.W1873": {
+    "category": "itemname",
+    "key": "MarzGuns.W1873",
+    "file": "ItemName.json",
+    "value": "Fusil Winchester 1873"
+  },
+  "itemname::MarzGuns.W1873_CARBINE": {
+    "category": "itemname",
+    "key": "MarzGuns.W1873_CARBINE",
+    "file": "ItemName.json",
+    "value": "Carabina corta Winchester 1873"
+  },
+  "itemname::MarzGuns.W1887": {
+    "category": "itemname",
+    "key": "MarzGuns.W1887",
+    "file": "ItemName.json",
+    "value": "Escopeta Winchester 1887"
+  },
+  "itemname::MarzGuns.W1894": {
+    "category": "itemname",
+    "key": "MarzGuns.W1894",
+    "file": "ItemName.json",
+    "value": "Fusil Winchester 1894"
+  },
+  "itemname::MarzGuns.XM177": {
+    "category": "itemname",
+    "key": "MarzGuns.XM177",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto XM177"
+  },
+  "itemname::MarzGuns.XM177_Integrated_Stock_Deployed": {
+    "category": "itemname",
+    "key": "MarzGuns.XM177_Integrated_Stock_Deployed",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto XM177 con culata desplegada"
+  },
+  "itemname::MarzGuns.XM177_Integrated_Stock_Folded": {
+    "category": "itemname",
+    "key": "MarzGuns.XM177_Integrated_Stock_Folded",
+    "file": "ItemName.json",
+    "value": "Fusil de asalto XM177 con culata plegada"
+  },
+  "recipes::OpenBoxOf10Bullets": {
+    "category": "recipes",
+    "key": "OpenBoxOf10Bullets",
+    "file": "Recipes.json",
+    "value": "Abrir caja (10 balas)"
+  },
+  "recipes::OpenBoxOf20Bullets": {
+    "category": "recipes",
+    "key": "OpenBoxOf20Bullets",
+    "file": "Recipes.json",
+    "value": "Abrir caja (20 balas)"
+  },
+  "recipes::OpenBoxOf25Bullets": {
+    "category": "recipes",
+    "key": "OpenBoxOf25Bullets",
+    "file": "Recipes.json",
+    "value": "Abrir caja (25 balas)"
+  },
+  "recipes::OpenBoxOf50Bullets": {
+    "category": "recipes",
+    "key": "OpenBoxOf50Bullets",
+    "file": "Recipes.json",
+    "value": "Abrir caja (50 balas)"
+  },
+  "recipes::OpenCartonOfBoxesOfAmmo": {
+    "category": "recipes",
+    "key": "OpenCartonOfBoxesOfAmmo",
+    "file": "Recipes.json",
+    "value": "Abrir cartón de cajas de munición"
+  },
+  "recipes::OpenCrateOfBoxesOfAmmo": {
+    "category": "recipes",
+    "key": "OpenCrateOfBoxesOfAmmo",
+    "file": "Recipes.json",
+    "value": "Abrir cajón de cajas de munición"
+  },
+  "recipes::PlaceBoxesOfAmmoInCarton": {
+    "category": "recipes",
+    "key": "PlaceBoxesOfAmmoInCarton",
+    "file": "Recipes.json",
+    "value": "Colocar cajas de munición en cartón"
+  },
+  "recipes::PlaceBoxesOfAmmoInCrates": {
+    "category": "recipes",
+    "key": "PlaceBoxesOfAmmoInCrates",
+    "file": "Recipes.json",
+    "value": "Colocar cajas de munición en cajones"
+  },
+  "recipes::place10BulletsInBox": {
+    "category": "recipes",
+    "key": "place10BulletsInBox",
+    "file": "Recipes.json",
+    "value": "Empaquetar munición en caja (10 balas)"
+  },
+  "recipes::place20BulletsInBox": {
+    "category": "recipes",
+    "key": "place20BulletsInBox",
+    "file": "Recipes.json",
+    "value": "Empaquetar munición en caja (20 balas)"
+  },
+  "recipes::place25BulletsInBox": {
+    "category": "recipes",
+    "key": "place25BulletsInBox",
+    "file": "Recipes.json",
+    "value": "Empaquetar munición en caja (25 balas)"
+  },
+  "recipes::place50BulletsInBox": {
+    "category": "recipes",
+    "key": "place50BulletsInBox",
+    "file": "Recipes.json",
+    "value": "Empaquetar munición en caja (50 balas)"
+  },
+  "sandbox::Sandbox_HB": {
+    "category": "sandbox",
+    "key": "Sandbox_HB",
+    "file": "Sandbox.json",
+    "value": "Hot Brass"
+  },
+  "sandbox::Sandbox_HB_CustomIcons": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_CustomIcons",
+    "file": "Sandbox.json",
+    "value": "Iconos personalizados"
+  },
+  "sandbox::Sandbox_HB_CustomIcons_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_CustomIcons_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar iconos personalizados para vainas y balas."
+  },
+  "sandbox::Sandbox_HB_MultiplayerTick": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_MultiplayerTick",
+    "file": "Sandbox.json",
+    "value": "Buffer de actualización multijugador"
+  },
+  "sandbox::Sandbox_HB_MultiplayerTick_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_MultiplayerTick_tooltip",
+    "file": "Sandbox.json",
+    "value": "Ajustar el buffer para actualizaciones de actualización multijugador. Valores más altos pueden mejorar el rendimiento pero reducen el recorrido visual de las balas."
+  },
+  "sandbox::Sandbox_HB_PermanentCasings": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_PermanentCasings",
+    "file": "Sandbox.json",
+    "value": "Vainas persistentes"
+  },
+  "sandbox::Sandbox_HB_PermanentCasings_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_HB_PermanentCasings_tooltip",
+    "file": "Sandbox.json",
+    "value": "Las vainas permanecerán en el suelo tras el aterrizaje. Desactívalo para que las vainas solo sean visibles mientras están activas."
+  },
+  "sandbox::Sandbox_MarzGunsAmmos": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGunsAmmos",
+    "file": "Sandbox.json",
+    "value": "Guns of Marz (Munición)"
+  },
+  "sandbox::Sandbox_MarzGunsTweaks": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGunsTweaks",
+    "file": "Sandbox.json",
+    "value": "Guns of Marz (Ajustes)"
+  },
+  "sandbox::Sandbox_MarzGunsWeapons": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGunsWeapons",
+    "file": "Sandbox.json",
+    "value": "Guns of Marz (Armas)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_12Gauge_Buckshot": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_12Gauge_Buckshot",
+    "file": "Sandbox.json",
+    "value": "Activar postas de calibre 12"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_12Gauge_Buckshot_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_12Gauge_Buckshot_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de postas de calibre 12 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_12Gauge_Slug": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_12Gauge_Slug",
+    "file": "Sandbox.json",
+    "value": "Activar bala de escopeta de calibre 12"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_12Gauge_Slug_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_12Gauge_Slug_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de bala de escopeta de calibre 12 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_223": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_223",
+    "file": "Sandbox.json",
+    "value": "Activar .223 Remington"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_223_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_223_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .223 Remington en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_3006": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_3006",
+    "file": "Sandbox.json",
+    "value": "Activar .30-06 Springfield"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_3006_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_3006_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .30-06 Springfield en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_3030": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_3030",
+    "file": "Sandbox.json",
+    "value": "Activar .30-30 Winchester"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_3030_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_3030_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .30-30 Winchester en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_308": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_308",
+    "file": "Sandbox.json",
+    "value": "Activar .308 Winchester"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_308_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_308_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .308 Winchester en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_357": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_357",
+    "file": "Sandbox.json",
+    "value": "Activar .357 Magnum"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_357_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_357_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .357 Magnum en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_38": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_38",
+    "file": "Sandbox.json",
+    "value": "Activar .38 Special"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_38_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_38_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .38 Special en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_Buckshot": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_Buckshot",
+    "file": "Sandbox.json",
+    "value": "Activar postas de 40 mm"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_Buckshot_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_Buckshot_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de postas de 40 mm en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_HE": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_HE",
+    "file": "Sandbox.json",
+    "value": "Activar 40 mm HE"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_HE_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_HE_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 40 mm HE en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_Incendiary": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_Incendiary",
+    "file": "Sandbox.json",
+    "value": "Activar 40 mm Incendiaria"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_40mm_Incendiary_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_40mm_Incendiary_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 40 mm Incendiaria en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_44": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_44",
+    "file": "Sandbox.json",
+    "value": "Activar .44 Magnum"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_44_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_44_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .44 Magnum en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_45": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_45",
+    "file": "Sandbox.json",
+    "value": "Activar .45 ACP"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_4570": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_4570",
+    "file": "Sandbox.json",
+    "value": "Activar .45-70 Government"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_4570_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_4570_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .45-70 Government en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_45_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_45_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .45 ACP en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_50": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_50",
+    "file": "Sandbox.json",
+    "value": "Activar .50 AE"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_50_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_50_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de .50 AE en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_545x39": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_545x39",
+    "file": "Sandbox.json",
+    "value": "Activar 5.45x39 mm"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_545x39_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_545x39_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,45x39 mm en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45",
+    "file": "Sandbox.json",
+    "value": "Activar 5,56x45 mm NATO"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_ArmorPiercing": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_ArmorPiercing",
+    "file": "Sandbox.json",
+    "value": "Activar 5,56x45 mm penetrante"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_ArmorPiercing_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_ArmorPiercing_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,56x45 mm penetrante en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_HollowPoint": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_HollowPoint",
+    "file": "Sandbox.json",
+    "value": "Activar 5,56x45 mm punta hueca"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_HollowPoint_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_HollowPoint_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,56x45 mm punta hueca en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_Overpressured": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_Overpressured",
+    "file": "Sandbox.json",
+    "value": "Activar 5,56x45 mm sobrepresión"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_Overpressured_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_Overpressured_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,56x45 mm sobrepresión en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_Subsonic": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_Subsonic",
+    "file": "Sandbox.json",
+    "value": "Activar 5,56x45 mm subsónica"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_Subsonic_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_Subsonic_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,56x45 mm subsónica en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_556x45_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_556x45_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 5,56x45 mm NATO en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x39": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x39",
+    "file": "Sandbox.json",
+    "value": "Activar 7,62x39 mm"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x39_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x39_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 7,62x39 mm en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x51": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x51",
+    "file": "Sandbox.json",
+    "value": "Activar 7,62x51 mm NATO"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x51_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x51_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 7,62x51 mm NATO en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x54": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x54",
+    "file": "Sandbox.json",
+    "value": "Activar 7,62x54 mm R"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_762x54_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_762x54_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 7,62x54 mm R en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_9x19": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_9x19",
+    "file": "Sandbox.json",
+    "value": "Activar 9x19 mm"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_9x19_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_9x19_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 9x19 mm en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_9x39": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_9x39",
+    "file": "Sandbox.json",
+    "value": "Activar 9x39 mm"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_9x39_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_9x39_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar munición de 9x39 mm en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AA12": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AA12",
+    "file": "Sandbox.json",
+    "value": "Activar AA-12 (c. 1972 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AA12_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AA12_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AA-12 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AK47": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AK47",
+    "file": "Sandbox.json",
+    "value": "Activar AK-47 (c. 1947 - 7,62x39 mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AK47_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AK47_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AK-47 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AK74": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AK74",
+    "file": "Sandbox.json",
+    "value": "Activar AK-74 (c. 1974 - 5,45x39 mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AK74_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AK74_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AK-74 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AKS74U": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AKS74U",
+    "file": "Sandbox.json",
+    "value": "Activar AKS-74U (c. 1979 - 5,45x39 mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AKS74U_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AKS74U_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AKS-74U en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AR15": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AR15",
+    "file": "Sandbox.json",
+    "value": "Activar AR-15 (c. 1958 - 5,56x45 mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_AR15_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_AR15_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AR-15 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_ASVAL": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_ASVAL",
+    "file": "Sandbox.json",
+    "value": "Activar AS VAL (c. 1985 - 9x39 mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_ASVAL_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_ASVAL_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar AS VAL en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_BAR": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_BAR",
+    "file": "Sandbox.json",
+    "value": "Activar BAR (c. 1918 - .30-06 Springfield)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_BAR_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_BAR_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Browning Automatic Rifle en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_BENELLI_M4": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_BENELLI_M4",
+    "file": "Sandbox.json",
+    "value": "Activar Benelli M4 (c. 1998 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_BENELLI_M4_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_BENELLI_M4_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Benelli M4 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_CAR15": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_CAR15",
+    "file": "Sandbox.json",
+    "value": "Activar CAR-15 (c. 1964 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_CAR15_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_CAR15_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar CAR-15 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_COLT_SINGLE": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_COLT_SINGLE",
+    "file": "Sandbox.json",
+    "value": "Activar Colt Single Action (s. XIX - .45 Colt)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_COLT_SINGLE_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_COLT_SINGLE_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Colt Single Action en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DEAGLE": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DEAGLE",
+    "file": "Sandbox.json",
+    "value": "Activar Desert Eagle (c. 1982 - .50 AE)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DEAGLE_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DEAGLE_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Desert Eagle en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DETECTIVE_38": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DETECTIVE_38",
+    "file": "Sandbox.json",
+    "value": "Activar revólver Detective .38 (c. 1990 - .38 Special)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DETECTIVE_38_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DETECTIVE_38_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Detective 38 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DOUBLEBARREL": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DOUBLEBARREL",
+    "file": "Sandbox.json",
+    "value": "Activar Escopeta de doble cañón (c. s. XIX - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_DOUBLEBARREL_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_DOUBLEBARREL_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Escopeta de doble cañón en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_Explosives": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_Explosives",
+    "file": "Sandbox.json",
+    "value": "Activar explosivos"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_Explosives_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_Explosives_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar explosivos en el botín generado. Esto controla todos los tipos de explosivos"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FAL": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FAL",
+    "file": "Sandbox.json",
+    "value": "Activar FN FAL (c. 1953 - 7.62x51mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FAL_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FAL_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar FN FAL en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FAMAS": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FAMAS",
+    "file": "Sandbox.json",
+    "value": "Activar FAMAS (c. 1978 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FAMAS_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FAMAS_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar FAMAS en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FNC": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FNC",
+    "file": "Sandbox.json",
+    "value": "Activar FN FNC (c. 1979 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_FNC_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_FNC_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar FN FNC en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G3": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G3",
+    "file": "Sandbox.json",
+    "value": "Activar G3 (c. 1959 - 7.62x51mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G36": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G36",
+    "file": "Sandbox.json",
+    "value": "Activar G36 (c. 1990 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G36C": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G36C",
+    "file": "Sandbox.json",
+    "value": "Activar G36C (c. 2001 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G36C_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G36C_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar G36C en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G36_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G36_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar G36 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_G3_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_G3_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar G3 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_HIPOWER": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_HIPOWER",
+    "file": "Sandbox.json",
+    "value": "Activar Browning Hi-Power (c. 1935 - 9x19mm Parabellum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_HIPOWER_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_HIPOWER_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Browning Hi-Power en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M14": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M14",
+    "file": "Sandbox.json",
+    "value": "Activar M14 (c. 1959 - 7.62x51mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M14_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M14_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M14 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A1": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A1",
+    "file": "Sandbox.json",
+    "value": "Activar M16A1 (c. 1967 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A1_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A1_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M16A1 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A2": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A2",
+    "file": "Sandbox.json",
+    "value": "Activar M16A2 (c. 1982 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A2_M203": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A2_M203",
+    "file": "Sandbox.json",
+    "value": "Activar M16A2 con M203 (c. 1982 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A2_M203_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A2_M203_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M16A2 con M203 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A2_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A2_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M16A2 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A3": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A3",
+    "file": "Sandbox.json",
+    "value": "Activar M16A3 (c. 1990 - 5,56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M16A3_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M16A3_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M16A3 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1895": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1895",
+    "file": "Sandbox.json",
+    "value": "Activar Marlin 1895 (c. 1895 - .45-70 Government)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1895_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1895_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Marlin 1895 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1903": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1903",
+    "file": "Sandbox.json",
+    "value": "Activar Springfield M1903 (c. 1903 - .30-06 Springfield)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1903_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1903_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Springfield M1903 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1911": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1911",
+    "file": "Sandbox.json",
+    "value": "Activar Colt M1911 (c. 1911 - .45 ACP)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1911_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1911_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Colt M1911 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1_GARAND": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1_GARAND",
+    "file": "Sandbox.json",
+    "value": "Activar M1 Garand (c. 1936 - .30-06 Springfield)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M1_GARAND_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M1_GARAND_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M1 Garand en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M24": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M24",
+    "file": "Sandbox.json",
+    "value": "Activar M24 (c. 1988 - 7,62x51mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M24_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M24_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M24 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M4": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M4",
+    "file": "Sandbox.json",
+    "value": "Activar M4 (c. 2012 - 5,56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M4A1": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M4A1",
+    "file": "Sandbox.json",
+    "value": "Activar M4A1 (c. 1994 - 5,56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M4A1_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M4A1_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M4A1 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M4_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M4_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M4 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M60": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M60",
+    "file": "Sandbox.json",
+    "value": "Activar M60 (c. 1957 - 7,62x51mm NATO)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M60_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M60_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M60 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M79": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M79",
+    "file": "Sandbox.json",
+    "value": "Activar M79 (c. 1961 - 40x46mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M79_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M79_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar M79 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M92FS": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M92FS",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta M92FS (c. 1976 - 9x19mm Parabellum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M92FS_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M92FS_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta M92FS en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M93R": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M93R",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta M93R (c. 1979 - 9x19mm Parabellum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_M93R_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_M93R_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta M93R en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MAC10": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MAC10",
+    "file": "Sandbox.json",
+    "value": "Activar MAC-10 (c. 1970 - .45 ACP)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MAC10_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MAC10_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MAC-10 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MOSIN": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MOSIN",
+    "file": "Sandbox.json",
+    "value": "Activar Mosin-Nagant (c. 1891 - 7,62x54mmR)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MOSIN_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MOSIN_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Mosin-Nagant en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MOSSBERG_590": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MOSSBERG_590",
+    "file": "Sandbox.json",
+    "value": "Activar Mossberg 590 (c. 1983 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MOSSBERG_590_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MOSSBERG_590_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Mossberg 590 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP412": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP412",
+    "file": "Sandbox.json",
+    "value": "Activar MP-412 (c. 1990 - .357 Magnum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP412_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP412_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MP-412 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5",
+    "file": "Sandbox.json",
+    "value": "Activar MP5 (c. 1966 - 9x19mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5A2": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5A2",
+    "file": "Sandbox.json",
+    "value": "Activar MP5A2 (c. 1966 - 9x19mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5A2_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5A2_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MP5A2 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5K": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5K",
+    "file": "Sandbox.json",
+    "value": "Activar MP5K (c. 1976 - 9x19mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5K_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5K_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MP5K en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5SD": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5SD",
+    "file": "Sandbox.json",
+    "value": "Activar MP5SD (c. 1970 - 9x19mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5SD_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5SD_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MP5SD en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_MP5_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_MP5_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar MP5 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_P226": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_P226",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta P226 (c. 1975 - 9x19mm Parabellum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_P226_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_P226_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Beretta P226 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_PSG1": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_PSG1",
+    "file": "Sandbox.json",
+    "value": "Activar PSG-1 (c. 1978 - 7.62x51mm NATO)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_PSG1_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_PSG1_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar PSG-1 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_PYTHON": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_PYTHON",
+    "file": "Sandbox.json",
+    "value": "Activar Colt Python (c. 1955 - .357 Magnum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_PYTHON_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_PYTHON_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Colt Python en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_REMINGTON_870": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_REMINGTON_870",
+    "file": "Sandbox.json",
+    "value": "Activar Remington 870 (c. 1950 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_REMINGTON_870_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_REMINGTON_870_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Remington 870 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_RHINO": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_RHINO",
+    "file": "Sandbox.json",
+    "value": "Activar Revólver Rhino (c. 2002 - .357 Magnum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_RHINO_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_RHINO_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Revólver Rhino en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SKS": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SKS",
+    "file": "Sandbox.json",
+    "value": "Activar SKS (c. 1945 - 7.62x39mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SKS_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SKS_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar SKS en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SPAS12": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SPAS12",
+    "file": "Sandbox.json",
+    "value": "Activar SPAS-12 (c. 1979 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SPAS12_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SPAS12_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar SPAS-12 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_STEVENS_555": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_STEVENS_555",
+    "file": "Sandbox.json",
+    "value": "Activar Stevens 555 (c. 1970 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_STEVENS_555_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_STEVENS_555_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Stevens 555 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SVD": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SVD",
+    "file": "Sandbox.json",
+    "value": "Activar SVD (c. 1963 - 7.62x54mmR)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SVD_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SVD_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar SVD en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SW629": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SW629",
+    "file": "Sandbox.json",
+    "value": "Activar Smith & Wesson Model 629 (c. 1955 - .44 Magnum)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_SW629_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_SW629_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Smith & Wesson Model 629 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TEC9": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TEC9",
+    "file": "Sandbox.json",
+    "value": "Activar TEC-9 (c. 1980 - 9x19mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TEC9_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TEC9_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar TEC-9 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_THOMPSON": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_THOMPSON",
+    "file": "Sandbox.json",
+    "value": "Activar Thompson (c. 1928 - .45 ACP)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_THOMPSON_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_THOMPSON_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Thompson en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TRENCHGUN": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TRENCHGUN",
+    "file": "Sandbox.json",
+    "value": "Activar Escopeta de trinchera (c. 1918 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TRENCHGUN_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TRENCHGUN_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Escopeta de trinchera en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TacticalReload": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TacticalReload",
+    "file": "Sandbox.json",
+    "value": "Activar recarga táctica"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_TacticalReload_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_TacticalReload_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar la función de recarga táctica. (No activar en MP, actualmente solo soporta SP)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_USP": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_USP",
+    "file": "Sandbox.json",
+    "value": "Activar Heckler & Koch USP (c. 1980 - .45 ACP)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_USP_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_USP_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Heckler & Koch USP en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_VanillaAmmoReplacement": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_VanillaAmmoReplacement",
+    "file": "Sandbox.json",
+    "value": "Activar sustitución de munición estándar"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_VanillaAmmoReplacement_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_VanillaAmmoReplacement_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar sustitución de munición estándar con su contrapartida de GoM."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_VanillaWeaponReplacement": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_VanillaWeaponReplacement",
+    "file": "Sandbox.json",
+    "value": "Activar sustitución de armas estándar"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_VanillaWeaponReplacement_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_VanillaWeaponReplacement_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar sustitución de armas estándar con su contrapartida de GoM."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1873": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1873",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1873 (c. 1873 - .357)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1873_CARBINE": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1873_CARBINE",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1873 Carbine (c. 1873 - .357)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1873_CARBINE_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1873_CARBINE_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1873 Carbine en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1873_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1873_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1873 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1887": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1887",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1887 (c. 1887 - calibre 12)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1887_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1887_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1887 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1894": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1894",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1894 (c. 1894 - .30-30 Winchester)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_W1894_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_W1894_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar Winchester 1894 en el botín inicial."
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_XM177": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_XM177",
+    "file": "Sandbox.json",
+    "value": "Activar XM177 (c. 1967 - 5.56x45mm)"
+  },
+  "sandbox::Sandbox_MarzGuns_Enable_XM177_tooltip": {
+    "category": "sandbox",
+    "key": "Sandbox_MarzGuns_Enable_XM177_tooltip",
+    "file": "Sandbox.json",
+    "value": "Activar XM177 en el botín inicial."
+  },
+  "tooltip::Tooltip_weapon_Barrel": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Barrel",
+    "file": "Tooltip.json",
+    "value": "Cañón"
+  },
+  "tooltip::Tooltip_weapon_Bipod": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Bipod",
+    "file": "Tooltip.json",
+    "value": "Bípode"
+  },
+  "tooltip::Tooltip_weapon_BipodIntegrated": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_BipodIntegrated",
+    "file": "Tooltip.json",
+    "value": "Bípode (integrado)"
+  },
+  "tooltip::Tooltip_weapon_Bolt": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Bolt",
+    "file": "Tooltip.json",
+    "value": "Culata"
+  },
+  "tooltip::Tooltip_weapon_CanonMount": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_CanonMount",
+    "file": "Tooltip.json",
+    "value": "Montura de cañón"
+  },
+  "tooltip::Tooltip_weapon_Foregrip": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Foregrip",
+    "file": "Tooltip.json",
+    "value": "Empuñadura delantera"
+  },
+  "tooltip::Tooltip_weapon_Leftbarrel": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Leftbarrel",
+    "file": "Tooltip.json",
+    "value": "Cañón (izquierdo)"
+  },
+  "tooltip::Tooltip_weapon_Lever": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Lever",
+    "file": "Tooltip.json",
+    "value": "Palanca"
+  },
+  "tooltip::Tooltip_weapon_Pump": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Pump",
+    "file": "Tooltip.json",
+    "value": "Mecanismo de bombeo"
+  },
+  "tooltip::Tooltip_weapon_RailDown": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_RailDown",
+    "file": "Tooltip.json",
+    "value": "Riel (abajo)"
+  },
+  "tooltip::Tooltip_weapon_RailLeft": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_RailLeft",
+    "file": "Tooltip.json",
+    "value": "Riel (izquierda)"
+  },
+  "tooltip::Tooltip_weapon_RailRight": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_RailRight",
+    "file": "Tooltip.json",
+    "value": "Riel (derecha)"
+  },
+  "tooltip::Tooltip_weapon_RailUp": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_RailUp",
+    "file": "Tooltip.json",
+    "value": "Riel (arriba)"
+  },
+  "tooltip::Tooltip_weapon_Rightbarrel": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Rightbarrel",
+    "file": "Tooltip.json",
+    "value": "Cañón (derecho)"
+  },
+  "tooltip::Tooltip_weapon_Slide": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Slide",
+    "file": "Tooltip.json",
+    "value": "Culata móvil"
+  },
+  "tooltip::Tooltip_weapon_StockIntegrated": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_StockIntegrated",
+    "file": "Tooltip.json",
+    "value": "Culata (integrada)"
+  },
+  "tooltip::Tooltip_weapon_Underbarrel": {
+    "category": "tooltip",
+    "key": "Tooltip_weapon_Underbarrel",
+    "file": "Tooltip.json",
+    "value": "Bajo el cañón"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "target": "Project Zomboid 42.20.0",
+  "server_config": "config/Server-42.20-IDs.ini",
+  "workshop_items": [
+    "3749385199",
+    "3749386608",
+    "3774204188",
+    "3756312384"
+  ],
+  "map": "Cathaya Valley2.0;Muldraugh, KY",
+  "physical_copy_test": true,
+  "configured_mods": 78,
+  "loaded_unique_mods": 78,
+  "server_started": true,
+  "blocking_errors": 0,
+  "required_mods_missing": 0,
+  "unknown_script_objects": 0,
+  "invalid_tile_definitions": 0,
+  "duplicate_registries": 0,
+  "duplicate_mod_ids": 0,
+  "starlit_version_errors": 0,
+  "ecz_18_load_order": [
+    "ECZ_18.1",
+    "ECZ_18.2",
+    "ECZ_18.3",
+    "ECZ_18.4"
+  ],
+  "ecz_27_loaded": true,
+  "offline_survivor_server_script_initialized": true,
+  "ecz_8_loaded": true,
+  "ecz_t7_loaded_before_ecz_8": true,
+  "notes": [
+    "La prueba se realizó con una copia física temporal para evitar falsos fallos del cálculo de checksums sobre junctions de Windows.",
+    "La Build 42.20 registra avisos no bloqueantes al sondear carpetas opcionales de animaciones que muchos mods no necesitan.",
+    "Los paquetes de tiles se cargan exclusivamente como ECZ_T1 a ECZ_T7; ECZ_T3 incluye la adaptación de Melos al límite de 512 tilesets.",
+    "ECZ_T7 se cargó antes de ECZ_8 y el servidor inició con Cathaya Valley2.0 antes de Muldraugh, KY.",
+    "ECZ_7.2 era una copia anterior de Black Powder Gunsmithing y se retiró después de que la primera prueba detectara registros de munición duplicados; la segunda prueba completó el arranque.",
+    "Persisten diagnósticos no bloqueantes de modelos y animaciones heredados de algunos mods, pero no impiden completar el arranque."
+  ]
+}

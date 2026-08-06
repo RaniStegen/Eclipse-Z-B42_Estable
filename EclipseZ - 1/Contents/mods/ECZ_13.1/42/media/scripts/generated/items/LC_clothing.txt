@@ -1,7 +1,5 @@
 module LC
 {
-    imports { Base }
-
     item LC01
     {
         DisplayCategory = Clothing,
@@ -300,7 +298,7 @@ module LC
     {
         DisplayCategory = Clothing,
         ItemType = base:clothing,
-        DisplayName = (keep your existing LC12 fields),
+        DisplayName = Grunt12,
         ClothingItem = LC12XML,
         BodyLocation = BodyCostume,
         Icon = Ichor,
@@ -310,15 +308,11 @@ module LC
         Weight = 90,
     }
 
-    (keep ALL your other LC items exactly as-is, with ONLY these two changes applied everywhere:)
-    (1) WorldStaticModel = LC.Ground_Goo_Model (or LC.Ground_Ichor_Pot_Model where applicable)
-    (2) BodyLocation Hat/Necklace -> base:hat / base:necklace
-
     item Pustules
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = (your existing name),
+        DisplayName = Pustules,
         ClothingItem = PustulesXML,
         BodyLocation = base:necklace,
         Icon = Tumor,

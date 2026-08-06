@@ -1,0 +1,425 @@
+module MarzGuns
+{
+    model M92FS
+    {
+        mesh = weapons/firearms/M92FS|M92FS_BODY,
+        texture = weapons/firearms/pistols/M92FS,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1433 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0349 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.0270 -0.0125,
+            rotate = 7.2032 0.0000 0.0000,
+        }
+        
+        attachment stock
+        {
+            offset = 0.0000 -0.0137 0.0634,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0924 -0.0312,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0841 -0.0484,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1075 -0.0132,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1406 -0.0337,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M92FS_SLIDE
+    {
+        mesh = weapons/firearms/M92FS|M92FS_SLIDE,
+        texture = weapons/firearms/pistols/M92FS,
+    }
+    model M93R
+    {
+        mesh = weapons/firearms/M93R|M93R_BODY,
+        texture = weapons/firearms/pistols/M93R,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1433 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0342 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.0207 -0.0107,
+            rotate = 12.6501 0.0000 0.0000,
+        }
+        
+        attachment stock
+        {
+            offset = 0.0000 -0.0160 0.0620,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1028 -0.0321,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0942 -0.0492,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1569 -0.0357,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M93R_SLIDE
+    {
+        mesh = weapons/firearms/M93R|M93R_SLIDE,
+        texture = weapons/firearms/pistols/M93R,
+    }
+    model USP
+    {
+        mesh = weapons/firearms/USP|USP_BODY,
+        texture = weapons/firearms/pistols/USP,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1387 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0277 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.0285 -0.0104,
+            rotate = 14.9767 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1179 -0.0556,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1019 -0.0415,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1136 -0.0112,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1487 -0.0316,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model USP_SLIDE
+    {
+        mesh = weapons/firearms/USP|USP_SLIDE,
+        texture = weapons/firearms/pistols/USP,
+    }
+    model DEAGLE
+    {
+        mesh = weapons/firearms/DEAGLE|DEAGLE_BODY,
+        texture = weapons/firearms/pistols/DEAGLE,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1896 -0.0355,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0473 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1346 -0.0454,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1452 -0.0527,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope_large
+        {
+            offset = 0.0000 0.1316 -0.0553,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1376 -0.0134,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model DEAGLE_SLIDE
+    {
+        mesh = weapons/firearms/DEAGLE|DEAGLE_SLIDE,
+        texture = weapons/firearms/pistols/DEAGLE,
+    }
+    model HIPOWER
+    {
+        mesh = weapons/firearms/HIPOWER|HIPOWER_BODY,
+        texture = weapons/firearms/pistols/HIPOWER,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1433 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0278 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0915 -0.0316,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0923 -0.0486,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1022 -0.0122,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1451 -0.0337,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model HIPOWER_SLIDE
+    {
+        mesh = weapons/firearms/HIPOWER|HIPOWER_SLIDE,
+        texture = weapons/firearms/pistols/HIPOWER,
+    }
+    model P226
+    {
+        mesh = weapons/firearms/P226|P226_BODY,
+        texture = weapons/firearms/pistols/P226,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1433 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0251 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment magazine
+        {
+            offset = 0.0000 0.0329 -0.0218,
+            rotate = -0.3130 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.1039 -0.0316,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.1012 -0.0486,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1203 -0.0122,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1445 -0.0359,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model P226_SLIDE
+    {
+        mesh = weapons/firearms/P226|P226_SLIDE,
+        texture = weapons/firearms/pistols/P226,
+    }
+    model M1911
+    {
+        mesh = weapons/firearms/M1911|M1911_BODY,
+        texture = weapons/firearms/pistols/M1911,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1387 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0298 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment rail_up
+        {
+            offset = 0.0000 0.0738 -0.0455,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0900 -0.0603,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment underbarrel
+        {
+            offset = 0.0000 0.1122 -0.0125,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment canon
+        {
+            offset = 0.0000 0.1594 -0.0331,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model M1911_SLIDE
+    {
+        mesh = weapons/firearms/M1911|M1911_SLIDE,
+        texture = weapons/firearms/pistols/M1911,
+    }
+    model VP70M
+    {
+        mesh = weapons/firearms/VP70M|VP70M_BODY,
+        texture = weapons/firearms/pistols/VP70M,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1387 -0.0340,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment slide_fired
+        {
+            offset = 0.0000 -0.0298 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model VP70M_SLIDE
+    {
+        mesh = weapons/firearms/VP70M|VP70M_SLIDE,
+        texture = weapons/firearms/pistols/VP70M,
+    }
+}

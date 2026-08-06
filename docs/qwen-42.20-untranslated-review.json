@@ -1,0 +1,284 @@
+{
+  "itemname::AuthenticZClothing.AZ_CocktailUmbrella": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.AZ_CocktailUmbrella",
+    "file": "ItemName.json",
+    "value": "Paraguas de cóctel"
+  },
+  "itemname::AuthenticZClothing.Glasses_AZ_Sunglasses1": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Glasses_AZ_Sunglasses1",
+    "file": "ItemName.json",
+    "value": "Gafas de sol de verano"
+  },
+  "itemname::AuthenticZClothing.Glasses_AZ_Sunglasses2": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Glasses_AZ_Sunglasses2",
+    "file": "ItemName.json",
+    "value": "Gafas de sol de verano"
+  },
+  "itemname::AuthenticZClothing.Hat_Court_Jester": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Court_Jester",
+    "file": "ItemName.json",
+    "value": "Sombrero de bufón de corte"
+  },
+  "itemname::AuthenticZClothing.Hat_Graduation_Cap": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Graduation_Cap",
+    "file": "ItemName.json",
+    "value": "Gorro de graduación"
+  },
+  "itemname::AuthenticZClothing.Hat_Hellraiser_Butterball_Mask": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Hellraiser_Butterball_Mask",
+    "file": "ItemName.json",
+    "value": "Máscara de Butterball"
+  },
+  "itemname::AuthenticZClothing.Hat_Hellraiser_Chatterer_Mask": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Hellraiser_Chatterer_Mask",
+    "file": "ItemName.json",
+    "value": "Máscara de Chatterer"
+  },
+  "itemname::AuthenticZClothing.Hat_Hellraiser_OpenThroat_Mask": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Hellraiser_OpenThroat_Mask",
+    "file": "ItemName.json",
+    "value": "Máscara de garganta abierta"
+  },
+  "itemname::AuthenticZClothing.Hat_Hellraiser_Pinhead_Mask": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Hat_Hellraiser_Pinhead_Mask",
+    "file": "ItemName.json",
+    "value": "Máscara de Pinhead"
+  },
+  "itemname::AuthenticZClothing.Shorts_LongSportGold": {
+    "category": "itemname",
+    "key": "AuthenticZClothing.Shorts_LongSportGold",
+    "file": "ItemName.json",
+    "value": "Shorts deportivos largos de los Packers"
+  },
+  "itemname::ItemName_SapphCooking.Empty_FrenchPress": {
+    "category": "itemname",
+    "key": "ItemName_SapphCooking.Empty_FrenchPress",
+    "file": "ItemName.json",
+    "value": "French Press"
+  },
+  "itemname::VFX.HomemadeVinegarFermentingFruit": {
+    "category": "itemname",
+    "key": "VFX.HomemadeVinegarFermentingFruit",
+    "file": "ItemName.json",
+    "value": "Jarra de vinagre casero (fermentando)"
+  },
+  "itemname::VFX.HomemadeVinegarFermentingVinegar": {
+    "category": "itemname",
+    "key": "VFX.HomemadeVinegarFermentingVinegar",
+    "file": "ItemName.json",
+    "value": "Jarra de vinagre casero (fermentando)"
+  },
+  "recipes::VFX_MakeVinegarWithAlcohol": {
+    "category": "recipes",
+    "key": "VFX_MakeVinegarWithAlcohol",
+    "file": "Recipes.json",
+    "value": "Fabricar vinagre con alcohol"
+  },
+  "recipes::VFX_MakeVinegarWithDeadYeast": {
+    "category": "recipes",
+    "key": "VFX_MakeVinegarWithDeadYeast",
+    "file": "Recipes.json",
+    "value": "Fabricar vinagre con levadura muerta"
+  },
+  "recipes::VFX_MakeVinegarWithFruit": {
+    "category": "recipes",
+    "key": "VFX_MakeVinegarWithFruit",
+    "file": "Recipes.json",
+    "value": "Fabricar vinagre con fruta"
+  },
+  "recipes::VFX_MakeVinegarWithVinegar": {
+    "category": "recipes",
+    "key": "VFX_MakeVinegarWithVinegar",
+    "file": "Recipes.json",
+    "value": "Fabricar vinagre con vinagre"
+  },
+  "recipes::VFX_PrepareHomemadeAppleButter": {
+    "category": "recipes",
+    "key": "VFX_PrepareHomemadeAppleButter",
+    "file": "Recipes.json",
+    "value": "Preparar mermelada de manzana casera"
+  },
+  "tooltip::Tooltip_BalloonAnimal_1": {
+    "category": "tooltip",
+    "key": "Tooltip_BalloonAnimal_1",
+    "file": "Tooltip.json",
+    "value": "No puedes evitar sonreír un poco."
+  },
+  "tooltip::Tooltip_HellraiserCube": {
+    "category": "tooltip",
+    "key": "Tooltip_HellraiserCube",
+    "file": "Tooltip.json",
+    "value": "La caja… es una puerta de entrada. Una llave."
+  },
+  "tooltip::Tooltip_HellraiserOpenThroat": {
+    "category": "tooltip",
+    "key": "Tooltip_HellraiserOpenThroat",
+    "file": "Tooltip.json",
+    "value": "Sin lágrimas, por favor. Es una pérdida de buen sufrimiento."
+  },
+  "tooltip::Tooltip_HellraiserPinhead": {
+    "category": "tooltip",
+    "key": "Tooltip_HellraiserPinhead",
+    "file": "Tooltip.json",
+    "value": "Tenemos muchas cosas que mostrarte."
+  },
+  "tooltip::Tooltip_Unicorn": {
+    "category": "tooltip",
+    "key": "Tooltip_Unicorn",
+    "file": "Tooltip.json",
+    "value": "Dijeron que el unicornio traería sonrisas a la multitud. No mencionaron los gritos."
+  },
+  "tooltip::Tooltip_VFXHomemadeVinegar": {
+    "category": "tooltip",
+    "key": "Tooltip_VFXHomemadeVinegar",
+    "file": "Tooltip.json",
+    "value": "Se puede usar para fabricar vinagre casero."
+  },
+  "tooltip::Tooltip_VFXSourdoughStarter": {
+    "category": "tooltip",
+    "key": "Tooltip_VFXSourdoughStarter",
+    "file": "Tooltip.json",
+    "value": "Alimentar diariamente con harina y agua para mantenerlo fresco."
+  },
+  "tooltip::Tooltip_VFXVinegarFermenting60": {
+    "category": "tooltip",
+    "key": "Tooltip_VFXVinegarFermenting60",
+    "file": "Tooltip.json",
+    "value": "Necesita fermentar durante 60 días."
+  },
+  "tooltip::Tooltip_VFXVinegarStarter": {
+    "category": "tooltip",
+    "key": "Tooltip_VFXVinegarStarter",
+    "file": "Tooltip.json",
+    "value": "Combinar con alcohol, tarro y tapa para fabricar vinagre casero."
+  },
+  "tooltip::Tooltip_VFXYeastStarter": {
+    "category": "tooltip",
+    "key": "Tooltip_VFXYeastStarter",
+    "file": "Tooltip.json",
+    "value": "Alimentar cada segundo día con azúcar y agua para mantenerlo fresco."
+  },
+  "ui::UI_EHR_Line_037E190C": {
+    "category": "ui",
+    "key": "UI_EHR_Line_037E190C",
+    "file": "UI.json",
+    "value": "<RGB:1,1,1>Sangre actual:"
+  },
+  "ui::UI_EHR_Line_21D98BA3": {
+    "category": "ui",
+    "key": "UI_EHR_Line_21D98BA3",
+    "file": "UI.json",
+    "value": "Monitor médico: Destruyendo monitor antiguo para nuevo personaje"
+  },
+  "ui::UI_EHR_Line_22D2EAB6": {
+    "category": "ui",
+    "key": "UI_EHR_Line_22D2EAB6",
+    "file": "UI.json",
+    "value": "<RGB:0.7,0.7,0.7> Lee el folleto de tipos de sangre o alcanza el nivel 8 de Primeros Auxilios para evaluar la compatibilidad."
+  },
+  "ui::UI_EHR_Line_2520A45E": {
+    "category": "ui",
+    "key": "UI_EHR_Line_2520A45E",
+    "file": "UI.json",
+    "value": "<LINE> <RGB:1,0.8,0.5>Después de la donación, es posible que te sientas mareado."
+  },
+  "ui::UI_EHR_Line_297C0DBC": {
+    "category": "ui",
+    "key": "UI_EHR_Line_297C0DBC",
+    "file": "UI.json",
+    "value": "<RGB:1,0.3,0.3> Este tipo de sangre NO es compatible con el tuyo ("
+  },
+  "ui::UI_EHR_Line_2C8A4889": {
+    "category": "ui",
+    "key": "UI_EHR_Line_2C8A4889",
+    "file": "UI.json",
+    "value": "Restaura volumen de líquido sin necesidad de compatibilidad de tipo de sangre. <LINE>"
+  },
+  "ui::UI_EHR_Line_403DEF0F": {
+    "category": "ui",
+    "key": "UI_EHR_Line_403DEF0F",
+    "file": "UI.json",
+    "value": "<LINE> <RGB:1,0.5,0> ADVERTENCIA: Alta concentración de sal! Riesgo de hemodilución!"
+  },
+  "ui::UI_EHR_Line_4E94AA5E": {
+    "category": "ui",
+    "key": "UI_EHR_Line_4E94AA5E",
+    "file": "UI.json",
+    "value": "<RGB:1,0.5,0> PRECAUCIÓN: >60% de sal causa hipoxia cerebral <LINE>"
+  },
+  "ui::UI_EHR_Line_509D7368": {
+    "category": "ui",
+    "key": "UI_EHR_Line_509D7368",
+    "file": "UI.json",
+    "value": "<LINE> <RGB:1,1,1>Necesitas al menos"
+  },
+  "ui::UI_EHR_Line_5D160CF5": {
+    "category": "ui",
+    "key": "UI_EHR_Line_5D160CF5",
+    "file": "UI.json",
+    "value": "<RGB:1,0,0> Esta bolsa de suero se ha contaminado y no se puede usar."
+  },
+  "ui::UI_EHR_Line_5EBD1621": {
+    "category": "ui",
+    "key": "UI_EHR_Line_5EBD1621",
+    "file": "UI.json",
+    "value": "Monitor médico: El jugador rastreado ha muerto, reiniciando estado del monitor"
+  },
+  "ui::UI_EHR_Line_6899E519": {
+    "category": "ui",
+    "key": "UI_EHR_Line_6899E519",
+    "file": "UI.json",
+    "value": "ml al volumen de sangre. <LINE>"
+  },
+  "ui::UI_EHR_Line_715CEEB2": {
+    "category": "ui",
+    "key": "UI_EHR_Line_715CEEB2",
+    "file": "UI.json",
+    "value": "<RGB:1,0,0> Esta bolsa de sangre se ha echado a perder por completo y no se puede usar. <LINE> Desechala de forma segura."
+  },
+  "ui::UI_EHR_Line_72522170": {
+    "category": "ui",
+    "key": "UI_EHR_Line_72522170",
+    "file": "UI.json",
+    "value": "Transfusión: ¡Datos del jugador no encontrados!"
+  },
+  "ui::UI_EHR_Line_745A8BD9": {
+    "category": "ui",
+    "key": "UI_EHR_Line_745A8BD9",
+    "file": "UI.json",
+    "value": "<LINE> <RGB:1,0,0> PELIGRO: Suero casi letal! ¡NO USAR!"
+  },
+  "ui::UI_EHR_Line_80A721B9": {
+    "category": "ui",
+    "key": "UI_EHR_Line_80A721B9",
+    "file": "UI.json",
+    "value": "ExtraerSangre: ¡Fallo al crear"
+  },
+  "ui::UI_EHR_Line_8A84F740": {
+    "category": "ui",
+    "key": "UI_EHR_Line_8A84F740",
+    "file": "UI.json",
+    "value": "<LINE> Tu tipo de sangre: <RGB:0.5,1,0.5>"
+  },
+  "ui::UI_EHR_Line_ADD87AAC": {
+    "category": "ui",
+    "key": "UI_EHR_Line_ADD87AAC",
+    "file": "UI.json",
+    "value": "<LINE> <RGB:1,0.5,0> ¡Esta sangre ya no está en su mejor momento!"
+  },
+  "ui::UI_EHR_Line_C508EA23": {
+    "category": "ui",
+    "key": "UI_EHR_Line_C508EA23",
+    "file": "UI.json",
+    "value": "TempCuerpo: Delta negativo (%.3f) - reinicio de tiempo o problema de sincronización"
+  }
+}

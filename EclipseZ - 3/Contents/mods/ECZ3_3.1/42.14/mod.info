@@ -1,8 +1,0 @@
-name=ECZ3_3.1
-id=ECZ3_3.1
-poster=poster.png
-icon=icon.png
-pack=NeatBuilding_Tiles
-tiledef=NeatBuilding_Tiles 7811
-description=
-require=\ECZ3_1
