@@ -214,8 +214,8 @@ function PlayInstrumentVocal:waitToStart()
 end
 
 function PlayInstrumentVocal:soundPing()
-	local soundRadius, volume = 10, 5
-	if self.character:isOutside() then soundRadius, volume = 30, 10; end
+	local soundRadius, volume = 8, 3
+	if self.character:isOutside() then soundRadius, volume = 20, 6; end
 	addSound(self.character,self.character:getX(),self.character:getY(),self.character:getZ(),soundRadius,volume)
 end
 
@@ -286,22 +286,8 @@ function PlayInstrumentVocal:update()
 		self.actionCount = 0
 		adjustStats(self.character, self.level)
 		
-		local soundRadius = 10
-		local volume = 5
-
-		if self.character:isOutside() then
-		soundRadius = 30
-		volume = 10
-		end
-
-		-- update for zombies as the character moves
-
-		addSound(self.character,
-				 self.character:getX(),
-				 self.character:getY(),
-				 self.character:getZ(),
-				 soundRadius,
-				 volume)
+		-- Actualiza el ruido para zombis mientras el personaje se mueve.
+		self["soundPing"](self)
 		
 		if (playerlevel >= tracklevel and
 		playerlevel <= 5) and not self.isDuet then
@@ -477,22 +463,8 @@ function PlayInstrumentVocal:stop()
 	
 		end
 
-	local soundRadius = 10
-	local volume = 5
-
-		if self.character:isOutside() then
-		soundRadius = 30
-		volume = 10
-		end
-
 		self.character:getEmitter():playSound(failsound);
-		
-		addSound(self.character,
-				 self.character:getX(),
-				 self.character:getY(),
-				 self.character:getZ(),
-				 soundRadius,
-				 volume)
+		self["soundPing"](self)
 
 		if characterData.LSMoodles["Embarrassed"].Value ~= nil then
 			characterData.LSMoodles["Embarrassed"].Value = characterData.LSMoodles["Embarrassed"].Value + 0.1
